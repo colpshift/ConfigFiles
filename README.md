@@ -1,2 +1,2 @@
 # config_files
-Linux configuration files
+Linux configuration files.

@@ -1,27 +1,13 @@
 #!/usr/bin/env bash
+#
+# File: scope.sh
+# Author: Colps
+# Github: https://github.com/colpshift
+# Description: Ranger configuration file
+# Last Modified: dezembro 26, 2018
 
 set -o noclobber -o noglob -o nounset -o pipefail
 IFS=$'\n'
-
-# If the option `use_preview_script` is set to `true`,
-# then this script will be called and its output will be displayed in ranger.
-# ANSI color codes are supported.
-# STDIN is disabled, so interactive scripts won't work properly
-
-# This script is considered a configuration file and must be updated manually.
-# It will be left untouched if you upgrade ranger.
-
-# Meanings of exit codes:
-# code | meaning    | action of ranger
-# -----+------------+-------------------------------------------
-# 0    | success    | Display stdout as preview
-# 1    | no preview | Display no preview at all
-# 2    | plain text | Display the plain content of the file
-# 3    | fix width  | Don't reload when width changes
-# 4    | fix height | Don't reload when height changes
-# 5    | fix both   | Don't ever reload
-# 6    | image      | Display the image `$IMAGE_CACHE_PATH` points to as an image preview
-# 7    | image      | Display the file directly as an image
 
 # Script arguments
 FILE_PATH="${1}"         # Full path of the highlighted file
@@ -39,10 +25,10 @@ HIGHLIGHT_TABWIDTH=8
 HIGHLIGHT_STYLE='pablo'
 PYGMENTIZE_STYLE='autumn'
 
-
 handle_extension() {
     case "${FILE_EXTENSION_LOWER}" in
         # Archive
+		#
         a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|\
         rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)
             atool --list -- "${FILE_PATH}" && exit 5
@@ -58,6 +44,7 @@ handle_extension() {
             exit 1;;
 
         # PDF
+		#
         pdf)
             # Preview as text conversion
             pdftotext -l 10 -nopgbrk -q -- "${FILE_PATH}" - | fmt -w ${PV_WIDTH} && exit 5
@@ -65,18 +52,22 @@ handle_extension() {
             exiftool "${FILE_PATH}" && exit 5
             exit 1;;
 
+
         # BitTorrent
+		#
         torrent)
             transmission-show -- "${FILE_PATH}" && exit 5
             exit 1;;
 
         # OpenDocument
+		#
         odt|ods|odp|sxw)
             # Preview as text conversion
             odt2txt "${FILE_PATH}" && exit 5
             exit 1;;
 
         # HTML
+		#
         htm|html|xhtml)
             # Preview as text conversion
             w3m -dump "${FILE_PATH}" && exit 5
@@ -203,7 +194,6 @@ handle_fallback() {
     echo '----- File Type Classification -----' && file --dereference --brief -- "${FILE_PATH}" && exit 5
     exit 1
 }
-
 
 MIMETYPE="$( file --dereference --brief --mime-type -- "${FILE_PATH}" )"
 if [[ "${PV_IMAGE_ENABLED}" == 'True' ]]; then

@@ -1,35 +1,21 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
 """
 File: commands.py
-Author: Marcos Colpani
-Email: marcos.colpani@gmail.com
-Github: https://github.com/colps
-Description: ranger commands
-Version: 1.0
-Last Modified: novembro 24, 2018
+Author: Colps
+Github: https://github.com/colpshift
+Description: Ranger configuration file
+Last Modified: dezembro 26, 2018
 """
-# This is a sample commands.py.  You can add your own commands here.
-#
-# Please refer to commands_full.py for all the default commands and a complete
-# documentation.  Do NOT add them all here, or you may end up with defunct
-# commands when upgrading ranger.
-
-# A simple command for demonstration purposes follows.
-# -----------------------------------------------------------------------------
-
-from __future__ import (absolute_import, division, print_function)
-
-# You can import any python module as needed.
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from ranger.core.loader import CommandLoader
+from ranger.api.commands import Command
 import os
 
-# You always need to import ranger.api.commands here to get the Command class:
-from ranger.api.commands import Command
-
-
-# Any class that is a subclass of "Command" will be integrated into ranger as a
-# command.  Try typing ":my_edit<ENTER>" in ranger!
 class my_edit(Command):
-    # The so-called doc-string of the class will be visible in the built-in
-    # help that is accessible by typing "?c" inside ranger.
     """:my_edit <filename>
 
     A sample command for demonstration purposes that opens a file in an editor.
@@ -70,14 +56,9 @@ class my_edit(Command):
         # content of the current directory.
         return self._tab_directory_content()
 
-#------------------------------------------------------------------------------
 # Archive extraction
 # command: extracthere
 # plugin: atool
-
-import os
-from ranger.core.loader import CommandLoader
-
 class extracthere(Command):
     def execute(self):
         """ Extract copied files to current directory """
@@ -109,14 +90,9 @@ class extracthere(Command):
         obj.signal_bind('after', refresh)
         self.fm.loader.add(obj)
 
-#------------------------------------------------------------------------------
-# Compression
+# Archive compression
 # command: compress package name
 # plugin: atool
-
-import os
-from ranger.core.loader import CommandLoader
-
 class compress(Command):
     def execute(self):
         """ Compress marked files to current directory """

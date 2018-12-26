@@ -1,8 +1,19 @@
-from i3pystatus import Status, battery
-from i3pystatus.network import Network, sysfs_interface_up
-from i3pystatus.updates import pacman, cower
+#
+# File: i3_pystatus-config.py / i3pyconfig.py
+# Author: Colps
+# Github: https://github.com/colpshift
+# Description: i3 pystatus configuration file
+# Last Modified: dezembro 25, 2018
+#
+
+from i3pystatus import Status
+from i3pystatus import battery
 from platform import uname
 from i3pystatus.weather import weathercom
+from i3pystatus.network import Network
+from i3pystatus.network import sysfs_interface_up
+from i3pystatus.updates import pacman
+from i3pystatus.updates import cower
 
 class MyNetwork(Network):
     """
@@ -36,21 +47,14 @@ status.register(
 )
 
 # Show keyboard locks 
-status.register("keyboard_locks",
+status.register(
+    "keyboard_locks",
     format='{caps} {num}',
     color='#e60053',
     caps_on='Caps On',
     num_on='Num On',
     caps_off='',
     num_off='',
-    )
-
-# show/change current keyboard layout
-status.register("shell",
-    command = "xkblayout-state print %s",
-    interval = 5,
-    on_leftclick = "xkblayout-state set +1",
-    on_rightclick = "run",
     )
 
 # show clock
@@ -63,14 +67,14 @@ status.register(
 # Show weather 
 status.register(
     'weather',
-    format='{current_temp}{temp_unit}[ {icon}][ Hi: {high_temp}][ Lo: {low_temp}][ {update_error}]',
+    format='{current_temp}{temp_unit}[ {icon}][ {update_error}]',
     colorize=True,
     hints={'markup': 'pango'},
     backend=weathercom.Weathercom(
     location_code='BRXX0241:1:BR',
     units='metric',
     ),
-) 
+)
 
 # show/change volume using PA
 status.register(

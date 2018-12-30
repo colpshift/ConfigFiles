@@ -60,7 +60,7 @@ call plug#end()
 	let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 	let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 	let g:SuperTabDefaultCompletionType = '<C-n>'
-"fix_aic94-wd719x UltiSnips
+" UltiSnips
 	" better key bindings for UltiSnipsExpandTrigger
 	let g:UltiSnipsExpandTrigger = "<tab>"
 	let g:UltiSnipsJumpForwardTrigger = "<tab>"

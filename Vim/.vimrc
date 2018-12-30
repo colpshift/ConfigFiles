@@ -52,16 +52,15 @@ call plug#end()
 	set spell
 	set spelllang=en-US
 	set spellsuggest=best,5
-	let s:c = ",underline"
-	let spell_auto_type="text,doc,mail"
-	setf markdow
+	let s:c=",underline"
+	let spell_auto_type="text,doc,mail,sh,py"
 " YCM
 	" make YCM compatible with UltiSnips (using supertab)
 	let g:ycm_autoclose_preview_window_after_completion=1
 	let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 	let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 	let g:SuperTabDefaultCompletionType = '<C-n>'
-" UltiSnips
+"fix_aic94-wd719x UltiSnips
 	" better key bindings for UltiSnipsExpandTrigger
 	let g:UltiSnipsExpandTrigger = "<tab>"
 	let g:UltiSnipsJumpForwardTrigger = "<tab>"

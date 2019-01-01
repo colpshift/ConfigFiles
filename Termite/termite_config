@@ -12,8 +12,8 @@ audible_bell = false
 bold_is_bright = true
 clickable_url = true
 dynamic_title = true
-font = Liberation Mono 11
-fullscreen = true
+font = Monospace 11
+fullscreen = true 
 icon_name = terminal
 mouse_autohide = true
 #scroll_on_output = false
@@ -41,7 +41,7 @@ filter_unmatched_urls = true
 #modify_other_keys = false
 
 # set size hints for the window
-#size_hints = false
+size_hints = false
 
 # "off", "left" or "right"
 scrollbar = off
@@ -81,14 +81,14 @@ color14 = #93e0e3
 color15 = #ffffff
 
 [hints]
-#font = Monospace 12
-#foreground = #dcdccc
-#background = #3f3f3f
-#active_foreground = #e68080
-#active_background = #3f3f3f
-#padding = 2
-#border = #3f3f3f
-#border_width = 0.5
-#roundness = 2.0
+font = Monospace 11
+foreground = #dcdccc
+background = #3f3f3f
+active_foreground = #e68080
+active_background = #3f3f3f
+padding = 2
+border = #3f3f3f
+border_width = 0.5
+roundness = 2.0
 
 # vim: ft=dosini cms=#%s

@@ -8,34 +8,56 @@
 "------------------------------------------------------------------------------
 " vim settings
 "------------------------------------------------------------------------------
-set nocompatible        " Use Vim settings then Vi settings.
-syntax on				" Enable syntax highlight
-filetype on				" Vim will try to recognize the file type
-filetype plugin on			
+set nocompatible
+syntax on
+filetype on
+filetype plugin on
 filetype indent on
 filetype detect
 set encoding=utf-8
 set fileformat=unix
 
 "------------------------------------------------------------------------------
+" Auto commands 
+"------------------------------------------------------------------------------
+au BufWinLeave * mkview					" save folds
+au VimEnter * call RestoreFolds()		" restore folds
+
+"------------------------------------------------------------------------------
+" Scripts
+"------------------------------------------------------------------------------
+" Restore Folds 
+function RestoreFolds()
+    if @% == ""
+        startinsert		" No filename for current buffer
+    elseif filereadable(@%) == 0
+        startinsert		" File doesn't exist yet
+    elseif line('$') == 1 && col('$') == 1
+        startinsert		" File is empty
+	else
+		au BufWinEnter * silent loadview	"restore folds
+	endif
+endfunction
+
+"------------------------------------------------------------------------------
 " plugins package manager - vim-plug
 "------------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
-Plug 'junegunn/vim-plug'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'Lokaltog/vim-distinguished'
-Plug 'morhetz/gruvbox'
-Plug 'vim-scripts/AutoClose'
-Plug 'vim-scripts/indentpython.vim'
-Plug 'google/yapf'
-Plug 'w0rp/ale'
-Plug 'Valloric/YouCompleteMe'
-Plug 'tenfyzhong/CompleteParameter.vim'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'ervandew/supertab'
-Plug 'francoiscabrol/ranger.vim'
+	Plug 'junegunn/vim-plug'
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
+	Plug 'Lokaltog/vim-distinguished'
+	Plug 'morhetz/gruvbox'
+	Plug 'vim-scripts/AutoClose'
+	Plug 'vim-scripts/indentpython.vim'
+	Plug 'google/yapf'
+	Plug 'w0rp/ale'
+	Plug 'Valloric/YouCompleteMe'
+	Plug 'tenfyzhong/CompleteParameter.vim'
+	Plug 'SirVer/ultisnips'
+	Plug 'honza/vim-snippets'
+	Plug 'ervandew/supertab'
+	Plug 'francoiscabrol/ranger.vim'
 call plug#end()
 
 "------------------------------------------------------------------------------
@@ -79,26 +101,6 @@ call plug#end()
 	\   'bash': ['shellchek'],
 	\   'Bourne Shell': ['shellcheck'],
 	\}
-
-"------------------------------------------------------------------------------
-" Scripts
-"------------------------------------------------------------------------------
-" Restore Folds 
-function RestoreFolds()
-    if @% == ""
-        " No filename for current buffer
-        startinsert
-    elseif filereadable(@%) == 0
-        " File doesn't exist yet
-        startinsert
-    elseif line('$') == 1 && col('$') == 1
-        " File is empty
-        startinsert
-	else
-		" restore folds
-		au BufWinEnter * silent loadview
-	endif
-endfunction
 
 "------------------------------------------------------------------------------
 " mapping and abbreviations
@@ -178,8 +180,6 @@ set backspace=eol,start,indent	" Make sure backspace works in insert mode
 set foldenable							" enable fold
 set foldmethod=indent					" fold based on indent level
 set foldcolumn=4						" show column indent
-au BufWinLeave * mkview					" save folds
-au VimEnter * call RestoreFolds()		
 
 "------------------------------------------------------------------------------
 " swap, undo and backup

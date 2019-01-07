@@ -6,6 +6,9 @@
 # Last Modified: dezembro 26, 2018
 #
 
+# Cool things
+# curl wttr.in # weather information
+
 [options]
 allow_bold = true
 audible_bell = false

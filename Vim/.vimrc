@@ -34,9 +34,9 @@ function RestoreFolds()
         startinsert		" File doesn't exist yet
     elseif line('$') == 1 && col('$') == 1
         startinsert		" File is empty
-    else
-        au BufWinEnter * silent loadview	"restore folds
-    endif
+	else
+		au BufWinEnter * silent loadview	"restore folds
+	endif
 endfunction
 
 "------------------------------------------------------------------------------

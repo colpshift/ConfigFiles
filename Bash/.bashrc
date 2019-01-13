@@ -25,7 +25,7 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 fi
 
 # Default applications
-export BROWSE=chromium
+export BROWSE=/usr/bin/firefox
 export VISUAL=vim
 export EDITOR=vim
 set editing-mode vi		# turn on vim on shell 
@@ -33,7 +33,8 @@ set editing-mode vi		# turn on vim on shell
 # Exclude root from variables
 if [ "$(id -u)" != "0" ]; then
 	# Local variables
-	export XDG_DATA_HOME=$HOME/.config
+	export GITHUB="$HOME/Github/config_files"
+	export XDG_DATA_HOME="$HOME/.config"
 	export PATH="$PATH:$HOME/.local/bin/"
 	export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python3.7"
 	export WORKON_HOME="$HOME/Envs"

@@ -4,7 +4,7 @@
 # Author: Colps
 # Github: https://github.com/colpshift
 # Description: local bash configuration
-# Last Modified: dezembro 24, 2018
+# Last Modified: 14/01/2019 23:34
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -28,7 +28,7 @@ fi
 export BROWSE=/usr/bin/firefox
 export VISUAL=vim
 export EDITOR=vim
-set editing-mode vi		# turn on vim on shell 
+set -o vi  # turn on vim on shell 
 
 # Exclude root from variables
 if [ "$(id -u)" != "0" ]; then

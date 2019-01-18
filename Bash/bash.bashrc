@@ -4,7 +4,7 @@
 # Author: Colps
 # Github: https://github.com/colpshift
 # Description: global bash configuration
-# Last Modified: dezembro 24, 2018
+# Last Modified: 14/01/2019 23:40
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

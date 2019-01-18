@@ -4,13 +4,13 @@ File: i3_pystatus-config.py / i3pyconfig.py
 Author: Colps
 Github: https://github.com/colpshift
 Description: i3 pystatus configuration file
-Last Modified: dezembro 25, 2018
+Last Modified: 14/01/2019 23:43
 """
 # https://i3pystatus.readthedocs.io/en/latest/i3pystatus.html#i3
 # https://fontawesome.com/cheatsheet?from=io
 # https://www.colorhexa.com/e60053
 #
-# default   gray    color ='#cccccc",
+# default   gray    color ='#cccccc',
 # warning   orange  color ='#ffa500',
 # critical  red     color ='#e60053',
 
@@ -31,6 +31,7 @@ class MyNetwork(Network):
     """
     on_upscroll = None
     on_downscroll = None
+    color ='#cccccc'
 
     def run(self):
         super().run()
@@ -84,7 +85,7 @@ status.register(
     "clock",
     color='#49edff',
     format=" %a %d/%m  %H:%M",
-    on_doubleleftclick = "firefox --new-tab https://calendar.google.com/calendar/r",
+    on_leftclick = "firefox --new-tab https://calendar.google.com/calendar/r",
 )
 
 # check email
@@ -96,7 +97,7 @@ status.register(
         password="uypoucocucrjsaci")],
     color='#cccccc',
     color_unread='#ffa500',
-    format="{unread} ",
+    format=" {unread}",
     on_leftclick = "firefox --new-tab https://mail.google.com/mail/u/0/#inbox",
     hide_if_null=False,
 )
@@ -104,7 +105,7 @@ status.register(
 # Show weather
 status.register(
     'weather',
-    format='{current_temp}{temp_unit}[ {icon}][ {update_error}]',
+    format='[{icon}] {current_temp}{temp_unit}[ {update_error}]',
     interval=900,
     colorize=True,
     hints={'markup': 'pango'},
@@ -169,7 +170,7 @@ status.register(
     warn_percentage=70,
     alert_percentage=90,
     divisor=1024**3,
-    on_doubleleftclick="termite -e htop",
+    on_leftclick="termite -e htop",
 )
 
 # show cpu usage
@@ -177,7 +178,7 @@ status.register(
     "load",
     critical_color='#e60053',
     format=" {avg1} {avg5} {tasks}",
-    on_doubleleftclick="termite -e htop",
+    on_leftclick="termite -e htop",
 )
 
 # show disk available space
@@ -185,7 +186,7 @@ status.register(
     "disk",
     format=" {avail}G",
     path="/",
-    on_doubleleftclick="termite -e ranger",
+    on_leftclick="termite -e ranger",
 )
 
 # show usb available space 
@@ -194,7 +195,7 @@ status.register(
     color='#ffa500',
     format=" {avail}G",
     path="/run/media/colps/colps-1-8/",
-    on_doubleleftclick="termite -e ranger",
+    on_leftclick="termite -e ranger",
 )
 
 # show system information

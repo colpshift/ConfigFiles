@@ -1,1 +1,0 @@
-/home/colps/.config/i3pystatus/i3_pystatus_config.py

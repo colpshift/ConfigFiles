@@ -1,5 +1,9 @@
-delete 
-default_linemode 
 extracthere 
 extracthere
+search pixmaps
+rename lock_arch1.png
+bulkrename 
+
+default_linemode 
+delete 
 delete

@@ -3,7 +3,7 @@
 " Author: Colps
 " Github: https://github.com/colpshift
 " Description: vim configuration file 
-" Last Modified: 27/12/2018 19:50
+" Last Modified: 14/01/2019 23:44
 
 "------------------------------------------------------------------------------
 " vim settings
@@ -46,8 +46,9 @@ call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/vim-plug'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
-	Plug 'Lokaltog/vim-distinguished'
 	Plug 'morhetz/gruvbox'
+	Plug 'TaDaa/vimade'
+	Plug 'luochen1990/rainbow'
 	Plug 'vim-scripts/AutoClose'
 	Plug 'vim-scripts/indentpython.vim'
 	Plug 'google/yapf'
@@ -63,9 +64,18 @@ call plug#end()
 "------------------------------------------------------------------------------
 " plugins configuration
 "------------------------------------------------------------------------------
+" rainbow
+let g:rainbow_active = 1
 " gruvbox
 	set background=dark
-	colorscheme gruvbox
+	let g:gruvbox_contrast_dark = 'hard'
+	let g:gruvbox_invert_tabline = '1'
+	let g:gruvbox_invert_indent_guides = '1'
+	let g:gruvbox_improved_strings = '0'
+	let g:gruvbox_improved_warnings ='1'
+" vimade
+	let g:vimade = {}
+	let g:vimade.fadelevel = 0.3
 " airline
 	let g:airline_theme='gruvbox'
 	let g:airline#extensions#tabline#enabled = 1
@@ -105,7 +115,10 @@ call plug#end()
 "------------------------------------------------------------------------------
 " mapping and abbreviations
 "----------------------------------------------'--------------------------------
+" abbreviations
 ab ~/ $HOME
+" run :w!! command (type fast), to save ready only files. 
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 " auto indent the whole file and keep your cursor in the last position
 nmap <leader>ia mzgg=G`z
 " undo hlsearch
@@ -153,6 +166,7 @@ set showcmd             " show command in bottom bar
 set colorcolumn=+1      " color de last column to wrap.
 set textwidth=79        " set width for text
 set winwidth=100        " set the minimal width of the current window.
+colorscheme gruvbox
 
 "------------------------------------------------------------------------------
 " searching

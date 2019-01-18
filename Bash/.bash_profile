@@ -4,6 +4,6 @@
 # Author: Colps
 # Github: https://github.com/colpshift
 # Description: redirect to .bashrc
-# Last Modified: dezembro 24, 2018
+# Last Modified: 14/01/2019 23:34
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc

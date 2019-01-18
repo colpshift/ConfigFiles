@@ -4,7 +4,7 @@
 # Author: Colps
 # Github: https://github.com/colpshift
 # Description: local aliases
-# Last Modified: dezembro 24, 2018
+# Last Modified: 14/01/2019 23:34
 
 alias ls='ls --color --group-directories-first'
 alias ll='ls -l --color --group-directories-first'
@@ -24,3 +24,4 @@ alias pacu='sudo pacman -Syu --noconfirm'
 alias auru='yaourt -Syua --noconfirm'
 alias systemctl='sudo systemctl'
 alias se='ls /usr/bin | grep'
+alias calc=mate-calc-cmd

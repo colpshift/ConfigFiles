@@ -129,8 +129,8 @@ status.register(
     interval=5,
     alert=True,
     alert_percentage=15,
-    color='#cccccc',
-    charging_color='#ffa500',
+    color='#ffa500',
+    charging_color='#00e620',
     critical_color='#e60053',
     full_color='#cccccc',
     status={

@@ -232,7 +232,7 @@ exec --no-startup-id "compton -cC"
 exec --no-startup-id nm-applet
 exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "sleep 2s && kalu"
-exec_always /home/colps/.start_i3.sh 
+exec_always /home/colps/.config/i3/i3_start.sh
 exec --no-startup-id termite
 exec --no-startup-id termite
 

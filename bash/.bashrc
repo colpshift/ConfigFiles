@@ -24,6 +24,12 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
     source /usr/share/bash-completion/bash_completion
 fi
 
+# pkg "command not found" hook 
+source /usr/share/doc/pkgfile/command-not-found.bash
+
+# line wrap on windows resize.
+shopt -s checkwinsize
+
 # Default applications
 export BROWSE=/usr/bin/firefox
 export VISUAL=vim
@@ -33,6 +39,7 @@ set -o vi  # turn on vim on shell
 # Exclude root from variables
 if [ "$(id -u)" != "0" ]; then
 	# Local variables
+	export BACK="$HOME/Documents/$HOSTNAME"
 	export GITHUB="$HOME/Github/config_files"
 	export XDG_DATA_HOME="$HOME/.config"
 	export PATH="$PATH:$HOME/.local/bin/"

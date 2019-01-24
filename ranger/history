@@ -3,7 +3,13 @@ extracthere
 search pixmaps
 rename lock_arch1.png
 bulkrename 
-
 default_linemode 
-delete 
 delete
+delete 
+rename carne - IPTU - OSASCO 2018
+open_with qqqqq
+open_with 
+
+rename carne_iptu_osasco_2019.pdf
+renqme carne.pdf
+rename carne.pdf

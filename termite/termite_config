@@ -24,7 +24,7 @@ scroll_on_keystroke = true
 scrollback_lines = 10000
 search_wrap = true
 urgent_on_bell = true
-hyperlinks = false
+hyperlinks = true
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
 browser = xdg-open
@@ -42,12 +42,10 @@ filter_unmatched_urls = true
 modify_other_keys = false
 
 # set size hints for the window
-size_hints = false
+size_hints = true
 
 # "off", "left" or "right"
 scrollbar = off
-
-#
 
 [colors]
 

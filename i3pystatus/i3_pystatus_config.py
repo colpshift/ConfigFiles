@@ -181,22 +181,13 @@ status.register(
     on_leftclick="termite -e htop",
 )
 
-# show disk available space
-status.register(
-    "disk",
-    format=" {avail}G",
-    path="/",
-    on_leftclick="termite -e ranger",
-)
-
-# show usb available space 
-status.register(
-    "disk",
-    color='#ffa500',
-    format=" {avail}G",
-    path="/run/media/colps/colps-1-8/",
-    on_leftclick="termite -e ranger",
-)
+## show disk available space
+#status.register(
+#    "disk",
+#    format=" {avail}G",
+#    path="/",
+#    on_leftclick="termite -e ranger",
+#)
 
 # show system information
 status.register(

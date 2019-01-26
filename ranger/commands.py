@@ -122,3 +122,15 @@ class compress(Command):
 
         extension = ['.zip', '.tar.gz', '.rar', '.7z']
         return ['compress ' + os.path.basename(self.fm.thisdir.path) + ext for ext in extension]
+
+# Empty trash directory
+# command: empty
+class empty(Command):
+    """:empty
+
+    Empties the trash directory ~/.Trash
+    """
+
+    def execute(self):
+        self.fm.run("rm -rf /home/colps/.local/share/Trash/{*,.[^.]*}")
+

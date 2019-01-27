@@ -9,6 +9,10 @@
 # Dependence: PyYAML - https://pyyaml.org/
 # Dependence: libYAML - https://pyyaml.org/wiki/LibYAML
 #
+# Files:
+# /etc/udev/rules.d/99-udisks2.rules
+# /etc/tmpfiles.d/media.conf
+#
 # Tips: https://github.com/coldfix/udiskie/wiki/Usage
 #
 
@@ -44,7 +48,7 @@ program_options:
     # builtin password prompt.
 
     #notify_command: notify-send -i "udiskie" "'{event}: {device_presentation}'"
-  notify_command: ["zenity --info --text '{event}: {device_presentation}'"]
+    #notify_command: ["zenity --info --text '{event}: {device_presentation}'"]
     # [string|list] Set command to be executed on any device event.
     # This is specified like `password_prompt`.
 
@@ -77,10 +81,10 @@ notifications:
   timeout:          1.0     # set the default for all notifications
 
   # Specify only if you want to overwrite the the default:
-  device_mounted:   5       # mount notification
-  device_unmounted: 5       # unmount notification
-  device_added:     5       # device has appeared
-  device_removed:   5       # device has disappeared
+  device_mounted:   3       # mount notification
+  device_unmounted: 3       # unmount notification
+  device_added:     3       # device has appeared
+  device_removed:   3       # device has disappeared
   device_unlocked:  false   # encrypted device was unlocked
   device_locked:    false   # encrypted device was locked
   job_failed:       false   # mount/unlock/.. has failed
@@ -92,7 +96,7 @@ notification_actions:
   # set of actions. Specify an empty list if you don't want to see any
   # notification for the specified event:
 
-  device_mounted:   [browse]
+  #device_mounted:   [browse]
   device_added:     [mount]
 
 icon_names:

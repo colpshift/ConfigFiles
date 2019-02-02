@@ -10,23 +10,7 @@
 set $mod Mod4
 
 # Font for window titles
-#font -misc-fixed-bold-r-normal-*-15-140-75-75-c-90-iso10646-1
 font pango:Droid Sans Mono Dotted 11
-#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-#font pango:DejaVu Sans Mono 11
-#font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
-#font pango:hermit 12
-#font pango:Inconsolata 15
-#font pango:monospace 12
-#font pango:SourceCodePro-SemiBold 11
-#font pango:Source Code Pro for Powerline, FontAwesome Regular, Icons 9
-#font pango:Terminus 14px
-#font pango:Cousine 13
-#font pango:Arimo 11
-#font pango:Sans 13
-#font pango:Noto Mono Regular 13
-#font pango:DroidSansMono 13
-#font pango:Noto Mono Regular 13
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -218,14 +202,16 @@ workspace 9 output HDMI1
 bindsym $mod+Return exec termite
 bindsym $mod+a exec termite -e ranger
 bindsym $mod+b exec "/usr/bin/firefox"
+bindsym $mod+z exec rofi -show window
+bindsym $mod+m exec i3-msg workspace 10:[Mail] && termite -e mutt
 
 # Assign programs to workspace
-assign [class="Chromium"] 4
-assign [class="sxiv"] 5
-assign [class="Firefox"] 4
-assign [class="Stremio"] 6
-assign [class="Zathura"] 7
-assign [class="VirtualBox Manager"] 8
+assign [class="Chromium"] 3
+assign [class="Firefox"] 3
+assign [class="sxiv"] 4
+assign [class="Zathura"] 4 
+assign [class="Stremio"] 5
+assign [class="VirtualBox Manager"] 6
 
 # Autostart apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -235,7 +221,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "sleep 2s && kalu"
 exec_always /home/colps/.config/i3/i3_start.sh
-exec --no-startup-id termite
 exec --no-startup-id termite
 
 # Set inner/outer gaps
@@ -295,7 +280,7 @@ mode "$mode_gaps_outer" {
 # Multimedia
 
 # Redirect sound to headphones
-bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
+bindsym $mod+n exec "/usr/local/bin/switch-audio-port"
 
 # volume
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks

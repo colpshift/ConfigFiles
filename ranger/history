@@ -11,7 +11,6 @@ delete
 rename cond-rateio-extra.pdf
 empty 
 empty
-
 gm
 extracthere PyYAML
 copy 
@@ -22,4 +21,5 @@ rename tenda_fev-2019.pdf
 rename cond_jan-2019_rateio.pdf
 rename cond_fev-2019.pdf
 open_withqq 
+
 delete 

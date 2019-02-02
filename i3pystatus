@@ -14,6 +14,7 @@ Last Modified: 14/01/2019 23:43
 # warning   orange  color ='#ffa500',
 # critical  red     color ='#e60053',
 
+from configparser import ConfigParser
 from i3pystatus import Status
 from i3pystatus import IntervalModule
 from i3pystatus.weather import weathercom
@@ -31,7 +32,7 @@ class MyNetwork(Network):
     """
     on_upscroll = None
     on_downscroll = None
-    color ='#cccccc'
+    color = '#cccccc'
 
     def run(self):
         super().run()
@@ -60,17 +61,22 @@ class Online(IntervalModule):
                 "full_text": self.format_offline,
             }
 
-status = Status()
+# Parser
+CONFIG = ConfigParser()
+CONFIG.read("/etc/.config_gmail.txt")
+GMAILPASS = CONFIG.get("configuration", "password")
+
+STATUS = Status()
 
 # show updates in pacman/aur
-status.register(
+STATUS.register(
     "updates",
     format=" {Pacman}/{Cower}",
     backends=[pacman.Pacman(), cower.Cower()],
 )
 
 # Show keyboard locks
-status.register(
+STATUS.register(
     "keyboard_locks",
     format='{caps} {num}',
     color='#e60053',
@@ -81,7 +87,7 @@ status.register(
 )
 
 # show clock
-status.register(
+STATUS.register(
     "clock",
     color='#49edff',
     format=" %a %d/%m  %H:%M",
@@ -89,21 +95,22 @@ status.register(
 )
 
 # check email
-status.register(
-    "mail",
-    backends=[imap.IMAP(
-        host="host.mail.com",
-        username="username@mail.com",
-        password="cannotbeeasy")],
-    color='#cccccc',
-    color_unread='#ffa500',
-    format=" {unread}",
-    on_leftclick = "firefox --new-tab https://mail.google.com/mail/u/0/#inbox",
-    hide_if_null=False,
-)
+if internet():
+    STATUS.register(
+        "mail",
+        backends=[imap.IMAP(
+            host="imap.gmail.com",
+            username="marcos.colpani@gmail.com",
+            password=GMAILPASS)],
+        color='#cccccc',
+        color_unread='#ffa500',
+        format=" {unread}",
+        on_leftclick="firefox --new-tab https://mail.google.com/mail/u/0/#inbox",
+        hide_if_null=False,
+    )
 
 # Show weather
-status.register(
+STATUS.register(
     'weather',
     format='[{icon}] {current_temp}{temp_unit}[ {update_error}]',
     interval=900,
@@ -116,14 +123,14 @@ status.register(
 )
 
 # show/change volume using PA
-status.register(
+STATUS.register(
     "pulseaudio",
     format=" {volume}%",
     format_muted=" Mute",
 )
 
 # show battery status
-status.register(
+STATUS.register(
     'battery',
     format="[{status} ]{remaining}",
     interval=5,
@@ -142,17 +149,17 @@ status.register(
 )
 
 # internet status
-status.register(
+STATUS.register(
     Online,
-    color = '#00e620',
-    color_offline = '#e60053',
-    format_online ="",
-    format_offline ="",
-    interval = 10,
+    color='#00e620',
+    color_offline='#e60053',
+    format_online="",
+    format_offline="",
+    interval=10,
 )
 
 # show network speed
-status.register(
+STATUS.register(
     MyNetwork,
     format_up="{interface:.6}  {bytes_recv}K  {bytes_sent}K",
     format_down="{interface:.6} ",
@@ -161,7 +168,7 @@ status.register(
 )
 
 # show available memory
-status.register(
+STATUS.register(
     "mem",
     color="#cccccc",
     warn_color="ffa500",
@@ -174,7 +181,7 @@ status.register(
 )
 
 # show cpu usage
-status.register(
+STATUS.register(
     "load",
     critical_color='#e60053',
     format=" {avg1} {avg5} {tasks}",
@@ -182,19 +189,18 @@ status.register(
 )
 
 ## show disk available space
-#status.register(
-#    "disk",
-#    format=" {avail}G",
-#    path="/",
-#    on_leftclick="termite -e ranger",
-#)
-
-# show system information
-status.register(
-    "uname",
-    format=' {nodename} {release} ',
-    on_leftclick="termite -e screenfetch -wp",
+STATUS.register(
+    "disk",
+    format=" {avail}G",
+    path="/home",
+    on_leftclick="termite -e ranger",
 )
 
-status.run()
+# show system information
+STATUS.register(
+    "uname",
+    format=' {nodename} {release} ',
+    on_leftclick="termite",
+)
 
+STATUS.run()

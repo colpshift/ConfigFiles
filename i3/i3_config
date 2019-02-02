@@ -220,9 +220,9 @@ bindsym $mod+a exec termite -e ranger
 bindsym $mod+b exec "/usr/bin/firefox"
 
 # Assign programs to workspace
-assign [class="Chromium"] 5
-assign [class="Nitrogen"] 5
-assign [class="Firefox"] 5
+assign [class="Chromium"] 4
+assign [class="sxiv"] 5
+assign [class="Firefox"] 4
 assign [class="Stremio"] 6
 assign [class="Zathura"] 7
 assign [class="VirtualBox Manager"] 8

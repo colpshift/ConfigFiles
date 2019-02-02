@@ -1,0 +1,152 @@
+# File: muttrc
+# Author: Colps
+# Github: https://github.com/colpshift
+# Description: mutt configuration file 
+# Last Modified: 29/01/2019 00:31
+
+
+#------------------------------------------------------------------------------
+# system startup 
+#------------------------------------------------------------------------------
+# Purge cache.
+set message_cachedir=~/.cache/mutt/messages
+source "~/.mutt/purgecache.sh '$message_cachedir'|"
+
+# gpg 
+source ~/.mutt/gpg.rc
+source "gpg -dq $HOME/.gnupg/passgpg/mutt_pwd_gmail.gpg |"
+
+#------------------------------------------------------------------------------
+# imap configuration
+#------------------------------------------------------------------------------
+set folder      = imaps://imap.gmail.com/
+set imap_user   = marcos.colpani@gmail.com
+set imap_pass   = $my_pass
+set spoolfile   = +INBOX
+mailboxes       = +INBOX
+
+# Store message headers locally to speed things up.
+# If hcache is a folder, Mutt will create sub cache folders for each account
+# which may speeds things up even more.
+set header_cache = ~/.cache/mutt
+
+# Store messages locally to speed things up, like searching message bodies.
+# Can be the same folder as header_cache.
+# This will cost important disk usage according to your e-mail amount.
+set message_cachedir = "~/.cache/mutt"
+
+# Specify where to save and/or look for postponed messages.
+set postponed = +[Gmail]/Drafts
+
+# Allow Mutt to open a new IMAP connection automatically.
+unset imap_passive
+
+# Keep the IMAP connection alive by polling intermittently (time in seconds).
+set imap_keepalive = 300
+
+# How often to check for new mail (time in seconds).
+set mail_check = 120
+
+#------------------------------------------------------------------------------
+# smtp configuration
+#------------------------------------------------------------------------------
+set record = +Sent
+unset record
+set my_pass='xciwmrultwrnmgrm'
+set my_user=marcos.colpani@gmail.com
+
+set realname = 'Marcos Colpani'
+set from = marcos.colpani@gmail.com
+set use_from = yes
+
+set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
+set ssl_force_tls = yes
+set smtp_url=smtps://$imap_user:$imap_pass@smtp.gmail.com
+set smtp_authenticators = "login"
+
+#------------------------------------------------------------------------------
+# contact management
+#------------------------------------------------------------------------------
+set alias_file = "~/.mutt/aliases_mutt"
+set sort_alias = alias
+set reverse_alias = yes
+source $alias_file
+
+#------------------------------------------------------------------------------
+# mappings
+#------------------------------------------------------------------------------
+# Request IMAP mail retrieval manually
+bind index "^" imap-fetch-mail
+
+#------------------------------------------------------------------------------
+# another settings
+#------------------------------------------------------------------------------
+# Avoiding slow index on large (IMAP) folders due to coloring
+folder-hook . 'uncolor index "~b \"Hi Joe\" ~R !~T !~F !~p !~P"'
+folder-hook ""!"" 'color index brightyellow black "~b \"Hi Joe\" ~N !~T !~F !~p !~P"'
+
+# Speed up folders switch
+set sleep_time = 0
+
+# Archive treated e-mails
+macro index \' "<tag-pattern>~R !~D !~F<enter>\
+<tag-prefix><save-message>+[Gmail]/All <enter>" \
+"Archive"
+
+# Default folder for saving attachments
+alias mutt='cd ~/attachments && mutt'
+
+# Pager - Show context lines when going to next page:
+set pager_context=3
+
+# Stop at the end instead of displaying next mail:
+set pager_stop=yes
+
+# Fast reply
+set fast_reply=yes
+set include=yes
+
+# IMAP message cache
+set message_cachedir=~/.cache/mutt/messages
+
+# Signature location folder
+set signature="~/.signature_gmail"
+
+# mailcap path
+set mailcap_path 	= ~/.mutt/mailcap
+
+# fancier printing quality
+#set print_command="/usr/bin/muttprint %s -p {PrinterName}"
+
+# Viewing HTML
+auto_view text/html
+
+# Conversation grouping
+set sort=threads
+set sort_aux=last-date-received
+
+# Index and date format
+set date_format="%y-%m-%d %T"
+set index_format="%2C | %Z [%d] %-30.30F (%-4.4c) %s"
+
+# Colors for use with xterm and the like, white background.
+
+#color hdrdefault blue white
+#color quoted blue white
+#color signature red white
+#color attachment red white
+#color prompt brightmagenta white
+#color message brightred white
+#color error brightred white
+#color indicator brightyellow red
+#color status brightgreen blue
+#color tree black white
+#color normal black white
+#color markers red white
+#color search white black
+#color tilde brightmagenta white
+#color index blue white ~F
+#color index red white "~N|~O"
+
+# color body brightblack white '\*+[^*]+\*+'
+# color body brightblack white '_+[^_]+_+'

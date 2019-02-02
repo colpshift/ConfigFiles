@@ -1,0 +1,2 @@
+# Viewing URLs in a web browser
+macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'

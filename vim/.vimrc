@@ -59,7 +59,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'honza/vim-snippets'
 	Plug 'ervandew/supertab'
 	Plug 'francoiscabrol/ranger.vim'
-	Plug 'vimwiki/vimwiki'
 call plug#end()
 
 "------------------------------------------------------------------------------

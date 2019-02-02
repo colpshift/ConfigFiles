@@ -18,7 +18,8 @@ copy
 extracthere 
 open_with qqqqq
 open_with 
-delete 
 rename tenda_fev-2019.pdf
 rename cond_jan-2019_rateio.pdf
 rename cond_fev-2019.pdf
+open_withqq 
+delete 

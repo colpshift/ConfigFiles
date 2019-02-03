@@ -9,7 +9,6 @@
 # system startup 
 #------------------------------------------------------------------------------
 # Purge cache.
-set message_cachedir=~/.cache/mutt/messages
 source "~/.mutt/purgecache.sh '$message_cachedir'|"
 
 # gpg 
@@ -24,16 +23,17 @@ set imap_user   = marcos.colpani@gmail.com
 set imap_pass   = $my_pass
 set spoolfile   = +INBOX
 mailboxes       = +INBOX
+set imap_check_subscribed
 
 # Store message headers locally to speed things up.
 # If hcache is a folder, Mutt will create sub cache folders for each account
 # which may speeds things up even more.
-set header_cache = ~/.cache/mutt
+set header_cache = ~/.cache/mutt/headers
 
 # Store messages locally to speed things up, like searching message bodies.
 # Can be the same folder as header_cache.
 # This will cost important disk usage according to your e-mail amount.
-set message_cachedir = "~/.cache/mutt"
+set message_cachedir = ~/.cache/mutt/messages
 
 # Specify where to save and/or look for postponed messages.
 set postponed = +[Gmail]/Drafts
@@ -52,8 +52,8 @@ set mail_check = 120
 #------------------------------------------------------------------------------
 set record = +Sent
 unset record
-set my_pass='xciwmrultwrnmgrm'
-set my_user=marcos.colpani@gmail.com
+set my_pass = $my_pass
+set my_user = marcos.colpani@gmail.com
 
 set realname = 'Marcos Colpani'
 set from = marcos.colpani@gmail.com
@@ -77,6 +77,36 @@ source $alias_file
 #------------------------------------------------------------------------------
 # Request IMAP mail retrieval manually
 bind index "^" imap-fetch-mail
+# Sidebar Shift-P – Previous Mailbox
+bind index,pager \P sidebar-prev
+# Sidebar Shift-N – Next Mailbox
+bind index,pager \N sidebar-next
+# Sidebar Shift-O – Open Highlighted Mailbox
+bind index,pager \O sidebar-open
+
+#------------------------------------------------------------------------------
+# Sidebar
+#------------------------------------------------------------------------------
+set sidebar_visible
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set mail_check_stats	
+set sidebar_short_path = yes
+
+# color theme
+color sidebar_indicator default color17
+# Dark blue background
+color sidebar_highlight white   color238
+# Grey background
+color sidebar_spoolfile yellow  default
+# Yellow
+color sidebar_new       green   default
+# Green
+color sidebar_ordinary  default default
+# Default colors
+color sidebar_flagged   red     default
+# Red
+color sidebar_divider   color8  default
+# Dark grey
 
 #------------------------------------------------------------------------------
 # another settings
@@ -116,7 +146,7 @@ set signature="~/.signature_gmail"
 set mailcap_path 	= ~/.mutt/mailcap
 
 # fancier printing quality
-#set print_command="/usr/bin/muttprint %s -p {PrinterName}"
+set print_command="muttprint %s -p TO_FILE:/home/colps/Downloads/mail_message.pdf"
 
 # Viewing HTML
 auto_view text/html

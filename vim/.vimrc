@@ -1,5 +1,5 @@
 "
-" File: .vimrc
+" File: ~/.vimrc
 " Author: Colps
 " Github: https://github.com/colpshift
 " Description: vim configuration file 

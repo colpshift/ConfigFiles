@@ -38,11 +38,11 @@ rofi.fake-background: background
 rofi.theme: /usr/share/rofi/themes/gruvbox-dark-soft.rasi
 
 ! "Switch to the next mode." Set from: Default
-rofi.kb-mode-next: Shift+Right
+ rofi.kb-mode-next: Shift+Right
 
 ! "Switch to the previous mode." Set from: Default
 rofi.kb-mode-previous: Shift+Left
 
 ! "Take a screenshot of the rofi window" Set from: Default
-! rofi.kb-screenshot: Alt+S
+! rofi.kb-screenshot: Shift+P
 

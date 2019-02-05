@@ -199,14 +199,13 @@ workspace 9 output HDMI1
 # for_window [instance="deepin-calculator"] sticky enable
 
 # App shortcuts
-bindsym $mod+Return exec termite
-bindsym $mod+a exec termite -e ranger
-bindsym $mod+b exec "/usr/bin/firefox"
+bindsym $mod+Return exec tilix
+bindsym $mod+a exec tilix -e ranger
+bindsym $mod+b exec firefox
 bindsym $mod+z exec rofi -show window
-bindsym $mod+m exec i3-msg workspace 10:[Mail] && termite -e mutt
+bindsym $mod+m exec --no-startup-id i3-msg workspace 10:[mail] && tilix -e neomutt
 
 # Assign programs to workspace
-assign [class="Chromium"] 3
 assign [class="Firefox"] 3
 assign [class="sxiv"] 4
 assign [class="Zathura"] 4 
@@ -221,7 +220,8 @@ exec --no-startup-id nm-applet
 exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "sleep 2s && kalu"
 exec_always /home/colps/.config/i3/i3_start.sh
-exec --no-startup-id termite
+exec --no-startup-id tilix
+exec --no-startup-id tilix
 
 # Set inner/outer gaps
 gaps inner 4 

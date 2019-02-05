@@ -1,2 +1,4 @@
 # Viewing URLs in a web browser
 macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+# Open the HTML mail selected from the attachment the web browser
+macro attach 'V' <pipe-entry>'cat >~/.cache/mutt/mail.html && xdg-open ~/.cache/mutt/mail.html && rm ~/.cache/mutt/mail.html<enter>'

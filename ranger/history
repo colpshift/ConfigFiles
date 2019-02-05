@@ -2,24 +2,26 @@ extracthere
 search pixmaps
 rename lock_arch1.png
 bulkrename 
-default_linemode 
 rename carne - IPTU - OSASCO 2018
 rename carne_iptu_osasco_2019.pdf
 renqme carne.pdf
 rename carne.pdf
-delete
 rename cond-rateio-extra.pdf
 empty 
 empty
 gm
 extracthere PyYAML
 copy 
-extracthere 
 open_with qqqqq
 open_with 
 rename tenda_fev-2019.pdf
 rename cond_jan-2019_rateio.pdf
 rename cond_fev-2019.pdf
 open_withqq 
+co
+copy
+extracthere 
+default_linemode 
 
+delete
 delete 

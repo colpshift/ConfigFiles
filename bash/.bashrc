@@ -30,8 +30,13 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 # line wrap on windows resize.
 shopt -s checkwinsize
 
+# Fixing tilix error
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
+
 # Default applications
-export BROWSE=/usr/bin/firefox
+export BROWSE=firefox
 export VISUAL=vim
 export EDITOR=vim
 set -o vi  # turn on vim on shell 

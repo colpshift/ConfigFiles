@@ -105,7 +105,8 @@ if internet():
         color='#cccccc',
         color_unread='#ffa500',
         format=" {unread}",
-        on_leftclick="firefox --new-tab https://mail.google.com/mail/u/0/#inbox",
+        #on_leftclick="firefox --new-tab https://mail.google.com/mail/u/0/#inbox",
+        on_leftclick="tilix -e neomutt",
         hide_if_null=False,
     )
 
@@ -164,7 +165,7 @@ STATUS.register(
     format_up="{interface:.6}  {bytes_recv}K  {bytes_sent}K",
     format_down="{interface:.6} ",
     interface="enp3s0",
-    on_doubleleftclick="termite -e nmcli connection show",
+    on_doubleleftclick="tilix -e nmcli connection show",
 )
 
 # show available memory
@@ -177,7 +178,7 @@ STATUS.register(
     warn_percentage=70,
     alert_percentage=90,
     divisor=1024**3,
-    on_leftclick="termite -e htop",
+    on_leftclick="tilix -e htop",
 )
 
 # show cpu usage
@@ -185,14 +186,14 @@ STATUS.register(
     "load",
     critical_color='#e60053',
     format=" {avg1} {avg5} {tasks}",
-    on_leftclick="termite -e htop",
+    on_leftclick="tilix -e htop",
 )
 
 # show system information
 STATUS.register(
     "uname",
     format=' {nodename} {release} ',
-    on_leftclick="termite",
+    #on_leftclick="tilix -e neofetch --loop",
 )
 
 STATUS.run()

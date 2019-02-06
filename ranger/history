@@ -11,7 +11,6 @@ empty
 empty
 gm
 extracthere PyYAML
-copy 
 open_with qqqqq
 open_with 
 rename tenda_fev-2019.pdf
@@ -20,8 +19,9 @@ rename cond_fev-2019.pdf
 open_withqq 
 co
 copy
-extracthere 
 default_linemode 
 
 delete
+copy 
+extracthere 
 delete 

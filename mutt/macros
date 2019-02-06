@@ -2,3 +2,5 @@
 macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 # Open the HTML mail selected from the attachment the web browser
 macro attach 'V' <pipe-entry>'cat >~/.cache/mutt/mail.html && xdg-open ~/.cache/mutt/mail.html && rm ~/.cache/mutt/mail.html<enter>'
+# Add email addresses to google contacts (with "a" key normally bound to create-alias command)
+macro index,pager a "<pipe-message>goobook add<return>" "add the sender address to Google contacts"

@@ -10,7 +10,8 @@
 set $mod Mod4
 
 # Font for window titles
-font pango:Droid Sans Mono Dotted 11
+#font pango:Droid Sans Mono Dotted 11
+font pango:source code pro 11
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -123,6 +124,9 @@ bindsym $mod+Shift+z exec "i3-nagbar -t warning -m 'You will exit.' -b 'Yes, exi
 
 # lock
 bindsym $mod+Shift+x exec i3lock -i /home/colps/Pictures/wallpapers/lock_cave.png -t
+
+# screen
+bindsym $mod+Shift+p exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $HOME/Pictures/screenshots/'
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

@@ -1,9 +1,8 @@
-# File: muttrc
+# File: ~/.mutt/muttrc
 # Author: Colps
 # Github: https://github.com/colpshift
 # Description: mutt configuration file 
 # Last Modified: 29/01/2019 00:31
-
 
 #------------------------------------------------------------------------------
 # system startup 
@@ -14,6 +13,11 @@ source "~/.mutt/purgecache.sh '$message_cachedir'|"
 # gpg 
 source ~/.mutt/gpg.rc
 source "gpg -dq $HOME/.gnupg/passgpg/mutt_pwd_gmail.gpg |"
+
+# colors
+source ~/.mutt/colors_colps.muttrc
+#source ~/.mutt/colors_gruvbox.muttrc
+#source ~/.mutt/colors_dracula.muttrc
 
 #------------------------------------------------------------------------------
 # imap configuration
@@ -71,12 +75,13 @@ set alias_file = "~/.mutt/aliases_mutt"
 set sort_alias = alias
 set reverse_alias = yes
 source $alias_file
+set query_command="goobook query %s"
 
 #------------------------------------------------------------------------------
 # mappings
 #------------------------------------------------------------------------------
 # Request IMAP mail retrieval manually
-bind index "^" imap-fetch-mail
+bind index \U imap-fetch-mail
 # Sidebar Shift-P – Previous Mailbox
 bind index,pager \P sidebar-prev
 # Sidebar Shift-N – Next Mailbox
@@ -85,6 +90,8 @@ bind index,pager \N sidebar-next
 bind index,pager \O sidebar-open
 bind index - collapse-thread
 bind index _ collapse-all
+# Use <tab> to complete email addresses - goobook
+bind editor <Tab> complete-query
 
 #------------------------------------------------------------------------------
 # Sidebar
@@ -97,26 +104,17 @@ set sidebar_short_path = yes
 #------------------------------------------------------------------------------
 # another settings
 #------------------------------------------------------------------------------
-# Avoiding slow index on large (IMAP) folders due to coloring
-folder-hook . 'uncolor index "~b \"Hi Joe\" ~R !~T !~F !~p !~P"'
-folder-hook ""!"" 'color index brightyellow black "~b \"Hi Joe\" ~N !~T !~F !~p !~P"'
-
 # Speed up folders switch
 set sleep_time = 0
-
-# Archive treated e-mails
-macro index \' "<tag-pattern>~R !~D !~F<enter>\
-<tag-prefix><save-message>+[Gmail]/All <enter>" \
-"Archive"
 
 # Default folder for saving attachments
 alias mutt='cd ~/attachments && mutt'
 
-# Pager - Show context lines when going to next page:
+# Pager 
+# Show context lines when going to next page:
 set pager_context=3
-
 # Stop at the end instead of displaying next mail:
-set pager_stop=yes
+set pager_stop=no
 
 # Fast reply
 set fast_reply=yes
@@ -147,71 +145,14 @@ set status_format='-%r-NeoMutt: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? 
 Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---'
 #set index_format='%4C %Z %{%D %T} (%?l?%4l&%4c?) - %-15.15L - %s'
 set index_format='%4C %Z %{%D %T} %?M?(#%03M)&(%4l)? - %-15.15L - %s'
-
-#------------------------------------------------------------------------------
-# Colors themes
-#------------------------------------------------------------------------------
-
-### Colors progress.
-color progress white red
-
-## Colors status bar
-# Set the default color for the entire status line
-color status black brightgreen
-# Highlight New, Deleted, or Flagged emails
-color status brightred white '(New|Del|Flag):[0-9]+'
-# Highlight mailbox ordering if it's different from the default
-# First, highlight anything (*/*)
-color status black brightgreen '\([^)]+/[^)]+\)'
-# Then override the color for one specific case
-color status black brightgreen '\(threads/last-date-received\)'
-# Set the color for the nth submatch of a pattern
-# color status foreground background regex num
-# Highlight the contents of the []s but not the [] themselves
-color status black brightgreen '\[([^]]+)\]' 1
-# Highlight the mailbox
-color status black brightgreen 'NeoMutt: ([^ ]+)' 1
-# Search for 'NeoMutt: ' but only highlight what comes after it
-
-### Colors index line
-# Entire index line
-color index white black '.*'
-# Author name, %A %a %F %L %n
-# Give the author column a dark grey background
-color index_author default color234 '.*'
-# Highlight a particular from (~f)
-#color index_author brightyellow color234 '~fRay Charles'
-# Message flags, %S %Z
-# Highlight the flags for flagged (~F) emails
-color index_flags default red '~F'
-# Subject, %s
-# Look for a particular subject (~s)
-#color index_subject brightcyan default '~s\(closes #[0-9]+\)'
-# Number of messages in a collapsed thread, %M
-color index_collapsed default brightblue
-# Date field
-color index_date green default
-# Message label, %y %Y
-color index_label default brightgreen
-# Message number, %C
-color index_number red default
-# Message size, %c %l
-color index_size cyan default
-
-### Colors sidebar
-color sidebar_indicator default color17
-# Dark blue background
-color sidebar_highlight white   color238
-# Grey background
-color sidebar_spoolfile yellow  default
-# Yellow
-color sidebar_new       green   default
-# Green
-color sidebar_ordinary  default default
-# Default colors
-color sidebar_flagged   red     default
-# Red
-color sidebar_divider   color8  default
-# Dark grey
+# number of index lines to show
+set pager_index_lines = 11
+# Avoiding slow index on large (IMAP) folders due to coloring
+folder-hook . 'uncolor index "~b \"Hi Joe\" ~R !~T !~F !~p !~P"'
+folder-hook ""!"" 'color index brightyellow black "~b \"Hi Joe\" ~N !~T !~F !~p !~P"'
+# Archive treated e-mails
+macro index \' "<tag-pattern>~R !~D !~F<enter>\
+<tag-prefix><save-message>+[Gmail]/All <enter>" \
+"Archive"
 
 # vim: syntax=neomuttrc

@@ -1,0 +1,95 @@
+# File: ~/muttrc/colors_colps.muttrc
+# Author: Colps
+# Github: https://github.com/colpshift
+# Description:  colors theme file 
+# Last Modified: 29/01/2019 00:31
+
+#------------------------------------------------------------------------------
+# Colps theme
+#------------------------------------------------------------------------------
+
+# foreground and background can be one of the following:
+# white
+# black
+# green
+# magenta
+# blue
+# cyan
+# yellow
+# red
+# default
+# colorx
+# foreground can optionally be prefixed with the keyword bright 
+# to make the foreground color boldfaced (e.g., brightred). 
+
+### Colors progress.
+color progress black brightred
+
+## Colors status bar
+# Set the default color for the entire status line
+color status black green
+# Highlight New, Deleted, or Flagged emails
+color status black brightred '(New|Del|Flag):[0-9]+'
+# Highlight mailbox ordering if it's different from the default
+# First, highlight anything (*/*)
+color status black green '\([^)]+/[^)]+\)'
+# Then override the color for one specific case
+color status black green '\(threads/last-date-received\)'
+# Set the color for the nth submatch of a pattern
+#color status foreground background regex num
+# Highlight the contents of the []s but not the [] themselves
+color status black green '\[([^]]+)\]' 1
+# Highlight the mailbox
+color status black green 'NeoMutt: ([^ ]+)' 1
+# Search for 'NeoMutt: ' but only highlight what comes after it
+
+### Colors index line
+# Entire index line
+color index cyan default '.*'
+# Author name, %A %a %F %L %n
+# Give the author column a dark grey background
+color index_author cyan default '.*'
+# Highlight a particular from (~f)
+#color index_author brightyellow color234 '~fRay Charles'
+# Message flags, %S %Z
+# Highlight the flags for flagged (~F) emails
+color index_flags yellow default '~F'
+# Subject, %s
+# Look for a particular subject (~s)
+#color index_subject brightcyan default '~s\(closes #[0-9]+\)'
+# Number of messages in a collapsed thread, %M
+color index_collapsed cyan default
+# Date field
+color index_date green default
+# Message label, %y %Y
+color index_label cyan default
+# Message number, %C
+color index_number red default
+# Message size, %c %l
+color index_size  blue default
+
+### Colors sidebar
+color sidebar_indicator black brightred
+# Dark blue background
+color sidebar_highlight black brightgreen
+# Grey background
+color sidebar_spoolfile yellow  default
+# Yellow
+color sidebar_new       yellow   default
+# Green
+color sidebar_ordinary  cyan default
+# Default colors
+color sidebar_flagged   red     default
+# Red
+color sidebar_divider   color8  default
+# Dark grey
+
+### Colors message body
+color body white black '.*'
+# body color
+color body	blue black [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+# identifies email addresses
+color body	blue black (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+
+# identifies URLs
+
+# vim: syntax=neomuttrc

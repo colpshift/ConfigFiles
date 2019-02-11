@@ -24,4 +24,7 @@ default_linemode
 delete
 copy 
 extracthere 
+touch
+touch teste
+touch teste-2
 delete 

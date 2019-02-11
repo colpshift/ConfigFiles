@@ -10,18 +10,16 @@ Last Modified: 14/01/2019 23:43
 # https://fontawesome.com/cheatsheet?from=io
 # https://www.colorhexa.com/e60053
 #
+# color     green   color ='#00e620',
 # default   gray    color ='#cccccc',
 # warning   orange  color ='#ffa500',
-# critical  red     color ='#e60053',
+# critical  red     color ='#ff0000',
 
 from configparser import ConfigParser
-from i3pystatus import Status
-from i3pystatus import IntervalModule
+from i3pystatus import Status, IntervalModule
 from i3pystatus.weather import weathercom
-from i3pystatus.network import Network
-from i3pystatus.network import sysfs_interface_up
-from i3pystatus.updates import pacman
-from i3pystatus.updates import cower
+from i3pystatus.network import Network, sysfs_interface_up
+from i3pystatus.updates import pacman, yaourt
 from i3pystatus.core.util import internet
 from i3pystatus.mail import imap
 
@@ -68,29 +66,35 @@ GMAILPASS = CONFIG.get("configuration", "password")
 
 STATUS = Status()
 
-# show updates in pacman/aur
+# show updates in pacman
 STATUS.register(
     "updates",
-    format=" {Pacman}/{Cower}",
-    backends=[pacman.Pacman(), cower.Cower()],
+    backends=[pacman.Pacman(), yaourt.Yaourt(False)],
+    format="P:{count}",
+    format_no_updates="P",
+    interval=3600,
+    color='#ffa500',
+    color_no_updates='#cccccc',
+    color_working='#00e620',
 )
 
-# Show keyboard locks
+# show updates in auru
 STATUS.register(
-    "keyboard_locks",
-    format='{caps} {num}',
-    color='#e60053',
-    caps_on='Caps On',
-    num_on='Num On',
-    caps_off='',
-    num_off='',
+    "updates",
+    backends=[yaourt.Yaourt()],
+    format="A:{count}",
+    format_no_updates="A",
+    interval=3600,
+    color='#ffa500',
+    color_no_updates='#cccccc',
+    color_working='#00e620',
 )
 
 # show clock
 STATUS.register(
     "clock",
     color='#49edff',
-    format=" %a %d/%m  %H:%M",
+    format=" %d/%m/%y  %k:%M",
     on_leftclick = "firefox --new-tab https://calendar.google.com/calendar/r",
 )
 
@@ -105,29 +109,36 @@ if internet():
         color='#cccccc',
         color_unread='#ffa500',
         format=" {unread}",
-        #on_leftclick="firefox --new-tab https://mail.google.com/mail/u/0/#inbox",
         on_leftclick="tilix -e neomutt",
+        #on_leftclick="i3-msg workspace 9 && tilix -e neomutt",
         hide_if_null=False,
     )
 
 # Show weather
-STATUS.register(
-    'weather',
-    format='[{icon}] {current_temp}{temp_unit}[ {update_error}]',
-    interval=900,
-    colorize=True,
-    hints={'markup': 'pango'},
-    backend=weathercom.Weathercom(
-        location_code='BRXX0241:1:BR',
-        units='metric',
-    )
-)
+#STATUS.register(
+#    'weather',
+#    format='[{icon}] {current_temp}{temp_unit}[ {update_error}]',
+#    interval=900,
+#    colorize=True,
+#    hints={'markup': 'pango'},
+#    backend=weathercom.Weathercom(
+#        location_code='BRXX0241:1:BR',
+#        units='metric',
+#    )
+#)
 
 # show/change volume using PA
 STATUS.register(
     "pulseaudio",
     format=" {volume}%",
     format_muted=" Mute",
+)
+
+# show backlight %
+STATUS.register(
+    "backlight",
+    base_path="/sys/class/backlight/intel_backlight/",
+    format=" {percentage}%",
 )
 
 # show battery status
@@ -139,7 +150,7 @@ STATUS.register(
     alert_percentage=15,
     color='#ffa500',
     charging_color='#00e620',
-    critical_color='#e60053',
+    critical_color='#ff0000',
     full_color='#cccccc',
     status={
         "CHR": "",
@@ -153,7 +164,7 @@ STATUS.register(
 STATUS.register(
     Online,
     color='#00e620',
-    color_offline='#e60053',
+    color_offline='#ff0000',
     format_online="",
     format_offline="",
     interval=10,
@@ -173,7 +184,7 @@ STATUS.register(
     "mem",
     color="#cccccc",
     warn_color="ffa500",
-    alert_color='#e60053',
+    alert_color='#ff0000',
     format=" {used_mem} {avail_mem}G",
     warn_percentage=70,
     alert_percentage=90,
@@ -184,7 +195,7 @@ STATUS.register(
 # show cpu usage
 STATUS.register(
     "load",
-    critical_color='#e60053',
+    critical_color='#ff0000',
     format=" {avg1} {avg5} {tasks}",
     on_leftclick="tilix -e htop",
 )
@@ -192,8 +203,19 @@ STATUS.register(
 # show system information
 STATUS.register(
     "uname",
-    format=' {nodename} {release} ',
-    #on_leftclick="tilix -e neofetch --loop",
+    format='{nodename} {release}',
+    on_leftclick="neofetch",
+)
+
+# Show keyboard locks
+STATUS.register(
+    "keyboard_locks",
+    format='{caps} {num}',
+    color='#ff0000',
+    caps_on='Caps On',
+    num_on='Num On',
+    caps_off='',
+    num_off='',
 )
 
 STATUS.run()

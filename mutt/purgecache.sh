@@ -7,7 +7,7 @@
 # Last Modified: January 30, 2019
 
 ## In KB.
-CACHE_LIMIT=51200
+CACHE_LIMIT=101200
 
 cd "$1" 2>/dev/null
 [ $? -ne 0 ] && exit

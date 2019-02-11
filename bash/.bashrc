@@ -35,12 +35,6 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
 
-# Default applications
-export BROWSE=firefox
-export VISUAL=vim
-export EDITOR=vim
-set -o vi  # turn on vim on shell 
-
 # Exclude root from variables
 if [ "$(id -u)" != "0" ]; then
 	# Local variables

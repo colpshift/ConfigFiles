@@ -8,16 +8,17 @@
 # system startup 
 #------------------------------------------------------------------------------
 # Purge cache.
-source "~/.mutt/purgecache.sh '$message_cachedir'|"
+#source "~/.mutt/purgecache.sh '$message_cachedir'|"
 
 # gpg 
 source ~/.mutt/gpg.rc
 source "gpg -dq $HOME/.gnupg/passgpg/mutt_pwd_gmail.gpg |"
 
+# attachments
+source ~/.mutt/attachments
+
 # colors
 source ~/.mutt/colors_colps.muttrc
-#source ~/.mutt/colors_gruvbox.muttrc
-#source ~/.mutt/colors_dracula.muttrc
 
 #------------------------------------------------------------------------------
 # imap configuration
@@ -104,11 +105,11 @@ set sidebar_short_path = yes
 #------------------------------------------------------------------------------
 # another settings
 #------------------------------------------------------------------------------
+# Mail editor
+set editor='vim'
+
 # Speed up folders switch
 set sleep_time = 0
-
-# Default folder for saving attachments
-alias mutt='cd ~/attachments && mutt'
 
 # Pager 
 # Show context lines when going to next page:
@@ -124,7 +125,7 @@ set include=yes
 set signature="~/.signature_gmail"
 
 # mailcap path
-set mailcap_path 	= ~/.mutt/mailcap
+set mailcap_path=~/.mutt/mailcap
 
 # fancier printing quality
 set print_command="muttprint %s -p TO_FILE:/home/colps/Downloads/mail_message.pdf"

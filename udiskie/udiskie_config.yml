@@ -62,12 +62,12 @@ device_config:
   # so that it is possible to completely overwrite the defaults by specifying
   # a catch-all rule (i.e. a rule without device attributes).
 
-- device_file: /dev/mmcblk0p1   # [filter]
+#- device_file: /dev/mmcblk0p1   # [filter]
 #ignore:      false              # [action] never ignore this device
 #- id_uuid: 9d53-13ba            # [filter] match by device UUID
 #options: [a]        # [action] mount options can be given as list
 #ignore:  false                  # [action] never ignore this device (even if fs=FAT)
-automount: true                 # [action] do not automount this device
+#automount: true                 # [action] do not automount this device
 #- id_type: vfat                 # [filter] match file system type
 #ignore:  true                   # [action] ignore all FAT devices
 
@@ -104,7 +104,7 @@ icon_names:
   # specifies a list of icon names. The first installed icon from
   # that list will be used.
 
-  media:   [drive-removable-media, media-optical]
+  media:   [drive-removable-media]
   browse:  [document-open, folder-open]
   mount:   [udiskie-mount]
   unmount: [udiskie-unmount]

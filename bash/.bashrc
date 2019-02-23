@@ -35,6 +35,10 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
 
+# Configure pinentry to use the correct TTY
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null
+
 # Default applications
 export BROWSE=/usr/bin/firefox
 export VISUAL=vim

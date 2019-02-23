@@ -10,31 +10,17 @@ Last Modified: 11/02/2019 02:14
 # https://fontawesome.com/cheatsheet?from=io
 # https://www.colorhexa.com/e60053
 #
-# color     green   color ='#00e620',
-# default   gray    color ='#cccccc',
+# color     green   color ='#00ff00',
+# default   gray    color ='#c2c2c2',
 # warning   orange  color ='#ffa500',
 # critical  red     color ='#ff0000',
 
 from configparser import ConfigParser
 from i3pystatus import Status
-from i3pystatus.network import Network, sysfs_interface_up
+from i3pystatus.network import Network
 from i3pystatus.online import Online
 from i3pystatus.core.util import internet
 from i3pystatus.mail import imap
-
-class MyNetwork(Network):
-    """
-    Modified Network class that automatic switch interface in case of
-    the current interface is down.
-    """
-    on_upscroll = None
-    on_downscroll = None
-    color = '#cccccc'
-
-    def run(self):
-        super().run()
-        if not sysfs_interface_up(self.interface, self.unknown_up):
-            self.cycle_interface()
 
 # Parser
 CONFIG = ConfigParser()
@@ -46,7 +32,7 @@ STATUS = Status()
 # show clock
 STATUS.register(
     "clock",
-    color='#49edff',
+    color='#6bb6ff',
     format=" %d/%m/%y  %k:%M",
     on_leftclick = "firefox --new-tab https://calendar.google.com/calendar/r",
 )
@@ -56,14 +42,15 @@ if internet():
     STATUS.register(
         "mail",
         backends=[imap.IMAP(
+            account="Gmail",
             host="imap.gmail.com",
             username="marcos.colpani@gmail.com",
             password=GMAILPASS)],
-        color='#cccccc',
+        color='#c2c2c2',
         color_unread='#ffa500',
-        format=" {unread}",
-        on_leftclick="tilix -e neomutt",
-        #on_leftclick="i3-msg workspace 9 && tilix -e neomutt",
+        format_plural=(" {current_unread}/{unread}"),
+        format=" {current_unread}/{unread}",
+        on_leftclick="exec tilix -e neomutt; workspace 9 ",
         hide_if_null=False,
     )
 
@@ -84,26 +71,26 @@ STATUS.register(
 # show battery status
 STATUS.register(
     'battery',
+    #format="[{status}]{remaining}",
     format="[{status} ]{remaining}",
     interval=5,
     alert=True,
     alert_percentage=15,
     color='#ffa500',
-    charging_color='#00e620',
+    charging_color='#00ff00',
     critical_color='#ff0000',
-    full_color='#cccccc',
+    full_color='#c2c2c2',
     status={
-        "CHR": "",
-        "DPL": "",
-        "DIS": "",
-        "FULL": "",
-    },
+        "CHR":"",
+        "DPL":"",
+        "DIS":"",
+        "FULL":""},
 )
 
 # internet status
 STATUS.register(
     Online,
-    color='#00e620',
+    color='#00ff00',
     color_offline='#ff0000',
     format_online="",
     format_offline="",
@@ -112,17 +99,18 @@ STATUS.register(
 
 # show network speed
 STATUS.register(
-    MyNetwork,
-    format_up="{interface:.6}  {bytes_recv}K  {bytes_sent}K",
-    format_down="{interface:.6} ",
-    interface="enp3s0",
+    Network,
+    dynamic_color=True,
+    format_up=" {interface:.6}  {bytes_recv}K  {bytes_sent}K",
+    format_down=" {interface:.6} ",
+    interface="wlp3s0",
     on_doubleleftclick="tilix -e nmcli connection show",
 )
 
 # show available memory
 STATUS.register(
     "mem",
-    color="#cccccc",
+    color="#c2c2c2",
     warn_color="ffa500",
     alert_color='#ff0000',
     format=" {used_mem} {avail_mem}G",
@@ -143,8 +131,8 @@ STATUS.register(
 # show system information
 STATUS.register(
     "uname",
-    format='{nodename} {release}',
-    on_leftclick="neofetch",
+    format='{release}',
+    on_leftclick="exec tilix -e neofetch; workspace 1 </>",
 )
 
 # Show keyboard locks

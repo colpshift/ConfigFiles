@@ -6,7 +6,7 @@
 #
 # https://i3wm.org/docs/userguide.html
 # https://fontawesome.com/cheatsheet?from=io
-# https://www.colorhexa.com/e60053
+# https://www.colorhexa.com/
 
 set $mod Mod4
 
@@ -30,7 +30,7 @@ show_marks yes
 default_border pixel 3 
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+Shift+q kill; workspace 1 
 
 # show the menu to exit
 bindsym $mod+e exec i3-msg exit
@@ -175,13 +175,14 @@ bar {
     position          top
     workspace_buttons yes
 	colors {
-		separator #93a1a1
-		background #002b36
-		statusline #cccccc
-		focused_workspace #eee8d5 #859900 #eee8d5
-		active_workspace #fdf6e3 #6c71c4 #fdf6e3
-		inactive_workspace #073642 #eee8d5 #002b36
-		urgent_workspace #d33682 #d33682 #fdf6e3
+		separator	#cccccc
+		background	#333333
+		statusline	#c2c2c2
+		#					border		background	foreground
+		focused_workspace	#cccccc		#333333		#00ff00
+		active_workspace	#cccccc		#333333		#fdf6e3
+		inactive_workspace	#cccccc		#333333		#c2c2c2
+		urgent_workspace	#cccccc		#333333		#ffa500
 	}
 }
 
@@ -190,26 +191,27 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="Kalu"] floating enable
 
 # Assign workspaces to screen
-#workspace 1 output eDP1
+#workspace 1 output eDP1/
 #workspace 5 output HDMI1
 
 # App shortcuts
 bindsym $mod+Return		exec tilix
 bindsym $mod+o			exec tilix --quake
 bindsym $mod+a			exec tilix -e ranger
-bindsym $mod+b			exec firefox
+bindsym $mod+b			workspace 2 ;exec firefox
 bindsym $mod+z			exec rofi -show drun
-bindsym $mod+Shift+m	exec stremio
-bindsym $mod+Shift+v	exec virtualbox
-bindsym $mod+m			exec "i3-msg workspace 9  && tilix -e neomutt"
+bindsym $mod+Shift+m	workspace 5 ; exec stremio
+bindsym $mod+Shift+v	workspace 6 ; exec virtualbox
+bindsym $mod+m			workspace 9 ; exec tilix -e neomutt  
 
 # Assign programs to workspace
-assign [class="Tilix"] 1 
+#assign [class="Tilix"] 1 
 assign [class="Firefox"] 2 
 assign [class="Sxiv"] 3 
 assign [class="Zathura"] 4 
 assign [class="Stremio"] 5 
 assign [class="VirtualBox Manager"] 6 
+assign [class="VirtualBox Machine"] 6 
 
 # Autostart apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

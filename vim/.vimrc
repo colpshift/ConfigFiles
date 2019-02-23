@@ -156,7 +156,7 @@ set number
 set relativenumber             
 set cursorline         
 set nostartofline		" Don’t reset cursor start of line when moving around.
-set clipboard=unnamed   " to use clipboard
+set clipboard+=unnamed   " to use clipboard
 set ruler               " right side of the status line at the bottom
 set showmode            " change the color in according of mode
 set mouse=a             " allow mouse clicks to change cursor position

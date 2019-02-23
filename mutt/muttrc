@@ -2,7 +2,7 @@
 # Author: Colps
 # Github: https://github.com/colpshift
 # Description: mutt configuration file 
-# Last Modified: 29/01/2019 00:31
+# Last Modified: 17/02/2019 03:43
 
 #------------------------------------------------------------------------------
 # system startup 
@@ -12,11 +12,9 @@
 
 # gpg 
 source ~/.mutt/gpg.rc
-source "gpg -dq $HOME/.gnupg/passgpg/mutt_pwd_gmail.gpg |"
-
+source "gpg -dq $HOME/.gnupg/passgpg/mutt_gmail.gpg |"
 # attachments
 source ~/.mutt/attachments
-
 # colors
 source ~/.mutt/colors_colps.muttrc
 
@@ -30,26 +28,13 @@ set spoolfile   = +INBOX
 mailboxes       = +INBOX
 set imap_check_subscribed
 
-# Store message headers locally to speed things up.
-# If hcache is a folder, Mutt will create sub cache folders for each account
-# which may speeds things up even more.
-set header_cache = ~/.cache/mutt/headers
-
-# Store messages locally to speed things up, like searching message bodies.
-# Can be the same folder as header_cache.
-# This will cost important disk usage according to your e-mail amount.
-set message_cachedir = ~/.cache/mutt/messages
-
-# Specify where to save and/or look for postponed messages.
+## Specify where to save and/or look for postponed messages.
 set postponed = +[Gmail]/Drafts
-
-# Allow Mutt to open a new IMAP connection automatically.
+## Allow Mutt to open a new IMAP connection automatically.
 unset imap_passive
-
-# Keep the IMAP connection alive by polling intermittently (time in seconds).
+## Keep the IMAP connection alive by polling intermittently (time in seconds).
 set imap_keepalive = 300
-
-# How often to check for new mail (time in seconds).
+## How often to check for new mail (time in seconds).
 set mail_check = 120
 
 #------------------------------------------------------------------------------
@@ -68,6 +53,28 @@ set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
 set ssl_force_tls = yes
 set smtp_url=smtps://$imap_user:$imap_pass@smtp.gmail.com
 set smtp_authenticators = "login"
+
+#------------------------------------------------------------------------------
+# Performance Tuning
+#------------------------------------------------------------------------------
+# Cache dirs
+set header_cache = ~/.cache/mutt/headers
+set message_cachedir = ~/.cache/mutt/messages
+# use very high $read_inc to speed up reading hcache'd maildirs
+folder-hook . 'set read_inc=1000'
+# use lower value for reading slower remote IMAP folders
+#folder-hook ^imap 'set read_inc=100'
+# use even lower value for reading even slower remote POP folders
+#folder-hook ^pop 'set read_inc=1'
+# Fast reply
+set fast_reply=yes
+set include=yes
+# Speed up folders switch
+set sleep_time = 0
+# Pager - Show context lines when going to next page:
+set pager_context=3
+# Pager - Stop at the end instead of displaying next mail:
+set pager_stop=no
 
 #------------------------------------------------------------------------------
 # contact management
@@ -100,26 +107,13 @@ bind editor <Tab> complete-query
 set sidebar_visible
 set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
 set mail_check_stats	
-set sidebar_short_path = yes
+#set sidebar_short_path = yes
 
 #------------------------------------------------------------------------------
 # another settings
 #------------------------------------------------------------------------------
 # Mail editor
 set editor='vim'
-
-# Speed up folders switch
-set sleep_time = 0
-
-# Pager 
-# Show context lines when going to next page:
-set pager_context=3
-# Stop at the end instead of displaying next mail:
-set pager_stop=no
-
-# Fast reply
-set fast_reply=yes
-set include=yes
 
 # Signature location folder
 set signature="~/.signature_gmail"

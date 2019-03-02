@@ -20,8 +20,8 @@ set fileformat=unix
 "------------------------------------------------------------------------------
 " Auto commands 
 "------------------------------------------------------------------------------
-au BufWinLeave * mkview					" save folds
-au VimEnter * call RestoreFolds()		" restore folds
+"au BufWinLeave * mkview				" save folds
+"au VimEnter * call RestoreFolds()		" restore folds
 
 "------------------------------------------------------------------------------
 " Scripts
@@ -29,13 +29,13 @@ au VimEnter * call RestoreFolds()		" restore folds
 " Restore Folds 
 function RestoreFolds()
     if @% == ""
-        startinsert		" No filename for current buffer
+		set encoding=utf-8 	
     elseif filereadable(@%) == 0
-        startinsert		" File doesn't exist yet
+		set encoding=utf-8 
     elseif line('$') == 1 && col('$') == 1
-        startinsert		" File is empty
+		set encoding=utf-8
 	else
-		au BufWinEnter * silent loadview	"restore folds
+		au BufWinEnter * silent loadview
 	endif
 endfunction
 
@@ -156,7 +156,7 @@ set number
 set relativenumber             
 set cursorline         
 set nostartofline		" Don’t reset cursor start of line when moving around.
-set clipboard+=unnamed   " to use clipboard
+set clipboard+=unnamed  " to use clipboard
 set ruler               " right side of the status line at the bottom
 set showmode            " change the color in according of mode
 set mouse=a             " allow mouse clicks to change cursor position

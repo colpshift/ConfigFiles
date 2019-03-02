@@ -22,6 +22,7 @@ fi
 # Enable programmable completion features.
 if [ -f /usr/share/bash-completion/bash_completion ]; then
     source /usr/share/bash-completion/bash_completion
+	source /usr/share/bash-completion/completions/pass
 fi
 
 # pkg "command not found" hook 
@@ -34,6 +35,7 @@ shopt -s checkwinsize
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
+
 
 # Configure pinentry to use the correct TTY
 export GPG_TTY=$(tty)
@@ -57,5 +59,6 @@ if [ "$(id -u)" != "0" ]; then
 	export WORKON_HOME="$HOME/.virtualenvs"
 	export PROJECT_HOME="$HOME/Projects/"
 	export PYTHONBREAKPOINT=pudb.set_trace
+	export XDG_RUNTIME_DIR="/run/user/1000"
 	source "/home/colps/.local/bin/virtualenvwrapper.sh"
 fi

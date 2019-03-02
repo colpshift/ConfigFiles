@@ -1,3 +1,4 @@
+#
 # File: ~/.mutt/muttrc
 # Author: Colps
 # Github: https://github.com/colpshift
@@ -9,7 +10,6 @@
 #------------------------------------------------------------------------------
 # Purge cache.
 #source "~/.mutt/purgecache.sh '$message_cachedir'|"
-
 # gpg 
 source ~/.mutt/gpg.rc
 source "gpg -dq $HOME/.gnupg/passgpg/mutt_gmail.gpg |"
@@ -21,38 +21,58 @@ source ~/.mutt/colors_colps.muttrc
 #------------------------------------------------------------------------------
 # imap configuration
 #------------------------------------------------------------------------------
-set folder      = imaps://imap.gmail.com/
-set imap_user   = marcos.colpani@gmail.com
-set imap_pass   = $my_pass
-set spoolfile   = +INBOX
-mailboxes       = +INBOX
-set imap_check_subscribed
+#set folder      = imaps://imap.gmail.com/
+#set imap_user   = marcos.colpani@gmail.com
+#set imap_pass   = $my_pass
+#set spoolfile   = +INBOX
+#mailboxes       = +INBOX
+#set imap_check_subscribed
 
 ## Specify where to save and/or look for postponed messages.
-set postponed = +[Gmail]/Drafts
+#set postponed = +[Gmail]/Drafts
 ## Allow Mutt to open a new IMAP connection automatically.
-unset imap_passive
+#unset imap_passive
 ## Keep the IMAP connection alive by polling intermittently (time in seconds).
-set imap_keepalive = 300
+#set imap_keepalive = 300
 ## How often to check for new mail (time in seconds).
-set mail_check = 120
+#set mail_check = 120
 
+# MBSync configuration
+macro index \U "!mbsync -a^M" "Update through mbsync"
+set move = no
+set folder = "~/Mail/gmail"
+set spoolfile = "+Inbox"
+set postponed = "+[Gmail]/Drafts"
+set trash = "+[Gmail]/Trash"
+set record = ""
+set from = gmail@gmail.com
+mailboxes = "+Inbox" "+[Gmail]/Drafts" "+[Gmail]/Sent Mail" "+[Gmail]/Spam" "+[Gmail]/Trash" "+[finances]" "+[shopping]" "+[github]" "+[linux]" "+[python]" "+[social]" "+[forum]" "+[Gmail]/All Mail"
+			
 #------------------------------------------------------------------------------
 # smtp configuration
 #------------------------------------------------------------------------------
-set record = +Sent
-unset record
-set my_pass = $my_pass
-set my_user = marcos.colpani@gmail.com
+#set record = +Sent
+#unset record
+#set my_pass = "vwrarsfrjwrcuixu"
+#set my_user = marcos.colpani@gmail.com
+#set realname = 'Marcos Colpani'
+#set from = marcos.colpani@gmail.com
+#set use_from = yes
+#set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
+#set ssl_force_tls = yes
+#set smtp_url=smtps://$imap_user:$imap_pass@smtp.gmail.com
+#set smtp_authenticators = "login"
 
-set realname = 'Marcos Colpani'
-set from = marcos.colpani@gmail.com
-set use_from = yes
-
-set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
-set ssl_force_tls = yes
-set smtp_url=smtps://$imap_user:$imap_pass@smtp.gmail.com
-set smtp_authenticators = "login"
+# Msmtp configuration
+set realname='Marcos Colpani'
+set sendmail="/usr/bin/msmtp"
+set edit_headers=yes
+set folder=~/Mail/gmail
+set mbox=+mbox 
+set spoolfile="+Inbox"
+set record="+[Gmail]/Sent Mail"
+set postponed="+[Gmail]/Drafts"
+set mbox_type=Maildir
 
 #------------------------------------------------------------------------------
 # Performance Tuning
@@ -63,9 +83,7 @@ set message_cachedir = ~/.cache/mutt/messages
 # use very high $read_inc to speed up reading hcache'd maildirs
 folder-hook . 'set read_inc=1000'
 # use lower value for reading slower remote IMAP folders
-#folder-hook ^imap 'set read_inc=100'
-# use even lower value for reading even slower remote POP folders
-#folder-hook ^pop 'set read_inc=1'
+# folder-hook ^imap 'set read_inc=100'
 # Fast reply
 set fast_reply=yes
 set include=yes
@@ -74,22 +92,21 @@ set sleep_time = 0
 # Pager - Show context lines when going to next page:
 set pager_context=3
 # Pager - Stop at the end instead of displaying next mail:
-set pager_stop=no
+set pager_stop=yes
 
 #------------------------------------------------------------------------------
 # contact management
 #------------------------------------------------------------------------------
-set alias_file = "~/.mutt/aliases_mutt"
+set alias_file = "~/.mutt/aliases"
 set sort_alias = alias
 set reverse_alias = yes
 source $alias_file
 set query_command="goobook query %s"
-
 #------------------------------------------------------------------------------
 # mappings
 #------------------------------------------------------------------------------
 # Request IMAP mail retrieval manually
-bind index \U imap-fetch-mail
+#bind index \U imap-fetch-mail
 # Sidebar Shift-P – Previous Mailbox
 bind index,pager \P sidebar-prev
 # Sidebar Shift-N – Next Mailbox
@@ -149,5 +166,13 @@ folder-hook ""!"" 'color index brightyellow black "~b \"Hi Joe\" ~N !~T !~F !~p 
 macro index \' "<tag-pattern>~R !~D !~F<enter>\
 <tag-prefix><save-message>+[Gmail]/All <enter>" \
 "Archive"
+
+# Filter
+save-hook "~C info\\realpython$"	="+[python tricks]" 
+save-hook "~C pinbot\\pinterest$"	="+[social]" 
+save-hook "~C info\\jobframe$"		="+[Gmail]/Spam"
+save-hook "~C youalerts\\alert$"	="+[Gmail]/Spam"
+save-hook "~C info\\sercanto$"		="+[Gmail]/Spam"
+save-hook .*						=+mbox
 
 # vim: syntax=neomuttrc

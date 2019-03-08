@@ -21,32 +21,58 @@ source ~/.mutt/colors_colps.muttrc
 #------------------------------------------------------------------------------
 # imap configuration
 #------------------------------------------------------------------------------
+#set folder      = imaps://imap.gmail.com/
+#set imap_user   = marcos.colpani@gmail.com
+#set imap_pass   = $my_pass
+#set spoolfile   = +INBOX
+#mailboxes       = +INBOX
+#set imap_check_subscribed
+
+## Specify where to save and/or look for postponed messages.
+#set postponed = +[Gmail]/Drafts
+## Allow Mutt to open a new IMAP connection automatically.
+#unset imap_passive
+## Keep the IMAP connection alive by polling intermittently (time in seconds).
+#set imap_keepalive = 300
+## How often to check for new mail (time in seconds).
+#set mail_check = 120
+
 # MBSync configuration
 macro index \U "!mbsync -a^M" "Update through mbsync"
 set move = no
-set edit_headers=yes
-set folder = "~/Mail/gmail/"
-set mbox = +mbox 
-set spoolfile = +inbox
-set postponed = +draft
-set trash = +trash
-set record = +sent
+set folder = "~/Mail/gmail"
+set spoolfile = "+Inbox"
+set postponed = "+[Gmail]/Drafts"
+set trash = "+[Gmail]/Trash"
+set record = ""
 set from = gmail@gmail.com
-mailboxes = "+inbox" "+sent" "+draft" "+finances" "+shopping" "+github" "+linux" "+python" "+netsocial" "+discussion" "+all" "+trash" +spam
+mailboxes = "+Inbox" "+[Gmail]/Drafts" "+[Gmail]/Sent Mail" "+[Gmail]/Spam" "+[Gmail]/Trash" "+[finances]" "+[shopping]" "+[github]" "+[linux]" "+[python]" "+[social]" "+[forum]" "+[Gmail]/All Mail"
+			
 #------------------------------------------------------------------------------
 # smtp configuration
 #------------------------------------------------------------------------------
+#set record = +Sent
+#unset record
+#set my_pass = "vwrarsfrjwrcuixu"
+#set my_user = marcos.colpani@gmail.com
+#set realname = 'Marcos Colpani'
+#set from = marcos.colpani@gmail.com
+#set use_from = yes
+#set smtp_url=smtps://$my_user:$my_pass@smtp.gmail.com
+#set ssl_force_tls = yes
+#set smtp_url=smtps://$imap_user:$imap_pass@smtp.gmail.com
+#set smtp_authenticators = "login"
+
 # Msmtp configuration
-set realname = 'Marcos Colpani'
-set sendmail = "/usr/bin/msmtp"
-set mbox_type = Maildir
-set edit_headers = yes
-set folder = "~/Mail/gmail/"
-set mbox = +mbox 
-set spoolfile = +inbox
-set postponed = +draft
-set trash = +trash
-set record = +sent
+set realname='Marcos Colpani'
+set sendmail="/usr/bin/msmtp"
+set edit_headers=yes
+set folder=~/Mail/gmail
+set mbox=+mbox 
+set spoolfile="+Inbox"
+set record="+[Gmail]/Sent Mail"
+set postponed="+[Gmail]/Drafts"
+set mbox_type=Maildir
 
 #------------------------------------------------------------------------------
 # Performance Tuning
@@ -54,8 +80,10 @@ set record = +sent
 # Cache dirs
 set header_cache = ~/.cache/mutt/headers
 set message_cachedir = ~/.cache/mutt/messages
-# use very high to speed up reading
+# use very high $read_inc to speed up reading hcache'd maildirs
 folder-hook . 'set read_inc=1000'
+# use lower value for reading slower remote IMAP folders
+# folder-hook ^imap 'set read_inc=100'
 # Fast reply
 set fast_reply=yes
 set include=yes
@@ -65,10 +93,6 @@ set sleep_time = 0
 set pager_context=3
 # Pager - Stop at the end instead of displaying next mail:
 set pager_stop=yes
-# Turn off the help line at the top
-set help=yes
-# Don't ask to append when saving to existing folders.
-set noconfirmappend
 
 #------------------------------------------------------------------------------
 # contact management
@@ -81,6 +105,8 @@ set query_command="goobook query %s"
 #------------------------------------------------------------------------------
 # mappings
 #------------------------------------------------------------------------------
+# Request IMAP mail retrieval manually
+#bind index \U imap-fetch-mail
 # Sidebar Shift-P – Previous Mailbox
 bind index,pager \P sidebar-prev
 # Sidebar Shift-N – Next Mailbox
@@ -98,6 +124,7 @@ bind editor <Tab> complete-query
 set sidebar_visible
 set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
 set mail_check_stats	
+#set sidebar_short_path = yes
 
 #------------------------------------------------------------------------------
 # another settings
@@ -131,21 +158,22 @@ Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---'
 set index_format='%4C %Z %{%D %T} %?M?(#%03M)&(%4l)? - %-15.15L - %s'
 # number of index lines to show
 set pager_index_lines = 11
+# Avoiding slow index on large (IMAP) folders due to coloring
+#folder-hook . 'uncolor index "~b \"Hi Joe\" ~R !~T !~F !~p !~P"'
+#folder-hook ""!"" 'color index brightyellow black "~b \"Hi Joe\" ~N !~T !~F !~p !~P"'
+# Archive treated e-mails
+macro index \' "<tag-pattern>~R !~D !~F<enter>\
+<tag-prefix><save-message>+[Gmail]/All <enter>" \
+"Archive"
+# Highlight the flags for flagged (~F) emails
+color index_flags default red '~F'
 
 # Filter
-save-hook itaucard\\.com.br$ "+finances"
-save-hook github\\.com$ "+github"
-save-hook realpython\\.com$ "+python" 
-save-hook jovicailic\\.org$ "+linux"
-save-hook runtastic\\.com$ "+netsocial"
-save-hook pinterest\\.com$ "+netsocial"
-save-hook twitter\\.com$ "+netsocial"
-save-hook netflix\\.com$ "+netsocial"
-save-hook itsmacademy\\.com$ "+discussion"
-save-hook linkedin\\.com$ +spam
-save-hook jobframe\\.net$ +spam
-save-hook jobtomealert\\.com$ +spam
-save-hook sercanto\\.com$ +spam
-save-hook . "+inbox"
+save-hook "~C info\\realpython$"	="+[python tricks]" 
+save-hook "~C pinbot\\pinterest$"	="+[social]" 
+save-hook "~C info\\jobframe$"		="+[Gmail]/Spam"
+save-hook "~C youalerts\\alert$"	="+[Gmail]/Spam"
+save-hook "~C info\\sercanto$"		="+[Gmail]/Spam"
+save-hook .*						=+mbox
 
 # vim: syntax=neomuttrc

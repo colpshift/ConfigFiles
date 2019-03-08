@@ -91,27 +91,27 @@ bindsym $mod+p focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
+bindsym $mod+1 workspace 1 
+bindsym $mod+2 workspace 2 ;
+bindsym $mod+3 workspace 3 
+bindsym $mod+4 workspace 4 
+bindsym $mod+5 workspace 5 
+bindsym $mod+6 workspace 6 
+bindsym $mod+7 workspace 7 
+bindsym $mod+8 workspace 8 
+bindsym $mod+9 workspace 9 
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7 
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+1 move container to workspace 1 
+bindsym $mod+Shift+2 move container to workspace 2 ;
+bindsym $mod+Shift+3 move container to workspace 3 
+bindsym $mod+Shift+4 move container to workspace 4 
+bindsym $mod+Shift+5 move container to workspace 5 
+bindsym $mod+Shift+6 move container to workspace 6 
+bindsym $mod+Shift+7 move container to workspace 7 
+bindsym $mod+Shift+8 move container to workspace 8 
+bindsym $mod+Shift+9 move container to workspace 9 
 bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
@@ -199,20 +199,22 @@ bindsym $mod+Return		exec tilix
 bindsym $mod+o			exec tilix --quake
 bindsym $mod+a			exec tilix -e ranger
 bindsym $mod+z			exec rofi -show drun
-bindsym $mod+b			workspace 2 ;exec firefox
+bindsym $mod+b			workspace 2 ; exec firefox
 bindsym $mod+Shift+m	workspace 5 ; exec stremio
 bindsym $mod+Shift+v	workspace 6 ; exec virtualbox
 bindsym $mod+Shift+b	workspace 7 ; exec tilix -e ncmpcpp -s visualizer && exec tilix -e ncmpcpp -s media_library
+bindsym $mod+Shift+t    workspace 8 ; exec sh -c "/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" --detach 
 bindsym $mod+m			workspace 9 ; exec tilix -e neomutt  
 
 # Assign programs to workspace
-#assign [class="Tilix"] 1 
+#assign [class="Tilix"] 1   
 assign [class="Firefox"] 2 
 assign [class="Sxiv"] 3 
 assign [class="Zathura"] 4 
 assign [class="Stremio"] 5 
 assign [class="VirtualBox Manager"] 6 
 assign [class="VirtualBox Machine"] 6 
+assign [class="Tor Browser"] 8 
 
 # Autostart apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -225,7 +227,7 @@ exec --no-startup-id tilix
 
 # Set inner/outer gaps
 gaps inner 4 
-gaps outer 2 
+gaps outer 2
 
 # This is useful to bind keys to changing the gap size.
 #gaps inner all set 10

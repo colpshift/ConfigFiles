@@ -34,7 +34,7 @@ STATUS.register(
     "clock",
     color='#6bb6ff',
     format=" %d/%m/%y  %k:%M",
-    on_leftclick = "firefox --new-tab https://calendar.google.com/calendar/r",
+    on_leftclick = "chromium https://calendar.google.com/calendar/r",
 )
 
 # check email
@@ -50,7 +50,7 @@ if internet():
         color_unread='#ffa500',
         format_plural=(" {current_unread}/{unread}"),
         format=" {current_unread}/{unread}",
-        on_leftclick="exec tilix -e neomutt; workspace 9 ",
+        on_leftclick="chromium https://mail.google.com/mail/u/0/#inbox",
         hide_if_null=False,
     )
 
@@ -71,7 +71,6 @@ STATUS.register(
 # show battery status
 STATUS.register(
     'battery',
-    #format="[{status}]{remaining}",
     format="[{status} ]{remaining}",
     interval=5,
     alert=True,
@@ -104,7 +103,7 @@ STATUS.register(
     format_up=" {interface:.6}  {bytes_recv}K  {bytes_sent}K",
     format_down=" {interface:.6} ",
     interface="wlp3s0",
-    on_doubleleftclick="tilix -e nmcli connection show",
+    on_doubleleftclick="urxvtc -e sh -c nmcli connection show",
 )
 
 # show available memory
@@ -117,7 +116,7 @@ STATUS.register(
     warn_percentage=70,
     alert_percentage=90,
     divisor=1024**3,
-    on_leftclick="tilix -e htop",
+    on_leftclick="urxvtc -e sh -c htop",
 )
 
 # show cpu usage
@@ -125,14 +124,14 @@ STATUS.register(
     "load",
     critical_color='#ff0000',
     format=" {avg1} {avg5} {tasks}",
-    on_leftclick="tilix -e htop",
+    on_leftclick="urxvtc -e sh -c htop",
 )
 
 # show system information
 STATUS.register(
     "uname",
     format='{release}',
-    on_leftclick="exec tilix -e neofetch; workspace 1 </>",
+    on_leftclick="exec urxvtc -e sh -c neofetch; workspace 1 </>",
 )
 
 # Show keyboard locks

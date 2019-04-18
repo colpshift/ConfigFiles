@@ -1,0 +1,13 @@
+[Unit]
+Description=Run commands at shutdown
+Requires=network.target
+DefaultDependencies=no
+Before=shutdown.target reboot.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/bin/true
+ExecStop=sh /home/colps/.scripts/system_shutdown.sh
+[Install]
+WantedBy=multi-user.target

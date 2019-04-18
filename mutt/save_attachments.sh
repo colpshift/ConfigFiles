@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-tilix -e ranger --choosefile=%s
+urxvtc -e ranger --choosefile=%s
 cat > $"`cat %s`"

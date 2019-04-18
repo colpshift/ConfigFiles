@@ -5,6 +5,7 @@
 # Github: https://github.com/colpshift
 # Description: local profile configuration
 # Last Modified: 14/02/2019 19:37
+#
 
 # Enable/Disable touchpad
 lista=$(xinput list | grep -i 'mouse')
@@ -16,11 +17,18 @@ else
     notify-send "USB Mouse Detected" "Your Touchpad is Disabled"
 fi
 
-# MPD daemon start (if no other user instance exists)
+# autocutsel
+autocutsel -fork &
+autocutsel -selection PRIMARY -fork &
+
+# udiskie
+udiskie -Ans &
+
+# MPD daemon start
 [ ! -s ~/.config/mpd/pid ] && mpd
 
-# Udiskie daemon start
-udiskie -s &
+# urxvt daemon
+urxvtd -q -o -f 
 
 # i3 Screen lock start
 xss-lock -- i3lock -n -i /home/colps/Pictures/wallpapers/lock_cave.png -t &

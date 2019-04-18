@@ -18,7 +18,7 @@ alias dmesg='dmesg --color'
 alias ccat='highlight --out-format=ansi'
 alias vi=vim
 alias mutt='cd ~/Downloads && neomutt'
-alias pacrepo='sudo reflector -f 5 --save /etc/pacman.d/mirrorlist'
+alias pacrepo='sudo reflector -f 10 --save /etc/pacman.d/mirrorlist'
 alias pacman='sudo pacman'
 alias journalctl='sudo journalctl'
 #alias pacu='sudo pacman -Syu'

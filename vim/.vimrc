@@ -16,12 +16,18 @@ filetype indent on
 filetype detect
 set encoding=utf-8
 set fileformat=unix
+"set exrc
 
 "------------------------------------------------------------------------------
 " Auto commands 
 "------------------------------------------------------------------------------
+" folds save and restore
 "au BufWinLeave * mkview				" save folds
 "au VimEnter * call RestoreFolds()		" restore folds
+
+" mutt mail editor
+autocmd BufNewFile,BufRead /tmp/neomutt* set noautoindent filetype=mail wm=0 tw=78 nonumber digraph nolist
+autocmd BufNewFile,BufRead ~/tmp/neomutt* set noautoindent filetype=mail wm=0 tw=78 nonumber digraph nolist
 
 "------------------------------------------------------------------------------
 " Scripts
@@ -55,6 +61,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'w0rp/ale'
 	Plug 'Valloric/YouCompleteMe'
 	Plug 'tenfyzhong/CompleteParameter.vim'
+	Plug 'godlygeek/tabular'
+	Plug 'plasticboy/vim-markdown'
 	Plug 'SirVer/ultisnips'
 	Plug 'honza/vim-snippets'
 	Plug 'ervandew/supertab'
@@ -64,12 +72,20 @@ call plug#end()
 "------------------------------------------------------------------------------
 " plugins configuration
 "------------------------------------------------------------------------------
+" markdown
+	let g:vim_markdown_folding_style_pythonic = 1
+	let g:vim_markdown_folding_level = 3
+	let g:vim_markdown_toc_autofit = 1
+	let g:vim_markdown_follow_anchor = 1
+	let g:vim_markdown_anchorexpr = "'<<'.v:anchor.'>>'"
+	let g:vim_markdown_strikethrough = 1
+	let g:vim_markdown_no_extensions_in_markdown = 1
 " rainbow
 let g:rainbow_active = 1
-" gruvbox
+" colorscheme
 	set background=dark
 	let g:gruvbox_contrast_dark = 'hard'
-	let g:gruvbox_invert_tabline = '1'
+	let g:gruvbox_invert_tabline = '0'
 	let g:gruvbox_invert_indent_guides = '1'
 	let g:gruvbox_improved_strings = '0'
 	let g:gruvbox_improved_warnings ='1'
@@ -156,10 +172,10 @@ set number
 set relativenumber             
 set cursorline         
 set nostartofline		" Don’t reset cursor start of line when moving around.
-set clipboard+=unnamed  " to use clipboard
+set clipboard=unnamedplus  " to use clipboard
 set ruler               " right side of the status line at the bottom
 set showmode            " change the color in according of mode
-set mouse=a             " allow mouse clicks to change cursor position
+"set mouse=a             " allow mouse clicks to change cursor position
 set showmatch           " highlight matching [{()}]
 set wildmenu            " expand the menu
 set showcmd             " show command in bottom bar

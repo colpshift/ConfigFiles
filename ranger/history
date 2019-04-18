@@ -17,16 +17,24 @@ rename cond_jan-2019_rateio.pdf
 rename cond_fev-2019.pdf
 open_withqq 
 co
-copy
-default_linemode 
-
-copy 
-extracthere 
 touch
 touch teste
 touch teste-2
-delete 
 search bluemam
 open_with qqqqq
 rename parceiras.xls
+delte
+default_linemode 
+copy
+copy 
+extracthere 
+rename versus_wolf.jpg
+open_with en:rename
+rename lock_dark-1.png
 delete
+rename claro-abr-2019.pdf
+
+delete 
+move 
+paste 
+paste here

@@ -22,7 +22,7 @@ fi
 # Enable programmable completion features.
 if [ -f /usr/share/bash-completion/bash_completion ]; then
     source /usr/share/bash-completion/bash_completion
-	source /usr/share/bash-completion/completions/pass
+	source /usr/share/bash-completion/completions/*
 fi
 
 # pkg "command not found" hook 
@@ -31,17 +31,15 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 # line wrap on windows resize.
 shopt -s checkwinsize
 
-# Fixing tilix error
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
-
 # Configure pinentry to use the correct TTY
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
+# pass
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true
+
 # Default applications
-export BROWSE=/usr/bin/firefox
+export BROWSE=/usr/bin/chromium
 export VISUAL=vim
 export EDITOR=vim
 set -o vi  # turn on vim on shell 
@@ -49,6 +47,7 @@ set -o vi  # turn on vim on shell
 # Exclude root from variables
 if [ "$(id -u)" != "0" ]; then
 	# Local variables
+	export SCRIPT_DIR="$HOME/.config/i3blocks/i3blocks_scripts"
 	export BACK="$HOME/Documents/$HOSTNAME"
 	export GITHUB="$HOME/Github/config_files"
 	export XDG_DATA_HOME="$HOME/.config"

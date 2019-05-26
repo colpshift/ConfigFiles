@@ -39,7 +39,7 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 
 # Default applications
-export BROWSE=/usr/bin/chromium
+export BROWSE=/usr/bin/firefox
 export VISUAL=vim
 export EDITOR=vim
 set -o vi  # turn on vim on shell 
@@ -60,3 +60,8 @@ if [ "$(id -u)" != "0" ]; then
 	export XDG_RUNTIME_DIR="/run/user/1000"
 	source "/home/colps/.local/bin/virtualenvwrapper.sh"
 fi
+
+# desktop information
+/usr/bin/neofetch --color_blocks off --colors 4 4 4 4 --ascii_distro arch_old_small --ascii_colors  4 4
+
+#

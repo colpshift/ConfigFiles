@@ -1,4 +1,3 @@
-extracthere
 search pixmaps
 rename lock_arch1.png
 bulkrename 
@@ -11,7 +10,6 @@ empty
 empty
 gm
 extracthere PyYAML
-open_with 
 rename tenda_fev-2019.pdf
 rename cond_jan-2019_rateio.pdf
 rename cond_fev-2019.pdf
@@ -25,16 +23,28 @@ open_with qqqqq
 rename parceiras.xls
 delte
 default_linemode 
-copy
 copy 
 extracthere 
 rename versus_wolf.jpg
 open_with en:rename
 rename lock_dark-1.png
-delete
 rename claro-abr-2019.pdf
-
 delete 
 move 
 paste 
 paste here
+
+open_with ename
+rename automate security DevSecOps
+rename DevSecOps Automate Security.pdf
+re 
+rename DevOps Innovate ITIL
+open_with 
+rename DevOps Automate Security SW Dev.pdf
+rename DevOps Innovate ITIL.pdf
+rename dark art.jpg
+rename ssh_tips.pdf
+help
+copy
+paste
+delete

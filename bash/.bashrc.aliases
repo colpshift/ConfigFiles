@@ -6,12 +6,12 @@
 # Description: local aliases
 # Last Modified: 14/01/2019 23:34
 
-alias ls='ls --color --group-directories-first'
-alias ll='ls -l --color --group-directories-first'
-alias la='ll -a'    # show hidden files and folders
-alias lx='ll -BX'	# sort by extension
-alias lz='ll -rS'	# sort by size
-alias lt='ll -rt'	# sort by date	
+alias ls='ls -h --color --group-directories-first'
+alias ll='ls -lh --color --group-directories-first'
+alias la='ll -ah'    # show hidden files and folders
+alias lx='ll -BXh'	# sort by extension
+alias lz='ll -rSh'	# sort by size
+alias lt='ll -rth'	# sort by date	
 alias dir='dir --color'
 alias grep='grep --color'
 alias dmesg='dmesg --color'
@@ -23,6 +23,7 @@ alias pacman='sudo pacman'
 alias journalctl='sudo journalctl'
 #alias pacu='sudo pacman -Syu'
 #alias auru='yaourt -Syua'
+alias yayu='yay -Syu'
 alias systemctl='sudo systemctl'
 alias se='ls /usr/bin | grep'
 alias calc=mate-calc-cmd

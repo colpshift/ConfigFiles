@@ -15,7 +15,7 @@ audible_bell = false
 bold_is_bright = true
 clickable_url = true
 dynamic_title = true
-font = Liberation Mono 11
+font = Inconsolata for Powerline Regular 12
 fullscreen = true 
 icon_name = terminal
 mouse_autohide = true
@@ -104,7 +104,7 @@ color21 = #ebdbb2
 
 # hints
 [hints]
-font = Monospace 11
+font = Monospace 10
 foreground = #dcdccc
 background = #3f3f3f
 active_foreground = #e68080

@@ -13,8 +13,9 @@
 set $mod Mod4
 
 ### font window titles
-#font pango: Roboto Mono Medium for Powerline 11
-font pango: Arimo for Poweline Regular 11
+#font pango: Roboto Mono Medium for Powerline 10
+font pango: Inconsolata for Powerline Regular 12
+
 ### window title alignment = left|center|right
 title_align left
 
@@ -25,7 +26,7 @@ smart_borders on
 default_border pixel 1 
 
 ### make all urxvts use a 1-pixel border:
-for_window [class="urxvtc"] border pixel 1
+for_window [class="termite"] border pixel 1
 
 ### drawing marks on window decoration = yes|no
 show_marks yes
@@ -52,8 +53,8 @@ default_orientation auto
 workspace_layout default
 
 ### automatically putting clients on specific workspaces
-assign [class="urxvtc"] 1   
-assign [class="Chromium"] 2 
+assign [class="termite"] 1   
+assign [class="firefox"] 2 
 assign [class="Sxiv"] 3 
 assign [class="Zathura"] 4 
 assign [class="Stremio"] 5 
@@ -67,16 +68,24 @@ exec --no-startup-id "compton -cC"
 #exec --no-startup-id nm-applet
 exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "sleep 2s && kalu"
-exec --no-startup-id urxvtc
-exec --no-startup-id urxvtc
+exec --no-startup-id termite
+exec --no-startup-id termite
 
 ### automatically putting clients on floating windows layout
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Kalu"] floating enable
 
 ### automatically putting workspaces on specific screens
-#workspace 1 output eDP1/
-#workspace 5 output HDMI1
+exec --no-startup-id "xrandr --output eDP1 --auto --output HDMI1 --auto --left-of eDP1"
+workspace 2 output eDP1
+workspace 3 output eDP1
+workspace 4 output eDP1
+workspace 5 output eDP1
+workspace 8 output eDP1
+workspace 1 output HDMI1
+workspace 6 output HDMI1
+workspace 7 output HDMI1
+workspace 9 output HDMI1
 
 ### focus wrapping = yes|no|force
 force_focus_wrapping yes
@@ -158,11 +167,10 @@ bindsym $mod+Shift+w reload
 bindsym $mod+Shift+e exit
 
 ### kill focused window
-bindsym $mod+Shift+q kill; workspace 1 
+bindsym $mod+Shift+q kill
 
 ### dmenu
-bindsym $mod+d exec --no-startup-id \
-dmenu_run -fn "Roboto Mono Medium for Powerline 11"
+bindsym $mod+d exec --no-startup-id dmenu_run
 
 ### change focus
 bindsym $mod+l focus left
@@ -269,16 +277,16 @@ mode "resize" {
 }
 
 ### app shortcuts
-bindsym $mod+Return		exec urxvtc
-bindsym $mod+a			exec urxvtc -e ranger
+bindsym $mod+Return		exec termite
+bindsym $mod+a			exec termite -e ranger
 bindsym $mod+z			exec rofi -show drun
-bindsym $mod+m			workspace 9 ; exec urxvtc -e neomutt  
+bindsym $mod+m			workspace 9 ; exec termite -e neomutt  
 #
-bindsym ctrl+b workspace 2 ; exec chromium
+bindsym ctrl+b workspace 2 ; exec firefox
 bindsym ctrl+m workspace 5 ; exec stremio
 bindsym ctrl+i workspace 6 ; exec virtualbox
 bindsym ctrl+n workspace 7 ; exec \
-urxvtc -e ncmpcpp -s visualizer && exec urxvtc -e ncmpcpp -s media_library
+termite --exec='ncmpcpp --screen media_library'
 bindsym ctrl+t workspace 8 ; exec \
 sh -c "/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" --detach 
 

@@ -4,7 +4,7 @@
 " Github: https://github.com/colpshift
 " Description: vim configuration file 
 " Last Modified: 14/01/2019 23:44
-
+	   
 "------------------------------------------------------------------------------
 " vim settings
 "------------------------------------------------------------------------------
@@ -16,7 +16,6 @@ filetype indent on
 filetype detect
 set encoding=utf-8
 set fileformat=unix
-"set exrc
 
 "------------------------------------------------------------------------------
 " Auto commands 
@@ -97,7 +96,7 @@ let g:rainbow_active = 1
 	let g:airline#extensions#tabline#enabled = 1
 	let g:airline_powerline_fonts = 1
 " spell
-	set spell
+	set nospell
 	set spelllang=en-US
 	set spellsuggest=best,5
 	let s:c=",underline"
@@ -112,7 +111,7 @@ let g:rainbow_active = 1
 	" better key bindings for UltiSnipsExpandTrigger
 	let g:UltiSnipsExpandTrigger = "<tab>"
 	let g:UltiSnipsJumpForwardTrigger = "<tab>"
-	let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+	"let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " ALE
 	let g:ale_completion_enabled = 0                       
 	let g:ale_sign_column_always = 1                      
@@ -175,7 +174,7 @@ set nostartofline		" Don’t reset cursor start of line when moving around.
 set clipboard=unnamedplus  " to use clipboard
 set ruler               " right side of the status line at the bottom
 set showmode            " change the color in according of mode
-"set mouse=a             " allow mouse clicks to change cursor position
+set mouse=a             " allow mouse clicks to change cursor position
 set showmatch           " highlight matching [{()}]
 set wildmenu            " expand the menu
 set showcmd             " show command in bottom bar

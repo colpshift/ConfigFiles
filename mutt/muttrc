@@ -127,7 +127,7 @@ set editor='vim'
 set signature="~/.signature_gmail"
 
 # mailcap path
-set mailcap_path=~/.mutt/mailcap
+set mailcap_path=$HOME/.mutt/mailcap
 
 # fancier printing quality
 set print_command="muttprint %s -p TO_FILE:/home/colps/Downloads/mail_message.pdf"
@@ -167,6 +167,7 @@ save-hook families-noreply@google.com "+finances"
 save-hook airbnb\\.com "+finances"
 save-hook jcaholding\\.com.br "+finances"
 save-hook informativoclaro\\.com.br "+finances"
+save-hook noreply@getmore.com.br "+finances"
 ## linux
 save-hook jovicailic\\.org "+linux"
 save-hook firefox\\.com "+linux"
@@ -186,6 +187,8 @@ save-hook freecodecamp\\.org "+discussion"
 save-hook brighttalk\\.com "+discussion"
 save-hook datascienceacademy\\.com.br "+discussion"
 save-hook torproject\\.org "+discussion"
+save-hook Mozilla@e.mozilla.org "+discussion"
+save-hook udemy\\.com "+discussion"
 ## spam
 save-hook linkedin\\.com +spam
 save-hook jobframe\\.net +spam

@@ -21,6 +21,7 @@ from i3pystatus.network import Network
 from i3pystatus.online import Online
 from i3pystatus.core.util import internet
 from i3pystatus.mail import imap
+from i3pystatus.weather import weathercom
 
 # Parser
 CONFIG = ConfigParser()
@@ -34,7 +35,20 @@ STATUS.register(
     "clock",
     color='#6bb6ff',
     format=" %d/%m/%y  %k:%M",
-    on_leftclick = "chromium https://calendar.google.com/calendar/r",
+    on_leftclick = "firefox https://calendar.google.com/",
+)
+
+# Show weather
+STATUS.register(
+    'weather',
+    format='[{icon}] {current_temp}{temp_unit}[ {update_error}]',
+    interval=900,
+    colorize=True,
+    hints={'markup': 'pango'},
+    backend=weathercom.Weathercom(
+        location_code='BRXX0241:1:BR',
+        units='metric',
+    )
 )
 
 # check email
@@ -50,7 +64,7 @@ if internet():
         color_unread='#ffa500',
         format_plural=(" {current_unread}/{unread}"),
         format=" {current_unread}/{unread}",
-        on_leftclick="chromium https://mail.google.com/mail/u/0/#inbox",
+        on_leftclick="firefox https://mail.google.com/",
         hide_if_null=False,
     )
 
@@ -103,7 +117,7 @@ STATUS.register(
     format_up=" {interface:.6}  {bytes_recv}K  {bytes_sent}K",
     format_down=" {interface:.6} ",
     interface="wlp3s0",
-    on_doubleleftclick="urxvtc -e sh -c nmcli connection show",
+    on_doubleleftclick="termite -e sh -c nmcli connection show",
 )
 
 # show available memory
@@ -116,7 +130,7 @@ STATUS.register(
     warn_percentage=70,
     alert_percentage=90,
     divisor=1024**3,
-    on_leftclick="urxvtc -e sh -c htop",
+    on_leftclick="termite -e htop",
 )
 
 # show cpu usage
@@ -124,14 +138,14 @@ STATUS.register(
     "load",
     critical_color='#ff0000',
     format=" {avg1} {avg5} {tasks}",
-    on_leftclick="urxvtc -e sh -c htop",
+    on_leftclick="termite -e sh -c htop",
 )
 
 # show system information
 STATUS.register(
     "uname",
     format='{release}',
-    on_leftclick="exec urxvtc -e sh -c neofetch; workspace 1 </>",
+    on_leftclick="exec termite -e sh -c neofetch; workspace 1 </>",
 )
 
 # Show keyboard locks

@@ -28,7 +28,7 @@ udiskie -Ans &
 [ ! -s ~/.config/mpd/pid ] && mpd
 
 # urxvt daemon
-urxvtd -q -o -f 
+#urxvtd -q -o -f 
 
 # i3 Screen lock start
 xss-lock -- i3lock -n -i /home/colps/Pictures/wallpapers/lock_cave.png -t &

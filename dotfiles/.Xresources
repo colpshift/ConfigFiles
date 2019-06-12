@@ -38,7 +38,8 @@
 ! Apearence
 !
 ! Font
-URxvt.font: xft:Inconsolata:size=12
+!URxvt.font: xft:Inconsolata:size=12
+URxvt.font: xft:Iosevka:size=11
 !
 ! Font spacing
 !URxvt.letterSpace: -2

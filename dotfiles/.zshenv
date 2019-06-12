@@ -13,4 +13,5 @@ export VISUAL=vim
 export EDITOR=vim
 
 # Variables
-export GITHUB="$HOME/Github"
+export HOSTNAME="colpsnote01"
+

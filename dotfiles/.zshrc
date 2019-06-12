@@ -3,28 +3,24 @@
 # ~/.zshrc
 #
 
-## Define zim location
-export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
-
-## Start zim
-[[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh
-
-## prompt
-prompt bart
-
-## command not found
-source /usr/share/doc/pkgfile/command-not-found.zsh
-
 ## completion features
 autoload -Uz compinit promptinit
 compinit
 promptinit
+## Improve appearance
+zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
+zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
+## Auto correction
+setopt correctall
+## Auto commands
+setopt autocd
+setopt extendedglob
 ## autocompletion with an arrow-key driven interface
-#zstyle ':completion:*' menu select
+zstyle ':completion:*' menu select
 ## autocompletion of command line switches for aliases
-#setopt COMPLETE_ALIASES
+setopt COMPLETE_ALIASES
 ## Fish-like syntax highlighting
-#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ## command not found
 source /usr/share/doc/pkgfile/command-not-found.zsh
 ## Persistent rehash
@@ -44,7 +40,7 @@ rehash_precmd() {
 add-zsh-hook -Uz precmd rehash_precmd
 
 ## history searches
-HISTFILE="${ZDOTDIR}/.zsh_history"
+HISTFILE="$HOME/.zsh_history"
 HISTSIZE='10000'
 SAVEHIST="${HISTSIZE}"
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
@@ -139,3 +135,5 @@ alias gpg='gpg2'
 alias urxvt='sh $HOME/.scripts/urxvts.sh'
 alias pkgfile='sudo pkgfile'
 
+## prompt
+prompt bart

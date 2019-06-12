@@ -2,7 +2,7 @@
 " File: ~/.vimrc
 " Author: Colps
 " Github: https://github.com/colpshift
-" Description: vim configuration file 
+" Description: vim configuration file
 " Last Modified: 14/01/2019 23:44
 
 "------------------------------------------------------------------------------
@@ -19,7 +19,7 @@ set fileformat=unix
 set exrc
 
 "------------------------------------------------------------------------------
-" Auto commands 
+" Auto commands
 "------------------------------------------------------------------------------
 "au BufWinLeave * mkview				" save folds
 "au VimEnter * call RestoreFolds()		" restore folds
@@ -27,12 +27,12 @@ set exrc
 "------------------------------------------------------------------------------
 " Scripts
 "------------------------------------------------------------------------------
-" Restore Folds 
+" Restore Folds
 function RestoreFolds()
     if @% == ""
-		set encoding=utf-8 	
+		set encoding=utf-8
     elseif filereadable(@%) == 0
-		set encoding=utf-8 
+		set encoding=utf-8
     elseif line('$') == 1 && col('$') == 1
 		set encoding=utf-8
 	else
@@ -48,6 +48,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'morhetz/gruvbox'
+	Plug 'andreypopp/vim-colors-plain'
 	Plug 'TaDaa/vimade'
 	Plug 'luochen1990/rainbow'
 	Plug 'vim-scripts/AutoClose'
@@ -68,7 +69,6 @@ call plug#end()
 " rainbow
 let g:rainbow_active = 1
 " gruvbox
-	set background=dark
 	let g:gruvbox_contrast_dark = 'hard'
 	let g:gruvbox_invert_tabline = '1'
 	let g:gruvbox_invert_indent_guides = '1'
@@ -100,14 +100,14 @@ let g:rainbow_active = 1
 	let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " ALE
 	let g:ale_completion_enabled = 1
-	let g:ale_sign_column_always = 1                      
-	let g:ale_set_quickfix = 1 
+	let g:ale_sign_column_always = 1
+	let g:ale_set_quickfix = 1
 	let g:ale_set_loclist = 0
-	let g:airline#extensions#ale#enabled = 1                
-	let g:ale_open_list = 1                                
-	let g:ale_keep_list_window_open = 0                   
+	let g:airline#extensions#ale#enabled = 1
+	let g:ale_open_list = 1
+	let g:ale_keep_list_window_open = 0
 	let g:ale_fix_on_save = 1
-	let g:ale_fixers = { 
+	let g:ale_fixers = {
 				\ '*': ['remove_trailing_lines', 'trim_whitespace'],
 				\ 'sh': ['shfmt'],
 				\ 'python': ['autopep8', 'black', 'add_blank_lines_for_python_control_statements'],
@@ -118,7 +118,7 @@ let g:rainbow_active = 1
 "----------------------------------------------'--------------------------------
 " abbreviations
 ab ~/ $HOME
-" run :w!! command (type fast), to save ready only files. 
+" run :w!! command (type fast), to save ready only files.
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 " auto indent the whole file and keep your cursor in the last position
 nmap <leader>ia mzgg=G`z
@@ -132,7 +132,7 @@ smap <c-j> <Plug>(complete_parameter#goto_next_parameter)
 imap <c-j> <Plug>(complete_parameter#goto_next_parameter)
 smap <c-k> <Plug>(complete_parameter#goto_previous_parameter)
 imap <c-k> <Plug>(complete_parameter#goto_previous_parameter)
-	
+
 "------------------------------------------------------------------------------
 " python - programming
 "------------------------------------------------------------------------------
@@ -148,14 +148,14 @@ EOF
 
 " enable all python highlight
 let python_highlight_all=1
-	
+
 "------------------------------------------------------------------------------
 " interface
 "------------------------------------------------------------------------------
 set shortmess=atIc		" Don’t show the intro message when starting Vim
 set number
-set relativenumber             
-set cursorline         
+set relativenumber
+set cursorline
 set nostartofline		" Don’t reset cursor start of line when moving around.
 set clipboard+=unnamed  " to use clipboard
 set ruler               " right side of the status line at the bottom
@@ -167,13 +167,14 @@ set showcmd             " show command in bottom bar
 set colorcolumn=+1      " color de last column to wrap.
 set textwidth=79        " set width for text
 set winwidth=100        " set the minimal width of the current window.
-colorscheme gruvbox
+set background="dark"
+colorscheme plain
 
 "------------------------------------------------------------------------------
 " searching
 "------------------------------------------------------------------------------
 set ignorecase " case insensitive
-set smartcase  " use case if any caps used 
+set smartcase  " use case if any caps used
 set incsearch  " show match as search proceeds
 set hlsearch   " highlight matches
 
@@ -182,8 +183,8 @@ set hlsearch   " highlight matches
 "------------------------------------------------------------------------------
 set autoindent          " indent match with the previous line
 set smartindent         " indent after colon for if or for statements
-set tabstop=4           " Python default           
-set shiftwidth=4        " The amount to block indent when using 
+set tabstop=4           " Python default
+set shiftwidth=4        " The amount to block indent when using
 set softtabstop=4       " Causes backspace to delete 4 spaces converted TAB
 set smarttab            " Uses shiftwidth instead of tabstop at start of lines
 set noexpandtab         " Replaces a TAB with spaces--more portable
@@ -194,15 +195,14 @@ set backspace=eol,start,indent	" Make sure backspace works in insert mode
 "------------------------------------------------------------------------------
 set foldenable							" enable fold
 set foldmethod=indent					" fold based on indent level
-set foldcolumn=4						" show column indent
+set foldcolumn=3					" show column indent
 
 "------------------------------------------------------------------------------
 " swap, undo and backup
 "------------------------------------------------------------------------------
 set swapfile
-set directory=$HOME/.vim/swaps/  
+set directory=$HOME/.vim/swaps/
 set undofile
 set undodir=$HOME/.vim/undo/
 set backup
 set backupdir=$HOME/.vim/backups/
-

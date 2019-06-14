@@ -1,12 +1,13 @@
 "
-" File: ~/.vimrc
+" File: .vimrc
 " Author: Colps
 " Github: https://github.com/colpshift
 " Description: vim configuration file
-" Last Modified: 14/01/2019 23:44
+" Last Modified: June 14, 2019
+"
 
 "------------------------------------------------------------------------------
-" vim settings
+" start settings
 "------------------------------------------------------------------------------
 set nocompatible
 syntax on
@@ -14,9 +15,26 @@ filetype on
 filetype plugin on
 filetype indent on
 filetype detect
-set encoding=utf-8
 set fileformat=unix
-set exrc
+set autoread			" Automatically re-read files if unmodified inside Vim.
+set confirm             " Display confirmation dialog when closing unsaved file.
+set nomodeline          " Ignore file’s mode lines.
+
+"------------------------------------------------------------------------------
+" Performance
+"------------------------------------------------------------------------------
+set complete-=i		" Limit the files searched for auto-completes.
+set lazyredraw		" Don’t update screen during macro and script execution.
+
+"------------------------------------------------------------------------------
+" Text Rendering
+"------------------------------------------------------------------------------
+set display+=lastline	" Always try to show a paragraph’s last line.
+set encoding=utf-8		" Use an encoding that supports unicode.
+set linebreak			" Avoid wrapping a line in the middle of a word.
+set scrolloff=1			" Number screen lines keep above and below cursor.
+set sidescrolloff=5		" Number screen columns keep  left and right cursor.
+set wrap				" Enable line wrapping.
 
 "------------------------------------------------------------------------------
 " Auto commands
@@ -48,10 +66,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'morhetz/gruvbox'
-	Plug 'andreypopp/vim-colors-plain'
 	Plug 'TaDaa/vimade'
 	Plug 'luochen1990/rainbow'
-	Plug 'vim-scripts/AutoClose'
 	Plug 'vim-scripts/indentpython.vim'
 	Plug 'google/yapf'
 	Plug 'w0rp/ale'
@@ -69,7 +85,7 @@ call plug#end()
 " rainbow
 let g:rainbow_active = 1
 " gruvbox
-	let g:gruvbox_contrast_dark = 'hard'
+	let g:gruvbox_contrast_dark = 'medium'
 	let g:gruvbox_invert_tabline = '1'
 	let g:gruvbox_invert_indent_guides = '1'
 	let g:gruvbox_improved_strings = '0'
@@ -86,7 +102,7 @@ let g:rainbow_active = 1
 "	set spelllang=en-US
 "	set spellsuggest=best,5
 "	let s:c=",underline"
-"x	let spell_auto_type="text,doc,mail,"
+"	let spell_auto_type="text,doc,mail,"
 " YCM
 	" make YCM compatible with UltiSnips (using supertab)
 	let g:ycm_autoclose_preview_window_after_completion=1
@@ -167,8 +183,10 @@ set showcmd             " show command in bottom bar
 set colorcolumn=+1      " color de last column to wrap.
 set textwidth=79        " set width for text
 set winwidth=100        " set the minimal width of the current window.
-set background="dark"
-colorscheme plain
+set noerrorbells		" Disable beep on errors.
+set visualbell			" Flash the screen instead of beeping on errors.
+set background=dark
+colorscheme gruvbox
 
 "------------------------------------------------------------------------------
 " searching
@@ -179,23 +197,24 @@ set incsearch  " show match as search proceeds
 set hlsearch   " highlight matches
 
 "------------------------------------------------------------------------------
-" indenting
+" indention
 "------------------------------------------------------------------------------
 set autoindent          " indent match with the previous line
 set smartindent         " indent after colon for if or for statements
 set tabstop=4           " Python default
 set shiftwidth=4        " The amount to block indent when using
+set shiftround			" Round the indentation to earest multiple shiftwidth.
 set softtabstop=4       " Causes backspace to delete 4 spaces converted TAB
 set smarttab            " Uses shiftwidth instead of tabstop at start of lines
-set noexpandtab         " Replaces a TAB with spaces--more portable
+set expandtab			" Replaces a TAB with spaces--more portable
 set backspace=eol,start,indent	" Make sure backspace works in insert mode
 
 "------------------------------------------------------------------------------
 " folding
 "------------------------------------------------------------------------------
-set foldenable							" enable fold
-set foldmethod=indent					" fold based on indent level
-set foldcolumn=3					" show column indent
+set foldenable			" enable fold
+set foldmethod=indent	" fold based on indent level
+set foldcolumn=3		" show column indent
 
 "------------------------------------------------------------------------------
 " swap, undo and backup
@@ -206,3 +225,4 @@ set undofile
 set undodir=$HOME/.vim/undo/
 set backup
 set backupdir=$HOME/.vim/backups/
+

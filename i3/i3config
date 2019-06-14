@@ -13,9 +13,9 @@
 set $mod Mod4
 
 ### font window titles
-#font pango: Awesome 5 Brands Regular 11
-#font pango: Inconsolata 12
+font pango: Awesome 5 Brands Regular 11
 font pango: Iosevka 11
+#font pango: Inconsolata 12
 
 ### window title alignment = left|center|right
 title_align left
@@ -288,7 +288,7 @@ bindsym Ctrl+Shift+i workspace 6 ; exec virtualbox
 bindsym Ctrl+Shift+n workspace 7 ; exec \
 urxvt -e ncmpcpp --screen media_library
 bindsym Ctrl+Shift+t workspace 8 ; exec \
-sh -c "/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" --detach
+sh -c "/opt/tor-browser_en-US/Browser/start-tor-browser" --detach
 
 ### Multimedia
 # Redirect sound to headphones

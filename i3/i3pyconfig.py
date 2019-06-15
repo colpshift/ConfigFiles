@@ -1,8 +1,11 @@
 """
-$HOME.config/i3pystatus/i3pystatus.py
-Description: i3 pystatus configuration file
-Last Modified: 11/02/2019 02:14
+File: $HOME/.config/i3pystatus/i3pyconfig.py
+Author: Colps
+Github: https://github.com/colpshift
+Description: i3pystatus configuration
+Last Modified: June 14, 2019
 """
+#
 # https://i3pystatus.readthedocs.io/en/latest/i3pystatus.html#i3
 # https://fontawesome.com/cheatsheet?from=io
 # https://www.colorhexa.com/e60053

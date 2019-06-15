@@ -13,9 +13,9 @@
 set $mod Mod4
 
 ### font window titles
-#font pango: Awesome 5 Brands Regular 11
-#font pango: Inconsolata 12
+font pango: Awesome 5 Brands Regular 11
 font pango: Iosevka 11
+#font pango: Inconsolata 12
 
 ### window title alignment = left|center|right
 title_align left
@@ -74,17 +74,8 @@ exec --no-startup-id urxvt
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Kalu"] floating enable
 
-### automatically putting workspaces on specific screens
-exec --no-startup-id "xrandr --output eDP-1 --auto --output HDMI-1 --auto --left-of eDP-1"
-workspace 2 output eDP-1
-workspace 3 output eDP-1
-workspace 4 output eDP-1
-workspace 5 output eDP-1
-workspace 8 output eDP-1
-workspace 1 output HDMI-1
-workspace 6 output HDMI-1
-workspace 7 output HDMI-1
-workspace 9 output HDMI-1
+### using internal and external monitor
+#exec --no-startup-id "xrandr --output eDP-1 --auto --output HDMI-1 --auto --left-of eDP-1"
 
 ### focus wrapping = yes|no|force
 force_focus_wrapping yes
@@ -288,7 +279,7 @@ bindsym Ctrl+Shift+i workspace 6 ; exec virtualbox
 bindsym Ctrl+Shift+n workspace 7 ; exec \
 urxvt -e ncmpcpp --screen media_library
 bindsym Ctrl+Shift+t workspace 8 ; exec \
-sh -c "/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" --detach
+sh -c "/opt/tor-browser_en-US/Browser/start-tor-browser" --detach
 
 ### Multimedia
 # Redirect sound to headphones

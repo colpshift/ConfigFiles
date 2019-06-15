@@ -124,7 +124,6 @@ alias lt='ls -rth' # sort by date
 alias dir='dir --color'
 alias grep='grep --color'
 alias dmesg='dmesg --color'
-alias ccat='highlight --out-format=ansia'
 alias vi='vim'
 alias journalctl='sudo journalctl'
 alias systemctl='sudo systemctl'
@@ -134,6 +133,7 @@ alias yayu='yay -Syu && pkgfile -u'
 alias gpg='gpg2'
 alias urxvt='sh $HOME/.scripts/urxvts.sh'
 alias pkgfile='sudo pkgfile'
-alias cat="bat --theme zanburn"
+alias cat="bat --theme TwoDark"
+
 ## prompt
 prompt bart

@@ -134,6 +134,6 @@ alias yayu='yay -Syu && pkgfile -u'
 alias gpg='gpg2'
 alias urxvt='sh $HOME/.scripts/urxvts.sh'
 alias pkgfile='sudo pkgfile'
-
+alias cat="bat --theme zanburn"
 ## prompt
 prompt bart

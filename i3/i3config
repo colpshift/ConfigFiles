@@ -74,17 +74,8 @@ exec --no-startup-id urxvt
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Kalu"] floating enable
 
-### automatically putting workspaces on specific screens
-exec --no-startup-id "xrandr --output eDP-1 --auto --output HDMI-1 --auto --left-of eDP-1"
-workspace 2 output eDP-1
-workspace 3 output eDP-1
-workspace 4 output eDP-1
-workspace 5 output eDP-1
-workspace 8 output eDP-1
-workspace 1 output HDMI-1
-workspace 6 output HDMI-1
-workspace 7 output HDMI-1
-workspace 9 output HDMI-1
+### using internal and external monitor
+#exec --no-startup-id "xrandr --output eDP-1 --auto --output HDMI-1 --auto --left-of eDP-1"
 
 ### focus wrapping = yes|no|force
 force_focus_wrapping yes

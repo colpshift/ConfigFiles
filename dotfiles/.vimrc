@@ -85,49 +85,49 @@ call plug#end()
 " rainbow
 let g:rainbow_active = 1
 " gruvbox
-	let g:gruvbox_contrast_dark = 'medium'
-	let g:gruvbox_invert_tabline = '1'
-	let g:gruvbox_invert_indent_guides = '1'
-	let g:gruvbox_improved_strings = '0'
-	let g:gruvbox_improved_warnings ='1'
+    let g:gruvbox_contrast_dark = 'medium'
+    let g:gruvbox_invert_tabline = '1'
+    let g:gruvbox_invert_indent_guides = '1'
+    let g:gruvbox_improved_strings = '0'
+    let g:gruvbox_improved_warnings ='1'
 " vimade
-	let g:vimade = {}
-	let g:vimade.fadelevel = 0.3
+    let g:vimade = {}
+    let g:vimade.fadelevel = 0.3
 " airline
-	let g:airline_theme='gruvbox'
-	let g:airline#extensions#tabline#enabled = 1
-	let g:airline_powerline_fonts = 1
+    let g:airline_theme='gruvbox'
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline_powerline_fonts = 1
 " spell
-"	set spell
-"	set spelllang=en-US
-"	set spellsuggest=best,5
-"	let s:c=",underline"
-"	let spell_auto_type="text,doc,mail,"
+    "set spell
+    "set spelllang=en-US
+    "set spellsuggest=best,5
+    "let s:c=",underline"
+    "let spell_auto_type="text,doc,mail,"
 " YCM
-	" make YCM compatible with UltiSnips (using supertab)
-	let g:ycm_autoclose_preview_window_after_completion=1
-	let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-	let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-	let g:SuperTabDefaultCompletionType = '<C-n>'
+    let g:ycm_autoclose_preview_window_after_completion=1
+    let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+    let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+    let g:SuperTabDefaultCompletionType = '<C-n>'
 " UltiSnips
-	" better key bindings for UltiSnipsExpandTrigger
-	let g:UltiSnipsExpandTrigger = "<tab>"
-	let g:UltiSnipsJumpForwardTrigger = "<tab>"
-	let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+    let g:UltiSnipsExpandTrigger = "<tab>"
+    let g:UltiSnipsJumpForwardTrigger = "<tab>"
+    let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " ALE
-	let g:ale_completion_enabled = 1
-	let g:ale_sign_column_always = 1
-	let g:ale_set_quickfix = 1
-	let g:ale_set_loclist = 0
-	let g:airline#extensions#ale#enabled = 1
-	let g:ale_open_list = 1
-	let g:ale_keep_list_window_open = 0
-	let g:ale_fix_on_save = 1
-	let g:ale_fixers = {
-				\ '*': ['remove_trailing_lines', 'trim_whitespace'],
-				\ 'sh': ['shfmt'],
-				\ 'python': ['autopep8', 'black', 'add_blank_lines_for_python_control_statements'],
-				\}
+    let g:ale_enabled = 0
+    let g:ale_completion_enabled = 1
+    let g:ale_sign_column_always = 1
+    let g:ale_set_highlights = 1
+    let g:ale_echo_cursor = 1
+    let g:ale_cursor_detail = 1
+    let g:ale_set_quickfix = 1
+    let g:ale_set_loclist = 0
+    let g:airline#extensions#ale#enabled = 1
+    let g:ale_list_window_size = 5
+    let g:ale_lint_on_text_changed = 1
+    let g:ale_fixers = {
+            \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+            \}
+    let g:ale_enabled = 1
 
 "------------------------------------------------------------------------------
 " mapping and abbreviations
@@ -225,4 +225,3 @@ set undofile
 set undodir=$HOME/.vim/undo/
 set backup
 set backupdir=$HOME/.vim/backups/
-

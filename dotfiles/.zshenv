@@ -5,7 +5,7 @@
 
 # path
 typeset -U path
-path=(/bin /usr/bin /sbin /usr/sbin /usr/local/bin $HOME/.local/bin/ $path[@])
+path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
 
 # Default applications
 export BROWSE="/usr/bin/firefox"
@@ -14,4 +14,5 @@ export EDITOR=vim
 
 # Variables
 export HOSTNAME="colpsnote01"
+export BAKDIR="/home/colps/BAK/backup"
 

@@ -96,7 +96,7 @@ let g:rainbow_active = 1
 " airline
     let g:airline_theme='gruvbox'
     let g:airline#extensions#tabline#enabled = 1
-    let g:airline_powerline_fonts = 1
+    let g:airline_highlighting_cache = 1
 " spell
     "set spell
     "set spelllang=en-US

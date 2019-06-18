@@ -1,5 +1,5 @@
 #
-# /etc/pacman.d/hooks/cleanpkg.hook
+# /etc/pacman.d/hooks/filepkg.hook
 #
 [Trigger]
 Operation = Remove
@@ -9,6 +9,6 @@ Type = Package
 Target = *
 
 [Action]
-Description = Keep the last cache and the currently installed.
+Description = update the pkgfile list.
 When = PostTransaction
-Exec = /usr/bin/paccache -rvk2
+Exec = /usr/bin/pkgfile -u

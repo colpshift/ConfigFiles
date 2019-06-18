@@ -1,5 +1,5 @@
 #
-# $HDC.config/i3/config
+# $HOME/.config/i3/config
 #
 # Description: i3wm configuration file
 # Last Modified: 14/01/2019 23:43
@@ -281,7 +281,7 @@ urxvt -e ncmpcpp --screen media_library
 bindsym Ctrl+Shift+t workspace 8 ; exec \
 sh -c "/opt/tor-browser_en-US/Browser/start-tor-browser" --detach
 
-### Multimedia
+### audio
 # Redirect sound to headphones
 bindsym $mod+n exec "/usr/local/bin/switch-audio-port"
 # volume
@@ -296,3 +296,8 @@ bindsym $mod+XF86AudioLowerVolume exec amixer -D \
 pulse sset Master 1%- && pkill -RTMIN+1 i3blocks
 # mute
 bindsym XF86AudioMute exec amixer sset Master toggle && killall -USR1 i3blocks
+
+### brightness
+bindsym XF86MonBrightnessDown exec /home/colps/.scripts/brightness.sh -5
+bindsym XF86MonBrightnessUp exec /home/colps/.scripts/brightness.sh 5
+

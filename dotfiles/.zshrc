@@ -3,29 +3,29 @@
 # ~/.zshrc
 #
 
-## completion features
+### completion features
 autoload -Uz compinit promptinit
 compinit
 promptinit
-## Improve appearance
+### Improve appearance
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
-## Auto correction
+### Auto correction
 setopt correctall
-## Auto commands
+### Auto commands
 setopt autocd
 setopt extendedglob
-## autocompletion with an arrow-key driven interface
+### autocompletion with an arrow-key driven interface
 zstyle ':completion:*' menu select
-## autocompletion of command line switches for aliases
+### autocompletion of command line switches for aliases
 setopt COMPLETE_ALIASES
-## Fish-like syntax highlighting
+### Fish-like syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-## command not found
+### command not found
 source /usr/share/doc/pkgfile/command-not-found.zsh
-## Persistent rehash
+### Persistent rehash
 zstyle ':completion:*' rehash true
-## On-demand rehash
+### On-demand rehash
 zshcache_time="$(date +%s%N)"
 autoload -Uz add-zsh-hook
 rehash_precmd() {
@@ -39,7 +39,7 @@ rehash_precmd() {
 }
 add-zsh-hook -Uz precmd rehash_precmd
 
-## history searches
+### history searches
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE='10000'
 SAVEHIST="${HISTSIZE}"
@@ -49,7 +49,7 @@ zle -N down-line-or-beginning-search
 [[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   up-line-or-beginning-search
 [[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
 
-## Keymapping
+### Keymapping
 typeset -g -A key
 #
 key[Home]="${terminfo[khome]}"
@@ -64,7 +64,7 @@ key[Right]="${terminfo[kcuf1]}"
 key[PageUp]="${terminfo[kpp]}"
 key[PageDown]="${terminfo[knp]}"
 key[ShiftTab]="${terminfo[kcbt]}"
-## setup key accordingly
+### setup key accordingly
 [[ -n "${key[Home]}"      ]] && bindkey -- "${key[Home]}"      beginning-of-line
 [[ -n "${key[End]}"       ]] && bindkey -- "${key[End]}"       end-of-line
 [[ -n "${key[Insert]}"    ]] && bindkey -- "${key[Insert]}"    overwrite-mode
@@ -77,7 +77,7 @@ key[ShiftTab]="${terminfo[kcbt]}"
 [[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"    beginning-of-buffer-or-history
 [[ -n "${key[PageDown]}"  ]] && bindkey -- "${key[PageDown]}"  end-of-buffer-or-history
 [[ -n "${key[ShiftTab]}"  ]] && bindkey -- "${key[ShiftTab]}"  reverse-menu-complete
-## make sure the terminal is in application mode
+### make sure the terminal is in application mode
 if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 	autoload -Uz add-zle-hook-widget
 	function zle_application_mode_start {
@@ -90,7 +90,7 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
-## help
+### help
 autoload -Uz run-help
 alias help='run-help'
 #
@@ -102,7 +102,11 @@ autoload -Uz run-help-sudo
 autoload -Uz run-help-svk
 autoload -Uz run-help-svn
 
-## color man
+### fzf completion
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+### color man
 man() {
     env LESS_TERMCAP_mb=$'\E[01;31m' \
     LESS_TERMCAP_md=$'\E[01;38;5;74m' \
@@ -114,7 +118,7 @@ man() {
     man "$@"
 }
 
-## aliases
+### aliases
 alias ls='ls -l --color=auto --group-directories-first'
 alias ll='ls -lh'
 alias la='ls -ah'  # show hidden files and folders
@@ -131,11 +135,14 @@ alias journalctl='sudo journalctl'
 alias systemctl='sudo systemctl'
 alias pacman='sudo pacman --color=always'
 alias pacu='pacman -Syu'
+alias paci='sh $HOME/.scripts/fzf_pkg.sh'
 alias yayu='yay -Syu'
 alias gpg='gpg2'
 alias urxvt='sh $HOME/.scripts/urxvts.sh'
 alias pkgfile='sudo pkgfile'
 alias cat="bat --theme TwoDark"
 
-## prompt
+### prompt
 prompt bart
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

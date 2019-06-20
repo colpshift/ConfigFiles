@@ -69,8 +69,11 @@ call plug#begin('~/.vim/plugged')
 	Plug 'TaDaa/vimade'
 	Plug 'luochen1990/rainbow'
 	Plug 'vim-scripts/indentpython.vim'
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf.vim'
+    Plug 'alok/notational-fzf-vim'
 	Plug 'google/yapf'
-	Plug 'w0rp/ale'
+    Plug 'w0rp/ale'
 	Plug 'Valloric/YouCompleteMe'
 	Plug 'tenfyzhong/CompleteParameter.vim'
 	Plug 'SirVer/ultisnips'
@@ -128,6 +131,31 @@ let g:rainbow_active = 1
             \ '*': ['remove_trailing_lines', 'trim_whitespace'],
             \}
     let g:ale_enabled = 1
+" FZF
+    let g:fzf_action = {
+    \ 'ctrl-t': 'tab split',
+    \ 'ctrl-x': 'split',
+    \ 'ctrl-v': 'vsplit' }
+    " Default fzf layout  - down / up / left / right
+    let g:fzf_layout = { 'down': '~40%' }
+    " Customize fzf colors to match your color scheme
+    let g:fzf_colors =
+    \ { 'fg':      ['fg', 'Normal'],
+    \ 'bg':      ['bg', 'Normal'],
+    \ 'hl':      ['fg', 'Comment'],
+    \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+    \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+    \ 'hl+':     ['fg', 'Statement'],
+    \ 'info':    ['fg', 'PreProc'],
+    \ 'border':  ['fg', 'Ignore'],
+    \ 'prompt':  ['fg', 'Conditional'],
+    \ 'pointer': ['fg', 'Exception'],
+    \ 'marker':  ['fg', 'Keyword'],
+    \ 'spinner': ['fg', 'Label'],
+    \ 'header':  ['fg', 'Comment'] }
+    let g:fzf_history_dir = '~/.local/share/fzf-history'
+" Notational FZF
+let g:nv_search_paths = ['~/Documents']
 
 "------------------------------------------------------------------------------
 " mapping and abbreviations
@@ -191,10 +219,10 @@ colorscheme gruvbox
 "------------------------------------------------------------------------------
 " searching
 "------------------------------------------------------------------------------
-set ignorecase " case insensitive
-set smartcase  " use case if any caps used
-set incsearch  " show match as search proceeds
-set hlsearch   " highlight matches
+set ignorecase      " case insensitive
+set smartcase       " use case if any caps used
+set incsearch       " show match as search proceeds
+set hlsearch        " highlight matches
 
 "------------------------------------------------------------------------------
 " indention

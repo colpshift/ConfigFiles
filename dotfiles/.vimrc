@@ -66,6 +66,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'morhetz/gruvbox'
+    Plug 'RRethy/vim-illuminate'
 	Plug 'TaDaa/vimade'
 	Plug 'luochen1990/rainbow'
 	Plug 'vim-scripts/indentpython.vim'
@@ -85,6 +86,16 @@ call plug#end()
 "------------------------------------------------------------------------------
 " plugins configuration
 "------------------------------------------------------------------------------
+" Illuminate
+    " Time in milliseconds (default 250)
+    let g:Illuminate_delay = 250
+    " blacklist
+    let g:Illuminate_ftblacklist = ['nerdtree']
+    " whitelist by groups
+    let g:Illuminate_ftHighlightGroups = {
+        \ 'vim': ['vimVar', 'vimString', 'vimLineComment',
+        \         'vimFuncName', 'vimFunction', 'vimUserFunc', 'vimFunc']
+        \ }
 " rainbow
 let g:rainbow_active = 1
 " gruvbox

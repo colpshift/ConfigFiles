@@ -1,5 +1,5 @@
 #
-# /etc/pacman.d/hooks/cleanorphan.hook
+# /etc/pacman.d/hooks/pac_cleanorphan.hook
 #
 [Trigger]
 Operation = Remove

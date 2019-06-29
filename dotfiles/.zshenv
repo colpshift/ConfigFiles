@@ -5,12 +5,15 @@
 
 ### path
 typeset -U path
-path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
+path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $(ruby -e 'puts Gem.user_dir')/bin  $path[@])
+
+### systemd user
+export XDG_RUNTIME_DIR="/run/user/1000"
 
 ### default applications
 export BROWSE="/usr/bin/firefox"
-export VISUAL=vim
-export EDITOR=vim
+export VISUAL="/usr/local/bin/vim"
+export EDITOR="/usr/local/bin/vim"
 
 ### directories
 export HOSTNAME="colpsnote01"

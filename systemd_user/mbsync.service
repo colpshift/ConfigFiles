@@ -1,0 +1,11 @@
+[Unit]
+Description=Mailbox synchronization service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/mbsync -aqq
+ExecStartPost=/home/colps/.scripts/mail_update.sh
+
+[Install]
+Alias=mbsync.service
+

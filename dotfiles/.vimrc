@@ -69,6 +69,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'RRethy/vim-illuminate'
 	Plug 'TaDaa/vimade'
 	Plug 'luochen1990/rainbow'
+    Plug 'justinmk/vim-sneak'
+    Plug 'kshenoy/vim-signature'
 	Plug 'vim-scripts/indentpython.vim'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
@@ -81,11 +83,18 @@ call plug#begin('~/.vim/plugged')
 	Plug 'honza/vim-snippets'
 	Plug 'ervandew/supertab'
 	Plug 'francoiscabrol/ranger.vim'
+    Plug 'felipec/notmuch-vim'
 call plug#end()
 
 "------------------------------------------------------------------------------
 " plugins configuration
 "------------------------------------------------------------------------------
+" rainbow
+let g:rainbow_active = 1
+" sneak
+    let g:sneak#label = 1
+    map f <Plug>Sneak_s
+    map F <Plug>Sneak_S
 " Illuminate
     " Time in milliseconds (default 250)
     let g:Illuminate_delay = 250
@@ -96,21 +105,19 @@ call plug#end()
         \ 'vim': ['vimVar', 'vimString', 'vimLineComment',
         \         'vimFuncName', 'vimFunction', 'vimUserFunc', 'vimFunc']
         \ }
-" rainbow
-let g:rainbow_active = 1
 " gruvbox
     let g:gruvbox_contrast_dark = 'medium'
     let g:gruvbox_invert_tabline = '1'
     let g:gruvbox_invert_indent_guides = '1'
-    let g:gruvbox_improved_strings = '0'
     let g:gruvbox_improved_warnings ='1'
 " vimade
     let g:vimade = {}
     let g:vimade.fadelevel = 0.3
 " airline
     let g:airline_theme='gruvbox'
-    let g:airline#extensions#tabline#enabled = 1
     let g:airline_highlighting_cache = 1
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline_powerline_fonts = 1
 " spell
     "set spell
     "set spelllang=en-US

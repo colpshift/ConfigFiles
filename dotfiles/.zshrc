@@ -131,8 +131,6 @@ alias dmesg='dmesg --color'
 alias df='df -h'
 alias du='du -h'
 alias vi='vim'
-alias journalctl='sudo journalctl'
-alias systemctl='sudo systemctl'
 alias pacman='sudo pacman --color=always'
 alias pacu='pacman -Syu'
 alias paci='sh $HOME/.scripts/fzf_pkg.sh'
@@ -141,6 +139,7 @@ alias gpg='gpg2'
 alias urxvt='sh $HOME/.scripts/urxvts.sh'
 alias pkgfile='sudo pkgfile'
 alias cat="bat --theme TwoDark"
+alias notmuch-vim='vim -c NotMuch'
 
 ### prompt
 prompt bart

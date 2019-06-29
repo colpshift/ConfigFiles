@@ -1,0 +1,10 @@
+[Unit]
+Description=Provide autocutsel daemon
+
+[Service]
+ExecStart=/home/colps/.scripts/autocutsel_start.sh
+Restart=always
+
+[Install]
+Alias=autocutsel.service
+

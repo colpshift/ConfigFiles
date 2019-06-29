@@ -27,16 +27,3 @@ fi
 # keyboard layout
 setxkbmap br
 
-# autocutsel
-autocutsel -fork &
-autocutsel -selection PRIMARY -fork &
-
-# udiskie
-udiskie -Ans &
-
-# MPD daemon start
-[ ! -s ~/.config/mpd/pid ] && mpd
-
-# urxvt daemon
-urxvtd -q -o -f 
-

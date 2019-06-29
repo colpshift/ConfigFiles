@@ -1,0 +1,10 @@
+[Unit]
+Description=Provide audio player that has a server-client architecture. 
+
+[Service]
+ExecStart=/home/colps/.scripts/mpd_start.sh
+Restart=always
+
+[Install]
+Alias=mpd.service
+

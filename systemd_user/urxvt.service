@@ -1,0 +1,10 @@
+[Unit]
+Description=Provide urxvt server.
+
+[Service]
+ExecStart=/usr/bin/urxvtd -q -o -f
+Restart=always
+
+[Install]
+Alias=urxvt.service
+

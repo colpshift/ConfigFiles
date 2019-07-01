@@ -155,8 +155,8 @@ mode "$mode_gaps_outer" {
 ### reloading/restarting/exiting/lock
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload
-bindsym $mod+Shift+x exec \
---no-startup-id i3lock -i '/home/colps/Images/Wallpapers/lock_cave.png'
+bindsym $mod+x exec \
+--no-startup-id i3lock -i '/home/colps/Images/Wallpapers/dark-7.png'
 bindsym $mod+Shift+e exec \
 --no-startup-id i3-msg exit, mode "default"
 

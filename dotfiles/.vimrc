@@ -11,10 +11,7 @@
 "------------------------------------------------------------------------------
 set nocompatible
 syntax on
-filetype on
-filetype plugin on
-filetype indent on
-filetype detect
+filetype plugin indent on
 set fileformat=unix
 set autoread			" Automatically re-read files if unmodified inside Vim.
 set confirm             " Display confirmation dialog when closing unsaved file.
@@ -46,17 +43,17 @@ set wrap				" Enable line wrapping.
 " Scripts
 "------------------------------------------------------------------------------
 " Restore Folds
-function RestoreFolds()
-    if @% == ""
-		set encoding=utf-8
-    elseif filereadable(@%) == 0
-		set encoding=utf-8
-    elseif line('$') == 1 && col('$') == 1
-		set encoding=utf-8
-	else
-		au BufWinEnter * silent loadview
-	endif
-endfunction
+"function RestoreFolds()
+"    if @% == ""
+"		set encoding=utf-8
+"    elseif filereadable(@%) == 0
+"		set encoding=utf-8
+"		elseif line('$') == 1 && col('$') == 1
+"		set encoding=utf-8
+"	else
+"		au BufWinEnter * silent loadview
+"	endif
+"endfunction
 
 "------------------------------------------------------------------------------
 " plugins package manager - vim-plug
@@ -101,10 +98,10 @@ let g:rainbow_active = 1
     " blacklist
     let g:Illuminate_ftblacklist = ['nerdtree']
     " whitelist by groups
-    let g:Illuminate_ftHighlightGroups = {
-        \ 'vim': ['vimVar', 'vimString', 'vimLineComment',
-        \         'vimFuncName', 'vimFunction', 'vimUserFunc', 'vimFunc']
-        \ }
+    "let g:Illuminate_ftHighlightGroups = {
+    "    \ 'vim': ['vimVar', 'vimString', 'vimLineComment',
+    "    \         'vimFuncName', 'vimFunction', 'vimUserFunc', 'vimFunc']
+    "    \ }
 " gruvbox
     let g:gruvbox_contrast_dark = 'medium'
     let g:gruvbox_invert_tabline = '1'
@@ -116,8 +113,6 @@ let g:rainbow_active = 1
 " airline
     let g:airline_theme='gruvbox'
     let g:airline_highlighting_cache = 1
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline_powerline_fonts = 1
 " spell
     "set spell
     "set spelllang=en-US

@@ -1,0 +1,13 @@
+# Directory to copy the kernel
+ESP_DIR="/boot/efi/EFI/arch"
+
+build () {
+	 cp -af /boot/vmlinuz-%PKGBASE% "${ESP_DIR}/"
+	 [[ -e /boot/intel-ucode.img ]] && cp -af /boot/intel-ucode.img "${ESP_DIR}/"
+}
+
+help ()	{
+	cat <<HELPEOF
+This hook copies the kernel to the ESP partition
+HELPEOF
+} 

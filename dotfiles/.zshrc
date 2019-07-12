@@ -17,10 +17,15 @@ setopt autocd
 setopt extendedglob
 ### autocompletion with an arrow-key driven interface
 zstyle ':completion:*' menu select
+### autosugestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=9'
 ### autocompletion of command line switches for aliases
 setopt COMPLETE_ALIASES
 ### Fish-like syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+### zsh history substring source
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 ### command not found
 source /usr/share/doc/pkgfile/command-not-found.zsh
 ### Persistent rehash
@@ -140,6 +145,7 @@ alias urxvt='sh $HOME/.scripts/urxvts.sh'
 alias pkgfile='sudo pkgfile'
 alias cat="bat --theme TwoDark"
 alias notmuch-vim='vim -c NotMuch'
+alias ncmpcpp='ncmpcpp -s media_library -S visualizer'    
 
 ### prompt
 prompt bart

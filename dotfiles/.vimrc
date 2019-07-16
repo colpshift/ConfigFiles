@@ -169,6 +169,9 @@ let g:rainbow_active = 1
     let g:fzf_history_dir = '~/.local/share/fzf-history'
 " Notational FZF
 let g:nv_search_paths = ['~/Documents']
+" Supertab 
+    let g:SuperTabDefaultCompletionType = "context"
+    let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
 "------------------------------------------------------------------------------
 " mapping and abbreviations

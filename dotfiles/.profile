@@ -23,7 +23,7 @@ autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
 # udiskie
-udiskie -Ans &
+#udiskie -Ans &
 
 # MPD daemon start
 [ ! -s ~/.config/mpd/pid ] && mpd

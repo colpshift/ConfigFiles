@@ -54,30 +54,20 @@ default_orientation auto
 workspace_layout default
 
 ### automatically putting clients on specific workspaces
-assign [class="urxvt"] 1 
-assign [class="Firefox"] 2 
-assign [class="Franz"] 3 
-assign [class="Skype"] 3 
-assign [class="Zathura"] 4 
-assign [class="Sxiv"] 5 
-assign [class="VirtualBox Manager"] 6 
-assign [class="VirtualBox Machine"] 6 
-assign [class="Stremio"] 7 
-assign [class="Tor Browser"] 8 
-
-### automatically starting applications on i3 startup
-exec --no-startup-id "compton -cC"
-exec --no-startup-id "nitrogen --restore"
-exec --no-startup-id "sleep 2s && kalu"
-exec --no-startup-id urxvt
-exec --no-startup-id urxvt
+    assign [class="urxvt"] 1 
+    assign [class="Firefox"] 2 
+    assign [class="Franz"] 3 
+    assign [class="Skype"] 3 
+    assign [class="Zathura"] 4 
+    assign [class="Sxiv"] 5 
+    assign [class="VirtualBox Manager"] 6 
+    assign [class="VirtualBox Machine"] 6 
+    assign [class="Stremio"] 7 
+    assign [class="Tor Browser"] 8 
 
 ### automatically putting clients on floating windows layout
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Kalu"] floating enable
-
-### using internal and external monitor
-#exec --no-startup-id "xrandr --output eDP-1 --auto --output HDMI-1 --auto --left-of eDP-1"
 
 ### focus wrapping = yes|no|force
 force_focus_wrapping yes
@@ -116,10 +106,10 @@ bar {
 }
 
 ### gap mode = press $mod+Shift+g to enter the gap mode.
-set $mode_gaps Gaps: (o) outer, (i) inner
-set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
-set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
-bindsym $mod+Shift+g mode "$mode_gaps"
+    set $mode_gaps Gaps: (o) outer, (i) inner
+    set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+    set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+    bindsym $mod+Shift+g mode "$mode_gaps"
 
 mode "$mode_gaps" {
     bindsym o      mode "$mode_gaps_outer"
@@ -154,14 +144,6 @@ mode "$mode_gaps_outer" {
     bindsym Escape mode "default"
 }
 
-### reloading/restarting/exiting/lock
-bindsym $mod+Shift+r restart
-bindsym $mod+Shift+w reload
-bindsym $mod+x exec \
---no-startup-id i3lock -i '/home/colps/Images/Wallpapers/lock_cave.png'
-bindsym $mod+Shift+e exec \
---no-startup-id i3-msg exit, mode "default"
-
 ### kill focused window
 bindsym $mod+Shift+q kill
 
@@ -169,26 +151,26 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id dmenu_run
 
 ### change focus
-bindsym $mod+l focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+h focus right
+    bindsym $mod+l focus left
+    bindsym $mod+j focus down
+    bindsym $mod+k focus up
+    bindsym $mod+h focus right
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
 
 ### move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+    bindsym $mod+Shift+h move left
+    bindsym $mod+Shift+j move down
+    bindsym $mod+Shift+k move up
+    bindsym $mod+Shift+l move right
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
 
 ### enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -209,30 +191,28 @@ bindsym $mod+p focus parent
 bindsym $mod+o focus child
 
 ### switch to workspace
-bindsym $mod+1 workspace 1 
-bindsym $mod+2 workspace 2 
-bindsym $mod+3 workspace 3 
-bindsym $mod+4 workspace 4 
-bindsym $mod+5 workspace 5 
-bindsym $mod+6 workspace 6 
-bindsym $mod+7 workspace 7 
-bindsym $mod+8 workspace 8 
-bindsym $mod+9 workspace 9 
-bindsym $mod+0 workspace 10 
-
+    bindsym $mod+1 workspace 1 
+    bindsym $mod+2 workspace 2 
+    bindsym $mod+3 workspace 3 
+    bindsym $mod+4 workspace 4 
+    bindsym $mod+5 workspace 5 
+    bindsym $mod+6 workspace 6 
+    bindsym $mod+7 workspace 7 
+    bindsym $mod+8 workspace 8 
+    bindsym $mod+9 workspace 9 
+    bindsym $mod+0 workspace 10 
 
 ### move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1 
-bindsym $mod+Shift+2 move container to workspace 2 
-bindsym $mod+Shift+3 move container to workspace 3 
-bindsym $mod+Shift+4 move container to workspace 4 
-bindsym $mod+Shift+5 move container to workspace 5 
-bindsym $mod+Shift+6 move container to workspace 6 
-bindsym $mod+Shift+7 move container to workspace 7 
-bindsym $mod+Shift+8 move container to workspace 8 
-bindsym $mod+Shift+9 move container to workspace 9 
-bindsym $mod+Shift+0 move container to workspace 10 
-
+    bindsym $mod+Shift+1 move container to workspace 1 
+    bindsym $mod+Shift+2 move container to workspace 2 
+    bindsym $mod+Shift+3 move container to workspace 3 
+    bindsym $mod+Shift+4 move container to workspace 4 
+    bindsym $mod+Shift+5 move container to workspace 5 
+    bindsym $mod+Shift+6 move container to workspace 6 
+    bindsym $mod+Shift+7 move container to workspace 7 
+    bindsym $mod+Shift+8 move container to workspace 8 
+    bindsym $mod+Shift+9 move container to workspace 9 
+    bindsym $mod+Shift+0 move container to workspace 10 
 
 ### screenshot
 bindsym $mod+Shift+p exec \
@@ -240,13 +220,12 @@ scrot "/home/colps/Images/Capture/%Y-%m-%d-%s_screenshot_$wx$h.jpg"
 
 ### resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
-
-set $bg-color            #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676e7d
-set $urgent-bg-color     #e53935
-set $indicator-color     #a0a0a0
+    set $bg-color            #2f343f
+    set $inactive-bg-color   #2f343f
+    set $text-color          #f3f4f5
+    set $inactive-text-color #676e7d
+    set $urgent-bg-color     #e53935
+    set $indicator-color     #a0a0a0
 
 mode "resize" {
     bindsym j resize shrink width 10 px or 10 ppt
@@ -270,6 +249,21 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
+### automatically starting applications on i3 startup
+exec --no-startup-id "compton -cC"
+exec --no-startup-id "nitrogen --restore"
+exec --no-startup-id "sleep 2s && kalu"
+exec --no-startup-id urxvt
+exec --no-startup-id urxvt
+
+### reloading/restarting/exiting/lock
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+w reload
+bindsym $mod+x exec \
+--no-startup-id i3lock -i '/home/colps/Images/Wallpapers/lock_cave.png'
+bindsym $mod+Shift+e exec \
+--no-startup-id i3-msg exit, mode "default"
 
 ### app shortcuts
 bindsym $mod+Return	exec urxvt

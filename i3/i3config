@@ -57,6 +57,7 @@ workspace_layout default
     assign [class="urxvt"] 1 
     assign [class="Firefox"] 2 
     assign [class="Franz"] 3 
+    assign [class="TelegramDesktop"] 3 
     assign [class="Skype"] 3 
     assign [class="Zathura"] 4 
     assign [class="Sxiv"] 5 
@@ -253,7 +254,7 @@ mode "resize" {
 ### automatically starting applications on i3 startup
 exec --no-startup-id "compton -cC"
 exec --no-startup-id "nitrogen --restore"
-exec --no-startup-id "sleep 2s && kalu"
+#exec --no-startup-id "sleep 2s && kalu"
 exec --no-startup-id urxvt
 exec --no-startup-id urxvt
 

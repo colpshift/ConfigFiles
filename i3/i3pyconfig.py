@@ -16,13 +16,13 @@ Last Modified: June 14, 2019
 # critical  red     color ='#ff0000',
 
 from configparser import ConfigParser
-
 from i3pystatus import Status
 from i3pystatus.core.util import internet
 from i3pystatus.mail import imap
 from i3pystatus.network import Network
 from i3pystatus.online import Online
 from i3pystatus.weather import weathercom
+from i3pystatus.updates import pacman
 
 STATUS = Status()
 
@@ -30,6 +30,17 @@ STATUS = Status()
 CONFIG = ConfigParser()
 CONFIG.read("/etc/.config_gmail.txt")
 GMAILPASS = CONFIG.get("configuration", "password")
+
+# show updates
+STATUS.register(
+    "updates",
+    notification_icon="software-update-available",
+    color="#ffa500",
+    format="_{count}",
+    color_no_updates="#c2c2c2",
+    format_no_updates="",
+    backends=[pacman.Pacman()],
+)
 
 # show clock
 STATUS.register(
@@ -50,7 +61,6 @@ STATUS.register(
 )
 
 # check email
-
 if internet():
     STATUS.register(
         "mail",

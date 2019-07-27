@@ -31,22 +31,11 @@ CONFIG = ConfigParser()
 CONFIG.read("/etc/.config_gmail.txt")
 GMAILPASS = CONFIG.get("configuration", "password")
 
-# show updates
-STATUS.register(
-    "updates",
-    notification_icon="software-update-available",
-    color="#ffa500",
-    format="_{count}",
-    color_no_updates="#c2c2c2",
-    format_no_updates="",
-    backends=[pacman.Pacman()],
-)
-
 # show clock
 STATUS.register(
     "clock",
     color="#6bb6ff",
-    format="_%d/%m/%y _%k:%M",
+    format="_%d/%m/%y _%k:%M|",
     on_leftclick="firefox https://calendar.google.com/",
 )
 
@@ -143,6 +132,17 @@ STATUS.register(
     critical_color="#ff0000",
     format="_{avg1} {avg5} {tasks}",
     on_leftclick="urxvt -e htop",
+)
+
+# show updates
+STATUS.register(
+    "updates",
+    notification_icon="software-update-available",
+    color="#ffa500",
+    format="_{count}",
+    color_no_updates="#c2c2c2",
+    format_no_updates="",
+    backends=[pacman.Pacman()],
 )
 
 # show system information

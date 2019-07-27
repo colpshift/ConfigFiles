@@ -60,27 +60,54 @@ set wrap				" Enable line wrapping.
 "------------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/vim-plug'
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
+        " plugin manager
+    "---------------------------  
 	Plug 'morhetz/gruvbox'
+        " vim color theme
+    Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
+        " status/tabline for vim
+    "---------------------------  
     Plug 'RRethy/vim-illuminate'
+        " automatically highlighting other uses of the word under the cursor
 	Plug 'TaDaa/vimade'
+        " fades your inactive buffers and preserves your syntax highlighting
 	Plug 'luochen1990/rainbow'
-    Plug 'justinmk/vim-sneak'
+        " shows different levels of parentheses in different colors.
     Plug 'kshenoy/vim-signature'
-	Plug 'vim-scripts/indentpython.vim'
+        " place, toggle and display marks.
+    "---------------------------  
+    Plug 'justinmk/vim-sneak'
+        " Jump to any location specified by two characters
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+        " command-line fuzzy finder 
     Plug 'junegunn/fzf.vim'
+        " Things you can do with fzf and Vim.
     Plug 'alok/notational-fzf-vim'
-	Plug 'google/yapf'
+        " searching for a note and creating one are the same operation
+    "---------------------------  
+    Plug 'ervandew/supertab'
+        " Perform all your vim insert mode completions with Tab
     Plug 'w0rp/ale'
+        " Check syntax in Vim asynchronously and fix files
 	Plug 'Valloric/YouCompleteMe'
+        " code-completion engine for Vim
 	Plug 'tenfyzhong/CompleteParameter.vim'
+        " Complete parameter after select the completion
+    Plug 'kkoomen/vim-doge'
+        " Generate proper code documentation skeletons with a single keypress
+	Plug 'google/yapf'
+        " formatter for Python files 
+    "---------------------------  
 	Plug 'SirVer/ultisnips'
+        " snippet solution for Vim
 	Plug 'honza/vim-snippets'
-	Plug 'ervandew/supertab'
-	Plug 'francoiscabrol/ranger.vim'
+        " snippets for vim
+	"---------------------------  
+    Plug 'francoiscabrol/ranger.vim'
+        " Ranger integration
     Plug 'felipec/notmuch-vim'
+        " mail client interface, utilizing the notmuch framework.
 call plug#end()
 
 "------------------------------------------------------------------------------
@@ -176,6 +203,8 @@ let g:nv_search_paths = ['~/Documents']
 "------------------------------------------------------------------------------
 " mapping and abbreviations
 "----------------------------------------------'--------------------------------
+" mapleader
+map <Space> <Leader>
 " abbreviations
 ab ~/ $HOME
 " run :w!! command (type fast), to save ready only files.
@@ -183,7 +212,7 @@ cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 " auto indent the whole file and keep your cursor in the last position
 nmap <leader>ia mzgg=G`z
 " undo hlsearch
-nnoremap <space> :nohlsearch<CR>
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 " insert timestamp
 inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
 " complete parameters

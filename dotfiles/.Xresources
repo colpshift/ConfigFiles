@@ -45,7 +45,7 @@ URxvt.font: xft:Iosevka:size=11
 !URxvt.letterSpace: -2
 !
 ! Real transparency
-URxvt*depth: 32
+URxvt*depth: 30
 URxvt*background: rgba:0000/0000/0200/c800
 
 ! Scrolling

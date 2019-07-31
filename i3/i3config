@@ -216,8 +216,7 @@ bindsym $mod+o focus child
     bindsym $mod+Shift+0 move container to workspace 10 
 
 ### screenshot
-bindsym $mod+Shift+p exec \
-scrot "/home/colps/Images/Capture/%Y-%m-%d-%s_screenshot_$wx$h.jpg"
+bindsym $mod+Shift+p exec "flameshot gui"
 
 ### resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
@@ -252,11 +251,17 @@ mode "resize" {
 }
 
 ### automatically starting applications on i3 startup
-exec --no-startup-id "compton -cC"
+exec --no-startup-id "compton &"
 exec --no-startup-id "nitrogen --restore"
 #exec --no-startup-id "sleep 2s && kalu"
-exec --no-startup-id urxvt
-exec --no-startup-id urxvt
+#
+exec --no-startup-id urxvt -name "urxvt1"
+exec --no-startup-id urxvt -name "urxvt2"
+exec --no-startup-id urxvt -name "urxvt3"
+exec --no-startup-id "i3-msg 'workspace 1 ; append_layout /home/colps/.config/i3/workspace-1.json'"
+#
+#exec --no-startup-id urxvt
+#exec --no-startup-id urxvt
 
 ### reloading/restarting/exiting/lock
 bindsym $mod+Shift+r restart

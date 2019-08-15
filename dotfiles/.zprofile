@@ -27,3 +27,6 @@ fi
 # keyboard layout
 setxkbmap br
 
+# flameshot 
+flameshot &
+

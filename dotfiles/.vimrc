@@ -299,4 +299,3 @@ set undodir=$HOME/.vim/undo/
 set backup
 set backupdir=$HOME/.vim/backups/
 
-# test

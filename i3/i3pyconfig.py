@@ -36,7 +36,7 @@ STATUS.register(
     "clock",
     color="#6bb6ff",
     format="_%d/%m/%y _%k:%M|",
-    on_leftclick="firefox https://calendar.google.com/",
+    on_leftclick="thunderbird",
 )
 
 # Show weather
@@ -65,7 +65,7 @@ if internet():
         color_unread="#ffa500",
         format_plural=("_{current_unread}/{unread}"),
         format="_{current_unread}/{unread}",
-        on_leftclick="firefox https://mail.google.com/",
+        on_leftclick="thunderbird",
         hide_if_null=False,
     )
 

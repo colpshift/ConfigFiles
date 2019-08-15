@@ -27,7 +27,7 @@ smart_borders on
 default_border pixel 1
 
 ### make all urxvts use a 1-pixel border:
-for_window [class="urxvt"] border pixel 1
+for_window [class="URxvt"] border pixel 1
 
 ### drawing marks on window decoration = yes|no
 show_marks yes
@@ -54,17 +54,23 @@ default_orientation auto
 workspace_layout default
 
 ### automatically putting clients on specific workspaces
-    assign [class="urxvt"] 1 
+    assign [class="URxvt"] 1 
     assign [class="Firefox"] 2 
+    assign [class="Chromium"] 2 
     assign [class="Franz"] 3 
     assign [class="TelegramDesktop"] 3 
     assign [class="Skype"] 3 
     assign [class="Zathura"] 4 
     assign [class="Sxiv"] 5 
+    assign [class="Nitrogen"] 5 
+    assign [class="Dia"] 5 
+    assign [class="MindMaster"] 5 
     assign [class="VirtualBox Manager"] 6 
     assign [class="VirtualBox Machine"] 6 
     assign [class="Stremio"] 7 
     assign [class="Tor Browser"] 8 
+    assign [class="Spotify"] 9 
+    assign [class="Thunderbird"] 10 
 
 ### automatically putting clients on floating windows layout
 for_window [class="Pavucontrol"] floating enable
@@ -275,15 +281,15 @@ bindsym $mod+Shift+e exec \
 bindsym $mod+Return	exec urxvt
 bindsym $mod+a		exec urxvt -e ranger
 bindsym $mod+z		exec rofi -show drun
-bindsym $mod+m		workspace 10 ; exec urxvt -e neomutt
+bindsym $mod+m		workspace 10 ; exec thunderbird
 #
 bindsym Ctrl+Shift+b workspace 2 ; exec firefox
 bindsym Ctrl+Shift+m workspace 7 ; exec stremio
 bindsym Ctrl+Shift+i workspace 6 ; exec virtualbox
 bindsym Ctrl+Shift+t workspace 8 ; exec \
-sh -c "/opt/tor-browser_en-US/Browser/start-tor-browser" --detach
-bindsym Ctrl+Shift+n workspace 9 ; exec \
-urxvt -e ncmpcpp -s media_library -S visualizer
+/opt/tor-browser_en-US/Browser/start-tor-browser
+bindsym Ctrl+Shift+n workspace 9 ; exec spotify
+#urxvt -e ncmpcpp -s media_library -S visualizer
 
 ### FN Keys
 # volume

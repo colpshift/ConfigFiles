@@ -28,9 +28,9 @@ esac
 [ -r /usr/share/doc/pkgfile/command-not-found.bash ] && . /usr/share/doc/pkgfile/command-not-found.bash
 
 # Default applications
-export BROWSE=/usr/bin/firefox
-export VISUAL=vim
-export EDITOR=vim
+export BROWSE="/bin/firefox"
+export VISUAL="/usr/local/bin/vim"
+export EDITOR="/usr/local/bin/vim"
 set -o vi # turn on vim on shell
 
 # keep environment pollution down, EPA loves us.

@@ -56,6 +56,7 @@ workspace_layout default
 ### automatically putting clients on specific workspaces
     assign [class="URxvt"] 1 
     assign [class="Firefox"] 2 
+    assign [class="firefox-browser"] 2 
     assign [class="Chromium"] 2 
     assign [class="Franz"] 3 
     assign [class="TelegramDesktop"] 3 
@@ -74,7 +75,6 @@ workspace_layout default
 
 ### automatically putting clients on floating windows layout
 for_window [class="Pavucontrol"] floating enable
-for_window [class="Kalu"] floating enable
 
 ### focus wrapping = yes|no|force
 force_focus_wrapping yes
@@ -259,15 +259,10 @@ mode "resize" {
 ### automatically starting applications on i3 startup
 exec --no-startup-id "compton &"
 exec --no-startup-id "nitrogen --restore"
-#exec --no-startup-id "sleep 2s && kalu"
-#
 exec --no-startup-id urxvt -name "urxvt1"
 exec --no-startup-id urxvt -name "urxvt2"
 exec --no-startup-id urxvt -name "urxvt3"
 exec --no-startup-id "i3-msg 'workspace 1 ; append_layout /home/colps/.config/i3/workspace-1.json'"
-#
-#exec --no-startup-id urxvt
-#exec --no-startup-id urxvt
 
 ### reloading/restarting/exiting/lock
 bindsym $mod+Shift+r restart

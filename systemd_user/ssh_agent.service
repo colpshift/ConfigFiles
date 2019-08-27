@@ -2,7 +2,7 @@
 Description=keep ssh key password in memory until logoff. 
 
 [Service]
-ExecStart=ssh_agent.sh
+ExecStart=/home/colps/.scripts/ssh_agent_start.sh
 Restart=always
 
 [Install]

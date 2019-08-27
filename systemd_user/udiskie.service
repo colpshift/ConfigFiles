@@ -2,7 +2,7 @@
 Description=Provide a daemon udisksd, D-Bus interfaces used manipulate storage device
 
 [Service]
-ExecStart=/usr/bin/udiskie -Ans -f "rangerwrapper"
+ExecStart=/home/colps/.scripts/udiskie_start.sh
 Restart=always
 
 [Install]

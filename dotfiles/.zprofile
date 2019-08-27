@@ -14,7 +14,7 @@ else
     notify-send "External Monitor Detected" "External Monitor is Active"
 fi
 
-# Enable/Disable touchpad
+# Check external mouse
 lista=$(xinput list | grep -i 'mouse')
 if [ ${#lista} -eq 0 ]; then
     xinput enable ETPS/2\ Elantech\ Touchpad
@@ -24,9 +24,6 @@ else
     #notify-send "USB Mouse Detected" "Your Touchpad is Disabled"
 fi
 
-# keyboard layout
+# Set keyboard layout
 setxkbmap br
-
-# flameshot 
-flameshot &
 

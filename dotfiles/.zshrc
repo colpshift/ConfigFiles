@@ -146,6 +146,7 @@ alias pkgfile='sudo pkgfile'
 alias cat="bat --theme TwoDark"
 alias notmuch-vim='vim -c NotMuch'
 alias ncmpcpp='ncmpcpp -s media_library -S visualizer'    
+alias dmenu_run='dmenu_run -fn "Iosevka-11'
 
 ### prompt
 prompt bart

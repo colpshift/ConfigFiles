@@ -13,9 +13,9 @@
 set $mod Mod4
 
 ### font window titles
-font pango: Awesome 5 Brands Regular 11
-font pango: Iosevka 11
-#font pango: Inconsolata 12
+font pango: Awesome 5 Brands Regular 10
+font pango: Iosevka 10
+#font pango: Inconsolata 11
 
 ### window title alignment = left|center|right
 title_align left
@@ -55,13 +55,14 @@ workspace_layout default
 
 ### automatically putting clients on specific workspaces
     assign [class="URxvt"] 1 
-    assign [class="Firefox"] 2 
-    assign [class="firefox-browser"] 2 
-    assign [class="Chromium"] 2 
+    assign [class="firefox"] 2 
+    assign [class="Google-chrome"] 2 
     assign [class="Franz"] 3 
     assign [class="TelegramDesktop"] 3 
     assign [class="Skype"] 3 
     assign [class="Zathura"] 4 
+    assign [class="Simple-scan"] 4 
+    assign [class="Gimp-2.10"] 5 
     assign [class="Sxiv"] 5 
     assign [class="Nitrogen"] 5 
     assign [class="Dia"] 5 
@@ -69,9 +70,13 @@ workspace_layout default
     assign [class="VirtualBox Manager"] 6 
     assign [class="VirtualBox Machine"] 6 
     assign [class="Stremio"] 7 
+    assign [class="electronplayer"] 7 
     assign [class="Tor Browser"] 8 
     assign [class="Spotify"] 9 
     assign [class="Thunderbird"] 10 
+
+### moving workspaces between screens
+bindsym $mod+e move workspace to output left
 
 ### automatically putting clients on floating windows layout
 for_window [class="Pavucontrol"] floating enable
@@ -155,7 +160,8 @@ mode "$mode_gaps_outer" {
 bindsym $mod+Shift+q kill
 
 ### dmenu
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "Iosevka-11"
+bindsym $mod+q exec --no-startup-id passmenu -fn "Iosevka-11"
 
 ### change focus
     bindsym $mod+l focus left
@@ -276,14 +282,13 @@ bindsym $mod+Shift+e exec \
 bindsym $mod+Return	exec urxvt
 bindsym $mod+a		exec urxvt -e ranger
 bindsym $mod+z		exec rofi -show drun
-bindsym $mod+m		workspace 10 ; exec thunderbird
+bindsym $mod+m		exec thunderbird
 #
-bindsym Ctrl+Shift+b workspace 2 ; exec firefox
-bindsym Ctrl+Shift+m workspace 7 ; exec stremio
-bindsym Ctrl+Shift+i workspace 6 ; exec virtualbox
-bindsym Ctrl+Shift+t workspace 8 ; exec \
-/opt/tor-browser_en-US/Browser/start-tor-browser
-bindsym Ctrl+Shift+n workspace 9 ; exec spotify
+bindsym Ctrl+Shift+b exec firefox
+bindsym Ctrl+Shift+m exec electronplayer
+bindsym Ctrl+Shift+i exec virtualbox
+bindsym Ctrl+Shift+t exec /opt/tor-browser_en-US/Browser/start-tor-browser
+bindsym Ctrl+Shift+n exec spotify
 #urxvt -e ncmpcpp -s media_library -S visualizer
 
 ### FN Keys

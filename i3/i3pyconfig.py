@@ -35,7 +35,7 @@ GMAILPASS = CONFIG.get("configuration", "password")
 STATUS.register(
     "clock",
     color="#6bb6ff",
-    format="_%d/%m/%y _%k:%M|",
+    format=" %d/%m/%y %k:%M|",
     on_leftclick="thunderbird",
 )
 
@@ -63,26 +63,26 @@ if internet():
         ],
         color="#c2c2c2",
         color_unread="#ffa500",
-        format_plural=("_{current_unread}/{unread}"),
-        format="_{current_unread}/{unread}",
+        format_plural=(" {current_unread}/{unread}"),
+        format=" {current_unread}/{unread}",
         on_leftclick="thunderbird",
         hide_if_null=False,
     )
 
 # Show/change volume using PA
-STATUS.register("pulseaudio", format="_{volume}%", format_muted="_Mute")
+STATUS.register("pulseaudio", format="{volume_bar} {volume}%", format_muted=" {volume_bar} Mute")
 
 # show backlight %
 STATUS.register(
     "backlight",
     base_path="/sys/class/backlight/intel_backlight/",
-    format="_{percentage}%",
+    format=" {percentage}%",
 )
 
 # show battery status
 STATUS.register(
     "battery",
-    format="[{status} ]{remaining}",
+    format="[{status}]{remaining}",
     interval=5,
     alert=True,
     alert_percentage=15,
@@ -90,7 +90,7 @@ STATUS.register(
     charging_color="#00ff00",
     critical_color="#ff0000",
     full_color="#c2c2c2",
-    status={"CHR": "", "DPL": "", "DIS": "", "FULL": ""},
+    status={"CHR":" ", "DPL":" ", "DIS":" ", "FULL":" 100%"},
 )
 
 # internet status
@@ -107,10 +107,9 @@ STATUS.register(
 STATUS.register(
     Network,
     dynamic_color=True,
-    format_up="_{interface:.6} {bytes_recv}K {bytes_sent}K",
-    format_down="_{interface:.6} ",
+    format_up=" {interface:.6} {bytes_recv}K {bytes_sent}K",
+    format_down=" {interface:.6} ",
     interface="wlp3s0",
-    on_doubleleftclick="urxvt -e nmcli",
 )
 
 # show available memory
@@ -119,7 +118,7 @@ STATUS.register(
     color="#c2c2c2",
     warn_color="ffa500",
     alert_color="#ff0000",
-    format="_{used_mem} {avail_mem}G",
+    format=" {used_mem} {avail_mem}G",
     warn_percentage=70,
     alert_percentage=90,
     divisor=1024 ** 3,
@@ -130,7 +129,7 @@ STATUS.register(
 STATUS.register(
     "load",
     critical_color="#ff0000",
-    format="_{avg1} {avg5} {tasks}",
+    format=" {avg1} {avg5} {tasks}",
     on_leftclick="urxvt -e htop",
 )
 
@@ -139,14 +138,14 @@ STATUS.register(
     "updates",
     notification_icon="software-update-available",
     color="#ffa500",
-    format="_{count}",
+    format=" {count}",
     color_no_updates="#c2c2c2",
     format_no_updates="",
     backends=[pacman.Pacman()],
 )
 
 # show system information
-STATUS.register("uname", format="_{release}", on_leftclick="urxvt -e uname -a")
+STATUS.register("uname", format=" {release}", on_leftclick="urxvt -e uname -a")
 
 # Show keyboard locks
 STATUS.register(

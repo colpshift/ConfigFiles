@@ -39,7 +39,7 @@
 !
 ! Font
 !URxvt.font: xft:Inconsolata:size=11
-URxvt.font: xft:Iosevka:size=11
+URxvt.font: xft:Iosevka:Medium:size=11
 !
 ! Font spacing
 !URxvt.letterSpace: -2

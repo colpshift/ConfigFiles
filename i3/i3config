@@ -5,7 +5,7 @@
 # Last Modified: 14/01/2019 23:43
 #
 # https://i3wm.org/docs/userguide.html
-# https://fontawesome.com/cheatsheet?from=io
+# https://www.fontawesomecheatsheet.com/
 # https://www.colorhexa.com/
 #
 
@@ -13,7 +13,7 @@
 set $mod Mod4
 
 ### font window titles
-font pango: Iosevka Medium, FontAwesome 10
+font pango: Iosevka Medium,FontAwesome,Awesome 5 Free Solid,Awesome 5 Brands Solid 10
 #font pango: Inconsolata 11
 
 ### window title alignment = left|center|right
@@ -287,7 +287,7 @@ bindsym Ctrl+Shift+b exec firefox
 bindsym Ctrl+Shift+m exec electronplayer
 bindsym Ctrl+Shift+i exec virtualbox
 bindsym Ctrl+Shift+t exec /opt/tor-browser_en-US/Browser/start-tor-browser
-bindsym Ctrl+Shift+n exec spotify
+bindsym Ctrl+Shift+n workspace 9 , exec spotify
 #urxvt -e ncmpcpp -s media_library -S visualizer
 
 ### FN Keys

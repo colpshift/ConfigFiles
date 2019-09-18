@@ -7,7 +7,7 @@ Last Modified: June 14, 2019
 """
 #
 # https://i3pystatus.readthedocs.io/en/latest/i3pystatus.html#i3
-# https://fontawesome.com/cheatsheet?from=io
+# https://www.fontawesomecheatsheet.com/
 # https://www.colorhexa.com/e60053
 #
 # color     green   color ='#00ff00',
@@ -138,7 +138,7 @@ STATUS.register(
     "updates",
     notification_icon="software-update-available",
     color="#ffa500",
-    format=" {count}",
+    format=" {count}",
     color_no_updates="#c2c2c2",
     format_no_updates="",
     backends=[pacman.Pacman()],

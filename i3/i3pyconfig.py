@@ -35,7 +35,7 @@ GMAILPASS = CONFIG.get("configuration", "password")
 STATUS.register(
     "clock",
     color="#6bb6ff",
-    format=" %d/%m/%y %k:%M|",
+    format=" %F %I:%M %p |",
     on_leftclick="thunderbird",
 )
 

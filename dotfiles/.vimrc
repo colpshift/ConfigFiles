@@ -129,6 +129,8 @@ let g:rainbow_active = 1
     "    \ 'vim': ['vimVar', 'vimString', 'vimLineComment',
     "    \         'vimFuncName', 'vimFunction', 'vimUserFunc', 'vimFunc']
     "    \ }
+    let g:molokai_original = 1
+    let g:rehash256 = 1
 " gruvbox
     let g:gruvbox_contrast_dark = 'medium'
     let g:gruvbox_invert_tabline = '1'

@@ -13,7 +13,7 @@
 set $mod Mod4
 
 ### font window titles
-font pango: Iosevka Medium,FontAwesome,Awesome 5 Free Solid,Awesome 5 Brands Solid 10
+font pango: Iosevka Medium,FontAwesome,Awesome 5 Free Solid,Awesome 5 Brands Solid 11
 #font pango: Inconsolata 11
 
 ### window title alignment = left|center|right
@@ -52,7 +52,7 @@ default_orientation auto
 ### layout mode for new containers = default|stacking|tabbed
 workspace_layout default
 
-### automatically putting clients on specific workspaces
+### define clients to specific workspaces / screens
     assign [class="URxvt"] 1 
     assign [class="firefox"] 2 
     assign [class="Google-chrome"] 2 
@@ -74,8 +74,11 @@ workspace_layout default
     assign [class="Spotify"] 9 
     assign [class="Thunderbird"] 10 
 
-### moving workspaces between screens
-bindsym $mod+e move workspace to output left
+### define output to specific workspace
+workspace "1 " output HDMI-1
+
+### moving workspaces between outputs
+bindsym $mod+Shift+o move workspace to output left
 
 ### automatically putting clients on floating windows layout
 for_window [class="Pavucontrol"] floating enable
@@ -171,8 +174,7 @@ bindsym $mod+q exec --no-startup-id passmenu -fn "Iosevka-11"
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
-
+    bindsym $mod+Right focus right 
 ### move focused window
     bindsym $mod+Shift+h move left
     bindsym $mod+Shift+j move down
@@ -264,6 +266,7 @@ mode "resize" {
 ### automatically starting applications on i3 startup
 exec --no-startup-id "compton &"
 exec --no-startup-id "nitrogen --restore"
+exec --no-startup-id "nm-applet"
 exec --no-startup-id urxvt -name "urxvt1"
 exec --no-startup-id urxvt -name "urxvt2"
 exec --no-startup-id urxvt -name "urxvt3"
@@ -273,7 +276,7 @@ exec --no-startup-id "i3-msg 'workspace 1 ; append_layout /home/colps/.config
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload
 bindsym $mod+x exec \
---no-startup-id i3lock -i '/home/colps/Images/Wallpapers/lock_cave.png'
+--no-startup-id i3lock -i '/home/colps/Images/Wallpapers/l_dark-06.png' -t -f
 bindsym $mod+Shift+e exec \
 --no-startup-id i3-msg exit, mode "default"
 

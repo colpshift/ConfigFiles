@@ -20,6 +20,8 @@ setopt autocd
 setopt extendedglob
 ### autocompletion with an arrow-key driven interface
 zstyle ':completion:*' menu select
+### lets files beginning with a . be matched without explicitly specifying dot.
+_comp_options+=(globdots)
 ### autosugestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=9'
@@ -58,7 +60,8 @@ zle -N down-line-or-beginning-search
 [[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
 
 ### Keymapping
-typeset -g -A key
+bindkey -v
+export KEYTIMEOUT=1
 ### Use vim keys in tab complete menu
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history

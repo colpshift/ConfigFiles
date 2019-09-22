@@ -35,8 +35,8 @@ GMAILPASS = CONFIG.get("configuration", "password")
 STATUS.register(
     "clock",
     color="#6bb6ff",
-    format=" %F %I:%M %p |",
-    on_leftclick="thunderbird",
+    format=" %F %I:%M %p|",
+    on_leftclick="thunderbird https://calendar.google.com/calendar/r/month",
 )
 
 # Show weather
@@ -65,7 +65,7 @@ if internet():
         color_unread="#ffa500",
         format_plural=(" {current_unread}/{unread}"),
         format=" {current_unread}/{unread}",
-        on_leftclick="thunderbird",
+        on_leftclick="thunderbird https://mail.google.com/mail/u/0/#inbox",
         hide_if_null=False,
     )
 

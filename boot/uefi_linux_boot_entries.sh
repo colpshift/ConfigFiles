@@ -14,5 +14,5 @@ set -euo pipefail
 # Note that the -u argument in double quotes is just the list of kernel parameters, 
 # so you may need to add additional parameters e.g. for suspend to disk or microcode.
 
-efibootmgr -d /dev/sda -p 1 -c -L "Arch linux" -l /efi/EFI/arch/vmlinuz-linux -u 'root=PARTUUID=16ac66ce-37f6-4947-9a7b-fe298fb12136 rw initrd=\efi\EFI\arch\intel-ucode.img initrd=efi\EFI\arch\initramfs-linux.img' -v
+efibootmgr -d /dev/sda -p 1 -c -L "Arch linux" -l /efi/EFI/arch/vmlinuz-linux -u 'root=PARTUUID=16ac66ce-37f6-4947-9a7b-fe298fb12136 resume=/dev/sda3 rw initrd=\efi\EFI\arch\intel-ucode.img initrd=efi\EFI\arch\initramfs-linux.img' -v
 

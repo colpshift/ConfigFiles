@@ -27,3 +27,6 @@ fi
 # Set keyboard layout
 setxkbmap br
 
+# Set screenlock
+xss-lock -- i3lock -n  -i '/home/colps/Images/Wallpapers/l_quote-03.png' -f &                       
+

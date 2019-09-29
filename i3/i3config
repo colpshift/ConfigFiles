@@ -55,7 +55,7 @@ workspace_layout default
 ### define clients to specific workspaces / screens
     assign [class="URxvt"] 1 
     assign [class="firefox"] 2 
-    assign [class="Google-chrome"] 2 
+    assign [class="Chromium"] 2 
     assign [class="Franz"] 3 
     assign [class="TelegramDesktop"] 3 
     assign [class="Skype"] 3 
@@ -276,7 +276,7 @@ exec --no-startup-id "i3-msg 'workspace 1 ; append_layout /home/colps/.config
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload
 bindsym $mod+x exec \
---no-startup-id i3lock -i '/home/colps/Images/Wallpapers/l_dark-06.png' -t -f
+--no-startup-id i3lock -i '/home/colps/Images/Wallpapers/l_dark-06.png' -f
 bindsym $mod+Shift+e exec \
 --no-startup-id i3-msg exit, mode "default"
 

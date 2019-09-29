@@ -1,0 +1,10 @@
+[Unit]
+Description=Provide a daemon udisksd, D-Bus interfaces used manipulate storage device
+
+[Service]
+ExecStart=/home/colps/.scripts/udiskie_start.sh
+Restart=always
+
+[Install]
+Alias=udiskie.service
+

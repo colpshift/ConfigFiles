@@ -1,5 +1,5 @@
 #
-# /etc/pacman.d/hooks/cleanorphan.hook
+# /etc/pacman.d/hooks/pac_cleanorphan_pacman.hook
 #
 [Trigger]
 Operation = Remove
@@ -11,4 +11,4 @@ Target = *
 [Action]
 Description = Remove unused packages (orphans)
 When = PostTransaction
-Exec = /home/colps/.scripts/clean_orphan_pkg.sh
+Exec = /bin/pacman -Rns "$(pacman -Qttdq)"

@@ -3,10 +3,15 @@
 # ~/.zshrc
 #
 
+### colors
+autoload -U colors && colors
+
 ### completion features
 autoload -Uz compinit promptinit
 compinit
 promptinit
+### Fish-like syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 ### lets files beginning with . be matched without explicitly specifying dot.
 _comp_options+=(globdots)
 ### autocompletion of command line switches for aliases
@@ -24,6 +29,12 @@ setopt autocd
 setopt extendedglob
 ### command not found
 source /usr/share/doc/pkgfile/command-not-found.zsh
+### fzf completion
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+### Improve appearance
+zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
+zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 
 ### Persistent rehash
 zstyle ':completion:*' rehash true
@@ -140,20 +151,7 @@ man() {
     alias ncmpcpp='ncmpcpp -s media_library -S visualizer'    
     alias dmenu_run='dmenu_run -fn "Iosevka-Medium-11'
 
-### colors
-autoload -U colors && colors
-
-### Improve appearance
-zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
-zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
-
-### Fish-like syntax highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-
 ### prompt
 prompt bart
 
-### fzf completion
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

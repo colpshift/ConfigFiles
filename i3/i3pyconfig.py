@@ -91,6 +91,7 @@ STATUS.register(
     critical_color="#ff0000",
     full_color="#c2c2c2",
     status={"CHR":" ", "DPL":" ", "DIS":" ", "FULL":" 100%"},
+    on_doublemiddleclick="urxvtc -e systemctl hybrid-sleep",
 )
 
 # internet status

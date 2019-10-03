@@ -7,7 +7,7 @@ Last Modified: June 14, 2019
 """
 #
 # https://i3pystatus.readthedocs.io/en/latest/i3pystatus.html#i3
-# https://www.fontawesomecheatsheet.com/
+# https://fontawesome.com/cheatsheet?from=io
 # https://www.colorhexa.com/e60053
 #
 # color     green   color ='#00ff00',
@@ -40,14 +40,15 @@ STATUS.register(
 )
 
 # Show weather
-STATUS.register(
-    "weather",
-    format="[{icon}] {current_temp}{temp_unit}[ {update_error}]",
-    interval=900,
-    colorize=True,
-    hints={"markup": "pango"},
-    backend=weathercom.Weathercom(location_code="BRXX0241:1:BR", units="metric"),
-)
+#STATUS.register(
+#    "weather",
+#    format="[{icon}] {current_temp}{temp_unit}[ {update_error}]",
+#    online_interval=900,
+#    offline_interval=1800,
+#    colorize=True,
+#    hints={"markup": "pango"},
+#    backend=weathercom.Weathercom(location_code="BRXX0241:1:BR", units="metric"),
+#)
 
 # check email
 if internet():
@@ -91,7 +92,6 @@ STATUS.register(
     critical_color="#ff0000",
     full_color="#c2c2c2",
     status={"CHR":" ", "DPL":" ", "DIS":" ", "FULL":" 100%"},
-    on_doublemiddleclick="urxvtc -e systemctl hybrid-sleep",
 )
 
 # internet status
@@ -146,7 +146,21 @@ STATUS.register(
 )
 
 # show system information
-STATUS.register("uname", format=" {release}", on_leftclick="urxvt -e uname -a")
+STATUS.register(
+        "uname",
+        format=" {release}",
+        on_leftclick="urxvt -e sh -c -e uname -a",
+)
+
+# show uptime information
+STATUS.register(
+        "uptime",
+        color='#00ff00',
+        alert=True,
+        color_alert="#ffa500",
+        format="  {days} {hours} {mins}",
+        on_rightclick="urxvt -e sh -c -e /home/colps/.scripts/hibernate.sh",
+)
 
 # Show keyboard locks
 STATUS.register(

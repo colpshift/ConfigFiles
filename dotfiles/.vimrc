@@ -158,21 +158,29 @@ let g:rainbow_active = 1
     let g:UltiSnipsJumpForwardTrigger = "<tab>"
     let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " ALE
+    set omnifunc=ale#completion#OmniFunc
     let g:ale_enabled = 0
-    let g:ale_completion_enabled = 1
+    let g:ale_completion_enabled = 0
     let g:ale_sign_column_always = 1
     let g:ale_set_highlights = 1
     let g:ale_echo_cursor = 1
     let g:ale_cursor_detail = 1
-    let g:ale_set_quickfix = 1
     let g:ale_set_loclist = 0
+    let g:ale_set_quickfix = 1
     let g:airline#extensions#ale#enabled = 1
     let g:ale_list_window_size = 5
-    let g:ale_lint_on_text_changed = 1
+    let g:ale_lint_on_text_changed = 0
+    let g:ale_lint_on_enter = 0
+    let g:ale_fix_on_save = 1
     let g:ale_fixers = {
             \ '*': ['remove_trailing_lines', 'trim_whitespace'],
-            \}
-    let g:ale_enabled = 1
+            \ 'javascript': [
+            \     'DoSomething',
+            \     'eslint',
+            \     {buffer, lines -> filter(lines, 'v:val !=~ ''^\s*//''')},],
+            \ 'python':['pylint','pycodestyle'],
+            \ 'sh':['shellcheck'],
+            \ 'ruby':['ruby'],}
 " FZF
     let g:fzf_action = {
     \ 'ctrl-t': 'tab split',

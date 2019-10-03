@@ -9,6 +9,6 @@ Type = Package
 Target = *
 
 [Action]
-Description = Keep the last cache and the currently installed.
+Description = Remove unused packages (orphans)
 When = PostTransaction
-Exec = /usr/bin/paccache -rvk2
+Exec = /home/colps/.scripts/cleanpkg.sh

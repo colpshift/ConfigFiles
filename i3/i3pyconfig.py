@@ -40,7 +40,7 @@ STATUS.register(
 )
 
 # Show weather
-#STATUS.register(
+# STATUS.register(
 #    "weather",
 #    format="[{icon}] {current_temp}{temp_unit}[ {update_error}]",
 #    online_interval=900,
@@ -48,9 +48,10 @@ STATUS.register(
 #    colorize=True,
 #    hints={"markup": "pango"},
 #    backend=weathercom.Weathercom(location_code="BRXX0241:1:BR", units="metric"),
-#)
+# )
 
 # check email
+
 if internet():
     STATUS.register(
         "mail",
@@ -71,7 +72,9 @@ if internet():
     )
 
 # Show/change volume using PA
-STATUS.register("pulseaudio", format="{volume_bar} {volume}%", format_muted=" {volume_bar} Mute")
+STATUS.register("pulseaudio",
+                format="{volume_bar} {volume}%",
+                format_muted=" {volume_bar} Mute")
 
 # show backlight %
 STATUS.register(
@@ -91,7 +94,12 @@ STATUS.register(
     charging_color="#00ff00",
     critical_color="#ff0000",
     full_color="#c2c2c2",
-    status={"CHR":" ", "DPL":" ", "DIS":" ", "FULL":" 100%"},
+    status={
+        "CHR": " ",
+        "DPL": " ",
+        "DIS": " ",
+        "FULL": " 100%"
+    },
 )
 
 # internet status
@@ -122,7 +130,7 @@ STATUS.register(
     format=" {used_mem} {avail_mem}G",
     warn_percentage=70,
     alert_percentage=90,
-    divisor=1024 ** 3,
+    divisor=1024**3,
     on_leftclick="urxvt -e htop",
 )
 
@@ -146,20 +154,18 @@ STATUS.register(
 )
 
 # show system information
-STATUS.register(
-        "uname",
-        format=" {release}",
-        on_leftclick="urxvt -e sh -c -e uname -a",
-)
+STATUS.register("uname",
+                format=" {release}",
+                on_leftclick="urxvt -e sh -c -e uname -a")
 
 # show uptime information
 STATUS.register(
-        "uptime",
-        color='#00ff00',
-        alert=True,
-        color_alert="#ffa500",
-        format="  {days} {hours} {mins}",
-        on_rightclick="urxvt -e sh -c -e /home/colps/.scripts/hibernate.sh",
+    "uptime",
+    color="#00ff00",
+    alert=True,
+    color_alert="#ffa500",
+    format="  {days} {hours} {mins}",
+    on_rightclick="urxvt -e sh -c -e /home/colps/.scripts/hibernate.sh",
 )
 
 # Show keyboard locks

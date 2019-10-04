@@ -61,13 +61,13 @@ set wrap				" Enable line wrapping.
 call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/vim-plug'
         " plugin manager
-    "---------------------------  
+    "---------------------------
 	Plug 'morhetz/gruvbox'
         " vim color theme
     Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
         " status/tabline for vim
-    "---------------------------  
+    "---------------------------
     Plug 'RRethy/vim-illuminate'
         " automatically highlighting other uses of the word under the cursor
 	Plug 'TaDaa/vimade'
@@ -76,16 +76,16 @@ call plug#begin('~/.vim/plugged')
         " shows different levels of parentheses in different colors.
     Plug 'kshenoy/vim-signature'
         " place, toggle and display marks.
-    "---------------------------  
+    "---------------------------
     Plug 'justinmk/vim-sneak'
         " Jump to any location specified by two characters
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-        " command-line fuzzy finder 
+        " command-line fuzzy finder
     Plug 'junegunn/fzf.vim'
         " Things you can do with fzf and Vim.
     Plug 'alok/notational-fzf-vim'
         " searching for a note and creating one are the same operation
-    "---------------------------  
+    "---------------------------
     Plug 'ervandew/supertab'
         " Perform all your vim insert mode completions with Tab
     Plug 'w0rp/ale'
@@ -97,13 +97,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'kkoomen/vim-doge'
         " Generate proper code documentation skeletons with a single keypress
 	Plug 'google/yapf'
-        " formatter for Python files 
-    "---------------------------  
+        " formatter for Python files
+    "---------------------------
 	Plug 'SirVer/ultisnips'
         " snippet solution for Vim
 	Plug 'honza/vim-snippets'
         " snippets for vim
-	"---------------------------  
+	"---------------------------
     Plug 'francoiscabrol/ranger.vim'
         " Ranger integration
     Plug 'felipec/notmuch-vim'
@@ -159,7 +159,7 @@ let g:rainbow_active = 1
     let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " ALE
     set omnifunc=ale#completion#OmniFunc
-    let g:ale_enabled = 0
+    let g:ale_enabled = 1
     let g:ale_completion_enabled = 0
     let g:ale_sign_column_always = 1
     let g:ale_set_highlights = 1
@@ -175,11 +175,15 @@ let g:rainbow_active = 1
     let g:ale_fixers = {
             \ '*': ['remove_trailing_lines', 'trim_whitespace'],
             \ 'javascript': [
-            \     'DoSomething',
-            \     'eslint',
-            \     {buffer, lines -> filter(lines, 'v:val !=~ ''^\s*//''')},],
-            \ 'python':['pylint','pycodestyle'],
-            \ 'sh':['shellcheck'],
+            \       'DoSomething',
+            \       'eslint',
+            \       {buffer, lines -> filter(lines, 'v:val !=~ ''^\s*//''')},],
+            \ 'python':[
+            \       'autopep8',
+            \       'add_blank_lines_for_python_control_statements',
+            \       'black',
+            \       'yapf'],
+            \ 'sh':['shfmt'],
             \ 'ruby':['ruby'],}
 " FZF
     let g:fzf_action = {
@@ -206,7 +210,7 @@ let g:rainbow_active = 1
     let g:fzf_history_dir = '~/.local/share/fzf-history'
 " Notational FZF
 let g:nv_search_paths = ['~/Documents']
-" Supertab 
+" Supertab
     let g:SuperTabDefaultCompletionType = "context"
     let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
@@ -308,4 +312,3 @@ set undofile
 set undodir=$HOME/.vim/undo/
 set backup
 set backupdir=$HOME/.vim/backups/
-

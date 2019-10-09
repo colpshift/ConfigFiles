@@ -1,0 +1,53 @@
+#
+# /etc/postfix/main.cf
+#
+compatibility_level = 2
+queue_directory = /var/spool/postfix
+command_directory = /usr/bin
+daemon_directory = /usr/lib/postfix/bin
+data_directory = /var/lib/postfix
+mail_owner = postfix
+myhostname = localhost
+mydomain = home.lan
+myorigin = home.lan
+inet_interfaces = $myhostname, localhost
+mydestination = $myhostname, localhost.$mydomain, localhost
+unknown_local_recipient_reject_code = 550
+mynetworks_style = host
+mynetworks = 127.0.0.1
+relayhost = smtp.gmail.com:465
+relay_destination_rate_delay = 60
+alias_maps = hash:/etc/aliases
+alias_database = $alias_maps
+smtpd_banner = $myhostname ESMTP $mail_name
+smtp_generic_maps = hash:/etc/postfix/generic
+header_checks = regexp:/etc/postfix/header_checks
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+smtp_tls_CAfile = /etc/postfix/cacert.pem
+smtp_use_tls = yes
+smtp_tls_security_level = encrypt
+smtp_enforce_tls = yes
+disable_dns_lookups = yes
+message_size_limit = 35651584 
+smtp_destination_rate_delay = 60
+debug_peer_level = 2
+debugger_command =
+	 PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
+	 ddd $daemon_directory/$process_name $process_id & sleep 5
+sendmail_path = /usr/bin/sendmail
+newaliases_path = /usr/bin/newaliases
+mailq_path = /usr/bin/mailq
+setgid_group = postdrop
+html_directory = no
+manpage_directory = /usr/share/man
+sample_directory = /etc/postfix
+readme_directory = /usr/share/doc/postfix
+inet_protocols = ipv4
+meta_directory = /etc/postfix
+shlib_directory = /usr/lib/postfix
+smtpd_recipient_restrictions = check_sender_access hash:/etc/postfix/blacklist_incoming
+# Hide the sender's IP and user agent in the Received header
+smtp_header_checks = regexp:/etc/postfix/smtp_header_checks
+#

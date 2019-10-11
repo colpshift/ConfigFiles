@@ -262,7 +262,7 @@ set backspace=eol,start,indent	" Make sure backspace works in insert mode
 " folding
 "------------------------------------------------------------------------------
 set foldenable	        " enable fold
-set foldcolumn=3		" show column indent
+set foldcolumn=0		" show column indent
 set foldmethod=indent   " indentation method
 "define folds by indent level, but can create folds manually too.
 "augroup vimrc

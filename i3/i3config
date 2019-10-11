@@ -14,7 +14,8 @@ set $mod Mod4
 
 ### font window titles
 font pango: Iosevka Medium,FontAwesome,Awesome 5 Free Solid,Awesome 5 Brands Solid 11
-#font pango: Inconsolata 11
+#
+#font pango: Inconsolata-Regular,FontAwesome,Awesome 5 Free Solid,Awesome 5 Brands Solid 10
 
 ### window title alignment = left|center|right
 title_align left

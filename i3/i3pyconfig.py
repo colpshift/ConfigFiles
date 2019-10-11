@@ -23,6 +23,7 @@ from i3pystatus.network import Network
 from i3pystatus.online import Online
 from i3pystatus.weather import weathercom
 from i3pystatus.updates import pacman
+from i3pystatus.temp import Temperature
 
 STATUS = Status()
 
@@ -138,6 +139,14 @@ STATUS.register(
     alert_percentage=90,
     divisor=1024**3,
     on_leftclick="urxvt -e htop",
+)
+
+# show cpu temp
+STATUS.register(
+    "temp",
+    "Temperature",
+    format=" {temp} °C",
+    hints={"markup": "pango"},
 )
 
 # show cpu usage

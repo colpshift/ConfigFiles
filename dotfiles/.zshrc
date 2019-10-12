@@ -152,6 +152,7 @@ man() {
     alias dmenu_run='dmenu_run -fn "Iosevka-Medium-11'
 
 ### prompt
-prompt adam2 red lightblue lightwhite blue
+#prompt adam2 red lightblue lightwhite blue
+prompt bart
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

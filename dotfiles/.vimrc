@@ -5,7 +5,6 @@
 " Description: vim configuration file
 " Last Modified: June 14, 2019
 "
-
 "------------------------------------------------------------------------------
 " start settings
 "------------------------------------------------------------------------------
@@ -15,45 +14,7 @@ filetype plugin indent on
 set fileformat=unix
 set autoread			" Automatically re-read files if unmodified inside Vim.
 set confirm             " Display confirmation dialog when closing unsaved file.
-set nomodeline          " Ignore file’s mode lines.
-
-"------------------------------------------------------------------------------
-" Performance
-"------------------------------------------------------------------------------
-set complete-=i		" Limit the files searched for auto-completes.
-set lazyredraw		" Don’t update screen during macro and script execution.
-
-"------------------------------------------------------------------------------
-" Text Rendering
-"------------------------------------------------------------------------------
-set display+=lastline	" Always try to show a paragraph’s last line.
-set encoding=utf-8		" Use an encoding that supports unicode.
-set linebreak			" Avoid wrapping a line in the middle of a word.
-set scrolloff=1			" Number screen lines keep above and below cursor.
-set sidescrolloff=5		" Number screen columns keep  left and right cursor.
-set wrap				" Enable line wrapping.
-
-"------------------------------------------------------------------------------
-" Auto commands
-"------------------------------------------------------------------------------
-"au BufWinLeave * mkview				" save folds
-"au VimEnter * call RestoreFolds()		" restore folds
-
-"------------------------------------------------------------------------------
-" Scripts
-"------------------------------------------------------------------------------
-" Restore Folds
-"function RestoreFolds()
-"    if @% == ""
-"		set encoding=utf-8
-"    elseif filereadable(@%) == 0
-"		set encoding=utf-8
-"		elseif line('$') == 1 && col('$') == 1
-"		set encoding=utf-8
-"	else
-"		au BufWinEnter * silent loadview
-"	endif
-"endfunction
+"set nomodeline          " Ignore file’s mode lines.
 
 "------------------------------------------------------------------------------
 " plugins package manager - vim-plug
@@ -115,6 +76,8 @@ call plug#end()
 "------------------------------------------------------------------------------
 " rainbow
 let g:rainbow_active = 1
+" Notational FZF
+let g:nv_search_paths = ['~/Documents']
 " sneak
     let g:sneak#label = 1
     map f <Plug>Sneak_s
@@ -143,11 +106,12 @@ let g:rainbow_active = 1
     let g:airline_theme='gruvbox'
     let g:airline_highlighting_cache = 1
 " spell
-    "set spell
-    "set spelllang=en-US
-    "set spellsuggest=best,5
-    "let s:c=",underline"
+    set spell
+    set spelllang=en-US
+    set spellsuggest=best,5
+    let s:c=",underline"
     "let spell_auto_type="text,doc,mail,"
+    autocmd FileType markdown setlocal spell
 " YCM
     let g:ycm_autoclose_preview_window_after_completion=1
     let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
@@ -208,8 +172,6 @@ let g:rainbow_active = 1
     \ 'spinner': ['fg', 'Label'],
     \ 'header':  ['fg', 'Comment'] }
     let g:fzf_history_dir = '~/.local/share/fzf-history'
-" Notational FZF
-let g:nv_search_paths = ['~/Documents']
 " Supertab
     let g:SuperTabDefaultCompletionType = "context"
     let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
@@ -219,12 +181,12 @@ let g:nv_search_paths = ['~/Documents']
 "----------------------------------------------'--------------------------------
 " mapleader
 map <Space> <Leader>
+" auto indent the whole file and keep your cursor in the last position
+nmap <leader>ia mzgg=G`z
 " abbreviations
 ab ~/ $HOME
 " run :w!! command (type fast), to save ready only files.
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
-" auto indent the whole file and keep your cursor in the last position
-nmap <leader>ia mzgg=G`z
 " undo hlsearch
 nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 " insert timestamp
@@ -237,20 +199,20 @@ smap <c-k> <Plug>(complete_parameter#goto_previous_parameter)
 imap <c-k> <Plug>(complete_parameter#goto_previous_parameter)
 
 "------------------------------------------------------------------------------
-" python - programming
+" Performance
 "------------------------------------------------------------------------------
-" python with virtualenv support
-py << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
+set complete-=i		" Limit the files searched for auto-completes.
+set lazyredraw		" Don’t update screen during macro and script execution.
 
-" enable all python highlight
-let python_highlight_all=1
+"------------------------------------------------------------------------------
+" Text Rendering
+"------------------------------------------------------------------------------
+set display+=lastline	" Always try to show a paragraph’s last line.
+set encoding=utf-8		" Use an encoding that supports unicode.
+set linebreak			" Avoid wrapping a line in the middle of a word.
+set scrolloff=1			" Number screen lines keep above and below cursor.
+set sidescrolloff=5		" Number screen columns keep  left and right cursor.
+set wrap				" Enable line wrapping.
 
 "------------------------------------------------------------------------------
 " interface
@@ -299,9 +261,14 @@ set backspace=eol,start,indent	" Make sure backspace works in insert mode
 "------------------------------------------------------------------------------
 " folding
 "------------------------------------------------------------------------------
-set foldenable			" enable fold
-set foldmethod=indent	" fold based on indent level
-set foldcolumn=3		" show column indent
+set foldenable	        " enable fold
+set foldcolumn=0		" show column indent
+set foldmethod=indent   " indentation method
+"define folds by indent level, but can create folds manually too.
+"augroup vimrc
+"  au BufReadPre * set foldmethod=indent
+"  au BufWinEnter * if &fdm == 'indent' | setl foldmethod=manual | endif
+"augroup END
 
 "------------------------------------------------------------------------------
 " swap, undo and backup
@@ -312,3 +279,20 @@ set undofile
 set undodir=$HOME/.vim/undo/
 set backup
 set backupdir=$HOME/.vim/backups/
+
+"------------------------------------------------------------------------------
+" python - programming
+"------------------------------------------------------------------------------
+" python with virtualenv support
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
+
+" enable all python highlight
+let python_highlight_all=1
+"

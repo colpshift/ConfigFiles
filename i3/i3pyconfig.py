@@ -23,6 +23,7 @@ from i3pystatus.network import Network
 from i3pystatus.online import Online
 from i3pystatus.weather import weathercom
 from i3pystatus.updates import pacman
+from i3pystatus.temp import Temperature
 
 STATUS = Status()
 
@@ -35,20 +36,20 @@ GMAILPASS = CONFIG.get("configuration", "password")
 STATUS.register(
     "clock",
     color="#6bb6ff",
-    format=" %F %I:%M %p|",
+    format=" %g/%m/%d %H:%M|",
     on_leftclick="thunderbird https://calendar.google.com/calendar/r/month",
 )
 
 # Show weather
-# STATUS.register(
-#    "weather",
-#    format="[{icon}] {current_temp}{temp_unit}[ {update_error}]",
-#    online_interval=900,
-#    offline_interval=1800,
-#    colorize=True,
-#    hints={"markup": "pango"},
-#    backend=weathercom.Weathercom(location_code="BRXX0241:1:BR", units="metric"),
-# )
+STATUS.register(
+    "weather",
+    format="[{icon}] {current_temp}{temp_unit}[ {update_error}]",
+    interval=900,
+    colorize=True,
+    hints={"markup": "pango"},
+    backend=weathercom.Weathercom(location_code="BRXX0241:1:BR",
+                                  units="metric"),
+)
 
 # check email
 
@@ -68,7 +69,7 @@ if internet():
         format_plural=(" {current_unread}/{unread}"),
         format=" {current_unread}/{unread}",
         on_leftclick="thunderbird https://mail.google.com/mail/u/0/#inbox",
-        hide_if_null=False,
+        hide_if_null=True,
     )
 
 # Show/change volume using PA
@@ -112,12 +113,18 @@ STATUS.register(
     interval=10,
 )
 
-# show network speed
+# show network interface and speed
 STATUS.register(
     Network,
+    hints={"markup": "pango"},
     dynamic_color=True,
-    format_up=" {interface:.6} {bytes_recv}K {bytes_sent}K",
-    format_down=" {interface:.6} ",
+    # detect_active=True,
+    # next_if_down=True,
+    # format_active_up="{wlp3s0} {enp2s0}",
+    # format_up=" {interface} {network_graph_recv}{bytes_recv}KB/s",
+    format_up=" {interface:}  {bytes_recv}KB/s",
+    ## format_down=" {interface:} ",
+    format_down="{interface}: DOWN",
     interface="wlp3s0",
 )
 
@@ -134,11 +141,19 @@ STATUS.register(
     on_leftclick="urxvt -e htop",
 )
 
+# show cpu temp
+STATUS.register(
+    "temp",
+    "Temperature",
+    format=" {temp} °C",
+    hints={"markup": "pango"},
+)
+
 # show cpu usage
 STATUS.register(
     "load",
     critical_color="#ff0000",
-    format=" {avg1} {avg5} {tasks}",
+    format=" {avg5} {tasks}",
     on_leftclick="urxvt -e htop",
 )
 
@@ -164,7 +179,7 @@ STATUS.register(
     color="#00ff00",
     alert=True,
     color_alert="#ffa500",
-    format="  {days} {hours} {mins}",
+    format="  {days}d {hours}h {mins}m",
     on_rightclick="urxvt -e sh -c -e /home/colps/.scripts/hibernate.sh",
 )
 

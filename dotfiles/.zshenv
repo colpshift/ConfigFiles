@@ -7,6 +7,9 @@
 typeset -U path
 path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts $(ruby -e 'puts Gem.user_dir')/bin  $path[@])
 
+### prompt theme path
+fpath=("$HOME/.zprompts" "$fpath[@]")
+
 ### systemd user
 export XDG_RUNTIME_DIR="/run/user/1000"
 

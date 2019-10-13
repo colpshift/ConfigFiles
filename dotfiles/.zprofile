@@ -1,5 +1,5 @@
 #!/bin/zsh
 #
-# $HOME.zprofile
+# $HOME/.zprofile
 #
-[[ -f ~/.zshrc ]] && . ~/.zshrc
+

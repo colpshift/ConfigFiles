@@ -1,6 +1,6 @@
 #!/bin/zsh
 #
-# ~/.zshrc
+# $HOME/.zshrc
 #
 
 ### colors
@@ -156,3 +156,4 @@ man() {
 prompt bart
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#

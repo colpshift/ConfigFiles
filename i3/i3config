@@ -62,11 +62,14 @@ workspace_layout default
     assign [class="Skype"] 3 
     assign [class="Zathura"] 4 
     assign [class="Simple-scan"] 4 
+    assign [class="Sxiv"] 4 
     assign [class="Gimp-2.10"] 5 
-    assign [class="Sxiv"] 5 
     assign [class="Nitrogen"] 5 
     assign [class="Dia"] 5 
     assign [class="MindMaster"] 5 
+    assign [class="Et"] 5 
+    assign [class="Wps"] 5 
+    assign [class="Wpp"] 5 
     assign [class="VirtualBox Manager"] 6 
     assign [class="VirtualBox Machine"] 6 
     assign [class="Stremio"] 7 
@@ -270,10 +273,15 @@ exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "nm-applet"
 exec --no-startup-id /home/colps/.scripts/urxvts.sh
 exec --no-startup-id /home/colps/.scripts/urxvts.sh
+# restore last layout
 #exec --no-startup-id /home/colps/.scripts/urxvts.sh -name "urxvt1"
 #exec --no-startup-id /home/colps/.scripts/ursvts.sh -name "urxvt2"
 #exec --no-startup-id /home/colps/.scripts/urxvts.sh -name "urxvt3"
 #exec --no-startup-id "i3-msg 'workspace 1 ; append_layout /home/colps/.config/i3/workspace-1.json'"
+# scripts
+exec --no-startup-id /home/colps/.scripts/autocutsel_start.sh
+exec --no-startup-id /home/colps/.scripts/devices_start.sh
+exec --no-startup-id /home/colps/.scripts/udiskie_start.sh
 
 ### reloading/restarting/exiting/lock
 bindsym $mod+Shift+r restart
@@ -281,7 +289,6 @@ bindsym $mod+Shift+w reload
 bindsym $mod+x exec \
 exec i3lock -i '/home/colps/Images/Wallpapers/l_quote-04.png' -f output eDP-1
 exec xss-lock -- i3lock -i '/home/colps/Images/Wallpapers/l_quote-03.png' -f output eDP-1
-
 bindsym $mod+Shift+e exec \
 --no-startup-id i3-msg exit, mode "default"
 
@@ -290,7 +297,6 @@ bindsym $mod+Return	exec /home/colps/.scripts/urxvts.sh
 bindsym $mod+a		exec /home/colps/.scripts/urxvts.sh -e ranger
 bindsym $mod+z		exec rofi -show drun
 bindsym $mod+m		exec thunderbird
-#
 bindsym Ctrl+Shift+b exec firefox
 bindsym Ctrl+Shift+m exec electronplayer
 bindsym Ctrl+Shift+i exec virtualbox

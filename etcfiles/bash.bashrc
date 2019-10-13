@@ -75,4 +75,4 @@ alias yayu='yay -Syu && pkgfile -u'
 alias gpg='gpg2'
 alias urxvt='sh $HDC/.scripts/urxvts.sh'
 alias pkgfile='sudo pkgfile'
-
+#

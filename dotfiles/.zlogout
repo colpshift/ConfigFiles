@@ -1,8 +1,8 @@
 #!/bin/zsh
 #
-# ~/.zlogout
+# $HOME/.zlogout
 #
 
 # Stop Firefox/Profile on RAM
 /usr/bin/firefox-sync
-
+#

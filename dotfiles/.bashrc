@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# ~/.bashrc
+# $HOME/.bashrc
 #
 
 # If not running interactively, don't do anything
@@ -18,5 +18,5 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 # completion features
 source /usr/share/bash-completion/bash_completion
 
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+#

@@ -145,7 +145,6 @@ man() {
     alias yayu='yay -Syu'
     alias gpg='gpg2'
     alias urxvt='sh $HOME/.scripts/urxvts.sh'
-    alias pkgfile='sudo pkgfile'
     alias cat="bat --theme TwoDark"
     alias notmuch-vim='vim -c NotMuch'
     alias ncmpcpp='ncmpcpp -s media_library -S visualizer'    

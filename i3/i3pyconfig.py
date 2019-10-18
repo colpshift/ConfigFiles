@@ -123,8 +123,7 @@ STATUS.register(
     # format_active_up="{wlp3s0} {enp2s0}",
     # format_up=" {interface} {network_graph_recv}{bytes_recv}KB/s",
     format_up=" {interface:}  {bytes_recv}KB/s",
-    ## format_down=" {interface:} ",
-    format_down="{interface}: DOWN",
+    format_down=" {interface}: DOWN",
     interface="wlp3s0",
 )
 

@@ -55,7 +55,7 @@ workspace_layout default
 
 ### define clients to specific workspaces / screens
     assign [class="urxvt"] 1 
-    assign [class="firefox"] 2 
+    assign [class="Firefox"] 2 
     assign [class="Chromium"] 2 
     assign [class="Franz"] 3 
     assign [class="TelegramDesktop"] 3 
@@ -166,8 +166,8 @@ mode "$mode_gaps_outer" {
 bindsym $mod+Shift+q kill
 
 ### dmenu
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "Iosevka-11"
-bindsym $mod+q exec --no-startup-id passmenu -fn "Iosevka-11"
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "Iosevka Medium-11"
+bindsym $mod+q exec --no-startup-id passmenu -fn "Iosevka Medium-11"
 
 ### change focus
     bindsym $mod+l focus left
@@ -278,7 +278,7 @@ exec --no-startup-id /home/colps/.scripts/urxvts.sh
 #exec --no-startup-id /home/colps/.scripts/ursvts.sh -name "urxvt2"
 #exec --no-startup-id /home/colps/.scripts/urxvts.sh -name "urxvt3"
 #exec --no-startup-id "i3-msg 'workspace 1 ; append_layout /home/colps/.config/i3/workspace-1.json'"
-# scripts
+# daemons
 exec --no-startup-id /home/colps/.scripts/autocutsel_start.sh
 exec --no-startup-id /home/colps/.scripts/devices_start.sh
 exec --no-startup-id /home/colps/.scripts/udiskie_start.sh
@@ -287,7 +287,7 @@ exec --no-startup-id /home/colps/.scripts/udiskie_start.sh
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload
 bindsym $mod+x exec \
-exec i3lock -i '/home/colps/Images/Wallpapers/l_quote-04.png' -f output eDP-1
+exec i3lock -i '/home/colps/Images/Wallpapers/l_arch-01.png' -f output eDP-1
 exec xss-lock -- i3lock -i '/home/colps/Images/Wallpapers/l_quote-03.png' -f output eDP-1
 bindsym $mod+Shift+e exec \
 --no-startup-id i3-msg exit, mode "default"
@@ -297,7 +297,7 @@ bindsym $mod+Return	exec /home/colps/.scripts/urxvts.sh
 bindsym $mod+a		exec /home/colps/.scripts/urxvts.sh -e ranger
 bindsym $mod+z		exec rofi -show drun
 bindsym $mod+m		exec thunderbird
-bindsym Ctrl+Shift+b exec firefox
+bindsym Ctrl+Shift+b exec chromium
 bindsym Ctrl+Shift+m exec electronplayer
 bindsym Ctrl+Shift+i exec virtualbox
 bindsym Ctrl+Shift+t exec /opt/tor-browser_en-US/Browser/start-tor-browser

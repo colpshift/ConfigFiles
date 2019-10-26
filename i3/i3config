@@ -55,7 +55,7 @@ workspace_layout default
 
 ### define clients to specific workspaces / screens
     assign [class="urxvt"] 1 
-    assign [class="Firefox"] 2 
+    assign [class="firefox"] 2 
     assign [class="Chromium"] 2 
     assign [class="Franz"] 3 
     assign [class="TelegramDesktop"] 3 
@@ -249,15 +249,12 @@ mode "resize" {
     bindsym k resize grow height 10 px or 10 ppt
     bindsym l resize shrink height 10 px or 10 ppt
     bindsym ntilde resize grow width 10 px or 10 ppt
-	# Pressing left will shrink the window’s width.
-    # Pressing right will grow the window’s width.
-    # Pressing up will shrink the window’s height.
-    # Pressing down will grow the window’s height.
+	# bindings for HLJK
     bindsym j resize shrink width 10 px or 10 ppt
     bindsym k resize grow height 10 px or 10 ppt
     bindsym l resize shrink height 10 px or 10 ppt
     bindsym ntilde resize grow width 10 px or 10 ppt
-    # same bindings, but for the arrow keys
+    # bindings for the arrow keys
     bindsym Left resize shrink width 10 px or 10 ppt
     bindsym Down resize grow height 10 px or 10 ppt
     bindsym Up resize shrink height 10 px or 10 ppt
@@ -268,20 +265,26 @@ mode "resize" {
 }
 
 ### automatically starting applications on i3 startup
+#
+# daemons
 exec --no-startup-id "compton &"
+exec --no-startup-id /home/colps/.scripts/autocutsel_start.sh
+exec --no-startup-id /home/colps/.scripts/udiskie_start.sh
+exec --no-startup-id /home/colps/.scripts/mpd_start.sh
+exec --no-startup-id xss-lock -- i3lock -i '/home/colps/Images/Wallpapers/l_quote-03.png' -f &
+# apps
 exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "nm-applet"
+exec --no-startup-id "safeeyes"
 exec --no-startup-id /home/colps/.scripts/urxvts.sh
 exec --no-startup-id /home/colps/.scripts/urxvts.sh
+# checks
+exec --no-startup-id /home/colps/.scripts/devices_start.sh
 # restore last layout
 #exec --no-startup-id /home/colps/.scripts/urxvts.sh -name "urxvt1"
 #exec --no-startup-id /home/colps/.scripts/ursvts.sh -name "urxvt2"
 #exec --no-startup-id /home/colps/.scripts/urxvts.sh -name "urxvt3"
 #exec --no-startup-id "i3-msg 'workspace 1 ; append_layout /home/colps/.config/i3/workspace-1.json'"
-# daemons
-exec --no-startup-id /home/colps/.scripts/autocutsel_start.sh
-exec --no-startup-id /home/colps/.scripts/devices_start.sh
-exec --no-startup-id /home/colps/.scripts/udiskie_start.sh
 
 ### reloading/restarting/exiting/lock
 bindsym $mod+Shift+r restart
@@ -297,7 +300,7 @@ bindsym $mod+Return	exec /home/colps/.scripts/urxvts.sh
 bindsym $mod+a		exec /home/colps/.scripts/urxvts.sh -e ranger
 bindsym $mod+z		exec rofi -show drun
 bindsym $mod+m		exec thunderbird
-bindsym Ctrl+Shift+b exec chromium
+bindsym Ctrl+Shift+b exec firefox
 bindsym Ctrl+Shift+m exec electronplayer
 bindsym Ctrl+Shift+i exec virtualbox
 bindsym Ctrl+Shift+t exec /opt/tor-browser_en-US/Browser/start-tor-browser

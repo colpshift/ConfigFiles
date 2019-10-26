@@ -99,6 +99,7 @@ let g:nv_search_paths = ['~/Documents']
     let g:gruvbox_invert_tabline = '1'
     let g:gruvbox_invert_indent_guides = '1'
     let g:gruvbox_improved_warnings ='1'
+    let g:gruvbox_italic=1
 " vimade
     let g:vimade = {}
     let g:vimade.fadelevel = 0.3
@@ -281,7 +282,7 @@ set backup
 set backupdir=$HOME/.vim/backups/
 
 "------------------------------------------------------------------------------
-" python - programming
+" programming
 "------------------------------------------------------------------------------
 " python with virtualenv support
 py << EOF

@@ -13,5 +13,3 @@ MAILTO=colps
 # *  *  *  *  * user-name  command to be executed
 @reboot /bin/flameshot &
 @reboot eval "$(ssh-agent -s)"
-@reboot mpd &
-@reboot xss-lock -- i3lock -i '/home/colps/Images/Wallpapers/l_quote-03.png' -f &

@@ -124,7 +124,7 @@ STATUS.register(
     # format_up=" {interface} {network_graph_recv}{bytes_recv}KB/s",
     format_up=" {interface:}  {bytes_recv}KB/s",
     format_down=" {interface}: DOWN",
-    interface="wlp3s0",
+    interface="enp2s0",
 )
 
 # show available memory

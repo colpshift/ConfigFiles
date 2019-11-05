@@ -11,4 +11,4 @@ Target = *
 [Action]
 Description = update the pkgfile list.
 When = PostTransaction
-Exec = /bin/pkgfile -u
+Exec = sudo /bin/pkgfile -u

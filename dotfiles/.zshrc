@@ -141,8 +141,9 @@ man() {
     alias vi='vim'
     alias pacman='sudo pacman --color=always'
     alias pacu='pacman -Syu'
-    alias paci='sh $HOME/.scripts/fzf_pkg.sh'
+    alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
     alias yayu='yay -Syu'
+    alias yayi='sh $HOME/.scripts/fzf_pkg_aur.sh'
     alias gpg='gpg2'
     alias urxvt='sh $HOME/.scripts/urxvts.sh'
     alias cat="bat --theme TwoDark"

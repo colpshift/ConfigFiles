@@ -69,6 +69,9 @@ call plug#begin('~/.vim/plugged')
         " Ranger integration
     Plug 'felipec/notmuch-vim'
         " mail client interface, utilizing the notmuch framework.
+    "___________________________
+    Plug 'tpope/vim-fugitive'
+        " plugin to use git
 call plug#end()
 
 "------------------------------------------------------------------------------
@@ -107,12 +110,12 @@ let g:nv_search_paths = ['~/Documents']
     let g:airline_theme='gruvbox'
     let g:airline_highlighting_cache = 1
 " spell
-    set spell
-    set spelllang=en-US
-    set spellsuggest=best,5
-    let s:c=",underline"
-    "let spell_auto_type="text,doc,mail,"
-    autocmd FileType markdown setlocal spell
+   " set spell
+   " set spelllang=en-US
+   " set spellsuggest=best,5
+   " let s:c=",underline"
+   " let spell_auto_type="text,doc,mail,"
+   " autocmd FileType markdown setlocal spell
 " YCM
     let g:ycm_autoclose_preview_window_after_completion=1
     let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']

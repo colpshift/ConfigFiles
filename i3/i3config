@@ -70,6 +70,7 @@ workspace_layout default
     assign [class="Et"] 5 
     assign [class="Wps"] 5 
     assign [class="Wpp"] 5 
+    assign [class="Atom"] 5 
     assign [class="VirtualBox Manager"] 6 
     assign [class="VirtualBox Machine"] 6 
     assign [class="Stremio"] 7 
@@ -271,27 +272,22 @@ exec --no-startup-id "compton &"
 exec --no-startup-id /home/colps/.scripts/autocutsel_start.sh
 exec --no-startup-id /home/colps/.scripts/udiskie_start.sh
 exec --no-startup-id /home/colps/.scripts/mpd_start.sh
-exec --no-startup-id xss-lock -- i3lock -i '/home/colps/Images/Wallpapers/l_quote-03.png' -f &
+exec --no-startup-id xss-lock -- i3lock -i '/usr/share/pixmaps/lock_cave.png' -f &
 # apps
 exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "nm-applet"
 exec --no-startup-id "safeeyes"
-exec --no-startup-id /home/colps/.scripts/urxvts.sh
-exec --no-startup-id /home/colps/.scripts/urxvts.sh
+exec --no-startup-id urxvt -name "urxvt1"
+exec --no-startup-id urxvt -name "urxvt2"
+
 # checks
 exec --no-startup-id /home/colps/.scripts/devices_start.sh
-# restore last layout
-#exec --no-startup-id /home/colps/.scripts/urxvts.sh -name "urxvt1"
-#exec --no-startup-id /home/colps/.scripts/ursvts.sh -name "urxvt2"
-#exec --no-startup-id /home/colps/.scripts/urxvts.sh -name "urxvt3"
-#exec --no-startup-id "i3-msg 'workspace 1 ; append_layout /home/colps/.config/i3/workspace-1.json'"
 
 ### reloading/restarting/exiting/lock
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload
 bindsym $mod+x exec \
-exec i3lock -i '/home/colps/Images/Wallpapers/l_arch-01.png' -f output eDP-1
-exec xss-lock -- i3lock -i '/home/colps/Images/Wallpapers/l_quote-03.png' -f output eDP-1
+exec i3lock -i '/usr/share/pixmaps/lock_cave.png' -f
 bindsym $mod+Shift+e exec \
 --no-startup-id i3-msg exit, mode "default"
 

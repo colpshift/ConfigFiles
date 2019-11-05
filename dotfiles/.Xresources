@@ -65,7 +65,13 @@ URxvt.secondaryWheel: 1
 
 ! Extensions
 !
-URxvt.perl-ext-common:clipboard,matcher,url-select,fullscreen,resize-font,keyboard-select
+URxvt.perl-ext-common:tabbed,clipboard,matcher,url-select,fullscreen,resize-font,keyboard-select
+!
+! tabs
+URxvt.tabbed.tabbar-fg: 249
+URxvt.tabbed.tabbar-bg: 016
+URxvt.tabbed.tab-fg: 046
+URxvt.tabbed.tab-bg: 016
 !
 ! Clipboard
 URxvt.clipboard.autocopy: true
@@ -104,4 +110,3 @@ URxvt.print-pipe: "cat > /dev/null"
 !
 ! Slow performance when drawing glyphs
 URxvt*skipBuiltinGlyphs: true
-

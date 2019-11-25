@@ -4,49 +4,47 @@
 
 !!! urxvt -----------------------------------------------------------------
 
-! theme gruvbox-light
+! themes
 !
+! gruvbox-light
 ! hard contrast: *background: #f9f5d7
-*background: #f9f5d7
 ! soft contrast: *background: #f2e5bc
+*background: #f2e5bc
 *foreground: #928374
-! Black + DarkGrey
 *color0:  #fdf4c1
 *color8:  #928374
-! DarkRed + Red
 *color1:  #cc241d
 *color9:  #9d0006
-! DarkGreen + Green
 *color2:  #98971a
 *color10: #79740e
-! DarkYellow + Yellow
 *color3:  #d79921
 *color11: #b57614
-! DarkBlue + Blue
 *color4:  #458588
 *color12: #076678
-! DarkMagenta + Magenta
 *color5:  #b16286
 *color13: #8f3f71
-! DarkCyan + Cyan
 *color6:  #689d6a
 *color14: #427b58
-! LightGrey + White
 *color7:  #7c6f64
 *color15: #3c3836
 
 ! Apearence
 !
 ! Font
+URxvt.font: xft:TerminessTTF Nerd Font Mono:Medium:size=13
 !URxvt.font: xft:Inconsolata-Regular:size=12
-URxvt.font: xft:Iosevka Medium:Medium:size=12
+!URxvt.font: xft:Iosevka Medium:Medium:size=12
+!URxvt.font: xft:DroidSansMono:Medium:size=13
 !
 ! Font spacing
 !URxvt.letterSpace: -2
 !
 ! Real transparency
-URxvt*depth: 30
-URxvt*background: rgba:0000/0000/0200/c800
+!URxvt*depth: 30
+!URxvt*background: rgba:0000/0000/0200/c800
+! Fake transparency
+urxvt*transparent: true
+urxvt*shading: 30
 
 ! Scrolling
 !
@@ -65,13 +63,13 @@ URxvt.secondaryWheel: 1
 
 ! Extensions
 !
-URxvt.perl-ext-common:tabbed,clipboard,matcher,url-select,fullscreen,resize-font,keyboard-select
+URxvt.perl-ext-common:clipboard,matcher,url-select,fullscreen,resize-font,keyboard-select
 !
 ! tabs
-URxvt.tabbed.tabbar-fg: 249
-URxvt.tabbed.tabbar-bg: 016
-URxvt.tabbed.tab-fg: 046
-URxvt.tabbed.tab-bg: 016
+!URxvt.tabbed.tabbar-fg: 249
+!URxvt.tabbed.tabbar-bg: 016
+!URxvt.tabbed.tab-fg: 046
+!URxvt.tabbed.tab-bg: 016
 !
 ! Clipboard
 URxvt.clipboard.autocopy: true
@@ -109,4 +107,5 @@ URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.print-pipe: "cat > /dev/null"
 !
 ! Slow performance when drawing glyphs
-URxvt*skipBuiltinGlyphs: true
+URxvt*skipBuiltinGlyphs: false
+

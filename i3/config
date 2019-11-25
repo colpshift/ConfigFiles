@@ -5,7 +5,7 @@
 # Last Modified: 14/01/2019 23:43
 #
 # https://i3wm.org/docs/userguide.html
-# https://www.fontawesomecheatsheet.com/
+# https://fontawesome.com/cheatsheet/free/regular
 # https://www.colorhexa.com/
 #
 
@@ -13,9 +13,7 @@
 set $mod Mod4
 
 ### font window titles
-font pango: Iosevka Medium,FontAwesome,Awesome 5 Free Solid,Awesome 5 Brands Solid 11
-#
-#font pango: Inconsolata-Regular,FontAwesome,Awesome 5 Free Solid,Awesome 5 Brands Solid 10
+font pango: TerminessTTF Nerd Font Mono Medium,Awesome 5 Free Solid,Awesome 5 Brands Regular 10
 
 ### window title alignment = left|center|right
 title_align left
@@ -57,30 +55,27 @@ workspace_layout default
     assign [class="urxvt"] 1 
     assign [class="firefox"] 2 
     assign [class="Chromium"] 2 
+    assign [class="Tor Browser"] 2 
     assign [class="Franz"] 3 
     assign [class="TelegramDesktop"] 3 
     assign [class="Skype"] 3 
-    assign [class="Zathura"] 4 
-    assign [class="Simple-scan"] 4 
-    assign [class="Sxiv"] 4 
+    assign [class="Zathura"] 4 
+    assign [class="Simple-scan"] 4 
+    assign [class="pm"] 4 
+    assign [class="pr"] 4 
+    assign [class="tm"] 4 
+    assign [class="Mousepad"] 4 
+    assign [class="Sxiv"] 5 
     assign [class="Gimp-2.10"] 5 
     assign [class="Nitrogen"] 5 
     assign [class="Dia"] 5 
     assign [class="MindMaster"] 5 
-    assign [class="Et"] 5 
-    assign [class="Wps"] 5 
-    assign [class="Wpp"] 5 
-    assign [class="Atom"] 5 
     assign [class="VirtualBox Manager"] 6 
     assign [class="VirtualBox Machine"] 6 
     assign [class="Stremio"] 7 
     assign [class="electronplayer"] 7 
-    assign [class="Tor Browser"] 8 
     assign [class="Spotify"] 9 
-    assign [class="Thunderbird"] 10 
-
-### define output to specific workspace
-workspace "1 " output HDMI-1
+    assign [class="Thunderbird"] 10  
 
 ### moving workspaces between outputs
 bindsym $mod+Shift+o move workspace to output left
@@ -109,7 +104,8 @@ gaps outer 2
 
 ### configuring i3pystatus bar
 bar {
-    status_command    python ~/.config/i3pystatus/i3pyconfig.py
+    status_command    python ~/.config/i3/i3pystatus/i3pyconfig.py
+    tray_output eDP-1
     position          top
     workspace_buttons yes
 	colors {
@@ -167,8 +163,8 @@ mode "$mode_gaps_outer" {
 bindsym $mod+Shift+q kill
 
 ### dmenu
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "Iosevka Medium-11"
-bindsym $mod+q exec --no-startup-id passmenu -fn "Iosevka Medium-11"
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "TerminessTTF Nerd Font Mono Medium-10"
+bindsym $mod+q exec --no-startup-id passmenu -fn "TerminessTTF Nerd Font Mono Medium-10"
 
 ### change focus
     bindsym $mod+l focus left
@@ -189,7 +185,7 @@ bindsym $mod+q exec --no-startup-id passmenu -fn "Iosevka Medium-11"
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
+    bindsym $mod+Shift+Right zzzzzmove right
 
 ### enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -213,25 +209,25 @@ bindsym $mod+o focus child
     bindsym $mod+1 workspace 1 
     bindsym $mod+2 workspace 2 
     bindsym $mod+3 workspace 3 
-    bindsym $mod+4 workspace 4 
+    bindsym $mod+4 workspace 4 
     bindsym $mod+5 workspace 5 
     bindsym $mod+6 workspace 6 
     bindsym $mod+7 workspace 7 
     bindsym $mod+8 workspace 8 
     bindsym $mod+9 workspace 9 
-    bindsym $mod+0 workspace 10 
+    bindsym $mod+0 workspace 10  
 
 ### move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace 1 
     bindsym $mod+Shift+2 move container to workspace 2 
     bindsym $mod+Shift+3 move container to workspace 3 
-    bindsym $mod+Shift+4 move container to workspace 4 
+    bindsym $mod+Shift+4 move container to workspace 4 
     bindsym $mod+Shift+5 move container to workspace 5 
     bindsym $mod+Shift+6 move container to workspace 6 
     bindsym $mod+Shift+7 move container to workspace 7 
     bindsym $mod+Shift+8 move container to workspace 8 
     bindsym $mod+Shift+9 move container to workspace 9 
-    bindsym $mod+Shift+0 move container to workspace 10 
+    bindsym $mod+Shift+0 move contzoainer to workspace 10  
 
 ### screenshot
 bindsym $mod+Shift+p exec "flameshot gui"
@@ -268,39 +264,36 @@ mode "resize" {
 ### automatically starting applications on i3 startup
 #
 # daemons
-exec --no-startup-id "compton &"
-exec --no-startup-id /home/colps/.scripts/autocutsel_start.sh
-exec --no-startup-id /home/colps/.scripts/udiskie_start.sh
-exec --no-startup-id /home/colps/.scripts/mpd_start.sh
-exec --no-startup-id xss-lock -- i3lock -i '/usr/share/pixmaps/lock_cave.png' -f &
+exec --no-startup-id "$HOME/.scripts/picom_start.sh"
+exec --no-startup-id "$HOME/.scripts/clipit_start.sh"
+exec --no-startup-id "$HOME/.scripts/udiskie_start.sh"
+exec --no-startup-id "$HOME/.scripts/mpd_start.sh"
+exec --no-startup-id "$HOME/.scripts/xss-lock_start.sh"
 # apps
-exec --no-startup-id "nitrogen --restore"
+exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
-exec --no-startup-id "safeeyes"
-exec --no-startup-id urxvt -name "urxvt1"
-exec --no-startup-id urxvt -name "urxvt2"
-
 # checks
 exec --no-startup-id /home/colps/.scripts/devices_start.sh
 
+#A
 ### reloading/restarting/exiting/lock
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload
 bindsym $mod+x exec \
-exec i3lock -i '/usr/share/pixmaps/lock_cave.png' -f
+exec i3lock -i '/usr/share/pixmaps/lock_cave.png' -tf
 bindsym $mod+Shift+e exec \
 --no-startup-id i3-msg exit, mode "default"
 
 ### app shortcuts
-bindsym $mod+Return	exec /home/colps/.scripts/urxvts.sh
-bindsym $mod+a		exec /home/colps/.scripts/urxvts.sh -e ranger
-bindsym $mod+z		exec rofi -show drun
-bindsym $mod+m		exec thunderbird
-bindsym Ctrl+Shift+b exec firefox
-bindsym Ctrl+Shift+m exec electronplayer
-bindsym Ctrl+Shift+i exec virtualbox
-bindsym Ctrl+Shift+t exec /opt/tor-browser_en-US/Browser/start-tor-browser
-bindsym Ctrl+Shift+n workspace 9 , exec spotify
+bindsym $mod+Return	    exec /home/colps/.scripts/urxvts.sh
+bindsym $mod+a		    exec urxvtc -e ranger
+bindsym $mod+z		    exec rofi -show drun
+bindsym $mod+m		    workspace 10  , exec thunderbird
+bindsym Ctrl+Shift+b    exec firefox
+bindsym Ctrl+Shift+m    exec electronplayer
+bindsym Ctrl+Shift+i    exec virtualbox
+bindsym Ctrl+Shift+t    exec /home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser
+bindsym Ctrl+Shift+n    workspace 9 , exec spotify
 #urxvt -e ncmpcpp -s media_library -S visualizer
 
 ### FN Keys

@@ -24,6 +24,8 @@ call plug#begin('~/.vim/plugged')
         " plugin manager
     "---------------------------
 	Plug 'morhetz/gruvbox'
+    Plug 'dracula/vim', { 'as': 'dracula' }
+    Plug 'nikolasvargas/distinguished.vim'
         " vim color theme
     Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
@@ -31,7 +33,7 @@ call plug#begin('~/.vim/plugged')
     "---------------------------
     Plug 'RRethy/vim-illuminate'
         " automatically highlighting other uses of the word under the cursor
-	Plug 'TaDaa/vimade'
+	"Plug 'TaDaa/vimade'
         " fades your inactive buffers and preserves your syntax highlighting
 	Plug 'luochen1990/rainbow'
         " shows different levels of parentheses in different colors.
@@ -60,7 +62,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'google/yapf'
         " formatter for Python files
     "---------------------------
-	Plug 'SirVer/ultisnips'
+	"Plug 'SirVer/ultisnips'
         " snippet solution for Vim
 	Plug 'honza/vim-snippets'
         " snippets for vim
@@ -69,15 +71,13 @@ call plug#begin('~/.vim/plugged')
         " Ranger integration
     Plug 'felipec/notmuch-vim'
         " mail client interface, utilizing the notmuch framework.
-    "___________________________
-    Plug 'tpope/vim-fugitive'
-        " plugin to use git
+    "__________________________
 call plug#end()
 
 "------------------------------------------------------------------------------
 " plugins configuration
 "------------------------------------------------------------------------------
-" rainbow
+" rainbor
 let g:rainbow_active = 1
 " Notational FZF
 let g:nv_search_paths = ['~/Documents']
@@ -101,11 +101,16 @@ let g:nv_search_paths = ['~/Documents']
     let g:gruvbox_contrast_dark = 'medium'
     let g:gruvbox_invert_tabline = '1'
     let g:gruvbox_invert_indent_guides = '1'
-    let g:gruvbox_improved_warnings ='1'
-    let g:gruvbox_italic=1
+    let g:gruvbox_invert_tabline = '1'
+    "let g:gruvbox_improved_strings = '1'
+    let g:gruvbox_improved_warnings = '1'
+    let g:gruvbox_italic = '1'
+    let g:gruvbox_bold = '1'
+    let g:gruvbox_underline = '1'
+    let g:gruvbox_undercurl = '1'
 " vimade
-    let g:vimade = {}
-    let g:vimade.fadelevel = 0.3
+    "let g:vimade = {}
+    "let g:vimade.fadelevel = 0.3
 " airline
     let g:airline_theme='gruvbox'
     let g:airline_highlighting_cache = 1
@@ -122,9 +127,9 @@ let g:nv_search_paths = ['~/Documents']
     let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
     let g:SuperTabDefaultCompletionType = '<C-n>'
 " UltiSnips
-    let g:UltiSnipsExpandTrigger = "<tab>"
-    let g:UltiSnipsJumpForwardTrigger = "<tab>"
-    let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+    "let g:UltiSnipsExpandTrigger = "<tab>"
+    "let g:UltiSnipsJumpForwardTrigger = "<tab>"
+    "let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " ALE
     set omnifunc=ale#completion#OmniFunc
     let g:ale_enabled = 1
@@ -288,14 +293,14 @@ set backupdir=$HOME/.vim/backups/
 " programming
 "------------------------------------------------------------------------------
 " python with virtualenv support
-py << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
+"py << EOF
+"import os
+"import sys
+"if 'VIRTUAL_ENV' in os.environ:
+"    project_base_dir = os.environ['VIRTUAL_ENV']
+"    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+"    execfile(activate_this, dict(__file__=activate_this))
+"EOF
 
 " enable all python highlight
 let python_highlight_all=1

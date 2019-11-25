@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+#
+# $HOME/.config/sxiv/exec/key-handler
+# Author: Colpshift
+# Github: https://github.com/colpshift
+# Description: sxiv action
+# Last Modified: 18/11/2019 20:45
+#
+
+while read -r file
+do
+    case "$1" in
+    "C-d")
+            mv "$file" ~/.trash ;;
+    "C-r")
+            convert -rotate 90 "$file" "$file" ;;
+    "C-c")
+            echo "$file" | xclip -selection clipboard ;;
+    "C-w")
+            feh --bg-fill "$file" "$file" ;;
+    "C-g")  
+	        gimp "$file" ;;
+    esac
+done
+

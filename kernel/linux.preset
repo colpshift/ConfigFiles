@@ -1,7 +1,6 @@
 # mkinitcpio preset file for the 'linux' package
 
-# Directory to copy the kernel
-ESP_DIR="/boot/efi/EFI/arch"
+ESP_DIR="/boot/efi"
 
 ALL_config="/etc/mkinitcpio.conf"
 ALL_kver="/boot/vmlinuz-linux"

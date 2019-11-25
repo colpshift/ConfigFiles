@@ -5,7 +5,7 @@
 
 ### path
 typeset -U path
-path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts $(ruby -e 'puts Gem.user_dir')/bin  $path[@])
+path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts $path[@])
 
 ### systemd user
 export XDG_RUNTIME_DIR="/run/user/1000"
@@ -16,7 +16,7 @@ export VISUAL="/usr/local/bin/vim"
 export EDITOR="/usr/local/bin/vim"
 
 ### directories
-export HOSTNAME="colpsnote01"
+export HOSTNAME="colpsnoteman"
 export BAKDIR="/home/colps/BAK/backup"
 
 ### fuzzy search

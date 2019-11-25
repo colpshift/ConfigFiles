@@ -1,5 +1,5 @@
 # https://wiki.archlinux.org/index.php/Cron
-SHELL=/usr/bin/sh
+SHELL=/bin/sh
 MAILTO=colps
 #
 # Example of job definition:
@@ -11,5 +11,4 @@ MAILTO=colps
 # |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
 # |  |  |  |  |
 # *  *  *  *  * user-name  command to be executed
-@reboot /bin/flameshot &
-@reboot eval "$(ssh-agent -s)"
+#

@@ -30,7 +30,7 @@ STATUS = Status()
 # Parser
 CONFIG = ConfigParser()
 CONFIG.read("/etc/.config_gmail.txt")
-GMAILPASS = CONFIG.get("configuration", "password")
+GMAILPASS = CONFIG.get("configuration","password")
 
 # show clock
 STATUS.register(
@@ -68,13 +68,13 @@ if internet():
         color_unread="#ffa500",
         format_plural=(" {current_unread}/{unread}"),
         format=" {current_unread}/{unread}",
-        on_leftclick="thunderbird https://mail.google.com/mail/u/0/#inbox",
+        on_leftclick="thunderbird",
         hide_if_null=True,
     )
 
 # Show/change volume using PA
 STATUS.register("pulseaudio",
-                format="{volume_bar} {volume}%",
+                format="  {volume}%",
                 format_muted=" {volume_bar} Mute")
 
 # show backlight %
@@ -122,8 +122,8 @@ STATUS.register(
     # next_if_down=True,
     # format_active_up="{wlp3s0} {enp2s0}",
     # format_up=" {interface} {network_graph_recv}{bytes_recv}KB/s",
-    format_up=" {interface:}  {bytes_recv}KB/s",
-    format_down=" {interface}: DOWN",
+    format_up=" {interface:}  {bytes_recv}KB/s",
+    format_down=" {interface}: DOWN",
     interface="enp2s0",
 )
 
@@ -133,7 +133,7 @@ STATUS.register(
     color="#c2c2c2",
     warn_color="ffa500",
     alert_color="#ff0000",
-    format=" {used_mem} {avail_mem}G",
+    format=" {used_mem} {avail_mem}G",
     warn_percentage=70,
     alert_percentage=90,
     divisor=1024**3,
@@ -144,7 +144,7 @@ STATUS.register(
 STATUS.register(
     "temp",
     "Temperature",
-    format=" {temp} °C",
+    format="  {temp} °C",
     hints={"markup": "pango"},
 )
 
@@ -178,7 +178,7 @@ STATUS.register(
     color="#00ff00",
     alert=True,
     color_alert="#ffa500",
-    format="  {days}d {hours}h {mins}m",
+    format=" {days}d {hours}h {mins}m",
     on_rightclick="urxvt -e sh -c -e /home/colps/.scripts/hibernate.sh",
 )
 

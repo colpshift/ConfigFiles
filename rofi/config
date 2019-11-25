@@ -6,7 +6,8 @@
 rofi.modi: window,drun,run,ssh
 
 ! "Font to use" Set from: Default
-rofi.font: TerminessTTF Nerd Font Mono Mediumm 11
+!rofi.font: Inconsolata-Regular 09
+rofi.font: TerminessTTF Nerd Font Mono Medium 13
 
 ! "Border width" Set from: Default
 rofi.bw: 1
@@ -26,12 +27,11 @@ rofi.sidebar-mode: true
 ! "Fake transparency *DEPRECATED*" Set from: Default
 rofi.fake-transparency: true
 
-! "Background to use for fake transparency. 
+! "Background to use for fake transparency.
 ! (background or screenshot)" Set from: Default
 rofi.fake-background: background
 
 ! "New style theme file" Set from: File
-rofi.theme: /usr/share/rofi/themes/gruvbox-dark-soft.rasi
 
 ! "Switch to the next mode." Set from: Default
  rofi.kb-mode-next: Alt+l
@@ -41,3 +41,4 @@ rofi.kb-mode-previous: Alt+h
 
 ! "Take a screenshot of the rofi window" Set from: Default
 ! rofi.kb-screenshot: Alt+j
+rofi.theme: /usr/share/rofi/themes/Arc-Dark.rasi

@@ -16,8 +16,7 @@ export VISUAL="/usr/local/bin/vim"
 export EDITOR="/usr/local/bin/vim"
 
 ### directories
-export HOSTNAME="colpsnoteman"
-export BAKDIR="/home/colps/BAK/backup"
+export HOSTNAME="colpsnote01"
 
 ### fuzzy search
 export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"

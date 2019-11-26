@@ -64,7 +64,7 @@ workspace_layout default
     assign [class="pm"] 4 
     assign [class="pr"] 4 
     assign [class="tm"] 4 
-    assign [class="Mousepad"] 4 
+    assign [class="Sublime_text"] 4 
     assign [class="Sxiv"] 5 
     assign [class="Gimp-2.10"] 5 
     assign [class="Nitrogen"] 5 

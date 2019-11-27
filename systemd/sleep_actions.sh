@@ -4,10 +4,12 @@
 #
 case $1/$2 in
   pre/*)
-    /usr/bin/sleep 2
+    /bin/sleep 2
     ;;
   post/*)
-    source '/home/colps/.zprofile'
+    source /home/colps/.zshrc
+    source /home/colps/.zshenv
+    sh /home/colps/.scripts/devices_start.sh
     ;;
 esac
 

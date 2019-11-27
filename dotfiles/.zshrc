@@ -106,15 +106,28 @@ compinit -d
 colors
 promptinit
 
+# Prompt spaceship
+# https://github.com/denysdovhan/spaceship-prompt
+#
+# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
+#
+ZSH_THEME="spaceship"
+SPACESHIP_CHAR_SYMBOL="-> "
+SPACESHIP_USER_SHOW=true
+SPACESHIP_HOST_SHOW=true
+SPACESHIP_JOBS_SHOW=false
+SPACESHIP_EXIT_CODE_SHOW=true
+prompt spaceship
+
 # Prompt (on left side) 
-PROMPT="%(!.%{$fg[red]%}[%n@%m %1~]%{$reset_color%}# .%{$fg[green]%}[%n@%m %1~]%{$reset_color%}$ "
+#PROMPT="%(!.%{$fg[red]%}[%n@%m %1~]%{$reset_color%}# .%{$fg[green]%}[%n@%m %1~]%{$reset_color%}$ "
 
 # Prompt (on right side) 
 # prompt bart
 # git hub 1
 #source /usr/share/zsh/plugins/zsh-git-prompts/git_prompt_01.zsh
 # git hub 2
-source /usr/share/zsh/plugins/zsh-git-prompts/git_prompt_02.zsh
+#source /usr/share/zsh/plugins/zsh-git-prompts/git_prompt_02.zsh
 
 # Color man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'

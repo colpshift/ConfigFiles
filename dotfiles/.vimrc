@@ -53,7 +53,7 @@ call plug#begin('~/.vim/plugged')
         " Perform all your vim insert mode completions with Tab
     Plug 'w0rp/ale'
         " Check syntax in Vim asynchronously and fix files
-	Plug 'Valloric/YouCompleteMe'
+	"Plug 'Valloric/YouCompleteMe'
         " code-completion engine for Vim
 	Plug 'tenfyzhong/CompleteParameter.vim'
         " Complete parameter after select the completion
@@ -122,10 +122,10 @@ let g:nv_search_paths = ['~/Documents']
    " let spell_auto_type="text,doc,mail,"
    " autocmd FileType markdown setlocal spell
 " YCM
-    let g:ycm_autoclose_preview_window_after_completion=1
-    let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-    let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-    let g:SuperTabDefaultCompletionType = '<C-n>'
+    "let g:ycm_autoclose_preview_window_after_completion=1
+    "let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+    "let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+    "let g:SuperTabDefaultCompletionType = '<C-n>'
 " UltiSnips
     "let g:UltiSnipsExpandTrigger = "<tab>"
     "let g:UltiSnipsJumpForwardTrigger = "<tab>"

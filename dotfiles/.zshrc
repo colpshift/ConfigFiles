@@ -107,8 +107,16 @@ colors
 promptinit
 
 # Prompt spaceship
+# https://github.com/denysdovhan/spaceship-prompt
+#
+# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
+#
 ZSH_THEME="spaceship"
 SPACESHIP_CHAR_SYMBOL="-> "
+SPACESHIP_USER_SHOW=true
+SPACESHIP_HOST_SHOW=true
+SPACESHIP_JOBS_SHOW=false
+SPACESHIP_EXIT_CODE_SHOW=true
 prompt spaceship
 
 # Prompt (on left side) 

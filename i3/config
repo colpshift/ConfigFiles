@@ -294,7 +294,8 @@ bindsym Ctrl+Shift+m    exec electronplayer
 bindsym Ctrl+Shift+i    exec virtualbox
 bindsym Ctrl+Shift+t    exec /home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser
 bindsym Ctrl+Shift+n    workspace 9 , exec spotify
-#urxvt -e ncmpcpp -s media_library -S visualizer
+bindsym Ctrl+Shift+p    workspace 9 , exec \
+urxvt -e ncmpcpp -s media_library -S visualizer
 
 ### FN Keys
 # volume

@@ -74,7 +74,7 @@ if internet():
 
 # Show/change volume using PA
 STATUS.register("pulseaudio",
-                format="  {volume}%",
+                format=" {volume}%",
                 format_muted=" {volume_bar} Mute")
 
 # show backlight %
@@ -108,8 +108,8 @@ STATUS.register(
     Online,
     color="#00ff00",
     color_offline="#ff0000",
-    format_online="",
-    format_offline="",
+    format_online="  ",
+    format_offline="  ",
     interval=10,
 )
 
@@ -163,7 +163,7 @@ STATUS.register(
     color="#ffa500",
     format=" {count}",
     color_no_updates="#c2c2c2",
-    format_no_updates="",
+    format_no_updates="  ",
     backends=[pacman.Pacman()],
 )
 

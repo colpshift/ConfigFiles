@@ -265,11 +265,12 @@ mode "resize" {
 ### automatically starting applications on i3 startup
 #
 # daemons
-exec --no-startup-id "$HOME/.scripts/picom_start.sh"
-exec --no-startup-id "$HOME/.scripts/clipit_start.sh"
-exec --no-startup-id "$HOME/.scripts/udiskie_start.sh"
-exec --no-startup-id "$HOME/.scripts/mpd_start.sh"
-exec --no-startup-id "$HOME/.scripts/xss-lock_start.sh"
+exec --no-startup-id "/home/colps/.scripts/picom_start.sh"
+exec --no-startup-id "/home/colps/.scripts/clipit_start.sh"
+exec --no-startup-id "/home/colps/.scripts/udiskie_start.sh"
+exec --no-startup-id "/home/colps/.scripts/mpd_start.sh"
+exec --no-startup-id "/home/colps/.scripts/xss-lock_start.sh"
+exec --no-startup-id "/home/colps/.scripts/ssh_agent_start.sh"
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
@@ -281,7 +282,7 @@ exec --no-startup-id /home/colps/.scripts/devices_start.sh
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload
 bindsym $mod+x exec \
-exec i3lock -i '/usr/share/pixmaps/lock_cave.png' -tf
+exec i3lock -i '/usr/share/pixmaps/security_03.png' -tf
 bindsym $mod+Shift+e exec \
 --no-startup-id i3-msg exit, mode "default"
 

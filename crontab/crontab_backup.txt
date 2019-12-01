@@ -12,5 +12,3 @@ MAILTO=colps
 # |  |  |  |  |
 # *  *  *  *  * user-name  command to be executed
 #
-@reboot /home/colps/.scripts/firefox_sync.sh
-0 */2 * * * /home/colps/.scripts/firefox_sync.sh

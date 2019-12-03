@@ -271,6 +271,7 @@ exec --no-startup-id "/home/colps/.scripts/udiskie_start.sh"
 exec --no-startup-id "/home/colps/.scripts/mpd_start.sh"
 exec --no-startup-id "/home/colps/.scripts/xss-lock_start.sh"
 exec --no-startup-id "/home/colps/.scripts/ssh_agent_start.sh"
+exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
@@ -296,8 +297,8 @@ bindsym Ctrl+Shift+m    exec electronplayer
 bindsym Ctrl+Shift+i    exec virtualbox
 bindsym Ctrl+Shift+t    exec /home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser
 bindsym Ctrl+Shift+n    workspace 9 , exec spotify
-bindsym Ctrl+Shift+p    workspace 9 , exec \
-urxvt -e ncmpcpp -s media_library -S visualizer
+#bindsym Ctrl+Shift+p    workspace 9 , exec \
+#urxvt -e ncmpcpp -s media_library -S visualizer
 
 ### FN Keys
 # volume

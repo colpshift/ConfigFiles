@@ -1,6 +1,11 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 #
-# $HOME/.zlogin
+# File: .zlogin
+# Path: $HOME
+# Tags: zsh shell
+# Description: zsh login commands
+# Last update: 11/12/2019 20:25
+# Author: Colpshift
 #
 
 # Start Firefox/Profile on RAM

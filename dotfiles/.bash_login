@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #
-# File: .profile
+# File: .bash_login
 # Path: $HOME
 # Tags: bash shell
-# Description: Bash profile config
+# Description: Bash login commands 
 # Last update: 11/12/2019 20:31 
 # Author: Colpshift
 #

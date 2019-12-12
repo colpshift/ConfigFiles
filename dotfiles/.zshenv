@@ -1,6 +1,11 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 #
-# $HOME/.zshenv
+# File: .zshenv
+# Path: $HOME
+# Tags: zsh shell
+# Description: zsh env config
+# Last update: 11/12/2019 20:22
+# Author: Colpshift
 #
 
 ### path

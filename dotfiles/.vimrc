@@ -33,8 +33,6 @@ call plug#begin('~/.vim/plugged')
     "---------------------------
     Plug 'RRethy/vim-illuminate'
         " automatically highlighting other uses of the word under the cursor
-	"Plug 'TaDaa/vimade'
-        " fades your inactive buffers and preserves your syntax highlighting
 	Plug 'luochen1990/rainbow'
         " shows different levels of parentheses in different colors.
     Plug 'kshenoy/vim-signature'
@@ -49,28 +47,24 @@ call plug#begin('~/.vim/plugged')
     Plug 'alok/notational-fzf-vim'
         " searching for a note and creating one are the same operation
     "---------------------------
-    Plug 'ervandew/supertab'
-        " Perform all your vim insert mode completions with Tab
     Plug 'w0rp/ale'
         " Check syntax in Vim asynchronously and fix files
-	"Plug 'Valloric/YouCompleteMe'
-        " code-completion engine for Vim
-	Plug 'tenfyzhong/CompleteParameter.vim'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+        " Code Completion for VIM/NeoVIM
+    Plug 'tjdevries/coc-zsh'
+        "coc.nvim source for Zsh completions
+    Plug 'tenfyzhong/CompleteParameter.vim'
         " Complete parameter after select the completion
     Plug 'kkoomen/vim-doge'
         " Generate proper code documentation skeletons with a single keypress
 	Plug 'google/yapf'
         " formatter for Python files
     "---------------------------
-	"Plug 'SirVer/ultisnips'
-        " snippet solution for Vim
 	Plug 'honza/vim-snippets'
         " snippets for vim
 	"---------------------------
     Plug 'francoiscabrol/ranger.vim'
         " Ranger integration
-    Plug 'felipec/notmuch-vim'
-        " mail client interface, utilizing the notmuch framework.
     "__________________________
 call plug#end()
 
@@ -108,9 +102,6 @@ let g:nv_search_paths = ['~/Documents']
     let g:gruvbox_bold = '1'
     let g:gruvbox_underline = '1'
     let g:gruvbox_undercurl = '1'
-" vimade
-    "let g:vimade = {}
-    "let g:vimade.fadelevel = 0.3
 " airline
     let g:airline_theme='gruvbox'
     let g:airline_highlighting_cache = 1
@@ -121,15 +112,18 @@ let g:nv_search_paths = ['~/Documents']
    " let s:c=",underline"
    " let spell_auto_type="text,doc,mail,"
    " autocmd FileType markdown setlocal spell
-" YCM
-    "let g:ycm_autoclose_preview_window_after_completion=1
-    "let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-    "let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-    "let g:SuperTabDefaultCompletionType = '<C-n>'
-" UltiSnips
-    "let g:UltiSnipsExpandTrigger = "<tab>"
-    "let g:UltiSnipsJumpForwardTrigger = "<tab>"
-    "let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+" Coc
+    " if hidden is not set, TextEdit might fail.
+    set hidden
+    " Better display for messages
+    set cmdheight=2
+    " You will have bad experience for diagnostic messages when it's default 4000.
+    set updatetime=300
+    " don't give |ins-completion-menu| messages.
+    set shortmess+=c
+    " always show signcolumns
+    set signcolumn=yes
+    let g:coc_snippet_next = '<tab>'
 " ALE
     set omnifunc=ale#completion#OmniFunc
     let g:ale_enabled = 1
@@ -181,9 +175,8 @@ let g:nv_search_paths = ['~/Documents']
     \ 'spinner': ['fg', 'Label'],
     \ 'header':  ['fg', 'Comment'] }
     let g:fzf_history_dir = '~/.local/share/fzf-history'
-" Supertab
-    let g:SuperTabDefaultCompletionType = "context"
-    let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+    "let g:SuperTabDefaultCompletionType = "context"
+    "let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
 "------------------------------------------------------------------------------
 " mapping and abbreviations
@@ -206,7 +199,18 @@ smap <c-j> <Plug>(complete_parameter#goto_next_parameter)
 imap <c-j> <Plug>(complete_parameter#goto_next_parameter)
 smap <c-k> <Plug>(complete_parameter#goto_previous_parameter)
 imap <c-k> <Plug>(complete_parameter#goto_previous_parameter)
-
+" Coc
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+"
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 "------------------------------------------------------------------------------
 " Performance
 "------------------------------------------------------------------------------

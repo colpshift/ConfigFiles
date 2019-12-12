@@ -1,3 +1,13 @@
+#!/usr/bin/env zsh
+#
+# File: .zshrc
+# Path: $HOME
+# Tags: zsh shell
+# Description: zsh shell config 
+# Last update: 11/12/2019 20:18
+# Author: Colpshift
+#
+
 # Options section
 setopt correct                                                  # Auto correct mistakes
 setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
@@ -151,6 +161,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=9'
 source /usr/share/doc/pkgfile/command-not-found.zsh
 # interactive cd
 source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
+# zsh user completions
+source .zsh/*
 
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo

@@ -137,7 +137,7 @@ STATUS.register(
     warn_percentage=70,
     alert_percentage=90,
     divisor=1024**3,
-    on_leftclick="urxvt -e htop",
+    on_leftclick="alacritty -e htop",
 )
 
 # show cpu temp
@@ -153,7 +153,7 @@ STATUS.register(
     "load",
     critical_color="#ff0000",
     format=" {avg5} {tasks}",
-    on_leftclick="urxvt -e htop",
+    on_leftclick="alacritty -e htop",
 )
 
 # show updates
@@ -170,7 +170,7 @@ STATUS.register(
 # show system information
 STATUS.register("uname",
                 format=" {release}",
-                on_leftclick="urxvt -e sh -c -e uname -a")
+                on_leftclick="alacritty -e sh -c -e uname -a")
 
 # show uptime information
 STATUS.register(
@@ -179,7 +179,7 @@ STATUS.register(
     alert=True,
     color_alert="#ffa500",
     format=" {days}d {hours}h {mins}m",
-    on_rightclick="urxvt -e sh -c -e /home/colps/.scripts/hibernate.sh",
+    on_rightclick="alacritty -e sh -c -e /home/colps/.scripts/hibernate.sh",
 )
 
 # Show keyboard locks

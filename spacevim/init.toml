@@ -1,0 +1,132 @@
+[[layers]]
+name = 'lang#vim'
+[[tom_plugins]]
+#=============================================================================
+# basic.toml --- basic configuration example for SpaceVim
+# Copyright (c) 2016-2017 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+[options] 
+    # font
+    #guifont = "TerminessTTF Nerd Font Mono:h11"
+    guifont = "SauceCodePro Nerd Font Mono:h10"
+    #colorscheme
+    colorscheme = "gruvbox"
+    colorscheme_bg = "dark"
+    gruvbox_contrast_dark = 'medium'
+    gruvbox_invert_tabline = '1'
+    gruvbox_invert_indent_guides = '1'
+    gruvbox_invert_tabline = '1'
+    gruvbox_improved_warnings = '1'
+    gruvbox_italic = '1'
+    gruvbox_bold = '1'
+    gruvbox_underline = '1'
+    gruvbox_undercurl = '1'
+    # true colors
+    enable_guicolors = true
+    statusline_separator = "nil"
+    statusline_inactive_separator = "bar"
+    buffer_index_type = 4
+    windows_index_type = 3
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = true
+    statusline_unicode_symbols = true
+    # Windows leader option
+    ws_leader = "s"
+    # Enable vim compatible mode, avoid changing origin vim key bindings
+    vimcompatible = true
+    enable_language_specific_leader = false
+    # VCS integration 
+    enable_vimfiler_gitstatus = true
+    # Disable plugins
+    #disabled_plugins = ["plugin-name"]
+    
+# By default SpaceVim enable these layers:
+# autocomplete
+# checkers
+# format
+# edit
+# ui
+# core
+# core#banner
+# core#statusline
+# core#tabline
+
+# Enable autocomplete layer
+[[layers]]
+name = 'autocomplete'
+autocomplete_method = "ycm"
+#auto_completion_enable_snippets_in_popup = 'true'
+auto_completion_return_key_behavior = "smart"
+auto_completion_tab_key_behavior = "smart"
+#auto_completion_delay = 200
+#auto_completion_complete_with_key_sequence = "nil"
+#auto_completion_complete_with_key_sequence_delay = 0.1
+autocomplete_parens = false
+
+
+[[layers]]
+name = 'shell'
+default_position = 'top'
+default_height = 30
+
+[[layers]]
+name = 'default'
+
+[[layers]]
+name = 'denite'
+
+[[layers]]
+name = 'fzf'
+
+[[layers]]
+name = 'git'
+
+[[layers]]
+name = 'github'
+
+[[layers]]
+name = 'VersionControl'
+
+[[layers]]
+name = 'test'
+
+[[layers]]
+name = 'lang#python'
+
+[[layers]]
+name = 'lang#go'
+
+[[layers]]
+name = 'lang#javascript'
+
+[[layers]]
+name = 'lang#lua'
+
+[[layers]]
+name = 'lang#sh'
+
+[[layers]]
+name = 'lang#html'
+
+[[layers]]
+name = 'lang#markdown'
+
+[[layers]]
+name = 'lang#vim'
+
+[[layers]]
+name = 'tools'
+
+[[custom_plugins]]
+name = 'tenfyzhong/CompleteParameter.vim'
+# parameter completion
+
+[[custom_plugins]]
+name = 'luochen1990/rainbow'
+merged = 0
+# shows different levels of parentheses in different colors.
+

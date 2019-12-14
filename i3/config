@@ -14,7 +14,7 @@ set $mod Mod4
 
 ### font window titles
 font pango:TerminessTTF Nerd Font Mono Medium, FontAwesome Regular 10
-#font pango:Iosevka Term Medium, FontAwesome Regular 10
+#font pango:SauceCodePro Nerd Font Mono, FontAwesome Regular 10
 
 ### window title alignment = left|center|right
 title_align left
@@ -25,8 +25,8 @@ smart_borders on
 ### default border style for new windows
 default_border pixel 1
 
-### make all urxvts use a 1-pixel border:
-for_window [class="urxvt"] border pixel 1
+### make all alacritty use a 1-pixel border:
+for_window [class="Alacritty"] border pixel 1
 
 ### drawing marks on window decoration = yes|no
 show_marks yes
@@ -53,7 +53,7 @@ default_orientation auto
 workspace_layout default
 
 ### define clients to specific workspaces / screens
-    assign [class="urxvt"] 1 
+    assign [class="Alacritty"] 1 
     assign [class="firefox"] 2 
     assign [class="Chromium"] 2 
     assign [class="Tor Browser"] 2 
@@ -288,8 +288,8 @@ bindsym $mod+Shift+e exec \
 --no-startup-id i3-msg exit, mode "default"
 
 ### app shortcuts
-bindsym $mod+Return	    exec /home/colps/.scripts/urxvts.sh
-bindsym $mod+a		    exec urxvtc -e ranger
+bindsym $mod+Return	  exec alacritty
+bindsym $mod+a		    exec alacritty -e ranger
 bindsym $mod+z		    exec rofi -show drun
 bindsym $mod+m		    workspace 10  , exec thunderbird
 bindsym Ctrl+Shift+b    exec firefox
@@ -298,7 +298,7 @@ bindsym Ctrl+Shift+i    exec virtualbox
 bindsym Ctrl+Shift+t    exec /home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser
 bindsym Ctrl+Shift+n    workspace 9 , exec spotify
 #bindsym Ctrl+Shift+p    workspace 9 , exec \
-#urxvt -e ncmpcpp -s media_library -S visualizer
+#alacritty -e ncmpcpp -s media_library -S visualizer
 
 ### FN Keys
 # volume

@@ -162,7 +162,7 @@ source /usr/share/doc/pkgfile/command-not-found.zsh
 # interactive cd
 source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 # zsh user completions
-source .zsh/*
+#source .zsh/*
 
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo

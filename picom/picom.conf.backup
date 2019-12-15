@@ -1,0 +1,114 @@
+# Shadow
+shadow = true;
+# no-dnd-shadow = true;
+no-dock-shadow = true;
+clear-shadow = true;
+detect-rounded-corners = true;
+shadow-radius = 5;
+shadow-offset-x = 1;
+shadow-offset-y = 1;
+shadow-opacity = .3;
+shadow-ignore-shaped = false;
+shadow-exclude = [
+    "! name~=''",zR
+    "name = 'Notification'",
+    "name = 'Plank'",
+    "name = 'Docky'",
+    "name = 'Kupfer'",
+    "name = 'xfce4-notifyd'",
+    "name *= 'VLC'",
+    "name *= 'compton'",
+    "name *= 'picom'",
+    "name *= 'Chromium'",
+    "name *= 'Chrome'",
+    "class_g = 'Firefox' && argb",
+    "class_g = 'Conky'",
+    "class_g = 'Kupfer'",
+    "class_g = 'Synapse'",
+    "class_g ?= 'Notify-osd'",
+    "class_g ?= 'Cairo-dock'",
+    "class_g ?= 'Xfce4-notifyd'",
+    "class_g ?= 'Xfce4-power-manager'",
+    "_GTK_FRAME_EXTENTS@:c",
+    "_NET_WM_STATE@:32a *= '_NET_WM_STATE_HIDDEN'"
+];
+
+# shadow-exclude-reg = "x10+0+0";
+# xinerama-shadow-crop = true;
+
+menu-opacity = 0.95;
+inactive-opacity = 0.85;
+active-opacity = 0.85;
+#alpha-step = 0.01;
+inactive-dim = 0.0;
+#blur-background = false;
+#blur-kern = "3x3box";
+
+fading = false;
+fade-delta = 1;
+fade-in-step = 0.03;
+fade-out-step = 0.03;
+fade-exclude = [ ];
+
+backend = "xrender";
+mark-wmwin-focused = true;
+mark-ovredir-focused = true;
+detect-client-opacity = true;
+unredir-if-possible = true;
+refresh-rate = 0;
+vsync = "none";
+dbe = false;
+paint-on-overlay = true;
+focus-exclude = [ "class_g = 'Cairo-clock'" ];
+detect-transient = true;
+detect-client-leader = true;
+invert-color-include = [ ];
+glx-copy-from-front = false;
+glx-swap-method = "undefined";
+
+opacity-rule = [
+    "90:class_g = 'Alacritty' && focused",
+    "60:class_g = 'Alacritty' && !focused",
+    "95:class='firefox'",
+    "95:class='Chromium'",
+    "95:class='Tor Browser'",
+    "95:class='Franz'",
+    "95:class='TelegramDesktop'",
+    "95:class='Skype'",
+    "95:class='Zathura'",
+    "95:class='Simple-scan'",
+    "95:class='pm'",
+    "95:class='pr'",
+    "95:class='tm'",
+    "95:class='Mousepad'",
+    "95:class='Sxiv'",
+    "95:class='Gimp-2.10'",
+    "95:class='Nitrogen'",
+    "95:class='Dia'",
+    "95:class='MindMaster'",
+    "95:class='VirtualBox Manager'",
+    "95:class='VirtualBox Machine'",
+    "95:class='Stremio'",
+    "95:class='electronplayer'",
+    "95:class='Spotify'",
+    "95:class='Thunderbird'"
+];
+
+wintypes :
+{
+  tooltip :
+  {
+    fade = true;
+    shadow = false;
+    opacity = 0.85;
+    zozzRfocus = true;
+  };
+  fullscreen :
+  {
+    fade = true;
+    shadow = false;
+    opacity = 1;
+    focus = true;
+
+  };
+};

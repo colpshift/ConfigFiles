@@ -34,7 +34,7 @@ glx-copy-from-front = false;
 # GLX backend: Avoid rebinding pixmap on window damage.
 # Probably could improve performance on rapid window content changes, but is known to break things on some drivers (LLVMpipe).
 # Recommended if it works.
-# glx-no-rebind-pixmap = true;
+glx-no-rebind-pixmap = true;
 
 # GLX backend: GLX buffer swap method we assume.
 # Could be undefined (0), copy (1), exchange (2), 3-6, or buffer-age (-1).
@@ -111,9 +111,9 @@ frame-opacity = 1;
 inactive-opacity-override = false;
 
 # Dim inactive windows. (0.0 - 1.0)
-# inactive-dim = 0.2;
+inactive-dim = 0.2;
 # Do not let dimness adjust based on window opacity.
-# inactive-dim-fixed = true;
+inactive-dim-fixed = true;
 # Blur background of transparent windows. Bad performance with X Render backend. GLX backend is preferred.
 # blur-background = true;
 # Blur background of opaque windows with transparent frames as well.
@@ -208,7 +208,7 @@ wintypes:
         # fade: Fade the particular type of windows.
         fade = true;
         # shadow: Give those windows shadow
-        shadow = false;
+        shadow = true;
         # opacity: Default opacity for the type of windows.
         opacity = 0.85;
         # focus: Whether to always consider windows of this type focused.

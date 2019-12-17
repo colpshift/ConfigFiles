@@ -109,16 +109,16 @@ bar {
     tray_output eDP-1
     position          top
     workspace_buttons yes
-	colors {
-		separator	#cccccc
-		background	#333333
-		statusline	#c2c2c2
-		#					border		background	foreground
-		focused_workspace	#cccccc		#333333		#00ff00
-		active_workspace	#cccccc		#333333		#fdf6e3
-		inactive_workspace	#cccccc		#333333		#c2c2c2
-		urgent_workspace	#cccccc		#333333		#ffa500
-	}
+	  colors {
+        separator	#cccccc
+        background	#333333
+        statusline	#c2c2c2
+        #					          border		backgr	  foregr
+        focused_workspace	  #cccccc		#333333		#00ff00
+        active_workspace	  #cccccc		#333333		#fdf6e3
+        inactive_workspace	#cccccc		#333333		#c2c2c2
+        urgent_workspace	  #cccccc		#333333		#ffa500
+    }
 }
 
 ### gap mode = press $mod+Shift+g to enter the gap mode.
@@ -275,6 +275,8 @@ exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
+exec --no-startup-id "alacritty"
+exec --no-startup-id "alacritty"
 # checks
 exec --no-startup-id /home/colps/.scripts/devices_start.sh
 

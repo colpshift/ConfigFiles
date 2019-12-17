@@ -17,8 +17,8 @@ export XDG_RUNTIME_DIR="/run/user/1000"
 
 ### default applications
 export BROWSE="/bin/firefox"
-export VISUAL="/usr/local/bin/vim"
-export EDITOR="/usr/local/bin/vim"
+export VISUAL="/bin/nvim"
+export EDITOR="/bin/nvim"
 
 ### directories
 export HOSTNAME="colpsnote01"

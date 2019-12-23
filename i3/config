@@ -62,9 +62,13 @@ workspace_layout default
     assign [class="Skype"] 3 
     assign [class="Zathura"] 4 
     assign [class="Simple-scan"] 4 
-    assign [class="Et"] 4 
-    assign [class="Wpp"] 4 
-    assign [class="Wps"] 4 
+    assign [class="libreoffice-startcenter"] 4 
+    assign [class="libreoffice-writer"] 4 
+    assign [class="libreoffice-math"] 4 
+    assign [class="libreoffice-impress"] 4 
+    assign [class="libreoffice-base"] 4 
+    assign [class="libreoffice-draw"] 4 
+    assign [class="libreoffice-calc"] 4 
     assign [class="Sublime_text"] 4 
     assign [class="Sxiv"] 5 
     assign [class="Gimp-2.10"] 5 

@@ -107,7 +107,6 @@ alias dmenu_run='dmenu_run -fn "Iosevka-Medium-11'
 alias gitu='git add . && git commit && git push'
 alias urxvt='/home/colps/.scripts/urxvts.sh'
 alias sxiv='sxiv -t'
-alias franz='/home/colps/Apps/Franz/./Franz-5.4.0.AppImage'
 
 # Theming section
 autoload -U colors && colors

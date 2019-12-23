@@ -7,12 +7,13 @@ name = 'lang#vim'
 # Author: Wang Shidong < wsdjeg at 163.com >
 # URL: https://spacevim.org
 # License: GPLv3
+
 #=============================================================================
 
 [options] 
     # font
-    #guifont = "TerminessTTF Nerd Font Mono:h11"
-    guifont = "SauceCodePro Nerd Font Mono:h10"
+    guifont = "TerminessTTF Nerd Font Mono:h11"
+    #guifont = "SauceCodePro Nerd Font Mono:h10"
     #colorscheme
     colorscheme = "gruvbox"
     colorscheme_bg = "dark"
@@ -95,10 +96,17 @@ name = 'VersionControl'
 name = 'test'
 
 [[layers]]
+name = 'gtags'
+gtagslabel = "pygments"
+
+[[layers]]
 name = 'lang#python'
 
 [[layers]]
 name = 'lang#go'
+
+[[layers]]
+name = "lang#java"  
 
 [[layers]]
 name = 'lang#javascript'
@@ -121,12 +129,8 @@ name = 'lang#vim'
 [[layers]]
 name = 'tools'
 
-[[custom_plugins]]
-name = 'tenfyzhong/CompleteParameter.vim'
+#[[custom_plugins]]
+#name = ''
 # parameter completion
 
-[[custom_plugins]]
-name = 'luochen1990/rainbow'
-merged = 0
-# shows different levels of parentheses in different colors.
 

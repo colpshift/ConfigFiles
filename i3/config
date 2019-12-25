@@ -14,7 +14,7 @@ set $mod Mod4
 
 ### font window titles
 font pango:TerminessTTF Nerd Font Mono Medium, FontAwesome Regular 10
-#font pango:SauceCodePro Nerd Font Mono, FontAwesome Regular 10
+#font pango: SauceCodePro Nerd Font Mono, FontAwesome Regular 10
 
 ### window title alignment = left|center|right
 title_align left

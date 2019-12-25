@@ -1,3 +1,5 @@
+'#!/usr/bin/env python'
+'# -*- coding: utf-8 -*-'
 """
 File: $HOME/.config/i3pystatus/i3pyconfig.py
 Author: Colps
@@ -23,14 +25,14 @@ from i3pystatus.network import Network
 from i3pystatus.online import Online
 from i3pystatus.weather import weathercom
 from i3pystatus.updates import pacman
-from i3pystatus.temp import Temperature
+#  from i3pystatus.temp import Temperature
 
 STATUS = Status()
 
 # Parser
 CONFIG = ConfigParser()
 CONFIG.read("/etc/.config_gmail.txt")
-GMAILPASS = CONFIG.get("configuration","password")
+GMAILPASS = CONFIG.get("configuration", "password")
 
 # show clock
 STATUS.register(

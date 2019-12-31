@@ -237,11 +237,11 @@ alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
 alias yayu='yay -Syu'
 alias yayi='sh $HOME/.scripts/fzf_pkg_aur.sh'
 alias gpg='gpg2'
-alias cat="bat --theme TwoDark"
+alias cat='bat --theme TwoDark'
 alias gitu='git add . && git commit && git push'
-alias cls="clear"
-alias myip="curl http://ipecho.net/plain; echo"
-alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1 | sed -e's/:$//g' | grep -v '[0-9]$' | xargs tail -f"
+alias cls='clear'
+alias myip='curl http://ipecho.net/plain; echo'
+alias sxiv='sxiv -t'
 
 ### Bind keys
 #############

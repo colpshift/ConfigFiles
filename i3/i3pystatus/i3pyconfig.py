@@ -1,5 +1,13 @@
-'#!/usr/bin/env python'
-'# -*- coding: utf-8 -*-'
+from configparser import ConfigParser
+
+from i3pystatus import Status
+from i3pystatus.core.util import internet
+from i3pystatus.mail import imap
+from i3pystatus.network import Network
+from i3pystatus.online import Online
+from i3pystatus.updates import pacman
+from i3pystatus.weather import weathercom
+
 """
 File: $HOME/.config/i3pystatus/i3pyconfig.py
 Author: Colps
@@ -17,14 +25,6 @@ Last Modified: June 14, 2019
 # warning   orange  color ='#ffa500',
 # critical  red     color ='#ff0000',
 
-from configparser import ConfigParser
-from i3pystatus import Status
-from i3pystatus.core.util import internet
-from i3pystatus.mail import imap
-from i3pystatus.network import Network
-from i3pystatus.online import Online
-from i3pystatus.weather import weathercom
-from i3pystatus.updates import pacman
 #  from i3pystatus.temp import Temperature
 
 STATUS = Status()
@@ -144,11 +144,7 @@ STATUS.register(
 
 # show cpu temp
 STATUS.register(
-    "temp",
-    "Temperature",
-    format="  {temp} °C",
-    hints={"markup": "pango"},
-)
+
 
 # show cpu usage
 STATUS.register(

@@ -7,7 +7,3 @@
 # Last update: 11/12/2019 20:26
 # Author: Colpshift
 #
-
-# Stop Firefox/Profile on RAM
-/usr/bin/firefox-sync
-#

@@ -3,42 +3,336 @@
 # File: .zshrc
 # Path: $HOME
 # Tags: zsh shell
-# Description: zsh shell config 
-# Last update: 11/12/2019 20:18
+# Description: zsh config
+# Last update: 29/12/2019 14:16
 # Author: Colpshift
 #
 
-# Options section
-setopt correct                                                  # Auto correct mistakes
-setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
-setopt nocaseglob                                               # Case insensitive globbing
-setopt rcexpandparam                                            # Array expension with parameters
-setopt nocheckjobs                                              # Don't warn about running processes when exiting
-setopt numericglobsort                                          # Sort filenames numerically when it makes sense
-setopt nobeep                                                   # No beep
-setopt appendhistory                                            # Immediately append history instead of overwriting
-setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
-setopt autocd                                                   # if only directory path is entered, cd there.
-setopt COMPLETE_ALIASES 					                    # autocompletion of command line switches for aliases
-setopt prompt_subst                                             # enable substitution for prompt
+### Set/unset ZSH options
+#########################
+# setopt NOHUP
+# setopt NOTIFY
+# setopt NO_FLOW_CONTROL
+setopt INC_APPEND_HISTORY SHARE_HISTORY
+setopt APPEND_HISTORY
+# setopt AUTO_LIST
+# setopt AUTO_REMOVE_SLASH
+# setopt AUTO_RESUME
+unsetopt BG_NICE
+setopt CORRECT
+setopt EXTENDED_HISTORY
+# setopt HASH_CMDS
+setopt MENUCOMPLETE
+setopt COMPLETE_ALIASES
+setopt ALL_EXPORT
 
-# style
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
-zstyle ':completion:*' rehash true                              # automatically find new executables in path
-zstyle ':completion:*' menu select                              # autocompletion with an arrow-key driven interface
+### Set/unset  shell options
+############################
+setopt   notify globdots correct pushdtohome cdablevars autolist numericglobsort
+setopt   correctall autocd recexact rcexpandparam nocheckjobs nobeep
+setopt   autoresume histignoredups pushdsilent 
+setopt   autopushd pushdminus extendedglob nocaseglob rcquotes mailwarning
+unsetopt bgnice autoparamslash
+
+### Autoload zsh modules when they are referenced
+#################################################
+autoload -U history-search-end
+zmodload -a zsh/stat stat
+zmodload -a zsh/zpty zpty
+zmodload -a zsh/zprof zprof
 zmodload zsh/complist
+#zmodload -ap zsh/mapfile mapfile
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
 
-# Speed up completions
-zstyle ':completion:*' accept-exact '*(N)'
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh/cache
-
-# History
-HISTFILE=~/.zhistory
+### Set variables
+#################
+HISTFILE=$HOME/.zhistory
 HISTSIZE=1000
-SAVEHIST=500
-WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
+SAVEHIST=1000
+WORDCHARS=${WORDCHARS//\/[&.;]}
+HOSTNAME="`hostname`"
+LS_COLORS='rs=0:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:tw=30;42:ow=34;42:st=37;44:ex=01;32:';
+
+### Load colors
+###############
+autoload -U colors && colors
+colors
+
+### Set Colors to use in in the script
+######################################
+# Normal Colors
+Black='\e[0;30m'        # Black
+Red='\e[0;31m'          # Red
+Green='\e[0;32m'        # Green
+Yellow='\e[0;33m'       # Yellow
+Blue='\e[0;34m'         # Blue
+Purple='\e[0;35m'       # Purple
+Cyan='\e[0;36m'         # Cyan
+White='\e[0;37m'        # White
+
+# Bold
+BBlack='\e[1;30m'       # Black
+BRed='\e[1;31m'         # Red
+BGreen='\e[1;32m'       # Green
+BYellow='\e[1;33m'      # Yellow
+BBlue='\e[1;34m'        # Blue
+BPurple='\e[1;35m'      # Purple
+BCyan='\e[1;36m'        # Cyan
+BWhite='\e[1;37m'       # White
+
+# Background
+On_Black='\e[40m'       # Black
+On_Red='\e[41m'         # Red
+On_Green='\e[42m'       # Green
+On_Yellow='\e[43m'      # Yellow
+On_Blue='\e[44m'        # Blue
+On_Purple='\e[45m'      # Purple
+On_Cyan='\e[46m'        # Cyan
+On_White='\e[47m'       # White
+
+NC="\e[m"               # Color Reset
+
+# Color man pages
+export LESS_TERMCAP_mb=$'\E[01;32m'
+export LESS_TERMCAP_md=$'\E[01;32m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;47;34m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;36m'
+export LESS=-rs
+
+### Set prompt
+##############
+autoload -Uz compinit zcalc promptinit
+compinit -d
+promptinit
+setopt prompt_subst
+
+# Prompt original
+#PR_NO_COLOR="%{$terminfo[sgr0]%}"
+#PS1="[%(!.${PR_RED}%n.$PR_LIGHT_YELLOW%n)%(!.${PR_LIGHT_YELLOW}@.$PR_RED@)$PR_NO_COLOR%(!.${PR_LIGHT_RED}%U%m%u.${PR_LIGHT_GREEN}%U%m%u)$PR_NO_COLOR:%(!.${PR_RED}%2c.${PR_BLUE}%2c)$PR_NO_COLOR]%(?..[${PR_LIGHT_RED}%?$PR_NO_COLOR])%(!.${PR_LIGHT_RED}#.${PR_LIGHT_GREEN}$) "
+#RPS1="$PR_LIGHT_YELLOW(%D{%m-%d %H:%M})$PR_NO_COLOR"
+#unsetopt ALL_EXPORT
+
+# Prompt spaceship
+# https://github.com/denysdovhan/spaceship-prompt
+#
+# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
+#
+SPACESHIP_CHAR_PREFIX=""
+ZSH_THEME="spaceship"
+SPACESHIP_CHAR_SYMBOL="-> " 
+SPACESHIP_USER_SHOW=true
+SPACESHIP_HOST_SHOW=true
+SPACESHIP_JOBS_SHOW=false
+SPACESHIP_EXIT_CODE_SHOW=true
+SPACESHIP_VI_MODE_SHOW=false
+prompt spaceship
+
+### set common functions
+########################
+
+function my_ip() # Get IP adress.
+{
+   curl ifconfig.co
+}
+
+# Find a file with a pattern in name:
+function ff()
+{
+    find . -type f -iname '*'"$*"'*' -ls ;
+}
+
+function sysinfo()   # Get current host related info.
+{
+    echo -e "\n${BRed}System Informations:$NC " ; uname -a
+    echo -e "\n${BRed}Online User:$NC " ; w -hs |
+             cut -d " " -f1 | sort | uniq
+    echo -e "\n${BRed}Date :$NC " ; date
+    echo -e "\n${BRed}Server stats :$NC " ; uptime
+    echo -e "\n${BRed}Memory stats :$NC " ; free
+    echo -e "\n${BRed}Public IP Address :$NC " ; my_ip
+    echo -e "\n${BRed}Open connections :$NC "; netstat -pan --inet;
+    echo -e "\n${BRed}CPU info :$NC "; cat /proc/cpuinfo ;
+    echo -e "\n"
+}
+
+function extract {
+ if [ -z "$1" ]; then
+    # display usage if no parameters given
+    echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
+ else
+    if [ -f $1 ] ; then
+        # NAME=${1%.*}
+        # mkdir $NAME && cd $NAME
+        case $1 in
+          *.tar.bz2)   tar xvjf ../$1    ;;
+          *.tar.gz)    tar xvzf ../$1    ;;
+          *.tar.xz)    tar xvJf ../$1    ;;
+          *.lzma)      unlzma ../$1      ;;
+          *.bz2)       bunzip2 ../$1     ;;
+          *.rar)       unrar x -ad ../$1 ;;
+          *.gz)        gunzip ../$1      ;;
+          *.tar)       tar xvf ../$1     ;;
+          *.tbz2)      tar xvjf ../$1    ;;
+          *.tgz)       tar xvzf ../$1    ;;
+          *.zip)       unzip ../$1       ;;
+          *.Z)         uncompress ../$1  ;;
+          *.7z)        7z x ../$1        ;;
+          *.xz)        unxz ../$1        ;;
+          *.exe)       cabextract ../$1  ;;
+          *)           echo "extract: '$1' - unknown archive method" ;;
+        esac
+    else
+        echo "$1 - file does not exist"
+    fi
+fi
+}
+
+# Creates an archive (*.tar.gz) from given directory.
+function maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
+
+# Create a ZIP archive of a file or folder.
+function makezip() { zip -r "${1%%/}.zip" "$1" ; }
+
+function my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,bsdtime,command ; }
+
+mcd () {
+    mkdir -p $1
+    cd $1
+}
+
+### help
+########
+autoload -Uz run-help
+alias help='run-help'
+#
+autoload -Uz run-help-git
+autoload -Uz run-help-ip
+autoload -Uz run-help-openssl
+autoload -Uz run-help-p4
+autoload -Uz run-help-sudo
+autoload -Uz run-help-svk
+autoload -Uz run-help-svn
+
+### Set alias
+#############
+alias ls='ls -l --color=auto --group-directories-first'
+alias ll='ls -lh'
+alias la='ls -ah'  # show hidden files and folders
+alias lx='ls -BXh' # sort by extension
+alias lz='ls -rSh' # sort by size
+alias lt='ls -rth' # sort by date
+alias dir='dir --color'
+alias grep='grep --color'
+alias dmesg='dmesg --color'
+alias df='df -h'
+alias du='du -h'
+alias vi='vim'
+alias pacman='sudo pacman --color=always'
+alias pacu='pacman -Syu'
+alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
+alias yayu='yay -Syu'
+alias yayi='sh $HOME/.scripts/fzf_pkg_aur.sh'
+alias gpg='gpg2'
+alias cat="bat --theme TwoDark"
+alias gitu='git add . && git commit && git push'
+alias cls="clear"
+alias myip="curl http://ipecho.net/plain; echo"
+alias logs="find /var/log -type f -exec file {} \; | grep 'text' | cut -d' ' -f1 | sed -e's/:$//g' | grep -v '[0-9]$' | xargs tail -f"
+
+### Bind keys
+#############
+autoload -U compinit
+compinit
+bindkey "^?" backward-delete-char
+bindkey '^[OH' beginning-of-line
+bindkey '^[OF' end-of-line
+bindkey '^[[5~' up-line-or-history
+bindkey '^[[6~' down-line-or-history
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
+bindkey "^r" history-incremental-search-backward
+bindkey ' ' magic-space    # also do history expansion on space
+bindkey '^I' complete-word # complete on tab, leave expansion to _expand
+zstyle ':completion::complete:*' use-cache on
+zstyle ':completion::complete:*' cache-path ~/.zsh/cache/$HOST
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
+zstyle ':completion:*' menu select=1 _complete _ignored _approximate
+zstyle -e ':completion:*:approximate:*' max-errors \
+    'reply=( $(( ($#PREFIX+$#SUFFIX)/2 )) numeric )'
+zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
+
+### Completion Styles
+#####################
+
+# list of completers to use
+zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
+
+# allow one error for every three characters typed in approximate completer
+zstyle -e ':completion:*:approximate:*' max-errors \
+    'reply=( $(( ($#PREFIX+$#SUFFIX)/2 )) numeric )'
+    
+# insert all expansions for expand completer
+zstyle ':completion:*:expand:*' tag-order all-expansions
+
+# formatting and messages
+zstyle ':completion:*' verbose yes
+zstyle ':completion:*:descriptions' format '%B%d%b'
+zstyle ':completion:*:messages' format '%d'
+zstyle ':completion:*:warnings' format 'No matches for: %d'
+zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+zstyle ':completion:*' group-name ''
+
+# match uppercase from lowercase
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}e'
+
+# offer indexes before parameters in subscripts
+zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
+
+# command for process lists, the local web server details and host completion
+# on processes completion complete all user processes
+zstyle ':completion:*:processes' command 'ps -au$USER'
+
+# add colors to processes for kill completion
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+zstyle ':completion:*:processes' command 'ps -o pid,s,nice,stime,args'
+zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
+
+# NEW completion:
+# 1. All /etc/hosts hostnames are in autocomplete
+# 2. If you have a comment in /etc/hosts like #%foobar.domain,
+#    then foobar.domain will show up in autocomplete!
+zstyle ':completion:*' hosts $(awk '/^[^#]/ {print $2 $3" "$4" "$5}' /etc/hosts | grep -v ip6- && grep "^#%" /etc/hosts | awk -F% '{print $2}') 
+# Filename suffixes to ignore during completion (except after rm command)
+zstyle ':completion:*:*:(^rm):*:*files' ignored-patterns '*?.o' '*?.c~' \
+    '*?.old' '*?.pro'
+# the same for old style completion
+#fignore=(.o .c~ .old .pro)
+
+# ignore completion functions (until the _ignored completer)
+zstyle ':completion:*:functions' ignored-patterns '_*'
+zstyle ':completion:*:*:*:users' ignored-patterns \
+        adm apache bin daemon games gdm halt ident junkbust lp mail mailnull \
+        named news nfsnobody nobody nscd ntp operator pcap postgres radvd \
+        rpc rpcuser rpm shutdown squid sshd sync uucp vcsa xfs avahi-autoipd\
+        avahi backup messagebus beagleindex debian-tor dhcp dnsmasq fetchmail\
+        firebird gnats haldaemon hplip irc klog list man cupsys postfix\
+        proxy syslog www-data mldonkey sys snort
+# SSH Completion
+zstyle ':completion:*:scp:*' tag-order \
+   files users 'hosts:-host hosts:-domain:domain hosts:-ipaddr"IP\ Address *'
+zstyle ':completion:*:scp:*' group-order \
+   files all-files users hosts-domain hosts-host hosts-ipaddr
+zstyle ':completion:*:ssh:*' tag-order \
+   users 'hosts:-host hosts:-domain:domain hosts:-ipaddr"IP\ Address *'
+zstyle ':completion:*:ssh:*' group-order \
+   hosts-domain hosts-host users hosts-ipaddr
+zstyle '*' single-ignored show
 
 # Persistent rehash
 zstyle ':completion:*' rehash true
@@ -56,99 +350,8 @@ rehash_precmd() {
 }
 add-zsh-hook -Uz precmd rehash_precmd
 
-# Keybindings section
-bindkey -e
-bindkey '^[[7~' beginning-of-line                               # Home key
-bindkey '^[[H' beginning-of-line                                # Home key
-if [[ "${terminfo[khome]}" != "" ]]; then
-  bindkey "${terminfo[khome]}" beginning-of-line                # [Home] - Go to beginning of line
-fi
-bindkey '^[[8~' end-of-line                                     # End key
-bindkey '^[[F' end-of-line                                     # End key
-if [[ "${terminfo[kend]}" != "" ]]; then
-  bindkey "${terminfo[kend]}" end-of-line                       # [End] - Go to end of line
-fi
-bindkey '^[[2~' overwrite-mode                                  # Insert key
-bindkey '^[[3~' delete-char                                     # Delete key
-bindkey '^[[C'  forward-char                                    # Right key
-bindkey '^[[D'  backward-char                                   # Left key
-bindkey '^[[5~' history-beginning-search-backward               # Page up key
-bindkey '^[[6~' history-beginning-search-forward                # Page down key
-
-# Navigate words with ctrl+arrow keys
-bindkey '^[Oc' forward-word                                     #
-bindkey '^[Od' backward-word                                    #
-bindkey '^[[1;5D' backward-word                                 #
-bindkey '^[[1;5C' forward-word                                  #
-bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
-bindkey '^[[Z' undo                                             # Shift+tab undo last action
-
-# Alias section
-alias ls='ls -l --color=auto --group-directories-first'
-alias ll='ls -lh'
-alias la='ls -ah'  # show hidden files and folders
-alias lx='ls -BXh' # sort by extension
-alias lz='ls -rSh' # sort by size
-alias lt='ls -rth' # sort by date
-alias dir='dir --color'
-alias grep='grep --color'
-alias dmesg='dmesg --color'
-alias df='df -h'
-alias du='du -h'
-alias vi='nvim'
-alias pacman='sudo pacman --color=always'
-alias pacu='pacman -Syu'
-alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
-alias yayu='yay -Syu'
-alias yayi='sh $HOME/.scripts/fzf_pkg_aur.sh'
-alias gpg='gpg2'
-alias cat="bat --theme TwoDark"
-alias dmenu_run='dmenu_run -fn "Iosevka-Medium-11'
-alias gitu='git add . && git commit && git push'
-alias urxvt='/home/colps/.scripts/urxvts.sh'
-alias sxiv='sxiv -t'
-
-# Theming section
-autoload -U colors && colors
-autoload -Uz compinit colors zcalc promptinit
-compinit -d
-colors
-promptinit
-
-# Prompt spaceship
-# https://github.com/denysdovhan/spaceship-prompt
-#
-# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
-#
-ZSH_THEME="spaceship"
-SPACESHIP_CHAR_SYMBOL="-> "
-SPACESHIP_USER_SHOW=true
-SPACESHIP_HOST_SHOW=true
-SPACESHIP_JOBS_SHOW=false
-SPACESHIP_EXIT_CODE_SHOW=true
-prompt spaceship
-
-# Prompt (on left side) 
-#PROMPT="%(!.%{$fg[red]%}[%n@%m %1~]%{$reset_color%}# .%{$fg[green]%}[%n@%m %1~]%{$reset_color%}$ "
-
-# Prompt (on right side) 
-# prompt bart
-# git hub 1
-#source /usr/share/zsh/plugins/zsh-git-prompts/git_prompt_01.zsh
-# git hub 2
-#source /usr/share/zsh/plugins/zsh-git-prompts/git_prompt_02.zsh
-
-# Color man pages
-export LESS_TERMCAP_mb=$'\E[01;32m'
-export LESS_TERMCAP_md=$'\E[01;32m'
-export LESS_TERMCAP_me=$'\E[0m'
-export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;47;34m'
-export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;36m'
-export LESS=-rs
-
-## Plugins section
+### Source plugins
+##################
 # Use syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Use history substring search
@@ -163,29 +366,12 @@ source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 # zsh user completions
 #source .zsh/*
 
-# bind UP and DOWN arrow keys to history substring search
-zmodload zsh/terminfo
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
-# help
-autoload -Uz run-help
-alias help='run-help'
-#
-autoload -Uz run-help-git
-autoload -Uz run-help-ip
-autoload -Uz run-help-openssl
-autoload -Uz run-help-p4
-autoload -Uz run-help-sudo
-autoload -Uz run-help-svk
-autoload -Uz run-help-svn
-
 # fzf completion
+################
 #export FZF_COMPLETION_TRIGGER='~~'
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/fzf-extras.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

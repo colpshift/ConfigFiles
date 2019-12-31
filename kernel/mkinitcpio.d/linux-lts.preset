@@ -1,6 +1,4 @@
 # mkinitcpio preset file for the 'linux-lts' package
-#
-ESP_DIR="/boot/efi"
 
 ALL_config="/etc/mkinitcpio.conf"
 ALL_kver="/boot/vmlinuz-linux-lts"
@@ -8,9 +6,9 @@ ALL_kver="/boot/vmlinuz-linux-lts"
 PRESETS=('default' 'fallback')
 
 #default_config="/etc/mkinitcpio.conf"
-default_image="${ESP_DIR}/initramfs-linux-lts.img"
-default_options="-A esp-update-linux"
+default_image="/boot/initramfs-linux-lts.img"
+#default_options=""
 
 #fallback_config="/etc/mkinitcpio.conf"
-fallback_image="${ESP_DIR}/initramfs-linux-lts-fallback.img"
+fallback_image="/boot/initramfs-linux-lts-fallback.img"
 fallback_options="-S autodetect"

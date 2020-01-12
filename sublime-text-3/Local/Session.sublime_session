@@ -3,7 +3,7 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 3,
+	"last_window_id": 8,
 	"log_indexing": false,
 	"settings":
 	{
@@ -51,6 +51,7 @@
 			},
 			"file_history":
 			[
+				"/home/colps/Documents/Linux/Sublime/Sublime tips.txt",
 				"/home/colps/Github/config_files/i3/i3pystatus/i3pyconfig.py"
 			],
 			"find":
@@ -130,7 +131,7 @@
 				"width": 0.0
 			},
 			"show_minimap": false,
-			"show_open_files": false,
+			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
 			"side_bar_width": 150.0,
@@ -198,6 +199,7 @@
 			},
 			"file_history":
 			[
+				"/home/colps/Documents/Linux/Sublime/Sublime tips.txt",
 				"/home/colps/Github/config_files/i3/i3pystatus/i3pyconfig.py"
 			],
 			"find":
@@ -249,8 +251,8 @@
 								"selection":
 								[
 									[
-										490,
-										490
+										272,
+										272
 									]
 								],
 								"settings":

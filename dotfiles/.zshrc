@@ -15,13 +15,13 @@
 # setopt NO_FLOW_CONTROL
 setopt INC_APPEND_HISTORY SHARE_HISTORY
 setopt APPEND_HISTORY
-# setopt AUTO_LIST
-# setopt AUTO_REMOVE_SLASH
+setopt AUTO_LIST
+setopt AUTO_REMOVE_SLASH
 # setopt AUTO_RESUME
 unsetopt BG_NICE
 setopt CORRECT
 setopt EXTENDED_HISTORY
-# setopt HASH_CMDS
+setopt HASH_CMDS
 setopt MENUCOMPLETE
 setopt COMPLETE_ALIASES
 setopt ALL_EXPORT
@@ -30,7 +30,7 @@ setopt ALL_EXPORT
 ############################
 setopt   notify globdots correct pushdtohome cdablevars autolist numericglobsort
 setopt   correctall autocd recexact rcexpandparam nocheckjobs nobeep
-setopt   autoresume histignoredups pushdsilent 
+setopt   autoresume histignoredups pushdsilent
 setopt   autopushd pushdminus extendedglob nocaseglob rcquotes mailwarning
 unsetopt bgnice autoparamslash
 
@@ -123,7 +123,7 @@ setopt prompt_subst
 #
 SPACESHIP_CHAR_PREFIX=""
 ZSH_THEME="spaceship"
-SPACESHIP_CHAR_SYMBOL="-> " 
+SPACESHIP_CHAR_SYMBOL="-> "
 SPACESHIP_USER_SHOW=true
 SPACESHIP_HOST_SHOW=true
 SPACESHIP_JOBS_SHOW=false
@@ -219,12 +219,11 @@ autoload -Uz run-help-svn
 
 ### Set alias
 #############
-alias ls='ls -l --color=auto --group-directories-first'
-alias ll='ls -lh'
-alias la='ls -ah'  # show hidden files and folders
-alias lx='ls -BXh' # sort by extension
-alias lz='ls -rSh' # sort by size
-alias lt='ls -rth' # sort by date
+alias ll='ls -lh --color=auto --group-directories-first'
+alias la='ls -a'  # show hidden files and folders
+alias lx='ls -BX' # sort by extension
+alias lz='ls -rS' # sort by size
+alias lt='ls -rt' # sort by date
 alias dir='dir --color'
 alias grep='grep --color'
 alias dmesg='dmesg --color'
@@ -242,6 +241,10 @@ alias gitu='git add . && git commit && git push'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias sxiv='sxiv -t'
+alias rofi='rofi -show drun'
+alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
+alias pacman-mirror_update='reflector --verbose -f 10 --save /etc/pacman.d/mirrorlist'
 
 ### Bind keys
 #############
@@ -276,7 +279,7 @@ zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
 # allow one error for every three characters typed in approximate completer
 zstyle -e ':completion:*:approximate:*' max-errors \
     'reply=( $(( ($#PREFIX+$#SUFFIX)/2 )) numeric )'
-    
+
 # insert all expansions for expand completer
 zstyle ':completion:*:expand:*' tag-order all-expansions
 
@@ -307,7 +310,7 @@ zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
 # 1. All /etc/hosts hostnames are in autocomplete
 # 2. If you have a comment in /etc/hosts like #%foobar.domain,
 #    then foobar.domain will show up in autocomplete!
-zstyle ':completion:*' hosts $(awk '/^[^#]/ {print $2 $3" "$4" "$5}' /etc/hosts | grep -v ip6- && grep "^#%" /etc/hosts | awk -F% '{print $2}') 
+zstyle ':completion:*' hosts $(awk '/^[^#]/ {print $2 $3" "$4" "$5}' /etc/hosts | grep -v ip6- && grep "^#%" /etc/hosts | awk -F% '{print $2}')
 # Filename suffixes to ignore during completion (except after rm command)
 zstyle ':completion:*:*:(^rm):*:*files' ignored-patterns '*?.o' '*?.c~' \
     '*?.old' '*?.pro'
@@ -364,7 +367,7 @@ source /usr/share/doc/pkgfile/command-not-found.zsh
 # interactive cd
 source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 # zsh user completions
-#source .zsh/*
+#source $HOME/.zsh/*
 
 # fzf completion
 ################
@@ -374,4 +377,3 @@ source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/fzf-extras.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-

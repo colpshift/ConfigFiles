@@ -16,9 +16,12 @@ path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts $path
 export XDG_RUNTIME_DIR="/run/user/1000"
 
 ### default applications
-export BROWSE="usr/bin/firefox"
-export VISUAL="/usr/bin/vim"
-export EDITOR="/usr/bin/vim"
+export BROWSE="/bin/firefox"
+export VISUAL="/bin/vim"
+export EDITOR="/bin/vim"
+
+### config applications
+export PASSWORD_STORE_ENABLE_EXTENSIONS="true"
 
 ### fuzzy search
 export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"

@@ -7,3 +7,7 @@
 # Last update: 11/12/2019 20:26
 # Author: Colpshift
 #
+
+# Start Firefox/Profile on RAM
+/bin/firefox-sync
+

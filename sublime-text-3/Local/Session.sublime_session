@@ -3,11 +3,11 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 8,
+	"last_window_id": 3,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 0.0,
+		"new_window_height": 713.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -51,8 +51,6 @@
 			},
 			"file_history":
 			[
-				"/home/colps/Documents/Linux/Sublime/Sublime tips.txt",
-				"/home/colps/Github/config_files/i3/i3pystatus/i3pyconfig.py"
 			],
 			"find":
 			{
@@ -130,8 +128,8 @@
 				],
 				"width": 0.0
 			},
-			"show_minimap": false,
-			"show_open_files": true,
+			"show_minimap": true,
+			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
 			"side_bar_width": 150.0,
@@ -140,7 +138,7 @@
 			{
 			}
 		},
-		"new_window_width": 0.0
+		"new_window_width": 1366.0
 	},
 	"windows":
 	[
@@ -199,8 +197,7 @@
 			},
 			"file_history":
 			[
-				"/home/colps/Documents/Linux/Sublime/Sublime tips.txt",
-				"/home/colps/Github/config_files/i3/i3pystatus/i3pyconfig.py"
+				"/home/colps/Downloads/Preferences.sublime-settings"
 			],
 			"find":
 			{
@@ -251,8 +248,8 @@
 								"selection":
 								[
 									[
-										272,
-										272
+										0,
+										0
 									]
 								],
 								"settings":
@@ -305,7 +302,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,0,0,2806,900",
+			"position": "0,1,0,0,0,1440,27,2806,740,2806,900",
 			"project": "",
 			"replace":
 			{
@@ -344,7 +341,7 @@
 			{
 			},
 			"show_minimap": false,
-			"show_open_files": true,
+			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
 			"side_bar_width": 150.0,

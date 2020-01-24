@@ -219,11 +219,12 @@ autoload -Uz run-help-svn
 
 ### Set alias
 #############
-alias ll='ls -lh --color=auto --group-directories-first'
-alias la='ls -a'  # show hidden files and folders
-alias lx='ls -BX' # sort by extension
-alias lz='ls -rS' # sort by size
-alias lt='ls -rt' # sort by date
+alias ll='ls'
+alias ls='ls -lh --color=auto --group-directories-first'
+alias la='ls -ah'  # show hidden files and folders
+alias lx='ls -BXh' # sort by extension
+alias lz='ls -rSh' # sort by size
+alias lt='ls -rth' # sort by date
 alias dir='dir --color'
 alias grep='grep --color'
 alias dmesg='dmesg --color'
@@ -242,6 +243,8 @@ alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias sxiv='sxiv -t'
 alias rofi='rofi -show drun'
+alias systemctl_error='sudo systemctl --failed'
+alias journal_error='sudo journalctl -p 3 -xb'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
 alias pacman-mirror_update='reflector --verbose -f 10 --save /etc/pacman.d/mirrorlist'

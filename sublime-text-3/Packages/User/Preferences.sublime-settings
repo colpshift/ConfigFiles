@@ -8,8 +8,8 @@
 	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium) NDC.sublime-color-scheme",
 	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
-	"font_face": "Zekton Bold",
-	"font_size": 11,
+	"font_face": "Iosevka Medium",
+	"font_size": 10,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -18,7 +18,7 @@
 	"match_brackets_angle": true,
 	"tab_completion": true,
 	"tab_size": 4,
-	"theme": "Adaptive.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"use_tab_stops": true
 }

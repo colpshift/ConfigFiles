@@ -3,11 +3,11 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 3,
+	"last_window_id": 4,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 713.0,
+		"new_window_height": 0.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -51,6 +51,8 @@
 			},
 			"file_history":
 			[
+				"/home/colps/Downloads/backup/config_files/crontab/crontab_backup.txt",
+				"/home/colps/Downloads/Preferences.sublime-settings"
 			],
 			"find":
 			{
@@ -128,7 +130,7 @@
 				],
 				"width": 0.0
 			},
-			"show_minimap": true,
+			"show_minimap": false,
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
@@ -138,7 +140,7 @@
 			{
 			}
 		},
-		"new_window_width": 1366.0
+		"new_window_width": 0.0
 	},
 	"windows":
 	[
@@ -158,6 +160,14 @@
 						"buffer_size": 490,
 						"encoding": "UTF-8",
 						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/home/colps/Downloads/Admissao-20200124T134046Z-001.zip",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Unix"
 					}
 				}
 			],
@@ -197,6 +207,7 @@
 			},
 			"file_history":
 			[
+				"/home/colps/Downloads/backup/config_files/crontab/crontab_backup.txt",
 				"/home/colps/Downloads/Preferences.sublime-settings"
 			],
 			"find":
@@ -232,7 +243,7 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 1,
 					"sheets":
 					[
 						{
@@ -242,6 +253,34 @@
 							"settings":
 							{
 								"buffer_size": 490,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										436,
+										436
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/colps/Downloads/Admissao-20200124T134046Z-001.zip",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 0,
 								"regions":
 								{
 								},
@@ -302,7 +341,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,1440,27,2806,740,2806,900",
+			"position": "0,0,0,0,0,0,27,640,507,1366,768",
 			"project": "",
 			"replace":
 			{

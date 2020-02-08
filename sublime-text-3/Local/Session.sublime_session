@@ -3,11 +3,11 @@
 	[
 	],
 	"last_version": 3211,
-	"last_window_id": 4,
+	"last_window_id": 5,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 0.0,
+		"new_window_height": 852.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -51,6 +51,7 @@
 			},
 			"file_history":
 			[
+				"/home/colps/Downloads/Admissao-20200124T134046Z-001.zip",
 				"/home/colps/Downloads/backup/config_files/crontab/crontab_backup.txt",
 				"/home/colps/Downloads/Preferences.sublime-settings"
 			],
@@ -131,16 +132,16 @@
 				"width": 0.0
 			},
 			"show_minimap": false,
-			"show_open_files": false,
+			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 150.0,
+			"side_bar_visible": false,
+			"side_bar_width": 138.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			}
 		},
-		"new_window_width": 0.0
+		"new_window_width": 796.0
 	},
 	"windows":
 	[
@@ -163,11 +164,21 @@
 					}
 				},
 				{
-					"file": "/home/colps/Downloads/Admissao-20200124T134046Z-001.zip",
+					"file": "/home/colps/Github/config_files/i3/config_template",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 11052,
+						"encoding": "UTF-8",
 						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "### Define names for default workspaces for which we configure key bindings later on.\nset $ws1    \"1 \"\nset $ws2    \"2 \"\nset $ws3    \"3 \"\nset $ws4    \"4 \"\nset $ws5    \"5 \"\nset $ws6    \"6 \"\nset $ws7    \"7 \"\nset $ws8    \"\"\nset $ws9    \"9 \"\nset $ws10   \"10 \"",
+					"settings":
+					{
+						"buffer_size": 263,
+						"line_ending": "Unix",
+						"name": "### Define names for default workspaces for which"
 					}
 				}
 			],
@@ -207,12 +218,15 @@
 			},
 			"file_history":
 			[
+				"/home/colps/.config/i3/config",
+				"/home/colps/Github/config_files/dotfiles/.Xresources",
+				"/home/colps/Downloads/Admissao-20200124T134046Z-001.zip",
 				"/home/colps/Downloads/backup/config_files/crontab/crontab_backup.txt",
 				"/home/colps/Downloads/Preferences.sublime-settings"
 			],
 			"find":
 			{
-				"height": 0.0
+				"height": 26.0
 			},
 			"find_in_files":
 			{
@@ -226,6 +240,17 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"10  ",
+					"8 ",
+					"10 ",
+					"9 ",
+					"7 ",
+					"6 ",
+					"5 ",
+					"4 ",
+					"3 ",
+					"2 ",
+					"1 "
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -233,6 +258,17 @@
 				"regex": false,
 				"replace_history":
 				[
+					"$ws10",
+					"$ws8",
+					"$ws10",
+					"$ws9",
+					"$ws7",
+					"$ws6",
+					"$ws5",
+					"$ws4",
+					"$ws3",
+					"$ws2",
+					"$ws1"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -259,8 +295,8 @@
 								"selection":
 								[
 									[
-										436,
-										436
+										490,
+										490
 									]
 								],
 								"settings":
@@ -271,16 +307,45 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 2,
 							"type": "text"
 						},
 						{
 							"buffer": 1,
-							"file": "/home/colps/Downloads/Admissao-20200124T134046Z-001.zip",
+							"file": "/home/colps/Github/config_files/i3/config_template",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 0,
+								"buffer_size": 11052,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1618,
+										1618
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 765.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 263,
 								"regions":
 								{
 								},
@@ -293,13 +358,14 @@
 								],
 								"settings":
 								{
+									"auto_name": "### Define names for default workspaces for which",
 									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 1,
 							"type": "text"
 						}
 					]
@@ -307,7 +373,7 @@
 			],
 			"incremental_find":
 			{
-				"height": 0.0
+				"height": 26.0
 			},
 			"input":
 			{
@@ -341,11 +407,11 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,0,27,640,507,1366,768",
+			"position": "0,1,0,0,0,1440,27,2806,740,2806,900",
 			"project": "",
 			"replace":
 			{
-				"height": 0.0
+				"height": 68.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -380,10 +446,10 @@
 			{
 			},
 			"show_minimap": false,
-			"show_open_files": false,
+			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 150.0,
+			"side_bar_visible": false,
+			"side_bar_width": 138.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{

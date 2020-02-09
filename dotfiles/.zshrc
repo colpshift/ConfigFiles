@@ -243,6 +243,7 @@ alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias sxiv='sxiv -t'
 alias rofi='rofi -show drun'
+alias urxvt="/home/colps/.scripts/urxvts.sh"
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'

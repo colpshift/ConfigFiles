@@ -1,11 +1,5 @@
-#!/usr/bin/env bash
 #
-# File: bash.bashrc
-# Path: /etc
-# Tags: bash shell
-# Description: bash shell config
-# Last update: 11/12/2019 20:28
-# Author: Colpshift
+# /etc/bash.bashrc
 #
 
 # If not running interactively, don't do anything

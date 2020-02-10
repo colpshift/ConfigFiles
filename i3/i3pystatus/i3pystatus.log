@@ -1,0 +1,1260 @@
+2020-02-08 09:23:45,343 [ERROR   ][i3pystatus.weather.Weather 76] Exception in Thread-3 at Sat 08 Feb 2020 09:23:45 AM -03, module Weather
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/__init__.py", line 144, in run
+    data = self.backend.weather_data()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/weathercom.py", line 84, in weather_data
+    doc = ElementTree.XML(xml)
+  File "/usr/lib/python3.8/xml/etree/ElementTree.py", line 1320, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2020-02-08 09:26:00,279 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:00 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:01,280 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:01 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:02,281 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:02 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:03,282 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:03 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:04,283 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:04 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:05,284 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:05 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:06,286 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:06 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:07,287 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:07 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:08,288 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:08 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:09,289 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:09 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:10,290 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:10 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:11,292 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:11 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:12,293 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:12 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:13,294 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:13 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:14,295 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:14 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:15,296 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:15 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:16,297 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:16 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:17,298 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:17 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:18,300 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:18 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:19,301 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:19 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:20,302 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:20 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:21,303 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:21 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:22,304 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:22 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:23,306 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:23 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:24,307 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:24 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:25,308 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:25 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:26,309 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:26 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:26:27,310 [ERROR   ][i3pystatus.network.Network 76] Exception in Thread-2 at Sat 08 Feb 2020 09:26:27 AM -03, module Network
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 370, in run
+    network_usage = self.network_traffic.get_usage(self.interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 208, in get_usage
+    self.update_counters(interface)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/network.py", line 171, in update_counters
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2020-02-08 09:29:31,781 [ERROR   ][i3pystatus.weather.Weather 76] Exception in Thread-3 at Sat 08 Feb 2020 09:29:31 AM -03, module Weather
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/__init__.py", line 144, in run
+    data = self.backend.weather_data()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/weathercom.py", line 84, in weather_data
+    doc = ElementTree.XML(xml)
+  File "/usr/lib/python3.8/xml/etree/ElementTree.py", line 1320, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2020-02-08 12:27:26,026 [ERROR   ][i3pystatus.weather.Weather 76] Exception in Thread-3 at Sat 08 Feb 2020 12:27:26 PM -03, module Weather
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/__init__.py", line 144, in run
+    data = self.backend.weather_data()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/weathercom.py", line 84, in weather_data
+    doc = ElementTree.XML(xml)
+  File "/usr/lib/python3.8/xml/etree/ElementTree.py", line 1320, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2020-02-08 12:28:26,019 [ERROR   ][i3pystatus.weather.Weather 76] Exception in Thread-3 at Sat 08 Feb 2020 12:28:26 PM -03, module Weather
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/__init__.py", line 144, in run
+    data = self.backend.weather_data()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/weathercom.py", line 84, in weather_data
+    doc = ElementTree.XML(xml)
+  File "/usr/lib/python3.8/xml/etree/ElementTree.py", line 1320, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2020-02-08 12:33:50,165 [ERROR   ][i3pystatus.weather.Weather 76] Exception in Thread-3 at Sat 08 Feb 2020 12:33:50 PM -03, module Weather
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/__init__.py", line 144, in run
+    data = self.backend.weather_data()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/weathercom.py", line 84, in weather_data
+    doc = ElementTree.XML(xml)
+  File "/usr/lib/python3.8/xml/etree/ElementTree.py", line 1320, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2020-02-08 16:05:48,869 [ERROR   ][i3pystatus.mail.Mail 76] Exception in Thread-3 at Sat 08 Feb 2020 04:05:48 PM -03, module Mail
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 1022, in _command_complete
+    typ, data = self._get_tagged_response(tag, expect_bye=logout)
+  File "/usr/lib/python3.8/imaplib.py", line 1148, in _get_tagged_response
+    self._get_response()
+  File "/usr/lib/python3.8/imaplib.py", line 1079, in _get_response
+    raise self.abort("unexpected response: %r" % resp)
+imaplib.IMAP4.abort: unexpected response: b'QUEUED $SENT $SIGNED $TODO $has_cal $label1 $label2 $label4 $label5 Junk NOTJUNK NonJunk Old receipt-handled \\*)] Flags permitted.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 120, in unread
+    conn = self.get_connection()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 96, in get_connection
+    self.connection.select(self.mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 747, in select
+    typ, dat = self._simple_command(name, mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 1024, in _command_complete
+    raise self.abort('command: %s => %s' % (name, val))
+imaplib.IMAP4.abort: command: SELECT => unexpected response: b'QUEUED $SENT $SIGNED $TODO $has_cal $label1 $label2 $label4 $label5 Junk NOTJUNK NonJunk Old receipt-handled \\*)] Flags permitted.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 1022, in _command_complete
+    typ, data = self._get_tagged_response(tag, expect_bye=logout)
+  File "/usr/lib/python3.8/imaplib.py", line 1148, in _get_tagged_response
+    self._get_response()
+  File "/usr/lib/python3.8/imaplib.py", line 1079, in _get_response
+    raise self.abort("unexpected response: %r" % resp)
+imaplib.IMAP4.abort: unexpected response: b'ted.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/__init__.py", line 62, in run
+    temp = backend.unread
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 127, in unread
+    self.count_new_mail()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 115, in count_new_mail
+    self.last = len(self.conn.search(None, "UnSeen")[1][0].split())
+  File "/usr/lib/python3.8/imaplib.py", line 725, in search
+    typ, dat = self._simple_command(name, *criteria)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 1024, in _command_complete
+    raise self.abort('command: %s => %s' % (name, val))
+imaplib.IMAP4.abort: command: SEARCH => unexpected response: b'ted.'
+2020-02-08 17:50:18,421 [ERROR   ][i3pystatus.mail.Mail 76] Exception in Thread-3 at Sat 08 Feb 2020 05:50:18 PM -03, module Mail
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 1022, in _command_complete
+    typ, data = self._get_tagged_response(tag, expect_bye=logout)
+  File "/usr/lib/python3.8/imaplib.py", line 1148, in _get_tagged_response
+    self._get_response()
+  File "/usr/lib/python3.8/imaplib.py", line 1050, in _get_response
+    resp = self._get_line()
+  File "/usr/lib/python3.8/imaplib.py", line 1160, in _get_line
+    raise self.abort('socket error: EOF')
+imaplib.IMAP4.abort: socket error: EOF
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 120, in unread
+    conn = self.get_connection()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 96, in get_connection
+    self.connection.select(self.mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 747, in select
+    typ, dat = self._simple_command(name, mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 1024, in _command_complete
+    raise self.abort('command: %s => %s' % (name, val))
+imaplib.IMAP4.abort: command: SELECT => socket error: EOF
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 1022, in _command_complete
+    typ, data = self._get_tagged_response(tag, expect_bye=logout)
+  File "/usr/lib/python3.8/imaplib.py", line 1148, in _get_tagged_response
+    self._get_response()
+  File "/usr/lib/python3.8/imaplib.py", line 1050, in _get_response
+    resp = self._get_line()
+  File "/usr/lib/python3.8/imaplib.py", line 1160, in _get_line
+    raise self.abort('socket error: EOF')
+imaplib.IMAP4.abort: socket error: EOF
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/__init__.py", line 62, in run
+    temp = backend.unread
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 127, in unread
+    self.count_new_mail()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 115, in count_new_mail
+    self.last = len(self.conn.search(None, "UnSeen")[1][0].split())
+  File "/usr/lib/python3.8/imaplib.py", line 725, in search
+    typ, dat = self._simple_command(name, *criteria)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 1024, in _command_complete
+    raise self.abort('command: %s => %s' % (name, val))
+imaplib.IMAP4.abort: command: SEARCH => socket error: EOF
+2020-02-08 17:50:23,422 [ERROR   ][i3pystatus.mail.Mail 76] Exception in Thread-3 at Sat 08 Feb 2020 05:50:23 PM -03, module Mail
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 981, in _command
+    self.send(data + CRLF)
+  File "/usr/lib/python3.8/imaplib.py", line 323, in send
+    self.sock.sendall(data)
+  File "/usr/lib/python3.8/ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.8/ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 120, in unread
+    conn = self.get_connection()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 96, in get_connection
+    self.connection.select(self.mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 747, in select
+    typ, dat = self._simple_command(name, mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 983, in _command
+    raise self.abort('socket error: %s' % val)
+imaplib.IMAP4.abort: socket error: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 981, in _command
+    self.send(data + CRLF)
+  File "/usr/lib/python3.8/imaplib.py", line 323, in send
+    self.sock.sendall(data)
+  File "/usr/lib/python3.8/ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.8/ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/__init__.py", line 62, in run
+    temp = backend.unread
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 127, in unread
+    self.count_new_mail()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 115, in count_new_mail
+    self.last = len(self.conn.search(None, "UnSeen")[1][0].split())
+  File "/usr/lib/python3.8/imaplib.py", line 725, in search
+    typ, dat = self._simple_command(name, *criteria)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 983, in _command
+    raise self.abort('socket error: %s' % val)
+imaplib.IMAP4.abort: socket error: [Errno 32] Broken pipe
+2020-02-08 20:54:45,486 [ERROR   ][i3pystatus.mail.Mail 76] Exception in Thread-14 at Sat 08 Feb 2020 08:54:45 PM -03, module Mail
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 1022, in _command_complete
+    typ, data = self._get_tagged_response(tag, expect_bye=logout)
+  File "/usr/lib/python3.8/imaplib.py", line 1148, in _get_tagged_response
+    self._get_response()
+  File "/usr/lib/python3.8/imaplib.py", line 1079, in _get_response
+    raise self.abort("unexpected response: %r" % resp)
+imaplib.IMAP4.abort: unexpected response: b'FLAGS (\\Answered \\Flagged \\Draft \\Deleted \\Seen $ATTACHMENT $ERROR $Labelimportant $Labellater $Labeltodo $NotPhishing $Phishing $QUEUED $SENT $SIGNED $TODO $has_cal $label1 $label2 $label4 $label5 Junk NOTJUNK NonJunk Old receipt-handled \\*)] Flags permitted.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/__init__.py", line 62, in run
+    temp = backend.unread
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 127, in unread
+    self.count_new_mail()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 115, in count_new_mail
+    self.last = len(self.conn.search(None, "UnSeen")[1][0].split())
+  File "/usr/lib/python3.8/imaplib.py", line 725, in search
+    typ, dat = self._simple_command(name, *criteria)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 1024, in _command_complete
+    raise self.abort('command: %s => %s' % (name, val))
+imaplib.IMAP4.abort: command: SEARCH => unexpected response: b'FLAGS (\\Answered \\Flagged \\Draft \\Deleted \\Seen $ATTACHMENT $ERROR $Labelimportant $Labellater $Labeltodo $NotPhishing $Phishing $QUEUED $SENT $SIGNED $TODO $has_cal $label1 $label2 $label4 $label5 Junk NOTJUNK NonJunk Old receipt-handled \\*)] Flags permitted.'
+2020-02-08 21:25:56,979 [ERROR   ][i3pystatus.weather.Weather 76] Exception in Thread-3 at Sat 08 Feb 2020 09:25:56 PM -03, module Weather
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/__init__.py", line 144, in run
+    data = self.backend.weather_data()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/weathercom.py", line 84, in weather_data
+    doc = ElementTree.XML(xml)
+  File "/usr/lib/python3.8/xml/etree/ElementTree.py", line 1320, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2020-02-08 21:28:43,362 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files', 'g-dbus-error-quark', 2)
+2020-02-08 21:28:43,403 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files (2)
+
+2020-02-08 21:33:23,689 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files', 'g-dbus-error-quark', 2)
+2020-02-08 21:33:23,689 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files (2)
+
+2020-02-08 21:33:26,996 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files', 'g-dbus-error-quark', 2)
+2020-02-08 21:33:26,996 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files (2)
+
+2020-02-08 21:40:05,777 [ERROR   ][i3pystatus.weather.Weather 76] Exception in Thread-3 at Sat 08 Feb 2020 09:40:05 PM -03, module Weather
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/__init__.py", line 144, in run
+    data = self.backend.weather_data()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/weathercom.py", line 84, in weather_data
+    doc = ElementTree.XML(xml)
+  File "/usr/lib/python3.8/xml/etree/ElementTree.py", line 1320, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2020-02-08 21:40:35,733 [ERROR   ][i3pystatus.weather.Weather 76] Exception in Thread-3 at Sat 08 Feb 2020 09:40:35 PM -03, module Weather
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/__init__.py", line 144, in run
+    data = self.backend.weather_data()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/weathercom.py", line 84, in weather_data
+    doc = ElementTree.XML(xml)
+  File "/usr/lib/python3.8/xml/etree/ElementTree.py", line 1320, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2020-02-08 22:03:47,379 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files', 'g-dbus-error-quark', 2)
+2020-02-08 22:03:47,381 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files (2)
+
+2020-02-08 22:03:49,024 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files', 'g-dbus-error-quark', 2)
+2020-02-08 22:03:49,024 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files (2)
+
+2020-02-08 22:09:35,244 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files', 'g-dbus-error-quark', 2)
+2020-02-08 22:09:35,245 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files (2)
+
+2020-02-09 11:11:08,465 [ERROR   ][i3pystatus.weather.Weather 76] Exception in Thread-3 at Sun 09 Feb 2020 11:11:08 AM -03, module Weather
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/__init__.py", line 144, in run
+    data = self.backend.weather_data()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/util.py", line 348, in wrapper
+    return method(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/weather/weathercom.py", line 84, in weather_data
+    doc = ElementTree.XML(xml)
+  File "/usr/lib/python3.8/xml/etree/ElementTree.py", line 1320, in XML
+    parser.feed(text)
+  File "<string>", line None
+xml.etree.ElementTree.ParseError: syntax error: line 1, column 0
+2020-02-09 12:33:21,965 [ERROR   ][i3pystatus.mail.Mail 76] Exception in Thread-3 at Sun 09 Feb 2020 12:33:21 PM -03, module Mail
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 1022, in _command_complete
+    typ, data = self._get_tagged_response(tag, expect_bye=logout)
+  File "/usr/lib/python3.8/imaplib.py", line 1148, in _get_tagged_response
+    self._get_response()
+  File "/usr/lib/python3.8/imaplib.py", line 1050, in _get_response
+    resp = self._get_line()
+  File "/usr/lib/python3.8/imaplib.py", line 1160, in _get_line
+    raise self.abort('socket error: EOF')
+imaplib.IMAP4.abort: socket error: EOF
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 120, in unread
+    conn = self.get_connection()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 96, in get_connection
+    self.connection.select(self.mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 747, in select
+    typ, dat = self._simple_command(name, mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 1024, in _command_complete
+    raise self.abort('command: %s => %s' % (name, val))
+imaplib.IMAP4.abort: command: SELECT => socket error: EOF
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 1022, in _command_complete
+    typ, data = self._get_tagged_response(tag, expect_bye=logout)
+  File "/usr/lib/python3.8/imaplib.py", line 1148, in _get_tagged_response
+    self._get_response()
+  File "/usr/lib/python3.8/imaplib.py", line 1050, in _get_response
+    resp = self._get_line()
+  File "/usr/lib/python3.8/imaplib.py", line 1160, in _get_line
+    raise self.abort('socket error: EOF')
+imaplib.IMAP4.abort: socket error: EOF
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/__init__.py", line 62, in run
+    temp = backend.unread
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 127, in unread
+    self.count_new_mail()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 115, in count_new_mail
+    self.last = len(self.conn.search(None, "UnSeen")[1][0].split())
+  File "/usr/lib/python3.8/imaplib.py", line 725, in search
+    typ, dat = self._simple_command(name, *criteria)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 1024, in _command_complete
+    raise self.abort('command: %s => %s' % (name, val))
+imaplib.IMAP4.abort: command: SEARCH => socket error: EOF
+2020-02-09 12:33:26,962 [ERROR   ][i3pystatus.mail.Mail 76] Exception in Thread-3 at Sun 09 Feb 2020 12:33:26 PM -03, module Mail
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 981, in _command
+    self.send(data + CRLF)
+  File "/usr/lib/python3.8/imaplib.py", line 323, in send
+    self.sock.sendall(data)
+  File "/usr/lib/python3.8/ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.8/ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 120, in unread
+    conn = self.get_connection()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 96, in get_connection
+    self.connection.select(self.mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 747, in select
+    typ, dat = self._simple_command(name, mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 983, in _command
+    raise self.abort('socket error: %s' % val)
+imaplib.IMAP4.abort: socket error: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 981, in _command
+    self.send(data + CRLF)
+  File "/usr/lib/python3.8/imaplib.py", line 323, in send
+    self.sock.sendall(data)
+  File "/usr/lib/python3.8/ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.8/ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/__init__.py", line 62, in run
+    temp = backend.unread
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 127, in unread
+    self.count_new_mail()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 115, in count_new_mail
+    self.last = len(self.conn.search(None, "UnSeen")[1][0].split())
+  File "/usr/lib/python3.8/imaplib.py", line 725, in search
+    typ, dat = self._simple_command(name, *criteria)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 983, in _command
+    raise self.abort('socket error: %s' % val)
+imaplib.IMAP4.abort: socket error: [Errno 32] Broken pipe
+2020-02-09 12:33:31,973 [ERROR   ][i3pystatus.mail.Mail 76] Exception in Thread-3 at Sun 09 Feb 2020 12:33:31 PM -03, module Mail
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 981, in _command
+    self.send(data + CRLF)
+  File "/usr/lib/python3.8/imaplib.py", line 323, in send
+    self.sock.sendall(data)
+  File "/usr/lib/python3.8/ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.8/ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 120, in unread
+    conn = self.get_connection()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 96, in get_connection
+    self.connection.select(self.mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 747, in select
+    typ, dat = self._simple_command(name, mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 983, in _command
+    raise self.abort('socket error: %s' % val)
+imaplib.IMAP4.abort: socket error: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 981, in _command
+    self.send(data + CRLF)
+  File "/usr/lib/python3.8/imaplib.py", line 323, in send
+    self.sock.sendall(data)
+  File "/usr/lib/python3.8/ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.8/ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/__init__.py", line 62, in run
+    temp = backend.unread
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 127, in unread
+    self.count_new_mail()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 115, in count_new_mail
+    self.last = len(self.conn.search(None, "UnSeen")[1][0].split())
+  File "/usr/lib/python3.8/imaplib.py", line 725, in search
+    typ, dat = self._simple_command(name, *criteria)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 983, in _command
+    raise self.abort('socket error: %s' % val)
+imaplib.IMAP4.abort: socket error: [Errno 32] Broken pipe
+2020-02-09 15:53:38,577 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 15:53:38,707 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 15:53:40,910 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 15:53:40,910 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:07:39,243 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:07:39,485 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:23:19,702 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:23:19,702 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:23:25,433 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:23:25,434 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:23:27,162 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:23:27,163 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:26:01,349 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:26:01,350 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:26:42,098 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:26:42,099 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:26:43,094 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:26:43,095 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:29:51,938 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:29:51,939 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:29:53,722 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:29:53,723 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:30:52,148 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:30:52,149 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:30:53,217 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:30:53,218 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:30:54,670 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:30:54,671 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:35:08,202 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:35:08,203 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:41:15,503 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:41:15,504 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:41:17,230 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:41:17,231 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:41:22,409 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:41:22,409 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 17:48:48,709 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 17:48:48,710 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 19:51:13,790 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 19:51:13,946 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 19:54:39,620 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 19:54:39,621 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 20:03:45,859 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 20:03:45,860 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+
+2020-02-09 20:03:48,296 [CRITICAL][i3pystatus.updates.Updates 162] Exception while processing button callback: GLib.Error('Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory', 'g-dbus-error-quark', 23)
+2020-02-09 20:03:48,296 [CRITICAL][i3pystatus.updates.Updates 164] Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 150, in __button_callback_handler
+    call_callback(getattr(self, cb), *args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 121, in call_callback
+    cb(*args, **kwargs)
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/updates/__init__.py", line 151, in report
+    DesktopNotification(
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/desktop.py", line 58, in display
+    return notification.show()
+gi.repository.GLib.GError: g-dbus-error-quark: Error calling StartServiceByName for org.freedesktop.Notifications: Failed to execute program org.freedesktop.Notifications: No such file or directory (23)
+

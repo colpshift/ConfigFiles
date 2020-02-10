@@ -6,9 +6,7 @@
 rofi.modi: window,drun,run,ssh
 
 ! "Font to use" Set from: Default
-!rofi.font: Inconsolata-Regular 09
-!rofi.font: TerminessTTF Nerd Font Mono-Medium 11
-rofi.font:  SouceCodePro Nerd Font Mono 10
+rofi.font: TerminessTTF Nerd Font Mono-Medium 11
 
 ! "Border width" Set from: Default
 rofi.bw: 1

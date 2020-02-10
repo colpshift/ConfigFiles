@@ -13,8 +13,9 @@
 set $mod Mod4
 
 ### font window titles
-font pango:TerminessTTF Nerd Font Mono Medium, FontAwesome Regular 10
-#font pango: SauceCodePro Nerd Font Mono, FontAwesome Regular 10
+font pango:TerminessTTF Nerd Font Mono Medium, FontAwesome, FontAwesome 5 Brands, FontAwesome 5 Free, Regular 10
+#font pango: SauceCodePro Nerd Font Mono, FontAwesome, FontAwesome 5 Brands, FontAwesome 5 Free, Regular 10
+
 
 ### window title alignment = left|center|right
 title_align left
@@ -25,7 +26,7 @@ smart_borders on
 ### default border style for new windows
 default_border pixel 1
 
-### make all alacritty use a 1-pixel border:
+### make all urxvt use a 1-pixel border:
 for_window [class="Alacritty"] border pixel 1
 
 ### drawing marks on window decoration = yes|no
@@ -74,14 +75,11 @@ set $ws10   "10 "
     assign [class="Skype"] $ws3
     assign [class="Zathura"] $ws4
     assign [class="Simple-scan"] $ws4
-    assign [class="libreoffice-startcenter"] $ws4
-    assign [class="libreoffice-writer"] $ws4
-    assign [class="libreoffice-math"] $ws4
-    assign [class="libreoffice-impress"] $ws4
-    assign [class="libreoffice-base"] $ws4
-    assign [class="libreoffice-draw"] $ws4
-    assign [class="libreoffice-calc"] $ws4
-    assign [class="Sublime_text"] $ws4
+    assign [class="Et"] $ws4
+    assign [class="Wps"] $ws4
+    assign [class="Wpp"] $ws4
+    assign [class="Wpspdf"] $ws4
+    assign [class="Subl3"] $ws4
     assign [class="Sxiv"] $ws5
     assign [class="Gimp-2.10"] $ws5
     assign [class="Nitrogen"] $ws5
@@ -122,17 +120,17 @@ gaps outer 2
 ### configuring i3pystatus bar
 bar {
     status_command    python ~/.config/i3/i3pystatus/i3pyconfig.py
-    tray_output eDP-1
+    tray_output eDP1
     position          top
     workspace_buttons yes
 	  colors {
         separator	#cccccc
         background	#333333
         statusline	#c2c2c2
-        #					          border		backgr	  foregr
+        #			  border		backgr	  	foregr
         focused_workspace	  #cccccc		#333333		#00ff00
         active_workspace	  #cccccc		#333333		#fdf6e3
-        inactive_workspace	#cccccc		#333333		#c2c2c2
+        inactive_workspace	  #cccccc		#333333		#c2c2c2
         urgent_workspace	  #cccccc		#333333		#ffa500
     }
 }
@@ -263,7 +261,7 @@ mode "resize" {
     bindsym k resize grow height 10 px or 10 ppt
     bindsym l resize shrink height 10 px or 10 ppt
     bindsym ntilde resize grow width 10 px or 10 ppt
-	# bindings for HLJK
+    # bindings for HLJK
     bindsym j resize shrink width 10 px or 10 ppt
     bindsym k resize grow height 10 px or 10 ppt
     bindsym l resize shrink height 10 px or 10 ppt
@@ -281,42 +279,39 @@ mode "resize" {
 ### automatically starting applications on i3 startup
 #
 # daemons
-exec --no-startup-id "/home/colps/.scripts/picom_start.sh"
-exec --no-startup-id "/home/colps/.scripts/clipit_start.sh"
+exec --no-startup-id "/home/colps/.scripts/autocutsel_start.sh"
 exec --no-startup-id "/home/colps/.scripts/udiskie_start.sh"
 exec --no-startup-id "/home/colps/.scripts/mpd_start.sh"
 exec --no-startup-id "/home/colps/.scripts/xss-lock_start.sh"
+exec --no-startup-id "/home/colps/.scripts/xscreensaver_start.sh"
 exec --no-startup-id "/home/colps/.scripts/ssh_agent_start.sh"
 exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
-exec --no-startup-id "alacritty"
-exec --no-startup-id "alacritty"
 # checks
-exec --no-startup-id /home/colps/.scripts/devices_start.sh
-
+exec --no-startup-id "/home/colps/.scripts/devices_start.sh"
+exec --no-startup-id "/home/colps/.scripts/keyboard-map_start.sh"
 #A
 ### reloading/restarting/exiting/lock
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload
-bindsym $mod+x exec \
-exec i3lock -i '/usr/share/pixmaps/security_03.png' -tf
+bindsym $mod+x exec xscreensaver-command -lock
+#exec i3lock -i '/home/colps/Pictures/Wallpapers/lock_cave.png' -tf
 bindsym $mod+Shift+e exec \
 --no-startup-id i3-msg exit, mode "default"
 
 ### app shortcuts
-bindsym $mod+Return	  exec alacritty
-bindsym $mod+a		    exec alacritty -e ranger
-bindsym $mod+z		    exec rofi -show drun
-bindsym $mod+m		    workspace $ws10, exec thunderbird
+bindsym $mod+Return	exec urxvt
+bindsym $mod+a		exec urxvt -e ranger
+bindsym $mod+z	  	exec rofi -show drun
+bindsym $mod+m		workspace $ws10, exec thunderbird
 bindsym Ctrl+Shift+b    exec firefox
 bindsym Ctrl+Shift+m    exec electronplayer
 bindsym Ctrl+Shift+i    exec virtualbox
 bindsym Ctrl+Shift+t    exec /home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser
 bindsym Ctrl+Shift+n    workspace $ws9, exec spotify
-#bindsym Ctrl+Shift+p    workspace $ws9, exec \
-#alacritty -e ncmpcpp -s media_library -S visualizer
+bindsym Ctrl+Shift+p    workspace $ws9, exec urxvt -e ncmpcpp
 
 ### FN Keys
 # volume

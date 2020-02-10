@@ -1,13 +1,3 @@
-from configparser import ConfigParser
-
-from i3pystatus import Status
-from i3pystatus.core.util import internet
-from i3pystatus.mail import imap
-from i3pystatus.network import Network
-from i3pystatus.online import Online
-from i3pystatus.updates import pacman
-from i3pystatus.weather import weathercom
-
 """
 File: $HOME/.config/i3pystatus/i3pyconfig.py
 Author: Colps
@@ -25,11 +15,18 @@ Last Modified: June 14, 2019
 # warning   orange  color ='#ffa500',
 # critical  red     color ='#ff0000',
 
-#  from i3pystatus.temp import Temperature
+from configparser import ConfigParser
+from i3pystatus import Status
+from i3pystatus.core.util import internet
+from i3pystatus.mail import imap
+from i3pystatus.network import Network
+from i3pystatus.online import Online
+from i3pystatus.updates import pacman
+from i3pystatus.weather import weathercom
 
-STATUS = Status()
+STATUS = Status(logfile='$HOME/.config/i3/i3pystatus/i3pystatus.log')
 
-# Parser
+## Parser
 CONFIG = ConfigParser()
 CONFIG.read("/etc/.config_gmail.txt")
 GMAILPASS = CONFIG.get("configuration", "password")
@@ -38,20 +35,22 @@ GMAILPASS = CONFIG.get("configuration", "password")
 STATUS.register(
     "clock",
     color="#6bb6ff",
-    format=" %g/%m/%d %H:%M|",
-    on_leftclick="thunderbird https://calendar.google.com/calendar/r/month",
+    format=" %g/%m/%d %H:%M |",
+    on_leftclick="thunderbird",
 )
 
 # Show weather
-STATUS.register(
-    "weather",
-    format="[{icon}] {current_temp}{temp_unit}[ {update_error}]",
-    interval=900,
-    colorize=True,
-    hints={"markup": "pango"},
-    backend=weathercom.Weathercom(location_code="BRXX0241:1:BR",
-                                  units="metric"),
-)
+#STATUS.register(
+#    "weather",
+#    format="[{icon}] {current_temp}{temp_unit}",
+#    interval=900,
+#    colorize=True,
+#    hints={"markup": "pango"},
+#    backend=weathercom.Weathercom(
+#        location_code="BRXX0241:1:BR",
+#        units="metric",
+#    ),
+#)
 
 # check email
 
@@ -79,7 +78,7 @@ STATUS.register("pulseaudio",
                 format=" {volume}%",
                 format_muted=" {volume_bar} Mute")
 
-# show backlight %
+## show backlight %
 STATUS.register(
     "backlight",
     base_path="/sys/class/backlight/intel_backlight/",
@@ -124,7 +123,7 @@ STATUS.register(
     # next_if_down=True,
     # format_active_up="{wlp3s0} {enp2s0}",
     # format_up=" {interface} {network_graph_recv}{bytes_recv}KB/s",
-    format_up=" {interface:}  {bytes_recv}KB/s",
+    format_up=" {interface:}  {bytes_recv}KB  {bytes_sent}KB",
     format_down=" {interface}: DOWN",
     interface="enp2s0",
 )
@@ -139,19 +138,24 @@ STATUS.register(
     warn_percentage=70,
     alert_percentage=90,
     divisor=1024**3,
-    on_leftclick="alacritty -e htop",
+    on_leftclick="urxvt -e htop",
 )
 
 # show cpu temp
 STATUS.register(
-
+    "temp",
+    format=" {temp} °C",
+    hints={"markup": "pango"},
+    #lm_sensors_enabled=True,
+    #dynamic_color=True,
+)
 
 # show cpu usage
 STATUS.register(
     "load",
     critical_color="#ff0000",
     format=" {avg5} {tasks}",
-    on_leftclick="alacritty -e htop",
+    on_leftclick="urxvt -e htop",
 )
 
 # show updates
@@ -159,16 +163,16 @@ STATUS.register(
     "updates",
     notification_icon="software-update-available",
     color="#ffa500",
-    format=" {count}",
+    format=" {count}",
     color_no_updates="#c2c2c2",
     format_no_updates="  ",
-    backends=[pacman.Pacman()],
-)
+    backends=[pacman.Pacman(),],
+    )
 
 # show system information
 STATUS.register("uname",
                 format=" {release}",
-                on_leftclick="alacritty -e sh -c -e uname -a")
+                on_leftclick="urxvt uname -a")
 
 # show uptime information
 STATUS.register(
@@ -177,7 +181,6 @@ STATUS.register(
     alert=True,
     color_alert="#ffa500",
     format=" {days}d {hours}h {mins}m",
-    on_rightclick="alacritty -e sh -c -e /home/colps/.scripts/hibernate.sh",
 )
 
 # Show keyboard locks

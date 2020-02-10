@@ -1,12 +1,4 @@
-#!/usr/bin/env bash
-#
-# File: profile
-# Path: /etc
-# Tags: bash shell
-# Description: Bash profile config
-# Last update: 11/12/2019 20:31 
-# Author: Colpshift
-#
+# /etc/profile
 
 # Set our umask
 umask 022
@@ -46,4 +38,3 @@ unset TERMCAP
 
 # Man is much better than us at figuring this out
 unset MANPATH
-

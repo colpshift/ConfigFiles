@@ -36,7 +36,7 @@ show_marks yes
 hide_edge_borders smart
 
 ### floating modifier to drag windows = mouse+left+$mod
-#floating_modifier $mod4
+floating_modifier $mod
 
 ### focus follows mouse = yes|no
 focus_follows_mouse no
@@ -61,7 +61,7 @@ set $ws4    "4 "
 set $ws5    "5 "
 set $ws6    "6 "
 set $ws7    "7 "
-set $ws8    "8  "
+set $ws8    "8 "
 set $ws9    "9 "
 set $ws10   "10 "
 
@@ -69,11 +69,11 @@ set $ws10   "10 "
     assign [class="Alacritty"] $ws1
     assign [class="firefox"] $ws2
     assign [class="Chromium"] $ws2
-    assign [class="Tor Browser"] $ws2
     assign [class="Franz"] $ws3
     assign [class="TelegramDesktop"] $ws3
     assign [class="Skype"] $ws3
     assign [class="Zathura"] $ws4
+    assign [class="Master PDF Editor"] $ws4
     assign [class="Simple-scan"] $ws4
     assign [class="Et"] $ws4
     assign [class="Wps"] $ws4
@@ -89,6 +89,7 @@ set $ws10   "10 "
     assign [class="VirtualBox Machine"] $ws6
     assign [class="Stremio"] $ws7
     assign [class="electronplayer"] $ws7
+    assign [class="Tor Browse"] $ws8
     assign [class="Spotify"] $ws9
     assign [class="Thunderbird"] $ws10
 
@@ -260,7 +261,7 @@ mode "resize" {
     bindsym j resize shrink width 10 px or 10 ppt
     bindsym k resize grow height 10 px or 10 ppt
     bindsym l resize shrink height 10 px or 10 ppt
-    bindsym ntilde resize grow width 10 px or 10 ppt
+    bindsym m resize grow width 10 px or 10 ppt
     # bindings for HLJK
     bindsym j resize shrink width 10 px or 10 ppt
     bindsym k resize grow height 10 px or 10 ppt
@@ -289,6 +290,8 @@ exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
+exec --no-startup-id "urxvt"
+exec --no-startup-id "urxvt"
 # checks
 exec --no-startup-id "/home/colps/.scripts/devices_start.sh"
 exec --no-startup-id "/home/colps/.scripts/keyboard-map_start.sh"
@@ -309,7 +312,8 @@ bindsym $mod+m		workspace $ws10, exec thunderbird
 bindsym Ctrl+Shift+b    exec firefox
 bindsym Ctrl+Shift+m    exec electronplayer
 bindsym Ctrl+Shift+i    exec virtualbox
-bindsym Ctrl+Shift+t    exec /home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser
+bindsym Ctrl+Shift+t    exec \
+/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser
 bindsym Ctrl+Shift+n    workspace $ws9, exec spotify
 bindsym Ctrl+Shift+p    workspace $ws9, exec urxvt -e ncmpcpp
 

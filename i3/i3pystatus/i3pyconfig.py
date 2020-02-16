@@ -69,7 +69,7 @@ if internet():
         color_unread="#ffa500",
         format_plural=(" {current_unread}/{unread}"),
         format=" {current_unread}/{unread}",
-        on_leftclick="thunderbird",
+        on_leftclick="/bin/thunderbird",
         hide_if_null=True,
     )
 

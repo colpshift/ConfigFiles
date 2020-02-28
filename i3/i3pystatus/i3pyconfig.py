@@ -35,7 +35,7 @@ GMAILPASS = CONFIG.get("configuration", "password")
 STATUS.register(
     "clock",
     color="#6bb6ff",
-    format=" %g/%m/%d %H:%M |",
+    format=" %a %g/%m/%d %H:%M |",
     on_leftclick="thunderbird",
 )
 
@@ -138,7 +138,7 @@ STATUS.register(
     warn_percentage=70,
     alert_percentage=90,
     divisor=1024**3,
-    on_leftclick="urxvt -e htop",
+    on_leftclick="/home/colps/.scripts/urxvts.sh -e htop",
 )
 
 # show cpu temp
@@ -155,7 +155,7 @@ STATUS.register(
     "load",
     critical_color="#ff0000",
     format=" {avg5} {tasks}",
-    on_leftclick="urxvt -e htop",
+    on_leftclick="/home/colps/.scripts/urxvts.sh -e htop",
 )
 
 # show updates
@@ -172,7 +172,7 @@ STATUS.register(
 # show system information
 STATUS.register("uname",
                 format=" {release}",
-                on_leftclick="urxvt uname -a")
+                on_leftclick="/home/colps/.scripts/urxvts.sh uname -a")
 
 # show uptime information
 STATUS.register(

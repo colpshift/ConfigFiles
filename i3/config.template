@@ -148,10 +148,10 @@ force_focus_wrapping yes
 focus_on_window_activation urgent
 #
 ### change focus
-bindsym $mod+l focus left
+bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
-#bindsym $mod+';' focus right
+bindsym $mod+l focus right
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -159,10 +159,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 #
 ### move focused window
-bindsym $mod+Shift+l move left
+bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
-#bindsym $mod+Shift+';' move right
+bindsym $mod+Shift+l move right
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
@@ -222,17 +222,16 @@ mode "$mode_gaps_outer" {
 ### change container layout
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+e layout toggle
 #
 ### Splitting containers
-bindsym $mod+v split vertical
-bindsym $mod+h split horizontal
-bindsym $mod+t split toggle
+bindsym --release $mod+Ctrl+v split vertical
+bindsym --release $mod+Ctrl+h split horizontal
+bindsym --release $mod+Ctrl+t split toggle
 #
 #
 ### focus the parent/child container
 bindsym $mod+a focus parent
-bindsym $mod+o focus child
 
 ### windows -------------------------------------------------------------------
 #
@@ -334,7 +333,7 @@ bindsym $mod+d exec --no-startup-id dmenu_run -fn "TerminessTTF Nerd Font Mono M
 bindsym $mod+q exec --no-startup-id passmenu -fn "TerminessTTF Nerd Font Mono Medium-10"
 #
 ### screenshot
-bindsym --release Print exec --no-startup-id exec "flameshot gui"
+bindsym --release Print exec --no-startup-id "flameshot gui"
 #
 ### screensaver
 bindsym $mod+x exec xscreensaver-command -lock
@@ -343,16 +342,15 @@ bindsym $mod+x exec xscreensaver-command -lock
 #exec i3lock -i '/home/colps/Pictures/Wallpapers/lock_cave.png' -tf
 #
 ### apps shortcuts
-bindsym $mod+Return	exec urxvt
-bindsym $mod+z	  	exec rofi -show drun
-bindsym $mod+m		workspace $ws10, exec thunderbird
+bindsym $mod+Return	    exec urxvt
+bindsym $mod+z	  	    exec rofi -show drun
+bindsym $mod+m		    workspace $ws10, exec thunderbird
 bindsym Ctrl+Shift+b    exec firefox
 bindsym Ctrl+Shift+m    exec electronplayer
-bindsym Ctrl+Shift+i    exec virtualbox
+bindsym Ctrl+Shift+n    workspace $ws9, exec spotify
+bindsym Ctrl+Shift+i    workspace $ws6, exec virtualbox
 bindsym Ctrl+Shift+t    exec \
 /home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser
-bindsym Ctrl+Shift+n    workspace $ws9, exec spotify
-bindsym Ctrl+Shift+p    workspace $ws9, exec urxvt -e ncmpcpp
 #
 ### apps on i3 startup
 #
@@ -364,6 +362,7 @@ exec --no-startup-id "/home/colps/.scripts/xss-lock_start.sh"
 exec --no-startup-id "/home/colps/.scripts/xscreensaver_start.sh"
 exec --no-startup-id "/home/colps/.scripts/ssh_agent_start.sh"
 exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
+exec --no-startup-id "/home/colps/.scripts/autotiling.sh"
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
@@ -372,4 +371,3 @@ exec --no-startup-id "urxvt"
 exec --no-startup-id "urxvt"
 # checks
 exec --no-startup-id "/home/colps/.scripts/devices_start.sh"
-exec --no-startup-id "/home/colps/.scripts/keyboard-map_start.sh"

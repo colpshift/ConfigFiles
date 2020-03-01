@@ -36,6 +36,10 @@ call plug#begin('~/.vim/plugged')
         " shows different levels of parentheses in different colors.
     Plug 'kshenoy/vim-signature'
         " place, toggle and display marks.
+    Plug 'camspiers/animate.vim'
+        " animations"
+    Plug 'camspiers/lens.vim'
+        "resize"
     "---------------------------
     Plug 'junegunn/fzf.vim'
         " Things you can do with fzf and Vim.

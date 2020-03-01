@@ -37342,3 +37342,89 @@ Traceback (most recent call last):
   File "/usr/lib/python3.8/imaplib.py", line 983, in _command
     raise self.abort('socket error: %s' % val)
 imaplib.IMAP4.abort: socket error: [Errno 32] Broken pipe
+2020-02-29 19:46:39,525 [ERROR   ][i3pystatus.mail.Mail 76] Exception in Thread-3 at Sat 29 Feb 2020 07:46:39 PM -03, module Mail
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 1022, in _command_complete
+    typ, data = self._get_tagged_response(tag, expect_bye=logout)
+  File "/usr/lib/python3.8/imaplib.py", line 1148, in _get_tagged_response
+    self._get_response()
+  File "/usr/lib/python3.8/imaplib.py", line 1079, in _get_response
+    raise self.abort("unexpected response: %r" % resp)
+imaplib.IMAP4.abort: unexpected response: b'shing $Phishing $QUEUED $SENT $SIGNED $TODO $has_cal $label1 $label2 $label3 $label4 $label5 Junk NOTJUNK NonJunk Old receipt-handled remember \\*)] Flags permitted.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/__init__.py", line 62, in run
+    temp = backend.unread
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 127, in unread
+    self.count_new_mail()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 115, in count_new_mail
+    self.last = len(self.conn.search(None, "UnSeen")[1][0].split())
+  File "/usr/lib/python3.8/imaplib.py", line 725, in search
+    typ, dat = self._simple_command(name, *criteria)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 1024, in _command_complete
+    raise self.abort('command: %s => %s' % (name, val))
+imaplib.IMAP4.abort: command: SEARCH => unexpected response: b'shing $Phishing $QUEUED $SENT $SIGNED $TODO $has_cal $label1 $label2 $label3 $label4 $label5 Junk NOTJUNK NonJunk Old receipt-handled remember \\*)] Flags permitted.'
+2020-03-01 09:10:10,859 [ERROR   ][i3pystatus.mail.Mail 76] Exception in Thread-3 at Sun 01 Mar 2020 09:10:10 AM -03, module Mail
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 1022, in _command_complete
+    typ, data = self._get_tagged_response(tag, expect_bye=logout)
+  File "/usr/lib/python3.8/imaplib.py", line 1148, in _get_tagged_response
+    self._get_response()
+  File "/usr/lib/python3.8/imaplib.py", line 1079, in _get_response
+    raise self.abort("unexpected response: %r" % resp)
+imaplib.IMAP4.abort: unexpected response: b'shing $Phishing $QUEUED $SENT $SIGNED $TODO $has_cal $label1 $label2 $label3 $label4 $label5 Junk NOTJUNK NonJunk Old receipt-handled remember \\*)] Flags permitted.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 120, in unread
+    conn = self.get_connection()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 96, in get_connection
+    self.connection.select(self.mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 747, in select
+    typ, dat = self._simple_command(name, mailbox)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 1024, in _command_complete
+    raise self.abort('command: %s => %s' % (name, val))
+imaplib.IMAP4.abort: command: SELECT => unexpected response: b'shing $Phishing $QUEUED $SENT $SIGNED $TODO $has_cal $label1 $label2 $label3 $label4 $label5 Junk NOTJUNK NonJunk Old receipt-handled remember \\*)] Flags permitted.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/imaplib.py", line 1022, in _command_complete
+    typ, data = self._get_tagged_response(tag, expect_bye=logout)
+  File "/usr/lib/python3.8/imaplib.py", line 1148, in _get_tagged_response
+    self._get_response()
+  File "/usr/lib/python3.8/imaplib.py", line 1079, in _get_response
+    raise self.abort("unexpected response: %r" % resp)
+imaplib.IMAP4.abort: unexpected response: b'handled remember \\*)] Flags permitted.'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/threading.py", line 68, in __call__
+    self.workload()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/core/modules.py", line 285, in __call__
+    self.run()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/__init__.py", line 62, in run
+    temp = backend.unread
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 127, in unread
+    self.count_new_mail()
+  File "/home/colps/.local/lib/python3.8/site-packages/i3pystatus/mail/imap.py", line 115, in count_new_mail
+    self.last = len(self.conn.search(None, "UnSeen")[1][0].split())
+  File "/usr/lib/python3.8/imaplib.py", line 725, in search
+    typ, dat = self._simple_command(name, *criteria)
+  File "/usr/lib/python3.8/imaplib.py", line 1205, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib/python3.8/imaplib.py", line 1024, in _command_complete
+    raise self.abort('command: %s => %s' % (name, val))
+imaplib.IMAP4.abort: command: SEARCH => unexpected response: b'handled remember \\*)] Flags permitted.'

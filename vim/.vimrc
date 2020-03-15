@@ -1,9 +1,10 @@
 "
 " File: .vimrc
-" Author: Colps
-" Github: https://github.com/colpshift
+" Path: $HOME
+" Tags: vim editor
 " Description: vim configuration file
-" Last Modified: 09/02/2020 11:05
+" Last Modified: 03/03/2020 22:20
+" Author: Colpshift
 "
 "------------------------------------------------------------------------------
 " start settings
@@ -40,6 +41,8 @@ call plug#begin('~/.vim/plugged')
         " animations"
     Plug 'camspiers/lens.vim'
         "resize"
+    Plug 'TaDaa/vimade'
+        "fades your inactive buffers"
     "---------------------------
     Plug 'junegunn/fzf.vim'
         " Things you can do with fzf and Vim.

@@ -33,10 +33,10 @@ rofi.fake-background: background
 ! "New style theme file" Set from: File
 
 ! "Switch to the next mode." Set from: Default
- rofi.kb-mode-next: Alt+Right
+ rofi.kb-mode-next: Alt+l
 
 ! "Switch to the previous mode." Set from: Default
-rofi.kb-mode-previous: Alt+Left
+rofi.kb-mode-previous: Alt+h
 
 ! "Take a screenshot of the rofi window" Set from: Default
 ! rofi.kb-screenshot: Alt+j

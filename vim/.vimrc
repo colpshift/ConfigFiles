@@ -13,34 +13,31 @@ set nocompatible
 syntax on
 filetype plugin indent on
 set fileformat=unix
-set autoread			" Automatically re-read files if unmodified inside Vim.
-set confirm             " Display confirmation dialog when closing unsaved file.
-"set nomodeline          " Ignore file’s mode lines.
+set autoread		" Automatically re-read files if unmodified inside Vim.
+set autowrite           " Automatically save before commands like:next & :make
+set confirm             " Display confirmation dialog when closing unsaved file
+set nomodeline         " Ignore file’s mode line.
 
 "------------------------------------------------------------------------------
 " plugins package manager - vim-plug
 "------------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
-	Plug 'junegunn/vim-plug'
+    Plug 'junegunn/vim-plug'
         " plugin manager
     "---------------------------
-	Plug 'morhetz/gruvbox'
+    Plug 'morhetz/gruvbox'
     Plug 'dracula/vim', { 'as': 'dracula' }
         " vim color theme
     Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
+    Plug 'vim-airline/vim-airline-themes'
         " status/tabline for vim
     "---------------------------
     Plug 'RRethy/vim-illuminate'
         " automatically highlighting other uses of the word under the cursor
-	Plug 'luochen1990/rainbow'
+    Plug 'luochen1990/rainbow'
         " shows different levels of parentheses in different colors.
     Plug 'kshenoy/vim-signature'
         " place, toggle and display marks.
-    Plug 'camspiers/animate.vim'
-        " animations"
-    Plug 'camspiers/lens.vim'
-        "resize"
     Plug 'TaDaa/vimade'
         "fades your inactive buffers"
     "---------------------------
@@ -49,16 +46,21 @@ call plug#begin('~/.vim/plugged')
     "---------------------------
     Plug 'w0rp/ale'
         " Check syntax in Vim asynchronously and fix files
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
         " Code Completion for VIM/NeoVIM
     Plug 'tjdevries/coc-zsh'
         "coc.nvim source for Zsh completions
+    Plug 'tpope/vim-fugitive'
+        "Vim plugin for Git"
     "---------------------------
-	Plug 'honza/vim-snippets'
+    Plug 'honza/vim-snippets'
         " snippets for vim
-	"---------------------------
+    "---------------------------
     Plug 'francoiscabrol/ranger.vim'
         " Ranger integration
+    "__________________________
+    Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+        " Markdown preview
     "__________________________
 call plug#end()
 
@@ -111,8 +113,11 @@ call plug#end()
     set shortmess+=c
     " always show signcolumns
     set signcolumn=yes
+    " Give more space for displaying messages.
+    set cmdheight=2
+    " mapping TAB
     let g:coc_snippet_next = '<tab>'
-    " Extension
+    " Extensions
     " - coc-snippets
     " - coc-tsserver
     " - coc-git
@@ -127,6 +132,9 @@ call plug#end()
     " - coc-json
     " - coc-highlight
     " - coc-html
+    " - coc-css
+    " - coc-wxml
+"ale
     set omnifunc=ale#completion#OmniFunc
     let g:ale_enabled = 1
     let g:ale_completion_enabled = 1
@@ -145,6 +153,9 @@ call plug#end()
     let g:ale_fix_on_save = 1
     let g:ale_fixers = {
             \ '*': ['remove_trailing_lines', 'trim_whitespace'],}
+"instant markdown
+    let g:instant_markdown_browser = "brave --new-window"
+    "let g:instant_markdown_autoscroll = 1
 " FZF
     let g:fzf_action = {
     \ 'ctrl-t': 'tab split',
@@ -190,7 +201,7 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
-
+"
 inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<Tab>" :
@@ -206,32 +217,36 @@ set lazyredraw		" Don’t update screen during macro and script execution.
 " Text Rendering
 "------------------------------------------------------------------------------
 set display+=lastline	" Always try to show a paragraph’s last line.
-set encoding=utf-8		" Use an encoding that supports unicode.
-set linebreak			" Avoid wrapping a line in the middle of a word.
-set scrolloff=1			" Number screen lines keep above and below cursor.
-set sidescrolloff=5		" Number screen columns keep  left and right cursor.
-set wrap				" Enable line wrapping.
+set encoding=utf-8	" Use an encoding that supports unicode.
 
 "------------------------------------------------------------------------------
 " interface
 "------------------------------------------------------------------------------
-set shortmess=atIc		" Don’t show the intro message when starting Vim
+set formatoptions+=l    " make settings permanent.
+set shortmess=atIc	" Don’t show the intro message when starting Vim
+set nostartofline	" Don’t reset cursor start of line when moving around.
 set number
 set relativenumber
 set cursorline
-set nostartofline		" Don’t reset cursor start of line when moving around.
-set clipboard+=unnamed  " to use clipboard
 set ruler               " right side of the status line at the bottom
-set showmode            " change the color in according of mode
 set mouse=a             " allow mouse clicks to change cursor position
 set showmatch           " highlight matching [{()}]
 set wildmenu            " expand the menu
-set showcmd             " show command in bottom bar
 set colorcolumn=+1      " color de last column to wrap.
 set textwidth=79        " set width for text
 set winwidth=100        " set the minimal width of the current window.
-set noerrorbells		" Disable beep on errors.
-set visualbell			" Flash the screen instead of beeping on errors.
+set scrolloff=1		" Number screen lines keep above and below cursor.
+set sidescrolloff=5	" Number screen columns keep left and right cursor.
+set wrap		" Enable line wrapping.
+set wrapmargin=0        " Prevent insert line breaks in newly entered text.
+set linebreak		" Avoid wrapping a line in the middle of a word.
+"set showbreak='↳ '     " String at the start of lines that have been wrapped
+"set cpo=n               " Show linebreaks on number column
+set showcmd             " show command in bottom bar
+set showmode            " change the color in according of mode
+set clipboard+=unnamed  " to use clipboard
+set noerrorbells	" Disable beep on errors.
+set visualbell		" Flash the screen instead of beeping on errors.
 set background=dark
 colorscheme gruvbox
 
@@ -248,20 +263,20 @@ set hlsearch        " highlight matches
 "------------------------------------------------------------------------------
 set autoindent          " indent match with the previous line
 set smartindent         " indent after colon for if or for statements
-set tabstop=4           " Python default
-set shiftwidth=4        " The amount to block indent when using
-set shiftround			" Round the indentation to earest multiple shiftwidth.
-set softtabstop=4       " Causes backspace to delete 4 spaces converted TAB
 set smarttab            " Uses shiftwidth instead of tabstop at start of lines
-set expandtab			" Replaces a TAB with spaces--more portable
+set expandtab		" Replaces a TAB with spaces--more portable
+set shiftwidth=4        " The amount to block indent when using
+set softtabstop=4       " Causes backspace to delete 4 spaces converted TAB
+set shiftround		" Round the indentation to earest multiple shiftwidth.
 set backspace=eol,start,indent	" Make sure backspace works in insert mode
 
 "------------------------------------------------------------------------------
 " folding
 "------------------------------------------------------------------------------
 set foldenable	        " enable fold
-set foldcolumn=0		" show column indent
+set foldcolumn=1	" show column indent
 set foldmethod=indent   " indentation method
+"
 "define folds by indent level, but can create folds manually too.
 "augroup vimrc
 "  au BufReadPre * set foldmethod=indent
@@ -275,5 +290,5 @@ set swapfile
 set directory=$HOME/.vim/swaps/
 set undofile
 set undodir=$HOME/.vim/undo/
-set backup
-set backupdir=$HOME/.vim/backups/
+"set backup
+"set backupdir=$HOME/.vim/backups/

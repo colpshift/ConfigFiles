@@ -15,19 +15,19 @@ Last Modified: June 14, 2019
 # warning   orange  color ='#ffa500',
 # critical  red     color ='#ff0000',
 
-from configparser import ConfigParser
+import configparser
 from i3pystatus import Status
 from i3pystatus.core.util import internet
 from i3pystatus.mail import imap
 from i3pystatus.network import Network
 from i3pystatus.online import Online
 from i3pystatus.updates import pacman
-from i3pystatus.weather import weathercom
+#from i3pystatus.weather import weathercom
 
 STATUS = Status(logfile='$HOME/.config/i3/i3pystatus/i3pystatus.log')
 
 ## Parser
-CONFIG = ConfigParser()
+CONFIG = configparser.ConfigParser()
 CONFIG.read("/etc/.config_gmail.txt")
 GMAILPASS = CONFIG.get("configuration", "password")
 

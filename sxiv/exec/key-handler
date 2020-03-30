@@ -11,7 +11,7 @@ while read -r file
 do
     case "$1" in
     "C-d")
-            mv "$file" ~/.trash ;;
+            rm "$file" ;;
     "C-r")
             convert -rotate 90 "$file" "$file" ;;
     "C-c")
@@ -19,7 +19,7 @@ do
     "C-w")
             feh --bg-fill "$file" "$file" ;;
     "C-g")  
-	        gimp "$file" ;;
+	    gimp "$file" ;;
     esac
 done
 

@@ -169,7 +169,7 @@ alias cat='bat --theme TwoDark'
 alias gitu='git add . && git commit && git push'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
-alias sxiv='sxiv -t'
+alias sxiv='sxiv -qt'
 alias rofi='rofi -show drun'
 alias urxvt="/home/colps/.scripts/urxvts.sh"
 alias ncmpcpp="ncmpcpp -s media_library"
@@ -177,7 +177,7 @@ alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
-alias pacman-mirror_update='sudo reflector --verbose -f 10 --save /etc/pacman.d/mirrorlist'
+alias pacman-mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 
 ### Bind keys
 #############

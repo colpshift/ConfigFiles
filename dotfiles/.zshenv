@@ -16,7 +16,7 @@ path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts $path
 export XDG_RUNTIME_DIR="/run/user/1000"
 
 ### default applications
-export BROWSE="/bin/brave"
+export BROWSE="/bin/firefox"
 export VISUAL="/usr/bin/vim"
 export EDITOR="/usr/bin/vim"
 

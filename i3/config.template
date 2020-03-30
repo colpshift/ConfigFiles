@@ -86,11 +86,11 @@ set $ws7    "7 "
 set $ws8    "8 "
 set $ws9    "9 "
 set $ws10   "10 "
+set $ws11   "11"
 #
 ### define clients to specific workspaces
 assign [class="Alacritty"] $ws1
 assign [class="firefox"] $ws2
-assign [class="Chromium"] $ws2
 assign [class="Franz"] $ws3
 assign [class="TelegramDesktop"] $ws3
 assign [class="Skype"] $ws3
@@ -114,6 +114,7 @@ assign [class="electronplayer"] $ws7
 assign [class="Tor Browse"] $ws8
 assign [class="Spotify"] $ws9
 assign [class="Thunderbird"] $ws10
+assign [class="Chromium"] $ws11
 #
 ### switch to workspace
 bindsym $mod+1 workspace $ws1

@@ -2,7 +2,7 @@
 # $HOME/.config/i3/config
 #
 # Description: i3wm configuration file
-# Last Modified:
+# Last Modified: 14/01/2019 23:43
 #
 # https://i3wm.org/docs/userguide.html
 # https://fontawesome.com/cheatsheet/free/regular
@@ -15,8 +15,7 @@ set $mod Mod4
 ### titles --------------------------------------------------------------------
 #
 ### font window titles
-font pango:TerminessTTF Nerd Font Mono Medium, FontAwesome,\
-    FontAwesome 5 Brands, FontAwesome 5 Free, Regular 8
+font pango:TerminessTTF Nerd Font Mono Medium, FontAwesome, FontAwesome 5 Brands, FontAwesome 5 Free, Regular 10
 #
 ### window title alignment = left|center|right
 title_align left
@@ -33,7 +32,7 @@ default_border pixel 1
 hide_edge_borders smart
 #
 ### make all urxvt use a 1-pixel border:
-#for_window [class="urxvt"] border pixel 0,5
+for_window [class="urxvt"] border pixel 1
 
 ### marks ---------------------------------------------------------------------
 #
@@ -91,7 +90,7 @@ set $ws11   "GP "
 #
 ### define clients to specific workspaces
 assign [class="Alacritty"] $ws1
-assign [class="Brave-browser"] $ws2
+assign [class="firefox"] $ws2
 assign [class="Chromium"] $ws11
 assign [class="Franz"] $ws3
 assign [class="TelegramDesktop"] $ws3
@@ -307,23 +306,24 @@ bindsym XF86AudioMute exec amixer sset Master toggle && killall -USR1 i3blocks
 bindsym XF86MonBrightnessDown exec /home/colps/.scripts/brightness.sh -5
 bindsym XF86MonBrightnessUp exec /home/colps/.scripts/brightness.sh 5
 
-### i3 status bar ------------------------------------------------------------
-#
-# https://github.com/tobi-wan-kenobi/bumblebee-status
-# https://github.com/tobi-wan-kenobi/bumblebee-status/wiki/Available-Modules
-#
+### i3pystatus bar ------------------------------------------------------------
 bar {
-    status_command /bin/bumblebee-status \
-                -m  arch-update kernel uptime memory sensors load \
-                    network_traffic battery_all brightness pasink weather \
-                    date time \
-                -p time.format="%a %R" weather.location="Tatui, BR" \
-		-t onedark-powerline
+    status_command    python ~/.config/i3/i3pystatus/i3pyconfig.py
     output eDP1
     tray_output eDP1
     position          top
     workspace_buttons yes
-    #i3bar_command i3bar --transparency
+    i3bar_command i3bar --transparency
+	  colors {
+        separator	#cccccc
+        background	#333333
+        statusline	#c2c2c2
+        #			  border		backgr	  	foregr
+        focused_workspace	  #cccccc		#333333		#00ff00
+        active_workspace	  #cccccc		#333333		#fdf6e3
+        inactive_workspace	  #cccccc		#333333		#c2c2c2
+        urgent_workspace	  #cccccc		#333333		#ffa500
+    }
 }
 
 ### Apps ----------------------------------------------------------------------
@@ -342,10 +342,10 @@ bindsym $mod+x exec xscreensaver-command -lock
 #exec i3lock -i '/home/colps/Pictures/Wallpapers/lock_cave.png' -tf
 #
 ### apps shortcuts
-bindsym $mod+Return	exec alacritty
+bindsym $mod+Return	exec urxvt
 bindsym $mod+z	  	exec rofi -show drun
 bindsym $mod+m		workspace $ws10, exec thunderbird
-bindsym Ctrl+Shift+b    exec /bin/brave
+bindsym Ctrl+Shift+b    exec /bin/firefox
 bindsym Ctrl+Shift+n    workspace $ws9, exec spotify
 bindsym Ctrl+Shift+i    workspace $ws6, exec virtualbox
 bindsym Ctrl+Shift+t    exec \
@@ -357,13 +357,15 @@ bindsym Ctrl+Shift+t    exec \
 exec --no-startup-id "/home/colps/.scripts/autocutsel_start.sh"
 exec --no-startup-id "/home/colps/.scripts/udiskie_start.sh"
 exec --no-startup-id "/home/colps/.scripts/mpd_start.sh"
-#exec --no-startup-id "/home/colps/.scripts/xss-lock_start.sh"
+exec --no-startup-id "/home/colps/.scripts/xss-lock_start.sh"
 exec --no-startup-id "/home/colps/.scripts/xscreensaver_start.sh"
 exec --no-startup-id "/home/colps/.scripts/ssh_agent_start.sh"
 exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
+exec --no-startup-id "/home/colps/.scripts/autotiling.sh"
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
-exec --no-startup-id "alacritt"
+exec --no-startup-id "autotiling"
+exec --no-startup-id "urxvt"
 # checks
 exec --no-startup-id "/home/colps/.scripts/devices_start.sh"

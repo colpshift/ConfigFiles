@@ -39,7 +39,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'kshenoy/vim-signature'
         " place, toggle and display marks.
     Plug 'TaDaa/vimade'
-        "fades your inactive buffers"
+        "fades your inactive buffers.
+    Plug 'ap/vim-css-color'
+        "Preview colours in source code. 
     "---------------------------
     Plug 'junegunn/fzf.vim'
         " Things you can do with fzf and Vim.
@@ -154,7 +156,7 @@ call plug#end()
     let g:ale_fixers = {
             \ '*': ['remove_trailing_lines', 'trim_whitespace'],}
 "instant markdown
-    let g:instant_markdown_browser = "brave --new-window"
+    let g:instant_markdown_browser = "firefox --new-window"
     "let g:instant_markdown_autoscroll = 1
 " FZF
     let g:fzf_action = {

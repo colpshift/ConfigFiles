@@ -60,9 +60,6 @@ scrolling:
   # Scroll to the bottom when new text is written to the terminal.
   #auto_scroll: false
 
-# Spaces per Tab (changes require restart)
-tabspaces: 4
-
 # Font configuration
 font:
   normal:
@@ -77,7 +74,7 @@ font:
   bold_italic:
     family: AurulentSansMono Nerd Font Mono
     style: Bold Italic
-  size: 10
+  size: 9
 
 # bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true

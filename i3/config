@@ -15,7 +15,7 @@ set $mod Mod4
 ### titles --------------------------------------------------------------------
 #
 ### font window titles
-font pango:TerminessTTF Nerd Font Mono Medium, FontAwesome,\
+font pango:TerminessTTF NF Medium, FontAwesome,\
     FontAwesome 5 Brands, FontAwesome 5 Free, Regular 8
 #
 ### window title alignment = left|center|right
@@ -33,7 +33,7 @@ default_border pixel 1
 hide_edge_borders smart
 #
 ### make all urxvt use a 1-pixel border:
-#for_window [class="urxvt"] border pixel 0,5
+for_window [class="alacritty"] border pixel 1
 
 ### marks ---------------------------------------------------------------------
 #
@@ -226,9 +226,9 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle
 #
 ### Splitting containers
-bindsym --release $mod+Ctrl+v split vertical
-bindsym --release $mod+Ctrl+h split horizontal
-bindsym --release $mod+Ctrl+t split toggle
+bindsym $mod+Ctrl+v split vertical
+bindsym $mod+Ctrl+h split horizontal
+bindsym $mod+Ctrl+t split toggle
 #
 #
 ### focus the parent/child container
@@ -316,14 +316,23 @@ bar {
     status_command /bin/bumblebee-status \
                 -m  arch-update kernel uptime memory sensors load \
                     network_traffic battery_all brightness pasink weather \
-                    date time \
+                    date time dunst \
                 -p time.format="%a %R" weather.location="Tatui, BR" \
 		-t onedark-powerline
     output eDP1
     tray_output eDP1
     position          top
     workspace_buttons yes
-    #i3bar_command i3bar --transparency
+    i3bar_command i3bar --transparency
+    colors {
+        #separator   #eee8d5
+        #background  #08302e
+        # item                  border      backgr      foregr
+        focused_workspace       #eee8d5     #586e75     #eee8d5
+        active_workspace        #eee8d5     #1E2127     #fdf6e3
+        inactive_workspace      #eee8d5     #1E2127     #c2c2c2
+        urgent_workspace        #eee8d5     #333333     #ffa500
+    }
 }
 
 ### Apps ----------------------------------------------------------------------
@@ -354,6 +363,7 @@ bindsym Ctrl+Shift+t    exec \
 ### apps on i3 startup
 #
 # daemons
+exec --no-startup-id "/home/colps/.scripts/dunst_start.sh"
 exec --no-startup-id "/home/colps/.scripts/autocutsel_start.sh"
 exec --no-startup-id "/home/colps/.scripts/udiskie_start.sh"
 exec --no-startup-id "/home/colps/.scripts/mpd_start.sh"
@@ -364,6 +374,6 @@ exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
-exec --no-startup-id "alacritt"
+exec --no-startup-id "alacritty"
 # checks
 exec --no-startup-id "/home/colps/.scripts/devices_start.sh"

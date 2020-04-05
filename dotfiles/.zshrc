@@ -30,8 +30,8 @@ setopt ALL_EXPORT
 ############################
 setopt   notify globdots correct pushdtohome cdablevars autolist numericglobsort
 setopt   correctall autocd recexact rcexpandparam nocheckjobs nobeep
-setopt   autoresume histignoredups pushdsilent
-setopt   autopushd pushdminus extendedglob nocaseglob rcquotes mailwarning
+setopt   autopushd autoresume histignoredups pushdsilent pushdignoredups
+setopt   pushdminus extendedglob nocaseglob rcquotes mailwarning
 unsetopt bgnice autoparamslash
 
 ### Autoload zsh modules when they are referenced
@@ -121,14 +121,15 @@ setopt prompt_subst
 #
 # https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
 #
-SPACESHIP_CHAR_PREFIX=""
 ZSH_THEME="spaceship"
-SPACESHIP_CHAR_SYMBOL="-> "
+#SPACESHIP_CHAR_PREFIX=" "
+#SPACESHIP_CHAR_SYMBOL="➜ "
 SPACESHIP_USER_SHOW=true
 SPACESHIP_HOST_SHOW=true
 SPACESHIP_JOBS_SHOW=false
 SPACESHIP_EXIT_CODE_SHOW=true
 SPACESHIP_VI_MODE_SHOW=false
+#SPACESHIP_DIR_PREFIX="-> "
 prompt spaceship
 
 ### help
@@ -181,6 +182,35 @@ alias pacman-mirror_update='sudo reflector --country "United States" --country B
 
 ### Bind keys
 #############
+typeset -g -A key
+#
+key[Home]="${terminfo[khome]}"
+key[End]="${terminfo[kend]}"
+key[Insert]="${terminfo[kich1]}"
+key[Backspace]="${terminfo[kbs]}"
+key[Delete]="${terminfo[kdch1]}"
+key[Up]="${terminfo[kcuu1]}"
+key[Down]="${terminfo[kcud1]}"
+key[Left]="${terminfo[kcub1]}"
+key[Right]="${terminfo[kcuf1]}"
+key[PageUp]="${terminfo[kpp]}"
+key[PageDown]="${terminfo[knp]}"
+key[Shift-Tab]="${terminfo[kcbt]}"
+
+# Setup key accordingly
+[[ -n "${key[Home]}"      ]] && bindkey -- "${key[Home]}"       beginning-of-line
+[[ -n "${key[End]}"       ]] && bindkey -- "${key[End]}"        end-of-line
+[[ -n "${key[Insert]}"    ]] && bindkey -- "${key[Insert]}"     overwrite-mode
+[[ -n "${key[Backspace]}" ]] && bindkey -- "${key[Backspace]}"  backward-delete-char
+[[ -n "${key[Delete]}"    ]] && bindkey -- "${key[Delete]}"     delete-char
+[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-history
+[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-history
+[[ -n "${key[Left]}"      ]] && bindkey -- "${key[Left]}"       backward-char
+[[ -n "${key[Right]}"     ]] && bindkey -- "${key[Right]}"      forward-char
+[[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"     beginning-of-buffer-or-history
+[[ -n "${key[PageDown]}"  ]] && bindkey -- "${key[PageDown]}"   end-of-buffer-or-history
+[[ -n "${key[Shift-Tab]}" ]] && bindkey -- "${key[Shift-Tab]}"  reverse-menu-complete
+
 autoload -U compinit
 compinit
 bindkey "^?" backward-delete-char
@@ -214,7 +244,7 @@ zstyle -e ':completion:*:approximate:*' max-errors \
     'reply=( $(( ($#PREFIX+$#SUFFIX)/2 )) numeric )'
 
 # insert all expansions for expand completer
-zstyle ':completion:*:expand:*' tag-order all-expansions
+zstyle ':completion:*:_expand:*' tag-order all-expansions
 
 # formatting and messages
 zstyle ':completion:*' verbose yes
@@ -295,6 +325,8 @@ source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring
 # auto sugestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=9'
+ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd)
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 # command not found
 source /usr/share/doc/pkgfile/command-not-found.zsh
 # interactive cd

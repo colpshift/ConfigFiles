@@ -15,8 +15,11 @@ set $mod Mod4
 ### titles --------------------------------------------------------------------
 #
 ### font window titles
-font pango:TerminessTTF NF Medium, FontAwesome,\
+#font pango:TerminessTTF NF Medium, FontAwesome,\
+#    FontAwesome 5 Brands, FontAwesome 5 Free, 8
+font pango:AurulentSansMono NF Mono, FontAwesome,\
     FontAwesome 5 Brands, FontAwesome 5 Free, Regular 8
+#
 #
 ### window title alignment = left|center|right
 title_align left

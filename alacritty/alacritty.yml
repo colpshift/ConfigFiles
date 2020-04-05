@@ -6,6 +6,8 @@
 # Last update: 2019-12-14 08:24
 # Author: Colpshift
 #
+# https://github.com/alacritty/alacritty
+#
 
 #env:
   #TERM: xterm-256color
@@ -47,10 +49,6 @@ window:
     # General application class
     #general: Alacritty
 
-  # GTK theme variant (Linux only)
-  #
-  gtk_theme_variant: dark
-
 scrolling:
   history: 10000
 
@@ -59,9 +57,6 @@ scrolling:
 
   # Scroll to the bottom when new text is written to the terminal.
   #auto_scroll: false
-
-# Spaces per Tab (changes require restart)
-tabspaces: 4
 
 # Font configuration
 font:
@@ -77,65 +72,50 @@ font:
   bold_italic:
     family: AurulentSansMono Nerd Font Mono
     style: Bold Italic
-  size: 10
+  size: 9
 
 # bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
+# GTK theme (Linux only)
+#
+gtk_theme_variant: dark
+
+# Colors (One Dark)
 colors:
+  # Default colors
   primary:
-    background: '0x000000'
-    foreground: '0xeaeaea'
-    dim_foreground: '0x9a9a9a'
-    bright_foreground: '0xffffff'
+    background: '0x1e2127'
+    foreground: '0xabb2bf'
 
-  cursor:
-    text: '0x000000'
-    cursor: '0xffffff'
-
-  selection:
-    text: '0xeaeaea'
-    background: '0x404040'
-
+  # Normal colors
   normal:
-    black:   '0x000000'
-    red:     '0xd54e53'
-    green:   '0xb9ca4a'
-    yellow:  '0xe6c547'
-    blue:    '0x7aa6da'
-    magenta: '0xc397d8'
-    cyan:    '0x70c0ba'
-    white:   '0xeaeaea'
+    black:   '0x1e2127'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xabb2bf'
 
+  # Bright colors
   bright:
-    black:   '0x666666'
-    red:     '0xff3334'
-    green:   '0x9ec400'
-    yellow:  '0xe7c547'
-    blue:    '0x7aa6da'
-    magenta: '0xb77ee0'
-    cyan:    '0x54ced6'
+    black:   '0x5c6370'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
     white:   '0xffffff'
-
-  dim:
-    black:   '0x000000'
-    red:     '0x8c3336'
-    green:   '0x7a8530'
-    yellow:  '0x97822e'
-    blue:    '0x506d8f'
-    magenta: '0x80638e'
-    cyan:    '0x497e7a'
-    white:   '0x9a9a9a'
-
-  # Indexed Colors
-  #indexed_colors: []
 
 visual_bell:
   animation: EaseOutExpo
   duration: 3
   color: '0xffffff'
 
-background_opacity: 0.7
+background_opacity: 0.80
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

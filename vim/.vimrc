@@ -27,6 +27,7 @@ call plug#begin('~/.vim/plugged')
     "---------------------------
     Plug 'morhetz/gruvbox'
     Plug 'dracula/vim', { 'as': 'dracula' }
+    Plug 'joshdick/onedark.vim'
         " vim color theme
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -39,7 +40,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'kshenoy/vim-signature'
         " place, toggle and display marks.
     Plug 'TaDaa/vimade'
-        "fades your inactive buffers"
+        "fades your inactive buffers.
+    Plug 'ap/vim-css-color'
+        "Preview colours in source code.
     "---------------------------
     Plug 'junegunn/fzf.vim'
         " Things you can do with fzf and Vim.
@@ -93,7 +96,7 @@ call plug#end()
     let g:gruvbox_underline = '1'
     let g:gruvbox_undercurl = '1'
 " airline
-    let g:airline_theme='gruvbox'
+    let g:airline_theme='onedark'
     let g:airline_highlighting_cache = 1
 " spell
    " set spell
@@ -154,7 +157,7 @@ call plug#end()
     let g:ale_fixers = {
             \ '*': ['remove_trailing_lines', 'trim_whitespace'],}
 "instant markdown
-    let g:instant_markdown_browser = "brave --new-window"
+    let g:instant_markdown_browser = "firefox --new-window"
     "let g:instant_markdown_autoscroll = 1
 " FZF
     let g:fzf_action = {
@@ -237,18 +240,18 @@ set textwidth=79        " set width for text
 set winwidth=100        " set the minimal width of the current window.
 set scrolloff=1		" Number screen lines keep above and below cursor.
 set sidescrolloff=5	" Number screen columns keep left and right cursor.
-set wrap		" Enable line wrapping.
-set wrapmargin=0        " Prevent insert line breaks in newly entered text.
+"set wrap		" Enable line wrapping.
+"set wrapmargin=0        " Prevent insert line breaks in newly entered text.
 set linebreak		" Avoid wrapping a line in the middle of a word.
 "set showbreak='↳ '     " String at the start of lines that have been wrapped
-"set cpo=n               " Show linebreaks on number column
+"set cpo=n              " Show linebreaks on number column
 set showcmd             " show command in bottom bar
 set showmode            " change the color in according of mode
 set clipboard+=unnamed  " to use clipboard
 set noerrorbells	" Disable beep on errors.
 set visualbell		" Flash the screen instead of beeping on errors.
 set background=dark
-colorscheme gruvbox
+colorscheme onedark
 
 "------------------------------------------------------------------------------
 " searching

@@ -72,7 +72,7 @@ font:
   bold_italic:
     family: AurulentSansMono Nerd Font Mono
     style: Bold Italic
-  size: 9
+  size: 8
 
 # bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
@@ -80,6 +80,7 @@ draw_bold_text_with_bright_colors: true
 # GTK theme (Linux only)
 #
 gtk_theme_variant: dark
+
 
 # Colors (One Dark)
 colors:

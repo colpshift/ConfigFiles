@@ -277,14 +277,12 @@ set backspace=eol,start,indent	" Make sure backspace works in insert mode
 " folding
 "------------------------------------------------------------------------------
 set foldenable	        " enable fold
-set foldcolumn=1	" show column indent
+set foldcolumn=1        " show column indent
 set foldmethod=indent   " indentation method
 "
-"define folds by indent level, but can create folds manually too.
-"augroup vimrc
-"  au BufReadPre * set foldmethod=indent
-"  au BufWinEnter * if &fdm == 'indent' | setl foldmethod=manual | endif
-"augroup END
+" saves and restores folds when a file is closed and re-opened,
+au BufWinLeave * mkview
+au BufWinEnter * silent loadview
 
 "------------------------------------------------------------------------------
 " swap, undo and backup

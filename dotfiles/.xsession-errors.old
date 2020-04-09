@@ -1,0 +1,614 @@
+Apr 02 06:16 : exception: Decoder plugin 'wildmidi' is unavailable: configuration file does not exist: /etc/timidity/timidity.cfg
+[1911:1911:0402/061755.100691:ERROR:vaapi_wrapper.cc(417)] vaInitialize failed: unknown libva error
+[1911:1911:0402/061755.852706:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+[1807:2095:0402/061802.276135:ERROR:object_proxy.cc(632)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[1807:2095:0402/061802.276395:ERROR:object_proxy.cc(632)] Failed to call method: org.freedesktop.UPower.GetDisplayDevice: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[1807:2095:0402/061802.276622:ERROR:object_proxy.cc(632)] Failed to call method: org.freedesktop.UPower.EnumerateDevices: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+Failed to parse JSON adblock resources: EOF while parsing a value at line 1 column 0
+[1807:1807:0402/061812.856455:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1904:0402/061822.672063:ERROR:ads_service_impl.cc(206)] Failed to read file: /home/colps/.config/BraveSoftware/Brave-Browser/Default/ads_service/ad_conversions.json
+[1968:1:0402/061822.672571:ERROR:ad_conversion_tracking.cc(280)] Failed to load ad conversions state, resetting to default values
+[1807:1807:0402/061858.516285:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/061923.003681:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/062013.038709:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/062139.982729:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/062453.143487:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/063130.345685:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/063155.625194:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/064155.645722:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/065155.666851:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[36191:36191:0402/065746.000789:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+[36136:36348:0402/065750.066740:ERROR:object_proxy.cc(632)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[36136:36348:0402/065750.067212:ERROR:object_proxy.cc(632)] Failed to call method: org.freedesktop.UPower.GetDisplayDevice: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[36136:36348:0402/065750.067643:ERROR:object_proxy.cc(632)] Failed to call method: org.freedesktop.UPower.EnumerateDevices: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[36136:36136:0402/065754.102343:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065754.422498:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065754.599815:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065754.744952:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065754.824642:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065755.865026:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065756.331894:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065756.446453:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065757.127814:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065757.143281:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065757.550461:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065757.714157:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065757.726175:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065757.744316:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065757.755590:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/065757.824698:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[1807:1807:0402/070155.687236:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[13891:1:0402/070811.297024:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070811.298416:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070811.301773:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070811.303248:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070811.822639:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070811.824267:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070811.826668:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070811.828046:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070811.914143:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070811.915644:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070814.555139:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070814.556442:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[13891:1:0402/070816.847684:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/071155.708684:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/072155.727367:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/073155.749933:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/074155.769211:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/075155.789626:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[36136:36136:0402/075901.575153:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[1807:1807:0402/080155.808961:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/080354.311728:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/080531.711687:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/080531.713221:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[95306:1:0402/080533.396693:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[95306:1:0402/080533.398226:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[95306:1:0402/080533.498629:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[95306:1:0402/080533.500534:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[95306:1:0402/080533.618188:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[95306:1:0402/080533.619447:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/080543.231290:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[96853:1:0402/080548.915335:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[96853:1:0402/080548.917016:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[96853:1:0402/080549.021383:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[96853:1:0402/080549.023049:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[96853:1:0402/080549.158229:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[96853:1:0402/080549.159748:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[96853:1:0402/080549.754790:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[96853:1:0402/080549.758748:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[96853:1:0402/080549.975121:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[96853:1:0402/080549.977325:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+Fontconfig error: Cannot load default config file: No such file: (null)
+[1807:1807:0402/080628.845513:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1911:1911:0402/080633.801892:ERROR:shared_image_manager.cc(191)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+[1911:1911:0402/080633.802578:ERROR:shared_image_manager.cc(191)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+[1911:1911:0402/080633.802909:ERROR:shared_image_manager.cc(191)] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+[97572:1:0402/080634.040687:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[97572:1:0402/080634.043087:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[97572:1:0402/080634.146111:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[97572:1:0402/080634.147942:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[97572:1:0402/080634.226865:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[97572:1:0402/080634.231242:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[97572:1:0402/080634.299845:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[97572:1:0402/080634.310084:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/080652.541717:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/080910.888672:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[1807:1807:0402/081104.630293:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/081155.828313:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/082155.850234:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/083155.870745:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/083251.860044:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/084155.892061:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/085155.912944:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[1807:1807:0402/090155.933021:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[1807:1807:0402/091155.952963:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/092155.974081:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/093155.993680:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/094156.013130:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[1807:1807:0402/095134.630919:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/095156.032915:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/100156.054708:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[1807:1807:0402/101156.076427:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/102156.096634:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/103156.118408:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/104156.136620:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[1807:1807:0402/105156.156262:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/110156.174283:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/111156.194971:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/111532.617703:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[1807:1807:0402/112156.214660:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/112953.045337:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/113147.749468:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/113147.752453:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/113147.752503:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/113156.233632:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[36136:36136:0402/113335.500748:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[1807:1807:0402/114130.089206:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/114150.587255:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/114150.592086:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/114150.592164:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/114156.256097:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/114204.899654:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/114204.902561:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/114204.902872:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/114353.779621:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/115004.558527:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/115004.558628:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/115156.277339:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[281457:1:0402/115625.562228:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[281457:1:0402/115625.565556:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[281457:1:0402/115625.713197:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[281457:1:0402/115625.715289:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[281457:1:0402/115625.761761:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[281457:1:0402/115625.766643:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[281457:1:0402/115625.854163:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[281457:1:0402/115625.856178:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/115734.639116:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/120034.298202:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/120034.298281:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[287448:1:0402/120035.453983:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[287448:1:0402/120035.455565:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[287448:1:0402/120035.720977:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[287448:1:0402/120035.723907:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[287448:1:0402/120035.727510:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[287448:1:0402/120035.728910:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120134.428267:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120134.430320:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120134.434165:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120134.436324:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120134.477778:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120134.479076:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120134.492345:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120134.551238:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120134.552490:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120134.614323:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120134.617778:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120136.026301:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[290023:1:0402/120136.027828:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/120156.297003:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/120207.923585:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[291294:1:0402/120224.797535:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120224.801310:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120224.804442:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120224.806300:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120224.846312:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120224.848540:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120224.862667:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120224.925467:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120224.926814:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120224.987201:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120224.989306:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120226.442128:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[291294:1:0402/120226.443984:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/120521.632863:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/120521.858160:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/121156.317990:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/122156.339262:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[293923:1:0402/122414.793818:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[293923:1:0402/122414.795431:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[293923:1:0402/122414.797390:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[293923:1:0402/122414.799135:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[293923:1:0402/122415.912076:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[1807:1807:0402/123156.359535:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/124156.380957:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[293923:1:0402/124336.488624:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[293923:1:0402/124336.490516:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[293923:1:0402/124336.983186:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[293923:1:0402/124336.985263:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[293923:1:0402/124349.670172:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[293923:1:0402/124349.671570:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/125008.655148:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/125156.398938:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/130156.419363:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+(node:329274) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+Cannot load libcuda.so.1
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[329162:329534:0402/130417.114159:ERROR:cert_verify_proc_nss.cc(969)] CERT_PKIXVerifyCert for leetx.addon.unlimited-fun.xyz failed err=-8172
+[329162:329238:0402/130417.114376:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -202
+[329162:329238:0402/130417.198122:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -202
+Error: This video is unavailable
+    at /opt/stremio/server.js:151582:16
+    at /opt/stremio/server.js:151711:9
+    at /opt/stremio/server.js:151521:5
+    at PassThrough.<anonymous> (/opt/stremio/server.js:90751:30)
+    at PassThrough.emit (events.js:315:20)
+    at PassThrough.EventEmitter.emit (domain.js:485:12)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+Error: This video is unavailable
+    at /opt/stremio/server.js:151582:16
+    at Object.exports.<computed> [as getBasicInfo] (/opt/stremio/server.js:151705:7)
+    at exports.getFullInfo (/opt/stremio/server.js:151534:18)
+    at Function.exports.<computed> [as getInfo] (/opt/stremio/server.js:151707:7)
+    at getYt (/opt/stremio/server.js:132820:10)
+    at /opt/stremio/server.js:132848:5
+    at Layer.handle [as handle_request] (/opt/stremio/server.js:120163:5)
+    at next (/opt/stremio/server.js:120396:13)
+    at Route.dispatch (/opt/stremio/server.js:120361:3)
+    at handle (/opt/stremio/server.js:119852:11)
+    at Layer.handle [as handle_request] (/opt/stremio/server.js:120163:5)
+    at /opt/stremio/server.js:119628:22
+    at param (/opt/stremio/server.js:119705:14)
+    at param (/opt/stremio/server.js:119716:14)
+    at Function.process_params (/opt/stremio/server.js:119761:3)
+    at next (/opt/stremio/server.js:119622:10)
+Error: This video is unavailable
+    at /opt/stremio/server.js:151582:16
+    at /opt/stremio/server.js:151711:9
+    at /opt/stremio/server.js:151521:5
+    at PassThrough.<anonymous> (/opt/stremio/server.js:90751:30)
+    at PassThrough.emit (events.js:315:20)
+    at PassThrough.EventEmitter.emit (domain.js:485:12)
+    at endReadableNT (_stream_readable.js:1201:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[318841:1:0402/130431.264742:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[318841:1:0402/130431.266958:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[318841:1:0402/130431.270049:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[318841:1:0402/130431.273681:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[318841:1:0402/130432.440678:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[318841:1:0402/130438.022694:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[318841:1:0402/130438.024324:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[318841:1:0402/130446.069356:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[318841:1:0402/130446.071223:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[318841:1:0402/130457.996228:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[318841:1:0402/130457.997676:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[329162:329238:0402/130702.869960:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -202
+[329162:329238:0402/130702.960454:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -202
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[329162:329238:0402/130952.339398:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -202
+[329162:329238:0402/130952.614127:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -202
+[1807:1807:0402/131156.439920:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[1807:1807:0402/132036.117854:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/132036.118440:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/132036.860689:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[343879:1:0402/132040.234684:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132040.236783:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132040.240519:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132040.242502:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132040.649885:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132040.663676:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132040.665917:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132040.667471:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132040.734914:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132040.736307:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132043.356369:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132043.358430:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[343879:1:0402/132045.335786:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/132156.460665:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/132652.922831:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/133156.481400:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/134156.500733:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/135156.523225:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/140156.542335:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[349211:1:0402/140608.266754:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[349211:1:0402/140608.269151:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[349211:1:0402/140608.272598:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[349211:1:0402/140608.276538:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[349211:1:0402/140608.280892:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[349211:1:0402/140608.282530:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[380417:1:0402/140609.035194:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[380417:1:0402/140609.037234:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/140651.577070:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/141016.095710:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/141156.564115:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/142156.584922:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/143156.605800:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/144156.624565:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/145156.644756:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/150156.667363:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/151156.687043:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/151735.695988:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/151735.696091:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[383736:1:0402/151736.812697:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[383736:1:0402/151736.814840:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[383736:1:0402/151737.068964:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[383736:1:0402/151737.070372:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[383736:1:0402/151737.073336:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[383736:1:0402/151737.075241:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441330:1:0402/151914.374001:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441330:1:0402/151914.375443:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441330:1:0402/151914.517683:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441330:1:0402/151914.519094:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/151932.331648:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/151932.331722:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[441554:1:0402/151932.567229:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441554:1:0402/151932.569513:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441554:1:0402/151932.817162:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441554:1:0402/151932.818751:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441554:1:0402/151932.821571:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441554:1:0402/151932.822971:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/151940.361944:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/151940.362204:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/151940.362327:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/151940.734886:ERROR:CONSOLE(4)] "Polymer is already defined.", source: chrome://settings/crisper.js (4)
+[1807:1807:0402/151948.020497:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/151948.020579:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/151948.020632:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[442133:1:0402/151948.978219:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442133:1:0402/151948.979525:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442133:1:0402/151948.982311:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442133:1:0402/151948.984200:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442133:1:0402/151948.986751:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442133:1:0402/151948.988346:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/152058.697331:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/152058.697416:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[441919:1:0402/152100.529101:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441919:1:0402/152100.534190:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441919:1:0402/152100.889093:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441919:1:0402/152100.890807:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441809:1:0402/152101.111541:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441809:1:0402/152101.113357:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441809:1:0402/152101.183124:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[441809:1:0402/152101.184427:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443464:1:0402/152133.105388:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443464:1:0402/152133.107453:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443464:1:0402/152133.111083:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443464:1:0402/152133.113431:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/152143.710603:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/152143.710761:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/152143.710808:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/152143.719349:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[442991:1:0402/152145.228689:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442991:1:0402/152145.230091:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442991:1:0402/152145.307406:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442991:1:0402/152145.309563:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442991:1:0402/152145.312378:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442991:1:0402/152145.319233:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442991:1:0402/152145.323702:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[442991:1:0402/152145.325940:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443789:1:0402/152156.267552:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443789:1:0402/152156.268881:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443789:1:0402/152156.271942:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443789:1:0402/152156.275438:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/152156.706366:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[443898:1:0402/152202.813322:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443898:1:0402/152202.815124:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443898:1:0402/152202.901165:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443898:1:0402/152202.903019:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/152237.728372:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/152237.728464:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/152404.036756:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/152404.036841:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[443778:1:0402/152405.572812:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443778:1:0402/152405.575058:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443778:1:0402/152405.577417:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443778:1:0402/152405.580881:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443778:1:0402/152405.626441:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[443778:1:0402/152405.628003:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/152411.299395:ERROR:CONSOLE(0)] "Unchecked runtime.lastError: No tab with id: 41.", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/_generated_background_page.html (0)
+[1807:1807:0402/152432.696130:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/152432.696525:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[445627:1:0402/152434.090108:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[445627:1:0402/152434.092013:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[445627:1:0402/152434.094123:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[445627:1:0402/152434.095820:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[445627:1:0402/152434.139243:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[445627:1:0402/152434.140507:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/152519.112776:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/152519.112874:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/152519.113007:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/152519.126448:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[446090:1:0402/152520.305602:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[446090:1:0402/152520.307446:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[446090:1:0402/152520.376953:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[446090:1:0402/152520.381653:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[446090:1:0402/152520.388521:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[446090:1:0402/152520.392499:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[446090:1:0402/152520.404075:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[446090:1:0402/152520.408055:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/153156.727695:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[36136:36136:0402/153558.001963:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[1807:1807:0402/154156.747677:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[36136:36136:0402/154736.702596:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/154843.067973:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/154859.029534:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/154912.294630:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[1807:1807:0402/155156.767277:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[473076:1:0402/160119.333151:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[473076:1:0402/160119.334608:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[473076:1:0402/160119.412644:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[473076:1:0402/160119.414641:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/160156.790034:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[36136:36136:0402/160916.180031:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[1807:1807:0402/161156.809168:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[485911:1:0402/161501.138002:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[485911:1:0402/161501.139739:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[485911:1:0402/161501.219719:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[485911:1:0402/161501.221366:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/162156.830023:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[491933:1:0402/162210.550248:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[491933:1:0402/162210.551665:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[491933:1:0402/162210.774787:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[491933:1:0402/162210.776233:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[491933:1:0402/162210.781444:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[491933:1:0402/162210.783232:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[496083:1:0402/162706.506144:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496083:1:0402/162706.508259:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496083:1:0402/162706.763761:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496083:1:0402/162706.765712:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496083:1:0402/162706.769758:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496083:1:0402/162706.771584:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496083:1:0402/162707.433956:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496083:1:0402/162707.436341:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/162722.980634:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[36136:36136:0402/162903.324992:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[36136:36136:0402/162948.766562:ERROR:bookmark_app_install_finalizer.cc(300)] Installed extension was disabled: 1
+[499355:1:0402/163010.542836:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[499355:1:0402/163010.544384:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[499355:1:0402/163010.621956:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[499355:1:0402/163010.623908:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/163105.792343:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/163105.792440:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[496531:1:0402/163107.537190:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496531:1:0402/163107.539932:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496531:1:0402/163107.543478:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496531:1:0402/163107.546680:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496531:1:0402/163107.586309:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[496531:1:0402/163107.587574:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/163113.168800:ERROR:CONSOLE(0)] "Unchecked runtime.lastError: No tab with id: 47.", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/_generated_background_page.html (0)
+[1807:1807:0402/163156.851847:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/163349.412999:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/163349.413162:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[502345:1:0402/163352.157689:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[502345:1:0402/163352.159428:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[502345:1:0402/163352.163189:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[502345:1:0402/163352.165128:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[502345:1:0402/163352.289127:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[502345:1:0402/163352.292368:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+../../sandbox/linux/seccomp-bpf-helpers/sigsys_handlers.cc:**CRASHING**:seccomp-bpf failure in syscall 0230
+[1807:1807:0402/163501.908641:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/163616.217488:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[1807:1807:0402/163616.217627:ERROR:CONSOLE(1)] "[Shields]: Can't request shields panel data. Error: No tab url specified", source: chrome-extension://mnojpmjdmbbfmejpflffifhffcmidifd/out/brave_extension_background.bundle.js (1)
+[504504:1:0402/163621.407309:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[504504:1:0402/163621.409978:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[504504:1:0402/163621.419648:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[504504:1:0402/163621.422176:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[504504:1:0402/163621.425689:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[504504:1:0402/163621.428057:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.331109:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.333320:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.335396:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.338703:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.495677:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.497055:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.570728:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.580526:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.584537:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.589881:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.610961:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.613605:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.617056:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[505209:1:0402/163706.619458:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/163734.500829:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/164156.871860:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+spotify: /usr/lib/libcurl-gnutls.so.4: no version information available (required by spotify)
+
+(spotify:509867): Gtk-WARNING **: 16:42:21.204: Unable to locate theme engine in module_path: "murrine",
+
+(spotify:509867): Gtk-WARNING **: 16:42:21.204: Unable to locate theme engine in module_path: "murrine",
+
+(spotify:509867): Gtk-WARNING **: 16:42:21.204: Unable to locate theme engine in module_path: "murrine",
+
+(spotify:509867): Gtk-WARNING **: 16:42:21.220: Unable to locate theme engine in module_path: "murrine",
+
+(spotify:509867): Gtk-WARNING **: 16:42:21.220: Unable to locate theme engine in module_path: "murrine",
+
+(spotify:509867): Gtk-WARNING **: 16:42:21.220: Unable to locate theme engine in module_path: "murrine",
+
+(spotify:509867): Gtk-WARNING **: 16:42:21.220: Unable to locate theme engine in module_path: "murrine",
+
+(spotify:509867): Gtk-WARNING **: 16:42:21.221: Unable to locate theme engine in module_path: "murrine",
+
+(spotify:509867): Gtk-WARNING **: 16:42:21.222: Unable to locate theme engine in module_path: "murrine",
+
+(spotify:509867): Gtk-WARNING **: 16:42:21.222: Unable to locate theme engine in module_path: "murrine",
+
+(spotify:509867): Gtk-WARNING **: 16:42:21.223: Unable to locate theme engine in module_path: "murrine",
+/opt/spotify/spotify: /usr/lib/libcurl-gnutls.so.4: no version information available (required by /opt/spotify/spotify)
+/proc/self/exe: /usr/lib/libcurl-gnutls.so.4: no version information available (required by /proc/self/exe)
+[0402/164225.624636:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+[1807:1807:0402/165156.893993:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/170156.915044:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/171156.937041:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/172156.956496:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/173156.978114:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[552007:1:0402/173306.275276:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[552007:1:0402/173306.276749:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[552007:1:0402/173306.278993:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[552007:1:0402/173306.280530:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[552007:1:0402/173307.168118:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[552007:1:0402/173307.170094:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[552537:1:0402/173426.791215:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[552537:1:0402/173426.792506:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[552537:1:0402/173426.852673:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[552537:1:0402/173426.854071:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553539:1:0402/173459.296797:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553539:1:0402/173459.298719:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553539:1:0402/173459.364942:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553539:1:0402/173459.367610:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553539:1:0402/173459.371003:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553539:1:0402/173459.373311:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.462812:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.464045:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.465784:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.467113:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.468678:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.470743:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.472216:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.473676:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.649724:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.651190:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.653146:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.654751:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[553708:1:0402/173511.656333:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/173557.313460:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[554481:1:0402/173613.126277:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.127838:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.129299:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.130645:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.131925:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.133187:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.134434:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.135608:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.294904:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.296204:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.297468:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.298827:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[554481:1:0402/173613.300166:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1807:1807:0402/173656.770213:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1915:1918:0402/173700.442535:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/173710.729852:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/173748.653158:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[555327:1:0402/173755.527542:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[555327:1:0402/173755.529088:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[555327:1:0402/173755.531410:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[555327:1:0402/173755.533098:ERROR:child_process_sandbox_support_impl_linux.cc(79)] FontService unique font name matching request did not receive a response.
+[1915:1918:0402/173756.949234:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/173758.335649:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/173855.003750:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/173928.683380:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/173942.488375:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/173950.003052:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/173951.289080:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/174001.098133:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/174002.902187:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/174014.089771:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/174030.746525:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/174036.462265:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/174101.532475:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1915:1918:0402/174112.702990:ERROR:ssl_client_socket_impl.cc(941)] handshake failed; returned -1, SSL error code 1, net_error -200
+[1807:1807:0402/174126.153740:ERROR:CONSOLE(46)] "Uncaught TypeError: Cannot read property 'url' of null", source: chrome://newtab/brave_new_tab.bundle.js (46)
+[1807:1807:0402/174156.997741:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/175157.016867:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/180157.036445:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/181157.057608:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/182157.078507:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/183157.098969:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/184157.118086:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+[1807:1807:0402/184224.512312:ERROR:zygote_communication_linux.cc(276)] Failed to send GetTerminationStatus message to zygote
+[1807:1807:0402/184224.518076:ERROR:zygote_communication_linux.cc(276)] Failed to send GetTerminationStatus message to zygote
+[1807:1807:0402/184224.519048:ERROR:zygote_communication_linux.cc(276)] Failed to send GetTerminationStatus message to zygote
+[1807:1870:0402/184224.527799:ERROR:zygote_communication_linux.cc(276)] Failed to send GetTerminationStatus message to zygote
+[1807:1807:0402/184224.550688:ERROR:zygote_communication_linux.cc(276)] Failed to send GetTerminationStatus message to zygote
+[1807:1807:0402/184224.555909:ERROR:zygote_communication_linux.cc(276)] Failed to send GetTerminationStatus message to zygote
+[1807:1807:0402/184224.559504:ERROR:zygote_communication_linux.cc(276)] Failed to send GetTerminationStatus message to zygote
+[1807:1807:0402/184224.561442:ERROR:zygote_communication_linux.cc(276)] Failed to send GetTerminationStatus message to zygote
+[1807:1870:0402/184224.562093:ERROR:socket_stream.cc(218)] Closing stream with result -2

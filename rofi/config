@@ -6,7 +6,7 @@
 rofi.modi: window,drun,run,ssh
 
 ! "Font to use" Set from: Default
-rofi.font: TerminessTTF Nerd Font Mono-Medium 9
+rofi.font: Arimo Nerd Font 9
 
 
 ! "Border width" Set from: Default
@@ -16,7 +16,7 @@ rofi.bw: 1
 rofi.show-icons: true
 
 ! "Terminal to use" Set from: Default
-rofi.terminal: urxvt
+rofi.terminal: alacritty
 
 ! "Cycle through the results list" Set from: Default
 rofi.cycle: true

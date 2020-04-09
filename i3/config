@@ -18,7 +18,7 @@ set $mod Mod4
 #font pango:TerminessTTF NF Medium, FontAwesome,\
 #    FontAwesome 5 Brands, FontAwesome 5 Free, 8
 font pango:AurulentSansMono NF Mono, FontAwesome,\
-    FontAwesome 5 Brands, FontAwesome 5 Free, Regular 8
+    FontAwesome 5 Brands, FontAwesome 5 Free, Bold 8
 #
 #
 ### window title alignment = left|center|right
@@ -241,6 +241,7 @@ bindsym $mod+a focus parent
 #
 ### automatically putting clients on floating windows layout
 for_window [class="Pavucontrol"] floating enable
+for_window [class="fzf-menu"] floating enable
 #
 ### close the window
 # use Control+w
@@ -341,8 +342,9 @@ bar {
 ### Apps ----------------------------------------------------------------------
 #
 ### dmenu
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "TerminessTTF Nerd Font Mono Medium-10"
-bindsym $mod+q exec --no-startup-id passmenu -fn "TerminessTTF Nerd Font Mono Medium-10"
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "AurulentSansMono NF Mono Regular-8"
+bindsym $mod+q exec --no-startup-id passmenu -fn "AurulentSansMono NF Mono Regular-8"
+#bindsym $mod+d exec --no-startup-id alacritty -t 'fzf-menu' -e 'i3-dmenu-desktop --dmenu=fzf' for_window [title="fzf-menu"] floating enable
 #
 ### screenshot
 bindsym --release Print exec --no-startup-id "flameshot gui"

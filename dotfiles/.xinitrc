@@ -1,0 +1,3 @@
+xbindkeys
+exec i3
+

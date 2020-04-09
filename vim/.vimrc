@@ -1,4 +1,6 @@
+"B
 "
+"\
 " File: .vimrc
 " Path: $HOME
 " Tags: vim editor
@@ -44,7 +46,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'ap/vim-css-color'
         "Preview colours in source code.
     "---------------------------
-    Plug 'junegunn/fzf.vim'
+    "Plug 'junegunn/fzf.vim'
+    Plug '/usr/share/fzf/'
         " Things you can do with fzf and Vim.
     "---------------------------
     Plug 'w0rp/ale'
@@ -165,7 +168,8 @@ call plug#end()
     \ 'ctrl-x': 'split',
     \ 'ctrl-v': 'vsplit' }
     " Default fzf layout  - down / up / left / right
-    let g:fzf_layout = { 'down': '~40%' }
+    "let g:fzf_layout = { 'down': '~40%' }
+    let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
     " Customize fzf colors to match your color scheme
     let g:fzf_colors =
     \ { 'fg':      ['fg', 'Normal'],
@@ -196,6 +200,8 @@ ab ~/ $HOME
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 " undo hlsearch
 nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+" fzf
+map <silent> <leader>l :FZF<CR>
 " insert timestamp
 inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
 " Coc
@@ -277,12 +283,12 @@ set backspace=eol,start,indent	" Make sure backspace works in insert mode
 " folding
 "------------------------------------------------------------------------------
 set foldenable	        " enable fold
-set foldcolumn=1        " show column indent
+set foldcolumn=1" show column indent
 set foldmethod=indent   " indentation method
 "
 " saves and restores folds when a file is closed and re-opened,
-au BufWinLeave * mkview
-au BufWinEnter * silent loadview
+"au BufWinLeave * mkview
+"au BufWinEnter * silent loadview
 
 "------------------------------------------------------------------------------
 " swap, undo and backup

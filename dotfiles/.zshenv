@@ -17,8 +17,8 @@ export XDG_RUNTIME_DIR="/run/user/1000"
 
 ### default applications
 export BROWSE="/bin/brave"
-export VISUAL="/usr/bin/vim"
-export EDITOR="/usr/bin/vim"
+export VISUAL="/bin/nvim"
+export EDITOR="/bin/nvim"
 
 ### config applications
 export PASSWORD_STORE_ENABLE_EXTENSIONS="true"

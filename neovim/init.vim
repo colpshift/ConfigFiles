@@ -67,11 +67,13 @@ call plug#end()
 "
 " airline
     let g:airline_theme='onedark'
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline_powerline_fonts = 1
     let g:airline_highlighting_cache = 1
 "
 " rainbow
     let g:rainbow_active = 1
-" 
+"
 " signature
     " mx           Toggle mark 'x' and display it in the leftmost column
     " dmx          Remove mark 'x' where x is a-zA-Z
@@ -90,7 +92,7 @@ call plug#end()
     " Delete ds"
 "
 "instant markdown
-    let g:instant_markdown_browser = "firefox --new-window"
+    let g:instant_markdown_browser = "/bin/qutebrowser"
 "
 " NerdTree
     nmap <C-n> :NERDTreeToggle<CR>
@@ -110,8 +112,7 @@ call plug#end()
     set cmdheight=2         " Give more space for displaying messages
     set updatetime=300
     set signcolumn=yes
-    " Highlight the symbol and its references when holding the cursor.
-    autocmd CursorHold * silent call CocActionAsync('highlight')
+    let g:airline#extensions#coc#enabled = 1
     " Use tab for trigger completion with characters ahead and navigate.
     inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -129,6 +130,9 @@ call plug#end()
     else
         imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
     endif
+    " Use `[g` and `]g` to navigate diagnostics
+    nmap <silent> [g <Plug>(coc-diagnostic-prev)
+    nmap <silent> ]g <Plug>(coc-diagnostic-next)
     " smartf plugin
     " press <esc> to cancel.
     nmap f <Plug>(coc-smartf-forward)
@@ -175,9 +179,6 @@ call plug#end()
 "
 " auto indent the whole file and keep your cursor in the last position
 nmap <leader>ia mzgg=G`z
-"
-" abbreviations
-ab ~/ $HOME
 "
 " run :w!! command (type fast), to save ready only files.
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
@@ -241,8 +242,8 @@ set autoindent          " indent match with the previous line
 set smartindent         " indent after colon for if or for statements
 set smarttab            " Uses shiftwidth instead of tabstop at start of lines
 set expandtab		" Replaces a tab with spaces--more portable
-set shiftwidth=4        " The amount to block indent when using
-set softtabstop=4       " Causes backspace to delete 4 spaces converted tab
+set shiftwidth=2        " The amount to block indent when using
+set softtabstop=2       " Causes backspace to delete 2 spaces converted tab
 set shiftround		" Round the indentation to earest multiple shiftwidth.
 set backspace=eol,start,indent	" Make sure backspace works in insert mode
 
@@ -263,5 +264,23 @@ set undodir=$HOME/.local/share/nvim/undo
 set nobackup
 set nowritebackup
 set backupdir=$HOME/.local/share/nvim/backup
+
+"------------------------------------------------------------------------------
+" Specific settings by filetype
+"------------------------------------------------------------------------------
+" 
+" Indent
+"
+" 4 spaces
+autocmd Filetype python setlocal sw=4 sts=4 expandtab
+"
+" Environments
+"
+" ruby
+let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
+"
+" python
+let g:python3_host_prog = '/bin/python3'
+let g:python2_host_prog = '/bin/python2'
 
 

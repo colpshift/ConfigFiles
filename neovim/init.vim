@@ -44,8 +44,8 @@ call plug#begin('~/.local/share/nvim/plugged')
     "---------------------------
     Plug '/usr/share/fzf/'
         " Things you can do with fzf and Vim.
-    Plug 'scrooloose/nerdTree'
-        " Tree File Explorer
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+        "Ranger running in a floating window
     Plug 'preservim/nerdcommenter'
         " nerdy commenting powers
     "---------------------------
@@ -56,7 +56,7 @@ call plug#begin('~/.local/share/nvim/plugged')
         " Provides completion, syntax checking and semantic errors
     Plug 'honza/vim-snippets'
         " Snippets
-    Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+    Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
         " Markdown preview
     "---------------------------
 call plug#end()
@@ -91,11 +91,35 @@ call plug#end()
     " Emphasize line: yss"
     " Delete ds"
 "
-"instant markdown
-    let g:instant_markdown_browser = "/bin/qutebrowser"
+"markdown preview
+  let g:mkdp_auto_start = 0
+  let g:mkdp_auto_close = 1
+  let g:mkdp_browser = '/bin/firefox'
+  let g:mkdp_preview_options = {
+      \ 'mkit': {},
+      \ 'katex': {},
+      \ 'uml': {},
+      \ 'maid': {},
+      \ 'disable_sync_scroll': 0,
+      \ 'sync_scroll_type': 'middle',
+      \ 'hide_yaml_meta': 1,
+      \ 'sequence_diagrams': {},
+      \ 'flowchart_diagrams': {}
+      \ }
 "
-" NerdTree
-    nmap <C-n> :NERDTreeToggle<CR>
+"Rnvimr
+  let g:rnvimr_ex_enable = 1
+  let g:rnvimr_ranger_cmd = 'ranger --cmd="set vcs_aware false" ' .
+              \'--cmd="set column_ratios 1,1" --cmd="set vcs_aware true"'
+  tnoremap <silent> <C-i> <C-\><C-n>:RnvimrResize<CR>
+  nnoremap <silent> <C-o> :RnvimrToggle<CR>
+  tnoremap <silent> <C-o> <C-\><C-n>:RnvimrToggle<CR>
+  let g:rnvimr_layout = { 'relative': 'editor',
+              \ 'width': float2nr(round(0.6 * &columns)),
+              \ 'height': float2nr(round(0.6 * &lines)),
+              \ 'col': float2nr(round(0.2 * &columns)),
+              \ 'row': float2nr(round(0.2 * &lines)),
+              \ 'style': 'minimal' }
 "
 " Nerdcommenter
     " Insert comment leader+cc
@@ -273,8 +297,10 @@ set backupdir=$HOME/.local/share/nvim/backup
 "
 " 4 spaces
 autocmd Filetype python setlocal sw=4 sts=4 expandtab
-"
-" Environments
+
+"------------------------------------------------------------------------------
+" Code Environments
+"------------------------------------------------------------------------------
 "
 " ruby
 let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
@@ -282,5 +308,4 @@ let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
 " python
 let g:python3_host_prog = '/bin/python3'
 let g:python2_host_prog = '/bin/python2'
-
 

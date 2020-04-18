@@ -9,5 +9,5 @@
 #
 
 # Start Firefox/Profile on RAM
-#/bin/firefox-sync
+/bin/firefox-sync
 

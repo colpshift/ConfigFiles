@@ -3,7 +3,7 @@
 " Path: $HOME
 " Tags: neovim editor
 " Description: nvim configuration file
-" Last Modified: 11/04/2020 12:13
+" Last Modified: 14/04/2020 23:53
 " Author: Colpshift
 "
 
@@ -17,6 +17,8 @@ set fileformat=unix
 set autoread            " Automatically re-read files if unmodified inside Vim.
 set autowrite           " Automatically save before commands like:next & :make
 set confirm             " Display confirmation dialog when closing unsaved file
+set shellpipe="2>&1| tee" "option  for C compiler
+set shellredir=">&"       "options for C compiler
 
 "------------------------------------------------------------------------------
 " plugins package manager - vim-plug
@@ -27,6 +29,8 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'joshdick/onedark.vim'
         " vim color theme
+    Plug 'ryanoasis/vim-devicons'
+        " icons for languages
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
         " status/tabline for vim
@@ -52,10 +56,18 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'tpope/vim-surround'
         " Quoting/Parenthesizing
     "---------------------------
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-        " Provides completion, syntax checking and semantic errors
+    Plug 'dense-analysis/ale'
+        " Provides syntax checking and semantic errors
+    Plug 'Shougo/deoplete.nvim'
+        " Provides completion
+    Plug 'deoplete-plugins/deoplete-zsh'
+        " plugin deoplete
+    Plug 'SirVer/ultisnips'
+        " Snippets
     Plug 'honza/vim-snippets'
         " Snippets
+    Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
+        " Povides Tern-based JavaScript editing support
     Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
         " Markdown preview
     "---------------------------
@@ -66,35 +78,35 @@ call plug#end()
 "------------------------------------------------------------------------------
 "
 " airline
-    let g:airline_theme='onedark'
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline_powerline_fonts = 1
-    let g:airline_highlighting_cache = 1
+  let g:airline_theme='onedark'
+  let g:airline#extensions#tabline#enabled = 1
+  let g:airline_powerline_fonts = 1
+  let g:airline_highlighting_cache = 1
 "
 " rainbow
-    let g:rainbow_active = 1
+  let g:rainbow_active = 1
 "
 " signature
-    " mx           Toggle mark 'x' and display it in the leftmost column
-    " dmx          Remove mark 'x' where x is a-zA-Z
-    " m-           Delete all marks from the current line
-    " m<Space>     Delete all marks from the current buffer
-    " ]`           Jump to next mark
-    " [`           Jump to prev mark
+  " mx           Toggle mark 'x' and display it in the leftmost column
+  " dmx          Remove mark 'x' where x is a-zA-Z
+  " m-           Delete all marks from the current line
+  " m<Space>     Delete all marks from the current buffer
+  " ]`           Jump to next mark
+  " [`           Jump to prev mark
 "
 " iluminate
-    " Time in milliseconds (default 250)
-    let g:Illuminate_delay = 250
+  " Time in milliseconds (default 250)
+  let g:Illuminate_delay = 250
 "
 " Surround
-    " Emphasize word: ysiw"
-    " Emphasize line: yss"
-    " Delete ds"
+  " Emphasize word: ysiw"
+  " Emphasize line: yss"
+  " Delete ds"
 "
-"markdown preview
+" Markdown preview
   let g:mkdp_auto_start = 0
   let g:mkdp_auto_close = 1
-  let g:mkdp_browser = '/bin/firefox'
+  let g:mkdp_browser = '/bin/qutebrowser'
   let g:mkdp_preview_options = {
       \ 'mkit': {},
       \ 'katex': {},
@@ -107,7 +119,7 @@ call plug#end()
       \ 'flowchart_diagrams': {}
       \ }
 "
-"Rnvimr
+" Rnvimr
   let g:rnvimr_ex_enable = 1
   let g:rnvimr_ranger_cmd = 'ranger --cmd="set vcs_aware false" ' .
               \'--cmd="set column_ratios 1,1" --cmd="set vcs_aware true"'
@@ -122,80 +134,83 @@ call plug#end()
               \ 'style': 'minimal' }
 "
 " Nerdcommenter
-    " Insert comment leader+cc
-    " Invert comment leader+ci
-    let g:NERDSpaceDelims = 1
-    let g:NERDCompactSexyComs = 1
-    let g:NERDDefaultAlign = 'left'
-    let g:NERDCommentEmptyLines = 1
-    let g:NERDTrimTrailingWhitespace = 1
-    let g:NERDToggleCheckAllLines = 1
+  " Insert comment leader+cc
+  " Invert comment leader+ci
+  let g:NERDSpaceDelims = 1
+  let g:NERDCompactSexyComs = 1
+  let g:NERDDefaultAlign = 'left'
+  let g:NERDCommentEmptyLines = 1
+  let g:NERDTrimTrailingWhitespace = 1
+  let g:NERDToggleCheckAllLines = 1
 "
-" Coc
-    set hidden              " TextEdit might fail if hidden is not set
-    set cmdheight=2         " Give more space for displaying messages
-    set updatetime=300
-    set signcolumn=yes
-    let g:airline#extensions#coc#enabled = 1
-    " Use tab for trigger completion with characters ahead and navigate.
-    inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-    inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-    "
-    function! s:check_back_space() abort
-        let col = col('.') - 1
-        return !col || getline('.')[col - 1]  =~# '\s'
-    endfunction
-    " Use <cr> to confirm completion.
-    if exists('*complete_info')
-        inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
-    else
-        imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-    endif
-    " Use `[g` and `]g` to navigate diagnostics
-    nmap <silent> [g <Plug>(coc-diagnostic-prev)
-    nmap <silent> ]g <Plug>(coc-diagnostic-next)
-    " smartf plugin
-    " press <esc> to cancel.
-    nmap f <Plug>(coc-smartf-forward)
-    nmap F <Plug>(coc-smartf-backward)
-    nmap ; <Plug>(coc-smartf-repeat)
-    nmap , <Plug>(coc-smartf-repeat-opposite)
-    "
-    augroup Smartf
-    autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
-    autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
-    augroup end
-    " highlight plugin
-    autocmd CursorHold * silent call CocActionAsync('highlight')
+" Deoplete
+  let g:deoplete#enable_at_startup = 1
+  if !exists('g:deoplete#omni#input_patterns')
+    let g:deoplete#omni#input_patterns = {}
+  endif
+  " omnifuncs
+  augroup omnifuncs
+    autocmd!
+    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+    autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+  augroup end
+  " automatically closing the scratch window at the top of the vim window
+  autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+  " deoplete tab-complete
+  inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+"
+" tern
+  if exists('g:plugs["tern_for_vim"]')
+    let g:tern_show_argument_hints = 'on_hold'
+    let g:tern_show_signature_in_pum = 1
+    autocmd FileType javascript setlocal omnifunc=tern#Complete
+  endif
+  " keybinding for moving the cursor straight to a variable definition 
+  autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
+"
+" Ultisnips
+   let g:UltiSnipsExpandTrigger="<CR>"
+"
+" Ale
+  let g:ale_fix_on_save = 1
+  let g:ale_completion_tsserver_autoimport = 1
+  let g:airline#extensions#ale#enabled = 1
+  let g:ale_set_loclist = 0
+  let g:ale_sign_column_always = 1
+  let g:ale_set_quickfix = 1
+  let g:ale_set_balloons = 1 
+  let g:ale_hover_to_preview = 1
+  nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+  nmap <silent> <C-j> <Plug>(ale_next_wrap)
 "
 " fzf
-    map <silent> <leader>l :FZF<CR>
-    let g:fzf_history_dir = '~/.local/share/fzf-history'
-    let g:fzf_action = {
-        \ 'ctrl-t': 'tab split',
-        \ 'ctrl-x': 'split',
-        \ 'ctrl-v': 'vsplit' }
-        " Default fzf layout  - down / up / left / right
-        "let g:fzf_layout = { 'down': '~40%' }
-        let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
-        " Customize fzf colors to match your color scheme
-        let g:fzf_colors =
-            \ { 'fg':      ['fg', 'Normal'],
-            \ 'bg':      ['bg', 'Normal'],
-            \ 'hl':      ['fg', 'Comment'],
-            \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-            \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-            \ 'hl+':     ['fg', 'Statement'],
-            \ 'info':    ['fg', 'PreProc'],
-            \ 'border':  ['fg', 'Ignore'],
-            \ 'prompt':  ['fg', 'Conditional'],
-            \ 'pointer': ['fg', 'Exception'],
-            \ 'marker':  ['fg', 'Keyword'],
-            \ 'spinner': ['fg', 'Label'],
-            \ 'header':  ['fg', 'Comment'] }
+  map <silent> <leader>l :FZF<CR>
+  let g:fzf_history_dir = '~/.local/share/fzf-history'
+  let g:fzf_action = {
+      \ 'ctrl-t': 'tab split',
+      \ 'ctrl-x': 'split',
+      \ 'ctrl-v': 'vsplit' }
+      " Default fzf layout  - down / up / left / right
+      "let g:fzf_layout = { 'down': '~40%' }
+      let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+      " Customize fzf colors to match your color scheme
+      let g:fzf_colors =
+          \ { 'fg':      ['fg', 'Normal'],
+          \ 'bg':      ['bg', 'Normal'],
+          \ 'hl':      ['fg', 'Comment'],
+          \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+          \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+          \ 'hl+':     ['fg', 'Statement'],
+          \ 'info':    ['fg', 'PreProc'],
+          \ 'border':  ['fg', 'Ignore'],
+          \ 'prompt':  ['fg', 'Conditional'],
+          \ 'pointer': ['fg', 'Exception'],
+          \ 'marker':  ['fg', 'Keyword'],
+          \ 'spinner': ['fg', 'Label'],
+          \ 'header':  ['fg', 'Comment'] }
 
 "------------------------------------------------------------------------------
 " mapping and abbreviations
@@ -218,7 +233,7 @@ inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
 "------------------------------------------------------------------------------
 set complete-=i		" Limit the files searched for auto-completes.
 set lazyredraw		" Don’t update screen during macro and script execution.
-
+set hid                 " Avoid Vim-Airline to get information on start
 "------------------------------------------------------------------------------
 " Text Rendering
 "------------------------------------------------------------------------------
@@ -261,7 +276,8 @@ set hlsearch        " highlight matches
 
 "------------------------------------------------------------------------------
 " indention
-"------------------------------------------------------------------------------
+"-----------------------------------------------------------------------------
+set wrap breakindent    " Soft wrapping + indentation 
 set autoindent          " indent match with the previous line
 set smartindent         " indent after colon for if or for statements
 set smarttab            " Uses shiftwidth instead of tabstop at start of lines
@@ -308,4 +324,3 @@ let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
 " python
 let g:python3_host_prog = '/bin/python3'
 let g:python2_host_prog = '/bin/python2'
-

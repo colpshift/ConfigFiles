@@ -15,10 +15,11 @@ set $mod Mod4
 ### titles --------------------------------------------------------------------
 #
 ### font window titles
-#font pango:TerminessTTF NF Medium, FontAwesome,\
-#    FontAwesome 5 Brands, FontAwesome 5 Free, 8
-font pango:AurulentSansMono NF Mono, FontAwesome,\
+font pango:Iosevka Term Medium, FontAwesome,\
     FontAwesome 5 Brands, FontAwesome 5 Free, Bold 8
+
+#font pango:AurulentSansMono NF Mono, FontAwesome,\
+#    FontAwesome 5 Brands, FontAwesome 5 Free, Bold 8
 #
 #
 ### window title alignment = left|center|right
@@ -36,7 +37,7 @@ default_border pixel 1
 hide_edge_borders smart
 #
 ### make all urxvt use a 1-pixel border:
-for_window [class="alacritty"] border pixel 1
+for_window [class="urxvt"] border pixel 1
 
 ### marks ---------------------------------------------------------------------
 #
@@ -93,8 +94,8 @@ set $ws10   "10 "
 set $ws11   "GP "
 #
 ### define clients to specific workspaces
-assign [class="Alacritty"] $ws1
-assign [class="Brave-browser"] $ws2
+assign [class="urxvt"] $ws1
+assign [class="firefox"] $ws2
 assign [class="Chromium"] $ws11
 assign [class="Franz"] $ws3
 assign [class="TelegramDesktop"] $ws3
@@ -318,10 +319,10 @@ bindsym XF86MonBrightnessUp exec /home/colps/.scripts/brightness.sh 5
 #
 bar {
     status_command /bin/bumblebee-status \
-                -m  arch-update kernel uptime memory sensors load \
-                    network_traffic battery_all brightness pasink weather \
+                -m arch-update kernel uptime memory sensors load \
+                    network_traffic battery_all brightness pasink  \
                     date time dunst \
-                -p time.format="%a %R" weather.location="Tatui, BR" \
+                -p time.format="%a %R" \
 		-t onedark-powerline
     output eDP1
     tray_output eDP1
@@ -344,7 +345,7 @@ bar {
 ### dmenu
 bindsym $mod+d exec --no-startup-id dmenu_run -fn "AurulentSansMono NF Mono Regular-8"
 bindsym $mod+q exec --no-startup-id passmenu -fn "AurulentSansMono NF Mono Regular-8"
-#bindsym $mod+d exec --no-startup-id alacritty -t 'fzf-menu' -e 'i3-dmenu-desktop --dmenu=fzf' for_window [title="fzf-menu"] floating enable
+#bindsym $mod+d exec --no-startup-id urxvt -t 'fzf-menu' -e 'i3-dmenu-desktop --dmenu=fzf' for_window [title="fzf-menu"] floating enable
 #
 ### screenshot
 bindsym --release Print exec --no-startup-id "flameshot gui"
@@ -356,10 +357,10 @@ bindsym $mod+x exec xscreensaver-command -lock
 #exec i3lock -i '/home/colps/Pictures/Wallpapers/lock_cave.png' -tf
 #
 ### apps shortcuts
-bindsym $mod+Return	exec alacritty
+bindsym $mod+Return	exec urxvt
 bindsym $mod+z	  	exec rofi -show drun
 bindsym $mod+m		workspace $ws10, exec thunderbird
-bindsym Ctrl+Shift+b    exec /bin/brave
+bindsym Ctrl+Shift+b    exec /bin/firefox
 bindsym Ctrl+Shift+n    workspace $ws9, exec spotify
 bindsym Ctrl+Shift+i    workspace $ws6, exec virtualbox
 bindsym Ctrl+Shift+t    exec \
@@ -380,6 +381,6 @@ exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
-exec --no-startup-id "alacritty"
+exec --no-startup-id "urxvt"
 # checks
 exec --no-startup-id "/home/colps/.scripts/devices_start.sh"

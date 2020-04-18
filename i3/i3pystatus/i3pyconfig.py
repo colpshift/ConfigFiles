@@ -17,7 +17,7 @@ Last Modified: June 14, 2019
 
 import configparser
 from i3pystatus import Status
-from i3pystatus.core.util import internet
+from i3pystatus.scratchpad import internet
 from i3pystatus.mail import imap
 from i3pystatus.network import Network
 from i3pystatus.online import Online

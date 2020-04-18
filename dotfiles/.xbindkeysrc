@@ -41,7 +41,7 @@
     Mod2 + XF86Tools 
 
 #E-mail client
-"/bin/brave"
+"/bin/firefox"
     m:0x10 + c:163
     Mod2 + XF86Mail 
 

@@ -17,23 +17,26 @@ set fileformat=unix
 set autoread            " Automatically re-read files if unmodified inside Vim.
 set autowrite           " Automatically save before commands like:next & :make
 set confirm             " Display confirmation dialog when closing unsaved file
-set shellpipe="2>&1| tee" "option  for C compiler
-set shellredir=">&"       "options for C compiler
+set nostartofline       " Do not jump to first character with page commands.
+set shellpipe="2>&1| tee" " option  for C compiler
+set shellredir=">&"       " options for C compiler
 
 "------------------------------------------------------------------------------
 " plugins package manager - vim-plug
 "------------------------------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
-    "-------------zo--------------
+    "---------------------------
     Plug 'morhetz/gruvbox'
     Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'joshdick/onedark.vim'
-        " vim color theme
+        " vim color themes
     Plug 'ryanoasis/vim-devicons'
         " icons for languages
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-        " status/tabline for vim
+        " lean & mean status/tabline for vim that's light as air
+    Plug 'mkitt/tabline.vim'
+        " Configure tabs within Terminal Vim
     "---------------------------
     Plug 'RRethy/vim-illuminate'
         " automatically highlighting other uses of the word under the cursor
@@ -56,18 +59,12 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'tpope/vim-surround'
         " Quoting/Parenthesizing
     "---------------------------
-    Plug 'dense-analysis/ale'
-        " Provides syntax checking and semantic errors
-    Plug 'Shougo/deoplete.nvim'
-        " Provides completion
-    Plug 'deoplete-plugins/deoplete-zsh'
-        " plugin deoplete
-    Plug 'SirVer/ultisnips'
-        " Snippets
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+        " Provides completion.
+    Plug 'tjdevries/coc-zsh'
+        "zsh completion for coc"
     Plug 'honza/vim-snippets'
         " Snippets
-    Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
-        " Povides Tern-based JavaScript editing support
     Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
         " Markdown preview
     "---------------------------
@@ -79,9 +76,18 @@ call plug#end()
 "
 " airline
   let g:airline_theme='onedark'
-  let g:airline#extensions#tabline#enabled = 1
   let g:airline_powerline_fonts = 1
   let g:airline_highlighting_cache = 1
+  let g:airline_left_sep = ' '
+  let g:airline_left_alt_sep = '|'
+  let g:airline_right_sep = ' '
+  let g:airline_right_alt_sep = '|'
+  let g:airline#extensions#tabline#enabled = 1
+  let g:airline#extensions#tabline#fnamemod = ':t'
+  let g:airline#extensions#tabline#left_sep = ' '
+  let g:airline#extensions#tabline#left_alt_sep = '|'
+  let g:airline#extensions#tabline#right_sep = ' '
+  let g:airline#extensions#tabline#right_alt_sep = '|'
 "
 " rainbow
   let g:rainbow_active = 1
@@ -143,48 +149,46 @@ call plug#end()
   let g:NERDTrimTrailingWhitespace = 1
   let g:NERDToggleCheckAllLines = 1
 "
-" Deoplete
-  let g:deoplete#enable_at_startup = 1
-  if !exists('g:deoplete#omni#input_patterns')
-    let g:deoplete#omni#input_patterns = {}
+" Coc
+  set hidden              " TextEdit might fail if hidden is not set
+  set cmdheight=2         " Give more space for displaying messages
+  set updatetime=300
+  set signcolumn=yes
+  let g:airline#extensions#coc#enabled = 1
+  " Use tab for trigger completion with characters ahead and navigate.
+  inoremap <silent><expr> <TAB>
+    \ pumvisible() ? "\<C-n>" :
+    \ <SID>check_back_space() ? "\<TAB>" :
+    \ coc#refresh()
+  inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+  "
+  function! s:check_back_space() abort
+      let col = col('.') - 1
+      return !col || getline('.')[col - 1]  =~# '\s'
+  endfunction
+  " Use <cr> to confirm completion.
+  if exists('*complete_info')
+      inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+  else
+      imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
   endif
-  " omnifuncs
-  augroup omnifuncs
-    autocmd!
-    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-    autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-    autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+  " Use `[g` and `]g` to navigate diagnostics
+  nmap <silent> [g <Plug>(coc-diagnostic-prev)
+  nmap <silent> ]g <Plug>(coc-diagnostic-next)
+  " smartf plugin
+  " press <esc> to cancel.
+  nmap f <Plug>(coc-smartf-forward)
+  nmap F <Plug>(coc-smartf-backward)
+  nmap ; <Plug>(coc-smartf-repeat)
+  nmap , <Plug>(coc-smartf-repeat-opposite)
+  "
+  augroup Smartf
+  autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
+  autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
   augroup end
-  " automatically closing the scratch window at the top of the vim window
-  autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-  " deoplete tab-complete
-  inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-"
-" tern
-  if exists('g:plugs["tern_for_vim"]')
-    let g:tern_show_argument_hints = 'on_hold'
-    let g:tern_show_signature_in_pum = 1
-    autocmd FileType javascript setlocal omnifunc=tern#Complete
-  endif
-  " keybinding for moving the cursor straight to a variable definition 
-  autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
-"
-" Ultisnips
-   let g:UltiSnipsExpandTrigger="<CR>"
-"
-" Ale
-  let g:ale_fix_on_save = 1
-  let g:ale_completion_tsserver_autoimport = 1
-  let g:airline#extensions#ale#enabled = 1
-  let g:ale_set_loclist = 0
-  let g:ale_sign_column_always = 1
-  let g:ale_set_quickfix = 1
-  let g:ale_set_balloons = 1 
-  let g:ale_hover_to_preview = 1
-  nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-  nmap <silent> <C-j> <Plug>(ale_next_wrap)
+  " highlight plugin
+  autocmd CursorHold * silent call CocActionAsync('highlight')
+  autocmd FileType json syntax match Comment +\/\/.\+$+
 "
 " fzf
   map <silent> <leader>l :FZF<CR>
@@ -216,6 +220,9 @@ call plug#end()
 " mapping and abbreviations
 "------------------------------------------------------------------------------
 "
+" Clear whitespaces
+nnoremap <silent> <F9> <Esc>:%s/\s\+$//e<CR>
+"
 " auto indent the whole file and keep your cursor in the last position
 nmap <leader>ia mzgg=G`z
 "
@@ -231,21 +238,22 @@ inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
 "------------------------------------------------------------------------------
 " Performance
 "------------------------------------------------------------------------------
-set complete-=i		" Limit the files searched for auto-completes.
-set lazyredraw		" Don’t update screen during macro and script execution.
+set complete-=i         " Limit the files searched for auto-completes.
+set lazyredraw          " Don’t update screen during macro and script execution.
 set hid                 " Avoid Vim-Airline to get information on start
+
 "------------------------------------------------------------------------------
 " Text Rendering
 "------------------------------------------------------------------------------
-set display+=lastline	" Always try to show a paragraph’s last line.
-set encoding=utf-8	" Use an encoding that supports unicode.
+set display+=lastline   " Always try to show a paragraph’s last line.
+set encoding=utf-8      " Use an encoding that supports unicode.
 
 "------------------------------------------------------------------------------
 " interface
 "------------------------------------------------------------------------------
 set formatoptions+=l    " make settings permanent.
-set shortmess=atIc	" Don’t show the intro message when starting Vim
-set nostartofline	" Don’t reset cursor start of line when moving around.
+set shortmess=atIc      " Don’t show the intro message when starting Vim
+set nostartofline       " Don’t reset cursor start of line when moving around.
 set number
 set relativenumber
 set cursorline
@@ -256,13 +264,16 @@ set wildmenu            " expand the menu
 set colorcolumn=+1      " color de last column to wrap.
 set textwidth=79        " set width for text
 set winwidth=100        " set the minimal width of the current window.
-set scrolloff=1		" Number screen lines keep above and below cursor.
-set sidescrolloff=5	" Number screen columns keep left and right cursor.
+set scrolloff=1         " Number screen lines keep above and below cursor.
+set sidescrolloff=5     " Number screen columns keep left and right cursor.
 set showcmd             " show command in bottom bar
 set showmode            " change the color in according of mode
 set clipboard+=unnamed  " to use clipboard
-set noerrorbells	" Disable beep on errors.
-set visualbell		" Flash the screen instead of beeping on errors.
+set noerrorbells        " Disable beep on errors.
+set visualbell          " Flash the screen instead of beeping on errors.
+set nojoinspaces        " Prevents inserting spaces after punctuation on join.
+set splitbelow          " Horizontal split below current.
+set splitright          " Vertical split to right of current.
 set background=dark
 colorscheme onedark
 
@@ -277,20 +288,20 @@ set hlsearch        " highlight matches
 "------------------------------------------------------------------------------
 " indention
 "-----------------------------------------------------------------------------
-set wrap breakindent    " Soft wrapping + indentation 
+set wrap breakindent    " Soft wrapping + indentation
 set autoindent          " indent match with the previous line
 set smartindent         " indent after colon for if or for statements
 set smarttab            " Uses shiftwidth instead of tabstop at start of lines
-set expandtab		" Replaces a tab with spaces--more portable
+set expandtab           " Replaces a tab with spaces--more portable
 set shiftwidth=2        " The amount to block indent when using
 set softtabstop=2       " Causes backspace to delete 2 spaces converted tab
-set shiftround		" Round the indentation to earest multiple shiftwidth.
-set backspace=eol,start,indent	" Make sure backspace works in insert mode
+set shiftround          " Round the indentation to earest multiple shiftwidth.
+set backspace=eol,start,indent  " Make sure backspace works in insert mode
 
 "------------------------------------------------------------------------------
 " folding
 "------------------------------------------------------------------------------
-set foldenable	        " enable fold
+set foldenable          " enable fold
 set foldcolumn=2        " show column indent
 set foldmethod=indent   " indentation method
 
@@ -306,11 +317,25 @@ set nowritebackup
 set backupdir=$HOME/.local/share/nvim/backup
 
 "------------------------------------------------------------------------------
+" Error handling
+"------------------------------------------------------------------------------
+"
+" Tell Vim which characters to show for expanded TABs,
+" trailing whitespace, and end-of-lines.
+":set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:
+if &listchars ==# 'eol:$'
+  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+endif
+set list  " Show problematic characters.
+
+" highlight all tabs and trailing whitespace characters.
+highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+match ExtraWhitespace /\s\+$\|\t/
+"------------------------------------------------------------------------------
 " Specific settings by filetype
 "------------------------------------------------------------------------------
-" 
-" Indent
 "
+" Indent
 " 4 spaces
 autocmd Filetype python setlocal sw=4 sts=4 expandtab
 
@@ -324,3 +349,5 @@ let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
 " python
 let g:python3_host_prog = '/bin/python3'
 let g:python2_host_prog = '/bin/python2'
+"
+

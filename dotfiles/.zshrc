@@ -111,25 +111,31 @@ promptinit
 setopt prompt_subst
 
 # Prompt original
-#PR_NO_COLOR="%{$terminfo[sgr0]%}"
-#PS1="[%(!.${PR_RED}%n.$PR_LIGHT_YELLOW%n)%(!.${PR_LIGHT_YELLOW}@.$PR_RED@)$PR_NO_COLOR%(!.${PR_LIGHT_RED}%U%m%u.${PR_LIGHT_GREEN}%U%m%u)$PR_NO_COLOR:%(!.${PR_RED}%2c.${PR_BLUE}%2c)$PR_NO_COLOR]%(?..[${PR_LIGHT_RED}%?$PR_NO_COLOR])%(!.${PR_LIGHT_RED}#.${PR_LIGHT_GREEN}$) "
-#RPS1="$PR_LIGHT_YELLOW(%D{%m-%d %H:%M})$PR_NO_COLOR"
-#unsetopt ALL_EXPORT
+#
+# PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{yellow}%1~%f%b %# '
+# RPROMPT='%*'
+# autoload -Uz vcs_info
+# precmd_vcs_info() { vcs_info }
+# precmd_functions+=( precmd_vcs_info )
+# setopt prompt_subst
+# RPROMPT=\$vcs_info_msg_0_
+# zstyle ':vcs_info:git:*' formats '%F{gray}(%b)%r%f'
+# zstyle ':vcs_info:*' enable git
 
 # Prompt spaceship
+#
 # https://github.com/denysdovhan/spaceship-prompt
 #
 # https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
 #
 ZSH_THEME="spaceship"
-#SPACESHIP_CHAR_PREFIX=" "
-SPACESHIP_CHAR_SYMBOL="-> "
+SPACESHIP_CHAR_SYMBOL=":-) "
+SPACESHIP_TIME_SHOW=true
 SPACESHIP_USER_SHOW=true
 SPACESHIP_HOST_SHOW=true
 SPACESHIP_JOBS_SHOW=false
 SPACESHIP_EXIT_CODE_SHOW=true
 SPACESHIP_VI_MODE_SHOW=false
-#SPACESHIP_DIR_PREFIX="-> "
 prompt spaceship
 
 ### help

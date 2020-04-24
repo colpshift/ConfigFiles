@@ -96,7 +96,7 @@ set $ws11   "GP "
 ### define clients to specific workspaces
 assign [class="urxvt"] $ws1
 assign [class="firefox"] $ws2
-assign [class="Chromium"] $ws11
+assign [class="Google-chrome"] $ws11
 assign [class="Franz"] $ws3
 assign [class="TelegramDesktop"] $ws3
 assign [class="Skype"] $ws3
@@ -378,6 +378,7 @@ exec --no-startup-id "/home/colps/.scripts/xbindkeys_start.sh"
 exec --no-startup-id "/home/colps/.scripts/xscreensaver_start.sh"
 exec --no-startup-id "/home/colps/.scripts/ssh_agent_start.sh"
 exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
+exec_always --no-startup-id autotiling
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"

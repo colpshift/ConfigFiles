@@ -41,4 +41,4 @@ rofi.kb-mode-previous: Alt+h
 
 ! "Take a screenshot of the rofi window" Set from: Default
 ! rofi.kb-screenshot: Alt+j
-rofi.theme: /usr/share/rofi/themes/Arc-Dark.rasi
+rofi.theme: /home/colps/.config/rofi/themes/Arc-Dark.rasi

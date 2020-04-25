@@ -45,14 +45,16 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'kshenoy/vim-signature'
         " place, toggle and display marks.
     Plug 'TaDaa/vimade'
-        "fades your inactive buffers.
+        " fades your inactive buffers.
     Plug 'ap/vim-css-color'
-        "Preview colours in source code.
+        " Preview colours in source code.
+    Plug 'dm1try/golden_size'
+        " automatically resizing the active window to the golden size.
     "---------------------------
     Plug '/usr/share/fzf/'
         " Things you can do with fzf and Vim.
     Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
-        "Ranger running in a floating window
+        " Ranger running in a floating window
     Plug 'preservim/nerdcommenter'
         " nerdy commenting powers
     "---------------------------
@@ -62,7 +64,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
         " Provides completion.
     Plug 'tjdevries/coc-zsh'
-        "zsh completion for coc"
+        " zsh completion for coc"
     Plug 'honza/vim-snippets'
         " Snippets
     Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
@@ -175,6 +177,7 @@ call plug#end()
   " Use `[g` and `]g` to navigate diagnostics
   nmap <silent> [g <Plug>(coc-diagnostic-prev)
   nmap <silent> ]g <Plug>(coc-diagnostic-next)
+  "
   " smartf plugin
   " press <esc> to cancel.
   nmap f <Plug>(coc-smartf-forward)
@@ -186,9 +189,21 @@ call plug#end()
   autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
   autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
   augroup end
+  "
   " highlight plugin
   autocmd CursorHold * silent call CocActionAsync('highlight')
   autocmd FileType json syntax match Comment +\/\/.\+$+
+  "
+  " actions plugin
+  " Remap for do codeAction of selected region
+  function! s:cocActionsOpenFromSelected(type) abort
+    execute 'CocCommand actions.open ' . a:type
+  endfunction
+  xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+  nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+  "
+  " spell checker plugin
+  " Words not in the dictionary files will have a squiggly underline.
 "
 " fzf
   map <silent> <leader>l :FZF<CR>
@@ -320,17 +335,12 @@ set backupdir=$HOME/.local/share/nvim/backup
 " Error handling
 "------------------------------------------------------------------------------
 "
-" Tell Vim which characters to show for expanded TABs,
-" trailing whitespace, and end-of-lines.
-":set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:
+" characters to show for expanded TABs, trailing whitespace and end-of-lines.
 if &listchars ==# 'eol:$'
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+,space:
 endif
-set list  " Show problematic characters.
+set list
 
-" highlight all tabs and trailing whitespace characters.
-highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-match ExtraWhitespace /\s\+$\|\t/
 "------------------------------------------------------------------------------
 " Specific settings by filetype
 "------------------------------------------------------------------------------

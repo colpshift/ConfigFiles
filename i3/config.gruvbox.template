@@ -16,7 +16,7 @@ set $mod Mod4
 #
 ### font window titles
 font pango:Iosevka Term Medium, FontAwesome,\
-    FontAwesome 5 Brands, FontAwesome 5 Free, bold 8
+    FontAwesome 5 Brands, FontAwesome 5 Free, 8
 
 #font pango:AurulentSansMono NF Mono, FontAwesome,\
 #    FontAwesome 5 Brands, FontAwesome 5 Free, Bold 8
@@ -322,7 +322,7 @@ bar {
         -m indicator arch-update kernel uptime memory sensors load \
             network_traffic battery_all brightness pasink date time dunst \
         -p time.format="%a %R" indicator.include="capslock" \
-        -t onedark-powerline
+        -t gruvbox-powerline
     output eDP1
     tray_output eDP1
     position          top
@@ -332,10 +332,10 @@ bar {
         #separator   #eee8d5
         #background  #08302e
         # item                  border      backgr      foregr
-        focused_workspace       #eee8d5     #586e75     #eee8d5
-        active_workspace        #eee8d5     #1E2127     #fdf6e3
-        inactive_workspace      #eee8d5     #1E2127     #c2c2c2
-        urgent_workspace        #eee8d5     #333333     #ffa500
+        focused_workspace       #eee8d5     #3c3836     #d79921
+        active_workspace        #eee8d5     #3c3836     #fdf6e3
+        inactive_workspace      #eee8d5     #3c3836     #f2e5bc
+        urgent_workspace        #eee8d5     #d79921     #3c3836
     }
 }
 

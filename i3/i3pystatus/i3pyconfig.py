@@ -17,32 +17,12 @@ Last Modified: June 14, 2019
 
 import configparser
 from i3pystatus import Status
-from i3pystatu import internet
+#from i3pystatus import mail
 from i3pystatus.mail import imap
 from i3pystatus.network import Network
 from i3pystatus.online import Online
 from i3pystatus.updates import pacman
 #from i3pystatus.weather import weathercom
-from i3pystatus.cpu_freq import class
-
-
-def __getitem__(self, key):
-    pass
-
-def __setitem__(self, key, value):
-    pass
-
-def __delitem__(self, key):
-    pass
-
-def __iter__(self):
-    pass
-
-def __reversed__(self):
-    pass
-
-def __contains__(self, item):
-    pass
 
 STATUS = Status(logfile='$HOME/.config/i3/i3pystatus/i3pystatus.log')
 
@@ -73,7 +53,6 @@ STATUS.register(
 #)
 
 # check email
-
 if internet():
     STATUS.register(
         "mail",

@@ -1,0 +1,41 @@
+{
+    "cSpell.languageSettings": [
+    // This one works with Python
+    {
+        "languageId": "python",
+        // Only check strings
+        "includeRegExpList": [
+            "/#.*/",
+           "/[^\\1]+?\\1/g",
+            "strings"
+        ]
+    },
+    // This one works with JavaScript, Typescript, etc
+    {
+        "languageId": "javascript,typescript",
+        // Turn off compound words, because it is only checking strings.
+        "allowCompoundWords": false,
+        // Only check comments and strings
+        "includeRegExpList": [
+            "CStyleComment",
+            "strings"
+        ]
+    },
+    // Use with cpp or c files
+    {
+        "languageId": "cpp,c",
+        // Turn off compound words, because it is only checking strings.
+        "allowCompoundWords": false,
+        // Only check comments and strings
+        "includeRegExpList": [
+            "CStyleComment",
+            "string"
+        ],
+        // Exclude includes, because they are also strings.
+        "ignoreRegExpList": [
+            "/#include.*/"
+        ]
+    }
+  ]
+}
+

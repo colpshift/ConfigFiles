@@ -175,6 +175,7 @@ alias neofetch="neofetch --color_blocks ff --ascii_distro Anarchy"
 alias sxiv='sxiv -qt'
 alias rofi='rofi -show drun'
 alias urxvt="/home/colps/.scripts/urxvts.sh"
+alias clerk="/bin/clerk -f"
 alias ncmpcpp="ncmpcpp -s media_library"
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'

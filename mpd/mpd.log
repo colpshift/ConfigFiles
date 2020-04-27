@@ -2697,3 +2697,94 @@ Apr 25 21:47 : update: removing Ed Sheeran/Le Carso - Ed Sheeran Cover Hit Me Ba
 Apr 25 21:47 : update: added Ed Sheeran/Ed Sheeran - Hit Me Baby One More Time.mp3
 Apr 25 21:57 : exception: Failed to open '/home/colps/.config/mpd/playlists/---.m3u': No such file or directory
 Apr 25 21:57 : exception: No such playlist
+Apr 26 02:40 : player: played "Ed Sheeran/Ed Sheeran - Shape of You.mp3"
+Apr 26 08:56 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 26 08:56 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 26 09:37 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 26 11:46 : update: added Musicas/Art Popular, João Paulo E Daniel - Fricote.mp3
+Apr 26 11:46 : update: added Musicas/Art Popular - E_No_Pagode.mp3
+Apr 26 11:46 : update: added Musicas/Art Popular - Falando Segredo.mp3
+Apr 26 11:46 : update: added Musicas/Grupo Art Popular - Agamamou.mp3
+Apr 26 11:46 : update: added Musicas/Maroon 5 - Sugar.mp3
+Apr 26 11:46 : update: added Musicas/Maroon 5 - Sunday Morning (Closed Captioned).mp3
+Apr 26 11:46 : update: added Musicas/Jessika Brito - Art Popular tá doendo demais essa saudade.mp3
+Apr 26 11:46 : update: added Musicas/Fifth Harmony - Worth It.mp3
+Apr 26 11:47 : update: added Musicas/Shawn Mendes - Stitches.mp3
+Apr 26 11:47 : update: added Musicas/Fifth Harmony - Sledgehammer.mp3
+Apr 26 11:47 : update: added Musicas/Fifth Harmony - Work from Home.mp3
+Apr 26 11:47 : update: added Musicas/Christina Aguilera - Fighter.mp3
+Apr 26 11:47 : update: added Musicas/Pink - Don't Let Me Get Me.mp3
+Apr 26 11:47 : update: added Musicas/Shawn Mendes - Treat You Better.mp3
+Apr 26 11:47 : update: added Musicas/Skank - É Proibido Fumar _ Peter Gunn Theme.mp3
+Apr 26 11:47 : update: added Musicas/Skank - Saideira.mp3
+Apr 26 11:47 : update: added Musicas/Ira! - Pobre Paulista.mp3
+Apr 26 11:47 : update: added Musicas/Ira! - Tarde Vazia.mp3
+Apr 26 11:47 : update: added Musicas/09. IRA! - Gritos Na Multidão.mp3
+Apr 26 11:47 : update: added Musicas/Ira! - Dias de luta.mp3
+Apr 26 11:48 : update: added Musicas/wigwambam - Legião Urbana -Tempo Perdido + Letras.mp3
+Apr 26 11:48 : update: added Musicas/Legião Urbana - Quase sem querer.mp3
+Apr 26 11:48 : update: added Musicas/Cypress Hill - Insane in the Brain.mp3
+Apr 26 11:48 : update: added Musicas/Legião Urbana - Será.mp3
+Apr 26 11:48 : update: added Musicas/Ultraje a Rigor - Independente futebol clube.mp3
+Apr 26 11:48 : update: added Musicas/Capital Inicial - Veraneio Vascaína.mp3
+Apr 26 11:48 : update: added Musicas/Legião Urbana - Geração Coca-Cola.mp3
+Apr 26 11:48 : update: added Musicas/Eu Vou Estar (Acústico MTV) - Capital Inicial.mp3
+Apr 26 11:48 : update: added Musicas/Shaggy - Angel.mp3
+Apr 26 11:48 : update: added Musicas/Nickelback - Rockstar.mp3
+Apr 26 11:48 : update: added Musicas/Audioslave - Like a Stone.mp3
+Apr 26 11:48 : update: added Musicas/Nickelback - Far Away (Radio Edit).mp3
+Apr 26 11:48 : update: added Musicas/Nickelback - Savin' Me.mp3
+Apr 26 11:48 : update: added Musicas/Nickelback - How You Remind Me.mp3
+Apr 26 11:48 : update: added Musicas/Oguz-Rap ft. Rax, Em-G (Ayyildiz Records) & Bin Basi - Osmanli Torunu Diriliş 15 TEMMUZ Şarkısı.mp3
+Apr 26 11:48 : update: added Musicas/Nelly - Dilemma ft. Kelly Rowland.mp3
+Apr 26 11:48 : update: added Musicas/Nelly - Hot In Herre (Album Version).mp3
+Apr 26 11:49 : update: added Musicas/Nickelback - Photograph.mp3
+Apr 26 11:49 : update: added Musicas/Nickelback - Someday.mp3
+Apr 26 11:49 : update: added Musicas/Audioslave - Doesn't Remind Me (Live from Sessions@AOL Music).mp3
+Apr 26 11:49 : update: added Musicas/Matchbox Twenty - Push.mp3
+Apr 26 11:50 : update: added Musicas/Spin Doctors - Little Miss Can't Be Wrong.mp3
+Apr 26 11:50 : update: added Musicas/Matchbox Twenty - Real World (2007 Remaster).mp3
+Apr 26 11:50 : update: added Musicas/Alice in Chains - Man in the Box.mp3
+Apr 26 11:50 : update: added Musicas/Imagine Dragons - Radioactive.mp3
+Apr 26 11:50 : update: added Musicas/Creed - My Sacrifice.mp3
+Apr 26 11:50 : update: added Musicas/The Rolling Stones - Harlem Shuffle (Remastered 2009).mp3
+Apr 26 11:50 : update: added Musicas/The Black Crowes - Remedy.mp3
+Apr 26 11:50 : update: added Musicas/Matchbox Twenty - 3AM.mp3
+Apr 26 11:50 : update: added Musicas/The Rolling Stones - Beast Of Burden (Remastered).mp3
+Apr 26 11:50 : update: added Musicas/Sonic Youth - 100%.mp3
+Apr 26 11:50 : update: added Musicas/The Beatles - Can't Buy Me Love.mp3
+Apr 26 11:50 : update: added Musicas/Creed - One Last Breath (Radio Version).mp3
+Apr 26 11:50 : update: added Musicas/Matchbox Twenty - She's so Mean.mp3
+Apr 26 11:50 : update: added Musicas/Creed - With Arms Wide Open.mp3
+Apr 26 11:50 : update: added Musicas/Matchbox Twenty - Unwell (2007 Remaster).mp3
+Apr 26 11:50 : update: added Musicas/Stone Temple Pilots - Plush.mp3
+Apr 26 11:50 : update: added Musicas/Savage Garden - Truly Madly Deeply.mp3
+Apr 26 11:50 : update: added Musicas/The Beatles - I Want To Hold Your Hand (Remastered 2015).mp3
+Apr 26 11:50 : update: added Musicas/Henrique & Juliano - Não Tô Valendo Nada.mp3
+Apr 26 11:50 : update: added Musicas/Nick Cave & The Bad Seeds - Breathless.mp3
+Apr 26 11:50 : update: added Musicas/Nick Cave & The Bad Seeds - Bring It On.mp3
+Apr 26 11:50 : update: added Musicas/Johnny Rivers - You've Lost That Lovin' Feelin' (Live At Whisky A Go Go _ 1966).mp3
+Apr 26 11:50 : update: added Musicas/Henrique & Juliano - Pensa, Explica.mp3
+Apr 26 11:50 : update: added Musicas/Vários - Tá Namorando E Me Querendo - Vários.mp3
+Apr 26 11:50 : update: added Musicas/Henrique & Juliano - Pra Que Juízo.mp3
+Apr 26 11:50 : update: added Musicas/Henrique & Juliano - Vai Brincando.mp3
+Apr 26 11:50 : update: added Musicas/Henrique e Juliano - Avisa aí - DVD Novas Histórias - Ao vivo em Recife.mp3
+Apr 26 11:50 : update: added Musicas/Henrique & Juliano - Parece Piada.mp3
+Apr 26 11:51 : update: added Musicas/Sam Smith - Stay With Me.mp3
+Apr 26 11:51 : update: added Musicas/Sam Smith - Like I Can.mp3
+Apr 26 11:51 : update: added Musicas/John Legend, Lindsey Stirling - All of Me (Violin Remix).mp3
+Apr 26 11:51 : update: added Musicas/Sam Smith - I'm Not The Only One.mp3
+Apr 26 11:51 : update: added Musicas/Jason Mraz - I'm Yours.mp3
+Apr 26 11:51 : update: added Musicas/Sinéad O'Connor - Nothing Compares 2U.mp3
+Apr 26 12:14 : update: added /Ece Seçkin - Adeyyo.mp3
+Apr 26 12:14 : update: added /Baby Bash - Baby, I'm Back.mp3
+Apr 26 12:14 : update: added /Murphy Lee - Shake Ya Tailfeather (Radio).mp3
+Apr 26 12:14 : update: added /Ne-Yo - SO SICK.mp3
+Apr 26 12:19 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Apr 26 12:23 : player: played "Ece Seçkin - Adeyyo.mp3"
+Apr 26 12:30 : player: played "Musicas/Matchbox Twenty - Push.mp3"
+Apr 26 12:34 : player: played "Musicas/Matchbox Twenty - Unwell (2007 Remaster).mp3"
+Apr 26 12:38 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Apr 26 12:41 : player: played "Ne-Yo - SO SICK.mp3"
+Apr 26 12:45 : player: played "Ece Seçkin - Adeyyo.mp3"
+Apr 26 20:08 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

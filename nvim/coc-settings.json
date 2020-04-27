@@ -36,6 +36,45 @@
             "/#include.*/"
         ]
     }
+  ],
+  "cSpell.ignoreWords": [
+    "colps",
+    "colpshift",
+    "compact",
+    "coms",
+    "gruvbox",
+    "honza",
+    "iamcco",
+    "iluminate",
+    "katex",
+    "kevinhwang",
+    "kshenoy",
+    "layout",
+    "leave",
+    "let",
+    "luochen",
+    "machakann",
+    "mkdp",
+    "mkit",
+    "mkitt",
+    "morhetz",
+    "mzgg",
+    "neoclide",
+    "nerd",
+    "options",
+    "preview",
+    "qutebrowser",
+    "r",
+    "rethy",
+    "rnvimr",
+    "saiw",
+    "sexy",
+    "smartf",
+    "tjdevries",
+    "tmpdir",
+    "tpope",
+    "vimade",
+    "ysiw"
   ]
 }
 

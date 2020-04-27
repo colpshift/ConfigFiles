@@ -355,8 +355,9 @@ bindsym $mod+x exec xscreensaver-command -lock
 bindsym $mod+Return	exec urxvt
 bindsym $mod+d  	exec rofi -show drun
 bindsym $mod+q          exec rofi-pass
-bindsym $mod+m		workspace $ws7, exec stremio
 bindsym Ctrl+Shift+b    exec /bin/firefox
+bindsym Ctrl+Shift+z    exec zathura
+bindsym Ctrl+Shift+m    workspace $ws7, exec stremio
 bindsym Ctrl+Shift+n    workspace $ws9, exec urxvt -e clerk
 bindsym Ctrl+Shift+i    workspace $ws6, exec virtualbox
 bindsym Ctrl+Shift+t    exec \
@@ -370,7 +371,6 @@ exec --no-startup-id "/home/colps/.scripts/autocutsel_start.sh"
 exec --no-startup-id "/home/colps/.scripts/udiskie_start.sh"
 exec --no-startup-id "/home/colps/.scripts/mpd_start.sh"
 exec --no-startup-id "/home/colps/.scripts/xbindkeys_start.sh"
-#exec --no-startup-id "/home/colps/.scripts/xss-lock_start.sh"
 exec --no-startup-id "/home/colps/.scripts/xscreensaver_start.sh"
 exec --no-startup-id "/home/colps/.scripts/ssh_agent_start.sh"
 exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"

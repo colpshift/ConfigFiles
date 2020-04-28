@@ -14,16 +14,10 @@ set nocompatible
 syntax on
 filetype plugin indent on
 set fileformat=unix
-set encoding=utf-8      " Use an encoding that supports unicode.
+set autoread            " Automatically re-read files if unmodified inside Vim.
+set autowrite           " Automatically save before commands like:next & :make
 set confirm             " Display confirmation dialog when closing unsaved file
 set nostartofline       " Do not jump to first character with page commands.
-
-"------------------------------------------------------------------------------
-" Performance
-"------------------------------------------------------------------------------
-set complete-=i         " Limit the files searched for auto-completes.
-set lazyredraw          " Don’t update screen during macro and script execution.
-set hid                 " Avoid Vim-Airline to get information on start
 
 "------------------------------------------------------------------------------
 " plugins package manager - vim-plug
@@ -149,6 +143,11 @@ call plug#end()
   let g:NERDToggleCheckAllLines = 1
 "
 " Coc
+  set hidden              " keep multiple buffers open.
+  set cmdheight=2         " Give more space for displaying messages
+  set updatetime=300
+  set timeoutlen=100      " default timeout 100ms
+  set signcolumn=yes
   let g:airline#extensions#coc#enabled = 1
   " Use tab for trigger completion with characters ahead and navigate.
   inoremap <silent><expr> <TAB>
@@ -248,16 +247,22 @@ inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
 nnoremap <F3> :bnext<CR>
 nnoremap <F4> :bprevious<CR>
 
+"------------------------------------------------------------------------------
+" Performance
+"------------------------------------------------------------------------------
+set complete-=i         " Limit the files searched for auto-completes.
+set lazyredraw          " Don’t update screen during macro and script execution.
+set hid                 " Avoid Vim-Airline to get information on start
 
+"------------------------------------------------------------------------------
+" Text Rendering
+"------------------------------------------------------------------------------
+set display+=lastline   " Always try to show a paragraph’s last line.
+set encoding=utf-8      " Use an encoding that supports unicode.
 
 "------------------------------------------------------------------------------
 " interface
 "------------------------------------------------------------------------------
-set hidden              " keep multiple buffers open.
-set cmdheight=2         " Give more space for displaying messages
-set updatetime=300
-set timeoutlen=100      " default timeout 100ms
-set signcolumn=yes
 set formatoptions+=l    " make settings permanent.
 set shortmess=atIc      " Don’t show the intro message when starting Vim
 set nostartofline       " Don’t reset cursor start of line when moving around.
@@ -276,7 +281,7 @@ set scrolloff=1         " Number screen lines keep above and below cursor.
 set sidescrolloff=5     " Number screen columns keep left and right cursor.
 set showcmd             " show command in bottom bar
 set showmode            " change the color in according of mode
-set clipboard+=unnamedplus " copy and paste between vim and all.
+set clipboard+=unnamedplus  " copy and paste between vim and all.
 set noerrorbells        " Disable beep on errors.
 set visualbell          " Flash the screen instead of beeping on errors.
 set nojoinspaces        " Prevents inserting spaces after punctuation on join.
@@ -355,7 +360,7 @@ let g:python3_host_prog = '/bin/python3'
 let g:python2_host_prog = '/bin/python2'
 "
 " markdown
-set conceallevel=0    "show `` in markdown files
+"set conceallevel=0    "show `` in markdown files
 "
 " clang
 "set shellpipe="2>&1| tee" " option  for C compiler

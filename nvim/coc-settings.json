@@ -1,4 +1,7 @@
 {
+    // enable / disable spell checker
+    "cSpell.enabled": false,
+    // define settings
     "cSpell.languageSettings": [
     // This one works with Python
     {
@@ -38,6 +41,7 @@
     }
   ],
   "cSpell.ignoreWords": [
+    "codecademy",
     "colps",
     "colpshift",
     "compact",
@@ -48,6 +52,7 @@
     "iluminate",
     "katex",
     "kevinhwang",
+    "kpis",
     "kshenoy",
     "layout",
     "leave",

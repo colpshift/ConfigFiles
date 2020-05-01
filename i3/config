@@ -36,8 +36,9 @@ default_border pixel 1
 ### hide edge borders = none|vertical|horizontal|both|smart
 hide_edge_borders smart
 #
-### make all urxvt use a 1-pixel border:
-for_window [class="urxvt"] border pixel 1
+### make all st use a 1-pixel border:
+for_window [class="st-256color"] border pixel 1
+for_window [class="Alacritty"] border pixel 1
 
 ### marks ---------------------------------------------------------------------
 #
@@ -90,11 +91,11 @@ set $ws6    "6 "
 set $ws7    "7 "
 set $ws8    "8 "
 set $ws9    "9 "
-set $ws10   "10 "
+set $ws10   "10 "
 set $ws11   "GP "
 #
 ### define clients to specific workspaces
-assign [class="urxvt"] $ws1
+assign [class="Alacritty"] $ws1
 assign [class="firefox"] $ws2
 assign [class="Google-chrome"] $ws11
 assign [class="Franz"] $ws3
@@ -117,8 +118,8 @@ assign [class="VirtualBox Manager"] $ws6
 assign [class="VirtualBox Machine"] $ws6
 assign [class="Stremio"] $ws7
 assign [class="Tor Browse"] $ws8
-assign [class="Spotify"] $ws9
-assign [class="Thunderbird"] $ws10
+assign [class="Clerk"] $ws9
+assign [class="Bashtop"] $ws10
 #
 ### switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -352,13 +353,13 @@ bindsym $mod+x exec xscreensaver-command -lock
 #exec i3lock -i '/home/colps/Pictures/Wallpapers/lock_cave.png' -tf
 #
 ### apps shortcuts
-bindsym $mod+Return	exec urxvt
+bindsym $mod+Return	exec alacritty
 bindsym $mod+d  	exec rofi -show drun
 bindsym $mod+q          exec rofi-pass
 bindsym Ctrl+Shift+b    exec /bin/firefox
 bindsym Ctrl+Shift+z    exec zathura
-bindsym Ctrl+Shift+m    workspace $ws7, exec stremio
-bindsym Ctrl+Shift+n    workspace $ws9, exec urxvt -e clerk
+bindsym Ctrl+Shift+m    workspace $ws10, exec st -e bashtop
+bindsym Ctrl+Shift+n    workspace $ws9, exec st -e clerk
 bindsym Ctrl+Shift+i    workspace $ws6, exec virtualbox
 bindsym Ctrl+Shift+t    exec \
 /home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser
@@ -378,6 +379,7 @@ exec_always --no-startup-id autotiling
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
-exec --no-startup-id "urxvt"
+exec --no-startup-id "alacritty"
+
 # checks
 exec --no-startup-id "/home/colps/.scripts/devices_start.sh"

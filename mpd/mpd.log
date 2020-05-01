@@ -2788,3 +2788,43 @@ Apr 26 12:38 : player: played "Baby Bash - Baby, I'm Back.mp3"
 Apr 26 12:41 : player: played "Ne-Yo - SO SICK.mp3"
 Apr 26 12:45 : player: played "Ece Seçkin - Adeyyo.mp3"
 Apr 26 20:08 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 27 06:48 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 27 10:18 : update: added /Cher - The Shoop Shoop Song (Its In His Kiss).mp3
+Apr 27 10:18 : update: added /Cher - Believe.mp3
+Apr 27 10:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 27 10:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 27 10:21 : player: played "Cher - The Shoop Shoop Song (Its In His Kiss).mp3"
+Apr 27 10:25 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Apr 27 10:29 : player: played "Ne-Yo - SO SICK.mp3"
+Apr 27 16:13 : player: played "Ece Seçkin - Adeyyo.mp3"
+Apr 27 16:40 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 27 16:40 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 28 01:29 : player: played "Ece Seçkin - Adeyyo.mp3"
+Apr 28 06:33 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 28 06:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 28 16:23 : player: played "Ece Seçkin - Adeyyo.mp3"
+Apr 28 17:01 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 28 17:01 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 29 00:05 : player: played "Ece Seçkin - Adeyyo.mp3"
+Apr 29 06:37 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 29 06:37 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 29 17:16 : player: played "Ece Seçkin - Adeyyo.mp3"
+Apr 29 17:16 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 29 17:20 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Apr 29 17:25 : player: played "Cher - The Shoop Shoop Song (Its In His Kiss).mp3"
+Apr 29 17:28 : player: played "Ed Sheeran/Ed Sheeran - Hit Me Baby One More Time.mp3"
+Apr 29 17:35 : player: played "Musicas/Henrique & Juliano - Não Tô Valendo Nada.mp3"
+Apr 29 17:38 : player: played "Musicas/Henrique e Juliano - Avisa aí - DVD Novas Histórias - Ao vivo em Recife.mp3"
+Apr 30 06:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 30 06:40 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 30 07:54 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 30 14:45 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 30 14:48 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 30 17:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 30 17:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 30 17:28 : player: played "Ed Sheeran/Ed Sheeran - New Man.mp3"
+Apr 30 17:31 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 30 17:31 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 30 22:15 : player: played "Ed Sheeran/Ed Sheeran - New Man.mp3"
+Apr 30 22:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Apr 30 22:19 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

@@ -9,8 +9,8 @@
 # https://github.com/alacritty/alacritty
 #
 
-#env:
-  #TERM: xterm-256color
+env:
+  TERM: xterm-256color
 
 window:
   dimensions:
@@ -37,7 +37,7 @@ window:
   decorations: full
 
   # Startup Mode (changes require restart)
-  #startup_mode: Windowed
+  startup_mode: Windowed
 
   # Window title
   #title: Alacritty
@@ -50,83 +50,114 @@ window:
     #general: Alacritty
 
 scrolling:
-  history: 10000
+  history: 0
 
   # Number of lines the viewport will move for every line scrolled when
   multiplier: 3
 
-  # Scroll to the bottom when new text is written to the terminal.
-  #auto_scroll: false
-
 # Font configuration
 font:
   normal:
-    family: AurulentSansMono Nerd Font Mono
+    family: Iosevka Term
     style: Regular
   bold:
-    family: AurulentSansMono Nerd Font Mono
+    family: Iosevka Term
     style: Bold
   italic:
-    family: AurulentSansMono Nerd Font Mono
+    family: Iosevka Term
     style: Italic
   bold_italic:
-    family: AurulentSansMono Nerd Font Mono
+    family: Iosevka Term
     style: Bold Italic
   size: 8
 
+  # Offset is the extra space around each character. offset.y can be thought of
+  # as modifying the linespacing, and offset.x as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 0
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increase the x offset to move the glyph to
+  # the right, increase the y offset to move the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
 # bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: true
+#draw_bold_text_with_bright_colors: true
 
 # GTK theme (Linux only)
 #
-gtk_theme_variant: dark
+#gtk_theme_variant: dark
 
-
-# Colors (One Dark)
+# Colors (Doom One)
 colors:
   # Default colors
   primary:
-    background: '0x1e2127'
-    foreground: '0xabb2bf'
+    background: '0x282c34'
+    foreground: '0xbbc2cf'
 
   # Normal colors
   normal:
-    black:   '0x1e2127'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
+    black:   '0x282c34'
+    red:     '0xff6c6b'
+    green:   '0x98be65'
+    yellow:  '0xecbe7b'
+    blue:    '0x51afef'
     magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xabb2bf'
+    cyan:    '0x46d9ff'
+    white:   '0xbbc2cf'
 
-  # Bright colors
-  bright:
-    black:   '0x5c6370'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xffffff'
+# # Colors (One Dark)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x1e2127'
+#     foreground: '0xabb2bf'
+#
+#   # Normal colors
+#   normal:
+#     black:   '0x1e2127'
+#     red:     '0xe06c75'
+#     green:   '0x98c379'
+#     yellow:  '0xd19a66'
+#     blue:    '0x61afef'
+#     magenta: '0xc678dd'
+#     cyan:    '0x56b6c2'
+#     white:   '0xabb2bf'
+#
+#   # Bright colors
+#   bright:
+#     black:   '0x5c6370'
+#     red:     '0xe06c75'
+#     green:   '0x98c379'
+#     yellow:  '0xd19a66'
+#     blue:    '0x61afef'
+#     magenta: '0xc678dd'
+#     cyan:    '0x56b6c2'
+#     white:   '0xffffff'
+
+  # Indexed Colors
+  #indexed_colors: [] 
 
 visual_bell:
   animation: EaseOutExpo
-  duration: 3
+  duration: 0 
   color: '0xffffff'
 
-background_opacity: 0.80
+background_opacity: 0.5
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
   save_to_clipboard: true
 
-dynamic_title: true
+dynamic_title: false
 
 cursor:
   style: Beam
   unfocused_hollow: true
+  thickness: 0.15
+
 
 live_config_reload: true
 
@@ -137,7 +168,7 @@ mouse:
   url:
     launcher:
       program: xdg-open
-      args: []
+      #args: []
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
@@ -152,5 +183,4 @@ key_bindings:
   - { key: Subtract, mods: Control,       action: DecreaseFontSize }
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
   - { key: Return,   mods: Alt,           action: ToggleFullscreen }
-
-  #
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }

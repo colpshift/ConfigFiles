@@ -129,7 +129,7 @@ setopt prompt_subst
 # https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
 #
 ZSH_THEME="spaceship"
-SPACESHIP_CHAR_SYMBOL=":-) "
+#SPACESHIP_CHAR_SYMBOL=":-) "
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_USER_SHOW=true
 SPACESHIP_HOST_SHOW=true
@@ -340,7 +340,7 @@ source /usr/share/doc/pkgfile/command-not-found.zsh
 # interactive cd
 source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 # zsh user completions
-echo 'fpath+=${ZDOTDIR:-~}/.zsh_functions' >> ${ZDOTDIR:-~}/.zshrc}'}'
+fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # fzf completion
 ################

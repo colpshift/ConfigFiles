@@ -24,6 +24,7 @@ set nostartofline       " Do not jump to first character with page commands.
 set complete-=i         " Limit the files searched for auto-completes.
 set lazyredraw          " Don’t update screen during macro and script execution.
 set hid                 " Avoid Vim-Airline to get information on start
+set ttyfast             " Improve smoothness of redrawing   
 
 "------------------------------------------------------------------------------
 " plugins package manager - vim-plug
@@ -75,7 +76,7 @@ call plug#end()
 "------------------------------------------------------------------------------
 "
 " airline
-  let g:airline_theme='dracula'
+  let g:airline_theme='gruvbox'
   let g:airline_powerline_fonts = 1
   let g:airline_highlighting_cache = 1
   let g:airline_left_sep = ' '
@@ -246,9 +247,6 @@ inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
 "
 " move to next and previous buffer
 nnoremap <F3> :bnext<CR>
-nnoremap <F4> :bprevious<CR>
-
-
 
 "------------------------------------------------------------------------------
 " interface
@@ -256,7 +254,6 @@ nnoremap <F4> :bprevious<CR>
 set hidden              " keep multiple buffers open.
 set cmdheight=2         " Give more space for displaying messages
 set updatetime=300
-set timeoutlen=100      " default timeout 100ms
 set signcolumn=yes
 set formatoptions+=l    " make settings permanent.
 set shortmess=atIc      " Don’t show the intro message when starting Vim
@@ -267,7 +264,7 @@ set cursorline
 set ruler               " right side of the status line at the bottom
 set mouse=a             " allow mouse clicks to change cursor position
 set showmatch           " highlight matching [{()}]
-set wildmenu            " expand the menu
+set wildmenu            " Wildmenu enable
 set colorcolumn=+1      " color de last column to wrap.
 set textwidth=79        " set width for text
 set winwidth=110        " set the minimal width of the current window.
@@ -284,15 +281,16 @@ set splitbelow          " Horizontal split below current.
 set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
-colorscheme dracula
-
+colorscheme gruvbox
+color
 "------------------------------------------------------------------------------
 " searching
 "------------------------------------------------------------------------------
-set ignorecase      " case insensitive
-set smartcase       " use case if any caps used
-set incsearch       " show match as search proceeds
+set ignorecase        " case insensitive
+set smartcase         " use case if any caps used
+set incsearch         " show match as search proceeds
 set hlsearch is       " highlight matches
+set inccommand=split  " Show interactive preview of substitute changes
 
 "------------------------------------------------------------------------------
 " indention

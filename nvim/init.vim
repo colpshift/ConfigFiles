@@ -1,10 +1,12 @@
-"
+:"
 " File: .vimrc
 " Path: $HOME
 " Tags: neovim editor
 " Description: nvim configuration file
 " Last Modified: 28/04/2020 00:17
 " Author: Colpshift
+"
+" https://neovim.io/
 "
 
 "------------------------------------------------------------------------------
@@ -24,7 +26,7 @@ set nostartofline       " Do not jump to first character with page commands.
 set complete-=i         " Limit the files searched for auto-completes.
 set lazyredraw          " Don’t update screen during macro and script execution.
 set hid                 " Avoid Vim-Airline to get information on start
-set ttyfast             " Improve smoothness of redrawing   
+set ttyfast             " Improve smoothness of redrawing
 
 "------------------------------------------------------------------------------
 " plugins package manager - vim-plug
@@ -322,6 +324,18 @@ set undodir=$HOME/.local/share/nvim/undo
 set nobackup      " Recommended by coc
 set nowritebackup " Recommended by coc
 set backupdir=$HOME/.local/share/nvim/backup
+
+"------------------------------------------------------------------------------
+" terminal
+"------------------------------------------------------------------------------
+"
+" terminal st
+if &term =~ '256color'
+    " disable Background Color Erase (BCE) so that color schemes
+    " render properly when inside 256-color tmux and GNU screen.
+    " see also http://sunaku.github.io/vim-256color-bce.html
+    set t_ut=
+endif
 
 "------------------------------------------------------------------------------
 " Error handling

@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <title>pass.zsh-completion « completion « src - password-store - Simple password manager using gpg and ordinary unix directories.</title>
-<meta name='generator' content='cgit v1.2.1-28-gf32c'/>
+<meta name='generator' content='cgit v1.2.3-4-ga26e'/>
 <meta name='robots' content='index, nofollow'/>
 <link rel='stylesheet' type='text/css' href='/cgit.css'/>
 <link rel='shortcut icon' href='/favicon.ico'/>
@@ -394,7 +394,7 @@ _pass
 </pre></div>
 </code></pre></td></tr></table>
 </div> <!-- class=content -->
-<div class='footer'>Copyright &copy; 1996 &ndash; 2019 Jason A. Donenfeld. All Rights Reverse Engineered.</div>
+<div class='footer'>Copyright &copy; 1996 &ndash; 2020 Jason A. Donenfeld. All Rights Reverse Engineered.</div>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-135234-5']);

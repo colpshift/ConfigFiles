@@ -36,6 +36,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'morhetz/gruvbox'
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'joshdick/onedark.vim'
+  Plug 'rafi/awesome-vim-colorschemes'
   " vim color themes
   Plug 'ryanoasis/vim-devicons'
   " icons for languages
@@ -78,7 +79,7 @@ call plug#end()
 "------------------------------------------------------------------------------
 "
 " airline
-  let g:airline_theme='gruvbox'
+  let g:airline_theme='afterglow'
   let g:airline_powerline_fonts = 1
   let g:airline_highlighting_cache = 1
   let g:airline_left_sep = ' '
@@ -283,7 +284,7 @@ set splitbelow          " Horizontal split below current.
 set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
-colorscheme gruvbox
+colorscheme afterglow
 color
 "------------------------------------------------------------------------------
 " searching

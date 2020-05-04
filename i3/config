@@ -96,7 +96,6 @@ set $ws11   "GP "
 #
 ### define clients to specific workspaces
 assign [class="Alacritty"] $ws1
-assign [class="firefox"] $ws2
 assign [class="qutebrowser"] $ws2
 assign [class="Google-chrome"] $ws11
 assign [class="Franz"] $ws3
@@ -317,13 +316,15 @@ bindsym XF86MonBrightnessUp exec /home/colps/.scripts/brightness.sh 5
 ### i3 status bar ------------------------------------------------------------
 #
 # https://github.com/tobi-wan-kenobi/bumblebee-status
-# https://github.com/tobi-wan-kenobi/bumblebee-status/wiki/Available-Modules
+# https://github.com/tobi-wan-kenobi/bumbgxlebee-status/wiki/Available-Modules
 #
 bar {
     status_command /bin/bumblebee-status \
         -m indicator arch-update kernel uptime memory sensors load \
-            network_traffic battery_all brightness pasink date time dunst \
+            network_traffic battery_all brightness pasink weather \
+            date time dunst \
         -p time.format="%a %R" indicator.include="capslock" \
+            weather.showcity="false" weather.location="Tatui, BR"  \
         -t onedark-powerline
     output eDP1
     tray_output eDP1
@@ -354,7 +355,7 @@ bindsym $mod+x exec xscreensaver-command -lock
 #exec i3lock -i '/home/colps/Pictures/Wallpapers/lock_cave.png' -tf
 #
 ### apps shortcuts
-bindsym $mod+Return	exec st
+bindsym $mod+Return	exec alacritty
 bindsym $mod+d  	exec rofi -show drun
 bindsym $mod+q          exec rofi-pass
 bindsym Ctrl+Shift+b    exec /bin/qutebrowser
@@ -381,8 +382,7 @@ exec_always --no-startup-id autotiling
 # apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
-exec --no-startup-id "st"
-exec --no-startup-id "st"
+exec --no-startup-id alacritty
 
 # checks
 exec --no-startup-id "/home/colps/.scripts/devices_start.sh"

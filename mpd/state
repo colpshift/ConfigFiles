@@ -2,8 +2,8 @@ sw_volume: 95
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
 state: pause
-current: 9
-time: 7.068000
+current: 1
+time: 13.011000
 random: 0
 repeat: 0
 single: 0
@@ -12,16 +12,6 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Musicas/Matchbox Twenty - She's so Mean.mp3
-1:Musicas/Matchbox Twenty - 3AM.mp3
-2:Musicas/Matchbox Twenty - Real World (2007 Remaster).mp3
-3:Musicas/Matchbox Twenty - Push.mp3
-4:Musicas/Matchbox Twenty - Unwell (2007 Remaster).mp3
-5:Baby Bash - Baby, I'm Back.mp3
-6:Ne-Yo - SO SICK.mp3
-7:Cher - The Shoop Shoop Song (Its In His Kiss).mp3
-8:Ed Sheeran/Ed Sheeran - Hit Me Baby One More Time.mp3
-9:Ed Sheeran/Ed Sheeran - New Man.mp3
-10:Musicas/Henrique & Juliano - Não Tô Valendo Nada.mp3
-11:Musicas/Henrique e Juliano - Avisa aí - DVD Novas Histórias - Ao vivo em Recife.mp3
+0:Homegrown - Temptation Got Me.mp3
+1:Get On Your Feet (from Dangerous Lies - Netflix).mp3
 playlist_end

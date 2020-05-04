@@ -2845,3 +2845,59 @@ May 02 09:06 : exception: RTIOThread could not get realtime scheduling, continui
 May 02 09:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 May 02 11:07 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 May 02 11:07 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 02 12:49 : player: played "Ed Sheeran/Ed Sheeran - New Man.mp3"
+May 02 12:50 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 02 12:50 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 02 13:38 : update: added /Sade - By Your Side.mp3
+May 02 13:38 : update: added /Sade - King of Sorrow.mp3
+May 02 13:38 : update: added /Sade - Kiss Of Life.mp3
+May 02 13:38 : update: added /Sade - Your Love Is King.mp3
+May 02 13:38 : update: added /Sade - Cherish the Day.mp3
+May 02 13:38 : update: added /Sade - Smooth Operator.mp3
+May 02 13:38 : update: added /Sade - The Sweetest Taboo.mp3
+May 02 13:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 02 13:58 : update: added /De Alma Serrana - Porca Veia.mp3
+May 02 13:58 : update: added /Porca Véia featuring Grupo Cordiona · Noé Teixeira · Grupo Cordiona - Abraço ao Paraná (Ao Vivo).mp3
+May 02 13:58 : update: added /15 - Vanerão Gaúcho - Porca Véia & Os Gaiteiros do Cordiona.mp3
+May 02 13:58 : update: added /Porca Véia - Meu Cambicho.mp3
+May 02 13:59 : update: added /03 - Meu Paraíso - Porca Véia.mp3
+May 02 13:59 : update: added /Rubem Ayang Oliveira Música Folclórica e Regional - Porca Veia   Alma de Gaiteiro.mp3
+May 02 13:59 : update: added /Porca Véia - Recorrendo os Aguapés.mp3
+May 02 13:59 : update: added /Porca Véia - Ginete de Fronteira (Ao Vivo).mp3
+May 02 13:59 : update: added /Porca Véia - Marca Borrada (Live).mp3
+May 02 13:59 : update: added /01 - Fandangueiro - Porca Véia.mp3
+May 02 13:59 : update: added /Porca Véia - No Coração do Rio Grande.mp3
+May 02 13:59 : update: added /Porca Véia - Luz do Meu Rancho.mp3
+May 02 13:59 : update: added /joaoparaiba - Balanço Do Bugio Grupo Cordiona O Grupo Do Porca Veia joaoparaiba #0744 @1671.mp3
+May 02 13:59 : update: added /Porca Véia - Fama de Bagunceiro.mp3
+May 02 13:59 : update: added /Rubem Ayang Oliveira Música Folclórica e Regional - Porca Véia      Bugio do Chaleira Preta.mp3
+May 02 13:59 : update: added /Cleiton Schneider - sentimento de trovador.mpg(porca veia o segundo DVD).mp3
+May 02 14:00 : update: added /Porca Véia - Morena Luxuosa.mp3
+May 02 14:00 : update: added /Porca Véia - Fazenda Da Viúva (Live).mp3
+May 02 14:00 : update: added /Do Fundo da Grota - Baitaca.mp3
+May 02 14:00 : update: added /Porca Véia - Balanço Do Bugio (Live).mp3
+May 02 14:01 : update: added /Rubem Ayang Oliveira Música Folclórica e Regional - Porca Véia   Sentimento de Trovador.mp3
+May 02 14:01 : update: added /Porca Véia - Xote Afigurado.mp3
+May 02 14:01 : update: added /Porca Véia - Baile na Serra (Ao Vivo).mp3
+May 02 14:01 : update: added /Porca Véia - Gaiteiro Por Demais (Live).mp3
+May 02 14:01 : update: added /08 - Castração a Pealo - Porca Véia & Os Gaiteiros do Cordiona.mp3
+May 02 14:01 : update: added /PORCA VÉIA - De Toda Lida.mp3
+May 02 14:04 : update: added /DVD Porca Véia - Eu Gostei do Baile Véio.mp3
+May 02 14:06 : player: played "Sade - King of Sorrow.mp3"
+May 02 14:11 : player: played "Porca Véia featuring Grupo Cordiona · Noé Teixeira · Grupo Cordiona - Abraço ao Paraná (Ao Vivo).mp3"
+May 02 14:41 : player: played "Porca Véia - Meu Cambicho.mp3"
+May 02 15:16 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 02 15:17 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 02 19:22 : update: added /Homegrown - Temptation Got Me.mp3
+May 02 19:22 : update: added /Get On Your Feet (from Dangerous Lies - Netflix).mp3
+May 02 19:22 : player: played "Porca Véia - Meu Cambicho.mp3"
+May 02 19:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 03 17:31 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 03 17:31 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 03 17:31 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 03 20:31 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+May 03 20:32 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 03 20:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 03 22:51 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+May 03 22:55 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 03 22:55 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

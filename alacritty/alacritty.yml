@@ -17,28 +17,21 @@ window:
     columns: 0
     lines: 0
 
-  # The FreeType rasterizer needs to know the device DPI for best results
   dpi:
     x: 90.0
     y: 90.0
 
-  # Window decorations
   decorations: full
-
-  # Startup Mode (changes require restart)
   startup_mode: Windowed
 
 scrolling:
-  history: 0
-
-  # Number of lines the viewport will move for every line scrolled when
+  history: 10000
   multiplier: 3
 
-# Font configuration
 font:
   normal:
     family: Iosevka Term
-    style: Regular
+    style: Medium
   bold:
     family: Iosevka Term
     style: Bold
@@ -50,10 +43,9 @@ font:
     style: Bold Italic
   size: 8
 
-# bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# GTK theme (Linux only)
+# GTK theme 
 #
 #gtk_theme_variant: dark
 

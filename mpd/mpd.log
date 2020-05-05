@@ -2901,3 +2901,11 @@ May 03 20:33 : exception: OutputThread could not get realtime scheduling, contin
 May 03 22:51 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
 May 03 22:55 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 May 03 22:55 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 04 00:48 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+May 04 06:39 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 04 06:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 04 06:44 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+May 04 06:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 04 06:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 04 18:03 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 04 18:07 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"

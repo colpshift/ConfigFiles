@@ -50,6 +50,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   " place, toggle and display marks.
   Plug 'TaDaa/vimade'
   " fades your inactive buffers.
+  Plug 'luochen1990/rainbow'
+  " show diff level of parentheses in diff color
   Plug 'ap/vim-css-color'
   " Preview colours in source code.
   "---------------------------
@@ -57,9 +59,9 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Things you can do with fzf and Vim.
   Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
   " Ranger running in a floating window
+  "---------------------------
   Plug 'preservim/nerdcommenter'
   " nerdy commenting powers
-  "---------------------------
   Plug 'machakann/vim-sandwich'
   " search/select/edit sandwiched textobjects.
   Plug 'andymass/vim-matchup'
@@ -74,6 +76,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Deoplete plugins
   Plug 'dense-analysis/ale'
   " Provide fix.
+  Plug 'Shougo/neosnippet.vim'
+  Plug 'Shougo/neosnippet-snippets'
   Plug 'honza/vim-snippets'
   " Snippets
   Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
@@ -109,8 +113,10 @@ call plug#end()
   " [`           Jump to prev mark
 "
 " iluminate
-  " Time in milliseconds (default 250)
-  let g:Illuminate_delay = 200
+  let g:Illuminate_delay = 250
+"
+" Rainbow
+  let g:rainbow_active = 1
 "
 " Sandwich
   " include - saiw( makes foo to (foo).
@@ -122,7 +128,7 @@ call plug#end()
 " Markdown preview
   let g:mkdp_auto_start = 0
   let g:mkdp_auto_close = 1
-  let g:mkdp_browser = '/bin/qutebrowser'
+  let g:mkdp_browser = '/bin/firefox'
   let g:mkdp_preview_options = {
         \ 'mkit': {},
         \ 'katex': {},
@@ -161,6 +167,7 @@ call plug#end()
 "
 " Deoplete
   let g:deoplete#enable_at_startup = 1
+  let g:deoplete#sources#syntax#min_keyword_length = 2
   inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
   "
   " plugin dictionary
@@ -178,17 +185,29 @@ call plug#end()
   let g:ale_lint_on_enter = 0
   let g:ale_set_loclist = 0
   let g:ale_set_quickfix = 1
-  let g:ale_list_window_size = 5
   nmap <silent> [g <Plug>(ale_previous_wrap)
   nmap <silent> ]g <Plug>(ale_next_wrap)
   " ale fixers
-  let g:ale_fixers = {
-    \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-    \}
-  " ale deoplete integration
-  call deoplete#custom#option('sources', {
-    \ '_': ['ale'],
-    \})
+  let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace']}
+"
+" Neosnippet
+  let g:neosnippet#snippets_directory='$HOME/.local/share/nvim/plugged/vim-snippets/snippets/'
+  " Plugin key-mappings.
+  imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  xmap <C-k>     <Plug>(neosnippet_expand_target)
+  " SuperTab like snippets behavior.
+  imap <expr><TAB>
+    \ pumvisible() ? "\<C-n>" :
+    \ neosnippet#expandable_or_jumpable() ?
+    \   "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+  smap <expr><TAB> 
+    \ neosnippet#expandable_or_jumpable() ?
+    \   "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+  " For conceal markers.
+  if has('conceal')
+    set conceallevel=2 concealcursor=niv
+  endif
 "
 " fzf
   map <silent> <leader>l :FZF<CR>

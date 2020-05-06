@@ -17,12 +17,12 @@ Last Modified: June 14, 2019
 
 import configparser
 from i3pystatus import Status
-from i3pystatus import imaammsn
 from i3pystatus.mail import imap
 from i3pystatus.network import Network
 from i3pystatus.online import Online
 from i3pystatus.updates import pacman
-from i3pystatus.weather import weathercom
+#from i3pystatus.weather import weathercom
+import i3pystatus.online
 
 STATUS = Status(logfile='$HOME/.config/i3/i3pystatus/i3pystatus.log')
 

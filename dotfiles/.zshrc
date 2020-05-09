@@ -343,6 +343,13 @@ source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 # zsh user completions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
+# Terminal st
+#############
+function zle-line-init () { echoti smkx }
+function zle-line-finish () { echoti rmkx }
+zle -N zle-line-init
+zle -N zle-line-finish
+
 # fzf completion
 ################
 #export FZF_COMPLETION_TRIGGER='~~'

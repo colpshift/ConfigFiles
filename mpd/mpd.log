@@ -2909,3 +2909,42 @@ May 04 06:47 : exception: RTIOThread could not get realtime scheduling, continui
 May 04 06:47 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 May 04 18:03 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 May 04 18:07 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+May 05 00:35 : player: played "Homegrown - Temptation Got Me.mp3"
+May 05 06:42 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 05 06:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 05 08:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 05 08:57 : player: played "Sade - By Your Side.mp3"
+May 05 09:02 : player: played "Sade - Cherish the Day.mp3"
+May 05 09:11 : player: played "Sade - King of Sorrow.mp3"
+May 05 09:15 : player: played "Sade - Kiss Of Life.mp3"
+May 05 09:19 : player: played "Sade - Smooth Operator.mp3"
+May 05 09:24 : player: played "Sade - The Sweetest Taboo.mp3"
+May 05 09:28 : player: played "Sade - Your Love Is King.mp3"
+May 05 20:38 : player: played "Sade - By Your Side.mp3"
+May 05 20:43 : player: played "Sade - Cherish the Day.mp3"
+May 05 20:47 : player: played "Sade - King of Sorrow.mp3"
+May 05 20:52 : player: played "Sade - Kiss Of Life.mp3"
+May 05 20:56 : player: played "Sade - Smooth Operator.mp3"
+May 05 21:00 : player: played "Homegrown - Temptation Got Me.mp3"
+May 05 21:03 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+May 05 21:08 : player: played "Sade - By Your Side.mp3"
+May 05 21:12 : player: played "Sade - Cherish the Day.mp3"
+May 05 21:17 : player: played "Sade - King of Sorrow.mp3"
+May 05 21:21 : player: played "Sade - Kiss Of Life.mp3"
+May 06 01:11 : player: played "Sade - Smooth Operator.mp3"
+May 06 06:39 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 06 06:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 06 12:24 : player: played "Sade - Smooth Operator.mp3"
+May 06 12:25 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 06 12:25 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 06 23:38 : player: played "Sade - Smooth Operator.mp3"
+May 07 06:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 07 06:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 08 16:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 08 16:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 08 16:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 08 16:08 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+May 08 16:11 : player: played "Homegrown - Temptation Got Me.mp3"
+May 08 17:37 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+May 08 17:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 08 17:50 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

@@ -2,8 +2,8 @@ sw_volume: 95
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
 state: pause
-current: 0
-time: 80.069000
+current: 1
+time: 143.974000
 random: 0
 repeat: 0
 single: 0
@@ -14,4 +14,11 @@ mixrampdelay: -1.000000
 playlist_begin
 0:Homegrown - Temptation Got Me.mp3
 1:Get On Your Feet (from Dangerous Lies - Netflix).mp3
+2:Sade - By Your Side.mp3
+3:Sade - Cherish the Day.mp3
+4:Sade - King of Sorrow.mp3
+5:Sade - Kiss Of Life.mp3
+6:Sade - Smooth Operator.mp3
+7:Sade - The Sweetest Taboo.mp3
+8:Sade - Your Love Is King.mp3
 playlist_end

@@ -2937,3 +2937,14 @@ May 06 06:39 : exception: OutputThread could not get realtime scheduling, contin
 May 06 12:24 : player: played "Sade - Smooth Operator.mp3"
 May 06 12:25 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 May 06 12:25 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 06 23:38 : player: played "Sade - Smooth Operator.mp3"
+May 07 06:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 07 06:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 08 16:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 08 16:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 08 16:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 08 16:08 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+May 08 16:11 : player: played "Homegrown - Temptation Got Me.mp3"
+May 08 17:37 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+May 08 17:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 08 17:50 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

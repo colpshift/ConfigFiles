@@ -35,25 +35,5 @@
 
 
 
-#Music
-"/bin/spotify"
-    m:0x10 + c:179
-    Mod2 + XF86Tools 
-
-#E-mail client
-"/bin/firefox"
-    m:0x10 + c:163
-    Mod2 + XF86Mail 
-
-#Calculator
-"/bin/mate-calculator"
-    m:0x10 + c:148
-    Mod2 + XF86Calculator 
-
-#Terminal
-"/bin/alacritty"
-    m:0x0 + c:180
-    XF86HomePage 
-
 #
 # End of xbindkeys configuration

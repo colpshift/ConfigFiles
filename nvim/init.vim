@@ -1,4 +1,4 @@
-:"
+"
 " File: .vimrc
 " Path: $HOME
 " Tags: neovim editor
@@ -28,7 +28,7 @@ set lazyredraw          " Don’t update screen during macro and script executio
 set hid                 " Avoid Vim-Airline to get information on start
 set ttyfast             " Improve smoothness of redrawing
 
-"--------------------------------------zR--------------------------------------
+"------------------------------------------------------------------------------
 " plugins package manager - vim-plug
 "------------------------------------------------------------------------------
 call plug#begin('~/.local/share/nvim/plugged')
@@ -36,6 +36,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'morhetz/gruvbox'
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'joshdick/onedark.vim'
+  Plug 'Lokaltog/vim-distinguished'
   Plug 'rafi/awesome-vim-colorschemes'
   " vim color themes
   Plug 'ryanoasis/vim-devicons'
@@ -90,7 +91,7 @@ call plug#end()
 "------------------------------------------------------------------------------
 "
 " airline
-  let g:airline_theme='afterglow'
+  let g:airline_theme='distinguished'
   let g:airline_powerline_fonts = 1
   let g:airline_highlighting_cache = 1
   let g:airline_left_sep = ' '
@@ -201,7 +202,7 @@ call plug#end()
     \ pumvisible() ? "\<C-n>" :
     \ neosnippet#expandable_or_jumpable() ?
     \   "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-  smap <expr><TAB> 
+  smap <expr><TAB>
     \ neosnippet#expandable_or_jumpable() ?
     \   "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
   " For conceal markers.
@@ -290,7 +291,7 @@ set splitbelow          " Horizontal split below current.
 set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
-colorscheme afterglow
+colorscheme molokai
 color
 "------------------------------------------------------------------------------
 " searching

@@ -15,6 +15,7 @@ set $mod Mod4
 ### titles --------------------------------------------------------------------
 #
 ### font window titles
+#
 font pango:Iosevka Term Medium, FontAwesome,\
     FontAwesome 5 Brands, FontAwesome 5 Free, bold 8
 #
@@ -336,9 +337,10 @@ bar {
 
 ### Apps ----------------------------------------------------------------------
 #
-### dmenu
+### dmenu and rofi
 bindsym $mod+d exec --no-startup-id dmenu_run -fn "Iosevka Term Medium Bold-8"
 bindsym $mod+q exec --no-startup-id passmenu -fn "Iosevka Term Medium Bold-8"
+bindsym $mod+z exec rofi -show drun
 #
 ### screenshot
 bindsym --release Print exec --no-startup-id "flameshot gui"
@@ -363,11 +365,11 @@ exec --no-startup-id "/home/colps/.scripts/dunst_start.sh"
 exec --no-startup-id "/home/colps/.scripts/autocutsel_start.sh"
 exec --no-startup-id "/home/colps/.scripts/udiskie_start.sh"
 exec --no-startup-id "/home/colps/.scripts/mpd_start.sh"
-exec --no-startup-id "/home/colps/.scripts/xbindkeys_start.sh"
+#exec --no-startup-id "/home/colps/.scripts/xbindkeys_start.sh"
 exec --no-startup-id "/home/colps/.scripts/ssh_agent_start.sh"
 exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
 exec --no-startup-id "/home/colps/.scripts/picom_start.sh"
-exec --no-startup-id "/home/colps/.scripts/xss-lock_start.sh"
+#exec --no-startup-id "/home/colps/.scripts/xss-lock_start.sh"
 exec --no-startup-id "/home/colps/.scripts/xscreensaver_start.sh"
 exec_always --no-startup-id autotiling
 # apps

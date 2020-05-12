@@ -16,9 +16,11 @@ set $mod Mod4
 #
 ### font window titles
 #
-font pango:Iosevka Term Medium, FontAwesome,\
-    FontAwesome 5 Brands, FontAwesome 5 Free, bold 8
+# font pango:Iosevka Term Medium, FontAwesome,\
+#     FontAwesome 5 Brands, FontAwesome 5 Free, bold 8
 #
+font pango:LiberationMono Nerd Font, FontAwesome,\
+    FontAwesome 5 Brands, FontAwesome 5 Free, bold 8
 ### window title alignment = left|center|right
 title_align left
 
@@ -338,8 +340,8 @@ bar {
 ### Apps ----------------------------------------------------------------------
 #
 ### dmenu and rofi
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "Iosevka Term Medium Bold-8"
-bindsym $mod+q exec --no-startup-id passmenu -fn "Iosevka Term Medium Bold-8"
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "LiberationMono Nerd Font Bold-8"
+bindsym $mod+q exec --no-startup-id passmenu -fn "LiberationMono Nerd Font Bold-8"
 bindsym $mod+z exec rofi -show drun
 #
 ### screenshot
@@ -357,6 +359,9 @@ bindsym Ctrl+Shift+z    exec zathura
 bindsym Ctrl+Shift+m    workspace $ws10, exec st -e bashtop
 bindsym Ctrl+Shift+n    workspace $ws9, exec st -e clerk
 bindsym Ctrl+Shift+i    workspace $ws6, exec virtualbox
+bindsym Ctrl+Shift+t    exec \
+sh -c '"/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" --detach || ([ !  -x "/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy %k
+
 #
 ### apps on i3 startup
 #

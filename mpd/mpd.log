@@ -2961,3 +2961,6 @@ May 09 17:25 : player: played "Sade - King of Sorrow.mp3"
 May 09 17:29 : player: played "Sade - Kiss Of Life.mp3"
 May 09 17:33 : player: played "Sade - Smooth Operator.mp3"
 May 09 17:38 : player: played "Sade - The Sweetest Taboo.mp3"
+May 09 23:58 : player: played "Sade - Your Love Is King.mp3"
+May 10 07:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 10 07:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

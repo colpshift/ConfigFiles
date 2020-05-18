@@ -2964,3 +2964,65 @@ May 09 17:38 : player: played "Sade - The Sweetest Taboo.mp3"
 May 09 23:58 : player: played "Sade - Your Love Is King.mp3"
 May 10 07:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 May 10 07:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 13 19:06 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 13 19:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 14 00:36 : player: played "Sade - Your Love Is King.mp3"
+May 14 06:53 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 14 06:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 14 07:01 : player: played "Sade - Your Love Is King.mp3"
+May 14 07:07 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 14 07:08 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 14 21:02 : player: played "Sade - Your Love Is King.mp3"
+May 14 21:09 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 14 21:09 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 14 23:04 : player: played "Sade - Your Love Is King.mp3"
+May 14 23:05 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 14 23:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 15 00:06 : player: played "Sade - Your Love Is King.mp3"
+May 15 00:07 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 15 00:08 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 15 01:21 : player: played "Sade - Your Love Is King.mp3"
+May 15 06:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 15 06:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 15 17:45 : player: played "Sade - Your Love Is King.mp3"
+May 15 17:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 15 17:49 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 16 01:38 : player: played "Sade - Your Love Is King.mp3"
+May 16 09:52 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 16 09:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 16 09:56 : player: played "Sade - Your Love Is King.mp3"
+May 16 09:58 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 16 09:58 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 16 10:39 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 16 10:42 : player: played "01 - Fandangueiro - Porca Véia.mp3"
+May 16 10:48 : player: played "03 - Meu Paraíso - Porca Véia.mp3"
+May 16 10:52 : player: played "08 - Castração a Pealo - Porca Véia & Os Gaiteiros do Cordiona.mp3"
+May 16 10:56 : player: played "15 - Vanerão Gaúcho - Porca Véia & Os Gaiteiros do Cordiona.mp3"
+May 16 11:01 : player: played "Cleiton Schneider - sentimento de trovador.mpg(porca veia o segundo DVD).mp3"
+May 16 11:05 : player: played "De Alma Serrana - Porca Veia.mp3"
+May 16 11:11 : player: played "joaoparaiba - Balanço Do Bugio Grupo Cordiona O Grupo Do Porca Veia joaoparaiba #0744 @1671.mp3"
+May 16 11:26 : player: played "Porca Véia - Recorrendo os Aguapés.mp3"
+May 16 11:34 : player: played "Porca Véia - Xote Afigurado.mp3"
+May 16 11:38 : player: played "Porca Véia - Fama de Bagunceiro.mp3"
+May 16 11:44 : player: played "Porca Véia - No Coração do Rio Grande.mp3"
+May 16 11:50 : player: played "Porca Véia - Balanço Do Bugio (Live).mp3"
+May 16 11:56 : player: played "Porca Véia - Fazenda Da Viúva (Live).mp3"
+May 16 12:02 : player: played "Porca Véia - Gaiteiro Por Demais (Live).mp3"
+May 16 12:06 : player: played "Porca Véia - Ginete de Fronteira (Ao Vivo).mp3"
+May 16 12:10 : player: played "Porca Véia - Marca Borrada (Live).mp3"
+May 16 12:16 : player: played "Porca Véia - Baile na Serra (Ao Vivo).mp3"
+May 16 12:21 : player: played "Porca Véia featuring Grupo Cordiona · Noé Teixeira · Grupo Cordiona - Abraço ao Paraná (Ao Vivo).mp3"
+May 16 12:24 : player: played "Porca Véia - Meu Cambicho.mp3"
+May 16 12:27 : player: played "Porca Véia - Luz do Meu Rancho.mp3"
+May 16 20:43 : player: played "08 - Castração a Pealo - Porca Véia & Os Gaiteiros do Cordiona.mp3"
+May 16 20:44 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 16 20:44 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 17 00:00 : player: played "08 - Castração a Pealo - Porca Véia & Os Gaiteiros do Cordiona.mp3"
+May 17 00:02 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 17 00:02 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 17 01:17 : player: played "08 - Castração a Pealo - Porca Véia & Os Gaiteiros do Cordiona.mp3"
+May 17 01:18 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 17 01:18 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 17 02:18 : player: played "08 - Castração a Pealo - Porca Véia & Os Gaiteiros do Cordiona.mp3"
+May 17 09:32 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 17 09:32 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

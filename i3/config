@@ -95,8 +95,7 @@ set $ws11   "GP "
 #
 ### define clients to specific workspaces
 assign [class="Alacritty"] $ws1
-assign [class="qutebrowser"] $ws2
-assign [class="Chromium"] $ws11
+#assign [class="Brave-browser"] $ws2
 assign [class="TelegramDesktop"] $ws3
 assign [class="Skype"] $ws3
 assign [class="Zathura"] $ws4
@@ -104,20 +103,23 @@ assign [class="Master PDF Editor"] $ws4
 assign [class="Simple-scan"] $ws4
 assign [class="Et"] $ws4
 assign [class="Wps"] $ws4
-assign [class="Wpp"] $ws4
+assign [class="Wpp"] $ws4 
 assign [class="Wpspdf"] $ws4
 assign [class="Subl3"] $ws4
 assign [class="Sxiv"] $ws5
-assign [class="Gimp"] $ws5
+assign [class="Gimp"] $ws5 # fotoshop
+assign [class="Inkscape"] $ws5 # coreldraw
 assign [class="Nitrogen"] $ws5
 assign [class="Dia"] $ws5
 assign [class="MindMaster"] $ws5
 assign [class="VirtualBox Manager"] $ws6
 assign [class="VirtualBox Machine"] $ws6
 assign [class="Stremio"] $ws7
+assign [class="electronplayer"] $ws7
 assign [class="Tor Browse"] $ws8
 assign [class="Clerk"] $ws9
 assign [class="Bashtop"] $ws10
+assign [class="Chromium"] $ws10
 #
 ### switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -316,27 +318,27 @@ bindsym XF86MonBrightnessUp exec /home/colps/.scripts/brightness.sh 5
 # https://github.com/tobi-wan-kenobi/bumblebee-status
 # https://github.com/tobi-wan-kenobi/bumbgxlebee-status/wiki/Available-Modules
 #
-bar {
-    status_command /bin/bumblebee-status \
-      -m arch-update kernel uptime memory sensors load network_traffic \
-          battery_all brightness pasink weather date time dunst \
-      -p time.format="%a %R" weather.location="Tatui, BR" \
-      -t onedark-powerline
-    output eDP1
-    tray_output eDP1
-    position top
-    workspace_buttons yes
-    colors {
-        #separator   #eee8d5
-        #background  #08302e
-        # item                  border      backgr      foregr
-        focused_workspace       #eee8d5     #586e75     #eee8d5
-        active_workspace        #eee8d5     #1E2127     #fdf6e3
-        inactive_workspace      #eee8d5     #1E2127     #c2c2c2
-        urgent_workspace        #eee8d5     #333333     #ffa500
-    }
-}
-
+# bar {
+#     status_command /bin/bumblebee-status \
+#       -m arch-update kernel uptime memory sensors load network_traffic \
+#           battery_all brightness pasink weather date time dunst \
+#       -p time.format="%a %R" weather.location="Tatui, BR" \
+#       -t onedark-powerline
+#     output eDP1
+#     tray_output eDP1
+#     position top
+#     workspace_buttons yes
+#     colors {
+#         #separator   #eee8d5
+#         #background  #08302e
+#         # item                  border      backgr      foregr
+#         focused_workspace       #eee8d5     #586e75     #eee8d5
+#         active_workspace        #eee8d5     #1E2127     #fdf6e3
+#         inactive_workspace      #eee8d5     #1E2127     #c2c2c2
+#         urgent_workspace        #eee8d5     #333333     #ffa500
+#     }
+# }
+#
 ### Apps ----------------------------------------------------------------------
 #
 ### dmenu and rofi
@@ -354,7 +356,7 @@ bindsym $mod+x exec xscreensaver-command -lock
 #
 ### apps shortcuts
 bindsym $mod+Return	exec st
-bindsym Ctrl+Shift+b    exec /bin/qutebrowser
+bindsym Ctrl+Shift+b    exec /bin/brave
 bindsym Ctrl+Shift+z    exec zathura
 bindsym Ctrl+Shift+m    workspace $ws10, exec st -e bashtop
 bindsym Ctrl+Shift+n    workspace $ws9, exec st -e clerk

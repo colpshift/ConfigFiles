@@ -345,10 +345,10 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # Terminal st
 #############
-function zle-line-init () { echoti smkx }
-function zle-line-finish () { echoti rmkx }
-zle -N zle-line-init
-zle -N zle-line-finish
+#function zle-line-init () { echoti smkx }
+#function zle-line-finish () { echoti rmkx }
+#zle -N zle-line-init
+#zle -N zle-line-finish
 
 # fzf completion
 ################

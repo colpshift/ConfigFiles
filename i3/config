@@ -16,11 +16,12 @@ set $mod Mod4
 #
 ### font window titles
 #
-# font pango:Iosevka Term Medium, FontAwesome,\
-#     FontAwesome 5 Brands, FontAwesome 5 Free, bold 8
+font pango:Iosevka Term Medium, FontAwesome,\
+     FontAwesome 5 Brands, FontAwesome 5 Free, bold 8
 #
-font pango:LiberationMono Nerd Font, FontAwesome,\
-    FontAwesome 5 Brands, FontAwesome 5 Free, bold 8
+#font pango:LiberationMono Nerd Font, FontAwesome,\
+#    FontAwesome 5 Brands, FontAwesome 5 Free, bold 8
+#
 ### window title alignment = left|center|right
 title_align left
 
@@ -30,13 +31,12 @@ title_align left
 smart_borders on
 #
 ### default border style for new windows
-default_border pixel 1
+default_border pixel
 #
 ### hide edge borders = none|vertical|horizontal|both|smart
 hide_edge_borders smart
 #
 ### make all st use a 1-pixel border:
-for_window [class="st-256color"] border pixel 1
 for_window [class="Alacritty"] border pixel 1
 
 ### marks ---------------------------------------------------------------------
@@ -66,7 +66,7 @@ bindsym $mod+f fullscreen toggle
 ### workspaces ----------------------------------------------------------------
 #
 ### orientation for new workspaces = horizontal|vertical|auto
-default_orientation auto
+default_orientation vertical
 #
 ### layout mode for new containers = default|stacking|tabbed
 workspace_layout default
@@ -96,8 +96,8 @@ set $ws11   "GP "
 ### define clients to specific workspaces
 assign [class="Alacritty"] $ws1
 #assign [class="Brave-browser"] $ws2
-assign [class="TelegramDesktop"] $ws3
-assign [class="Skype"] $ws3
+assign [class="telegram-desktop"] $ws3
+assign [class="skype"] $ws3
 assign [class="Zathura"] $ws4
 assign [class="Master PDF Editor"] $ws4
 assign [class="Simple-scan"] $ws4
@@ -119,7 +119,7 @@ assign [class="electronplayer"] $ws7
 assign [class="Tor Browse"] $ws8
 assign [class="Clerk"] $ws9
 assign [class="Bashtop"] $ws10
-assign [class="Chromium"] $ws10
+assign [class="Chromium"] $ws11
 #
 ### switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -148,7 +148,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 ### focus ---------------------------------------------------------------------
 #
 ### focus wrapping = yes|no|force
-force_focus_wrapping yes
+force_focus_wrapping no
 #
 ### focus on window activation = smart|urgent|focus|none
 focus_on_window_activation urgent
@@ -181,8 +181,8 @@ bindsym $mod+Shift+Right move right
 smart_gaps on
 #
 ### set inner/outer gaps
-gaps inner 4
-gaps outer 2
+gaps inner 5
+gaps outer 3
 #
 ### gap mode = press $mod+Shift+g to enter the gap mode.
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -237,13 +237,17 @@ bindsym $mod+Ctrl+t split toggle
 #
 #
 ### focus the parent/child container
-bindsym $mod+a focus parent
+bindsym $mod+u focus parent
 
 ### windows -------------------------------------------------------------------
 #
 ### automatically putting clients on floating windows layout
 for_window [class="Pavucontrol"] floating enable
 for_window [class="fzf-menu"] floating enable
+for_window [class="telegram-desktop"] enable
+for_window [class="skype"] enable
+for_window [class="Gimp"] enable
+for_window [class="Dia"] enable
 #
 ### close the window
 # use Control+w
@@ -258,10 +262,10 @@ bindsym $mod+Shift+e exec \
 --no-startup-id i3-msg exit, mode "default"
 #
 ### toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+y floating toggle
 #
 ### change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+y focus mode_toggle
 #
 ### resize window
 bindsym $mod+r mode "resize"
@@ -318,71 +322,68 @@ bindsym XF86MonBrightnessUp exec /home/colps/.scripts/brightness.sh 5
 # https://github.com/tobi-wan-kenobi/bumblebee-status
 # https://github.com/tobi-wan-kenobi/bumbgxlebee-status/wiki/Available-Modules
 #
-# bar {
-#     status_command /bin/bumblebee-status \
-#       -m arch-update kernel uptime memory sensors load network_traffic \
-#           battery_all brightness pasink weather date time dunst \
-#       -p time.format="%a %R" weather.location="Tatui, BR" \
-#       -t onedark-powerline
-#     output eDP1
-#     tray_output eDP1
-#     position top
-#     workspace_buttons yes
-#     colors {
-#         #separator   #eee8d5
-#         #background  #08302e
-#         # item                  border      backgr      foregr
-#         focused_workspace       #eee8d5     #586e75     #eee8d5
-#         active_workspace        #eee8d5     #1E2127     #fdf6e3
-#         inactive_workspace      #eee8d5     #1E2127     #c2c2c2
-#         urgent_workspace        #eee8d5     #333333     #ffa500
-#     }
-# }
-#
+bar {
+    status_command /bin/bumblebee-status \
+      -m arch-update kernel uptime traffic memory load sensors battery_all \
+        brightness pasink weather date dunst \
+      -p date.format="%a %b %d %Y %R" weather.location="Tatui, BR" \
+      -t iceberg-dark-powerline
+    output eDP1
+    tray_output eDP1
+    position top
+    workspace_buttons yes
+    colors {
+        #separator   #eee8d5
+        #background  #08302e
+        # item                  border      backgr      foregr
+        focused_workspace       #eee8d5     #586e75     #eee8d5
+        active_workspace        #eee8d5     #1E2127     #fdf6e3
+        inactive_workspace      #eee8d5     #1E2127     #c2c2c2
+        urgent_workspace        #eee8d5     #333333     #ffa500
+    }
+}
+
 ### Apps ----------------------------------------------------------------------
-#
-### dmenu and rofi
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "LiberationMono Nerd Font Bold-8"
-bindsym $mod+q exec --no-startup-id passmenu -fn "LiberationMono Nerd Font Bold-8"
-bindsym $mod+z exec rofi -show drun
 #
 ### screenshot
 bindsym --release Print exec --no-startup-id "flameshot gui"
 #
 ### lock screen
 # bindsym $mod+x exec "i3lock -i /usr/share/backgrounds/lamp.png -tf"
-bindsym $mod+x exec xscreensaver-command -lock
 # screens carousel molecule photopile vermiculate
+bindsym $mod+x exec xscreensaver-command -lock
+#
+### dmenu and rofi
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "Iosevka Term Medium bold-8"
+bindsym $mod+q exec --no-startup-id passmenu -fn "Iosevka Term Medium bold-8"
+bindsym $mod+z exec rofi -show drun
 #
 ### apps shortcuts
-bindsym $mod+Return	exec st
+bindsym $mod+Return	exec alacritty
 bindsym Ctrl+Shift+b    exec /bin/brave
 bindsym Ctrl+Shift+z    exec zathura
-bindsym Ctrl+Shift+m    workspace $ws10, exec st -e bashtop
-bindsym Ctrl+Shift+n    workspace $ws9, exec st -e clerk
+bindsym Ctrl+Shift+m    workspace $ws10, exec "st -e bashtop"
+bindsym Ctrl+Shift+n    workspace $ws9, exec "st -e clerk"
 bindsym Ctrl+Shift+i    workspace $ws6, exec virtualbox
 bindsym Ctrl+Shift+t    exec \
 sh -c '"/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" --detach || ([ !  -x "/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy %k
-
 #
-### apps on i3 startup
-#
-# daemons
+# startup daemons
 exec --no-startup-id "/home/colps/.scripts/dunst_start.sh"
 exec --no-startup-id "/home/colps/.scripts/autocutsel_start.sh"
 exec --no-startup-id "/home/colps/.scripts/udiskie_start.sh"
 exec --no-startup-id "/home/colps/.scripts/mpd_start.sh"
-#exec --no-startup-id "/home/colps/.scripts/xbindkeys_start.sh"
 exec --no-startup-id "/home/colps/.scripts/ssh_agent_start.sh"
 exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
 exec --no-startup-id "/home/colps/.scripts/picom_start.sh"
-#exec --no-startup-id "/home/colps/.scripts/xss-lock_start.sh"
 exec --no-startup-id "/home/colps/.scripts/xscreensaver_start.sh"
 exec_always --no-startup-id autotiling
-# apps
+#
+# startup apps
 exec --no-startup-id "$HOME/.fehbg &"
 exec --no-startup-id "nm-applet"
-exec --no-startup-id "st"
-
-# checks
+exec --no-startup-id "alacritty"
+#
+# startup checks
 exec --no-startup-id "/home/colps/.scripts/devices_start.sh"
+#

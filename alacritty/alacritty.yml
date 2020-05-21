@@ -31,7 +31,7 @@ scrolling:
 font:
   normal:
     family: Iosevka Term
-    style: Medium
+    style: Regular
   bold:
     family: Iosevka Term
     style: Bold
@@ -41,7 +41,7 @@ font:
   bold_italic:
     family: Iosevka Term
     style: Bold Italic
-  size: 8
+  size: 9
 
 draw_bold_text_with_bright_colors: true
 
@@ -120,7 +120,8 @@ live_config_reload: true
 shell:
   program: /bin/zsh
   args:
-    - --login
+    - -c
+    - cd /tmp && exec zsh
 
 mouse:
   double_click: { threshold: 300 }

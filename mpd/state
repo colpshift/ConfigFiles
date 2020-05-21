@@ -1,9 +1,7 @@
 sw_volume: 95
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
-state: pause
-current: 11
-time: 113.786000
+state: stop
 random: 0
 repeat: 0
 single: 0
@@ -12,39 +10,7 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Homegrown - Temptation Got Me.mp3
-1:Get On Your Feet (from Dangerous Lies - Netflix).mp3
-2:Sade - By Your Side.mp3
-3:Sade - Cherish the Day.mp3
-4:Sade - King of Sorrow.mp3
-5:Sade - Kiss Of Life.mp3
-6:Sade - Smooth Operator.mp3
-7:Sade - The Sweetest Taboo.mp3
-8:Sade - Your Love Is King.mp3
-9:01 - Fandangueiro - Porca Véia.mp3
-10:03 - Meu Paraíso - Porca Véia.mp3
-11:08 - Castração a Pealo - Porca Véia & Os Gaiteiros do Cordiona.mp3
-12:15 - Vanerão Gaúcho - Porca Véia & Os Gaiteiros do Cordiona.mp3
-13:Cleiton Schneider - sentimento de trovador.mpg(porca veia o segundo DVD).mp3
-14:De Alma Serrana - Porca Veia.mp3
-15:DVD Porca Véia - Eu Gostei do Baile Véio.mp3
-16:joaoparaiba - Balanço Do Bugio Grupo Cordiona O Grupo Do Porca Veia joaoparaiba #0744 @1671.mp3
-17:PORCA VÉIA - De Toda Lida.mp3
-18:Porca Véia - Recorrendo os Aguapés.mp3
-19:Rubem Ayang Oliveira Música Folclórica e Regional - Porca Véia      Bugio do Chaleira Preta.mp3
-20:Rubem Ayang Oliveira Música Folclórica e Regional - Porca Veia   Alma de Gaiteiro.mp3
-21:Rubem Ayang Oliveira Música Folclórica e Regional - Porca Véia   Sentimento de Trovador.mp3
-22:Porca Véia - Morena Luxuosa.mp3
-23:Porca Véia - Xote Afigurado.mp3
-24:Porca Véia - Fama de Bagunceiro.mp3
-25:Porca Véia - No Coração do Rio Grande.mp3
-26:Porca Véia - Balanço Do Bugio (Live).mp3
-27:Porca Véia - Fazenda Da Viúva (Live).mp3
-28:Porca Véia - Gaiteiro Por Demais (Live).mp3
-29:Porca Véia - Ginete de Fronteira (Ao Vivo).mp3
-30:Porca Véia - Marca Borrada (Live).mp3
-31:Porca Véia - Baile na Serra (Ao Vivo).mp3
-32:Porca Véia featuring Grupo Cordiona · Noé Teixeira · Grupo Cordiona - Abraço ao Paraná (Ao Vivo).mp3
-33:Porca Véia - Meu Cambicho.mp3
-34:Porca Véia - Luz do Meu Rancho.mp3
+0:Ponto de Defumação - Zé Maurício Machline (Toques de Umbanda).mp3
+1:Pontos de Pretos Velhos - Zé Maurício Machline (Toques de Umbanda).mp3
+2:Ponto de Oxalá - Zé Maurício Machline (Toques de Umbanda).mp3
 playlist_end

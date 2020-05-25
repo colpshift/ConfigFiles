@@ -8,3 +8,4 @@
 #     *                 ) exec $1;;
 # esac
 #
+systemctl --user import-environment DISPLAY

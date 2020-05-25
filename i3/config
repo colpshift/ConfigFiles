@@ -16,7 +16,7 @@ set $mod Mod4
 #
 ### font window titles
 #
-font pango:Iosevka Term Medium, FontAwesome,\
+font pango:Iosevka Nerd Font Medium, FontAwesome,\
      FontAwesome 5 Brands, FontAwesome 5 Free, bold 8
 #
 #font pango:LiberationMono Nerd Font, FontAwesome,\
@@ -27,17 +27,20 @@ title_align left
 
 ### borders -------------------------------------------------------------------
 #
-### Smart borders (draw borders around container only if s more the one.
+### Smart borders draw borders around container only if s more the one.
 smart_borders on
 #
-### default border style for new windows
-default_border pixel
+### default_border normal|none|pixel
+default_border pixel 2
+#
+### default_floating_border normal|none|pixel
+default_floating_border normal
 #
 ### hide edge borders = none|vertical|horizontal|both|smart
 hide_edge_borders smart
 #
 ### make all st use a 1-pixel border:
-for_window [class="Alacritty"] border pixel 1
+for_window [class="Alacritty"] border pixel 2
 
 ### marks ---------------------------------------------------------------------
 #
@@ -95,7 +98,7 @@ set $ws11   "GP "
 #
 ### define clients to specific workspaces
 assign [class="Alacritty"] $ws1
-#assign [class="Brave-browser"] $ws2
+assign [class="firefox"] $ws2
 assign [class="telegram-desktop"] $ws3
 assign [class="skype"] $ws3
 assign [class="Zathura"] $ws4
@@ -103,7 +106,7 @@ assign [class="Master PDF Editor"] $ws4
 assign [class="Simple-scan"] $ws4
 assign [class="Et"] $ws4
 assign [class="Wps"] $ws4
-assign [class="Wpp"] $ws4 
+assign [class="Wpp"] $ws4
 assign [class="Wpspdf"] $ws4
 assign [class="Subl3"] $ws4
 assign [class="Sxiv"] $ws5
@@ -243,7 +246,6 @@ bindsym $mod+u focus parent
 #
 ### automatically putting clients on floating windows layout
 for_window [class="Pavucontrol"] floating enable
-for_window [class="fzf-menu"] floating enable
 for_window [class="telegram-desktop"] enable
 for_window [class="skype"] enable
 for_window [class="Gimp"] enable
@@ -327,6 +329,7 @@ bar {
       -m arch-update kernel uptime traffic memory load sensors battery_all \
         brightness pasink weather date dunst \
       -p date.format="%a %b %d %Y %R" weather.location="Tatui, BR" \
+        load.warning="80" load.critical="90" \
       -t iceberg-dark-powerline
     output eDP1
     tray_output eDP1
@@ -354,13 +357,13 @@ bindsym --release Print exec --no-startup-id "flameshot gui"
 bindsym $mod+x exec xscreensaver-command -lock
 #
 ### dmenu and rofi
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "Iosevka Term Medium bold-8"
-bindsym $mod+q exec --no-startup-id passmenu -fn "Iosevka Term Medium bold-8"
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "Iosevka Nerd Font Medium bold-8"
+bindsym $mod+q exec --no-startup-id passmenu -fn "Iosevka Nerd Font Medium bold-8"
 bindsym $mod+z exec rofi -show drun
 #
 ### apps shortcuts
 bindsym $mod+Return	exec alacritty
-bindsym Ctrl+Shift+b    exec /bin/brave
+bindsym Ctrl+Shift+b    exec /bin/firefox
 bindsym Ctrl+Shift+z    exec zathura
 bindsym Ctrl+Shift+m    workspace $ws10, exec "st -e bashtop"
 bindsym Ctrl+Shift+n    workspace $ws9, exec "st -e clerk"
@@ -369,21 +372,19 @@ bindsym Ctrl+Shift+t    exec \
 sh -c '"/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" --detach || ([ !  -x "/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy %k
 #
 # startup daemons
-exec --no-startup-id "/home/colps/.scripts/dunst_start.sh"
 exec --no-startup-id "/home/colps/.scripts/autocutsel_start.sh"
-exec --no-startup-id "/home/colps/.scripts/udiskie_start.sh"
 exec --no-startup-id "/home/colps/.scripts/mpd_start.sh"
-exec --no-startup-id "/home/colps/.scripts/ssh_agent_start.sh"
 exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
 exec --no-startup-id "/home/colps/.scripts/picom_start.sh"
 exec --no-startup-id "/home/colps/.scripts/xscreensaver_start.sh"
 exec_always --no-startup-id autotiling
 #
 # startup apps
-exec --no-startup-id "$HOME/.fehbg &"
-exec --no-startup-id "nm-applet"
+exec_always --no-startup-id "$HOME/.fehbg &"
+exec_always --no-startup-id "nm-applet"
+exec_always --no-startup-id "/home/colps/.scripts/qgmailnotifier_start.sh"
 exec --no-startup-id "alacritty"
 #
 # startup checks
 exec --no-startup-id "/home/colps/.scripts/devices_start.sh"
-#
+

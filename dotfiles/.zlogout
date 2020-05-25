@@ -8,6 +8,6 @@
 # Author: Colpshift
 #
 
-# Start Firefox/Profile on RAM
-# /bin/firefox-sync
+# Stop Firefox/Profile on RAM
+/bin/firefox-sync
 

@@ -474,24 +474,6 @@ stty: 'standard input': Inappropriate ioctl for device
 stty: 'standard input': Inappropriate ioctl for device
 stty: 'standard input': Inappropriate ioctl for device
 /usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
  
 New instance of bashtop version: 0.8.15 Pid: 1225138
  
@@ -500,3 +482,21 @@ New instance of bashtop version: 0.8.15 Pid: 1228242
 New instance of bashtop version: 0.8.15 Pid: 1248428
  
 New instance of bashtop version: 0.8.15 Pid: 1254270
+ 
+New instance of bashtop version: 0.8.15 Pid: 216815
+ 
+New instance of bashtop version: 0.8.15 Pid: 260681
+ 
+New instance of bashtop version: 0.8.15 Pid: 4379
+ 
+New instance of bashtop version: 0.8.15 Pid: 57017
+ 
+New instance of bashtop version: 0.8.15 Pid: 1043008
+ 
+New instance of bashtop version: 0.8.15 Pid: 1049140
+ 
+New instance of bashtop version: 0.8.15 Pid: 245894
+ 
+New instance of bashtop version: 0.8.15 Pid: 322005
+ 
+New instance of bashtop version: 0.8.15 Pid: 334037

@@ -180,6 +180,7 @@ alias st-apply-patch="patch -i"
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias grub_install='grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck'
 alias yayu='yay -Syu'
 alias yayi='sh $HOME/.scripts/fzf_pkg_aur.sh'
 alias pacman='sudo pacman --color=always'

@@ -35,5 +35,60 @@
 
 
 
+#rofi
+"rofi -show drun"
+    m:0x40 + c:52
+    Mod4 + z 
+
+#firefox
+"firefox"
+    m:0x5 + c:56
+    Control+Shift + b 
+
+#zathura
+"zathura"
+    m:0x5 + c:52
+    Control+Shift + z 
+
+#passmenu
+"passmenu -fn "Iosevka Nerd Font Medium bold-8""
+    m:0x5 + c:33
+    Control+Shift + p 
+
+#clerk
+"st -c clerk -e clerk"
+    m:0x5 + c:57
+    Control+Shift + n 
+
+#bashtop
+"st -c bashtop -e bashtop"
+    m:0x5 + c:58
+    Control+Shift + m 
+
+#virtualbox
+"virtualbox"
+    m:0x5 + c:31
+    Control+Shift + i 
+
+#flameshot
+"flameshot gui"
+    m:0x0 + c:107
+    Print 
+
+#xscreensaver
+"xscreensaver-command -lock"
+    m:0x5 + c:53
+    Control+Shift + x 
+
+#tor
+"sh -c '"/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" --detach || ([ !  -x "/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy %k"
+    m:0x5 + c:28
+    Control+Shift + t 
+
+#volume
+"pavucontrol -t 5"
+    m:0x5 + c:47
+    Control+Shift + ccedilla 
+
 #
 # End of xbindkeys configuration

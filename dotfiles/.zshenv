@@ -15,6 +15,10 @@ path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts /home
 ### systemd user
 export XDG_RUNTIME_DIR="/run/user/1000"
 systemctl --user import-environment PATH
+systemctl --user import-environment DISPLAY XAUTHORITY
+if command -v dbus-update-activation-environment >/dev/null 2>&1; then
+  dbus-update-activation-environment DISPLAY XAUTHORITY
+fi
 
 ### Python environment
 export VLW="/home/colps/.local/bin/virtualenvwrapper.sh"

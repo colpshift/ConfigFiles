@@ -34,7 +34,7 @@ smart_borders on
 default_border pixel 2
 #
 ### default_floating_border normal|none|pixel
-default_floating_border normal
+default_floating_border pixel 4
 #
 ### hide edge borders = none|vertical|horizontal|both|smart
 hide_edge_borders smart
@@ -267,7 +267,7 @@ bindsym $mod+Shift+e exec \
 bindsym $mod+Shift+y floating toggle
 #
 ### change focus between tiling / floating windows
-bindsym $mod+y focus mode_toggle
+#bindsym $mod+y focus mode_toggle
 #
 ### resize window
 bindsym $mod+r mode "resize"
@@ -314,10 +314,6 @@ pulse sset Master 1%- && pkill -RTMIN+1 i3blocks
 #
 # mute
 bindsym XF86AudioMute exec amixer sset Master toggle && killall -USR1 i3blocks
-#
-# brightness
-bindsym XF86MonBrightnessDown exec /home/colps/.scripts/brightness.sh -5
-bindsym XF86MonBrightnessUp exec /home/colps/.scripts/brightness.sh 5
 
 ### i3 status bar ------------------------------------------------------------
 #
@@ -372,19 +368,19 @@ bindsym Ctrl+Shift+t    exec \
 sh -c '"/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" --detach || ([ !  -x "/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy %k
 #
 # startup daemons
-exec --no-startup-id "/home/colps/.scripts/autocutsel_start.sh"
-exec --no-startup-id "/home/colps/.scripts/mpd_start.sh"
-exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
-exec --no-startup-id "/home/colps/.scripts/picom_start.sh"
-exec --no-startup-id "/home/colps/.scripts/xscreensaver_start.sh"
+#exec --no-startup-id "/home/colps/.scripts/autocutsel_start.sh"
+#exec --no-startup-id "/home/colps/.scripts/flameshot_start.sh"
+#exec --no-startup-id "/home/colps/.scripts/picom_start.sh"
+#exec --no-startup-id "/home/colps/.scripts/xscreensaver_start.sh"
+#exec --no-satrtup-id "/home/colps/.scripts/picom_start.sh"
 exec_always --no-startup-id autotiling
 #
 # startup apps
-exec_always --no-startup-id "$HOME/.fehbg &"
-exec_always --no-startup-id "nm-applet"
-exec_always --no-startup-id "/home/colps/.scripts/qgmailnotifier_start.sh"
+#exec_always --no-startup-id "$HOME/.fehbg &"
+#exec_always --no-startup-id "nm-applet"
+#exec_always --no-startup-id "/home/colps/.scripts/qgmailnotifier_start.sh"
 exec --no-startup-id "alacritty"
 #
 # startup checks
-exec --no-startup-id "/home/colps/.scripts/devices_start.sh"
+#exec --no-startup-id "/home/colps/.scripts/devices_start.sh"
 

@@ -36,6 +36,7 @@ unsetopt bgnice autoparamslash
 
 ### Autoload zsh modules when they are referenced
 #################################################
+autoload -Uz compinit && compinit
 autoload -U history-search-end
 zmodload -a zsh/stat stat
 zmodload -a zsh/zpty zpty
@@ -59,41 +60,8 @@ LS_COLORS='rs=0:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;3
 autoload -U colors && colors
 colors
 
-### Set Colors to use in in the script
-######################################
-# Normal Colors
-Black='\e[0;30m'        # Black
-Red='\e[0;31m'          # Red
-Green='\e[0;32m'        # Green
-Yellow='\e[0;33m'       # Yellow
-Blue='\e[0;34m'         # Blue
-Purple='\e[0;35m'       # Purple
-Cyan='\e[0;36m'         # Cyan
-White='\e[0;37m'        # White
-
-# Bold
-BBlack='\e[1;30m'       # Black
-BRed='\e[1;31m'         # Red
-BGreen='\e[1;32m'       # Green
-BYellow='\e[1;33m'      # Yellow
-BBlue='\e[1;34m'        # Blue
-BPurple='\e[1;35m'      # Purple
-BCyan='\e[1;36m'        # Cyan
-BWhite='\e[1;37m'       # White
-
-# Background
-On_Black='\e[40m'       # Black
-On_Red='\e[41m'         # Red
-On_Green='\e[42m'       # Green
-On_Yellow='\e[43m'      # Yellow
-On_Blue='\e[44m'        # Blue
-On_Purple='\e[45m'      # Purple
-On_Cyan='\e[46m'        # Cyan
-On_White='\e[47m'       # White
-
-NC="\e[m"               # Color Reset
-
-# Color man pages
+### Color man pages
+###################
 export LESS_TERMCAP_mb=$'\E[01;32m'
 export LESS_TERMCAP_md=$'\E[01;32m'
 export LESS_TERMCAP_me=$'\E[0m'
@@ -110,22 +78,11 @@ compinit -d
 promptinit
 setopt prompt_subst
 
-# Prompt original
+### Prompt
+##########
 #
-# PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{yellow}%1~%f%b %# '
-# RPROMPT='%*'
-# autoload -Uz vcs_info
-# precmd_vcs_info() { vcs_info }
-# precmd_functions+=( precmd_vcs_info )
-# setopt prompt_subst
-# RPROMPT=\$vcs_info_msg_0_
-# zstyle ':vcs_info:git:*' formats '%F{gray}(%b)%r%f'
-# zstyle ':vcs_info:*' enable git
-
 # Prompt spaceship
-#
 # https://github.com/denysdovhan/spaceship-prompt
-#
 # https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
 #
 ZSH_THEME="spaceship"
@@ -141,7 +98,6 @@ prompt spaceship
 ########
 autoload -Uz run-help
 alias help='run-help'
-#
 autoload -Uz run-help-git
 autoload -Uz run-help-ip
 autoload -Uz run-help-openssl
@@ -189,72 +145,16 @@ alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
 alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
 alias pacman-mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 
-### Bind keys
-#############
-typeset -g -A key
-#
-key[Home]="${terminfo[khome]}"
-key[End]="${terminfo[kend]}"
-key[Insert]="${terminfo[kich1]}"
-key[Backspace]="${terminfo[kbs]}"
-key[Delete]="${terminfo[kdch1]}"
-key[Up]="${terminfo[kcuu1]}"
-key[Down]="${terminfo[kcud1]}"
-key[Left]="${terminfo[kcub1]}"
-key[Right]="${terminfo[kcuf1]}"
-key[PageUp]="${terminfo[kpp]}"
-key[PageDown]="${terminfo[knp]}"
-key[Shift-Tab]="${terminfo[kcbt]}"
-
-# Setup key accordingly
-[[ -n "${key[Home]}"      ]] && bindkey -- "${key[Home]}"       beginning-of-line
-[[ -n "${key[End]}"       ]] && bindkey -- "${key[End]}"        end-of-line
-[[ -n "${key[Insert]}"    ]] && bindkey -- "${key[Insert]}"     overwrite-mode
-[[ -n "${key[Backspace]}" ]] && bindkey -- "${key[Backspace]}"  backward-delete-char
-[[ -n "${key[Delete]}"    ]] && bindkey -- "${key[Delete]}"     delete-char
-[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-history
-[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-history
-[[ -n "${key[Left]}"      ]] && bindkey -- "${key[Left]}"       backward-char
-[[ -n "${key[Right]}"     ]] && bindkey -- "${key[Right]}"      forward-char
-[[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"     beginning-of-buffer-or-history
-[[ -n "${key[PageDown]}"  ]] && bindkey -- "${key[PageDown]}"   end-of-buffer-or-history
-[[ -n "${key[Shift-Tab]}" ]] && bindkey -- "${key[Shift-Tab]}"  reverse-menu-complete
-
-autoload -U compinit
-compinit
-bindkey "^?" backward-delete-char
-bindkey '^[OH' beginning-of-line
-bindkey '^[OF' end-of-line
-bindkey '^[[5~' up-line-or-history
-bindkey '^[[6~' down-line-or-history
-bindkey "^[[A" history-beginning-search-backward-end
-bindkey "^[[B" history-beginning-search-forward-end
-bindkey "^r" history-incremental-search-backward
-bindkey ' ' magic-space    # also do history expansion on space
-bindkey '^I' complete-word # complete on tab, leave expansion to _expand
-zstyle ':completion::complete:*' use-cache on
-zstyle ':completion::complete:*' cache-path ~/.zsh/cache/$HOST
-zstyle ':completion:*' accept-exact '*(N)'
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
-zstyle ':completion:*' menu select=1 _complete _ignored _approximate
-zstyle -e ':completion:*:approximate:*' max-errors \
-    'reply=( $(( ($#PREFIX+$#SUFFIX)/2 )) numeric )'
-zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
-
 ### Completion Styles
 #####################
-
+#
 # list of completers to use
 zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
-
 # allow one error for every three characters typed in approximate completer
 zstyle -e ':completion:*:approximate:*' max-errors \
     'reply=( $(( ($#PREFIX+$#SUFFIX)/2 )) numeric )'
-
 # insert all expansions for expand completer
 zstyle ':completion:*:_expand:*' tag-order all-expansions
-
 # formatting and messages
 zstyle ':completion:*' verbose yes
 zstyle ':completion:*:descriptions' format '%B%d%b'
@@ -262,22 +162,17 @@ zstyle ':completion:*:messages' format '%d'
 zstyle ':completion:*:warnings' format 'No matches for: %d'
 zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 zstyle ':completion:*' group-name ''
-
 # match uppercase from lowercase
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}e'
-
 # offer indexes before parameters in subscripts
 zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
-
 # command for process lists, the local web server details and host completion
 # on processes completion complete all user processes
 zstyle ':completion:*:processes' command 'ps -au$USER'
-
 # add colors to processes for kill completion
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:processes' command 'ps -o pid,s,nice,stime,args'
 zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
-
 # NEW completion:
 # 1. All /etc/hosts hostnames are in autocomplete
 # 2. If you have a comment in /etc/hosts like #%foobar.domain,
@@ -286,18 +181,6 @@ zstyle ':completion:*' hosts $(awk '/^[^#]/ {print $2 $3" "$4" "$5}' /etc/hosts 
 # Filename suffixes to ignore during completion (except after rm command)
 zstyle ':completion:*:*:(^rm):*:*files' ignored-patterns '*?.o' '*?.c~' \
     '*?.old' '*?.pro'
-# the same for old style completion
-#fignore=(.o .c~ .old .pro)
-
-# ignore completion functions (until the _ignored completer)
-zstyle ':completion:*:functions' ignored-patterns '_*'
-zstyle ':completion:*:*:*:users' ignored-patterns \
-        adm apache bin daemon games gdm halt ident junkbust lp mail mailnull \
-        named news nfsnobody nobody nscd ntp operator pcap postgres radvd \
-        rpc rpcuser rpm shutdown squid sshd sync uucp vcsa xfs avahi-autoipd\
-        avahi backup messagebus beagleindex debian-tor dhcp dnsmasq fetchmail\
-        firebird gnats haldaemon hplip irc klog list man cupsys postfix\
-        proxy syslog www-data mldonkey sys snort
 # SSH Completion
 zstyle ':completion:*:scp:*' tag-order \
    files users 'hosts:-host hosts:-domain:domain hosts:-ipaddr"IP\ Address *'
@@ -309,7 +192,8 @@ zstyle ':completion:*:ssh:*' group-order \
    hosts-domain hosts-host users hosts-ipaddr
 zstyle '*' single-ignored show
 
-# Persistent rehash
+### Persistent rehash
+#####################
 zstyle ':completion:*' rehash true
 # On-demand rehash
 zshcache_time="$(date +%s%N)"
@@ -350,8 +234,8 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 #zle -N zle-line-init
 #zle -N zle-line-finish
 
-# fzf completion
-################
+### fzf completion
+##################
 #export FZF_COMPLETION_TRIGGER='~~'
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh

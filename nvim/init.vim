@@ -353,7 +353,7 @@ set undofile
 set undodir=$HOME/.local/share/nvim/undo
 set nobackup      " Recommended by coc
 set nowritebackup " Recommended by coc
-set backupdir=$HOME/.local/share/nvim/backup
+"set backupdir=$HOME/.local/share/nvim/backup
 
 "------------------------------------------------------------------------------
 " terminal
@@ -373,7 +373,8 @@ endif
 "
 " characters to show for expanded TABs, trailing whitespace and end-of-lines.
 if &listchars ==# 'eol:$'
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+,space:
+"   set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+,space:
+    set listchars=tab:>\ ,trail:-,space:
 endif
 set list
 
@@ -401,8 +402,4 @@ let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
 " python
 let g:python3_host_prog = '/bin/python3'
 let g:python2_host_prog = '/bin/python2'
-"
-" clang
-"set shellpipe="2>&1| tee" " option  for C compiler
-"set shellredir=">&"       " options for C compiler
 

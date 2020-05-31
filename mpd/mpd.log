@@ -3249,3 +3249,8 @@ May 30 00:38 : exception: RTIOThread could not get realtime scheduling, continui
 May 30 00:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 May 30 01:24 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 May 30 11:09 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 30 13:01 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 30 13:01 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 30 13:03 : player: played "Ponto de Defumação - Zé Maurício Machline (Toques de Umbanda).mp3"
+May 30 13:05 : player: played "Pontos de Pretos Velhos - Zé Maurício Machline (Toques de Umbanda).mp3"
+May 30 13:07 : player: played "Ponto de Oxalá - Zé Maurício Machline (Toques de Umbanda).mp3"

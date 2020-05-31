@@ -1,6 +1,0 @@
-git checkout 0.7
-curl http://st.suckless.org/patches/st-scrollback-0.7.diff | git apply
-git commit -a -m "Apply st-scrollback-0.7.diff"
-git merge master
-git mergetool # launches the diff tool if there are conflicts
-git commit

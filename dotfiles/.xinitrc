@@ -27,6 +27,17 @@ fi
 #
 systemctl --user import-environment DISPLAY
 #
+# session menu
+# Here xinitrc is kept as default
+# session=${1:-xinitrc}
+# case $session in
+#     i3              ) exec i3;;
+#     dwm             ) exec dwm;;
+#     xinitrc         ) exec xinitrc;;
+#     # No known session, try to run it as command
+#     *                 ) exec $1;;
+# esac
+#
 # bar with conky
 (conky | while read LINE; do xsetroot -name "$LINE"; done) &
 #
@@ -43,3 +54,4 @@ sh ~/.scripts/picom_start.sh
 # start dwm
 exec dwm
 #
+

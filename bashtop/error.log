@@ -382,66 +382,6 @@ stty: 'standard input': Inappropriate ioctl for device
 stty: 'standard input': Inappropriate ioctl for device
 stty: 'standard input': Inappropriate ioctl for device
 /usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 451: ((: <80 | <25: syntax error: operand expected (error token is "<80 | <25")
  
 New instance of bashtop version: 0.8.15 Pid: 1225138
  
@@ -504,3 +444,63 @@ New instance of bashtop version: 0.9.1 Pid: 2736
 01:33:13 ERROR: On line 2213 
 01:33:13 ERROR: On line 2213 (MUTED!)
 01:33:13 ERROR: On line 2213 (MUTED!)
+ 
+New instance of bashtop version: 0.9.1 Pid: 12468
+09:29:37 ERROR: On line 2213 
+09:29:37 ERROR: On line 2213 
+09:29:37 ERROR: On line 2213 (MUTED!)
+09:29:37 ERROR: On line 2213 (MUTED!)
+ 
+New instance of bashtop version: 0.9.1 Pid: 10131
+11:22:47 ERROR: On line 2213 
+11:22:47 ERROR: On line 2213 
+11:22:47 ERROR: On line 2213 (MUTED!)
+11:22:47 ERROR: On line 2213 (MUTED!)
+ 
+New instance of bashtop version: 0.9.1 Pid: 2757
+22:24:27 ERROR: On line 2213 
+22:24:27 ERROR: On line 2213 
+22:24:27 ERROR: On line 2213 (MUTED!)
+22:24:27 ERROR: On line 2213 (MUTED!)
+ 
+New instance of bashtop version: 0.9.1 Pid: 3584
+22:25:03 ERROR: On line 2213 
+22:25:03 ERROR: On line 2213 
+22:25:03 ERROR: On line 2213 (MUTED!)
+22:25:03 ERROR: On line 2213 (MUTED!)
+ 
+New instance of bashtop version: 0.9.1 Pid: 4137
+22:26:13 ERROR: On line 2213 
+22:26:13 ERROR: On line 2213 
+22:26:13 ERROR: On line 2213 (MUTED!)
+22:26:13 ERROR: On line 2213 (MUTED!)
+ 
+New instance of bashtop version: 0.9.1 Pid: 4395
+22:26:28 ERROR: On line 2213 
+22:26:28 ERROR: On line 2213 
+22:26:28 ERROR: On line 2213 (MUTED!)
+22:26:28 ERROR: On line 2213 (MUTED!)
+ 
+New instance of bashtop version: 0.9.1 Pid: 6496
+22:27:30 ERROR: On line 2213 
+22:27:30 ERROR: On line 2213 
+22:27:30 ERROR: On line 2213 (MUTED!)
+22:27:30 ERROR: On line 2213 (MUTED!)
+ 
+New instance of bashtop version: 0.9.1 Pid: 59430
+23:45:40 ERROR: On line 2213 
+23:45:40 ERROR: On line 2213 
+23:45:40 ERROR: On line 2213 (MUTED!)
+23:45:40 ERROR: On line 2213 (MUTED!)
+ 
+New instance of bashtop version: 0.9.1 Pid: 26622
+00:57:22 ERROR: On line 2213 
+00:57:22 ERROR: On line 2213 
+00:57:22 ERROR: On line 2213 (MUTED!)
+00:57:22 ERROR: On line 2213 (MUTED!)
+ 
+New instance of bashtop version: 0.9.1 Pid: 10918
+17:08:36 ERROR: On line 2213 
+17:08:36 ERROR: On line 2213 
+17:08:36 ERROR: On line 2213 (MUTED!)
+17:08:36 ERROR: On line 2213 (MUTED!)

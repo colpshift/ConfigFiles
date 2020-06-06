@@ -387,7 +387,7 @@ set list
 autocmd Filetype python setlocal sw=4 sts=4 expandtab
 "
 " dwm and st
-autocmd BufWritePost config.h,config.def.h !sudo make install clean
+"autocmd BufWritePost config.h,config.def.h !sudo make install clean
 
 "------------------------------------------------------------------------------
 " Code Environments

@@ -13,7 +13,7 @@ msg_x                   75%
 msg_y                   50%
 
 # valid values: stretch, tile
-background_style        tile
+background_style        stretch
 background_color        #000000
 
 # Input controls (relative to panel)

@@ -1,7 +1,9 @@
 sw_volume: 95
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
-state: stop
+state: pause
+current: 6
+time: 180.253000
 random: 0
 repeat: 0
 single: 0
@@ -11,6 +13,15 @@ mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
 0:Ponto de Defumação - Zé Maurício Machline (Toques de Umbanda).mp3
-1:Pontos de Pretos Velhos - Zé Maurício Machline (Toques de Umbanda).mp3
-2:Ponto de Oxalá - Zé Maurício Machline (Toques de Umbanda).mp3
+1:Toques de Umbanda - Zé Maurício Machline/Ponto de Exú - Zé Maurício Machline (Toques de Umbanda).mp3
+2:Pontos de Pretos Velhos - Zé Maurício Machline (Toques de Umbanda).mp3
+3:Ponto de Oxalá - Zé Maurício Machline (Toques de Umbanda).mp3
+4:Clara Nunes - A Deusa Dos Orixás.mp3
+5:Clara Nunes - O Mar Serenou.mp3
+6:Clara Nunes - Triteza pe no chao.mp3
+7:Clara Nunes - Conto De Areia.mp3
+8:Clara Nunes - Feira De Mangaio.mp3
+9:Clara Nunes - Ijexá (Filhos De Ghandi).mp3
+10:Yann nnaY - Alice Russell citizens.mp3
+11:Get On Your Feet (from Dangerous Lies - Netflix).mp3
 playlist_end

@@ -121,7 +121,7 @@ call plug#end()
 " Markdown preview
   let g:mkdp_auto_start = 0
   let g:mkdp_auto_close = 1
-  let g:mkdp_browser = '/bin/qutebrowser'
+  let g:mkdp_browser = '/bin/chromium'
   let g:mkdp_preview_options = {
         \ 'mkit': {},
         \ 'katex': {},

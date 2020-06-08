@@ -7,6 +7,6 @@ total_run_times = 0,
 use_spacer = 'none',
 };
 conky.text = [[
-${execi 3600 checkupdates | awk 'END { print (NR == 0 ? "pkg UP" : NR " pkg" (NR > 1 ? "s" : ""))}'} :: Ker $kernel :: Upt $uptime :: Load $cpu% Freq $freq_g Temp ${acpitemp}c :: Mem $memperc% ($mem) :: Lan ▼${downspeed enp2s0}K/s ▲${upspeed enp2s0}K/s :: Bat ${battery_percent BAT0}% :: Mail ${execi 300 python ~/.scripts/gmail.py} :: ${time %a %b %d %Y %R}
+${execi 3600 checkupdates | awk 'END { print (NR == 0 ? ":: pkg UP" : ":: NEW " NR " pkg" (NR > 1 ? "s" : ""))}'} :: $kernel _ $uptime :: Load $cpu% Freq $freq_g Temp ${acpitemp}c :: Mem $memperc% ($mem) :: Lan ▼${downspeed enp2s0}K/s ▲${upspeed enp2s0}K/s :: Bat ${battery_percent BAT0}% :: Mail ${execi 300 python ~/.scripts/gmail.py} :: ${time %a %b %d %Y %R}
 ]];
 

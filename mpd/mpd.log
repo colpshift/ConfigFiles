@@ -5829,3 +5829,31 @@ Jun 06 11:01 : exception: RTIOThread could not get realtime scheduling, continui
 Jun 06 11:01 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jun 06 15:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jun 06 15:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 06 18:26 : player: played "Clara Nunes - Triteza pe no chao.mp3"
+Jun 06 18:27 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 06 18:27 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 06 19:14 : player: played "Clara Nunes - Triteza pe no chao.mp3"
+Jun 06 19:15 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 06 19:15 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 06 22:13 : player: played "Clara Nunes - Triteza pe no chao.mp3"
+Jun 06 22:14 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 06 22:14 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 07 02:39 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 07 02:40 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 07 02:50 : player: played "Clara Nunes - Triteza pe no chao.mp3"
+Jun 07 09:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 07 09:49 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 07 10:27 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 07 10:29 : player: played "Ponto de Defumação - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 07 10:33 : player: played "Toques de Umbanda - Zé Maurício Machline/Ponto de Exú - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 07 10:35 : player: played "Pontos de Pretos Velhos - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 07 10:37 : player: played "Ponto de Oxalá - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 07 18:06 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 07 18:56 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 07 18:57 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 07 23:43 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 07 23:44 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 07 23:45 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 07 23:48 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 07 23:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 07 23:49 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

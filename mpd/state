@@ -2,8 +2,8 @@ sw_volume: 95
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
 state: pause
-current: 11
-time: 52.226000
+current: 14
+time: 2.003000
 random: 0
 repeat: 0
 single: 0
@@ -24,4 +24,7 @@ playlist_begin
 9:Clara Nunes - Ijexá (Filhos De Ghandi).mp3
 10:Yann nnaY - Alice Russell citizens.mp3
 11:Get On Your Feet (from Dangerous Lies - Netflix).mp3
+12:Radical Face - Welcome Home.mp3
+13:Baby Bash - Baby, I'm Back.mp3
+14:KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3
 playlist_end

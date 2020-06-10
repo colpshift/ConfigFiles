@@ -5857,3 +5857,61 @@ Jun 07 23:45 : exception: OutputThread could not get realtime scheduling, contin
 Jun 07 23:48 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
 Jun 07 23:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jun 07 23:49 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 00:58 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 08 06:42 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 06:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 06:54 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 08 06:55 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 06:55 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 07:30 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 07:34 : player: played "Ponto de Defumação - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 08 07:38 : player: played "Toques de Umbanda - Zé Maurício Machline/Ponto de Exú - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 08 07:40 : player: played "Pontos de Pretos Velhos - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 08 07:42 : player: played "Ponto de Oxalá - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 08 07:59 : player: played "Radical Face - Welcome Home.mp3"
+Jun 08 08:02 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 08 08:06 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 08 08:22 : player: played "Radical Face - Welcome Home.mp3"
+Jun 08 08:57 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 08 10:25 : player: played "Radical Face - Welcome Home.mp3"
+Jun 08 11:33 : player: played "Radical Face - Welcome Home.mp3"
+Jun 08 11:37 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 08 11:41 : player: played "Ne-Yo - SO SICK.mp3"
+Jun 08 12:41 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 08 12:45 : player: played "Radical Face - Welcome Home.mp3"
+Jun 08 14:29 : exception: Failed to play on "pulse audio" (pulse): disconnected
+Jun 08 14:41 : player: played "Radical Face - Welcome Home.mp3"
+Jun 08 14:42 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 14:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 14:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 14:47 : player: played "Radical Face - Welcome Home.mp3"
+Jun 08 14:51 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 08 14:54 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 08 14:58 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 08 15:57 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 08 16:01 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 08 16:06 : player: played "Radical Face - Welcome Home.mp3"
+Jun 08 16:10 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 08 16:33 : player: played "Ne-Yo - SO SICK.mp3"
+Jun 08 17:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 17:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 23:47 : player: played "Ne-Yo - SO SICK.mp3"
+Jun 08 23:48 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 08 23:48 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 09 00:20 : player: played "Ne-Yo - SO SICK.mp3"
+Jun 09 00:21 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 09 00:22 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 09 00:37 : player: played "Ne-Yo - SO SICK.mp3"
+Jun 09 06:48 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 09 06:48 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 09 07:23 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 09 07:26 : player: played "Ponto de Defumação - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 09 07:30 : player: played "Toques de Umbanda - Zé Maurício Machline/Ponto de Exú - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 09 07:32 : player: played "Pontos de Pretos Velhos - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 09 07:34 : player: played "Ponto de Oxalá - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 09 08:02 : player: played "Radical Face - Welcome Home.mp3"
+Jun 09 18:34 : player: played "Radical Face - Welcome Home.mp3"
+Jun 09 18:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 09 18:36 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 09 22:28 : update: added /KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3
+Jun 09 22:29 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

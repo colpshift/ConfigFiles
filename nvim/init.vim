@@ -313,7 +313,6 @@ set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
 colorscheme molokai
-color
 
 "------------------------------------------------------------------------------
 " searching

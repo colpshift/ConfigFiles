@@ -42,11 +42,10 @@ systemctl --user import-environment DISPLAY
 (conky | while read LINE; do xsetroot -name "$LINE"; done) &
 #
 # Autostart section
-autocutsel -fork &
-autocutsel -selection PRIMARY -fork &
-xbindkeys &
-flameshot &
-xscreensaver -nosplash &
+sh ~/.scripts/autocutsel_start.sh
+sh ~/.scripts/xbindkeys_start.sh
+sh ~/.scripts/flameshot_start.sh
+sh ~/.scripts/xscreensaver_start.sh
 ~/.fehbg &
 sh ~/.scripts/devices_start.sh
 sh ~/.scripts/picom_start.sh

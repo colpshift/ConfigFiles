@@ -121,7 +121,7 @@ call plug#end()
 " Markdown preview
   let g:mkdp_auto_start = 0
   let g:mkdp_auto_close = 1
-  let g:mkdp_browser = '/bin/qutebrowser'
+  let g:mkdp_browser = '/bin/chromium'
   let g:mkdp_preview_options = {
         \ 'mkit': {},
         \ 'katex': {},
@@ -313,7 +313,6 @@ set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
 colorscheme molokai
-color
 
 "------------------------------------------------------------------------------
 " searching

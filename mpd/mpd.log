@@ -5915,3 +5915,106 @@ Jun 09 18:35 : exception: RTIOThread could not get realtime scheduling, continui
 Jun 09 18:36 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jun 09 22:28 : update: added /KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3
 Jun 09 22:29 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 10 00:00 : player: played "KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3"
+Jun 10 00:03 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 10 00:03 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 10 01:31 : player: played "KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3"
+Jun 10 06:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 10 06:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 10 07:22 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 10 07:24 : player: played "KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3"
+Jun 10 07:32 : player: played "Ponto de Defumação - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 10 07:35 : player: played "Toques de Umbanda - Zé Maurício Machline/Ponto de Exú - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 10 07:37 : player: played "Pontos de Pretos Velhos - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 10 07:55 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 10 07:59 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 10 08:04 : player: played "Radical Face - Welcome Home.mp3"
+Jun 10 08:08 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 10 08:13 : player: played "KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3"
+Jun 10 08:16 : player: played "Cher - The Shoop Shoop Song (Its In His Kiss).mp3"
+Jun 10 08:20 : player: played "Ece Seçkin - Adeyyo.mp3"
+Jun 10 08:23 : player: played "Ed Sheeran/Ed Sheeran - Hit Me Baby One More Time.mp3"
+Jun 10 08:48 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 10 08:52 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 10 08:56 : player: played "Radical Face - Welcome Home.mp3"
+Jun 10 09:00 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 10 09:03 : player: played "KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3"
+Jun 10 09:07 : player: played "Sade - By Your Side.mp3"
+Jun 10 12:03 : player: played "Sade - Cherish the Day.mp3"
+Jun 10 12:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 10 12:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 10 16:09 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 10 16:12 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 10 16:15 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 10 16:20 : player: played "Radical Face - Welcome Home.mp3"
+Jun 10 16:24 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 10 16:46 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 10 16:49 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 10 16:54 : player: played "Radical Face - Welcome Home.mp3"
+Jun 10 16:58 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 10 20:46 : player: played "KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3"
+Jun 10 20:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 10 20:49 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 11 02:21 : player: played "KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3"
+Jun 11 09:06 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 11 09:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 11 11:12 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 11 11:14 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 11 11:18 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 11 11:23 : player: played "Radical Face - Welcome Home.mp3"
+Jun 11 13:37 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 11 13:41 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 11 13:46 : player: played "Radical Face - Welcome Home.mp3"
+Jun 11 13:50 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 11 13:53 : player: played "KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3"
+Jun 11 13:57 : player: played "Sade - By Your Side.mp3"
+Jun 11 14:01 : player: played "Sade - Cherish the Day.mp3"
+Jun 11 14:06 : player: played "Sade - King of Sorrow.mp3"
+Jun 11 14:10 : player: played "Sade - Kiss Of Life.mp3"
+Jun 11 14:14 : player: played "Sade - Smooth Operator.mp3"
+Jun 11 14:20 : player: played "Sade - The Sweetest Taboo.mp3"
+Jun 11 14:23 : player: played "Sade - Your Love Is King.mp3"
+Jun 11 14:27 : player: played "Cher - The Shoop Shoop Song (Its In His Kiss).mp3"
+Jun 11 14:31 : player: played "Ece Seçkin - Adeyyo.mp3"
+Jun 11 14:34 : player: played "Ed Sheeran/Ed Sheeran - Hit Me Baby One More Time.mp3"
+Jun 12 06:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 12 07:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 12 07:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 12 07:35 : player: played "Ponto de Defumação - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 12 07:38 : player: played "Toques de Umbanda - Zé Maurício Machline/Ponto de Exú - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 12 07:40 : player: played "Pontos de Pretos Velhos - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 12 07:42 : player: played "Ponto de Oxalá - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 12 13:06 : player: played "Clara Nunes - A Deusa Dos Orixás.mp3"
+Jun 12 13:09 : player: played "Clara Nunes - O Mar Serenou.mp3"
+Jun 12 13:12 : player: played "Clara Nunes - Triteza pe no chao.mp3"
+Jun 12 13:15 : player: played "Clara Nunes - Conto De Areia.mp3"
+Jun 12 13:19 : player: played "Clara Nunes - Feira De Mangaio.mp3"
+Jun 12 13:22 : player: played "Clara Nunes - Ijexá (Filhos De Ghandi).mp3"
+Jun 12 13:25 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 12 13:29 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 12 13:34 : player: played "Radical Face - Welcome Home.mp3"
+Jun 12 13:38 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 12 13:42 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 12 13:46 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 12 13:50 : player: played "Radical Face - Welcome Home.mp3"
+Jun 12 13:54 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 12 13:57 : player: played "KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3"
+Jun 12 14:01 : player: played "Sade - By Your Side.mp3"
+Jun 12 14:05 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 12 14:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 12 14:05 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 12 14:26 : player: played "Sade - Cherish the Day.mp3"
+Jun 12 14:32 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 12 14:32 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 12 14:44 : player: played "Sade - Cherish the Day.mp3"
+Jun 12 15:19 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 12 15:19 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 13 02:55 : player: played "Sade - Cherish the Day.mp3"
+Jun 13 09:45 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 13 09:45 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 13 11:27 : player: played "Sade - Cherish the Day.mp3"
+Jun 13 11:27 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 13 11:28 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 13 11:33 : player: played "Sade - Cherish the Day.mp3"
+Jun 13 11:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 13 11:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

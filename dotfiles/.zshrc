@@ -36,7 +36,7 @@ unsetopt bgnice autoparamslash
 
 ### Autoload zsh modules when they are referenced
 #################################################
-autoload -U history-search-nd
+autoload -U history-search-end
 zmodload -a zsh/stat stat
 zmodload -a zsh/zpty zpty
 zmodload -a zsh/zprof zprof
@@ -129,7 +129,6 @@ setopt prompt_subst
 # https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
 #
 ZSH_THEME="spaceship"
-SPACESHIP_CHAR_SUFFIX=" "
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_USER_SHOW=true
 SPACESHIP_HOST_SHOW=true
@@ -169,7 +168,6 @@ alias vim='/bin/nvim'
 alias gpg='gpg2'
 alias cat='bat --theme TwoDark'
 alias gitu='git add . && git commit && git push'
-alias gac='git add . && git commit'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias neofetch="neofetch --color_blocks ff --ascii_distro Anarchy"
@@ -345,17 +343,10 @@ source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 # zsh user completions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-# Terminal st
-#############
-function zle-line-init () { echoti smkx }
-function zle-line-finish () { echoti rmkx }
-zle -N zle-line-init
-zle -N zle-line-finish
-
 # fzf completion
 ################
 #export FZF_COMPLETION_TRIGGER='~~'
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/fzf-extras.zsh
-#e
+#

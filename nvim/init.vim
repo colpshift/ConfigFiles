@@ -39,8 +39,6 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'Lokaltog/vim-distinguished'
   Plug 'rafi/awesome-vim-colorschemes'
   " vim color themes
-  Plug 'ryanoasis/vim-devicons'
-  " icons for languages
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   " status/tabline for vim that's light as air
@@ -373,7 +371,7 @@ endif
 " characters to show for expanded TABs, trailing whitespace and end-of-lines.
 if &listchars ==# 'eol:$'
 "   set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+,space:
-    set listchars=tab:>\ ,trail:-,space:
+    set listchars=trail:-,space:
 endif
 set list
 

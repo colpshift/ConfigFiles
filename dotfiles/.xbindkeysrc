@@ -40,8 +40,8 @@
     m:0x40 + c:52
     Mod4 + z 
 
-#firefox
-"firefox"
+#brave
+"brave"
     m:0x5 + c:56
     Control+Shift + b 
 
@@ -89,6 +89,16 @@
 "pavucontrol -t 5"
     m:0x5 + c:47
     Control+Shift + ccedilla 
+
+#surf
+"surf https://searx.space"
+    m:0xc + c:56
+    Control+Alt + b 
+
+#urxvt
+"urxvt"
+    m:0x5 + c:36
+    Control+Shift + Return 
 
 #
 # End of xbindkeys configuration

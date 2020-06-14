@@ -56,12 +56,12 @@
     Control+Shift + p 
 
 #clerk
-"st -c clerk -e clerk"
+"alacritty -e clerk"
     m:0x5 + c:57
     Control+Shift + n 
 
 #bashtop
-"st -c bashtop -e bashtop"
+"alacritty -e bashtop"
     m:0x5 + c:58
     Control+Shift + m 
 
@@ -94,11 +94,6 @@
 "surf https://searx.space"
     m:0xc + c:56
     Control+Alt + b 
-
-#urxvt
-"urxvt"
-    m:0x5 + c:36
-    Control+Shift + Return 
 
 #
 # End of xbindkeys configuration

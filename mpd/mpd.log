@@ -6018,3 +6018,16 @@ Jun 13 11:28 : exception: OutputThread could not get realtime scheduling, contin
 Jun 13 11:33 : player: played "Sade - Cherish the Day.mp3"
 Jun 13 11:34 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jun 13 11:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 14 01:12 : player: played "Sade - Cherish the Day.mp3"
+Jun 14 10:19 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 14 10:19 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 14 11:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 14 11:36 : player: played "Yann nnaY - Alice Russell citizens.mp3"
+Jun 14 11:40 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).mp3"
+Jun 14 11:44 : player: played "Radical Face - Welcome Home.mp3"
+Jun 14 11:48 : player: played "Baby Bash - Baby, I'm Back.mp3"
+Jun 14 11:51 : player: played "KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3"
+Jun 14 11:55 : player: played "Sade - By Your Side.mp3"
+Jun 14 12:00 : player: played "Sade - Cherish the Day.mp3"
+Jun 14 12:04 : player: played "Sade - King of Sorrow.mp3"
+Jun 14 12:09 : player: played "Sade - Kiss Of Life.mp3"

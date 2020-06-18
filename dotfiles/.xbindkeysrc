@@ -40,7 +40,7 @@
     m:0x40 + c:52
     Mod4 + z 
 
-#firefox
+#brave
 "brave"
     m:0x5 + c:56
     Control+Shift + b 
@@ -85,20 +85,15 @@
     m:0x5 + c:28
     Control+Shift + t 
 
-#volume
-"pavucontrol -t 5"
-    m:0x5 + c:47
-    Control+Shift + ccedilla 
-
 #surf
 "surf https://searx.space"
     m:0xc + c:56
     Control+Alt + b 
 
-#youtube
-"surf https://www.youtube.com/"
-    m:0x5 + c:29
-    Control+Shift + y 
+#Remark
+"amixer set Master toggle"
+    m:0x40 + c:47
+    Mod4 + ccedilla 
 
 #
 # End of xbindkeys configuration

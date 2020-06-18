@@ -40,7 +40,7 @@
     m:0x40 + c:52
     Mod4 + z 
 
-#brave
+#firefox
 "brave"
     m:0x5 + c:56
     Control+Shift + b 
@@ -51,7 +51,7 @@
     Control+Shift + z 
 
 #passmenu
-"passmenu -fn "Iosevka Nerd Font Medium bold-8""
+"passmenu -fn "SauceCodePro Nerd Font Semibold-8""
     m:0x5 + c:33
     Control+Shift + p 
 
@@ -94,6 +94,11 @@
 "surf https://searx.space"
     m:0xc + c:56
     Control+Alt + b 
+
+#youtube
+"surf https://www.youtube.com/"
+    m:0x5 + c:29
+    Control+Shift + y 
 
 #
 # End of xbindkeys configuration

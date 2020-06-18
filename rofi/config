@@ -6,7 +6,7 @@
 rofi.modi: window,drun,run,ssh
 
 ! "Font to use" Set from: Default
-rofi.font: Arimo Nerd Font 9
+rofi.font: SauceCodePro Regular 9
 
 
 ! "Border width" Set from: Default

@@ -80,8 +80,7 @@ call plug#end()
 "------------------------------------------------------------------------------
 "
 " airline
-  let g:airline_theme='distinguished'
-  let g:airline_powerline_fonts = 1
+  let g:airline_theme='gruvbox'
   let g:airline_highlighting_cache = 1
   let g:airline_left_sep = ' '
   let g:airline_left_alt_sep = '|'
@@ -119,7 +118,7 @@ call plug#end()
 " Markdown preview
   let g:mkdp_auto_start = 0
   let g:mkdp_auto_close = 1
-  let g:mkdp_browser = '/bin/chromium'
+  let g:mkdp_browser = '/bin/firefox'
   let g:mkdp_preview_options = {
         \ 'mkit': {},
         \ 'katex': {},
@@ -310,7 +309,7 @@ set splitbelow          " Horizontal split below current.
 set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
-colorscheme molokai
+colorscheme gruvbox
 
 "------------------------------------------------------------------------------
 " searching
@@ -351,18 +350,6 @@ set undodir=$HOME/.local/share/nvim/undo
 set nobackup      " Recommended by coc
 set nowritebackup " Recommended by coc
 "set backupdir=$HOME/.local/share/nvim/backup
-
-"------------------------------------------------------------------------------
-" terminal
-"------------------------------------------------------------------------------
-"
-" terminal st
-if &term =~ '256color'
-    " disable Background Color Erase (BCE) so that color schemes
-    " render properly when inside 256-color tmux and GNU screen.
-    " see also http://sunaku.github.io/vim-256color-bce.html
-    set t_ut=
-endif
 
 "------------------------------------------------------------------------------
 " Error handling

@@ -41,7 +41,7 @@
     Mod4 + z 
 
 #firefox
-"firefox"
+"brave"
     m:0x5 + c:56
     Control+Shift + b 
 
@@ -51,17 +51,17 @@
     Control+Shift + z 
 
 #passmenu
-"passmenu -fn "Iosevka Nerd Font Medium bold-8""
+"passmenu -fn "SauceCodePro Nerd Font Semibold-8""
     m:0x5 + c:33
     Control+Shift + p 
 
 #clerk
-"st -c clerk -e clerk"
+"alacritty -e clerk"
     m:0x5 + c:57
     Control+Shift + n 
 
 #bashtop
-"st -c bashtop -e bashtop"
+"alacritty -e bashtop"
     m:0x5 + c:58
     Control+Shift + m 
 
@@ -89,6 +89,16 @@
 "pavucontrol -t 5"
     m:0x5 + c:47
     Control+Shift + ccedilla 
+
+#surf
+"surf https://searx.space"
+    m:0xc + c:56
+    Control+Alt + b 
+
+#youtube
+"surf https://www.youtube.com/"
+    m:0x5 + c:29
+    Control+Shift + y 
 
 #
 # End of xbindkeys configuration

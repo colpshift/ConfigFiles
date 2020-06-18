@@ -30,58 +30,49 @@ scrolling:
 
 font:
   normal:
-    family: Iosevka Nerd Font
-    style: Medium
+    family: SauceCodePro Nerd Font
+    style: Regular
   bold:
-    family: Iosevka Nerd Font
+    family: SauceCodePro Nerd Font
     style: Bold
   italic:
-    family: Iosevka Nerd Font
+    family: SauceCodePro Nerd Font
     style: Italic
   bold_italic:
-    family: Iosevka Nerd Font
+    family: SauceCodePro Nerd Font
     style: Bold Italic
   size: 8
 
 # color_start
-# base16-eighties.yml
-# Base16 Eighties - alacritty color config
-# Chris Kempson (http://chriskempson.com)
+# /home/colps/.config/alacritty/themes/one_dark.yaml
+# Colors (One Dark)
 colors:
   # Default colors
   primary:
-    background: '0x2d2d2d'
-    foreground: '0xd3d0c8'
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x2d2d2d'
-    cursor: '0xd3d0c8'
+    background: '0x1e2127'
+    foreground: '0xabb2bf'
 
   # Normal colors
   normal:
-    black:   '0x2d2d2d'
-    red:     '0xf2777a'
-    green:   '0x99cc99'
-    yellow:  '0xffcc66'
-    blue:    '0x6699cc'
-    magenta: '0xcc99cc'
-    cyan:    '0x66cccc'
-    white:   '0xd3d0c8'
+    black:   '0x1e2127'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xabb2bf'
 
   # Bright colors
   bright:
-    black:   '0x747369'
-    red:     '0xf99157'
-    green:   '0x393939'
-    yellow:  '0x515151'
-    blue:    '0xa09f93'
-    magenta: '0xe8e6df'
-    cyan:    '0xd27b53'
-    white:   '0xf2f0ec'
-
-draw_bold_text_with_bright_colors: false
-
+    black:   '0x5c6370'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xffffff'
 # color_end
 
 visual_bell:

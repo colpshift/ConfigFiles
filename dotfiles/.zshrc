@@ -8,6 +8,15 @@
 # Author: Colpshift
 #
 
+### Set variables
+#################
+HISTFILE=$HOME/.zhistory
+HISTSIZE=1000
+SAVEHIST=1000
+WORDCHARS=${WORDCHARS//\/[&.;]}
+HOSTNAME="`hostname`"
+LS_COLORS='rs=0:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:tw=30;42:ow=34;42:st=37;44:ex=01;32:';
+
 ### Set/unset ZSH options
 #########################
 # setopt NOHUP
@@ -36,193 +45,17 @@ unsetopt bgnice autoparamslash
 
 ### Autoload zsh modules when they are referenced
 #################################################
-autoload -U history-search-nd
+autoload -U history-search-end
 zmodload -a zsh/stat stat
 zmodload -a zsh/zpty zpty
 zmodload -a zsh/zprof zprof
 zmodload zsh/complist
 #zmodload -ap zsh/mapfile mapfile
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
 
-### Set variables
-#################
-HISTFILE=$HOME/.zhistory
-HISTSIZE=1000
-SAVEHIST=1000
-WORDCHARS=${WORDCHARS//\/[&.;]}
-HOSTNAME="`hostname`"
-LS_COLORS='rs=0:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:tw=30;42:ow=34;42:st=37;44:ex=01;32:';
 
-### Load colors
-###############
-autoload -U colors && colors
-colors
-
-### Set Colors to use in in the script
-######################################
-# Normal Colors
-Black='\e[0;30m'        # Black
-Red='\e[0;31m'          # Red
-Green='\e[0;32m'        # Green
-Yellow='\e[0;33m'       # Yellow
-Blue='\e[0;34m'         # Blue
-Purple='\e[0;35m'       # Purple
-Cyan='\e[0;36m'         # Cyan
-White='\e[0;37m'        # White
-
-# Bold
-BBlack='\e[1;30m'       # Black
-BRed='\e[1;31m'         # Red
-BGreen='\e[1;32m'       # Green
-BYellow='\e[1;33m'      # Yellow
-BBlue='\e[1;34m'        # Blue
-BPurple='\e[1;35m'      # Purple
-BCyan='\e[1;36m'        # Cyan
-BWhite='\e[1;37m'       # White
-
-# Background
-On_Black='\e[40m'       # Black
-On_Red='\e[41m'         # Red
-On_Green='\e[42m'       # Green
-On_Yellow='\e[43m'      # Yellow
-On_Blue='\e[44m'        # Blue
-On_Purple='\e[45m'      # Purple
-On_Cyan='\e[46m'        # Cyan
-On_White='\e[47m'       # White
-
-NC="\e[m"               # Color Reset
-
-# Color man pages
-export LESS_TERMCAP_mb=$'\E[01;32m'
-export LESS_TERMCAP_md=$'\E[01;32m'
-export LESS_TERMCAP_me=$'\E[0m'
-export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;47;34m'
-export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;36m'
-export LESS=-rs
-
-### Set prompt
-##############
-autoload -Uz compinit zcalc promptinit
-compinit -d
-promptinit
-setopt prompt_subst
-
-# Prompt original
-#
-# PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{yellow}%1~%f%b %# '
-# RPROMPT='%*'
-# autoload -Uz vcs_info
-# precmd_vcs_info() { vcs_info }
-# precmd_functions+=( precmd_vcs_info )
-# setopt prompt_subst
-# RPROMPT=\$vcs_info_msg_0_
-# zstyle ':vcs_info:git:*' formats '%F{gray}(%b)%r%f'
-# zstyle ':vcs_info:*' enable git
-
-# Prompt spaceship
-#
-# https://github.com/denysdovhan/spaceship-prompt
-#
-# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
-#
-ZSH_THEME="spaceship"
-SPACESHIP_CHAR_SUFFIX=" "
-SPACESHIP_TIME_SHOW=true
-SPACESHIP_USER_SHOW=true
-SPACESHIP_HOST_SHOW=true
-SPACESHIP_JOBS_SHOW=false
-SPACESHIP_EXIT_CODE_SHOW=true
-SPACESHIP_VI_MODE_SHOW=false
-prompt spaceship
-
-### help
-########
-autoload -Uz run-help
-alias help='run-help'
-#
-autoload -Uz run-help-git
-autoload -Uz run-help-ip
-autoload -Uz run-help-openssl
-autoload -Uz run-help-p4
-autoload -Uz run-help-sudo
-autoload -Uz run-help-svk
-autoload -Uz run-help-svn
-
-### Set alias
-#############
-alias ll='ls'
-alias ls='ls -lh --color=auto --group-directories-first'
-alias la='ls -ah'  # show hidden files and folders
-alias lx='ls -BXh' # sort by extension
-alias lz='ls -rSh' # sort by size
-alias lt='ls -rth' # sort by date
-alias dir='dir --color'
-alias grep='grep --color'
-alias dmesg='dmesg --color'
-alias df='df -h'
-alias du='du -h'
-alias vi='/bin/nvim'
-alias vim='/bin/nvim'
-alias gpg='gpg2'
-alias cat='bat --theme TwoDark'
-alias gitu='git add . && git commit && git push'
-alias gac='git add . && git commit'
-alias cls='clear'
-alias myip='curl http://ipecho.net/plain; echo'
-alias neofetch="neofetch --color_blocks ff --ascii_distro Anarchy"
-alias sxiv='sxiv -qt'
-alias rofi='rofi -show drun'
-alias urxvt="/home/colps/.scripts/urxvts.sh"
-alias clerk="/bin/clerk -f"
-alias ncmpcpp="ncmpcpp -s media_library"
-alias st-apply-patch="patch -i"
-alias systemctl_error='sudo systemctl --failed'
-alias journal_error='sudo journalctl -p 3 -xb'
-alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias grub_install='grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck'
-alias yayu='yay -Syu'
-alias yayi='sh $HOME/.scripts/fzf_pkg_aur.sh'
-alias pacman='sudo pacman --color=always'
-alias pacu='pacman -Syu'
-alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
-alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
-alias pacman-mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
-
-### Bind keys
-#############
-typeset -g -A key
-#
-key[Home]="${terminfo[khome]}"
-key[End]="${terminfo[kend]}"
-key[Insert]="${terminfo[kich1]}"
-key[Backspace]="${terminfo[kbs]}"
-key[Delete]="${terminfo[kdch1]}"
-key[Up]="${terminfo[kcuu1]}"
-key[Down]="${terminfo[kcud1]}"
-key[Left]="${terminfo[kcub1]}"
-key[Right]="${terminfo[kcuf1]}"
-key[PageUp]="${terminfo[kpp]}"
-key[PageDown]="${terminfo[knp]}"
-key[Shift-Tab]="${terminfo[kcbt]}"
-
-# Setup key accordingly
-[[ -n "${key[Home]}"      ]] && bindkey -- "${key[Home]}"       beginning-of-line
-[[ -n "${key[End]}"       ]] && bindkey -- "${key[End]}"        end-of-line
-[[ -n "${key[Insert]}"    ]] && bindkey -- "${key[Insert]}"     overwrite-mode
-[[ -n "${key[Backspace]}" ]] && bindkey -- "${key[Backspace]}"  backward-delete-char
-[[ -n "${key[Delete]}"    ]] && bindkey -- "${key[Delete]}"     delete-char
-[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-history
-[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-history
-[[ -n "${key[Left]}"      ]] && bindkey -- "${key[Left]}"       backward-char
-[[ -n "${key[Right]}"     ]] && bindkey -- "${key[Right]}"      forward-char
-[[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"     beginning-of-buffer-or-history
-[[ -n "${key[PageDown]}"  ]] && bindkey -- "${key[PageDown]}"   end-of-buffer-or-history
-[[ -n "${key[Shift-Tab]}" ]] && bindkey -- "${key[Shift-Tab]}"  reverse-menu-complete
-
-autoload -U compinit
+### Command completion
+######################
+autoload -Uz compinit
 compinit
 bindkey "^?" backward-delete-char
 bindkey '^[OH' beginning-of-line
@@ -311,6 +144,159 @@ zstyle ':completion:*:ssh:*' group-order \
    hosts-domain hosts-host users hosts-ipaddr
 zstyle '*' single-ignored show
 
+# history
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+
+### Bind keys
+#############
+typeset -g -A key
+#
+key[Home]="${terminfo[khome]}"
+key[End]="${terminfo[kend]}"
+key[Insert]="${terminfo[kich1]}"
+key[Backspace]="${terminfo[kbs]}"
+key[Delete]="${terminfo[kdch1]}"
+key[Up]="${terminfo[kcuu1]}"
+key[Down]="${terminfo[kcud1]}"
+key[Left]="${terminfo[kcub1]}"
+key[Right]="${terminfo[kcuf1]}"
+key[PageUp]="${terminfo[kpp]}"
+key[PageDown]="${terminfo[knp]}"
+key[Shift-Tab]="${terminfo[kcbt]}"
+# Setup key accordingly
+[[ -n "${key[Home]}"      ]] && bindkey -- "${key[Home]}"       beginning-of-line
+[[ -n "${key[End]}"       ]] && bindkey -- "${key[End]}"        end-of-line
+[[ -n "${key[Insert]}"    ]] && bindkey -- "${key[Insert]}"     overwrite-mode
+[[ -n "${key[Backspace]}" ]] && bindkey -- "${key[Backspace]}"  backward-delete-char
+[[ -n "${key[Delete]}"    ]] && bindkey -- "${key[Delete]}"     delete-char
+[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-history
+[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-history
+[[ -n "${key[Left]}"      ]] && bindkey -- "${key[Left]}"       backward-char
+[[ -n "${key[Right]}"     ]] && bindkey -- "${key[Right]}"      forward-char
+[[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"     beginning-of-buffer-or-history
+[[ -n "${key[PageDown]}"  ]] && bindkey -- "${key[PageDown]}"   end-of-buffer-or-history
+[[ -n "${key[Shift-Tab]}" ]] && bindkey -- "${key[Shift-Tab]}"  reverse-menu-complete
+[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-beginning-search
+[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-beginning-search
+
+# Kake sure the terminal is in application mode, when zle is
+# active. Only then are the values from $terminfo valid
+if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
+  autoload -Uz add-zle-hook-widget
+  function zle_application_mode_start { echoti smkx }
+  function zle_application_mode_stop { echoti rmkx }
+  add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
+  add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
+fi
+
+### Set prompt
+##############
+autoload -Uz compinit zcalc promptinit
+compinit -d
+promptinit
+setopt prompt_subst
+
+# Prompt original
+#
+# PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{yellow}%1~%f%b %# '
+# RPROMPT='%*'
+# autoload -Uz vcs_info
+# precmd_vcs_info() { vcs_info }
+# precmd_functions+=( precmd_vcs_info )
+# setopt prompt_subst
+# RPROMPT=\$vcs_info_msg_0_
+# zstyle ':vcs_info:git:*' formats '%F{gray}(%b)%r%f'
+# zstyle ':vcs_info:*' enable git
+
+# Prompt spaceship
+#
+# https://github.com/denysdovhan/spaceship-prompt
+#
+# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
+#
+ZSH_THEME="spaceship"
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_USER_SHOW=true
+SPACESHIP_HOST_SHOW=true
+SPACESHIP_JOBS_SHOW=true
+SPACESHIP_EXIT_CODE_SHOW=true
+SPACESHIP_VI_MODE_SHOW=false
+prompt spaceship
+
+### help
+########
+autoload -Uz run-help
+alias help='run-help'
+#
+autoload -Uz run-help-git
+autoload -Uz run-help-ip
+autoload -Uz run-help-openssl
+autoload -Uz run-help-p4
+autoload -Uz run-help-sudo
+autoload -Uz run-help-svk
+autoload -Uz run-help-svn
+
+### Load colors
+###############
+autoload -U colors && colors
+colors
+
+# Color man pages
+export LESS_TERMCAP_mb=$'\E[01;32m'
+export LESS_TERMCAP_md=$'\E[01;32m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;47;34m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;36m'
+export LESS=-rs
+
+### Set alias
+#############
+alias ll='ls'
+alias ls='ls -lh --color=auto --group-directories-first'
+alias la='ls -ah'  # show hidden files and folders
+alias lx='ls -BXh' # sort by extension
+alias lz='ls -rSh' # sort by size
+alias lt='ls -rth' # sort by date
+alias mv='mv -i'
+alias dir='dir --color'
+alias grep='grep --color'
+alias dmesg='dmesg --color'
+alias df='df -h'
+alias du='du -h'
+alias vi='/bin/nvim'
+alias vim='/bin/nvim'
+alias gpg='gpg2'
+alias cat='bat --theme TwoDark'
+alias gs='git status'
+alias gl='git log --oneline'
+alias gitu='git add . && git commit && git push'
+alias cls='clear'
+alias myip='curl http://ipecho.net/plain; echo'
+alias neofetch="neofetch --color_blocks ff --ascii_distro Anarchy"
+alias sxiv='sxiv -qt'
+alias rofi='rofi -show drun'
+alias urxvt="/home/colps/.scripts/urxvts.sh"
+alias clerk="/bin/clerk -f"
+alias ncmpcpp="ncmpcpp -s media_library"
+alias st-apply-patch="patch -i"
+alias systemctl_error='sudo systemctl --failed'
+alias journal_error='sudo journalctl -p 3 -xb'
+alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias grub_install='grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck'
+alias yayu='yay -Syu'
+alias yayi='sh $HOME/.scripts/fzf_pkg_aur.sh'
+alias pacman='sudo pacman --color=always'
+alias pacu='pacman -Syu'
+alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
+alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
+alias pacman-mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
+
 # Persistent rehash
 zstyle ':completion:*' rehash true
 # On-demand rehash
@@ -345,17 +331,10 @@ source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 # zsh user completions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-# Terminal st
-#############
-function zle-line-init () { echoti smkx }
-function zle-line-finish () { echoti rmkx }
-zle -N zle-line-init
-zle -N zle-line-finish
-
 # fzf completion
 ################
 #export FZF_COMPLETION_TRIGGER='~~'
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/fzf-extras.zsh
-#e
+#

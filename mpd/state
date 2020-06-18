@@ -3,7 +3,7 @@ audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
 state: pause
 current: 14
-time: 2.003000
+time: 64.269000
 random: 0
 repeat: 0
 single: 0
@@ -27,4 +27,15 @@ playlist_begin
 12:Radical Face - Welcome Home.mp3
 13:Baby Bash - Baby, I'm Back.mp3
 14:KAVABANGA DEPO KOLIBRI - Отдаляясь от  космоса.mp3
+15:Sade - By Your Side.mp3
+16:Sade - Cherish the Day.mp3
+17:Sade - King of Sorrow.mp3
+18:Sade - Kiss Of Life.mp3
+19:Sade - Smooth Operator.mp3
+20:Sade - The Sweetest Taboo.mp3
+21:Sade - Your Love Is King.mp3
+22:Cher - Believe.mp3
+23:Cher - The Shoop Shoop Song (Its In His Kiss).mp3
+24:Ece Seçkin - Adeyyo.mp3
+25:Ed Sheeran/Ed Sheeran - Hit Me Baby One More Time.mp3
 playlist_end

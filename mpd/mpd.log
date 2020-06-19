@@ -6155,3 +6155,7 @@ Jun 18 16:41 : player: played "Get On Your Feet (from Dangerous Lies - Netflix).
 Jun 18 17:24 : player: played "O_Rappa/Rappa_Mundi/O Rappa-Hey_Joe.mp3"
 Jun 18 17:25 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jun 18 17:25 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 18 19:37 : player: played "O_Rappa/Rappa_Mundi/O Rappa-Hey_Joe.mp3"
+Jun 18 19:53 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 18 19:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 18 20:51 : player: played "O_Rappa/Rappa_Mundi/O Rappa-Hey_Joe.mp3"

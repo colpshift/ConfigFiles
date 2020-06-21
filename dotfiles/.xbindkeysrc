@@ -40,11 +40,6 @@
     m:0x40 + c:52
     Mod4 + z 
 
-#brave
-"brave"
-    m:0x5 + c:56
-    Control+Shift + b 
-
 #zathura
 "zathura"
     m:0x5 + c:52
@@ -54,11 +49,6 @@
 "passmenu -fn "SauceCodePro Nerd Font Semibold-8""
     m:0x5 + c:33
     Control+Shift + p 
-
-#clerk
-"alacritty -e clerk"
-    m:0x5 + c:57
-    Control+Shift + n 
 
 #bashtop
 "alacritty -e bashtop"
@@ -90,7 +80,7 @@
     m:0xc + c:56
     Control+Alt + b 
 
-#Remark
+#mute volume
 "amixer set Master toggle"
     m:0x40 + c:47
     Mod4 + ccedilla 

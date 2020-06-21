@@ -21,6 +21,11 @@ window:
     x: 90.0
     y: 90.0
 
+  padding:
+    x: 0
+    y: 0
+
+  dynamic_padding: false
   decorations: full
   startup_mode: Windowed
 
@@ -32,16 +37,28 @@ font:
   normal:
     family: SauceCodePro Nerd Font
     style: Regular
+
   bold:
     family: SauceCodePro Nerd Font
     style: Bold
+
   italic:
     family: SauceCodePro Nerd Font
     style: Italic
+
   bold_italic:
     family: SauceCodePro Nerd Font
     style: Bold Italic
+
   size: 8
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
 
 # color_start
 # /home/colps/.config/alacritty/themes/one_dark.yaml
@@ -77,12 +94,14 @@ colors:
 
 visual_bell:
   animation: EaseOutExpo
-  duration: 3
+  duration: 0
   color: '0xffffff'
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
   save_to_clipboard: true
+
+dynamic_title: true
 
 cursor:
   style: Beam
@@ -102,9 +121,12 @@ mouse:
   double_click: { threshold: 300 }
   triple_click: { threshold: 300 }
   hide_when_typing: true
+
   url:
     launcher:
       program: xdg-open
+      args: []
+    modifiers: None
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
@@ -120,3 +142,9 @@ key_bindings:
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
   - { key: Return,   mods: Alt,           action: ToggleFullscreen }
   - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
+
+debug:
+  render_timer: false
+  persistent_logging: false
+  log_level: Warn
+  print_events: false

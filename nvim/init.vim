@@ -343,8 +343,8 @@ set foldmethod=indent   " indentation method
 "------------------------------------------------------------------------------
 " swap, undo and backup
 "------------------------------------------------------------------------------
-set swapfile
-set directory=$HOME/.local/share/nvim/swap
+set noswapfile
+"set directory=$HOME/.local/share/nvim/swap
 set undofile
 set undodir=$HOME/.local/share/nvim/undo
 set nobackup      " Recommended by coc

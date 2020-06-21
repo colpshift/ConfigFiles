@@ -6159,3 +6159,61 @@ Jun 18 19:37 : player: played "O_Rappa/Rappa_Mundi/O Rappa-Hey_Joe.mp3"
 Jun 18 19:53 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jun 18 19:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jun 18 20:51 : player: played "O_Rappa/Rappa_Mundi/O Rappa-Hey_Joe.mp3"
+Jun 19 00:54 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 01:08 : player: played "Musicas/Nick Cave & The Bad Seeds - Bring It On.mp3"
+Jun 19 06:49 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 06:50 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 07:34 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 07:36 : player: played "Ponto de Defumação - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 19 07:39 : player: played "Toques de Umbanda - Zé Maurício Machline/Ponto de Exú - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 19 07:42 : player: played "Pontos de Pretos Velhos - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 19 07:44 : player: played "Ponto de Oxalá - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 19 13:05 : player: played "Musicas/Nick Cave & The Bad Seeds - Breathless.mp3"
+Jun 19 13:10 : player: played "Musicas/Nick Cave & The Bad Seeds - Bring It On.mp3"
+Jun 19 13:14 : player: played "Musicas/Matchbox Twenty - She's so Mean.mp3"
+Jun 19 13:18 : player: played "Musicas/Matchbox Twenty - 3AM.mp3"
+Jun 19 14:45 : player: played "Musicas/Nick Cave & The Bad Seeds - Breathless.mp3"
+Jun 19 14:50 : player: played "Musicas/Nick Cave & The Bad Seeds - Bring It On.mp3"
+Jun 19 14:54 : player: played "Musicas/Matchbox Twenty - She's so Mean.mp3"
+Jun 19 14:58 : player: played "Musicas/Matchbox Twenty - 3AM.mp3"
+Jun 19 15:02 : player: played "Musicas/Matchbox Twenty - Real World (2007 Remaster).mp3"
+Jun 19 15:04 : player: played "Musicas/Matchbox Twenty - Push.mp3"
+Jun 19 15:28 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 15:28 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 18:06 : update: added /Creedence Clearwater Revival - Have You Ever Seen The Rain.mp3
+Jun 19 18:06 : update: added /Creedence Clearwater Revival - Run Through The Jungle.mp3
+Jun 19 18:06 : update: added /Creedence Clearwater Revival - Hey Tonight.mp3
+Jun 19 18:06 : update: added /Creedence Clearwater Revival - Who'll Stop The Rain.mp3
+Jun 19 18:06 : update: added /Creedence Clearwater Revival - Fortunate Son.mp3
+Jun 19 18:06 : update: added /Creedence Clearwater Revival - Green River.mp3
+Jun 19 18:06 : update: added /Creedence Clearwater Revival - Proud Mary.mp3
+Jun 19 18:06 : update: added /Creedence Clearwater Revival - I Heard It Through The Grapevine.mp3
+Jun 19 18:06 : update: added /Creedence Clearwater Revival - Bad Moon Rising.mp3
+Jun 19 18:16 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 18:42 : player: played "Musicas/Nick Cave & The Bad Seeds - Bring It On.mp3"
+Jun 19 18:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 18:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 19:10 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 20:26 : player: played "Clara Nunes - A Deusa Dos Orixás.mp3"
+Jun 19 20:45 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 19 20:45 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 20 01:07 : player: played "Clara Nunes - A Deusa Dos Orixás.mp3"
+Jun 20 09:05 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 20 09:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 20 10:28 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 20 10:31 : player: played "Musicas/Nick Cave & The Bad Seeds - Breathless.mp3"
+Jun 20 10:37 : player: played "Musicas/Nick Cave & The Bad Seeds - Bring It On.mp3"
+Jun 20 10:41 : player: played "Musicas/Matchbox Twenty - She's so Mean.mp3"
+Jun 20 10:47 : player: played "Musicas/Matchbox Twenty - 3AM.mp3"
+Jun 20 10:51 : player: played "Musicas/Matchbox Twenty - Real World (2007 Remaster).mp3"
+Jun 20 10:58 : player: played "Musicas/Matchbox Twenty - Push.mp3"
+Jun 20 11:02 : player: played "Musicas/Matchbox Twenty - Unwell (2007 Remaster).mp3"
+Jun 20 11:04 : player: played "Creedence Clearwater Revival - Green River.mp3"
+Jun 20 11:08 : player: played "Musicas/Nick Cave & The Bad Seeds - Breathless.mp3"
+Jun 20 11:13 : player: played "Musicas/Nick Cave & The Bad Seeds - Bring It On.mp3"
+Jun 20 11:17 : player: played "Musicas/Matchbox Twenty - She's so Mean.mp3"
+Jun 20 11:21 : player: played "Musicas/Matchbox Twenty - 3AM.mp3"
+Jun 20 12:23 : player: played "Creedence Clearwater Revival - Green River.mp3"
+Jun 20 15:28 : player: played "Ponto de Defumação - Zé Maurício Machline (Toques de Umbanda).mp3"
+Jun 20 21:04 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 20 21:04 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

@@ -8,7 +8,6 @@ rofi.modi: window,drun,run,ssh
 ! "Font to use" Set from: Default
 rofi.font: SauceCodePro Regular 9
 
-
 ! "Border width" Set from: Default
 rofi.bw: 1
 
@@ -31,14 +30,14 @@ rofi.fake-transparency: true
 ! (background or screenshot)" Set from: Default
 rofi.fake-background: background
 
-! "New style theme file" Set from: File
-
 ! "Switch to the next mode." Set from: Default
- rofi.kb-mode-next: Alt+l
+rofi.kb-mode-next: Alt+l
 
 ! "Switch to the previous mode." Set from: Default
 rofi.kb-mode-previous: Alt+h
 
 ! "Take a screenshot of the rofi window" Set from: Default
 ! rofi.kb-screenshot: Alt+j
+
+! "New style theme file" Set from: File
 rofi.theme: /usr/share/rofi/themes/gruvbox-dark-soft.rasi

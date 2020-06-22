@@ -183,16 +183,6 @@ key[Shift-Tab]="${terminfo[kcbt]}"
 [[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-beginning-search
 [[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-beginning-search
 
-# Kake sure the terminal is in application mode, when zle is
-# active. Only then are the values from $terminfo valid
-if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
-  autoload -Uz add-zle-hook-widget
-  function zle_application_mode_start { echoti smkx }
-  function zle_application_mode_stop { echoti rmkx }
-  add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
-  add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
-fi
-
 ### Set prompt
 ##############
 autoload -Uz compinit zcalc promptinit
@@ -222,7 +212,7 @@ ZSH_THEME="spaceship"
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_USER_SHOW=true
 SPACESHIP_HOST_SHOW=true
-SPACESHIP_JOBS_SHOW=true
+SPACESHIP_JOBS_SHOW=false
 SPACESHIP_EXIT_CODE_SHOW=true
 SPACESHIP_VI_MODE_SHOW=false
 prompt spaceship
@@ -271,8 +261,9 @@ alias df='df -h'
 alias du='du -h'
 alias vi='/bin/nvim'
 alias vim='/bin/nvim'
+alias -s {md,ts,js,conf,txt,json}=nvim
 alias gpg='gpg2'
-alias cat='bat --theme TwoDark'
+alias bat='bat --theme TwoDark'
 alias gs='git status'
 alias gl='git log --oneline'
 alias gitu='git add . && git commit && git push'
@@ -282,7 +273,6 @@ alias neofetch="neofetch --color_blocks ff --ascii_distro Anarchy"
 alias sxiv='sxiv -qt'
 alias rofi='rofi -show drun'
 alias urxvt="/home/colps/.scripts/urxvts.sh"
-alias clerk="/bin/clerk -f"
 alias ncmpcpp="ncmpcpp -s media_library"
 alias st-apply-patch="patch -i"
 alias systemctl_error='sudo systemctl --failed'
@@ -296,6 +286,8 @@ alias pacu='pacman -Syu'
 alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
 alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
 alias pacman-mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
+#
+alias colps_keys='bat $HOME/Linux/dwm/dwm_bindkeys.txt'
 
 # Persistent rehash
 zstyle ':completion:*' rehash true

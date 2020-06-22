@@ -40,25 +40,10 @@
     m:0x40 + c:52
     Mod4 + z 
 
-#firefox
-"brave"
-    m:0x5 + c:56
-    Control+Shift + b 
-
 #zathura
 "zathura"
     m:0x5 + c:52
     Control+Shift + z 
-
-#passmenu
-"passmenu -fn "SauceCodePro Nerd Font Semibold-8""
-    m:0x5 + c:33
-    Control+Shift + p 
-
-#clerk
-"alacritty -e clerk"
-    m:0x5 + c:57
-    Control+Shift + n 
 
 #bashtop
 "alacritty -e bashtop"
@@ -85,20 +70,15 @@
     m:0x5 + c:28
     Control+Shift + t 
 
-#volume
-"pavucontrol -t 5"
-    m:0x5 + c:47
-    Control+Shift + ccedilla 
-
 #surf
-"surf https://searx.space"
+"surf -D https://suckless.org/rocks/"
     m:0xc + c:56
     Control+Alt + b 
 
-#youtube
-"surf https://www.youtube.com/"
-    m:0x5 + c:29
-    Control+Shift + y 
+#mute volume
+"amixer set Master toggle"
+    m:0x40 + c:47
+    Mod4 + ccedilla 
 
 #
 # End of xbindkeys configuration

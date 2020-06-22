@@ -187,7 +187,6 @@ call plug#end()
     \ 'coc-browser',
     \ 'coc-word',
     \ 'coc-actions',
-    \ 'coc-tag',
     \ 'coc-syntax',]
   "
   " Coc actions

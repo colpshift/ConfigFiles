@@ -45,11 +45,6 @@
     m:0x5 + c:52
     Control+Shift + z 
 
-#passmenu
-"passmenu -fn "SauceCodePro Nerd Font Semibold-8""
-    m:0x5 + c:33
-    Control+Shift + p 
-
 #bashtop
 "alacritty -e bashtop"
     m:0x5 + c:58
@@ -76,7 +71,7 @@
     Control+Shift + t 
 
 #surf
-"surf https://searx.space"
+"surf -D https://suckless.org/rocks/"
     m:0xc + c:56
     Control+Alt + b 
 

@@ -1,0 +1,95 @@
+# terminal
+super + return
+
+# dmenu menu
+super + p
+
+# volume mute
+super + ccedilla
+
+# volume up
+super + equal
+
+# volume down
+super + minus
+
+# rofi menu
+super + z
+
+# screensaver
+super + x
+
+# screenshot
+super + print
+
+# event monitor
+super + shift + r
+
+# tor browser
+super + shift + t
+
+# default browser
+super + shift + w
+
+# news reader
+super + shift + n
+
+# music player
+super + shift + m
+
+# password vault
+super + shift + p
+
+# show clipboard contents
+super + shift + insert
+
+# toggle bar
+super + b
+
+# focus stack
+super + k
+super + j
+
+# split vertical
+super + d
+
+# split horizontal
+super + i
+
+# stack resize
+super + h
+super + l
+
+# set layout tile
+super + t
+
+# set layout monocle
+super + m
+
+# set layout floating
+super + f
+
+# set layout9()
+super + space
+
+# toggle layout floating
+super + shift + space
+
+# show all tag contents on current tag
+super + 0
+
+# toggle all tag to normal view
+super + 8
+
+# show each tag content on current tag
+super + shift + 0
+
+# toggle each tag to normal tag view
+super + shift + 8
+
+# move focus tag to left monitor 
+super + shift + ,
+
+# move focus tag to right monitor
+super + shift + >
+

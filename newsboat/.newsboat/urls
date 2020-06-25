@@ -1,6 +1,9 @@
- "query:Unread:unread = \"yes\"" meta
+"query:Unread:unread = \"yes\"" meta
  --- newsboat
- https://newsboat.org/news.atom
+https://newsboat.org/news.atom
+ --- news
+http://feeds.bbci.co.uk/portuguese/rss.xml
+http://rss.home.uol.com.br/index.xml
  --- pkg update
 https://www.archlinux.org/feeds/news/ "Linux"
 https://www.archlinux.org/feeds/packages/ "Linux"
@@ -19,11 +22,11 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCa0tJguRNbU6I8OO3nUvXxQ "Yo
 https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "YouTube" "Brodie" "Linux"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCqd9oVuR4tuKD5Y9AFwxz7Q "YouTube" "TerminalRoot" "Linux"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg "YouTube" "Wolfgang" "Linux"
---- Espiritos
+  --- Espiritos
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMBASOtCn9BI_kq7bD6iCcw "YouTube" "Calafrios" "Espiritos"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCPbEpkurA_eNIjKBVIOKXmA "YouTube" "Calafrios" "Espiritos"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUbBQ3yTGhJJd5DXphwWvEw "YouTube" "Spooky" "Espiritos"
---- Armas
+  --- Armas
 https://www.youtube.com/feeds/videos.xml?channel_id=UCU-ljC8EvKZFhJ-pct_5rMQ "YouTube" "Armas" "TREX"
---- Corona
+  --- Corona
 https://www.youtube.com/feeds/videos.xml?channel_id=UCSTlOTcyUmzvhQi6F8lFi5w "YouTube" "Atila" "Corona"

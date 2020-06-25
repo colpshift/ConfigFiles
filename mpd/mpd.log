@@ -30024,3 +30024,25 @@ Jun 24 19:41 : update: added /Nick Cave_-_Bring It On.mp3
 Jun 24 21:02 : player: played "chris_isaak _-_wicked_game.mp3"
 Jun 24 21:17 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
 Jun 24 21:17 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 24 22:27 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 24 22:28 : exception: No such song
+Jun 24 22:32 : player: played "creedence_clearwater_revival _-_green_river.mp3"
+Jun 24 22:52 : player: played "Nick Cave_-_Breathless.mp3"
+Jun 25 06:42 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 25 06:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 25 07:08 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 25 07:11 : player: played "Nick Cave_-_Breathless.mp3"
+Jun 25 07:15 : player: played "Nick Cave_-_Bring It On.mp3"
+Jun 25 07:18 : player: played "creedence_clearwater_revival _-_green_river.mp3"
+Jun 25 07:27 : player: played "Ponto de Oxala - Ze Mauricio.mp3"
+Jun 25 07:29 : player: played "Ponto de Defumacao - Ze Mauricio.mp3"
+Jun 25 07:33 : player: played "Ponto de Exu - Ze Mauricio.mp3"
+Jun 25 07:35 : player: played "Pontos de Pretos Velhos - Ze Mauricio.mp3"
+Jun 25 07:37 : player: played "Ponto de Oxala - Ze Mauricio.mp3"
+Jun 25 08:25 : player: played "Ponto de Ibeji - Ze Mauricio.mp3"
+Jun 25 08:28 : player: played "Nick Cave_-_Breathless.mp3"
+Jun 25 08:33 : player: played "Nick Cave_-_Bring It On.mp3"
+Jun 25 08:35 : player: played "creedence_clearwater_revival _-_green_river.mp3"
+Jun 25 12:08 : player: played "Nick Cave_-_Breathless.mp3"
+Jun 25 12:12 : player: played "Nick Cave_-_Bring It On.mp3"
+Jun 25 12:15 : player: played "creedence_clearwater_revival _-_green_river.mp3"

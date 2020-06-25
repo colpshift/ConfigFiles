@@ -43,7 +43,6 @@ systemctl --user import-environment DISPLAY
 #
 # Autostart section
 sh ~/.scripts/autocutsel_start.sh
-sh ~/.scripts/xbindkeys_start.sh
 sh ~/.scripts/flameshot_start.sh
 sh ~/.scripts/xscreensaver_start.sh
 ~/.fehbg &

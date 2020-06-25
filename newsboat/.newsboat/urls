@@ -1,9 +1,11 @@
  "query:Unread:unread = \"yes\"" meta
  --- newsboat
  https://newsboat.org/news.atom
- --- linux
+ --- pkg update
 https://www.archlinux.org/feeds/news/ "Linux"
 https://www.archlinux.org/feeds/packages/ "Linux"
+https://suckless.org/atom.xml
+ --- linux
 https://lukesmith.xyz/rss.xml "Linux" "Luke"
 https://notrelated.xyz/rss "Linux" "Luke"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "YouTube" "Luke" "Linux"  

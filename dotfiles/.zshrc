@@ -15,33 +15,26 @@ HISTSIZE=1000
 SAVEHIST=1000
 WORDCHARS=${WORDCHARS//\/[&.;]}
 HOSTNAME="`hostname`"
-LS_COLORS='rs=0:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:tw=30;42:ow=34;42:st=37;44:ex=01;32:';
 
 ### Set/unset ZSH options
 #########################
-# setopt NOHUP
-# setopt NOTIFY
-# setopt NO_FLOW_CONTROL
 setopt INC_APPEND_HISTORY SHARE_HISTORY
+setopt EXTENDED_HISTORY
 setopt APPEND_HISTORY
 setopt AUTO_LIST
-setopt AUTO_REMOVE_SLASH
-# setopt AUTO_RESUME
-unsetopt BG_NICE
-setopt CORRECT
-setopt EXTENDED_HISTORY
 setopt HASH_CMDS
 setopt MENUCOMPLETE
 setopt COMPLETE_ALIASES
 setopt ALL_EXPORT
+setopt ALWAYS_TO_END
+setopt ALWAYS_LAST_PROMPT
 
 ### Set/unset  shell options
 ############################
-setopt   notify globdots correct pushdtohome cdablevars autolist numericglobsort
-setopt   correctall autocd recexact rcexpandparam nocheckjobs nobeep
+setopt   notify globdots pushdtohome cdablevars autolist numericglobsort
+setopt   autocd recexact rcexpandparam nocheckjobs nobeep
 setopt   autopushd autoresume histignoredups pushdsilent pushdignoredups
-setopt   pushdminus extendedglob nocaseglob rcquotes mailwarning
-unsetopt bgnice autoparamslash
+setopt   pushdminus extendedglob nocaseglob rcquotes
 
 ### Autoload zsh modules when they are referenced
 #################################################
@@ -50,81 +43,35 @@ zmodload -a zsh/stat stat
 zmodload -a zsh/zpty zpty
 zmodload -a zsh/zprof zprof
 zmodload zsh/complist
-#zmodload -ap zsh/mapfile mapfile
-
 
 ### Command completion
 ######################
 autoload -Uz compinit
 compinit
-bindkey "^?" backward-delete-char
-bindkey '^[OH' beginning-of-line
-bindkey '^[OF' end-of-line
-bindkey '^[[5~' up-line-or-history
-bindkey '^[[6~' down-line-or-history
-bindkey "^[[A" history-beginning-search-backward-end
-bindkey "^[[B" history-beginning-search-forward-end
-bindkey "^r" history-incremental-search-backward
-bindkey ' ' magic-space    # also do history expansion on space
-bindkey '^I' complete-word # complete on tab, leave expansion to _expand
 zstyle ':completion::complete:*' use-cache on
 zstyle ':completion::complete:*' cache-path ~/.zsh/cache/$HOST
 zstyle ':completion:*' accept-exact '*(N)'
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
-zstyle -e ':completion:*:approximate:*' max-errors \
-    'reply=( $(( ($#PREFIX+$#SUFFIX)/2 )) numeric )'
 zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
 
 ### Completion Styles
 #####################
-
-# list of completers to use
 zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
-
-# allow one error for every three characters typed in approximate completer
-zstyle -e ':completion:*:approximate:*' max-errors \
-    'reply=( $(( ($#PREFIX+$#SUFFIX)/2 )) numeric )'
-
-# insert all expansions for expand completer
 zstyle ':completion:*:_expand:*' tag-order all-expansions
-
-# formatting and messages
 zstyle ':completion:*' verbose yes
 zstyle ':completion:*:descriptions' format '%B%d%b'
 zstyle ':completion:*:messages' format '%d'
 zstyle ':completion:*:warnings' format 'No matches for: %d'
-zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 zstyle ':completion:*' group-name ''
-
-# match uppercase from lowercase
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}e'
-
-# offer indexes before parameters in subscripts
 zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
-
-# command for process lists, the local web server details and host completion
-# on processes completion complete all user processes
 zstyle ':completion:*:processes' command 'ps -au$USER'
-
-# add colors to processes for kill completion
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:processes' command 'ps -o pid,s,nice,stime,args'
 zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
-
-# NEW completion:
-# 1. All /etc/hosts hostnames are in autocomplete
-# 2. If you have a comment in /etc/hosts like #%foobar.domain,
-#    then foobar.domain will show up in autocomplete!
 zstyle ':completion:*' hosts $(awk '/^[^#]/ {print $2 $3" "$4" "$5}' /etc/hosts | grep -v ip6- && grep "^#%" /etc/hosts | awk -F% '{print $2}')
-# Filename suffixes to ignore during completion (except after rm command)
-zstyle ':completion:*:*:(^rm):*:*files' ignored-patterns '*?.o' '*?.c~' \
-    '*?.old' '*?.pro'
-# the same for old style completion
-#fignore=(.o .c~ .old .pro)
-
-# ignore completion functions (until the _ignored completer)
+zstyle ':completion:*:*:(^rm):*:*files' ignored-patterns '*?.o' '*?.c~' '*?.old' '*?.pro'
 zstyle ':completion:*:functions' ignored-patterns '_*'
 zstyle ':completion:*:*:*:users' ignored-patterns \
         adm apache bin daemon games gdm halt ident junkbust lp mail mailnull \
@@ -133,7 +80,6 @@ zstyle ':completion:*:*:*:users' ignored-patterns \
         avahi backup messagebus beagleindex debian-tor dhcp dnsmasq fetchmail\
         firebird gnats haldaemon hplip irc klog list man cupsys postfix\
         proxy syslog www-data mldonkey sys snort
-# SSH Completion
 zstyle ':completion:*:scp:*' tag-order \
    files users 'hosts:-host hosts:-domain:domain hosts:-ipaddr"IP\ Address *'
 zstyle ':completion:*:scp:*' group-order \
@@ -190,18 +136,6 @@ compinit -d
 promptinit
 setopt prompt_subst
 
-# Prompt original
-#
-# PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{yellow}%1~%f%b %# '
-# RPROMPT='%*'
-# autoload -Uz vcs_info
-# precmd_vcs_info() { vcs_info }
-# precmd_functions+=( precmd_vcs_info )
-# setopt prompt_subst
-# RPROMPT=\$vcs_info_msg_0_
-# zstyle ':vcs_info:git:*' formats '%F{gray}(%b)%r%f'
-# zstyle ':vcs_info:*' enable git
-
 # Prompt spaceship
 #
 # https://github.com/denysdovhan/spaceship-prompt
@@ -253,7 +187,6 @@ alias la='ls -ah'  # show hidden files and folders
 alias lx='ls -BXh' # sort by extension
 alias lz='ls -rSh' # sort by size
 alias lt='ls -rth' # sort by date
-alias mv='mv -i'
 alias dir='dir --color'
 alias grep='grep --color'
 alias dmesg='dmesg --color'
@@ -261,16 +194,17 @@ alias df='df -h'
 alias du='du -h'
 alias vi='/bin/nvim'
 alias vim='/bin/nvim'
-alias -s {md,ts,js,conf,txt,json}=nvim
 alias gpg='gpg2'
-alias bat='bat --theme TwoDark'
-alias gs='git status'
-alias gl='git log --oneline'
-alias gitu='git add . && git commit && git push'
+alias cat='bat --theme TwoDark'
+alias gitu='git add . && git commit'
+alias gitp='git add . && git commit && git push'
+alias gitl='git log --oneline'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias neofetch="neofetch --color_blocks ff --ascii_distro Anarchy"
-alias sxiv='sxiv -qt'
+alias sxiv='devour.sh sxiv -qt'
+alias mpv='devour.sh mpv'
+alias zathura='devour.sh zathura'
 alias rofi='rofi -show drun'
 alias urxvt="/home/colps/.scripts/urxvts.sh"
 alias ncmpcpp="ncmpcpp -s media_library"
@@ -286,8 +220,7 @@ alias pacu='pacman -Syu'
 alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
 alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
 alias pacman-mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
-#
-alias colps_keys='bat $HOME/Linux/dwm/dwm_bindkeys.txt'
+alias tor='sh -c '"/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" 
 
 # Persistent rehash
 zstyle ':completion:*' rehash true
@@ -325,7 +258,6 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # fzf completion
 ################
-#export FZF_COMPLETION_TRIGGER='~~'
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/fzf-extras.zsh

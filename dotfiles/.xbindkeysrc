@@ -35,50 +35,5 @@
 
 
 
-#rofi
-"rofi -show drun"
-    m:0x40 + c:52
-    Mod4 + z 
-
-#zathura
-"zathura"
-    m:0x5 + c:52
-    Control+Shift + z 
-
-#bashtop
-"alacritty -e bashtop"
-    m:0x5 + c:58
-    Control+Shift + m 
-
-#virtualbox
-"virtualbox"
-    m:0x5 + c:31
-    Control+Shift + i 
-
-#flameshot
-"flameshot gui"
-    m:0x0 + c:107
-    Print 
-
-#xscreensaver
-"xscreensaver-command -lock"
-    m:0x5 + c:53
-    Control+Shift + x 
-
-#tor
-"sh -c '"/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" --detach || ([ !  -x "/home/colps/Apps/tor-browser_en-US/Browser/start-tor-browser" ] && "$(dirname "$*")"/Browser/start-tor-browser --detach)' dummy %k"
-    m:0x5 + c:28
-    Control+Shift + t 
-
-#surf
-"surf -D https://suckless.org/rocks/"
-    m:0xc + c:56
-    Control+Alt + b 
-
-#mute volume
-"amixer set Master toggle"
-    m:0x40 + c:47
-    Mod4 + ccedilla 
-
 #
 # End of xbindkeys configuration

@@ -10,7 +10,7 @@
 
 ### path
 typeset -U path
-path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts /home/colps/.gem/ruby/2.7.0/bin $path[@])
+path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts /home/colps/.gem/ruby/2.7.0/bin /home/colps/.cargo/bin $path[@])
 
 ### systemd user
 export XDG_RUNTIME_DIR="/run/user/1000"

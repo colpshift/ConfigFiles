@@ -19,6 +19,4 @@ case ${TERM} in
     ;;
 esac
 
-export DISPLAY
-
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion

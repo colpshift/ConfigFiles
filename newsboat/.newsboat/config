@@ -7,7 +7,7 @@ prepopulate-query-feeds yes
 refresh-on-startup yes
 
 browser "~/.scripts/newsboat-browser.sh" # surf urls
-macro y set browser "mpv %u"; open-in-browser ; set browser "elinks %u" # youtube url
+macro y set browser "devour.sh mpv %u" ; open-in-browser ; set browser "elinks %u" # youtube urls
 
 color listnormal cyan default
 color listfocus black yellow standout bold

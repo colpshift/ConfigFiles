@@ -7,5 +7,3 @@
 # Last update: 11/12/2019 20:25
 # Author: Colpshift
 #
-# start Place profile in RAM 
-firefox-sync

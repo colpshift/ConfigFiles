@@ -30046,3 +30046,556 @@ Jun 25 08:35 : player: played "creedence_clearwater_revival _-_green_river.mp3"
 Jun 25 12:08 : player: played "Nick Cave_-_Breathless.mp3"
 Jun 25 12:12 : player: played "Nick Cave_-_Bring It On.mp3"
 Jun 25 12:15 : player: played "creedence_clearwater_revival _-_green_river.mp3"
+Jun 25 23:33 : player: played "get_on_your_feet_(from_dangerous_lies _-_netflix).mp3"
+Jun 25 23:35 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 25 23:35 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 00:14 : player: played "get_on_your_feet_(from_dangerous_lies _-_netflix).mp3"
+Jun 26 06:42 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 06:42 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 07:19 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 07:27 : player: played "Nick Cave_-_Bring It On.mp3"
+Jun 26 07:29 : player: played "creedence_clearwater_revival _-_green_river.mp3"
+Jun 26 07:30 : player: played "Ponto de Oxala - Ze Mauricio.mp3"
+Jun 26 07:34 : player: played "Ponto de Defumacao - Ze Mauricio.mp3"
+Jun 26 07:37 : player: played "Ponto de Exu - Ze Mauricio.mp3"
+Jun 26 07:39 : player: played "Pontos de Pretos Velhos - Ze Mauricio.mp3"
+Jun 26 07:41 : player: played "Ponto de Oxala - Ze Mauricio.mp3"
+Jun 26 11:11 : player: played "Ponto de Defumacao - Ze Mauricio.mp3"
+Jun 26 13:16 : player: played "Nick Cave_-_Bring It On.mp3"
+Jun 26 13:17 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 13:17 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 13:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 13:57 : update: removing chris_isaak _-_wicked_game.mp3
+Jun 26 13:57 : update: removing baby_bash _-_baby,_i'm_back.mp3
+Jun 26 13:57 : update: removing do_fundo_da_grota _-_baitaca.mp3
+Jun 26 13:57 : update: removing de_alma_serrana _-_porca_veia.mp3
+Jun 26 13:57 : update: removing creedence_clearwater_revival _-_who'll_stop_the_rain.mp3
+Jun 26 13:57 : update: removing creedence_clearwater_revival _-_run_through_the_jungle.mp3
+Jun 26 13:57 : update: removing creedence_clearwater_revival _-_proud_mary.mp3
+Jun 26 13:57 : update: removing creedence_clearwater_revival _-_i_heard_it_through_the_grapevine.mp3
+Jun 26 13:57 : update: removing creedence_clearwater_revival _-_hey_tonight.mp3
+Jun 26 13:57 : update: removing creedence_clearwater_revival _-_have_you_ever_seen_the_rain.mp3
+Jun 26 13:57 : update: removing creedence_clearwater_revival _-_green_river.mp3
+Jun 26 13:57 : update: removing creedence_clearwater_revival _-_fortunate_son.mp3
+Jun 26 13:57 : update: removing creedence_clearwater_revival _-_bad_moon_rising.mp3
+Jun 26 13:57 : update: removing cleiton_schneider _-_sentimento_de_trovador.mpg(porca_veia_o_segundo_dvd).mp3
+Jun 26 13:57 : update: removing clara_nunes _-_triteza_pe_no_chao.mp3
+Jun 26 13:57 : update: removing clara_nunes _-_o_mar_serenou.mp3
+Jun 26 13:57 : update: removing clara_nunes _-_a_deusa_dos_orixas.mp3
+Jun 26 13:57 : update: removing clara_nunes _-_conto_de_areia.mp3
+Jun 26 13:57 : update: removing porca_veia_-_morena_luxuosa.mp3
+Jun 26 13:57 : update: removing yann_nnay _-_alice_russell_citizens.mp3
+Jun 26 13:57 : update: removing vanerao_gauúcho _-_porcaeia.mp3
+Jun 26 13:57 : update: removing tanita_tikaram _-_twist_in_my_sobriety.mp3
+Jun 26 13:57 : update: removing sade _-_your_love_is_king.mp3
+Jun 26 13:57 : update: removing sade _-_the_sweetest_taboo.mp3
+Jun 26 13:57 : update: removing sade _-_smooth_operator.mp3
+Jun 26 13:57 : update: removing sade _-_kiss_of_life.mp3
+Jun 26 13:57 : update: removing sade _-_king_of_sorrow.mp3
+Jun 26 13:57 : update: removing sade _-_cherish_the_day.mp3
+Jun 26 13:57 : update: removing sade _-_by_your_side.mp3
+Jun 26 13:57 : update: removing radical_face _-_welcome_home.mp3
+Jun 26 13:57 : update: removing porca_veia_-_recorrendo_os_aguapes.mp3
+Jun 26 13:57 : update: removing porca_veia_-_de_toda_lida.mp3
+Jun 26 13:57 : update: removing porca_veia_-_castracao_a_pealo.mp3
+Jun 26 13:57 : update: removing porca_veia_-_bugio_do_chaleira_preta.mp3
+Jun 26 13:57 : update: removing porca_veia_-_balanco_do_bugi.mp3
+Jun 26 13:57 : update: removing porca_veia_-_alma_de_gaiteiro.mp3
+Jun 26 13:57 : update: removing porca_veia___sentimento_de_trovador.mp3
+Jun 26 13:57 : update: removing porca_veia _-_eu_gostei_do_baile_eio.mp3
+Jun 26 13:57 : update: removing Pontos de Pretos Velhos - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing Pontos de Oxum (Dengue _ Mamae Oxum) - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing Pontos de Iansa - Ze Mauricio.mp3
+Jun 26 13:57 : update: added /get_on_your_feet_(from_dangerous_lies_-_netflix).mp3
+Jun 26 13:57 : update: removing Ponto de Xango - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing Ponto de Oxossi - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing Ponto de Oxala - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing Ponto de Ogum - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing Ponto de Obaluaie _ Abaluaie - Ze Mauricio.mp3
+Jun 26 13:57 : update: added /ponto_de_exu_-_ze_mauricio.mp3
+Jun 26 13:57 : update: removing Ponto de Marinheiro _ Marinheiro So - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing Ponto de Iemanja - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing Ponto de Ibeji - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing Ponto de Exu - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing Ponto de Defumacao - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing Ponto de Boiadeiro _ Plichas - Ze Mauricio.mp3
+Jun 26 13:57 : update: removing peaky_blinders _-_wonderful_life.mp3
+Jun 26 13:57 : update: removing Nick Cave_-_Red Right Hand.mp3
+Jun 26 13:57 : update: removing Nick Cave_-_Bring It On.mp3
+Jun 26 13:57 : update: added /15_-_vanerão_gaúcho_-_porca_véia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 13:57 : update: removing Nick Cave_-_Breathless.mp3
+Jun 26 13:57 : update: removing ne-yo _-_so_sick.mp3
+Jun 26 13:57 : update: removing murphy_lee _-_shake_ya_tailfeather_(radio).mp3
+Jun 26 13:57 : update: removing kavabanga_depo_kolibri _-_hu.mp3
+Jun 26 13:57 : update: removing get_on_your_feet_(from_dangerous_lies _-_netflix).mp3
+Jun 26 13:57 : update: removing ece_seekin _-_adeyyo.mp3
+Jun 26 13:57 : update: removing porca_veia_-_luz_do_meu_rancho.mp3
+Jun 26 13:57 : update: removing cher _-_the_shoop_shoop_song_(its_in_his_kiss).mp3
+Jun 26 13:57 : update: removing homegrown _-_temptation_got_me.mp3
+Jun 26 13:57 : update: added /creedence_clearwater_revival_-_green_river.mp3
+Jun 26 13:57 : update: removing porca_veia_-_meu_cambicho.mp3
+Jun 26 13:57 : update: removing porca_veia_-_baile_na_serra_(ao_vivo).mp3
+Jun 26 13:57 : update: removing porca_veia_-_abraco_ao_parana.mp3
+Jun 26 13:57 : update: removing porca_veia_-_marca_borrada_(live).mp3
+Jun 26 13:57 : update: removing porca_veia_-_ginete_de_fronteira_(ao_vivo).mp3
+Jun 26 13:57 : update: removing porca_veia_-_gaiteiro_por_demais_(live).mp3
+Jun 26 13:57 : update: removing porca_veia_-_fazenda_da_viúva_(live).mp3
+Jun 26 13:57 : update: removing porca_veia_-_no_coracao_do_rio_grande.mp3
+Jun 26 13:57 : update: removing clara_nunes _-_ijexa_(filhos_de_ghandi).mp3
+Jun 26 13:57 : update: removing porca_veia_-_fama_de_bagunceiro.mp3
+Jun 26 13:57 : update: added /porca_véia_-_xote_afigurado.mp3
+Jun 26 13:57 : update: removing clara_nunes _-_feira_de_mangaio.mp3
+Jun 26 13:57 : update: removing porca_veia_-_xote_afigurado.mp3
+Jun 26 13:57 : update: removing cher _-_believe.mp3
+Jun 26 13:57 : update: added /sade_-_your_love_is_king.mp3
+Jun 26 13:57 : update: added /ponto_de_iemanja_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /ponto_de_obaluaie_-_abaluaie_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /murphy_lee_-_shake_ya_tailfeather_(radio).mp3
+Jun 26 13:57 : update: added /08_-_castração_a_pealo_-_porca_véia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 13:57 : update: added /ponto_de_ogum_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /ponto_de_xango_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /peaky_blinders_-_wonderful_life.mp3
+Jun 26 13:57 : update: added /porca_véia_-_luz_do_meu_rancho.mp3
+Jun 26 13:57 : update: added /joaoparaiba_-_balanço_do_bugio_grupo_cordiona_o_grupo_do_porca_veia_joaoparaiba_#0744_@1671.mp3
+Jun 26 13:57 : update: added /nick_cave_-_breathless.mp3
+Jun 26 13:57 : update: added /nick_cave_-_red_right_hand.mp3
+Jun 26 13:57 : update: added /porca_véia_-_gaiteiro_por_demais_(live).mp3
+Jun 26 13:57 : update: added /porca_véia_-_de_toda_lida.mp3
+Jun 26 13:57 : update: added /porca_véia_-_marca_borrada_(live).mp3
+Jun 26 13:57 : update: added /sade_-_the_sweetest_taboo.mp3
+Jun 26 13:57 : update: added /de_alma_serrana_-_porca_veia.mp3
+Jun 26 13:57 : update: added /creedence_clearwater_revival_-_hey_tonight.mp3
+Jun 26 13:57 : update: added /nick_cave_-_bring_it_on.mp3
+Jun 26 13:57 : update: added /sade_-_smooth_operator.mp3
+Jun 26 13:57 : update: added /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_véia___sentimento_de_trovador.mp3
+Jun 26 13:57 : update: added /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia___alma_de_gaiteiro.mp3
+Jun 26 13:57 : update: added /ponto_de_ibeji_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /ponto_de_marinheiro_-_marinheiro_so_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /clara_nunes_-_o_mar_serenou.mp3
+Jun 26 13:57 : update: added /creedence_clearwater_revival_-_who'll_stop_the_rain.mp3
+Jun 26 13:57 : update: added /cleiton_schneider_-_sentimento_de_trovador.mpg(porca_veia_o_segundo_dvd).mp3
+Jun 26 13:57 : update: added /tanita_tikaram_-_twist_in_my_sobriety.mp3
+Jun 26 13:57 : update: added /creedence_clearwater_revival_-_bad_moon_rising.mp3
+Jun 26 13:57 : update: added /porca_véia_-_meu_cambicho.mp3
+Jun 26 13:57 : update: added /pontos_de_iansa_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /creedence_clearwater_revival_-_proud_mary.mp3
+Jun 26 13:57 : update: added /porca_véia_-_fama_de_bagunceiro.mp3
+Jun 26 13:57 : update: added /cher_-_believe.mp3
+Jun 26 13:57 : update: added /pontos_de_pretos_velhos_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /cher_-_the_shoop_shoop_song_(its_in_his_kiss).mp3
+Jun 26 13:57 : update: added /creedence_clearwater_revival_-_fortunate_son.mp3
+Jun 26 13:57 : update: added /homegrown_-_temptation_got_me.mp3
+Jun 26 13:57 : update: added /chris_isaak_-_wicked_game.mp3
+Jun 26 13:57 : update: added /ece_seçkin_-_adeyyo.mp3
+Jun 26 13:57 : update: added /porca_véia_-_fazenda_da_viúva_(live).mp3
+Jun 26 13:57 : update: added /porca_véia_-_morena_luxuosa.mp3
+Jun 26 13:57 : update: added /clara_nunes_-_feira_de_mangaio.mp3
+Jun 26 13:57 : update: added /ponto_de_oxala_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /sade_-_kiss_of_life.mp3
+Jun 26 13:57 : update: added /clara_nunes_-_a_deusa_dos_orixás.mp3
+Jun 26 13:57 : update: added /ponto_de_defumacao_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /radical_face_-_welcome_home.mp3
+Jun 26 13:57 : update: added /creedence_clearwater_revival_-_have_you_ever_seen_the_rain.mp3
+Jun 26 13:57 : update: added /sade_-_king_of_sorrow.mp3
+Jun 26 13:57 : update: added /sade_-_cherish_the_day.mp3
+Jun 26 13:57 : update: added /pontos_de_oxum_(dengue_-_mamae_oxum)_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /do_fundo_da_grota_-_baitaca.mp3
+Jun 26 13:57 : update: added /ponto_de_oxossi_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /sade_-_by_your_side.mp3
+Jun 26 13:57 : update: added /ponto_de_boiadeiro_-_plichas_-_ze_mauricio.mp3
+Jun 26 13:57 : update: added /dvd_porca_véia_-_eu_gostei_do_baile_véio.mp3
+Jun 26 13:57 : update: added /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_véia______bugio_do_chaleira_preta.mp3
+Jun 26 13:57 : update: added /yann_nnay_-_alice_russell_citizens.mp3
+Jun 26 13:57 : update: added /clara_nunes_-_ijexá_(filhos_de_ghandi).mp3
+Jun 26 13:57 : update: added /porca_véia_featuring_grupo_cordiona_·_noé_teixeira_·_grupo_cordiona_-_abraço_ao_paraná_(ao_vivo).mp3
+Jun 26 13:57 : update: added /creedence_clearwater_revival_-_i_heard_it_through_the_grapevine.mp3
+Jun 26 13:57 : update: added /ne-yo_-_so_sick.mp3
+Jun 26 13:57 : update: added /porca_véia_-_recorrendo_os_aguapés.mp3
+Jun 26 13:57 : update: added /creedence_clearwater_revival_-_run_through_the_jungle.mp3
+Jun 26 13:57 : update: added /clara_nunes_-_conto_de_areia.mp3
+Jun 26 13:57 : update: added /baby_bash_-_baby,_i'm_back.mp3
+Jun 26 13:57 : update: added /porca_véia_-_no_coração_do_rio_grande.mp3
+Jun 26 13:57 : update: added /kavabanga_depo_kolibri_-_hu.mp3
+Jun 26 13:57 : update: added /clara_nunes_-_triteza_pe_no_chao.mp3
+Jun 26 13:57 : update: added /porca_véia_-_ginete_de_fronteira_(ao_vivo).mp3
+Jun 26 13:57 : update: added /porca_véia_-_baile_na_serra_(ao_vivo).mp3
+Jun 26 13:59 : update: updating /porca_véia_-_xote_afigurado.mp3
+Jun 26 13:59 : update: updating /porca_véia_-_luz_do_meu_rancho.mp3
+Jun 26 13:59 : update: updating /porca_véia_-_gaiteiro_por_demais_(live).mp3
+Jun 26 13:59 : update: updating /porca_véia_-_de_toda_lida.mp3
+Jun 26 13:59 : update: updating /porca_véia_-_marca_borrada_(live).mp3
+Jun 26 13:59 : update: updating /porca_véia_-_meu_cambicho.mp3
+Jun 26 13:59 : update: updating /porca_véia_-_fama_de_bagunceiro.mp3
+Jun 26 13:59 : update: updating /porca_véia_-_fazenda_da_viúva_(live).mp3
+Jun 26 13:59 : update: updating /porca_véia_-_morena_luxuosa.mp3
+Jun 26 13:59 : update: updating /porca_véia_-_recorrendo_os_aguapés.mp3
+Jun 26 13:59 : update: updating /porca_véia_-_no_coração_do_rio_grande.mp3
+Jun 26 13:59 : update: updating /porca_véia_-_ginete_de_fronteira_(ao_vivo).mp3
+Jun 26 13:59 : update: updating /porca_véia_-_baile_na_serra_(ao_vivo).mp3
+Jun 26 14:00 : update: updating /porca_véia_-_xote_afigurado.mp3
+Jun 26 14:00 : update: updating /porca_véia_-_luz_do_meu_rancho.mp3
+Jun 26 14:00 : update: updating /porca_véia_-_gaiteiro_por_demais_(live).mp3
+Jun 26 14:00 : update: updating /porca_véia_-_de_toda_lida.mp3
+Jun 26 14:00 : update: updating /porca_véia_-_marca_borrada_(live).mp3
+Jun 26 14:00 : update: updating /porca_véia_-_meu_cambicho.mp3
+Jun 26 14:00 : update: updating /porca_véia_-_fama_de_bagunceiro.mp3
+Jun 26 14:00 : update: updating /porca_véia_-_fazenda_da_viúva_(live).mp3
+Jun 26 14:00 : update: updating /porca_véia_-_morena_luxuosa.mp3
+Jun 26 14:00 : update: updating /porca_véia_-_recorrendo_os_aguapés.mp3
+Jun 26 14:00 : update: updating /porca_véia_-_no_coração_do_rio_grande.mp3
+Jun 26 14:00 : update: updating /porca_véia_-_ginete_de_fronteira_(ao_vivo).mp3
+Jun 26 14:00 : update: updating /porca_véia_-_baile_na_serra_(ao_vivo).mp3
+Jun 26 14:08 : update: updating /15_-_vanerão_gaúcho_-_porca_véia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 14:08 : update: updating /porca_véia_-_xote_afigurado.mp3
+Jun 26 14:08 : update: updating /08_-_castração_a_pealo_-_porca_véia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 14:08 : update: updating /porca_véia_-_luz_do_meu_rancho.mp3
+Jun 26 14:08 : update: updating /joaoparaiba_-_balanço_do_bugio_grupo_cordiona_o_grupo_do_porca_veia_joaoparaiba_#0744_@1671.mp3
+Jun 26 14:08 : update: updating /porca_véia_-_gaiteiro_por_demais_(live).mp3
+Jun 26 14:08 : update: updating /porca_véia_-_de_toda_lida.mp3
+Jun 26 14:08 : update: updating /porca_véia_-_marca_borrada_(live).mp3
+Jun 26 14:08 : update: updating /de_alma_serrana_-_porca_veia.mp3
+Jun 26 14:08 : update: updating /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_véia___sentimento_de_trovador.mp3
+Jun 26 14:08 : update: updating /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia___alma_de_gaiteiro.mp3
+Jun 26 14:08 : update: updating /cleiton_schneider_-_sentimento_de_trovador.mpg(porca_veia_o_segundo_dvd).mp3
+Jun 26 14:08 : update: updating /porca_véia_-_meu_cambicho.mp3
+Jun 26 14:08 : update: updating /porca_véia_-_fama_de_bagunceiro.mp3
+Jun 26 14:08 : update: updating /porca_véia_-_fazenda_da_viúva_(live).mp3
+Jun 26 14:08 : update: updating /porca_véia_-_morena_luxuosa.mp3
+Jun 26 14:08 : update: updating /dvd_porca_véia_-_eu_gostei_do_baile_véio.mp3
+Jun 26 14:08 : update: updating /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_véia______bugio_do_chaleira_preta.mp3
+Jun 26 14:08 : update: updating /porca_véia_featuring_grupo_cordiona_·_noé_teixeira_·_grupo_cordiona_-_abraço_ao_paraná_(ao_vivo).mp3
+Jun 26 14:08 : update: updating /porca_véia_-_recorrendo_os_aguapés.mp3
+Jun 26 14:08 : update: updating /porca_véia_-_no_coração_do_rio_grande.mp3
+Jun 26 14:08 : update: updating /porca_véia_-_ginete_de_fronteira_(ao_vivo).mp3
+Jun 26 14:08 : update: updating /porca_véia_-_baile_na_serra_(ao_vivo).mp3
+Jun 26 14:10 : update: updating /15_-_vanerão_gaúcho_-_porca_véia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 14:10 : update: updating /08_-_castração_a_pealo_-_porca_véia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 14:10 : update: updating /porca_véia_-_gaiteiro_por_demais_(live).mp3
+Jun 26 14:10 : update: updating /porca_véia_-_marca_borrada_(live).mp3
+Jun 26 14:10 : update: updating /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_véia___sentimento_de_trovador.mp3
+Jun 26 14:10 : update: updating /porca_véia_-_fazenda_da_viúva_(live).mp3
+Jun 26 14:10 : update: updating /dvd_porca_véia_-_eu_gostei_do_baile_véio.mp3
+Jun 26 14:10 : update: updating /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_véia______bugio_do_chaleira_preta.mp3
+Jun 26 14:10 : update: updating /porca_véia_featuring_grupo_cordiona_·_noé_teixeira_·_grupo_cordiona_-_abraço_ao_paraná_(ao_vivo).mp3
+Jun 26 14:10 : update: updating /porca_véia_-_recorrendo_os_aguapés.mp3
+Jun 26 14:10 : update: updating /porca_véia_-_ginete_de_fronteira_(ao_vivo).mp3
+Jun 26 14:10 : update: updating /porca_véia_-_baile_na_serra_(ao_vivo).mp3
+Jun 26 14:14 : update: removing 15_-_vanerão_gaúcho_-_porca_véia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 14:14 : update: removing 08_-_castração_a_pealo_-_porca_véia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 14:14 : update: removing dvd_porca_véia_-_eu_gostei_do_baile_véio.mp3
+Jun 26 14:14 : update: removing de_alma_serrana_-_porca_veia.mp3
+Jun 26 14:14 : update: removing cleiton_schneider_-_sentimento_de_trovador.mpg(porca_veia_o_segundo_dvd).mp3
+Jun 26 14:14 : update: removing porca_véia_-_recorrendo_os_aguapés.mp3
+Jun 26 14:14 : update: removing porca_véia_-_de_toda_lida.mp3
+Jun 26 14:14 : update: removing joaoparaiba_-_balanço_do_bugio_grupo_cordiona_o_grupo_do_porca_veia_joaoparaiba_#0744_@1671.mp3
+Jun 26 14:14 : update: removing rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_véia___sentimento_de_trovador.mp3
+Jun 26 14:14 : update: removing rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia___alma_de_gaiteiro.mp3
+Jun 26 14:14 : update: removing rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_véia______bugio_do_chaleira_preta.mp3
+Jun 26 14:14 : update: removing porca_véia_-_ginete_de_fronteira_(ao_vivo).mp3
+Jun 26 14:14 : update: removing porca_véia_-_gaiteiro_por_demais_(live).mp3
+Jun 26 14:14 : update: removing porca_véia_-_fazenda_da_viúva_(live).mp3
+Jun 26 14:14 : update: removing porca_véia_-_no_coração_do_rio_grande.mp3
+Jun 26 14:14 : update: removing porca_véia_-_fama_de_bagunceiro.mp3
+Jun 26 14:14 : update: removing porca_véia_-_xote_afigurado.mp3
+Jun 26 14:14 : update: removing porca_véia_-_morena_luxuosa.mp3
+Jun 26 14:14 : update: removing porca_véia_-_luz_do_meu_rancho.mp3
+Jun 26 14:14 : update: removing porca_véia_-_meu_cambicho.mp3
+Jun 26 14:14 : update: removing porca_véia_featuring_grupo_cordiona_·_noé_teixeira_·_grupo_cordiona_-_abraço_ao_paraná_(ao_vivo).mp3
+Jun 26 14:14 : update: removing porca_véia_-_baile_na_serra_(ao_vivo).mp3
+Jun 26 14:14 : update: removing porca_véia_-_marca_borrada_(live).mp3
+Jun 26 14:14 : update: added /Rubem_Ayang_Oliveira_Música_Folclórica_E_Regional_-_Porca_Veia_Alma_De_Gaiteiro.mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_Baile_Na_Serra_(Ao_Vivo).mp3
+Jun 26 14:14 : update: added /15_-_Vanerão_Gaúcho_-_Porca_Veia_&_Os_Gaiteiros_Do_Cordiona.mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_Ginete_De_Fronteira_(Ao_Vivo).mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_Gaiteiro_Por_Demais_(Live).mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_Recorrendo_Os_Aguapes.mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_Luz_Do_Meu_Rancho.mp3
+Jun 26 14:14 : update: added /DVD_Porca_Veia_-_Eu_Gostei_Do_Baile_Veio.mp3
+Jun 26 14:14 : update: added /08_-_Castração_a_Pealo_-_Porca_Veia_&_Os_Gaiteiros_Do_Cordiona.mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_Xote_Afigurado.mp3
+Jun 26 14:14 : update: added /Cleiton_Schneider_-_Sentimento_De_Trovador.Mpg(Porca_Veia_O_Segundo_DVD).mp3
+Jun 26 14:14 : update: added /Rubem_Ayang_Oliveira_Música_Folclórica_E_Regional_-_Porca_Veia_Bugio_Do_Chaleira_Preta.mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_No_Coração_Do_Rio_Grande.mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_Fama_De_Bagunceiro.mp3
+Jun 26 14:14 : update: added /De_Alma_Serrana_-_Porca_Veia.mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_Meu_Cambicho.mp3
+Jun 26 14:14 : update: added /Joaoparaiba_-_Balanço_Do_Bugio_Grupo_Cordiona_O_Grupo_Do_Porca_Veia_Joaoparaiba_#0744_@1671.mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_Marca_Borrada_(Live).mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_De_Toda_Lida.mp3
+Jun 26 14:14 : update: added /Porca_Veia_Featuring_Grupo_Cordiona_·_Noe_Teixeira_·_Grupo_Cordiona_-_Abraço_Ao_Paraná_(Ao_Vivo).mp3
+Jun 26 14:14 : update: added /Rubem_Ayang_Oliveira_Música_Folclórica_E_Regional_-_Porca_Veia_Sentimento_De_Trovador.mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_Fazenda_Da_Viúva_(Live).mp3
+Jun 26 14:14 : update: added /Porca_Veia_-_Morena_Luxuosa.mp3
+Jun 26 14:24 : update: removing 08_-_Castração_a_Pealo_-_Porca_Veia_&_Os_Gaiteiros_Do_Cordiona.mp3
+Jun 26 14:24 : update: removing clara_nunes_-_a_deusa_dos_orixás.mp3
+Jun 26 14:24 : update: removing 15_-_Vanerão_Gaúcho_-_Porca_Veia_&_Os_Gaiteiros_Do_Cordiona.mp3
+Jun 26 14:24 : update: removing Joaoparaiba_-_Balanço_Do_Bugio_Grupo_Cordiona_O_Grupo_Do_Porca_Veia_Joaoparaiba_#0744_@1671.mp3
+Jun 26 14:24 : update: removing DVD_Porca_Veia_-_Eu_Gostei_Do_Baile_Veio.mp3
+Jun 26 14:24 : update: removing De_Alma_Serrana_-_Porca_Veia.mp3
+Jun 26 14:24 : update: removing Rubem_Ayang_Oliveira_Música_Folclórica_E_Regional_-_Porca_Veia_Sentimento_De_Trovador.mp3
+Jun 26 14:24 : update: removing Rubem_Ayang_Oliveira_Música_Folclórica_E_Regional_-_Porca_Veia_Bugio_Do_Chaleira_Preta.mp3
+Jun 26 14:24 : update: removing Rubem_Ayang_Oliveira_Música_Folclórica_E_Regional_-_Porca_Veia_Alma_De_Gaiteiro.mp3
+Jun 26 14:24 : update: removing Porca_Veia_-_No_Coração_Do_Rio_Grande.mp3
+Jun 26 14:24 : update: removing clara_nunes_-_ijexá_(filhos_de_ghandi).mp3
+Jun 26 14:24 : update: removing Porca_Veia_Featuring_Grupo_Cordiona_·_Noe_Teixeira_·_Grupo_Cordiona_-_Abraço_Ao_Paraná_(Ao_Vivo).mp3
+Jun 26 14:24 : update: added /clara_nunes_-_ijexa_filhos_de_ghandi.mp3
+Jun 26 14:24 : update: added /porca_veia_-_eu_gostei_do_baile_veio.mp3
+Jun 26 14:24 : update: added /porca_veia_bugio_do_chaleira_preta.mp3
+Jun 26 14:24 : update: added /porca_veia_alma_de_gaiteiro.mp3
+Jun 26 14:24 : update: added /porca_veia_-_castracao_a_pealo.mp3
+Jun 26 14:24 : update: added /clara_nunes_-_a_deusa_dos_orixas.mp3
+Jun 26 14:24 : update: added /porca_veia_sentimento_de_trovador.mp3
+Jun 26 14:24 : update: added /porca_veia_-_de_alma_Serrana.mp3
+Jun 26 14:24 : update: added /porca_veia_-_abraço_ao_parana.mp3
+Jun 26 14:24 : update: added /porca_veia_Joaoparaiba.mp3
+Jun 26 14:24 : update: added /porca_veia_-_no_coração_do_rio_grande.mp3
+Jun 26 14:25 : update: removing porca_veia_-_abraço_ao_parana.mp3
+Jun 26 14:25 : update: added /porca_veia_-_abraco_ao_parana.mp3
+Jun 26 14:25 : update: removing porca_veia_-_no_coração_do_rio_grande.mp3
+Jun 26 14:25 : update: added /porca_veia_-_no_coracao_do_rio_grande.mp3
+Jun 26 14:26 : update: added /porca_veia_-_vanerao_gaucho.mp3
+Jun 26 14:26 : update: removing Porca_Veia_-_Fazenda_Da_Viúva_(Live).mp3
+Jun 26 14:26 : update: added /Porca_Veia_-_Fazenda_Da_Viúe.mp3
+Jun 26 14:26 : update: removing Porca_Veia_-_Fazenda_Da_Viúe.mp3
+Jun 26 14:26 : update: added /Porca_Veia_-_Fazenda_Da_live.mp3
+Jun 26 14:27 : update: removing ece_seçkin_-_adeyyo.mp3
+Jun 26 14:27 : update: added /ece_seekin_-_adeyyo.mp3
+Jun 26 14:27 : player: played "Nick Cave_-_Bring It On.mp3"
+Jun 26 14:35 : update: updating /get_on_your_feet_(from_dangerous_lies_-_netflix).mp3
+Jun 26 14:35 : update: updating /ponto_de_exu_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /creedence_clearwater_revival_-_green_river.mp3
+Jun 26 14:35 : update: updating /sade_-_your_love_is_king.mp3
+Jun 26 14:35 : update: updating /ponto_de_iemanja_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /ponto_de_obaluaie_-_abaluaie_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /murphy_lee_-_shake_ya_tailfeather_(radio).mp3
+Jun 26 14:35 : update: updating /ponto_de_ogum_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /ponto_de_xango_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /clara_nunes_-_ijexa_filhos_de_ghandi.mp3
+Jun 26 14:35 : update: updating /peaky_blinders_-_wonderful_life.mp3
+Jun 26 14:35 : update: updating /nick_cave_-_breathless.mp3
+Jun 26 14:35 : update: updating /nick_cave_-_red_right_hand.mp3
+Jun 26 14:35 : update: updating /sade_-_the_sweetest_taboo.mp3
+Jun 26 14:35 : update: updating /creedence_clearwater_revival_-_hey_tonight.mp3
+Jun 26 14:35 : update: updating /nick_cave_-_bring_it_on.mp3
+Jun 26 14:35 : update: updating /sade_-_smooth_operator.mp3
+Jun 26 14:35 : update: updating /ponto_de_ibeji_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /ponto_de_marinheiro_-_marinheiro_so_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /clara_nunes_-_o_mar_serenou.mp3
+Jun 26 14:35 : update: updating /creedence_clearwater_revival_-_who'll_stop_the_rain.mp3
+Jun 26 14:35 : update: updating /clara_nunes_-_a_deusa_dos_orixas.mp3
+Jun 26 14:35 : update: updating /tanita_tikaram_-_twist_in_my_sobriety.mp3
+Jun 26 14:35 : update: updating /creedence_clearwater_revival_-_bad_moon_rising.mp3
+Jun 26 14:35 : update: updating /pontos_de_iansa_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /creedence_clearwater_revival_-_proud_mary.mp3
+Jun 26 14:35 : update: updating /cher_-_believe.mp3
+Jun 26 14:35 : update: updating /pontos_de_pretos_velhos_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /cher_-_the_shoop_shoop_song_(its_in_his_kiss).mp3
+Jun 26 14:35 : update: updating /creedence_clearwater_revival_-_fortunate_son.mp3
+Jun 26 14:35 : update: updating /homegrown_-_temptation_got_me.mp3
+Jun 26 14:35 : update: updating /chris_isaak_-_wicked_game.mp3
+Jun 26 14:35 : update: updating /clara_nunes_-_feira_de_mangaio.mp3
+Jun 26 14:35 : update: updating /ponto_de_oxala_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /sade_-_kiss_of_life.mp3
+Jun 26 14:35 : update: updating /ponto_de_defumacao_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /radical_face_-_welcome_home.mp3
+Jun 26 14:35 : update: updating /creedence_clearwater_revival_-_have_you_ever_seen_the_rain.mp3
+Jun 26 14:35 : update: updating /sade_-_king_of_sorrow.mp3
+Jun 26 14:35 : update: updating /sade_-_cherish_the_day.mp3
+Jun 26 14:35 : update: updating /pontos_de_oxum_(dengue_-_mamae_oxum)_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /do_fundo_da_grota_-_baitaca.mp3
+Jun 26 14:35 : update: updating /ponto_de_oxossi_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /sade_-_by_your_side.mp3
+Jun 26 14:35 : update: updating /ponto_de_boiadeiro_-_plichas_-_ze_mauricio.mp3
+Jun 26 14:35 : update: updating /yann_nnay_-_alice_russell_citizens.mp3
+Jun 26 14:35 : update: updating /creedence_clearwater_revival_-_i_heard_it_through_the_grapevine.mp3
+Jun 26 14:35 : update: updating /ne-yo_-_so_sick.mp3
+Jun 26 14:35 : update: updating /creedence_clearwater_revival_-_run_through_the_jungle.mp3
+Jun 26 14:35 : update: updating /clara_nunes_-_conto_de_areia.mp3
+Jun 26 14:35 : update: updating /baby_bash_-_baby,_i'm_back.mp3
+Jun 26 14:35 : update: updating /kavabanga_depo_kolibri_-_hu.mp3
+Jun 26 14:35 : update: updating /clara_nunes_-_triteza_pe_no_chao.mp3
+Jun 26 14:35 : update: updating /ece_seekin_-_adeyyo.mp3
+Jun 26 14:36 : update: updating /kavabanga_depo_kolibri_-_hu.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_Fazenda_Da_live.mp3
+Jun 26 14:38 : update: updating /get_on_your_feet_(from_dangerous_lies_-_netflix).mp3
+Jun 26 14:38 : update: updating /ponto_de_exu_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /porca_veia_-_abraco_ao_parana.mp3
+Jun 26 14:38 : update: updating /creedence_clearwater_revival_-_green_river.mp3
+Jun 26 14:38 : update: updating /sade_-_your_love_is_king.mp3
+Jun 26 14:38 : update: updating /ponto_de_iemanja_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /ponto_de_obaluaie_-_abaluaie_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /murphy_lee_-_shake_ya_tailfeather_(radio).mp3
+Jun 26 14:38 : update: updating /ponto_de_ogum_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /ponto_de_xango_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /clara_nunes_-_ijexa_filhos_de_ghandi.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_Baile_Na_Serra_(Ao_Vivo).mp3
+Jun 26 14:38 : update: updating /porca_veia_-_eu_gostei_do_baile_veio.mp3
+Jun 26 14:38 : update: updating /peaky_blinders_-_wonderful_life.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_Ginete_De_Fronteira_(Ao_Vivo).mp3
+Jun 26 14:38 : update: updating /nick_cave_-_breathless.mp3
+Jun 26 14:38 : update: updating /nick_cave_-_red_right_hand.mp3
+Jun 26 14:38 : update: updating /porca_veia_bugio_do_chaleira_preta.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_Gaiteiro_Por_Demais_(Live).mp3
+Jun 26 14:38 : update: updating /sade_-_the_sweetest_taboo.mp3
+Jun 26 14:38 : update: updating /creedence_clearwater_revival_-_hey_tonight.mp3
+Jun 26 14:38 : update: updating /nick_cave_-_bring_it_on.mp3
+Jun 26 14:38 : update: updating /porca_veia_alma_de_gaiteiro.mp3
+Jun 26 14:38 : update: updating /sade_-_smooth_operator.mp3
+Jun 26 14:38 : update: updating /ponto_de_ibeji_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /ponto_de_marinheiro_-_marinheiro_so_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /porca_veia_-_castracao_a_pealo.mp3
+Jun 26 14:38 : update: updating /clara_nunes_-_o_mar_serenou.mp3
+Jun 26 14:38 : update: updating /creedence_clearwater_revival_-_who'll_stop_the_rain.mp3
+Jun 26 14:38 : update: updating /clara_nunes_-_a_deusa_dos_orixas.mp3
+Jun 26 14:38 : update: updating /tanita_tikaram_-_twist_in_my_sobriety.mp3
+Jun 26 14:38 : update: updating /creedence_clearwater_revival_-_bad_moon_rising.mp3
+Jun 26 14:38 : update: updating /pontos_de_iansa_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /creedence_clearwater_revival_-_proud_mary.mp3
+Jun 26 14:38 : update: updating /cher_-_believe.mp3
+Jun 26 14:38 : update: updating /pontos_de_pretos_velhos_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /cher_-_the_shoop_shoop_song_(its_in_his_kiss).mp3
+Jun 26 14:38 : update: updating /creedence_clearwater_revival_-_fortunate_son.mp3
+Jun 26 14:38 : update: updating /homegrown_-_temptation_got_me.mp3
+Jun 26 14:38 : update: updating /chris_isaak_-_wicked_game.mp3
+Jun 26 14:38 : update: updating /porca_veia_sentimento_de_trovador.mp3
+Jun 26 14:38 : update: updating /clara_nunes_-_feira_de_mangaio.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_Recorrendo_Os_Aguapes.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_Luz_Do_Meu_Rancho.mp3
+Jun 26 14:38 : update: updating /ponto_de_oxala_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /sade_-_kiss_of_life.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_Xote_Afigurado.mp3
+Jun 26 14:38 : update: updating /Cleiton_Schneider_-_Sentimento_De_Trovador.Mpg(Porca_Veia_O_Segundo_DVD).mp3
+Jun 26 14:38 : update: updating /ponto_de_defumacao_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /radical_face_-_welcome_home.mp3
+Jun 26 14:38 : update: updating /creedence_clearwater_revival_-_have_you_ever_seen_the_rain.mp3
+Jun 26 14:38 : update: updating /sade_-_king_of_sorrow.mp3
+Jun 26 14:38 : update: updating /sade_-_cherish_the_day.mp3
+Jun 26 14:38 : update: updating /pontos_de_oxum_(dengue_-_mamae_oxum)_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /do_fundo_da_grota_-_baitaca.mp3
+Jun 26 14:38 : update: updating /ponto_de_oxossi_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /porca_veia_-_de_alma_Serrana.mp3
+Jun 26 14:38 : update: updating /sade_-_by_your_side.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_Fama_De_Bagunceiro.mp3
+Jun 26 14:38 : update: updating /ponto_de_boiadeiro_-_plichas_-_ze_mauricio.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_Meu_Cambicho.mp3
+Jun 26 14:38 : update: updating /yann_nnay_-_alice_russell_citizens.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_Marca_Borrada_(Live).mp3
+Jun 26 14:38 : update: updating /porca_veia_-_no_coracao_do_rio_grande.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_De_Toda_Lida.mp3
+Jun 26 14:38 : update: updating /creedence_clearwater_revival_-_i_heard_it_through_the_grapevine.mp3
+Jun 26 14:38 : update: updating /porca_veia_-_vanerao_gaucho.mp3
+Jun 26 14:38 : update: updating /ne-yo_-_so_sick.mp3
+Jun 26 14:38 : update: updating /creedence_clearwater_revival_-_run_through_the_jungle.mp3
+Jun 26 14:38 : update: updating /clara_nunes_-_conto_de_areia.mp3
+Jun 26 14:38 : update: updating /porca_veia_Joaoparaiba.mp3
+Jun 26 14:38 : update: updating /baby_bash_-_baby,_i'm_back.mp3
+Jun 26 14:38 : update: updating /kavabanga_depo_kolibri_-_hu.mp3
+Jun 26 14:38 : update: updating /clara_nunes_-_triteza_pe_no_chao.mp3
+Jun 26 14:38 : update: updating /ece_seekin_-_adeyyo.mp3
+Jun 26 14:38 : update: updating /Porca_Veia_-_Morena_Luxuosa.mp3
+Jun 26 14:41 : update: removing baby_bash_-_baby,_i'm_back.mp3
+Jun 26 14:41 : update: removing creedence_clearwater_revival_-_who'll_stop_the_rain.mp3
+Jun 26 14:41 : update: removing Cleiton_Schneider_-_Sentimento_De_Trovador.Mpg(Porca_Veia_O_Segundo_DVD).mp3
+Jun 26 14:41 : update: removing murphy_lee_-_shake_ya_tailfeather_(radio).mp3
+Jun 26 14:41 : update: removing get_on_your_feet_(from_dangerous_lies_-_netflix).mp3
+Jun 26 14:41 : update: removing pontos_de_oxum_(dengue_-_mamae_oxum)_-_ze_mauricio.mp3
+Jun 26 14:41 : update: removing Porca_Veia_-_Gaiteiro_Por_Demais_(Live).mp3
+Jun 26 14:41 : update: removing Porca_Veia_-_Baile_Na_Serra_(Ao_Vivo).mp3
+Jun 26 14:41 : update: removing Porca_Veia_-_Marca_Borrada_(Live).mp3
+Jun 26 14:41 : update: removing Porca_Veia_-_Ginete_De_Fronteira_(Ao_Vivo).mp3
+Jun 26 14:41 : update: removing cher_-_the_shoop_shoop_song_(its_in_his_kiss).mp3
+Jun 26 14:41 : update: added /Porca_Veia_-_Ginete_De_Fronteira_Ao_Vivo.mp3
+Jun 26 14:41 : update: added /murphy_lee_-_shake_ya_tailfeather_radio.mp3
+Jun 26 14:41 : update: added /cher_-_the_shoop_shoop_song_its_in_his_kiss.mp3
+Jun 26 14:41 : update: added /get_on_your_feet_from_dangerous_lies_-_netflix.mp3
+Jun 26 14:41 : update: added /Porca_Veia_-_Baile_Na_Serra_Ao_Vivo.mp3
+Jun 26 14:41 : update: added /Porca_Veia_-_Gaiteiro_Por_Demais_Live.mp3
+Jun 26 14:41 : update: added /Cleiton_Schneider_-_Sentimento_De_Trovador.MpgPorca_Veia_O_Segundo_DVD.mp3
+Jun 26 14:41 : update: added /baby_bash_-_baby,_im_back.mp3
+Jun 26 14:41 : update: added /pontos_de_oxum_dengue_-_mamae_oxum_-_ze_mauricio.mp3
+Jun 26 14:41 : update: added /creedence_clearwater_revival_-_wholl_stop_the_rain.mp3
+Jun 26 14:41 : update: added /Porca_Veia_-_Marca_Borrada_Live.mp3
+Jun 26 14:42 : update: removing kavabanga_depo_kolibri_-_hu.mp3
+Jun 26 14:42 : update: added /kavabanga_depo_kolibri_-_hu.mp3
+Jun 26 17:47 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 18:13 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 18:46 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 18:53 : exception: Failed to access /home/colps/Music/peaky_blinders_-_wonderful_life.mp3: No such file or directory
+Jun 26 18:53 : update: removing peaky_blinders_-_wonderful_life.mp3
+Jun 26 18:53 : update: added /nick_cave_-_wonderful_life.mp3
+Jun 26 18:54 : update: removing porca_veia_-_de_alma_Serrana.mp3
+Jun 26 18:54 : update: removing porca_veia_-_castracao_a_pealo.mp3
+Jun 26 18:54 : update: removing porca_veia_sentimento_de_trovador.mp3
+Jun 26 18:54 : update: removing porca_veia_Joaoparaiba.mp3
+Jun 26 18:54 : update: removing porca_veia_bugio_do_chaleira_preta.mp3
+Jun 26 18:54 : update: removing porca_veia_alma_de_gaiteiro.mp3
+Jun 26 18:54 : update: removing porca_veia_-_vanerao_gaucho.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_Recorrendo_Os_Aguapes.mp3
+Jun 26 18:54 : update: removing porca_veia_-_eu_gostei_do_baile_veio.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_De_Toda_Lida.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_Luz_Do_Meu_Rancho.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_Meu_Cambicho.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_Baile_Na_Serra_Ao_Vivo.mp3
+Jun 26 18:54 : update: removing porca_veia_-_abraco_ao_parana.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_Marca_Borrada_Live.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_Ginete_De_Fronteira_Ao_Vivo.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_Gaiteiro_Por_Demais_Live.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_Fazenda_Da_live.mp3
+Jun 26 18:54 : update: removing porca_veia_-_no_coracao_do_rio_grande.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_Fama_De_Bagunceiro.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_Xote_Afigurado.mp3
+Jun 26 18:54 : update: removing Porca_Veia_-_Morena_Luxuosa.mp3
+Jun 26 18:54 : update: added /porca_veia_-_marca_borrada_(live).mp3
+Jun 26 18:54 : update: added /porca_veia_-_fazenda_da_viúva_(live).mp3
+Jun 26 18:54 : update: added /joaoparaiba_-_balanço_do_bugio_grupo_cordiona_o_grupo_do_porca_veia_joaoparaiba_#0744_@1671.mp3
+Jun 26 18:54 : update: added /de_alma_serrana_-_porca_veia.mp3
+Jun 26 18:54 : update: added /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia_bugio_do_chaleira_preta.mp3
+Jun 26 18:54 : update: added /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia_alma_de_gaiteiro.mp3
+Jun 26 18:54 : update: added /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia_sentimento_de_trovador.mp3
+Jun 26 18:54 : update: added /porca_veia_-_morena_luxuosa.mp3
+Jun 26 18:54 : update: added /porca_veia_-_meu_cambicho.mp3
+Jun 26 18:54 : update: added /15_-_vanerão_gaúcho_-_porca_veia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 18:54 : update: added /porca_veia_-_ginete_de_fronteira_(ao_vivo).mp3
+Jun 26 18:54 : update: added /porca_veia_-_xote_afigurado.mp3
+Jun 26 18:54 : update: added /porca_veia_-_fama_de_bagunceiro.mp3
+Jun 26 18:54 : update: added /porca_veia_-_de_toda_lida.mp3
+Jun 26 18:54 : update: added /porca_veia_-_gaiteiro_por_demais_(live).mp3
+Jun 26 18:54 : update: added /dvd_porca_veia_-_eu_gostei_do_baile_veio.mp3
+Jun 26 18:54 : update: added /porca_veia_featuring_grupo_cordiona_·_noe_teixeira_·_grupo_cordiona_-_abraço_ao_paraná_(ao_vivo).mp3
+Jun 26 18:54 : update: added /08_-_castração_a_pealo_-_porca_veia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 18:54 : update: added /porca_veia_-_luz_do_meu_rancho.mp3
+Jun 26 18:54 : update: added /porca_veia_-_recorrendo_os_aguapes.mp3
+Jun 26 18:54 : update: added /porca_veia_-_baile_na_serra_(ao_vivo).mp3
+Jun 26 18:54 : update: added /porca_veia_-_no_coração_do_rio_grande.mp3
+Jun 26 18:56 : update: updating /15_-_vanerão_gaúcho_-_porca_veia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 18:57 : update: removing 15_-_vanerão_gaúcho_-_porca_veia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 18:57 : update: added /Porca_Veia_-_Vanerao_Gaucho.mp3
+Jun 26 18:57 : update: updating /08_-_castração_a_pealo_-_porca_veia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 18:57 : update: removing 08_-_castração_a_pealo_-_porca_veia_&_os_gaiteiros_do_cordiona.mp3
+Jun 26 18:57 : update: added /Porca_Veia_-_castração_a_pealo.mp3
+Jun 26 18:58 : update: removing Cleiton_Schneider_-_Sentimento_De_Trovador.MpgPorca_Veia_O_Segundo_DVD.mp3
+Jun 26 18:58 : update: added /Porca_Veia_-_sentimento_de_trovador.mp3
+Jun 26 18:59 : exception: Failed to access /home/colps/Music/rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia_alma_de_gaiteiro.mp3: No such file or directory
+Jun 26 18:59 : update: removing rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia_alma_de_gaiteiro.mp3
+Jun 26 18:59 : update: added /Porca_Veia_-_porca_veia_alma_de_gaiteiro.mp3
+Jun 26 19:00 : update: removing joaoparaiba_-_balanço_do_bugio_grupo_cordiona_o_grupo_do_porca_veia_joaoparaiba_#0744_@1671.mp3
+Jun 26 19:00 : update: added /Porca_Veia_-_balanço_do_bugio.mp3
+Jun 26 19:03 : update: updating /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia_sentimento_de_trovador.mp3
+Jun 26 19:04 : update: updating /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia_bugio_do_chaleira_preta.mp3
+Jun 26 19:04 : update: removing rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia_bugio_do_chaleira_preta.mp3
+Jun 26 19:04 : update: added /Porca_Veia_-_porca_veia_bugio_do_chaleira_preta.mp3
+Jun 26 19:04 : update: updating /rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia_sentimento_de_trovador.mp3
+Jun 26 19:04 : update: removing rubem_ayang_oliveira_música_folclórica_e_regional_-_porca_veia_sentimento_de_trovador.mp3
+Jun 26 19:04 : update: added /Porca_Veia_-_sentimento_de_trovador_porca.mp3
+Jun 26 19:05 : update: removing porca_veia_featuring_grupo_cordiona_·_noe_teixeira_·_grupo_cordiona_-_abraço_ao_paraná_(ao_vivo).mp3
+Jun 26 19:05 : update: added /Porca_Veia_-_abraço_ao_paraná_(ao_vivo).mp3
+Jun 26 23:05 : update: removing yann_nnay_-_alice_russell_citizens.mp3
+Jun 26 23:05 : update: added /alice_russell_-_citizens.mp3
+Jun 26 23:06 : update: removing get_on_your_feet_from_dangerous_lies_-_netflix.mp3
+Jun 26 23:06 : update: added /get_on_your_feet.mp3
+Jun 26 23:09 : update: removing get_on_your_feet.mp3
+Jun 26 23:09 : update: added /maius_bear_-_get_on_your_feet.mp3
+Jun 26 23:10 : update: removing maius_bear_-_get_on_your_feet.mp3
+Jun 26 23:10 : update: added /marius_bear_-_get_on_your_feet.mp3
+Jun 26 23:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jun 26 23:33 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted

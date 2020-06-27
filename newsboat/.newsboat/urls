@@ -5,10 +5,11 @@ https://newsboat.org/news.atom
 http://feeds.bbci.co.uk/portuguese/rss.xml
 http://rss.home.uol.com.br/index.xml
  --- pkg update
+https://artixlinux.org/feed.php
+https://suckless.org/atom.xml
 https://www.archlinux.org/feeds/news/ "Linux"
 https://www.archlinux.org/feeds/packages/ "Linux"
-https://suckless.org/atom.xml
- --- linux
+  -- linux
 https://lukesmith.xyz/rss.xml "Linux" "Luke"
 https://notrelated.xyz/rss "Linux" "Luke"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "YouTube" "Luke" "Linux"  

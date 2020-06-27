@@ -1,0 +1,35 @@
+# Interactive git add selector
+ga
+
+# Interactive git log viewer
+glo
+
+# Interactive .gitignore generator
+gi
+
+# Interactive git diff viewer
+gd
+
+# Interactive git reset HEAD <file> selector 
+grh
+
+# Interactive git checkout <file> selector 
+gcf
+
+# Interactive git stash viewer
+gss
+
+# Interactive git clean selector
+gclean
+
+# Keybinds
+Enter	        Confirm
+Tab	        Toggle mark
+?	        Toggle preview window
+Alt - W	        Toggle preview wrap
+Ctrl - S	Toggle sort
+Ctrl - R	Toggle selection
+Ctrl - K / P	Selection move up
+Ctrl - J / N	Selection move down
+Alt - K / P	Preview move up
+Alt - J / N	Preview move down

@@ -9,6 +9,7 @@ https://artixlinux.org/feed.php
 https://suckless.org/atom.xml
 https://www.archlinux.org/feeds/news/ "Linux"
 https://www.archlinux.org/feeds/packages/ "Linux"
+https://github.com/colpshift.private.atom?token=AJJUXHXOQSEB5NYXNZT53B55AYZRI
   -- linux
 https://lukesmith.xyz/rss.xml "Linux" "Luke"
 https://notrelated.xyz/rss "Linux" "Luke"

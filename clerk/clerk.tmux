@@ -1,10 +1,10 @@
 # !Dont move this section.
 ## Key Bindings
-bind-key -n 1   selectw -t :=albums                         # show album list                
-bind-key -n 2   selectw -t :=tracks                         # show tracks
-bind-key -n 3   selectw -t :=latest                         # show album list (latest first)
-bind-key -n 4   selectw -t :=playlists                      # load playlist
-bind-key -n 5   selectw -t :=queue                          # show queue
+bind-key -n 0   selectw -t :=albums                         # show album list                
+bind-key -n 1   selectw -t :=tracks                         # show tracks
+bind-key -n 2   selectw -t :=latest                         # show album list (latest first)
+bind-key -n 3   selectw -t :=playlists                      # load playlist
+bind-key -n 4   selectw -t :=queue                          # show queue
 bind-key -n F1 run-shell '$CLERKBIN --instaact=help_pane'   # show help
 bind-key -n F2 run-shell 'mpc prev --quiet'               # previous song
 bind-key -n F3 run-shell 'mpc toggle --quiet'             # toggle playback

@@ -40,35 +40,35 @@ font:
   size: 8.0
 
 # color_start
-# /home/colps/.config/alacritty/themes/one_dark.yaml
-# Colors (One Dark)
+# /home/colps/.config/alacritty/colors/ayu_dark.yaml
+# Colors (Ayu Dark)
 colors:
   # Default colors
   primary:
-    background: '0x1e2127'
-    foreground: '0xabb2bf'
+    background: '0x0A0E14'
+    foreground: '0xB3B1AD'
 
   # Normal colors
   normal:
-    black:   '0x1e2127'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xabb2bf'
+    black:   '0x01060E'
+    red:     '0xEA6C73'
+    green:   '0x91B362'
+    yellow:  '0xF9AF4F'
+    blue:    '0x53BDFA'
+    magenta: '0xFAE994'
+    cyan:    '0x90E1C6'
+    white:   '0xC7C7C7'
 
   # Bright colors
   bright:
-    black:   '0x5c6370'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xffffff'
+    black:   '0x686868'
+    red:     '0xF07178'
+    green:   '0xC2D94C'
+    yellow:  '0xFFB454'
+    blue:    '0x59C2FF'
+    magenta: '0xFFEE99'
+    cyan:    '0x95E6CB'
+    white:   '0xFFFFFF'
 # color_end
 
   vi_mode_cursor:
@@ -94,7 +94,7 @@ visual_bell:
   duration: 0
   color: '#ffffff'
 
-background_opacity: 0.8
+background_opacity: 1.0
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -106,7 +106,6 @@ cursor:
   style: Beam
   vi_mode_style: None
   unfocused_hollow: true
-  thickness: 0.15
 
 live_config_reload: true
 

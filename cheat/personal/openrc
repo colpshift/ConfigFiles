@@ -1,0 +1,12 @@
+# to display all available init scripts and their their current runlevel (if they have been added to one)
+rc-update show -v
+
+# to Adding services to/from runlevels
+rc-update add net.eth0 boot
+
+# to removing services to/from runlevels
+rc-update del dropbox default
+
+# to create additional runlevels
+install -d /etc/runlevels/$runlevel
+

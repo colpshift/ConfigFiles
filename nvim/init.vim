@@ -80,7 +80,7 @@ call plug#end()
 "------------------------------------------------------------------------------
 "
 " airline
-  let g:airline_theme='gruvbox'
+  let g:airline_theme='distinguished'
   let g:airline_highlighting_cache = 1
   let g:airline_left_sep = ' '
   let g:airline_left_alt_sep = '|'
@@ -308,7 +308,7 @@ set splitbelow          " Horizontal split below current.
 set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
-colorscheme gruvbox
+colorscheme distinguished
 
 "------------------------------------------------------------------------------
 " searching

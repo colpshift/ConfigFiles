@@ -9,6 +9,6 @@ Type = Package
 Target = *
 
 [Action]
-Description = Remove unused packages (orphans)
+Description = clean packages
 When = PostTransaction
 Exec = /home/colps/.scripts/cleanpkg.sh

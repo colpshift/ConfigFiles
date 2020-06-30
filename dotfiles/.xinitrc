@@ -9,7 +9,6 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 #
 # merge in defaults and keymaps
 if [ -f "$userresources" ]; then
-
     xrdb -merge "$userresources"
 fi
 #
@@ -42,7 +41,6 @@ systemctl --user import-environment DISPLAY
 (conky | while read LINE; do xsetroot -name "$LINE"; done) &
 #
 # Autostart section
-sh ~/.scripts/autocutsel_start.sh
 sh ~/.scripts/flameshot_start.sh
 sh ~/.scripts/xscreensaver_start.sh
 ~/.fehbg &

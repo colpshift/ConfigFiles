@@ -13,7 +13,7 @@
 " start settings
 "------------------------------------------------------------------------------
 set nocompatible
-syntax on
+"syntax on
 filetype plugin indent on
 set fileformat=unix
 set encoding=utf-8      " Use an encoding that supports unicode.
@@ -47,8 +47,6 @@ call plug#begin('~/.local/share/nvim/plugged')
   " automatically highlighting other uses of the word under the cursor
   Plug 'kshenoy/vim-signature'
   " place, toggle and display marks.
-  Plug 'TaDaa/vimade'
-  " fades your inactive buffers.
   Plug 'luochen1990/rainbow'
   " show diff level of parentheses in diff color
   Plug 'ap/vim-css-color'
@@ -383,6 +381,5 @@ set conceallevel=0    "show quotes ``
 let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
 "
 " python
-let g:python3_host_prog = '/bin/python3'
-let g:python2_host_prog = '/bin/python2'
+"let g:python3_host_prog = '/bin/python3'
 

@@ -7,6 +7,6 @@ total_run_times = 0,
 use_spacer = 'none',
 };
 conky.text = [[
-${execi 1800 checkupdates | awk 'END { print (NR == 0 ? "::  pkg" : "::  " NR " pkg" (NR > 1 ? "s" : ""))}'} ::  $kernel  $uptime ::   $cpu%   $freq_g  ${acpitemp}c ::  $memperc% ($mem) ::    ${downspeed enp2s0}K/s  ${upspeed enp2s0}K/s ::   ${battery_percent BAT0}% ::  ${execi 60 sh ~/.scripts/dwm_backlight.sh}% ::  ${execi 60 sh ~/.scripts/dwm_pulse.sh} ::   ${execi 300 python ~/.scripts/gmail.py} ::  ${time %a %b %d %Y %R}
+${execi 1800 checkupdates | awk 'END { print (NR == 0 ? "   pkg" : "   " NR " pkg" (NR > 1 ? "s" : ""))}'}  $kernel  $uptime   $cpu%   $freq_g  ${acpitemp}c  $memperc% ($mem)  ${downspeed eth0}K/s  ${upspeed eth0}K/s   ${battery_percent BAT0}%  ${execi 60 sh ~/.scripts/dwm_backlight.sh}%  ${execi 60 sh ~/.scripts/dwm_pulse.sh}  ${execi 300 python ~/.scripts/gmail.py}  ${time %a %d-%m-%y %R} 
 ]];
 

@@ -5,6 +5,9 @@ super + return
 super + p
 
 # volume mute
+super + shift + ccedilla
+
+# volume unmute
 super + ccedilla
 
 # volume up

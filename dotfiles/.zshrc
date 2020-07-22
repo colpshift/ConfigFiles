@@ -139,11 +139,15 @@ source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 # zsh user completions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
+### Dev Env
+# Rust
+source ~/.cargo/env
+
 # fzf completion
 ################
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
-source /usr/share/fzf/forgit/forgit.plugin.zsh
+source /usr/share/fzf/forgit.plugin.zsh
 
 ### Set alias
 #############
@@ -158,32 +162,34 @@ alias grep='grep --color'
 alias dmesg='dmesg --color'
 alias df='df -h'
 alias du='du -h'
+alias su='sudo -i'
 alias vi='/bin/nvim'
 alias vim='/bin/nvim'
 alias gpg='gpg2'
-alias cat='bat --theme TwoDark'
+alias bat='bat --theme TwoDark'
 alias gitu='git add . && git commit'
 alias gitp='git add . && git commit && git push'
 alias gitl='git log --oneline'
+alias sxiv='devour.sh sxiv'
+alias zathura='devour.sh zathura'
+alias mpv='devour.sh mpv'
+alias surf='devour.sh surf'
+alias gparted='sudo devour.sh gparted'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
-alias neofetch="neofetch --color_blocks ff --ascii_distro Anarchy"
-alias sxiv='devour.sh sxiv -qt'
-alias mpv='devour.sh mpv'
-alias zathura='devour.sh zathura'
+alias neofetch="neofetch --color_blocks off "
 alias rofi='rofi -show drun'
 alias ncmpcpp="ncmpcpp -s media_library"
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias grub_install='grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck'
-alias yayu='yay -Syu'
+alias yayu='yaourtix -Syu'
 alias yayi='sh $HOME/.scripts/fzf_pkg_aur.sh'
 alias pacman='sudo pacman --color=always'
 alias pacu='pacman -Syu'
 alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
 alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
-alias pacman-mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 
 ### Set prompt
 ##############

@@ -10,25 +10,11 @@
 
 ### path
 typeset -U path
-path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts /home/colps/.gem/ruby/2.7.0/bin /home/colps/.cargo/bin $path[@])
+path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts /home/colpshift/.gem/ruby/2.7.0/bin /home/colpshift/.cargo/bin $path[@])
 
-## systemd user
-export XDG_RUNTIME_DIR="/run/user/1000"
-systemctl --user import-environment PATH
-systemctl --user import-environment DISPLAY XAUTHORITY
-if command -v dbus-update-activation-environment >/dev/null 2>&1; then
-  dbus-update-activation-environment DISPLAY XAUTHORITY
-fi
-
-### Python environment
-export VLW="/home/colps/.local/bin/virtualenvwrapper.sh"
-export VIRTUALENVWRAPPER_PYTHON="/bin/python3"
-export WORKON_HOME="$HOME/Code/python/py_envs"
-export WORKON_HOME="$HOME/Code/python/.virtualenvs"
-export PROJECT_HOME="$HOME/Code/python/"
-export PYTHONBREAKPOINT=pudb.set_trace
-source $VLW
-
+### locale
+export LANG="en_US.UTF-8"
+export LC_COLLATE="C"
 ### pass extensions
 export PASSWORD_STORE_ENABLE_EXTENSIONS="true"
 ### fuzzy search
@@ -37,4 +23,9 @@ export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap 
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 ### cheat
 export CHEAT_USE_FZF=true
+### surf
+export NO_AT_BRIDGE=1
+
+
+
 

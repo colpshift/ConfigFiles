@@ -1,17 +1,17 @@
 "query:Unread:unread = \"yes\"" meta
- --- newsboat
+  --- newsboat
 https://newsboat.org/news.atom
- --- news
+  --- news
 http://feeds.bbci.co.uk/portuguese/rss.xml
 http://rss.home.uol.com.br/index.xml
- --- pkg update
+  --- artixlinux
 https://artixlinux.org/feed.php
+https://forum.artixlinux.org/index.php?action=.xml;type=rss2;limit=5
+  --- pkg update
 https://suckless.org/atom.xml
-https://www.archlinux.org/feeds/news/ "Linux"
-https://www.archlinux.org/feeds/packages/ "Linux"
 https://github.com/colpshift.private.atom?token=AJJUXHXOQSEB5NYXNZT53B55AYZRI
 https://gitlab.com/colpshift.atom?feed_token=gFkiNJPVagWFkBexBrjx
-  -- linux
+  --- linux
 https://lukesmith.xyz/rss.xml "Linux" "Luke"
 https://notrelated.xyz/rss "Linux" "Luke"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "YouTube" "Luke" "Linux"  
@@ -27,7 +27,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCqd9oVuR4tuKD5Y9AFwxz7Q "Yo
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg "YouTube" "Wolfgang" "Linux"
   --- Espiritos
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMBASOtCn9BI_kq7bD6iCcw "YouTube" "Calafrios" "Espiritos"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCPbEpkurA_eNIjKBVIOKXmA "YouTube" "Calafrios" "Espiritos"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUbBQ3yTGhJJd5DXphwWvEw "YouTube" "Spooky" "Espiritos"
   --- Armas
 https://www.youtube.com/feeds/videos.xml?channel_id=UCU-ljC8EvKZFhJ-pct_5rMQ "YouTube" "Armas" "TREX"

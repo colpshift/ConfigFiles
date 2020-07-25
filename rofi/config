@@ -6,7 +6,7 @@
 rofi.modi: window,drun,run,ssh
 
 ! "Font to use" Set from: Default
-rofi.font: SauceCodePro Regular 9
+rofi.font: Roboto Regular 10
 
 ! "Border width" Set from: Default
 rofi.bw: 1

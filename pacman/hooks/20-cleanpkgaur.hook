@@ -1,0 +1,16 @@
+#
+# /etc/pacman.d/hooks/20-cleanpkgaur.hook
+#
+
+[Trigger]
+Operation = Remove
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = clean packages
+When = PostTransaction
+Exec = /home/colpshift/.scripts/cleanpkgaur.sh
+

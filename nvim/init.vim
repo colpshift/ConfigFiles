@@ -35,12 +35,15 @@ call plug#begin('~/.local/share/nvim/plugged')
 "---------------------------
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'rakr/vim-one'
+Plug 'romainl/Apprentice'
+Plug 'ayu-theme/ayu-vim'
 " vim color themes
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " status/tabline for vim that's light as air
 Plug 'ryanoasis/vim-devicons'
-" icons
+" icons<F7>
 "---------------------------
 Plug 'RRethy/vim-illuminate'
 " automatically highlighting other uses of the word under the cursor
@@ -51,7 +54,8 @@ Plug 'luochen1990/rainbow'
 Plug 'ap/vim-css-color'
 " Preview colours in source code.
 "---------------------------
-Plug '/usr/share/fzf/'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " Things you can do with fzf and Vim.
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 " Ranger running in a floating window
@@ -63,11 +67,13 @@ Plug 'andymass/vim-matchup'
 Plug 'preservim/nerdcommenter'
 " nerdy commenting powers
 "---------------------------
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
-" Snippets
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "LSP
+Plug 'kevinoid/vim-jsonc'
+" syntax highlighting plugin for json
+Plug 'honza/vim-snippets'
+" Snippets
+"
 "---------------------------
 call plug#end()
 
@@ -77,7 +83,7 @@ call plug#end()
 "
 " airline
 "
-let g:airline_theme='gruvbox'
+let g:airline_theme='ayu'
 let g:airline_highlighting_cache = 1
 let g:airline_left_sep = ' '
 let g:airline_left_alt_sep = '|'
@@ -89,6 +95,19 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#right_sep = ' '
 let g:airline#extensions#tabline#right_alt_sep = '|'
+"
+" coc-Smartf
+"
+" press <esc> to cancel.
+nmap f <Plug>(coc-smartf-forward)
+nmap F <Plug>(coc-smartf-backward)
+nmap ; <Plug>(coc-smartf-repeat)
+nmap , <Plug>(coc-smartf-repeat-opposite)
+"
+augroup Smartf
+  autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
+  autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
+augroup end
 "
 " signature
 "
@@ -160,10 +179,7 @@ let g:fzf_action = {
       \ 'ctrl-t': 'tab split',
       \ 'ctrl-x': 'split',
       \ 'ctrl-v': 'vsplit' }
-" Default fzf layout  - down / up / left / right
-"let g:fzf_layout = { 'down': '~40%' }
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
-" Customize fzf colors to match your color scheme
 let g:fzf_colors =
       \ { 'fg':      ['fg', 'Normal'],
       \ 'bg':      ['bg', 'Normal'],
@@ -181,20 +197,26 @@ let g:fzf_colors =
 "
 " Coc
 "
-set signcolumn=yes
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" languageserver
+" https://github.com/neoclide/coc.nvim/wiki/Language-servers#supported-features
 "
-" tab for trigger completion
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+" extensions
+" https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 "
+let g:airline#extensions#coc#enabled = 1
+" use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
+  return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
+"
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
+" Use <Tab> and <S-Tab> to navigate the completion list:
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 "
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
@@ -231,6 +253,7 @@ set hidden              " keep multiple buffers open.
 set cmdheight=2         " Give more space for displaying messages
 set updatetime=300
 set signcolumn=yes
+set signcolumn=auto:2
 set formatoptions+=l    " make settings permanent.
 set shortmess=atIc      " Don’t show the intro message when starting Vim
 set nostartofline       " Don’t reset cursor start of line when moving around.
@@ -257,7 +280,8 @@ set splitbelow          " Horizontal split below current.
 set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
-colorscheme gruvbox
+colorscheme ayu
+let ayucolor="dark"
 
 "------------------------------------------------------------------------------
 " searching
@@ -296,7 +320,7 @@ set undodir=$HOME/.local/share/nvim/undo
 set noswapfile
 set nobackup
 set nowritebackup
-"
+
 "------------------------------------------------------------------------------
 " code environments
 "------------------------------------------------------------------------------
@@ -306,4 +330,26 @@ let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
 "
 " python
 let g:python3_host_prog = '/bin/python3'
+"
+" json
+autocmd FileType json syntax match Comment +\/\/.\+$+
+"
+" snippets
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+let g:coc_snippet_next = '<tab>'
+
+"------------------------------------------------------------------------------
+" Workarounds
+"------------------------------------------------------------------------------
+"
+" Copying to X11 primary selection with the mouse
+vnoremap <LeftRelease> "*ygv
 

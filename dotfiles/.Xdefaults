@@ -1,5 +1,0 @@
-#
-# ~/.Xdefaults
-#
-
-[[ -f ~/.Xresources ]] && . ~/.Xresources

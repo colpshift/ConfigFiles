@@ -2,8 +2,12 @@
   --- newsboat
 https://newsboat.org/news.atom
   --- news
+https://www.valor.com.br/brasil/rss
 http://feeds.bbci.co.uk/portuguese/rss.xml
-http://rss.home.uol.com.br/index.xml
+https://www.valor.com.br/empresas/tecnologia/rss
+http://feeds.feedburner.com/profissionaisti?format=xml
+http://feeds.feedburner.com/gbhackers
+https://hackernoon.com/feed
   --- artixlinux
 https://artixlinux.org/feed.php
 https://forum.artixlinux.org/index.php?action=.xml;type=rss2;limit=5

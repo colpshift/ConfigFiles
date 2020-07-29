@@ -136,8 +136,6 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 source /usr/share/doc/pkgfile/command-not-found.zsh
 # interactive cd
 source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
-# zsh user completions
-fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 ### Dev Env
 # Rust
@@ -190,6 +188,7 @@ alias pacman='sudo pacman --color=always'
 alias pacu='pacman -Syu'
 alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
 alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
+alias pacman-arch_mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist-arch'
 
 ### Set prompt
 ##############

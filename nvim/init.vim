@@ -43,7 +43,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " status/tabline for vim that's light as air
 Plug 'ryanoasis/vim-devicons'
-" icons<F7>
+" icons
 "---------------------------
 Plug 'RRethy/vim-illuminate'
 " automatically highlighting other uses of the word under the cursor
@@ -96,19 +96,6 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#right_sep = ' '
 let g:airline#extensions#tabline#right_alt_sep = '|'
 "
-" coc-Smartf
-"
-" press <esc> to cancel.
-nmap f <Plug>(coc-smartf-forward)
-nmap F <Plug>(coc-smartf-backward)
-nmap ; <Plug>(coc-smartf-repeat)
-nmap , <Plug>(coc-smartf-repeat-opposite)
-"
-augroup Smartf
-  autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
-  autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
-augroup end
-"
 " signature
 "
 " mx           Toggle mark 'x' and display it in the leftmost column
@@ -120,7 +107,6 @@ augroup end
 "
 " iluminate
 "
-" Time in milliseconds (default 250)
 let g:Illuminate_delay = 200
 "
 " Sandwich
@@ -204,6 +190,9 @@ let g:fzf_colors =
 " https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
 "
 let g:airline#extensions#coc#enabled = 1
+"
+" coc-completion
+"
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -218,10 +207,71 @@ inoremap <silent><expr> <Tab>
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 "
+" coc-enable extensions
+"
+let g:coc_global_extensions = [
+      \ 'coc-snippets',
+      \ 'coc-tsserver',
+      \ 'coc-eslint',
+      \ 'coc-prettier',
+      \ 'coc-json',
+      \ 'coc-yank',
+      \ 'coc-word',
+      \ 'coc-syntax',
+      \ 'coc-smartf',
+      \ 'coc-highlight',
+      \ 'coc-emoji',
+      \ 'coc-diagnostic',
+      \ 'coc-actions',
+      \ 'coc-pairs',
+      \ ]
+"
+" coc-smartf
+"
+" press <esc> to cancel.
+nmap f <Plug>(coc-smartf-forward)
+nmap F <Plug>(coc-smartf-backward)
+nmap ; <Plug>(coc-smartf-repeat)
+nmap , <Plug>(coc-smartf-repeat-opposite)
+"
+augroup Smartf
+  autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
+  autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
+augroup end
+"
+" coc-actions
+"
+function! s:cocActionsOpenFromSelected(type) abort
+  execute 'CocCommand actions.open ' . a:type
+endfunction
+xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+"
+" coc-highlight
+"
+autocmd CursorHold * silent call CocActionAsync('highlight')
+"
+" coc-json
+"
+autocmd FileType json syntax match Comment +\/\/.\+$+
+"
+" coc-diagnostic
+"
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 "
-autocmd CursorHold * silent call CocActionAsync('highlight')
+" coc-snippets
+"
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+let g:coc_snippet_next = '<tab>'
 
 "------------------------------------------------------------------------------
 " mapping and abbreviations
@@ -330,21 +380,6 @@ let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
 "
 " python
 let g:python3_host_prog = '/bin/python3'
-"
-" json
-autocmd FileType json syntax match Comment +\/\/.\+$+
-"
-" snippets
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-let g:coc_snippet_next = '<tab>'
 
 "------------------------------------------------------------------------------
 " Workarounds

@@ -35,7 +35,6 @@ blocaled
 bluez-runit
 btrfs-progs
 calibre
-chromium
 cmake
 conky
 connman-gtk
@@ -44,6 +43,8 @@ crda
 cronie-runit
 cryptsetup-runit
 ctags
+cups-pdf
+cups-runit
 dhclient
 dhcpcd-runit
 dia
@@ -73,6 +74,7 @@ gcc
 gimp
 git
 gnome-themes-extra
+google-chrome
 gopls
 gpa
 gpart
@@ -91,6 +93,7 @@ inxi
 iptables
 ipw2100-fw
 ipw2200-fw
+iwd-runit
 java11-openjfx-doc
 jfsutils
 jpegexiforient
@@ -170,6 +173,7 @@ pulseaudio-alsa
 pulsemixer
 python-pip
 qrencode
+reflector
 reiserfsprogs
 ripgrep
 rmlint
@@ -211,7 +215,6 @@ w3m
 wd719x-firmware
 webkit2gtk
 which
-wpa_supplicant-runit
 xarchiver
 xclip
 xcursor-premium

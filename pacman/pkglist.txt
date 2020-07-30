@@ -32,7 +32,9 @@ bind
 bison
 bleachbit
 blocaled
-bluez-runit
+bluez-firmware
+bluez-plugins
+bluez-utils
 btrfs-progs
 calibre
 cmake
@@ -194,7 +196,6 @@ sudo
 sxiv
 sysfsutils
 syslog-ng-runit
-teams
 terminus-font
 texinfo
 tk

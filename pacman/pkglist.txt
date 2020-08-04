@@ -37,10 +37,9 @@ bluez-plugins
 bluez-utils
 btrfs-progs
 calibre
+chromium
 cmake
 conky
-connman-gtk
-connman-runit
 crda
 cronie-runit
 cryptsetup-runit
@@ -53,6 +52,7 @@ dia
 diffutils
 dmraid
 dnsmasq
+dnsmasq-runit
 dosfstools
 dunst
 e2fsprogs
@@ -69,6 +69,7 @@ fasd
 feh
 ffmpegthumbnailer
 firefox
+firefox-sync
 flameshot
 flex
 fzf
@@ -76,12 +77,10 @@ gcc
 gimp
 git
 gnome-themes-extra
-google-chrome
 gopls
 gpa
 gpart
 gparted
-gpicview
 grub
 gtk-engine-murrine
 gvfs-mtp
@@ -89,6 +88,7 @@ haveged-runit
 highlight
 hplip
 hspell
+humanity-icon-theme
 hunspell-en_US
 inetutils
 inxi
@@ -99,7 +99,6 @@ iwd-runit
 java11-openjfx-doc
 jfsutils
 jpegexiforient
-leafpad
 libavtp
 librabbitmq-c
 libreoffice-fresh
@@ -115,14 +114,8 @@ lxappearance
 lxappearance-obconf
 lxde-common
 lxde-icon-theme
-lxhotkey
-lxinput
 lxlauncher
 lxpanel
-lxrandr
-lxsession
-lxtask
-lxterminal
 lynx
 m4
 make
@@ -146,6 +139,7 @@ ncdu
 ncmpcpp
 neovim
 net-tools
+networkmanager-runit
 nfs-utils-runit
 nilfs-utils
 ntfs-3g
@@ -165,6 +159,7 @@ pass
 patch
 pavucontrol
 pcmanfm
+pdfjs
 picom
 pinentry-dmenu
 pkgconf
@@ -175,6 +170,8 @@ pulseaudio-alsa
 pulsemixer
 python-pip
 qrencode
+qtwebkit-plugins-git
+qutebrowser
 reflector
 reiserfsprogs
 ripgrep
@@ -212,6 +209,11 @@ ueberzug
 unrar
 unzip
 usbutils
+virtualbox
+virtualbox-guest-iso
+virtualbox-guest-modules-artix
+virtualbox-guest-utils
+virtualbox-host-modules-artix
 w3m
 wd719x-firmware
 webkit2gtk

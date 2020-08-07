@@ -4,6 +4,12 @@ super + return
 # dmenu menu
 super + p
 
+# saida de som HDMI
+super + control + ccedilla
+
+# sadia de som interno 
+super + alt(mod1) + ccedilla 
+
 # volume mute
 super + shift + ccedilla
 

@@ -53,8 +53,8 @@
     #icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/:/usr/share/icons/Adwaita/256x256/status/
     sticky_history = yes
     history_length = 20
-    dmenu = /bin/dmenu -p dunst:
-    browser = /bin/brave -new-tab
+    dmenu = /usr/local/bin/dmenu -p dunst:
+    browser = /bin/qutebrowser -new-tab
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true

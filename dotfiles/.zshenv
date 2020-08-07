@@ -12,7 +12,6 @@
 typeset -U path
 path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts ~/.gem/ruby/2.7.0/bin ~/.cargo/bin ~/.node_modules/bin ~/.zsh/functions $path[@])
 
-
 ### locale
 export LANG="en_US.UTF-8"
 export LC_COLLATE="C"
@@ -34,7 +33,4 @@ export NO_AT_BRIDGE=1
 
 ### npm
 export npm_config_prefix="~/.node_modules"
-
-
-
 

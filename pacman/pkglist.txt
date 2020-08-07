@@ -50,6 +50,7 @@ dhclient
 dhcpcd-runit
 dia
 diffutils
+discord
 dmraid
 dnsmasq
 dnsmasq-runit
@@ -142,6 +143,7 @@ net-tools
 networkmanager-runit
 nfs-utils-runit
 nilfs-utils
+ninja
 ntfs-3g
 ntp-runit
 nuspell

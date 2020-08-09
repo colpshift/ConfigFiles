@@ -26,7 +26,7 @@ avahi-runit
 awesome-terminal-fonts
 b43-fwcutter
 base
-bashtop
+bashtop-git
 bat
 bind
 bison
@@ -91,6 +91,7 @@ hplip
 hspell
 humanity-icon-theme
 hunspell-en_US
+hwinfo
 inetutils
 inxi
 iptables
@@ -115,8 +116,6 @@ lxappearance
 lxappearance-obconf
 lxde-common
 lxde-icon-theme
-lxlauncher
-lxpanel
 lynx
 m4
 make
@@ -157,6 +156,7 @@ p7zip
 pacman-contrib
 pamixer
 papirus-icon-theme
+papirus-libreoffice-theme
 pass
 patch
 pavucontrol

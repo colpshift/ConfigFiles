@@ -1,38 +1,35 @@
+  --- Unread
 "query:Unread:unread = \"yes\"" meta
   --- newsboat
 https://newsboat.org/news.atom
   --- news
-https://www.valor.com.br/brasil/rss
 http://feeds.bbci.co.uk/portuguese/rss.xml
-https://www.valor.com.br/empresas/tecnologia/rss
 http://feeds.feedburner.com/profissionaisti?format=xml
-http://feeds.feedburner.com/gbhackers
-https://hackernoon.com/feed
   --- artixlinux
 https://artixlinux.org/feed.php
 https://forum.artixlinux.org/index.php?action=.xml;type=rss2;limit=5
-  --- pkg update
-https://suckless.org/atom.xml
-https://github.com/colpshift.private.atom?token=AJJUXHXOQSEB5NYXNZT53B55AYZRI
-https://gitlab.com/colpshift.atom?feed_token=gFkiNJPVagWFkBexBrjx
   --- linux
-https://lukesmith.xyz/rss.xml "Linux" "Luke"
-https://notrelated.xyz/rss "Linux" "Luke"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "YouTube" "Luke" "Linux"  
-https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "YouTube" "Mental" "Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA "YouTube" "Diolinux" "Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCFzGyNKXPAglNq28qWYTDFA "YouTube" "Kai" "Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCMZxtiWIdrXUUbWMAe6D-Iw "YouTube" "Msjche" "Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "YouTube" "Distrotube" "Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCZiL6BoryLWxyapUuVYW27g "YouTube" "Average" "Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCa0tJguRNbU6I8OO3nUvXxQ "YouTube" "Josh vim" "Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "YouTube" "Brodie" "Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCqd9oVuR4tuKD5Y9AFwxz7Q "YouTube" "TerminalRoot" "Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg "YouTube" "Wolfgang" "Linux"
-  --- Espiritos
-https://www.youtube.com/feeds/videos.xml?channel_id=UCMBASOtCn9BI_kq7bD6iCcw "YouTube" "Calafrios" "Espiritos"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCUbBQ3yTGhJJd5DXphwWvEw "YouTube" "Spooky" "Espiritos"
-  --- Armas
-https://www.youtube.com/feeds/videos.xml?channel_id=UCU-ljC8EvKZFhJ-pct_5rMQ "YouTube" "Armas" "TREX"
-  --- Corona
-https://www.youtube.com/feeds/videos.xml?channel_id=UCSTlOTcyUmzvhQi6F8lFi5w "YouTube" "Atila" "Corona"
+https://lukesmith.xyz/rss.xml "Luke"
+https://notrelated.xyz/rss "Luke"
+http://feeds.feedburner.com/gbhackers "gbhackers"
+https://hackernoon.com/feed "hackernoon"
+https://feeds.feedburner.com/TheHackersNews "hackernews"
+http://rss.slashdot.org/Slashdot/slashdotMain "slashdot"
+  --- youtubers
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "Luke"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "Mental"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA "Diolinux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "Distrotube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCa0tJguRNbU6I8OO3nUvXxQ "Josh vim"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "Brodie"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCqd9oVuR4tuKD5Y9AFwxz7Q "TerminalRoot"
+  --- dev
+https://suckless.org/atom.xml "suckless"
+https://github.com/colpshift.private.atom?token=AJJUXHXOQSEB5NYXNZT53B55AYZRI "github"
+https://gitlab.com/colpshift.atom?feed_token=gFkiNJPVagWFkBexBrjx "gitlab"
+https://planet.mysql.com/rss20.xml "planetmysql"
+  --- espiritos
+https://www.youtube.com/feeds/videos.xml?channel_id=UCMBASOtCn9BI_kq7bD6iCcw "Calafrios"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUbBQ3yTGhJJd5DXphwWvEw "Spooky"
+  --- armas
+https://www.youtube.com/feeds/videos.xml?channel_id=UCU-ljC8EvKZFhJ-pct_5rMQ "Trex"

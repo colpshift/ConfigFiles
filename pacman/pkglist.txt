@@ -15,7 +15,6 @@ artix-gtk-presets
 artix-qt-presets
 asciidoctor
 aspell
-atom
 atomicparsley
 atool
 audacious
@@ -143,6 +142,7 @@ networkmanager-runit
 nfs-utils-runit
 nilfs-utils
 ninja
+npm
 ntfs-3g
 ntp-runit
 nuspell
@@ -161,7 +161,6 @@ pass
 patch
 pavucontrol
 pcmanfm
-pdfjs
 picom
 pinentry-dmenu
 pkgconf
@@ -173,7 +172,6 @@ pulsemixer
 python-pip
 qrencode
 qtwebkit-plugins-git
-qutebrowser
 reflector
 reiserfsprogs
 ripgrep
@@ -216,6 +214,7 @@ virtualbox-guest-iso
 virtualbox-guest-modules-artix
 virtualbox-guest-utils
 virtualbox-host-modules-artix
+visual-studio-code-bin
 w3m
 wd719x-firmware
 webkit2gtk

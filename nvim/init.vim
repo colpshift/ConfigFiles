@@ -17,8 +17,11 @@ syntax on
 filetype plugin indent on
 set fileformat=unix
 set encoding=utf-8      " Use an encoding that supports unicode.
-set confirm             " Display confirmation dialog when closing unsaved file
 set nostartofline       " Do not jump to first character with page commands.
+set confirm             " Display confirmation dialog when closing unsaved file
+"
+" run :w!! command (type fast), to save ready only files.
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 "------------------------------------------------------------------------------
 " Performance
@@ -274,28 +277,6 @@ endfunction
 let g:coc_snippet_next = '<tab>'
 
 "------------------------------------------------------------------------------
-" mapping and abbreviations
-"------------------------------------------------------------------------------
-"
-" run :w!! command (type fast), to save ready only files.
-cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
-"
-" undo hlsearch
-nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
-"
-" auto indent the whole file and keep your cursor in the last position
-nmap <F7> mzgg=G`z
-"
-" Clear whitespaces
-nnoremap <silent> <F9> <Esc>:%s/\s\+$//e<CR>
-"
-" insert timestamp
-inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
-"
-" move to next and previous buffer
-nnoremap <F3> :bnext<CR>
-
-"------------------------------------------------------------------------------
 " interface
 "------------------------------------------------------------------------------
 set termguicolors       " true colors
@@ -332,6 +313,9 @@ set laststatus=2        " Size of command area and airline
 set background=dark
 colorscheme ayu
 let ayucolor="dark"
+"
+" move to next and previous buffer
+nnoremap <F3> :bnext<CR>
 
 "------------------------------------------------------------------------------
 " searching
@@ -341,6 +325,9 @@ set smartcase         " use case if any caps used
 set incsearch         " show match as search proceeds
 set hlsearch is       " highlight matches
 set inccommand=split  " Show interactive preview of substitute changes
+"
+" undo hlsearch
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
 "------------------------------------------------------------------------------
 " indention
@@ -354,12 +341,15 @@ set shiftwidth=2        " The amount to block indent when using
 set softtabstop=2       " Causes backspace to delete 2 spaces converted tab
 set shiftround          " Round the indentation to earest multiple shiftwidth.
 set backspace=eol,start,indent  " Make sure backspace works in insert mode
+"
+" auto indent the whole file and keep your cursor in the last position
+nmap <F7> mzgg=G`z
 
 "------------------------------------------------------------------------------
 " folding
 "------------------------------------------------------------------------------
 set foldenable          " enable fold
-set foldcolumn=2        " show column indent
+set foldcolumn=3        " show column indent
 set foldmethod=indent   " indentation method
 
 "------------------------------------------------------------------------------
@@ -374,6 +364,12 @@ set nowritebackup
 "------------------------------------------------------------------------------
 " code environments
 "------------------------------------------------------------------------------
+"
+" Clear whitespaces
+nnoremap <silent> <F9> <Esc>:%s/\s\+$//e<CR>
+"
+" insert timestamp
+inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
 "
 " ruby
 let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'

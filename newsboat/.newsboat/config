@@ -13,7 +13,7 @@ article-sort-order date-asc
 keep-articles-days 30
 cache-file "/tmp/testcache.db"
 
-browser "qutebrowser %u"
+browser "firefox %u"
 macro y set browser "devour.sh mpv %u" ; open-in-browser ;
 
 notify-always yes

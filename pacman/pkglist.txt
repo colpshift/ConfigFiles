@@ -158,6 +158,7 @@ pamixer
 papirus-icon-theme
 papirus-libreoffice-theme
 pass
+pass-sshaskpass-git
 patch
 pavucontrol
 pcmanfm

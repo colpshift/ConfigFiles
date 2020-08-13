@@ -220,6 +220,7 @@ w3m
 wd719x-firmware
 webkit2gtk
 which
+workflowy
 xarchiver
 xclip
 xcursor-premium

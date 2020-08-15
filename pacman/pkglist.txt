@@ -38,6 +38,7 @@ btrfs-progs
 calibre
 chromium
 cmake
+code
 conky
 crda
 cronie-runit
@@ -215,8 +216,8 @@ virtualbox-guest-iso
 virtualbox-guest-modules-artix
 virtualbox-guest-utils
 virtualbox-host-modules-artix
-visual-studio-code-bin
 w3m
+warsaw
 wd719x-firmware
 webkit2gtk
 which

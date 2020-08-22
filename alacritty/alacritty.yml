@@ -1,5 +1,7 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
-# https://github.com/alacritty/alacritty
+#
+#  https://github.com/alacritty/alacritty
+#
 
 env:
   TERM: alacritty
@@ -9,75 +11,108 @@ window:
     columns: 0
     lines: 0
 
+  #position:
+  #  x: 0
+  #  y: 0
+
+  #padding:
+  #  x: 0
+  #  y: 0
+
   dynamic_padding: false
+
   decorations: full
+
   startup_mode: Windowed
+
   title: Alacritty
 
   class:
     instance: Alacritty
     general: Alacritty
 
-  gtk_theme_variant: None
-
 scrolling:
   history: 10000
+
   multiplier: 3
 
 font:
   normal:
-    family: SauceCodePro Nerd Font
+    family: Lekton Nerd Font
     style: Regular
+
   bold:
-    family: SauceCodePro Nerd Font
+    family: Lekton Nerd Font
     style: Bold
+
   italic:
-    family: SauceCodePro Nerd Font
+    family: Lekton Nerd Font
     style: Italic
+
   bold_italic:
-    family: SauceCodePro Nerd Font
+    family: Lekton Nerd Font
     style: Bold Italic
-  size: 8.0
 
-# color_start
-# /home/colps/.config/alacritty/colors/ayu_dark.yaml
-# Colors (Ayu Dark)
+  size: 9.0
+
+  #offset:
+  #  x: 0
+  #  y: 0
+
+  #glyph_offset:
+  #  x: 0
+  #  y: 0
+
+draw_bold_text_with_bright_colors: true
+
+# Colors (Tomorrow Night)
 colors:
-  # Default colors
   primary:
-    background: '0x0A0E14'
-    foreground: '0xB3B1AD'
+    background: '#1d1f21'
+    foreground: '#c5c8c6'
+    dim_foreground: '#828482'
+    bright_foreground: '#eaeaea'
 
-  # Normal colors
+      #cursor:
+      #text: CellBackground
+      #cursor: CellForeground
+
+      #vi_mode_cursor:
+      #text: CellBackground
+      #cursor: CellForeground
+
+      #selection:
+      #text: CellBackground
+      #background: CellForeground
+
+  search:
+    matches:
+      foreground: '#000000'
+      background: '#ffffff'
+
+        #bar:
+        #background: CellForeground
+        #foreground: CellBackground
+
   normal:
-    black:   '0x01060E'
-    red:     '0xEA6C73'
-    green:   '0x91B362'
-    yellow:  '0xF9AF4F'
-    blue:    '0x53BDFA'
-    magenta: '0xFAE994'
-    cyan:    '0x90E1C6'
-    white:   '0xC7C7C7'
+    black:   '#1d1f21'
+    red:     '#cc6666'
+    green:   '#b5bd68'
+    yellow:  '#f0c674'
+    blue:    '#81a2be'
+    magenta: '#b294bb'
+    cyan:    '#8abeb7'
+    white:   '#c5c8c6'
 
-  # Bright colors
   bright:
-    black:   '0x686868'
-    red:     '0xF07178'
-    green:   '0xC2D94C'
-    yellow:  '0xFFB454'
-    blue:    '0x59C2FF'
-    magenta: '0xFFEE99'
-    cyan:    '0x95E6CB'
-    white:   '0xFFFFFF'
-# color_end
-
-  vi_mode_cursor:
-    text: '#000000'
-    cursor: '#ffffff'
-
-  selection:
-    text: '#eaeaea'
-    background: '#404040'
+    black:   '#666666'
+    red:     '#d54e53'
+    green:   '#b9ca4a'
+    yellow:  '#e7c547'
+    blue:    '#7aa6da'
+    magenta: '#c397d8'
+    cyan:    '#70c0b1'
+    white:   '#eaeaea'
 
   dim:
     black:   '#131415'
@@ -89,25 +124,36 @@ colors:
     cyan:    '#5b7d78'
     white:   '#828482'
 
-visual_bell:
-  animation: EaseOutExpo
-  duration: 0
-  color: '#ffffff'
+  #indexed_colors: []
 
-background_opacity: 1.0
+bell:
+  animation: EaseOutExpo
+  duration: 3
+  color: '#ffffff'
+  #command: None
+
+background_opacity: 0.90
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
   save_to_clipboard: true
 
-dynamic_title: true
+#dynamic_title: true
 
 cursor:
   style: Beam
   vi_mode_style: None
   unfocused_hollow: true
+  thickness: 0.15
 
 live_config_reload: true
+
+#shell:
+#  program: /bin/bash
+#  args:
+#    - --login
+
+#working_directory: ~/
 
 mouse:
   double_click: { threshold: 300 }
@@ -119,24 +165,71 @@ mouse:
       program: xdg-open
       args: []
 
-    modifiers: None
+    #modifiers: None
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
 
 key_bindings:
+  - { key: Paste,                                action: Paste          }
+  - { key: Copy,                                 action: Copy           }
+  - { key: L,         mods: Control,             action: ClearLogNotice }
+  - { key: L,         mods: Control, mode: ~Vi,  chars: "\x0c"          }
+  - { key: PageUp,    mods: Shift,   mode: ~Alt, action: ScrollPageUp,  }
+  - { key: PageDown,  mods: Shift,   mode: ~Alt, action: ScrollPageDown }
+  - { key: Home,      mods: Shift,   mode: ~Alt, action: ScrollToTop,   }
+  - { key: End,       mods: Shift,   mode: ~Alt, action: ScrollToBottom }
 
-  - { key: V,        mods: Control|Shift,           action: Paste            }
-  - { key: C,        mods: Control|Shift,           action: Copy             }
-  - { key: Insert,   mods: Shift,                   action: PasteSelection   }
-  - { key: Key0,     mods: Control,                 action: ResetFontSize    }
-  - { key: Equals,   mods: Control,                 action: IncreaseFontSize }
-  - { key: Add,      mods: Control,                 action: IncreaseFontSize }
-  - { key: Subtract, mods: Control,                 action: DecreaseFontSize }
-  - { key: Minus,    mods: Control,                 action: DecreaseFontSize }
+  # Vi Mode
+  #- { key: Space,  mods: Shift|Control, mode: Vi, action: ScrollToBottom          }
+  #- { key: Space,  mods: Shift|Control,           action: ToggleViMode            }
+  #- { key: Escape,                      mode: Vi, action: ClearSelection          }
+  #- { key: I,                           mode: Vi, action: ScrollToBottom          }
+  #- { key: I,                           mode: Vi, action: ToggleViMode            }
+  #- { key: Y,      mods: Control,       mode: Vi, action: ScrollLineUp            }
+  #- { key: E,      mods: Control,       mode: Vi, action: ScrollLineDown          }
+  #- { key: G,                           mode: Vi, action: ScrollToTop             }
+  #- { key: G,      mods: Shift,         mode: Vi, action: ScrollToBottom          }
+  #- { key: B,      mods: Control,       mode: Vi, action: ScrollPageUp            }
+  #- { key: F,      mods: Control,       mode: Vi, action: ScrollPageDown          }
+  #- { key: U,      mods: Control,       mode: Vi, action: ScrollHalfPageUp        }
+  #- { key: D,      mods: Control,       mode: Vi, action: ScrollHalfPageDown      }
+  #- { key: Y,                           mode: Vi, action: Copy                    }
+  #- { key: Y,                           mode: Vi, action: ClearSelection          }
+  #- { key: Copy,                        mode: Vi, action: ClearSelection          }
+  #- { key: V,                           mode: Vi, action: ToggleNormalSelection   }
+  #- { key: V,      mods: Shift,         mode: Vi, action: ToggleLineSelection     }
+  #- { key: V,      mods: Control,       mode: Vi, action: ToggleBlockSelection    }
+  #- { key: V,      mods: Alt,           mode: Vi, action: ToggleSemanticSelection }
+  #- { key: Return,                      mode: Vi, action: Open                    }
+  #- { key: K,                           mode: Vi, action: Up                      }
+  #- { key: J,                           mode: Vi, action: Down                    }
+  #- { key: H,                           mode: Vi, action: Left                    }
+  #- { key: L,                           mode: Vi, action: Right                   }
+  #- { key: Up,                          mode: Vi, action: Up                      }
+  #- { key: Down,                        mode: Vi, action: Down                    }
+  #- { key: Left,                        mode: Vi, action: Left                    }
+  #- { key: Right,                       mode: Vi, action: Right                   }
+  #- { key: Key0,                        mode: Vi, action: First                   }
+  #- { key: Key4,   mods: Shift,         mode: Vi, action: Last                    }
+  #- { key: Key6,   mods: Shift,         mode: Vi, action: FirstOccupied           }
+  #- { key: H,      mods: Shift,         mode: Vi, action: High                    }
+  #- { key: M,      mods: Shift,         mode: Vi, action: Middle                  }
+  #- { key: L,      mods: Shift,         mode: Vi, action: Low                     }
+  #- { key: B,                           mode: Vi, action: SemanticLeft            }
+  #- { key: W,                           mode: Vi, action: SemanticRight           }
+  #- { key: E,                           mode: Vi, action: SemanticRightEnd        }
+  #- { key: B,      mods: Shift,         mode: Vi, action: WordLeft                }
+  #- { key: W,      mods: Shift,         mode: Vi, action: WordRight               }
+  #- { key: E,      mods: Shift,         mode: Vi, action: WordRightEnd            }
+  #- { key: Key5,   mods: Shift,         mode: Vi, action: Bracket                 }
+  #- { key: Slash,                       mode: Vi, action: SearchForward           }
+  #- { key: Slash,  mods: Shift,         mode: Vi, action: SearchBackward          }
+  #- { key: N,                           mode: Vi, action: SearchNext              }
+  #- { key: N,      mods: Shift,         mode: Vi, action: SearchPrevious          }
 
-debug:
-  render_timer: false
-  persistent_logging: false
-  log_level: Warn
-  print_events: false
+#debug:
+  #render_timer: false
+  #persistent_logging: false
+  #log_level: Warn
+  #print_events: false

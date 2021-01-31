@@ -1,0 +1,27 @@
+#
+# https://starship.rs/
+#
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+
+# Disable the newline at the start of the prompt
+add_newline = true
+
+[character]
+success_symbol = "[](bold fg:36) "
+error_symbol = "[](bold fg:196) "
+vicmd_symbol = "[V](bold fg:8)"
+
+[cmd_duration]
+format = "[$duration](fg:3)"
+
+[directory]
+truncation_length = 8
+truncation_symbol = "…/"
+
+[time]
+disabled = false
+format = '[\[$time\]](fg:3) '
+time_format = "%T"
+

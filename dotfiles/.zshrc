@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/zsh
 #
 # File: .zshrc
 # Path: $HOME
@@ -58,69 +58,6 @@ zle -N history-beginning-search-forward-end history-search-end
 autoload -U colors && colors
 colors
 
-### Bind keys
-#############
-typeset -g -A key
-#
-key[Home]="${terminfo[khome]}"
-key[End]="${terminfo[kend]}"
-key[Insert]="${terminfo[kich1]}"
-key[Backspace]="${terminfo[kbs]}"
-key[Delete]="${terminfo[kdch1]}"
-key[Up]="${terminfo[kcuu1]}"
-key[Down]="${terminfo[kcud1]}"
-key[Left]="${terminfo[kcub1]}"
-key[Right]="${terminfo[kcuf1]}"
-key[PageUp]="${terminfo[kpp]}"
-key[PageDown]="${terminfo[knp]}"
-key[Shift-Tab]="${terminfo[kcbt]}"
-# Setup key accordingly
-[[ -n "${key[Home]}"      ]] && bindkey -- "${key[Home]}"       beginning-of-line
-[[ -n "${key[End]}"       ]] && bindkey -- "${key[End]}"        end-of-line
-[[ -n "${key[Insert]}"    ]] && bindkey -- "${key[Insert]}"     overwrite-mode
-[[ -n "${key[Backspace]}" ]] && bindkey -- "${key[Backspace]}"  backward-delete-char
-[[ -n "${key[Delete]}"    ]] && bindkey -- "${key[Delete]}"     delete-char
-[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-history
-[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-history
-[[ -n "${key[Left]}"      ]] && bindkey -- "${key[Left]}"       backward-char
-[[ -n "${key[Right]}"     ]] && bindkey -- "${key[Right]}"      forward-char
-[[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"     beginning-of-buffer-or-history
-[[ -n "${key[PageDown]}"  ]] && bindkey -- "${key[PageDown]}"   end-of-buffer-or-history
-[[ -n "${key[Shift-Tab]}" ]] && bindkey -- "${key[Shift-Tab]}"  reverse-menu-complete
-[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-beginning-search
-[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-beginning-search
-# Fix backspace bug when switching modes
-bindkey "^?" backward-delete-char
-# Shortcut to exit shell on partial command line
-exit_zsh() { exit }
-zle -N exit_zsh
-bindkey '^D' exit_zsh
-# Check terminal is in application mode
-if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
-  autoload -Uz add-zle-hook-widget
-  function zle_application_mode_start { echoti smkx }
-  function zle_application_mode_stop { echoti rmkx }
-  add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
-  add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
-fi
-
-### Persistent rehash
-#####################
-zstyle ':completion:*' rehash true
-# On-demand rehash
-zshcache_time="$(date +%s%N)"
-autoload -Uz add-zsh-hook
-rehash_precmd() {
-  if [[ -a /var/cache/zsh/pacman ]]; then
-    local paccache_time="$(date -r /var/cache/zsh/pacman +%s%N)"
-    if (( zshcache_time < paccache_time )); then
-      rehash
-      zshcache_time="$paccache_time"
-    fi
-  fi
-}
-add-zsh-hook -Uz precmd rehash_precmd
-
 ### Source plugins
 ##################
 # Use syntax highlighting
@@ -132,24 +69,13 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=9'
 ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd)
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
-# command not found
-source /usr/share/doc/pkgfile/command-not-found.zsh
 # interactive cd
 source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 
-### Dev Env
-# Rust
-source ~/.cargo/env
-
-# fzf completion
-################
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
-source /usr/share/fzf/forgit.plugin.zsh
-
 ### Set alias
 #############
-alias ll='ls'
+alias ps='procs'
+alias ll='exa --header --long --group --git'
 alias ls='ls -lh --color=auto --group-directories-first'
 alias la='ls -ah'  # show hidden files and folders
 alias lx='ls -BXh' # sort by extension
@@ -159,52 +85,66 @@ alias dir='dir --color'
 alias grep='grep --color'
 alias dmesg='dmesg --color'
 alias df='df -h'
-alias du='du -h'
+alias du='dust'
 alias su='sudo -i'
 alias vi='/bin/nvim'
 alias vim='/bin/nvim'
 alias gvim='/bin/nvim'
-alias gpg='gpg2'
-alias bat='bat --theme TwoDark'
+alias grep='rg'
+alias cat='bat'
+alias bat='batcat --theme TwoDark'
+alias find='fdfind'
+alias fd='fdfind'
 alias gitu='git add . && git commit'
 alias gitp='git add . && git commit && git push'
 alias gitl='git log --oneline'
-alias sxiv='devour.sh sxiv'
-alias zathura='devour.sh zathura'
-alias mpv='devour.sh mpv'
-alias surf='devour.sh surf -DB'
-alias gparted='sudo devour.sh gparted'
 alias cls='clear'
+alias timeshift='sudo timeshift-gtk'
 alias myip='curl http://ipecho.net/plain; echo'
 alias neofetch="neofetch --color_blocks off "
-alias rofi='rofi -show drun'
-alias ncmpcpp="ncmpcpp -s media_library"
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
-alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias grub_install='grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck'
-alias yayu='yaourtix -Syu'
-alias yayi='sh $HOME/.scripts/fzf_pkg_aur.sh'
-alias pacman='sudo pacman --color=always'
-alias pacu='pacman -Syu'
-alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
-alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
-alias pacman-arch_mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist-arch'
+alias apt_install='/home/colps/.scripts/fzf_pkg_pop_install.sh'
+alias apt_remove='/home/colps/.scripts/fzf_pkg_pop_remove.sh'
+alias apt_update='sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y'
+alias apt_clean='sudo apt autoclean && sudo apt clean && sudo apt autoremove'
 
 ### Set prompt
 ##############
-autoload -Uz compinit zcalc promptinit
+autoload -Uz compinit promptinit
 compinit -d
 promptinit
+#
 # Prompt spaceship
 # https://github.com/denysdovhan/spaceship-prompt
 # https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
-ZSH_THEME="spaceship"
-SPACESHIP_TIME_SHOW=true
-SPACESHIP_USER_SHOW=true
-SPACESHIP_HOST_SHOW=true
-SPACESHIP_JOBS_SHOW=false
-SPACESHIP_EXIT_CODE_SHOW=true
-SPACESHIP_VI_MODE_SHOW=false
-prompt spaceship
+# ZSH_THEME="spaceship"
+# SPACESHIP_TIME_SHOW=true
+# SPACESHIP_TIME_12HR=false
+# SPACESHIP_USER_SHOW=true
+# SPACESHIP_HOST_SHOW=true
+# SPACESHIP_JOBS_SHOW=false
+# SPACESHIP_EXIT_CODE_SHOW=true
+# SPACESHIP_VI_MODE_SHOW=false
+# source /usr/local/lib/node_modules/spaceship-prompt/spaceship.zsh
 #
+# Prompt starship
+eval "$(starship init zsh)"
+
+# ruby
+################
+eval "$(rbenv init -)"
+
+# Kitty completion
+##################
+kitty + complete setup zsh | source /dev/stdin
+
+# fzf completion
+################
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
+source /usr/share/doc/fzf/plugins/forgit/forgit.plugin.zsh
+
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+fpath=($fpath "$HOME/.zfunctions")
+

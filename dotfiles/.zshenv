@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/zsh
 #
 # File: .zshenv
 # Path: $HOME
@@ -10,27 +10,26 @@
 
 ### path
 typeset -U path
-path=(~/.local/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin ~/.scripts ~/.gem/ruby/2.7.0/bin ~/.cargo/bin ~/.node_modules/bin ~/.zsh/functions $path[@])
+path=($HOME/.local/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
 
-### locale
-export LANG="en_US.UTF-8"
-export LC_COLLATE="C"
-
-### pass extensions
-export PASSWORD_STORE_ENABLE_EXTENSIONS="true"
-
-### fuzzy 
+### fzf
+# using fd
+export FZF_DEFAULT_COMMAND="fdfind --type file --color=always"
+export FZF_DEFAULT_OPTS="--ansi"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # search
 export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 # preview
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 
 ### cheat
-export CHEAT_USE_FZF="true"
+export CHEAT_CONFIG_PATH="$HOME/.config/cheat/conf.yml"
+export CHEAT_USE_FZF=true
 
-### surf
-export NO_AT_BRIDGE=1
+### defaults apps
+export EDITOR='/bin/nvim'
+export BROWSER='/bin/brave-browser'
 
-### npm
-export npm_config_prefix="~/.node_modules"
+### rust env
+source "$HOME/.cargo/env"
 

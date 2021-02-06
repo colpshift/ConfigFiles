@@ -40,10 +40,15 @@ mount /dev/sda4 /mnt/home
 #------------------------------------------------------------------------------
 
 # install arch linux
-pacstrap /mnt base linux linux-firmware 
-
-#linux-headers intel-ucode vi
-#networkmanager dhcpcd
+pacstrap /mnt 
+        /base 
+        /linux
+        /linux-firmware
+        /linux-headers
+        /intel-ucode
+        /nvim
+        /NetworkManager
+        /dhcpcd
 
 #------------------------------------------------------------------------------
 # configuration

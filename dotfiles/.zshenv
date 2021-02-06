@@ -29,6 +29,8 @@ export CHEAT_USE_FZF=true
 ### defaults apps
 export EDITOR='/bin/nvim'
 export BROWSER='/bin/brave-browser'
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
 
 ### rust env
 source "$HOME/.cargo/env"

@@ -6,7 +6,7 @@
 rofi.modi: window,drun,run,ssh
 
 ! "Font to use" Set from: Default
-rofi.font: Roboto Regular 10
+rofi.font: JetBrainsMonoMedium Nerd Font Mono 10
 
 ! "Border width" Set from: Default
 rofi.bw: 1
@@ -40,4 +40,4 @@ rofi.kb-mode-previous: Alt+h
 ! rofi.kb-screenshot: Alt+j
 
 ! "New style theme file" Set from: File
-rofi.theme: /usr/share/rofi/themes/gruvbox-dark-soft.rasi
+rofi.theme: /home/colps/.config/rofi/themes/Arc-Dark.rasi

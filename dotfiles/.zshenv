@@ -10,11 +10,11 @@
 
 ### path
 typeset -U path
-path=($HOME/.local/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
+path=($HOME/.local/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin $GEM_HOME/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
 
 ### fzf
 # using fd
-export FZF_DEFAULT_COMMAND="fdfind --type file --color=always"
+export FZF_DEFAULT_COMMAND="fd --type file --color=always"
 export FZF_DEFAULT_OPTS="--ansi"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # search
@@ -26,12 +26,9 @@ export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat 
 export CHEAT_CONFIG_PATH="$HOME/.config/cheat/conf.yml"
 export CHEAT_USE_FZF=true
 
-### defaults apps
-export EDITOR='/bin/nvim'
-export BROWSER='/bin/brave-browser'
-export MANPAGER='nvim +Man!'
-export MANWIDTH=999
+### ruby
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 
-### rust env
+### rust
 source "$HOME/.cargo/env"
 

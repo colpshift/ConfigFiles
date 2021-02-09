@@ -1,9 +1,8 @@
 sw_volume: 68
-audio_device_state:1:pulse audio
-audio_device_state:1:my_fifo
+audio_device_state:1:pulse mpd output
 state: pause
-current: 3
-time: 156.655000
+current: 0
+time: 3.304000
 random: 0
 repeat: 1
 single: 0
@@ -12,31 +11,5 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:nick_cave_-_breathless.mp3
-1:nick_cave_-_bring_it_on.mp3
-2:nick_cave_-_red_right_hand.mp3
-3:radical_face_-_welcome_home.mp3
-4:chris_isaak_-_wicked_game.mp3
-5:homegrown_-_temptation_got_me.mp3
-6:Lynyrd_Skynyrd/The_Essential_Lynyrd_Skynyrd_(disc_1)/Lynyrd Skynyrd - Sweet_Home_Alabama.mp3
-7:Pixies/Death to the Pixies/Pixies-Here Comes Your Man.mp3
-8:creedence_clearwater_revival_-_bad_moon_rising.mp3
-9:creedence_clearwater_revival_-_green_river.mp3
-10:R.E.M/The Best Of REM 1988 - 2003/REM-Stand.mp3
-11:creedence_clearwater_revival_-_run_through_the_jungle.mp3
-12:Kelly Clarkson/Breakaway/Kelly Clarkson-Since U Been Gone.mp3
-13:Kelly Clarkson/Breakaway/Kelly Clarkson-Walk Away.mp3
-14:Men At Work/Business as Usual/03-Down Under.mp3
-15:Midnight_Oil/Greatest Hits/6 - Midnight Oil - The Dead Heart.mp3
-16:Midnight_Oil/Greatest Hits/9 - Midnight Oil - Beds Are Burning.mp3
-17:Oingo_Boingo/Boi-Ngo/Oingo Boingo-We_Close_Our_Eyes.mp3
-18:Oingo_Boingo/Dead_Man's_Party/Oingo Boingo-Dead_Man's_Party.mp3
-19:Phil Collins/...Hits/Phil Collins-Dance into the Light.mp3
-20:Phil Collins/...Hits/Phil Collins-Easy Lover.mp3
-21:Phil Collins/...Hits/Phil Collins-Something Happened on the Way.mp3
-22:Iggy Pop_-_The Passenger.mp3
-23:ponto_de_defumacao_-_ze_mauricio.mp3
-24:ponto_de_exu_-_ze_mauricio.mp3
-25:pontos_de_pretos_velhos_-_ze_mauricio.mp3
-26:ponto_de_oxala_-_ze_mauricio.mp3
+0:50 Cent - In Da Club.mp3
 playlist_end

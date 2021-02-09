@@ -1,0 +1,70 @@
+# tag
+# toggle tags - this is like switching between the two most recent desktops
+Mod1-Tab
+
+# tag
+# view tag - displays all windows with tag number.
+Mod1-Shift-[1..n] 
+
+# tag
+# apply tag to window - assigns the tag number to the currently-focused window.
+Mod1-Shift-[1..n]
+
+# tag
+# apply all tags to window - this is like saying "put this window on all desktops."
+Mod1-Shift-0
+
+# windows
+# close windows
+Mod1-Shift-q
+
+# top bar
+# toggle the top bar - It is like a magic appearing/disappearing act! What fun!
+Mod1-b 
+
+# mouse 
+# move window - Hold and drag to move the window.
+Mod1-Button1
+
+# mouse
+# toggle layout - toggles the focused window between floating and tiled.
+Mod1-Button2
+
+# mouse
+# resize window - Hold and drag to resize the window.
+Mod1-Button3
+
+# screen
+# focus previous screen
+Mod1-,
+
+# screen
+# focus next screen
+Mod1-.
+
+# screen
+# send window to previous screen
+Mod1-Shift-,
+
+# screen
+# send window to next screen
+Mod1-Shift-.
+
+# dmenu
+Mod1-Shift-d
+
+# apps
+# volume control
+CTRL-Alt-u
+
+# apps
+# screenshot
+Mod1-PrintScreen
+
+# apps
+# 
+
+# Exit
+Mod-1-x
+
+

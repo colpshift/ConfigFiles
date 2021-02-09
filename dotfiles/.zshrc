@@ -11,7 +11,7 @@
 ### Set variables
 #################
 WORDCHARS=${WORDCHARS//\/[&.;]}
-HOSTNAME="`hostname`"
+#HOSTNAME="`hostname`"
 
 ### Set/unset ZSH options
 #########################
@@ -92,9 +92,8 @@ alias vim='/bin/nvim'
 alias gvim='/bin/nvim'
 alias grep='rg'
 alias cat='bat'
-alias bat='batcat --theme TwoDark'
-alias find='fdfind'
-alias fd='fdfind'
+alias bat='bat --theme TwoDark'
+alias find='fd'
 alias gitu='git add . && git commit'
 alias gitp='git add . && git commit && git push'
 alias gitl='git log --oneline'
@@ -104,10 +103,15 @@ alias myip='curl http://ipecho.net/plain; echo'
 alias neofetch="neofetch --color_blocks off "
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
-alias apt_install='/home/colps/.scripts/fzf_pkg_pop_install.sh'
-alias apt_remove='/home/colps/.scripts/fzf_pkg_pop_remove.sh'
-alias apt_update='sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y'
-alias apt_clean='sudo apt autoclean && sudo apt clean && sudo apt autoremove'
+alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias grub_install='grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck'
+alias yayu='yay -Syu'
+alias yayi='sh $HOME/.scripts/fzf_pkg_aur.sh'
+alias pacman='sudo pacman --color=always'
+alias pacu='pacman -Syu'
+alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
+alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
+alias pacman-arch_mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist-arch'
 
 ### Set prompt
 ##############
@@ -132,18 +136,18 @@ promptinit
 eval "$(starship init zsh)"
 
 # ruby
-################
+######
 eval "$(rbenv init -)"
 
-# Kitty completion
-##################
-kitty + complete setup zsh | source /dev/stdin
+# fasd
+# ####
+eval "$(fasd --init auto)"
 
 # fzf completion
 ################
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-source /usr/share/doc/fzf/examples/completion.zsh
-source /usr/share/doc/fzf/plugins/forgit/forgit.plugin.zsh
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/forgit.plugin.zsh
 
 #[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fpath=($fpath "$HOME/.zfunctions")

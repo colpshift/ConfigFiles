@@ -51,9 +51,10 @@ unset MANPATH
 
 ### defaults apps
 export EDITOR=nvim
-export BROWSER=brave
+export BROWSER=firefox
 export MANPAGER="nvim +Man!"
 export MANWIDTH=999
+export TERM=alacritty
 
 ### startup applications
 sh /home/colps/.scrits/autocutsel_start.sh

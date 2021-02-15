@@ -97,6 +97,9 @@ alias find='fd'
 alias gitu='git add . && git commit'
 alias gitp='git add . && git commit && git push'
 alias gitl='git log --oneline'
+alias mpv='$HOME/.scripts/devour.sh mpv'
+alias sxiv='$HOME/.scripts/devour.sh sxiv'
+alias zathura='$HOME/.scripts/devour.sh zathura'
 alias cls='clear'
 alias timeshift='sudo timeshift-gtk'
 alias myip='curl http://ipecho.net/plain; echo'
@@ -105,8 +108,7 @@ alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias grub_install='grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck'
-alias yayu='yay -Syu'
-alias yayi='sh $HOME/.scripts/fzf_pkg_aur.sh'
+alias parui='sh $HOME/.scripts/fzf_pkg_aur.sh'
 alias pacman='sudo pacman --color=always'
 alias pacu='pacman -Syu'
 alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
@@ -148,7 +150,4 @@ eval "$(fasd --init auto)"
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/forgit.plugin.zsh
-
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-fpath=($fpath "$HOME/.zfunctions")
-
+fpath+=${ZDOTDIR:-~}/.zsh_functions

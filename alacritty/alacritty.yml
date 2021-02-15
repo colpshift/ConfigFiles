@@ -3,9 +3,6 @@
 #  https://github.com/alacritty/alacritty
 #
 
-env:
-  TERM: alacritty
-
 window:
   dimensions:
     columns: 0
@@ -38,22 +35,22 @@ scrolling:
 
 font:
   normal:
-    family: Lekton Nerd Font
+    family: JetBrainsMono Nerd Font Mono
     style: Regular
 
   bold:
-    family: Lekton Nerd Font
+    family: JetBrainsMono Nerd Font Mono
     style: Bold
 
   italic:
-    family: Lekton Nerd Font
+    family: JetBrainsMono Nerd Font Mono
     style: Italic
 
   bold_italic:
-    family: Lekton Nerd Font
+    family: JetBrainsMono Nerd Font Mono
     style: Bold Italic
 
-  size: 9.0
+  size: 8
 
   #offset:
   #  x: 0
@@ -126,7 +123,7 @@ bell:
   color: "#ffffff"
   #command: None
 
-background_opacity: 0.90
+background_opacity: 0.75
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

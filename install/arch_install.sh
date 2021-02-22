@@ -413,6 +413,7 @@ paru -S gimp \
         hoxx-vpn-proxy
     simple-scan \
     hplip \
+    todoist-appimage \
     paru -S electronplayer \
         skype \
         mindmaster \

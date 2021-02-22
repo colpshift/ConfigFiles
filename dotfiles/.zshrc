@@ -97,10 +97,12 @@ alias find='fd'
 alias gitu='git add . && git commit'
 alias gitp='git add . && git commit && git push'
 alias gitl='git log --oneline'
-alias mpv='$HOME/.scripts/devour.sh mpv'
+alias mpv='$HOME/.scripts/devour.sh umpv.py'
+alias umpv='$HOME/.scripts/devour.sh umpv.py'
 alias sxiv='$HOME/.scripts/devour.sh sxiv'
 alias zathura='$HOME/.scripts/devour.sh zathura'
 alias cls='clear'
+alias newsnotify='notify-send --icon=rssguard'
 alias timeshift='sudo timeshift-gtk'
 alias myip='curl http://ipecho.net/plain; echo'
 alias neofetch="neofetch --color_blocks off "
@@ -137,6 +139,11 @@ promptinit
 # Prompt starship
 eval "$(starship init zsh)"
 
+# kitty
+autoload -Uz compinit
+compinit
+kitty + complete setup zsh | source /dev/stdin
+
 # ruby
 ######
 eval "$(rbenv init -)"
@@ -144,6 +151,10 @@ eval "$(rbenv init -)"
 # fasd
 # ####
 eval "$(fasd --init auto)"
+
+# pkgfile
+# command_not_found_handler
+source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # fzf completion
 ################

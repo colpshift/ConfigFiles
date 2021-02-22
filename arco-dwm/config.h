@@ -33,11 +33,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6" };
-/* static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" }; */
-/* static const char *tags[] = { "", "", "", "", "", "", "", "", "" }; */
-/* static const char *tags[] = { "Web", "Chat", "Edit", "Meld", "Vb", "Mail", "Video", "Image", "Files" }; */
-
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -46,9 +42,12 @@ static const Rule rules[] = {
 	 *  use tags mask to point an application to a specific workspace
 	 */
 	/* class                        instance  title     tags mask   isfloating   monitor */
-	{ "Gimp",                       NULL,     NULL,     0,          0,           -1 },
-	{ "firefox",                    NULL,     NULL,     0,          0,           -1 },
 	{ "Arcolinux-welcome-app.py",   NULL,     NULL,     0,          1,           -1 },
+        { "Rambox",                     NULL,     NULL,     1 << 8,     0,           -1 },
+        { "QML Timer",                  NULL,     NULL,     1 << 8,     0,           -1 },
+        { "Microsoft Teams - Preview",  NULL,     NULL,     1 << 8,     0,           -1 },
+        { "Galculator",                 NULL,     NULL,     0,          1,           -1 },
+        { "qtpad",                      NULL,     NULL,     0,          1,           -1 },
 };
 
 /* layout(s) */

@@ -12,7 +12,7 @@
 
 #Editor
 super + e
-    code-insiders
+    code
 
 #Browser
 super + w
@@ -32,7 +32,7 @@ super + v
 
 #terminal
 super + Return
-    alacritty
+    kitty
 
 #Xkill
 super + Escape
@@ -64,7 +64,11 @@ super + shift + s
 
 #System Monitoring
 super + shift + m
-        alacritty -e bashtop  
+        termite -e bashtop  
+
+#Rss Feed Reader
+super + shift + n
+        kitty -e newsboat  
 
 #################################################################
 # CONTROL + ALT KEYS

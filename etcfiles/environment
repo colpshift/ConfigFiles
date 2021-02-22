@@ -1,0 +1,4 @@
+QT_QPA_PLATFORMTHEME=qt5ct
+EDITOR=nvim
+_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+JAVA_FONTS=/usr/share/fonts/TTF

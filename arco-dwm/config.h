@@ -33,11 +33,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5" };
-/* static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" }; */
-/* static const char *tags[] = { "", "", "", "", "", "", "", "", "" }; */
-/* static const char *tags[] = { "Web", "Chat", "Edit", "Meld", "Vb", "Mail", "Video", "Image", "Files" }; */
-
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -45,11 +41,13 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 *  use tags mask to point an application to a specific workspace
 	 */
-	/* class                       instance    title      tags mask      isfloating   monitor */
-	{ "Gimp",                       NULL,       NULL,       0,            0,           -1 },
-	{ "kitty",                      NULL,       NULL,       0,            0,           -1 },
-	{ "firefox",                    NULL,       NULL,       0,            0,           -1 },
-	{ "Arcolinux-welcome-app.py",   NULL,       NULL,       0,            1,           -1 },
+	/* class                        instance  title     tags mask   isfloating   monitor */
+	{ "Arcolinux-welcome-app.py",   NULL,     NULL,     0,          1,           -1 },
+        { "Rambox",                     NULL,     NULL,     1 << 8,     0,           -1 },
+        { "QML Timer",                  NULL,     NULL,     1 << 8,     0,           -1 },
+        { "Microsoft Teams - Preview",  NULL,     NULL,     1 << 8,     0,           -1 },
+        { "Galculator",                 NULL,     NULL,     0,          1,           -1 },
+        { "qtpad",                      NULL,     NULL,     0,          1,           -1 },
 };
 
 /* layout(s) */
@@ -82,13 +80,12 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *filecmd[]  = { "thunar", NULL };
+static const char *filecmd[]  = { "pcmanfm", NULL };
 static const char *calendar[]  = { "gsimplecal", NULL };
-static const char *taskmanager[]  = { "xfce4-taskmanager", NULL };
+static const char *taskmanager[]  = { "bashtop", NULL };
 
 #include "selfrestart.c"
 #include "shiftview.c"
-
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -133,11 +130,6 @@ static Key keys[] = {
 	{ Mod1Mask|ShiftMask,	        XK_Tab,	   shiftview,	   {.i = -1 } },
 	{ MODKEY,		        XK_Tab,    shiftview,	   {.i =  1 } },
 	{ MODKEY|ShiftMask,		XK_Tab,	   shiftview,	   {.i = -1 } },
-	{ MODKEY,		        XK_z,	   spawn,	   SHCMD("rofi -show drun") },
-        { MODKEY,		        XK_Print,  spawn,	   SHCMD("flameshot gui") },
-        { MODKEY|ShiftMask,		XK_b,	   spawn,	   SHCMD("brave") },
-        { MODKEY|ShiftMask,		XK_l, 	   spawn,	   SHCMD("betterlockscreen -l") },
-        { MODKEY|ShiftMask,		XK_c, 	   spawn,	   SHCMD("code-insiders") },
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)

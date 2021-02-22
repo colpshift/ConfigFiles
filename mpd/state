@@ -1,8 +1,8 @@
 sw_volume: 96
 audio_device_state:1:pulse mpd output
 state: pause
-current: 0
-time: 4.831000
+current: 5
+time: 22.673000
 random: 0
 repeat: 1
 single: 1
@@ -16,4 +16,22 @@ playlist_begin
 2:Black - Wonderful Life.mp3
 3:Led Zeppelin - Babe I'm Gonna Leave You.mp3
 4:Tove Lo - Habits Stay High.mp3
+5:Banks - Beggin For Thread.mp3
+6:Banks - Contaminated.mp3
+7:Banks - Gemini Feed.mp3
+8:Borns - 10 000 Emerald Pools.mp3
+9:Cher - The Shoop Shoop Song Its In His Kiss.mp3
+10:Chris Isaak - Wicked Game.mp3
+11:Black - Wonderful Life.mp3
+12:Tove Lo - Habits Stay High.mp3
+13:Tove Lo - Talking Body.mp3
+14:Banks - Beggin For Thread.mp3
+15:Banks - Contaminated.mp3
+16:Banks - Gemini Feed.mp3
+17:Borns - 10 000 Emerald Pools.mp3
+18:Cher - The Shoop Shoop Song Its In His Kiss.mp3
+19:Chris Isaak - Wicked Game.mp3
+20:Black - Wonderful Life.mp3
+21:Tove Lo - Habits Stay High.mp3
+22:Tove Lo - Talking Body.mp3
 playlist_end

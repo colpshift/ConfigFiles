@@ -11,13 +11,14 @@ suppress-first-reload yes
 
 article-sort-order date-asc
 keep-articles-days 30
-cache-file "/tmp/testcache.db"
+cache-file "/home/colps/.newsboat/cache.db"
+cookie-cache "/home/colps/.newsboat/cookies.txt"
 
-browser "firefox %u"
+browser "devour.sh qutebrowser"
 macro y set browser "devour.sh mpv %u" ; open-in-browser ;
 
 notify-always yes
-notify-format "%d new articles (%n unread articles, %f unread feeds)"
+notify-format "Newsboat --> %n unread articles, %f unread feeds"
 notify-program "/bin/notify-send"
 
 color listnormal cyan default

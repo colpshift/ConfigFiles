@@ -153,14 +153,14 @@ pacman -S reflector \
   zsh.hook
 
 ### Configure AUR - Arch User Repository
-### paru replace yay
+### paru replace paru
 pacman -S --needed git wget yajl
   git clone https://aur.archlinux.org/package-query.git
   cd package-query/
   makepkg -si
   #
-  git clone https://aur.archlinux.org/yay.git
-  cd yay
+  git clone https://aur.archlinux.org/paru.git
+  cd paru
   makepkg -si
   #
   sudo rm -dR  package-query/
@@ -198,7 +198,7 @@ Pacman -S zsh \
 #------------------------------------------------------------------------------
 
 ### developer
-yay -S base-devel \
+paru -S base-devel \
     cmake\
     python \
     python-pip \
@@ -212,7 +212,7 @@ pacman - S neovim \
     vplug \
 #
 # vscode
-yay -S Visual Studio Code Insider
+paru -S Visual Studio Code Insider
 
 ### terminal
 #
@@ -221,7 +221,7 @@ pacman -S  rxvt-unicode \
     urxvt-perls \
     urxvt-fullscreen \
     autocutsel \
-    yay -S urxvt-resize-font-git \
+    paru -S urxvt-resize-font-git \
     #
     vim $HOME/.Xresources
 
@@ -287,7 +287,7 @@ pacman -S slim \
     nvim /etc/lxdm/lxdm.conf
 
 # fonts
-yay -S \
+paru -S \
     ttf-font-awesome \
     otf-font-awesome \
     awesome-terminal-fonts \
@@ -323,16 +323,16 @@ pacman -S ranger \
     exiv2 \
 
 ### rofi
-yay -S rofi \
+paru -S rofi \
 
 # e-mail
-yay -S thunderbird \
+paru -S thunderbird \
     lightning \
     gContactSync \
     provider for Google Calendar \
     enigmail \
     deepdark theme\
-yay -S neomutt \
+paru -S neomutt \
     muttprint \
     goobook \
     mbsync \
@@ -343,10 +343,10 @@ yay -S neomutt \
 pacman -S postfix
 
 # calcurse
-yay -S calcurse
+paru -S calcurse
 
 # music
-yay -S mpd \
+paru -S mpd \
     mpc \
     ncmpcpp \
     wildmidi \
@@ -379,13 +379,13 @@ Configure mapping on i3 config file.
 
 # power management
 pacman -S tlp
-    yay -S tlpui-git
+    paru -S tlpui-git
     systemctl enable tlp.service
     systemctl enable tlp-sleep.service.
     systemctl enable NetworkManager-dispatcher.service
 
 # system
-yay -S gimp \
+paru -S gimp \
     bleachbit \
     rmlint \
     ncdu \
@@ -413,7 +413,8 @@ yay -S gimp \
         hoxx-vpn-proxy
     simple-scan \
     hplip \
-    yay -S electronplayer \
+    todoist-appimage \
+    paru -S electronplayer \
         skype \
         mindmaster \
         masterpdfeditor-free \
@@ -423,9 +424,9 @@ yay -S gimp \
 
 # rust apps replacements
 cargo install du-dust             # du
-yay -i bat                        # cat
-yay -i ripgrep                    # grep
-yay -i fd / apt fd-find           # find
+paru -i bat                        # cat
+paru -i ripgrep                    # grep
+paru -i fd / apt fd-find           # find
 https://the.exa.website/ - exa    # ls
 https://github.com/dalance/procs  # ps
 
@@ -439,13 +440,13 @@ pacman -S samba \
     systemctl enable smb nmb winbind
 
 # pass
-yay -S pass \
+paru -S pass \
     passmenu \      # https://git.zx2c4.com/password-store/tree/contrib/dmenu
     pass-update \   # https://github.com/roddhjav/pass-update#readme
     pass-tail \     # https://github.com/palortoff/pass-extension-tail
 
 # security
-yay -S gpg \
+paru -S gpg \
     rng-tools \
     sudo systemctl enable rngd.service
     sudo systemctl start rngd.service
@@ -456,7 +457,7 @@ yay -S gpg \
     sudo systemctl start pcscd.service
     tor - ./start-tor-browser.desktop --register-app
 
-yay -S openssh \
+paru -S openssh \
     nmap \
     tomb \  # https://github.com/dyne/Tomb/blob/master/INSTALL.md
     # https://files.dyne.org/tomb
@@ -477,15 +478,15 @@ pacman -S dnsmasq
     chattr -i /etc/resolv.conf
 
 # KVM
-yay -S qemu /
+paru -S qemu /
       virt-manager /
       ebtables /
       sudo usermod -G libvirt -a colps
 
 # Virtualbox
-yay -S virtualbox-guest-utils				# vbox-guest
+paru -S virtualbox-guest-utils				# vbox-guest
 #
-yay -S virtualbox							# vbox-host
+paru -S virtualbox							# vbox-host
     sudo VBoxManage extpack install *-extpack	# vbox-extension
     sudo systemctl enable vboxservice
     # vbox - host - setup shared folders
@@ -500,7 +501,7 @@ yay -S virtualbox							# vbox-host
     VirtualBox Shared Folder hostshared /home/colps/Hshared vboxsf uid=1000,gid=1000 0 0
 
 # Health
-yay -S safeeyes /
+paru -S safeeyes /
 xprintidle
 
 # Maintenance

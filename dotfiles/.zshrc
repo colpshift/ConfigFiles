@@ -11,7 +11,6 @@
 ### Set variables
 #################
 WORDCHARS=${WORDCHARS//\/[&.;]}
-#HOSTNAME="`hostname`"
 
 ### Set/unset ZSH options
 #########################
@@ -139,11 +138,6 @@ promptinit
 # Prompt starship
 eval "$(starship init zsh)"
 
-# kitty
-autoload -Uz compinit
-compinit
-kitty + complete setup zsh | source /dev/stdin
-
 # ruby
 ######
 eval "$(rbenv init -)"
@@ -161,4 +155,7 @@ source /usr/share/doc/pkgfile/command-not-found.zsh
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/forgit.plugin.zsh
+
+# completion
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+

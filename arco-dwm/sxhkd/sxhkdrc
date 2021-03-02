@@ -32,7 +32,7 @@ super + v
 
 #terminal
 super + Return
-    kitty
+    alacritty
 
 #Xkill
 super + Escape
@@ -54,10 +54,6 @@ super + f
 super + shift + d
 	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
-#Lockscreen
-super + shift + l
-        betterlockscreen -l
-
 #reload sxhkd:
 super + shift + s
 	pkill -USR1 -x sxhkd
@@ -68,7 +64,12 @@ super + shift + m
 
 #Rss Feed Reader
 super + shift + n
-        kitty -e newsboat  
+        alacritty -e newsboat
+
+#Browser 
+super + shift + w
+    qutebrowser
+
 
 #################################################################
 # CONTROL + ALT KEYS
@@ -85,6 +86,10 @@ ctrl + alt + e
 #Pamac-manager
 ctrl + alt + p
     pamac-manager
+
+#Lockscreen
+ctrl + alt + l
+        betterlockscreen -l
 
 #################################################################
 # ALT + ... KEYS

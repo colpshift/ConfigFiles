@@ -1,19 +1,19 @@
-  --- Unread
+---Unread---
 "query:Unread:unread = \"yes\"" meta
-  --- newsboat
+---Newsboat---
 https://newsboat.org/news.atom
-  --- news
+---News---
 http://rss.cnn.com/rss/edition.rss "CNN News"
 http://rss.cnn.com/rss/edition_americas.rss "CNN News AMS"
 http://feeds.bbci.co.uk/news/rss.xml "BBC News"
 http://feeds.bbci.co.uk/news/world/latin_america/rss.xml "BBC LA"
-  --- sec
+---Sec---
 https://feeds.feedburner.com/TheHackersNews "Hacker News"
 http://feeds.feedburner.com/gbhackers "gbhackers"
-  --- arch
+---Arch---
 https://archlinux.org/feeds/news/ "Arch Linux"
 https://arcolinuxforum.com/app.php/feed "ArcoLinux"
-  --- dev
+---Dev---
 https://suckless.org/atom.xml "suckless"
 https://hackernoon.com/feed "Hackernoon"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC-T8W79DN6PBnzomelvqJYw "James Q Quick"
@@ -22,7 +22,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCFuIUoyHB12qpYa8Jpxoxow "CÃ
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHIfHMZtqccRSw0JvV3DQgw "Manual Dev"
 https://github.com/colpshift.private.atom?token=AJJUXHXOQSEB5NYXNZT53B55AYZRI "github"
 https://gitlab.com/colpshift.atom?feed_token=gFkiNJPVagWFkBexBrjx "gitlab"
-  --- linux
+---Linux---
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "Distrotube"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "Brodie"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "Mental"
@@ -30,8 +30,8 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA "Di
 https://www.youtube.com/feeds/videos.xml?channel_id=UCa0tJguRNbU6I8OO3nUvXxQ "Josh vim"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCqd9oVuR4tuKD5Y9AFwxz7Q "TerminalRoot"
 https://itsfoss.com/feed/ "IT Foss"
-  --- win
+---Win---
 https://www.youtube.com/feeds/videos.xml?channel_id=UCQSpnDG3YsFNf5-qHocF-WQ "ThioJoe"
-  --- espiritos
+---Soul---
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMBASOtCn9BI_kq7bD6iCcw "Calafrios"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUbBQ3yTGhJJd5DXphwWvEw "Spooky"

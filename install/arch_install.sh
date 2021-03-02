@@ -439,6 +439,14 @@ pacman -S samba \
     smbclient
     systemctl enable smb nmb winbind
 
+# warsaw
+paru -S jdk \
+    jre \
+    warsaw \
+    sudo systemctl enable warsaw
+    sudo systemctl start warsaw
+    firefox https://diagnostico.gasantifraud.com/
+
 # pass
 paru -S pass \
     passmenu \      # https://git.zx2c4.com/password-store/tree/contrib/dmenu

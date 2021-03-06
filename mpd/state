@@ -1,8 +1,8 @@
 sw_volume: 96
 audio_device_state:1:pulse mpd output
 state: pause
-current: 6
-time: 0.983000
+current: 61
+time: 8.816000
 random: 0
 repeat: 1
 single: 1
@@ -72,4 +72,5 @@ playlist_begin
 58:Ponto de Xangô - Ze Mauricio Machline (Toques de Umbanda).mp3
 59:Pontos de Iansa - Ze Mauricio Machline (Toques de Umbanda).mp3
 60:Pontos de Oxum (Dengue   Mamae Oxum) - Ze Mauricio Machline (Toques de Umbanda).mp3
+61:Radical Face - 08 - Haunted.mp3
 playlist_end

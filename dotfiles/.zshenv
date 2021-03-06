@@ -32,3 +32,5 @@ export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 ### rust
 source "$HOME/.cargo/env"
 
+### font preview ueberzug 
+export FONTPREVIEW_PREVIEW_TEXT="ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n1234567890\n< != == ->\n | #[ |> <$> ~@"

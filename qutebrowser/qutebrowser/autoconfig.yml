@@ -11,8 +11,11 @@ settings:
       normal:
         ',M': hint links spawn devour.sh mpv {hint-url}
         ',m': spawn devour.sh mpv {url}
+        ç: spawn --userscript dmenu_qutebrowser
   colors.webpage.prefers_color_scheme_dark:
     global: true
+  completion.cmd_history_max_items:
+    global: 10
   content.geolocation:
     https://support.servicenow.com: true
   content.notifications:
@@ -26,3 +29,7 @@ settings:
   content.register_protocol_handler:
     https://calendar.google.com?cid=%25s: true
     https://mail.google.com?extsrc=mailto&url=%25s: true
+  spellcheck.languages:
+    global:
+    - en-US
+    - pt-BR

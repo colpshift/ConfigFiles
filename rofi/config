@@ -6,7 +6,7 @@
 rofi.modi: window,drun,run,ssh
 
 ! "Font to use" Set from: Default
-rofi.font: JetBrainsMonoMedium Nerd Font Mono 10
+rofi.font: JetBrainsMono Nerd Font Mono Bold Italic 9
 
 ! "Border width" Set from: Default
 rofi.bw: 1
@@ -24,11 +24,11 @@ rofi.cycle: true
 rofi.sidebar-mode: true
 
 ! "Fake transparency *DEPRECATED*" Set from: Default
-rofi.fake-transparency: true
+!rofi.fake-transparency: true
 
 ! "Background to use for fake transparency.
 ! (background or screenshot)" Set from: Default
-rofi.fake-background: background
+!rofi.fake-background: background
 
 ! "Switch to the next mode." Set from: Default
 rofi.kb-mode-next: Alt+l

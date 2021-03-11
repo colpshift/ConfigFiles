@@ -52,7 +52,7 @@ super + f
 
 #dmenu
 super + shift + d
-	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'JetBrainsMono Nerd Font Mono:style=Bold Italic:pixelsize=10'
 
 #reload sxhkd:
 super + shift + s
@@ -69,7 +69,6 @@ super + shift + n
 #Browser 
 super + shift + w
     qutebrowser
-
 
 #################################################################
 # CONTROL + ALT KEYS
@@ -89,11 +88,23 @@ ctrl + alt + p
 
 #Lockscreen
 ctrl + alt + l
-        betterlockscreen -l
+    betterlockscreen -l
 
 #################################################################
 # ALT + ... KEYS
 #################################################################
+
+# mute/unmute the volume
+alt + m
+    pactl set-sink-mute 0 toggle
+
+# lower the volume:
+alt + underscore
+    sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%"
+
+# raise the volume
+alt + plus
+    sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
 
 
 #################################################################

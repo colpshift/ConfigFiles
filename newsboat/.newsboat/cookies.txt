@@ -8,7 +8,7 @@
 .github.com	TRUE	/	TRUE	1644986240	_octo	GH1.1.291439332.1613450240
 #HttpOnly_.github.com	TRUE	/	TRUE	1644986240	logged_in	no
 #HttpOnly_.arcolinuxforum.com	TRUE	/	TRUE	0	phpbb3_xgrhg_ct_cookies_test	%7B%22cookies_names%22%3A%5B%5D%2C%22check_value%22%3A%222b48d40d831a102baf5e363485faf41a%22%7D
-#HttpOnly_.arcolinuxforum.com	TRUE	/	TRUE	1646008112	phpbb3_xgrhg_u	1
-#HttpOnly_.arcolinuxforum.com	TRUE	/	TRUE	1646008112	phpbb3_xgrhg_k	
-#HttpOnly_.arcolinuxforum.com	TRUE	/	TRUE	1646008112	phpbb3_xgrhg_sid	885809f06cf36657de6f472272498eb1
+#HttpOnly_.arcolinuxforum.com	TRUE	/	TRUE	1646956910	phpbb3_xgrhg_u	1
+#HttpOnly_.arcolinuxforum.com	TRUE	/	TRUE	1646956910	phpbb3_xgrhg_k	
+#HttpOnly_.arcolinuxforum.com	TRUE	/	TRUE	1646956910	phpbb3_xgrhg_sid	7e2e8853d4d1db862f57ea4a2a22c760
 #HttpOnly_.itsfoss.com	TRUE	/	FALSE	1616096939	__cfduid	df0acfe0991cf768b6f3049167047a0dc1613504939

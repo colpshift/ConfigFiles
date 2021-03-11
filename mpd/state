@@ -2,7 +2,7 @@ sw_volume: 96
 audio_device_state:1:pulse mpd output
 state: pause
 current: 61
-time: 8.816000
+time: 296.965000
 random: 0
 repeat: 1
 single: 1
@@ -18,59 +18,59 @@ playlist_begin
 4:Tove Lo - Habits Stay High.mp3
 5:Banks - Beggin For Thread.mp3
 6:Banks - Gemini Feed.mp3
-7:Borns - 10 000 Emerald Pools.mp3
-8:Cher - The Shoop Shoop Song Its In His Kiss.mp3
-9:Chris Isaak - Wicked Game.mp3
-10:Black - Wonderful Life.mp3
-11:Tove Lo - Habits Stay High.mp3
-12:Tove Lo - Talking Body.mp3
-13:Banks - Beggin For Thread.mp3
-14:Banks - Gemini Feed.mp3
-15:Borns - 10 000 Emerald Pools.mp3
-16:Cher - The Shoop Shoop Song Its In His Kiss.mp3
-17:Chris Isaak - Wicked Game.mp3
-18:Black - Wonderful Life.mp3
-19:Tove Lo - Habits Stay High.mp3
-20:Tove Lo - Talking Body.mp3
-21:Pontos de Pretos Velhos - Ze Mauricio Machline (Toques de Umbanda).mp3
-22:Ponto de Boiadeiro   Plichas - Zé Maurício Machline (Toques de Umbanda).mp3
-23:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
-24:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
-25:Ponto de Marinheiro   Marinheiro Só - Ze Mauricio Machline (Toques de Umbanda).mp3
-26:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
-27:Ponto de Ogum - Ze Mauricio Machline (Toques de Umbanda).mp3
-28:Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3
-29:Ponto de Oxóssi - Ze Mauricio Machline (Toques de Umbanda).mp3
-30:Ponto de Xangô - Ze Mauricio Machline (Toques de Umbanda).mp3
-31:Pontos de Iansa - Ze Mauricio Machline (Toques de Umbanda).mp3
-32:Pontos de Oxum (Dengue   Mamae Oxum) - Ze Mauricio Machline (Toques de Umbanda).mp3
+7:Cher - The Shoop Shoop Song Its In His Kiss.mp3
+8:Chris Isaak - Wicked Game.mp3
+9:Black - Wonderful Life.mp3
+10:Tove Lo - Habits Stay High.mp3
+11:Tove Lo - Talking Body.mp3
+12:Banks - Beggin For Thread.mp3
+13:Banks - Gemini Feed.mp3
+14:Cher - The Shoop Shoop Song Its In His Kiss.mp3
+15:Chris Isaak - Wicked Game.mp3
+16:Black - Wonderful Life.mp3
+17:Tove Lo - Habits Stay High.mp3
+18:Tove Lo - Talking Body.mp3
+19:Pontos de Pretos Velhos - Ze Mauricio Machline (Toques de Umbanda).mp3
+20:Ponto de Boiadeiro   Plichas - Zé Maurício Machline (Toques de Umbanda).mp3
+21:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
+22:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
+23:Ponto de Marinheiro   Marinheiro Só - Ze Mauricio Machline (Toques de Umbanda).mp3
+24:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
+25:Ponto de Ogum - Ze Mauricio Machline (Toques de Umbanda).mp3
+26:Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3
+27:Ponto de Oxóssi - Ze Mauricio Machline (Toques de Umbanda).mp3
+28:Ponto de Xangô - Ze Mauricio Machline (Toques de Umbanda).mp3
+29:Pontos de Iansa - Ze Mauricio Machline (Toques de Umbanda).mp3
+30:Pontos de Oxum (Dengue   Mamae Oxum) - Ze Mauricio Machline (Toques de Umbanda).mp3
+31:Ponto de Boiadeiro   Plichas - Zé Maurício Machline (Toques de Umbanda).mp3
+32:Pontos de Pretos Velhos - Ze Mauricio Machline (Toques de Umbanda).mp3
 33:Ponto de Boiadeiro   Plichas - Zé Maurício Machline (Toques de Umbanda).mp3
-34:Pontos de Pretos Velhos - Ze Mauricio Machline (Toques de Umbanda).mp3
-35:Ponto de Boiadeiro   Plichas - Zé Maurício Machline (Toques de Umbanda).mp3
-36:Ponto de Exu  - Ze Mauricio Machline (Toques de Umbanda).mp3
-37:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
-38:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
-39:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
-40:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
-41:Ponto de Marinheiro   Marinheiro Só - Ze Mauricio Machline (Toques de Umbanda).mp3
-42:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
-43:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
-44:Ponto de Ogum - Ze Mauricio Machline (Toques de Umbanda).mp3
-45:Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3
-46:Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3
-47:Ponto de Oxóssi - Ze Mauricio Machline (Toques de Umbanda).mp3
-48:Ponto de Xangô - Ze Mauricio Machline (Toques de Umbanda).mp3
-49:Pontos de Iansa - Ze Mauricio Machline (Toques de Umbanda).mp3
-50:Pontos de Oxum (Dengue   Mamae Oxum) - Ze Mauricio Machline (Toques de Umbanda).mp3
-51:Ponto de Boiadeiro   Plichas - Zé Maurício Machline (Toques de Umbanda).mp3
-52:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
-53:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
-54:Ponto de Marinheiro   Marinheiro Só - Ze Mauricio Machline (Toques de Umbanda).mp3
-55:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
-56:Ponto de Ogum - Ze Mauricio Machline (Toques de Umbanda).mp3
-57:Ponto de Oxóssi - Ze Mauricio Machline (Toques de Umbanda).mp3
-58:Ponto de Xangô - Ze Mauricio Machline (Toques de Umbanda).mp3
-59:Pontos de Iansa - Ze Mauricio Machline (Toques de Umbanda).mp3
-60:Pontos de Oxum (Dengue   Mamae Oxum) - Ze Mauricio Machline (Toques de Umbanda).mp3
-61:Radical Face - 08 - Haunted.mp3
+34:Ponto de Exu  - Ze Mauricio Machline (Toques de Umbanda).mp3
+35:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
+36:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
+37:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
+38:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
+39:Ponto de Marinheiro   Marinheiro Só - Ze Mauricio Machline (Toques de Umbanda).mp3
+40:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
+41:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
+42:Ponto de Ogum - Ze Mauricio Machline (Toques de Umbanda).mp3
+43:Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3
+44:Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3
+45:Ponto de Oxóssi - Ze Mauricio Machline (Toques de Umbanda).mp3
+46:Ponto de Xangô - Ze Mauricio Machline (Toques de Umbanda).mp3
+47:Pontos de Iansa - Ze Mauricio Machline (Toques de Umbanda).mp3
+48:Pontos de Oxum (Dengue   Mamae Oxum) - Ze Mauricio Machline (Toques de Umbanda).mp3
+49:Ponto de Boiadeiro   Plichas - Zé Maurício Machline (Toques de Umbanda).mp3
+50:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
+51:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
+52:Ponto de Marinheiro   Marinheiro Só - Ze Mauricio Machline (Toques de Umbanda).mp3
+53:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
+54:Ponto de Ogum - Ze Mauricio Machline (Toques de Umbanda).mp3
+55:Ponto de Oxóssi - Ze Mauricio Machline (Toques de Umbanda).mp3
+56:Ponto de Xangô - Ze Mauricio Machline (Toques de Umbanda).mp3
+57:Pontos de Iansa - Ze Mauricio Machline (Toques de Umbanda).mp3
+58:Pontos de Oxum (Dengue   Mamae Oxum) - Ze Mauricio Machline (Toques de Umbanda).mp3
+59:Radical Face - 08 - Haunted.mp3
+60:Borns - 10 000 Emerald Pools.mp3
+61:Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3
 playlist_end

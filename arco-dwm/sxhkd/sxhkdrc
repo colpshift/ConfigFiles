@@ -12,7 +12,7 @@
 
 #Editor
 super + e
-    code
+    code-insiders
 
 #Browser
 super + w
@@ -52,23 +52,23 @@ super + f
 
 #dmenu
 super + shift + d
-	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'JetBrainsMono Nerd Font Mono:style=Bold Italic:pixelsize=10'
+    dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'JetBrainsMono Nerd Font Mono:style=Bold Italic:pixelsize=10'
 
 #reload sxhkd:
 super + shift + s
-	pkill -USR1 -x sxhkd
+    pkill -USR1 -x sxhkd
 
 #System Monitoring
 super + shift + m
-        termite -e bashtop  
+    termite -e bashtop  
 
 #Rss Feed Reader
 super + shift + n
-        alacritty -e newsboat
+    alacritty -e newsboat
 
 #Browser 
 super + shift + w
-    qutebrowser
+    brave
 
 #################################################################
 # CONTROL + ALT KEYS
@@ -76,7 +76,7 @@ super + shift + w
 
 #arcolinux-welcome-app
 ctrl + alt + w
-     arcolinux-welcome-app
+    arcolinux-welcome-app
 
 #arcolinux-tweak-tool
 ctrl + alt + e

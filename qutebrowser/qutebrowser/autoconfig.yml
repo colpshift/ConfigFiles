@@ -12,8 +12,8 @@ settings:
         ',M': hint links spawn devour.sh mpv {hint-url}
         ',m': spawn devour.sh mpv {url}
         ç: spawn --userscript dmenu_qutebrowser
-  colors.webpage.prefers_color_scheme_dark:
-    global: true
+  colors.webpage.preferred_color_scheme:
+    global: dark
   completion.cmd_history_max_items:
     global: 10
   content.geolocation:
@@ -21,7 +21,9 @@ settings:
   content.notifications:
     https://calendar.google.com: true
     https://mail.google.com: true
+    https://messages.google.com: true
     https://pt.aliexpress.com: false
+    https://web.whatsapp.com: true
     https://www.facebook.com: false
     https://www.reddit.com: false
   content.pdfjs:

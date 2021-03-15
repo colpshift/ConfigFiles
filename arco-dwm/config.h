@@ -43,7 +43,7 @@ static const Rule rules[] = {
 	 */
 	/* class                        instance  title     tags mask   isfloating   monitor */
 	{ "Arcolinux-welcome-app.py",   NULL,     NULL,     0,          1,           -1 },
-        { "Rambox",                     NULL,     NULL,     1 << 8,     0,           -1 },
+        { "Surf",                     	NULL,     NULL,     1 << 8,     0,           -1 },
         { "QML Timer",                  NULL,     NULL,     1 << 7,     0,           -1 },
         { "Microsoft Teams - Preview",  NULL,     NULL,     1 << 7,     0,           -1 },
         { "Galculator",                 NULL,     NULL,     0,          1,           -1 },

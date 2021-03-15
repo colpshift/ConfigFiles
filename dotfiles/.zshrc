@@ -103,6 +103,7 @@ alias zathura='$HOME/.scripts/devour.sh zathura'
 alias cls='clear'
 alias newsnotify='notify-send --icon=rssguard'
 alias timeshift='sudo timeshift-gtk'
+alias surf='surf -DL'
 alias myip='curl http://ipecho.net/plain; echo'
 alias neofetch="neofetch --color_blocks off "
 alias systemctl_error='sudo systemctl --failed'

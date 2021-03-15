@@ -27,10 +27,18 @@ export CHEAT_CONFIG_PATH="$HOME/.config/cheat/conf.yml"
 export CHEAT_USE_FZF=true
 
 ### ruby
-export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export GEM_HOME="$HOME/.local/share/gem/ruby/2.7.0/bin"
 
 ### rust
 source "$HOME/.cargo/env"
 
+### Perl
+PATH="/home/colps/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/colps/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/colps/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/colps/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/colps/perl5"; export PERL_MM_OPT;
+
 ### font preview ueberzug 
 export FONTPREVIEW_PREVIEW_TEXT="ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n1234567890\n< != == ->\n | #[ |> <$> ~@"
+

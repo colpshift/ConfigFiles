@@ -2741,3 +2741,66 @@ Mar 10 01:41 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
 Mar 10 07:04 : avahi: Service 'Music Player @ colpsarco' successfully established.
 Mar 11 00:51 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
 Mar 11 07:07 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 11 18:29 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
+Mar 11 20:03 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 12 00:24 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
+Mar 12 07:40 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 12 08:36 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
+Mar 12 08:37 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 12 08:41 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
+Mar 12 08:41 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 12 09:07 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
+Mar 12 09:10 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 12 09:20 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
+Mar 12 09:31 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 12 09:44 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
+Mar 12 09:45 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 12 15:11 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
+Mar 12 15:15 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 12 23:51 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
+Mar 13 09:42 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 13 11:03 : player: played "Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3"
+Mar 13 11:07 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 13 19:09 : player: played "Cher - The Shoop Shoop Song Its In His Kiss.mp3"
+Mar 13 19:13 : player: played "Chris Isaak - Wicked Game.mp3"
+Mar 13 19:18 : player: played "Black - Wonderful Life.mp3"
+Mar 13 19:29 : player: played "Shaggy - Angel.mp3"
+Mar 13 19:37 : player: played "Art Popular - 04 - Falando Segredo Ao Vivo.mp3"
+Mar 13 19:47 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 13 19:47 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Attached picture on stream 1 has invalid size, ignoring
+Mar 13 19:47 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Could not find codec parameters for stream 1 (Video: mjpeg, none(bt470bg/unknown/unknown)): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Attached picture on stream 1 has invalid size, ignoring
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Could not find codec parameters for stream 1 (Video: mjpeg, none(bt470bg/unknown/unknown)): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Attached picture on stream 1 has invalid size, ignoring
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Could not find codec parameters for stream 1 (Video: mjpeg, none(bt470bg/unknown/unknown)): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Attached picture on stream 1 has invalid size, ignoring
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Could not find codec parameters for stream 1 (Video: mjpeg, none(bt470bg/unknown/unknown)): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Attached picture on stream 1 has invalid size, ignoring
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Could not find codec parameters for stream 1 (Video: mjpeg, none(bt470bg/unknown/unknown)): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Attached picture on stream 1 has invalid size, ignoring
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Could not find codec parameters for stream 1 (Video: mjpeg, none(bt470bg/unknown/unknown)): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Attached picture on stream 1 has invalid size, ignoring
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Could not find codec parameters for stream 1 (Video: mjpeg, none(bt470bg/unknown/unknown)): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Attached picture on stream 1 has invalid size, ignoring
+Mar 13 19:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Could not find codec parameters for stream 1 (Video: mjpeg, none(bt470bg/unknown/unknown)): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Mar 14 00:07 : player: played "Banks - Mind Games.mp3"
+Mar 14 00:08 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 14 00:22 : player: played "Banks - Mind Games.mp3"
+Mar 14 10:00 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 15 00:52 : player: played "Banks - Mind Games.mp3"
+Mar 15 00:54 : avahi: Service 'Music Player @ colpsarco' successfully established.

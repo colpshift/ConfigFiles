@@ -2804,3 +2804,82 @@ Mar 14 00:22 : player: played "Banks - Mind Games.mp3"
 Mar 14 10:00 : avahi: Service 'Music Player @ colpsarco' successfully established.
 Mar 15 00:52 : player: played "Banks - Mind Games.mp3"
 Mar 15 00:54 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 15 01:19 : player: played "Banks - Mind Games.mp3"
+Mar 15 06:49 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 15 07:36 : player: played "Ponto de Defumaçao  - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 15 07:39 : player: played "Ponto de Exu  - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 15 07:41 : player: played "Pontos de Pretos Velhos - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 16 00:15 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 16 06:50 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 17 00:13 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 17 07:28 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 17 17:41 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 17 17:47 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 17 17:54 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 17 17:56 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 17 18:17 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 17 18:30 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 17 21:18 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 17 22:11 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 18 00:05 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 18 06:46 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 18 19:15 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 18 19:18 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 18 23:50 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 19 07:01 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 19 17:22 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 19 17:42 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 20 00:26 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 20 10:08 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 20 22:18 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 21 09:07 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 21 12:29 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 21 12:30 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 21 12:37 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 21 12:38 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 21 13:31 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 21 13:36 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 22 01:07 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 22 06:56 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 22 17:58 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 22 18:02 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 23 01:40 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 23 07:09 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 24 07:04 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+Mar 24 07:07 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 24 22:16 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Mar 24 22:17 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Mar 24 22:17 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 25 00:21 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Mar 25 00:23 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Mar 25 00:23 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 25 01:07 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Mar 25 06:58 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Mar 25 06:58 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 25 08:58 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Mar 25 08:59 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Mar 25 08:59 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 25 14:13 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Mar 25 14:18 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Mar 25 14:18 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 25 14:24 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Mar 25 14:26 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Mar 25 14:26 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 26 00:27 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Mar 26 07:06 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Mar 26 07:06 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 26 20:54 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Mar 27 09:50 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Mar 27 09:50 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 27 09:54 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Mar 27 09:55 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Mar 27 09:55 : avahi: Service 'Music Player @ colpsarco' successfully established.

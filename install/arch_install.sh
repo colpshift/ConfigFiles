@@ -130,7 +130,6 @@ exit
 #------------------------------------------------------------------------------
 # post-installation
 #------------------------------------------------------------------------------
-
 ### grant root privileges
 pacman -S sudo
   visudo
@@ -143,6 +142,12 @@ useradd -m -g colps -G colps -s /bin/bash colps
 usermod -a -G network power users video storage lp wheel colps
 passwd colps
 # logout and logon with new user
+
+### configure dash
+paru -S dash
+paru -S checkbashisms
+ln -sfT dash /usr/bin/sh
+configure dash.hook on /etc/pacman.d/hooks
 
 ### configure pacman
 pacman -S reflector \

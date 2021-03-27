@@ -35,26 +35,29 @@ scrolling:
 
 font:
   normal:
-    family: JetBrainsMono Nerd Font Mono
+    family: Iosevka Nerd Font Mono
     style: Regular
 
   bold:
-    family: JetBrainsMono Nerd Font Mono
+    family: Iosevka Nerd Font Mono
     style: Bold
 
   italic:
-    family: JetBrainsMono Nerd Font Mono
+    family: Iosevka Nerd Font Mono
     style: Italic
 
   bold_italic:
-    family: JetBrainsMono Nerd Font Mono
+    family: Iosevka Nerd Font Mono
     style: Bold Italic
 
-  size: 8
-
-  #offset:
-  #  x: 0
-  #  y: 0
+  size: 9
+  thin_strokes: true
+  antialias: lcd
+  hinting: true
+  
+  offset:
+    x: 0
+    y: 0
 
   #glyph_offset:
   #  x: 0
@@ -62,59 +65,88 @@ font:
 
 draw_bold_text_with_bright_colors: true
 
-# Colors (Tomorrow Night)
+# Colors (Dracula)
 colors:
+  # Default colors
   primary:
-    background: "#1d1f21"
-    foreground: "#c5c8c6"
-    dim_foreground: "#828482"
-    bright_foreground:
-      "#eaeaea"
+    background: '0x282a36'
+    foreground: '0xf8f8f2'
 
-      #selection:
-      #text: CellBackground
-      #background: CellForeground
-
-  search:
-    matches:
-      foreground: "#000000"
-      background:
-        "#ffffff"
-
-        #bar:
-        #background: CellForeground
-        #foreground: CellBackground
-
+  # Normal colors
   normal:
-    black: "#1d1f21"
-    red: "#cc6666"
-    green: "#b5bd68"
-    yellow: "#f0c674"
-    blue: "#81a2be"
-    magenta: "#b294bb"
-    cyan: "#8abeb7"
-    white: "#c5c8c6"
+    black:   '0x000000'
+    red:     '0xff5555'
+    green:   '0x50fa7b'
+    yellow:  '0xf1fa8c'
+    blue:    '0xbd93f9'
+    magenta: '0xff79c6'
+    cyan:    '0x8be9fd'
+    white:   '0xbbbbbb'
 
+  # Bright colors
   bright:
-    black: "#666666"
-    red: "#d54e53"
-    green: "#b9ca4a"
-    yellow: "#e7c547"
-    blue: "#7aa6da"
-    magenta: "#c397d8"
-    cyan: "#70c0b1"
-    white: "#eaeaea"
+    black:   '0x555555'
+    red:     '0xff5555'
+    green:   '0x50fa7b'
+    yellow:  '0xf1fa8c'
+    blue:    '0xcaa9fa'
+    magenta: '0xff79c6'
+    cyan:    '0x8be9fd'
+    white:   '0xffffff'
 
-  dim:
-    black: "#131415"
-    red: "#864343"
-    green: "#777c44"
-    yellow: "#9e824c"
-    blue: "#556a7d"
-    magenta: "#75617b"
-    cyan: "#5b7d78"
-    white: "#828482"
-
+# # Colors (Tomorrow Night)
+# colors:
+#   primary:
+#     background: "#1d1f21"
+#     foreground: "#c5c8c6"
+#     dim_foreground: "#828482"
+#     bright_foreground:
+#       "#eaeaea"
+#
+#       #selection:
+#       #text: CellBackground
+#       #background: CellForeground
+#
+#   search:
+#     matches:
+#       foreground: "#000000"
+#       background:
+#         "#ffffff"
+#
+#         #bar:
+#         #background: CellForeground
+#         #foreground: CellBackground
+#
+#   normal:
+#     black: "#1d1f21"
+#     red: "#cc6666"
+#     green: "#b5bd68"
+#     yellow: "#f0c674"
+#     blue: "#81a2be"
+#     magenta: "#b294bb"
+#     cyan: "#8abeb7"
+#     white: "#c5c8c6"
+#
+#   bright:
+#     black: "#666666"
+#     red: "#d54e53"
+#     green: "#b9ca4a"
+#     yellow: "#e7c547"
+#     blue: "#7aa6da"
+#     magenta: "#c397d8"
+#     cyan: "#70c0b1"
+#     white: "#eaeaea"
+#
+#   dim:
+#     black: "#131415"
+#     red: "#864343"
+#     green: "#777c44"
+#     yellow: "#9e824c"
+#     blue: "#556a7d"
+#     magenta: "#75617b"
+#     cyan: "#5b7d78"
+#     white: "#828482"
+#
   #indexed_colors: []
 
 bell:

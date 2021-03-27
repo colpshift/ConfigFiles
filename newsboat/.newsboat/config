@@ -8,13 +8,14 @@ prepopulate-query-feeds yes
 auto-reload yes
 reload-time 30
 reload-threads 100
+show-read-feeds yes
 
 article-sort-order date-asc
 keep-articles-days 30
 cache-file "/home/colps/.newsboat/cache.db"
 cookie-cache "/home/colps/.newsboat/cookies.txt"
 
-browser "devour.sh qutebrowser --target tab"
+browser "brave"
 macro m set browser "devour.sh mpv %u" ; open-in-browser ;
 
 notify-always yes

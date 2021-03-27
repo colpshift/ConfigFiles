@@ -9,9 +9,9 @@ scan_timeout = 10
 add_newline = true
 
 [character]
-success_symbol = "[➜](bold green) "
-error_symbol = "[✗](bold red) "
-vicmd_symbol = "[v](bold fg:8)"
+success_symbol = "[ </> ](bold green) "
+error_symbol = "[ </> ](bold red) "
+vicmd_symbol = "[ </> ](bold fg:3)"
 
 [cmd_duration]
 format = "[$duration ](fg:3)"

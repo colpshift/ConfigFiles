@@ -1,0 +1,19 @@
+# repeate last command with sudo
+sudo !!
+
+# tail -f
+less +F
+
+# open current line on editor
+ctrl +xe
+
+# delete line to end
+ctr + k
+
+# delete line to begin
+ctrl + y
+
+# mtr replace tracert
+mtr 
+
+

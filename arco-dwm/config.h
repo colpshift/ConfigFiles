@@ -43,11 +43,11 @@ static const Rule rules[] = {
 	 */
 	/* class                        instance  title     tags mask   isfloating   monitor */
 	{ "Arcolinux-welcome-app.py",   NULL,     NULL,     0,          1,           -1 },
-        { "Surf",                     	NULL,     NULL,     1 << 8,     0,           -1 },
-        { "QML Timer",                  NULL,     NULL,     1 << 7,     0,           -1 },
-        { "Microsoft Teams - Preview",  NULL,     NULL,     1 << 7,     0,           -1 },
-        { "Galculator",                 NULL,     NULL,     0,          1,           -1 },
-        { "qtpad",                      NULL,     NULL,     0,          1,           -1 },
+	{ "firefox",                    NULL,     NULL,     1 << 8,     0,           -1 },
+	{ "QML Timer",                  NULL,     NULL,     1 << 7,     0,           -1 },
+	{ "Microsoft Teams - Preview",  NULL,     NULL,     1 << 7,     0,           -1 },
+	{ "Galculator",                 NULL,     NULL,     0,          1,           -1 },
+	{ "qtpad",                      NULL,     NULL,     0,          1,           -1 },
 };
 
 /* layout(s) */
@@ -69,10 +69,10 @@ static const Layout layouts[] = {
 /* key definitions */
 #define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
-	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
-	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
-	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
-	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
@@ -132,39 +132,39 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_Tab,	   shiftview,	   {.i = -1 } },
 
 	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
+		TAGKEYS(                        XK_2,                      1)
+		TAGKEYS(                        XK_3,                      2)
+		TAGKEYS(                        XK_4,                      3)
+		TAGKEYS(                        XK_5,                      4)
+		TAGKEYS(                        XK_6,                      5)
+		TAGKEYS(                        XK_7,                      6)
+		TAGKEYS(                        XK_8,                      7)
+		TAGKEYS(                        XK_9,                      8)
 };
 
 /* IF YOU HAVE A AZERTY KEYBOARD USE THESE CODES
-	TAGKEYS(                        XK_ampersand,              0)
-	TAGKEYS(                        XK_eacute,                 1)
-	TAGKEYS(                        XK_quotedbl,               2)
-	TAGKEYS(                        XK_apostrophe,             3)
-	TAGKEYS(                        XK_parenleft,              4)
-	TAGKEYS(                        XK_section,                5)
-	TAGKEYS(                        XK_egrave,                 6)
-	TAGKEYS(                        XK_exclam,                 7)
-	TAGKEYS(                        XK_ccedilla,               8)
-*/
+	 TAGKEYS(                        XK_ampersand,              0)
+	 TAGKEYS(                        XK_eacute,                 1)
+	 TAGKEYS(                        XK_quotedbl,               2)
+	 TAGKEYS(                        XK_apostrophe,             3)
+	 TAGKEYS(                        XK_parenleft,              4)
+	 TAGKEYS(                        XK_section,                5)
+	 TAGKEYS(                        XK_egrave,                 6)
+	 TAGKEYS(                        XK_exclam,                 7)
+	 TAGKEYS(                        XK_ccedilla,               8)
+	 */
 
 /* THESE ARE THE ORIGINAL QWERTY KEYBOARD CODES
-	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
-*/
+	 TAGKEYS(                        XK_1,                      0)
+	 TAGKEYS(                        XK_2,                      1)
+	 TAGKEYS(                        XK_3,                      2)
+	 TAGKEYS(                        XK_4,                      3)
+	 TAGKEYS(                        XK_5,                      4)
+	 TAGKEYS(                        XK_6,                      5)
+	 TAGKEYS(                        XK_7,                      6)
+	 TAGKEYS(                        XK_8,                      7)
+	 TAGKEYS(                        XK_9,                      8)
+	 */
 
 /* button definitions */
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */

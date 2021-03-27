@@ -1,16 +1,16 @@
-#!/usr/bin/zsh
+#!/bin/sh
 #
 # File: .zshenv
 # Path: $HOME
 # Tags: zsh shell
 # Description: zsh env config
-# Last update: 11/12/2019 20:22
+# Last update: 25/03/2021 00:40
 # Author: Colpshift
 #
 
 ### path
 typeset -U path
-path=($HOME/.local/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin $GEM_HOME/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
+path=($HOME/.local/bin $HOME/.local/share/gem/ruby/2.7.0/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin $GEM_HOME/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
 
 ### fzf
 # using fd
@@ -39,6 +39,9 @@ PERL_LOCAL_LIB_ROOT="/home/colps/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_R
 PERL_MB_OPT="--install_base \"/home/colps/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/colps/perl5"; export PERL_MM_OPT;
 
-### font preview ueberzug 
+### font preview ueberzug
 export FONTPREVIEW_PREVIEW_TEXT="ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n1234567890\n< != == ->\n | #[ |> <$> ~@"
+
+### set xdg uid
+export XDG_RUNTIME_DIR=/run/user/$UID
 

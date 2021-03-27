@@ -1,10 +1,10 @@
-#!/usr/bin/zsh
+#!/bin/sh
 #
 # File: .zshrc
 # Path: $HOME
 # Tags: zsh shell
 # Description: zsh config
-# Last update: 29/12/2019 14:16
+# Last update: 25/03/2021 00:41
 # Author: Colpshift
 #
 
@@ -74,7 +74,8 @@ source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 ### Set alias
 #############
 alias ps='procs'
-alias ll='exa --header --long --group --git'
+alias exa='exa --header --long --group --git'
+alias ll='ls'
 alias ls='ls -lh --color=auto --group-directories-first'
 alias la='ls -ah'  # show hidden files and folders
 alias lx='ls -BXh' # sort by extension
@@ -101,11 +102,13 @@ alias umpv='$HOME/.scripts/devour.sh umpv.py'
 alias sxiv='$HOME/.scripts/devour.sh sxiv'
 alias zathura='$HOME/.scripts/devour.sh zathura'
 alias cls='clear'
-alias newsnotify='notify-send --icon=rssguard'
 alias timeshift='sudo timeshift-gtk'
-alias surf='surf -DL'
+alias cmatrix='cmatrix -fs'
 alias myip='curl http://ipecho.net/plain; echo'
 alias neofetch="neofetch --color_blocks off "
+alias disk_monitor='duf'
+alias net_monitor='bmon'
+alias full_monitor='glances'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
@@ -151,11 +154,13 @@ eval "$(fasd --init auto)"
 # command_not_found_handler
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
+# forgit
+source $HOME/Projects/src/forgit/forgit.plugin.zsh
+
 # fzf completion
 ################
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
-source /usr/share/fzf/forgit.plugin.zsh
 
 # completion
 fpath+=${ZDOTDIR:-~}/.zsh_functions

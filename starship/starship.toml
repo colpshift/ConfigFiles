@@ -5,7 +5,7 @@
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
 
-# Disable the newline at the start of the prompt
+# Disable the blank line at the start of the prompt
 add_newline = true
 
 [character]
@@ -21,7 +21,7 @@ truncation_length = 8
 truncation_symbol = "…/"
 
 [time]
-disabled = false
+disabled = true
 format = '[\[$time\]](fg:3) '
 time_format = "%T"
 
@@ -32,4 +32,5 @@ discharging_symbol = " "
 [[battery.display]]
 threshold = 30
 style = "bold yellow"
+
 

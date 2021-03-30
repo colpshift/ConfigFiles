@@ -6,7 +6,7 @@
 rofi.modi: window,drun,run,ssh
 
 ! "Font to use" Set from: Default
-rofi.font: JetBrainsMono Nerd Font Mono Bold Italic 9
+rofi.font: FiraCode Nerd Font Mono 9
 
 ! "Border width" Set from: Default
 rofi.bw: 1

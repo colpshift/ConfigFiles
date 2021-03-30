@@ -3,7 +3,7 @@
 " Path: $HOME
 " Tags: neovim editor
 " Description: nvim configuration file
-" Last Modified: 23/03/2021 01:13
+" Last Modified: 30/03/2021 12:23
 " Author: Colpshift
 "
 " https://neovim.io/

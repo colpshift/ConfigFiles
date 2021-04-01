@@ -165,3 +165,4 @@ source /usr/share/fzf/completion.zsh
 # completion
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
+export PATH=$HOME/.config/nvcode/utils/bin:$PATH

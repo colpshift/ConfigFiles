@@ -3,11 +3,34 @@
 " Path: $HOME
 " Tags: neovim editor
 " Description: nvim configuration file
-" Last Modified: 30/03/2021 12:23
+" Last Modified: 28/04/2020 00:17
 " Author: Colpshift
 "
 " https://neovim.io/
 "
+
+"------------------------------------------------------------------------------
+" start settings
+"------------------------------------------------------------------------------
+set nocompatible
+syntax on
+filetype plugin indent on
+set fileformat=unix
+set encoding=utf-8      " Use an encoding that supports unicode.
+set nostartofline       " Do not jump to first character with page commands.
+set confirm             " Display confirmation dialog when closing unsaved file
+"
+" run :w!! command (type fast), to save ready only files.
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
+"------------------------------------------------------------------------------
+" Performance
+"------------------------------------------------------------------------------
+set complete-=i         " Limit the files searched for auto-completes.
+set lazyredraw          " Don’t update screen during macro and script execution.
+set hid                 " Avoid Vim-Airline to get information on start
+set ttyfast             " Improve smoothness of redrawing
+
 "------------------------------------------------------------------------------
 " plugins package manager - vim-plug
 "------------------------------------------------------------------------------
@@ -15,6 +38,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 "---------------------------
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'rakr/vim-one'
+Plug 'romainl/Apprentice'
+Plug 'ayu-theme/ayu-vim'
 " vim color themes
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -30,10 +56,14 @@ Plug 'luochen1990/rainbow'
 " show diff level of parentheses in diff color
 Plug 'ap/vim-css-color'
 " Preview colours in source code.
+Plug 'akiomik/git-gutter-vim'
+" update gutter
 "---------------------------
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Things you can do with fzf and Vim.
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+" Ranger running in a floating window
 "---------------------------
 Plug 'machakann/vim-sandwich'
 " search/select/edit sandwiched textobjects.
@@ -41,26 +71,25 @@ Plug 'andymass/vim-matchup'
 " extends vim's % key to language-specific words
 Plug 'preservim/nerdcommenter'
 " nerdy commenting powers
-Plug 'francoiscabrol/ranger.vim'
-Plug 'rbgrouleff/bclose.vim'
-" ranger
-Plug 'easymotion/vim-easymotion'
-" vim motion
 "---------------------------
-Plug 'neovim/nvim-lspconfig'
-Plug 'scalameta/nvim-metals'
-" LSP
-Plug 'kabouzeid/nvim-lspinstall'
-Plug 'hrsh7th/nvim-compe'
-"Completion
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-" markdown preview
-Plug 'hrsh7th/vim-vsnip'
-Plug 'honza/vim-snippets'
-" Snippets
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" asynchronous completion framework
+Plug 'Shougo/context_filetype.vim'
+" adds the context filetype feature.
+Plug 'Shougo/neoinclude.vim'
+" completes the candidates from the included files and included path.
+Plug 'Konfekt/FastFold'
+" update folds
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets' 
+" snippets
+Plug 'deoplete-plugins/deoplete-zsh'
+" zsh completion
+Plug 'Shougo/neopairs.vim'
+" parenteses pairs
 "---------------------------
-Plug 'rust-lang/rust.vim'
-" Languages
+Plug 'dense-analysis/ale' 
+" Asynchronous Lint Engine
 "---------------------------
 call plug#end()
 
@@ -68,15 +97,9 @@ call plug#end()
 " plugins configuration
 "------------------------------------------------------------------------------
 "
-" gruvbox theme
-"
-let g:gruvbox_contrast_dark = 'soft'
-let g:gruvbox_improved_warnings = 1
-let g:gruvbox_invert_signs = 1
-"
 " airline
 "
-let g:airline_theme = 'dracula'
+let g:airline_theme='ayu'
 let g:airline_highlighting_cache = 1
 let g:airline_left_sep = ' '
 let g:airline_left_alt_sep = '|'
@@ -106,32 +129,38 @@ let g:Illuminate_delay = 200
 "
 " include - saiw( makes foo to (foo).
 " replace - srb" or sr(" makes (foo) to "foo".
-" delete  - sdb or sd( makes (foo) to foo.
+" delete  - sdb or sd( makes (foo) zrto foo.
 " ib and is - selects {surrounded text}.
 " ab and as - selects {surrounded text} including {surrounding}s.
-"
-" Easymotion
-"
-let g:EasyMotion_do_mapping = 0 " Disable default mappings
-" Jump to anywhere you want with minimal keystrokes, with just one key binding.
-" `s{char}{label}`
-nmap s <Plug>(easymotion-overwin-f)
-" or
-" `s{char}{char}{label}`
-" Need one more keystroke, but on average, it may be more comfortable.
-nmap s <Plug>(easymotion-overwin-f2)
-" Turn on case-insensitive feature
-let g:EasyMotion_smartcase = 1
-" line motions
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-" word motions
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
 "
 " Rainbow
 "
 let g:rainbow_active = 1
+"
+" Rnvimr
+"
+let g:rnvimr_enable_ex = 1
+let g:rnvimr_enable_picker = 0
+let g:rnvimr_draw_border = 0
+let g:rnvimr_enable_bw = 0
+" Customize the initial layout
+let g:rnvimr_layout = { 'relative': 'editor',
+      \ 'width': float2nr(round(0.6 * &columns)),
+      \ 'height': float2nr(round(0.6 * &lines)),
+      \ 'col': float2nr(round(0.2 * &columns)),
+      \ 'row': float2nr(round(0.2 * &lines)),
+      \ 'style': 'minimal' }
+"
+" Mapping
+nnoremap <silent> <C-o> :RnvimrToggle<CR>
+tnoremap <silent> <C-o> <C-\><C-n>:RnvimrToggle<CR>
+let g:rnvimr_action = {
+      \ '<C-t>': 'NvimEdit tabedit',
+      \ '<C-x>': 'NvimEdit split',
+      \ '<C-v>': 'NvimEdit vsplit',
+      \ 'gw': 'JumpNvimCwd',
+      \ 'yw': 'EmitRangerCwd'
+      \ }
 "
 " Nerdcommenter
 "
@@ -143,11 +172,6 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
-"
-" ranger
-"
-" open ranger when vim open a directory
-let g:ranger_replace_netrw = 1
 "
 " fzf
 "
@@ -173,53 +197,50 @@ let g:fzf_colors = {
       \ 'spinner': ['fg', 'Label'],
       \ 'header':  ['fg', 'Comment'] }
 "
-" window preview
-command! -bang -nargs=? -complete=dir Files
-      \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
+" Deoplete
 "
-" markdown preview
+let g:deoplete#enable_at_startup = 1
 "
-let g:mkdp_browser = 'surf'
-let g:mkdp_page_title = '「${name}」'
-let g:mkdp_filetypes = ['markdown']
+" Deplete-fastfold
 "
-" LSP
+let g:fastfold_savehook = 1
+let g:markdown_folding = 1
+let g:tex_fold_enabled = 1
+let g:vimsyn_folding = 'af'
+let g:xml_syntax_folding = 1
+let g:javaScript_fold = 1
+let g:sh_fold_enabled= 7
+let g:ruby_fold = 1
+let g:perl_fold = 1
+let g:perl_fold_blocks = 1
+let g:r_syntax_folding = 1
+let g:rust_fold = 1
+let g:php_folding = 1
 "
-lua << EOF
---
---
--- lsp config
-require'lspconfig'.pyright.setup{}
-require'lspconfig'.gopls.setup{}
-require'lspconfig'.sumneko_lua.setup{}
-require'lspconfig'.bashls.setup{}
---
-EOF
+" ultisnips
 "
-" Completion
+"let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "
-set completeopt=menuone,noselect
-let g:compe = {}
-let g:compe.enabled = v:true
-let g:compe.autocomplete = v:true
-let g:compe.debug = v:false
-let g:compe.min_length = 1
-let g:compe.preselect = 'enable'
-let g:compe.throttle_time = 80
-let g:compe.source_timeout = 200
-let g:compe.incomplete_delay = 400
-let g:compe.max_abbr_width = 100
-let g:compe.max_kind_width = 100
-let g:compe.max_menu_width = 100
-let g:compe.documentation = v:true
-let g:compe.source = {}
-let g:compe.source.path = v:true
-let g:compe.source.buffer = v:true
-let g:compe.source.calc = v:true
-let g:compe.source.nvim_lsp = v:true
-let g:compe.source.nvim_lua = v:true
-let g:compe.source.vsnip = v:true
-highlight link CompeDocumentation NormalFloat
+" Ale
+"
+call deoplete#custom#option('sources', {
+      \ '_': ['ale'],
+      \})
+"
+let g:airline#extensions#ale#enabled = 1
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+let g:ale_list_window_size = 5
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+let g:ale_lint_on_enter = 1
+let g:ale_sign_error = ''
+let g:ale_sign_warning = ''
+"
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 "------------------------------------------------------------------------------
 " interface
@@ -228,6 +249,7 @@ set termguicolors       " true colors
 set hidden              " keep multiple buffers open.
 set cmdheight=2         " Give more space for displaying messages
 set updatetime=300
+set signcolumn=yes
 set signcolumn=auto:2
 set formatoptions+=l    " make settings permanent.
 set shortmess=atIc      " Don’t show the intro message when starting Vim
@@ -239,7 +261,7 @@ set ruler               " right side of the status line at the bottom
 set mouse=a             " allow mouse clicks to change cursor position
 set showmatch           " highlight matching [{()}]
 set wildmenu            " Wildmenu enable
-set colorcolumn=+2      " color de last column to wrap.
+set colorcolumn=+1      " color de last column to wrap.
 set textwidth=79        " set width for text
 set winwidth=110        " set the minimal width of the current window.
 set pumheight=10        " makes popup menu smaller
@@ -255,16 +277,11 @@ set splitbelow          " Horizontal split below current.
 set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
-colorscheme dracula
-nnoremap <F3> :bnext<CR>
+colorscheme ayu
+let ayucolor="dark"
+"
 " move to next and previous buffer
-
-"------------------------------------------------------------------------------
-" tabs
-"------------------------------------------------------------------------------
-set switchbuf=usetab
-nnoremap <F4> :sbnext<CR>
-nnoremap <S-F4> :sbprevious<CR>
+nnoremap <F3> :bnext<CR>
 
 "------------------------------------------------------------------------------
 " searching
@@ -274,8 +291,9 @@ set smartcase         " use case if any caps used
 set incsearch         " show match as search proceeds
 set hlsearch is       " highlight matches
 set inccommand=split  " Show interactive preview of substitute changes
-nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+"
 " undo hlsearch
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
 "------------------------------------------------------------------------------
 " indention
@@ -289,14 +307,15 @@ set shiftwidth=2        " The amount to block indent when using
 set softtabstop=2       " Causes backspace to delete 2 spaces converted tab
 set shiftround          " Round the indentation to earest multiple shiftwidth.
 set backspace=eol,start,indent  " Make sure backspace works in insert mode
-nmap <F7> mzgg=G`z
+"
 " auto indent the whole file and keep your cursor in the last position
+nmap <F7> mzgg=G`z
 
 "------------------------------------------------------------------------------
 " folding
 "------------------------------------------------------------------------------
-set foldenable          " enable fold
-set foldcolumn=4        " show column indent
+"set foldenable          " enable fold
+set foldcolumn=2        " show column indent
 set foldmethod=indent   " indentation method
 
 "------------------------------------------------------------------------------
@@ -312,20 +331,22 @@ set nowritebackup
 " code environments
 "------------------------------------------------------------------------------
 "
-" Python
-let g:python3_host_prog = '/bin/python3'
-let g:python2_host_prog = '/bin/python2'
-"
-" Rust
-let g:rust_clip_command = 'xclip -selection clipboard'
-"
 " Clear whitespaces
 nnoremap <silent> <F9> <Esc>:%s/\s\+$//e<CR>
 "
-"Insert timestamp
+" insert timestamp
 inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
+"
+" ruby
+let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
+"
+" python
+let g:python3_host_prog = '/bin/python3'
+
+"------------------------------------------------------------------------------
+" Workarounds
+"------------------------------------------------------------------------------
 "
 " Copying to X11 primary selection with the mouse
 vnoremap <LeftRelease> "*ygv
-
 

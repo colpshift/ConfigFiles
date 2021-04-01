@@ -49,15 +49,12 @@ Plug 'easymotion/vim-easymotion'
 "---------------------------
 Plug 'neovim/nvim-lspconfig'
 Plug 'scalameta/nvim-metals'
-" LSP
 Plug 'kabouzeid/nvim-lspinstall'
+" LSP
 Plug 'hrsh7th/nvim-compe'
 "Completion
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 " markdown preview
-Plug 'hrsh7th/vim-vsnip'
-Plug 'honza/vim-snippets'
-" Snippets
 "---------------------------
 Plug 'rust-lang/rust.vim'
 " Languages
@@ -186,14 +183,20 @@ let g:mkdp_filetypes = ['markdown']
 " LSP
 "
 lua << EOF
---
---
--- lsp config
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.gopls.setup{}
 require'lspconfig'.sumneko_lua.setup{}
 require'lspconfig'.bashls.setup{}
---
+EOF
+"
+" LSP autoinstall
+"
+lua << EOF
+require'lspinstall'.setup() -- important
+local servers = require'lspinstall'.installed_servers()
+for _, server in pairs(servers) do
+  require'lspconfig'[server].setup{}
+end
 EOF
 "
 " Completion
@@ -219,8 +222,14 @@ let g:compe.source.calc = v:true
 let g:compe.source.nvim_lsp = v:true
 let g:compe.source.nvim_lua = v:true
 let g:compe.source.vsnip = v:true
+" highlight
 highlight link CompeDocumentation NormalFloat
-
+" mapping
+inoremap <silent><expr> <C-Space> compe#complete()
+inoremap <silent><expr> <CR>      compe#confirm('<CR>')
+inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
+inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 "------------------------------------------------------------------------------
 " interface
 "------------------------------------------------------------------------------
@@ -256,8 +265,13 @@ set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
 colorscheme dracula
-nnoremap <F3> :bnext<CR>
+" Highlight Yanked Text
+augroup LuaHighlight
+  autocmd!
+  autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank()
+augroup END
 " move to next and previous buffer
+nnoremap <F3> :bnext<CR>
 
 "------------------------------------------------------------------------------
 " tabs
@@ -274,8 +288,8 @@ set smartcase         " use case if any caps used
 set incsearch         " show match as search proceeds
 set hlsearch is       " highlight matches
 set inccommand=split  " Show interactive preview of substitute changes
-nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 " undo hlsearch
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
 "------------------------------------------------------------------------------
 " indention
@@ -289,13 +303,13 @@ set shiftwidth=2        " The amount to block indent when using
 set softtabstop=2       " Causes backspace to delete 2 spaces converted tab
 set shiftround          " Round the indentation to earest multiple shiftwidth.
 set backspace=eol,start,indent  " Make sure backspace works in insert mode
-nmap <F7> mzgg=G`z
 " auto indent the whole file and keep your cursor in the last position
+nmap <F7> mzgg=G`z
 
 "------------------------------------------------------------------------------
 " folding
 "------------------------------------------------------------------------------
-set foldenable          " enable fold
+"set foldenable          " enable fold
 set foldcolumn=4        " show column indent
 set foldmethod=indent   " indentation method
 
@@ -327,5 +341,4 @@ inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
 "
 " Copying to X11 primary selection with the mouse
 vnoremap <LeftRelease> "*ygv
-
 

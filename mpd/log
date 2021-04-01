@@ -2903,3 +2903,19 @@ Mar 30 01:09 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de 
 XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
 Mar 30 07:36 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
 Mar 30 07:36 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 31 00:15 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Mar 31 00:18 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Mar 31 00:18 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 31 00:27 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Mar 31 06:11 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Mar 31 06:11 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Mar 31 23:45 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 01 06:53 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 01 06:53 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 01 07:04 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 01 07:20 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 01 07:20 : avahi: Service 'Music Player @ colpsarco' successfully established.

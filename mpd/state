@@ -1,8 +1,8 @@
 sw_volume: 96
 audio_device_state:1:pulse mpd output
 state: pause
-current: 84
-time: 120.787000
+current: 6
+time: 0.000000
 random: 0
 repeat: 1
 single: 1
@@ -96,4 +96,5 @@ playlist_begin
 82:11 No Meu Pe De Serra.m4a
 83:09 Numa Sala De Reboco - O Cheiro 1.m4a
 84:Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3
+85:50 Cent - In Da Club.mp3
 playlist_end

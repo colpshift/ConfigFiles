@@ -3,7 +3,7 @@
 " Path: $HOME
 " Tags: neovim editor
 " Description: nvim configuration file
-" Last Modified: 30/03/2021 12:23
+" Last Modified: 03/04/2021 00:15
 " Author: Colpshift
 "
 " https://neovim.io/
@@ -47,18 +47,14 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'easymotion/vim-easymotion'
 " vim motion
 "---------------------------
-Plug 'neovim/nvim-lspconfig'
-Plug 'scalameta/nvim-metals'
-" LSP
-Plug 'kabouzeid/nvim-lspinstall'
-Plug 'hrsh7th/nvim-compe'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Completion
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-" markdown preview
-Plug 'hrsh7th/vim-vsnip'
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " Snippets
 "---------------------------
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+" markdown preview
 Plug 'rust-lang/rust.vim'
 " Languages
 "---------------------------
@@ -67,12 +63,6 @@ call plug#end()
 "------------------------------------------------------------------------------
 " plugins configuration
 "------------------------------------------------------------------------------
-"
-" gruvbox theme
-"
-let g:gruvbox_contrast_dark = 'soft'
-let g:gruvbox_improved_warnings = 1
-let g:gruvbox_invert_signs = 1
 "
 " airline
 "
@@ -183,54 +173,59 @@ let g:mkdp_browser = 'surf'
 let g:mkdp_page_title = '「${name}」'
 let g:mkdp_filetypes = ['markdown']
 "
-" LSP
+" coc
 "
-lua << EOF
---
---
--- lsp config
-require'lspconfig'.pyright.setup{}
-require'lspconfig'.gopls.setup{}
-require'lspconfig'.sumneko_lua.setup{}
-require'lspconfig'.bashls.setup{}
---
-EOF
+" Use tab for trigger completion with characters ahead and navigate.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
 "
-" Completion
+" Use `[g` and `]g` to navigate diagnostics
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
 "
-set completeopt=menuone,noselect
-let g:compe = {}
-let g:compe.enabled = v:true
-let g:compe.autocomplete = v:true
-let g:compe.debug = v:false
-let g:compe.min_length = 1
-let g:compe.preselect = 'enable'
-let g:compe.throttle_time = 80
-let g:compe.source_timeout = 200
-let g:compe.incomplete_delay = 400
-let g:compe.max_abbr_width = 100
-let g:compe.max_kind_width = 100
-let g:compe.max_menu_width = 100
-let g:compe.documentation = v:true
-let g:compe.source = {}
-let g:compe.source.path = v:true
-let g:compe.source.buffer = v:true
-let g:compe.source.calc = v:true
-let g:compe.source.nvim_lsp = v:true
-let g:compe.source.nvim_lua = v:true
-let g:compe.source.vsnip = v:true
-highlight link CompeDocumentation NormalFloat
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+"
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
+"
+" coc snippets
+"
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+"
+let g:coc_snippet_next = '<tab>'
 
 "------------------------------------------------------------------------------
 " interface
 "------------------------------------------------------------------------------
 set termguicolors       " true colors
 set hidden              " keep multiple buffers open.
+set encoding=utf-8
 set cmdheight=2         " Give more space for displaying messages
 set updatetime=300
-set signcolumn=auto:2
+set signcolumn=number
 set formatoptions+=l    " make settings permanent.
-set shortmess=atIc      " Don’t show the intro message when starting Vim
+set shortmess+=atIc     " Don’t show the intro message when starting Vim
 set nostartofline       " Don’t reset cursor start of line when moving around.
 set number
 set relativenumber
@@ -256,8 +251,8 @@ set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
 colorscheme dracula
-nnoremap <F3> :bnext<CR>
 " move to next and previous buffer
+nnoremap <F3> :bnext<CR>
 
 "------------------------------------------------------------------------------
 " tabs
@@ -274,8 +269,8 @@ set smartcase         " use case if any caps used
 set incsearch         " show match as search proceeds
 set hlsearch is       " highlight matches
 set inccommand=split  " Show interactive preview of substitute changes
-nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 " undo hlsearch
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
 "------------------------------------------------------------------------------
 " indention
@@ -289,14 +284,15 @@ set shiftwidth=2        " The amount to block indent when using
 set softtabstop=2       " Causes backspace to delete 2 spaces converted tab
 set shiftround          " Round the indentation to earest multiple shiftwidth.
 set backspace=eol,start,indent  " Make sure backspace works in insert mode
-nmap <F7> mzgg=G`z
+set pastetoggle=<F5>    " Turn off auto-indent when pasting text
 " auto indent the whole file and keep your cursor in the last position
+nmap <F7> mzgg=G`z
 
 "------------------------------------------------------------------------------
 " folding
 "------------------------------------------------------------------------------
 set foldenable          " enable fold
-set foldcolumn=4        " show column indent
+set foldcolumn=2        " show column indent
 set foldmethod=indent   " indentation method
 
 "------------------------------------------------------------------------------
@@ -327,5 +323,4 @@ inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
 "
 " Copying to X11 primary selection with the mouse
 vnoremap <LeftRelease> "*ygv
-
 

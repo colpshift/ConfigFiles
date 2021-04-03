@@ -2919,3 +2919,94 @@ Apr 01 07:04 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de 
 XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
 Apr 01 07:20 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
 Apr 01 07:20 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 01 17:24 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 01 17:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 01 17:29 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 01 17:32 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 01 17:34 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 01 17:34 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 02 01:06 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 10:20 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 10:20 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 02 13:26 : player: played "Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:28 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:28 : avahi: Service 'Music Player @ colpsarco' successfully established.
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:29 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:32 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:32 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:33 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:33 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:33 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:33 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:38 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:38 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:45 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:45 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:45 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:45 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:45 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:45 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:45 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:45 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:45 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:45 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:45 : player: played "50 Cent - In Da Club.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:45 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:45 : exception: All audio outputs are disabled
+Apr 02 13:45 : player: problems opening audio device while playing "Banks - Beggin For Thread.mp3"
+Apr 02 13:45 : exception: All audio outputs are disabled
+Apr 02 13:47 : exception: All audio outputs are disabled
+Apr 02 13:47 : exception: All audio outputs are disabled
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:47 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:47 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:47 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:47 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:47 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:47 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:47 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:47 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:47 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:48 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 13:49 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 13:49 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 02 14:00 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 02 14:00 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused

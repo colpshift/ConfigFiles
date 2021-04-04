@@ -163,9 +163,20 @@ let g:fzf_colors = {
       \ 'spinner': ['fg', 'Label'],
       \ 'header':  ['fg', 'Comment'] }
 "
-" window preview
+" fzf window preview ProjectFiles
+"
+command! -bang -nargs=? -complete=dir ProjectFiles
+    \ call fzf#vim#files('~/Projects', fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
+"
+" fzf window preview Files
+"
 command! -bang -nargs=? -complete=dir Files
-      \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', '~/.vim/plugged/fzf.vim/bin/preview.sh {}']}, <bang>0)
+    \ call fzf#vim#files('~', fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
+"
+" fzf hide statusline
+"
+autocmd! FileType fzf set laststatus=0 noshowmode noruler
+  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 "
 " markdown preview
 "

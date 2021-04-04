@@ -126,19 +126,6 @@ autoload -Uz compinit promptinit
 compinit -d
 promptinit
 #
-# Prompt spaceship
-# https://github.com/denysdovhan/spaceship-prompt
-# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
-# ZSH_THEME="spaceship"
-# SPACESHIP_TIME_SHOW=true
-# SPACESHIP_TIME_12HR=false
-# SPACESHIP_USER_SHOW=true
-# SPACESHIP_HOST_SHOW=true
-# SPACESHIP_JOBS_SHOW=false
-# SPACESHIP_EXIT_CODE_SHOW=true
-# SPACESHIP_VI_MODE_SHOW=false
-# source /usr/local/lib/node_modules/spaceship-prompt/spaceship.zsh
-#
 # Prompt starship
 eval "$(starship init zsh)"
 
@@ -161,8 +148,6 @@ source $HOME/Projects/src/forgit/forgit.plugin.zsh
 ################
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
-
-# completion
+# 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-export PATH=$HOME/.config/nvcode/utils/bin:$PATH

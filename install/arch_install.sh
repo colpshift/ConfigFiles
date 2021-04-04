@@ -395,7 +395,6 @@ paru -S gimp \
     rmlint \
     ncdu \
     shellcheck \
-    fzf \
     rsync \
     bind-tools \
     neofetch \
@@ -408,14 +407,10 @@ paru -S gimp \
     mate-calc \
     bashtop \
     brave \
-        Checker Plus for gmail
-        Checker Plus for google calendar
         bitwarden
         Print edit we
-        feedbro
-        cvim
-        grammarly
-        hoxx-vpn-proxy
+        vimium
+        joplin
     simple-scan \
     hplip \
     todoist-appimage \
@@ -427,11 +422,15 @@ paru -S gimp \
         stremio \
         youtube to mp3 \
 
+# fzf
+paru -S fzf \
+    the_silver_searcher           # ag
+
 # rust apps replacements
 cargo install du-dust             # du
-paru -i bat                        # cat
-paru -i ripgrep                    # grep
-paru -i fd / apt fd-find           # find
+paru -S bat                       # cat
+paru -S ripgrep                   # grep
+paru -S fd / apt fd-find          # find
 https://the.exa.website/ - exa    # ls
 https://github.com/dalance/procs  # ps
 

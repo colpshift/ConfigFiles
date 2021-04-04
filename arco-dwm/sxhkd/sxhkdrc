@@ -18,13 +18,13 @@ super + e
 super + w
     brave
 
-#arcolinux-logout
+#arcolinux-lorgoutp
 super + x
     arcolinux-logout
 
 #Rofi theme selector
 super + z
-    rofi -show drun 
+    rofi -show drun
 
 #Volume Control
 super + v
@@ -60,13 +60,13 @@ super + shift + s
 
 #System Monitoring
 super + shift + m
-    termite -e glances 
+    alacritty -e glances
 
 #Rss Feed Reader
 super + shift + n
     alacritty -e newsboat
 
-#Browser 
+#Browser
 super + shift + w
     firefox
 
@@ -96,16 +96,15 @@ ctrl + alt + l
 
 # mute/unmute the volume
 alt + m
-    pactl set-sink-mute 0 toggle
+    pamixer -t
 
 # lower the volume:
-alt + underscore
-    sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%"
+alt + hyphen
+    pamixer -d 5
 
 # raise the volume
-alt + plus
-    sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%"
-
+alt + equal
+    pamixer -i 5
 
 #################################################################
 # CONTROL + SHIFT KEYS
@@ -121,15 +120,15 @@ alt + plus
 
 #Raises volume
 XF86AudioRaiseVolume
-    amixer set Master 10%+
+    pamixer -i 5
 
 #Lowers volume
 XF86AudioLowerVolume
-    amixer set Master 10%-
+    pamixer -d 5
 
 #Mute
 XF86AudioMute
-    amixer -D pulse set Master 1+ toggle
+    pamixer -t
 
 #Playerctl works for Pragha, Spotify and others
 #Delete the line for playerctl if you want to use mpc

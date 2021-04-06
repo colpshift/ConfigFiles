@@ -7,7 +7,7 @@
     background-color:      Black;
     border-color:          White;
     text-color:           White;
-    font:            "Times New Roman 12";
+    font:            "FiraCode Nerd Font Mono 9";
 }
 
 #window {

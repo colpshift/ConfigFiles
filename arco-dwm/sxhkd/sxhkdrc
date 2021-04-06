@@ -52,7 +52,7 @@ super + f
 
 #dmenu
 super + shift + d
-    dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'JetBrainsMono Nerd Font Mono:style=Bold Italic:pixelsize=10'
+    dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'FiraCode Nerd Font Mono:pixelsize=10'
 
 #reload sxhkd:
 super + shift + s
@@ -60,11 +60,11 @@ super + shift + s
 
 #System Monitoring
 super + shift + m
-    alacritty -e glances
+  alacritty -e glances
 
 #Rss Feed Reader
 super + shift + n
-    alacritty -e newsboat
+  alacritty -e newsboat
 
 #Browser
 super + shift + w

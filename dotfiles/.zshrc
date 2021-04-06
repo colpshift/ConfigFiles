@@ -113,10 +113,10 @@ alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias grub_install='grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck'
-alias parui='sh $HOME/.scripts/fzf_pkg_aur.sh'
+alias parui='sh $HOME/.scripts/fzf_pkg_paru_install.sh'
+alias parur='sh $HOME/.scripts/fzf_pkg_paru_remove.sh'
 alias pacman='sudo pacman --color=always'
 alias pacu='pacman -Syu'
-alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
 alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
 alias pacman-arch_mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist-arch'
 
@@ -146,8 +146,6 @@ source $HOME/Projects/src/forgit/forgit.plugin.zsh
 
 # fzf completion
 ################
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
-# 
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

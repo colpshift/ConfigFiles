@@ -3022,3 +3022,43 @@ Apr 03 13:55 : player: played "Banks - Gemini Feed.mp3"
 XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
 Apr 03 14:00 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
 Apr 03 14:00 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 04 00:06 : player: played "Banks - Gemini Feed.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 04 09:24 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 04 09:24 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 04 11:09 : player: played "Banks - Gemini Feed.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 04 11:14 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 04 11:14 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 04 13:44 : player: played "Banks - Gemini Feed.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 04 13:47 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 04 13:47 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 04 17:13 : player: played "Banks - Gemini Feed.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 04 17:58 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 04 17:58 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 04 18:01 : player: played "Banks - Gemini Feed.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 04 18:02 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 04 18:02 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 04 21:07 : player: played "Banks - Gemini Feed.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 05 08:53 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 05 08:53 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 05 09:58 : player: played "Banks - Gemini Feed.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 05 10:02 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 05 10:02 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 06 01:34 : player: played "Banks - Gemini Feed.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 06 08:56 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 06 08:56 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 06 13:09 : player: played "Banks - Gemini Feed.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 06 13:12 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 06 13:12 : avahi: Service 'Music Player @ colpsarco' successfully established.
+Apr 06 13:23 : player: played "Banks - Gemini Feed.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+Apr 06 13:30 : exception: Failed to enable output "pulse mpd output" (pulse); pa_context_connect() has failed: Connection refused
+Apr 06 13:30 : avahi: Service 'Music Player @ colpsarco' successfully established.

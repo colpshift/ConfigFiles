@@ -1,0 +1,12 @@
+configuration {
+	modi: "window,drun,run,ssh";
+	font: "FiraCode Nerd Font Mono 9";
+	bw: 1;
+	show-icons: true;
+	terminal: "alacritty";
+	cycle: true;
+	sidebar-mode: true;
+	theme: "/home/colps/.config/rofi/themes/dmenu.rasi";
+	kb-mode-next: "Alt+l";
+	kb-mode-previous: "Alt+h";
+}

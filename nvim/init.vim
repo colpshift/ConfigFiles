@@ -53,7 +53,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " Snippets
 "---------------------------
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 " markdown preview
 Plug 'rust-lang/rust.vim'
 " Languages

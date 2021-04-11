@@ -18,10 +18,10 @@ timedatectl set-ntp true
 ## create partitions EFI with GPT - rename PARTLABEL
 gdisk /edv/sda
 
-/mnt/boot     /dev/sda1	ef00	EFI System Partition  /boot/efi # 500 MB
+/mnt/boot     /dev/sda1	ef00	EFI System Partition  /boot/efi # 300 MB
 /mnt          /dev/sda2	8304 	arch_root             /         # 70 GB
 swap	      /dev/sda3	8200	arch_swap	                # 4 GB
-/mnt/home     /dev/sda4	8302	arch_home             /home     # remainder
+/mnt/home     /dev/sda4	8302	arch_home             /home     # remainning
 
 ## format partition
 mkfs.fat -F32	    /dev/sda1 # efi
@@ -428,6 +428,7 @@ paru -S fzf \
 
 # rust apps replacements
 cargo install du-dust             # du
+paru -S gping                     # ping
 paru -S bat                       # cat
 paru -S ripgrep                   # grep
 paru -S fd / apt fd-find          # find

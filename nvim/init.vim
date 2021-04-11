@@ -234,7 +234,7 @@ set hidden              " keep multiple buffers open.
 set encoding=utf-8
 set cmdheight=2         " Give more space for displaying messages
 set updatetime=300
-set signcolumn=number
+set signcolumn=auto
 set formatoptions+=l    " make settings permanent.
 set shortmess+=atIc     " Don’t show the intro message when starting Vim
 set nostartofline       " Don’t reset cursor start of line when moving around.

@@ -16,7 +16,7 @@ super + e
 
 #Browser
 super + w
-    brave
+    firefox
 
 #arcolinux-lorgoutp
 super + x
@@ -60,15 +60,15 @@ super + shift + s
 
 #System Monitoring
 super + shift + m
-  alacritty -e glances
+    alacritty -e glances
 
 #Rss Feed Reader
 super + shift + n
-  alacritty -e newsboat
+    alacritty -e newsboat
 
 #Browser
 super + shift + w
-    firefox
+    brave
 
 #################################################################
 # CONTROL + ALT KEYS

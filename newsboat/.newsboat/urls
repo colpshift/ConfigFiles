@@ -14,15 +14,14 @@ http://feeds.feedburner.com/gbhackers                                           
 https://archlinux.org/feeds/news/                                               "Arch Linux"
 https://arcolinuxforum.com/app.php/feed                                         "ArcoLinux"
 ---Dev---
+https://github.com/colpshift.private.atom?token=AJJUXHQBPLVMT65WRVUHN5F6PHLEE   "github"
+https://gitlab.com/colpshift.atom?feed_token=gFkiNJPVagWFkBexBrjx               "gitlab"
 https://suckless.org/atom.xml                                                   "suckless"
 https://hackernoon.com/feed                                                     "Hackernoon"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC-T8W79DN6PBnzomelvqJYw    "James Q Quick"
 https://www.youtube.com/feeds/videos.xml?channel_id=UClb90NQQcskPUGDIXsQEz5Q    "Dev Ed"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCFuIUoyHB12qpYa8Jpxoxow    "Código Fonte TV"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCHIfHMZtqccRSw0JvV3DQgw    "Manual Dev"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCS97tchJDq17Qms3cux8wcA    "ChrisAtMachine"
-https://github.com/colpshift.private.atom?token=AJJUXHXBTXDS3UC5QHYAB2F6OYZBI   "github"
-https://gitlab.com/colpshift.atom?feed_token=gFkiNJPVagWFkBexBrjx               "gitlab"
 ---Linux---
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg    "Distrotube"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA    "Brodie"

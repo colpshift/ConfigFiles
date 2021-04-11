@@ -1,10 +1,10 @@
 #!/bin/sh
 #
 # File: .zshrc
-# Path: $HOME
+# Path: ~/
 # Tags: zsh shell
 # Description: zsh config
-# Last update: 25/03/2021 00:41
+# Last update: 07/04/2021 10:26
 # Author: Colpshift
 #
 
@@ -75,7 +75,7 @@ source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 #############
 alias ps='procs'
 alias exa='exa --header --long --group --git'
-alias ll='ls'
+alias ll='exa'
 alias ls='ls -lh --color=auto --group-directories-first'
 alias la='ls -ah'  # show hidden files and folders
 alias lx='ls -BXh' # sort by extension

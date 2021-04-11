@@ -51,13 +51,10 @@ unset MANPATH
 
 ### defaults apps
 export EDITOR=nvim
-export BROWSER=brave
+export BROWSER=firefox
 export MANPAGER="sh -c 'col -bx | bat -l man -p'" # using bat to read man
 #export MANPAGER="nvim -c 'set ft=man' -" # using neovim to read man
 export MANWIDTH=999
 export TERM=alacritty
 export XDG_RUNTIME_DIR=/run/user/$UID
-### startup applications
-sh /home/colps/.scrits/autocutsel_start.sh
-
 

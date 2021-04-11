@@ -42,9 +42,10 @@ static const Rule rules[] = {
 	 *  use tags mask to point an application to a specific workspace
 	 */
 	/* class                        instance  title     tags mask   isfloating   monitor */
-	{ "firefox",                    NULL,     NULL,     1 << 8,     0,           -1 },
         { "Skype",                      NULL,     NULL,     1 << 8,     0,           -1 },
 	{ "Microsoft Teams - Preview",  NULL,     NULL,     1 << 8,     0,           -1 },
+        { "Signal",                     NULL,     NULL,     1 << 8,     0,           -1 },
+        { "Rambox",                     NULL,     NULL,     1 << 8,     0,           -1 },
         { "QML Timer",                  NULL,     NULL,     1 << 7,     0,           -1 },
 	{ "Galculator",                 NULL,     NULL,     0,          1,           -1 },
 	{ "qtpad",                      NULL,     NULL,     0,          1,           -1 },

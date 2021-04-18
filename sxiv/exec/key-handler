@@ -19,8 +19,8 @@ do
     "C-c")
       echo "$file" | xclip -selection clipboard ;;
     "C-w")
-      # feh --bg-fill "$file" "$file" ;;
-      feh --bg-scale "$file" ;;
+      feh --bg-fill "$file" "$file" ;;
+      #feh --bg-scale "$file" ;;
     "C-g")
       gimp "$file" ;;
   esac

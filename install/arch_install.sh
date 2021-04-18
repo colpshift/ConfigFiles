@@ -414,8 +414,7 @@ paru -S gimp \
     simple-scan \
     hplip \
     todoist-appimage \
-    paru -S electronplayer \
-        skype \
+    paru -S skype \
         mindmaster \
         masterpdfeditor-free \
         telegram-desktop \
@@ -546,3 +545,4 @@ unistall apport
 
 # virt-manager
 # https://virt-manager.org/
+

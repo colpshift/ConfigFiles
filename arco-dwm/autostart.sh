@@ -9,6 +9,7 @@ function run {
 # services and config
 run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
 run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+sh ~/.screenlayout/edp1-hdmi1.sh
 run "numlockx on"     # turn on numlock
 run "xset s off"      # Stop screen from going blank
 run "xset -dpms"      # Stop screen from going blank
@@ -18,8 +19,10 @@ sh ~/.scripts/sxhkd_start.sh
 sh ~/.scripts/picom_start.sh 
 sh ~/.scripts/xbanish_start.sh
 sh ~/.scripts/autocutsel_start.sh
+sh ~/.scripts/mpd_start.sh
 ~/.fehbg &
 # apps
+sh ~/.scripts/joplin_start.sh
 run "volumeicon" \
   && run "qtpad" \
   && run "joplin-desktop" \

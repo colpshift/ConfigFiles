@@ -15,6 +15,14 @@ Mod1-Shift-[1..n]
 Mod1-Shift-0
 
 # windows
+# split horizontal
+Mod1-i
+
+# windows
+# split vertical
+Mod1-d
+
+# windows
 # close windows
 Mod1-Shift-q
 

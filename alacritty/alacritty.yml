@@ -8,14 +8,6 @@ window:
     columns: 0
     lines: 0
 
-  #position:
-  #  x: 0
-  #  y: 0
-
-  #padding:
-  #  x: 0
-  #  y: 0
-
   dynamic_padding: false
 
   decorations: full
@@ -59,10 +51,6 @@ font:
     x: 0
     y: 0
 
-  #glyph_offset:
-  #  x: 0
-  #  y: 0
-
 draw_bold_text_with_bright_colors: true
 
 # Colors (Dracula)
@@ -71,7 +59,7 @@ colors:
   primary:
     background: '0x282a36'
     foreground: '0xf8f8f2'
-
+ 
   # Normal colors
   normal:
     black:   '0x000000'
@@ -82,7 +70,7 @@ colors:
     magenta: '0xff79c6'
     cyan:    '0x8be9fd'
     white:   '0xbbbbbb'
-
+ 
   # Bright colors
   bright:
     black:   '0x555555'
@@ -98,30 +86,19 @@ bell:
   animation: EaseOutExpo
   duration: 3
   color: "#ffffff"
-  #command: None
 
-background_opacity: 0.75
+background_opacity: 0.85
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
   save_to_clipboard: true
 
-#dynamic_title: true
-
 cursor:
   style: Beam
-  vi_mode_style: Beam
   unfocused_hollow: true
   thickness: 0.15
 
 live_config_reload: true
-
-#shell:
-#  program: /bin/bash
-#  args:
-#    - --login
-
-#working_directory: ~/
 
 mouse:
   double_click: { threshold: 300 }
@@ -132,8 +109,6 @@ mouse:
     launcher:
       program: xdg-open
       args: []
-
-    #modifiers: None
 
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
@@ -147,3 +122,4 @@ key_bindings:
   - { key: PageDown, mods: Shift, mode: ~Alt, action: ScrollPageDown }
   - { key: Home, mods: Shift, mode: ~Alt, action: ScrollToTop }
   - { key: End, mods: Shift, mode: ~Alt, action: ScrollToBottom }
+

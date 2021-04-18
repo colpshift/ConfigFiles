@@ -302,6 +302,12 @@ nmap <F7> mzgg=G`z
 "------------------------------------------------------------------------------
 " folding
 "------------------------------------------------------------------------------
+" To fold the next 12 lines,        run zf12j
+" To fold the next paragraph,       run zf}
+" To fold to the end of the file,   run zfG
+" To open all folds,                run zR
+" To close all folds,               run zM
+"
 set foldenable          " enable fold
 set foldcolumn=2        " show column indent
 set foldmethod=indent   " indentation method

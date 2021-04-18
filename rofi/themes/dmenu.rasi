@@ -7,7 +7,7 @@
     background-color:      Black;
     border-color:          White;
     text-color:           White;
-    font:            "FiraCode Nerd Font Mono 9";
+    font:            "FiraCode Nerd Font 9";
 }
 
 #window {
@@ -40,3 +40,4 @@
 #element selected {
     background-color: SteelBlue;
 }
+

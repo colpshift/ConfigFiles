@@ -22,7 +22,6 @@ sh ~/.scripts/autocutsel_start.sh
 sh ~/.scripts/mpd_start.sh
 ~/.fehbg &
 # apps
-sh ~/.scripts/joplin_start.sh
 run "volumeicon" \
   && run "qtpad" \
   && run "joplin-desktop" \

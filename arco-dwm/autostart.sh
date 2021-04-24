@@ -22,8 +22,7 @@ sh ~/.scripts/autocutsel_start.sh
 sh ~/.scripts/mpd_start.sh
 ~/.fehbg &
 # apps
-run "volumeicon" \
-  && run "qtpad" \
+run "qtpad" \
   && run "joplin-desktop" \
   && run "rambox" \
   && run "alacritty"

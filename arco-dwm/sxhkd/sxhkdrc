@@ -68,7 +68,7 @@ super + shift + n
 
 # Work Browser
 super + shift + w
- google-chrome-stable
+ brave
     
 #################################################################
 # CONTROL + ALT KEYS

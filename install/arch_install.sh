@@ -109,7 +109,7 @@ passwd
         options root=PARTLABEL=arch_root rw
 
 # GRUB
-    pacman -S grub efibootmgr dosfstools os-prober mtools
+    paru -S grub efibootmgr dosfstools os-prober mtools
     grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
     grub-mkconfig -o /boot/grub/grub.cfg
 
@@ -131,7 +131,7 @@ exit
 # post-installation
 #------------------------------------------------------------------------------
 ### grant root privileges
-pacman -S sudo
+paru -S sudo
   visudo
   # add line to /etc/sudoers
   wheel ALL=(ALL) ALL
@@ -150,7 +150,7 @@ ln -sfT dash /usr/bin/sh
 configure dash.hook on /etc/pacman.d/hooks
 
 ### configure pacman
-pacman -S reflector \
+paru -S reflector \
   pacman-contrib \
   reflector -f 10 --save /etc/pacman.d/mirrorlist
   # configure hooks
@@ -159,7 +159,7 @@ pacman -S reflector \
 
 ### Configure AUR - Arch User Repository
 ### paru replace paru
-pacman -S --needed git wget yajl
+paru -S --needed git wget yajl
   git clone https://aur.archlinux.org/package-query.git
   cd package-query/
   makepkg -si
@@ -212,36 +212,35 @@ paru -S base-devel \
 
 ### editor
 #
-# vim
-pacman - S neovim \
-    vplug \
+# neovim
+nvim-nightly-appimage
+vplug
 #
 # vscode
-paru -S Visual Studio Code Insider
+paru -S visual-studio-code-bin
 
 ### terminal
 #
 # urxvt
-pacman -S  rxvt-unicode \
+paru -S  rxvt-unicode \
     urxvt-perls \
     urxvt-fullscreen \
     autocutsel \
     paru -S urxvt-resize-font-git \
     #
     vim $HOME/.Xresources
-
 #
-# kitty
-pacman -S kitty
+# alacritty
+git clone git@github.com:alacritty/alacritty.git
 
 ### touchpad
-pacman -S libinput \
+paru -S libinput \
     xf86-input-libinput \
     #
     sudo gpasswd -a colps input
 
 ### x
-pacman -S xorg \
+paru -S xorg \
     xclip \
     xrandr \
     arandr \
@@ -254,19 +253,10 @@ pacman -S xorg \
     papirus-icon-theme \
     flameshot \
 
-### wm
-pacman -S i3-gaps \
-    i3lock \
-    i3status\
-    dmenu \
-    xss-lock \
-
-pacman -S bspwm
-
 ### login manager
 #
 # lightdm
-pacman -S lightdm \
+paru -S lightdm \
     lightdm-gtk-greeter \
     lightdm-settings \
     # enable
@@ -279,7 +269,7 @@ pacman -S lightdm \
     vi /etc/lightdm/lightdm-gtk-greeter.conf
 #
 # Slim
-pacman -S slim \
+paru -S slim \
     # enable
     systemctl enable slim.service
     #
@@ -305,14 +295,14 @@ paru -S \
 
 # Notify
 cp rg.freedesktop.Notifications.service /usr/share/dbus-1/services
-    pacman -S dunst /
+    paru -S dunst /
     notification-daemon /
     # enable
     nvim $HOME/.config/dunst
 
 ### ranger
-pacman -S ranger \
-    atool \
+git clone git@github.com:ranger/ranger.git
+paru -S atool \
     w3m \
     highlight \
     libcaca \
@@ -345,7 +335,7 @@ paru -S neomutt \
     notmuch \
     notmuch-vim \
     urlview \
-pacman -S postfix
+paru -S postfix
 
 # calcurse
 paru -S calcurse
@@ -359,13 +349,13 @@ paru -S mpd \
     audacious
 
 # crontab
-pacman -S cronie
+paru -S cronie
     crontab -e
     include "MAILTO=marcos.colpani@gmail.com"
     systemctl enable cronie.service
 
 # bluetooth
-pacman -S bluez \
+paru -S bluez \
     bluez-utils \
     bluez-tools \
     bluez-plugins \
@@ -374,7 +364,7 @@ pacman -S bluez \
     sudo usermod -a -G lp colps
 
 # audio
-pacman -S pulseaudio \
+paru -S pulseaudio \
     pulseaudio-alsa \
     pavucontrol \
 
@@ -383,7 +373,7 @@ Configure script $HOME/.scripts/brightness.sh
 Configure mapping on i3 config file.
 
 # power management
-pacman -S tlp
+paru -S tlp
     paru -S tlpui-git
     systemctl enable tlp.service
     systemctl enable tlp-sleep.service.
@@ -405,21 +395,22 @@ paru -S gimp \
     xarchiver \
     pcmanfm \
     mate-calc \
-    bashtop \
     brave \
         bitwarden
         Print edit we
         vimium
-        joplin
     simple-scan \
     hplip \
-    todoist-appimage \
-    paru -S skype \
-        mindmaster \
-        masterpdfeditor-free \
-        telegram-desktop \
-        stremio \
-        youtube to mp3 \
+    skype \
+    xmind \
+    masterpdfeditor-free \
+    telegram-desktop \
+    stremio \
+    youtube to mp3 \
+appimages
+    joplin-appimage
+    todoist-appimage
+    firefox-nightly-appimage
 
 # fzf
 paru -S fzf \
@@ -439,7 +430,7 @@ https://starship.rs/                # Starship Prompt
 https://github.com/XAMPPRocky/tokei # languages statistics
 
 # Samba
-pacman -S samba \
+paru -S samba \
     smbclient
     systemctl enable smb nmb winbind
 
@@ -477,13 +468,13 @@ paru -S openssh \
     vm Tails
 
 # firewall
-pacman -S ufw
+paru -S ufw
     # Regras
     Defaults +
     [Stremio]
 
 # dnsmasq
-pacman -S dnsmasq
+paru -S dnsmasq
     sudo systemctl enable dnsmasq.service
     sudo systemctl start dnsmasq.service
     configure /etc/dnsmasq.conf

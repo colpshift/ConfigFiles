@@ -129,19 +129,21 @@ promptinit
 # Prompt starship
 eval "$(starship init zsh)"
 
-# ruby
-######
+### ruby
+########
 eval "$(rbenv init -)"
 
-# fasd
-# ####
+### fasd
+########
 eval "$(fasd --init auto)"
 
-# pkgfile
+### pkgfile
+###########
 # command_not_found_handler
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
-# forgit
+### forgit
+##########
 source $HOME/Projects/src/forgit/forgit.plugin.zsh
 
 # fzf completion

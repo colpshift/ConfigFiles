@@ -336,10 +336,10 @@ set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
 colorscheme palenight
-
+let g:palenight_terminal_italics=1
 " move to next and previous buffer
 nnoremap <F3> :bnext<CR>
-let g:palenight_terminal_italics=1
+
 "------------------------------------------------------------------------------
 " tabs
 "------------------------------------------------------------------------------

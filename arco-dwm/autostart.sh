@@ -23,9 +23,9 @@ sh ~/.scripts/mpd_start.sh
 ~/.fehbg &
 # apps
 run "qtpad" \
-  && run "joplin-desktop" \
   && run "rambox" \
-  && run "alacritty"
+  && run "joplin-desktop" \
+  && run "alacritty" \
 # conky bar
 sh ~/.scripts/conky_start.sh
 

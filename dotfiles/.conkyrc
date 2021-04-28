@@ -7,6 +7,6 @@ total_run_times = 0,
 use_spacer = 'none',
 };
 conky.text = [[
-${execi 900 sh ~/.scripts/dwm_pkg-updates_check.sh}  $kernel  $uptime  $cpu%  $freq_g ${acpitemp}c $memperc%($mem) ${execi 30 sh ~/.scripts/dwm_internet_check.sh}  ${downspeed enp2s0}  ${upspeed enp2s0} ${execi 30 sh ~/.scripts/dwm_battery.sh}%  ${execi 30 sh ~/.scripts/dwm_backlight.sh}%  ${execi 300 python ~/.scripts/gmail.py}  ${time %a %d-%m-%y %R} 
+${execi 900 sh ~/.scripts/dwm_pkg-updates_check.sh}   $kernel  $uptime  $cpu%   $freq_g  ${acpitemp}c  $memperc%($mem) ${execi 30 sh ~/.scripts/dwm_internet_check.sh}  ${downspeed enp2s0}  ${upspeed enp2s0} ${execi 30 sh ~/.scripts/dwm_battery.sh}%  ${execi 30 sh ~/.scripts/dwm_backlight.sh}%   ${execi 300 python ~/.scripts/gmail.py}  ${time %a %d-%m-%y %R} 
 ]];
 

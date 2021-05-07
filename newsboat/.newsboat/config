@@ -15,7 +15,7 @@ keep-articles-days 30
 cache-file "/home/colps/.newsboat/cache.db"
 cookie-cache "/home/colps/.newsboat/cookies.txt"
 
-browser "devour.sh surf"
+browser "firefox"
 macro m set browser "devour.sh mpv %u" ; open-in-browser ;
 
 notify-always yes

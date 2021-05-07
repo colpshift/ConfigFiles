@@ -17,17 +17,20 @@ vicmd_symbol = "[ </> ](bold fg:3)"
 format = "[$duration ](fg:3)"
 
 [directory]
-truncation_length = 8
+format = '[  $path ]($style)($read_only_style)'
+style = "bold cyan"
+truncation_length = 12
 truncation_symbol = "…/"
+read_only_style = "  "
 
 [time]
 disabled = true
-format = '[\[$time\]](fg:3) '
+format = ' [\[$time\]](fg:3) '
 time_format = "%T"
 
 [battery]
-charging_symbol = "⚡️"
-discharging_symbol = " "
+charging_symbol = " ⚡️"
+discharging_symbol = "   "
 
 [[battery.display]]
 threshold = 30

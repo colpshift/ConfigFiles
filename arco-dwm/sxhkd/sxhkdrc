@@ -60,7 +60,7 @@ super + shift + s
 
 #System Monitoring
 super + shift + m
-    alacritty -e glances
+    alacritty -e bashtop
 
 #Rss Feed Reader
 super + shift + n
@@ -68,7 +68,7 @@ super + shift + n
 
 # Work Browser
 super + shift + w
- brave
+    brave
     
 #################################################################
 # CONTROL + ALT KEYS

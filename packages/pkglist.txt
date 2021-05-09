@@ -25,7 +25,6 @@ arcolinux-bin-git
 arcolinux-config-all-desktops-git
 arcolinux-dconf-all-desktops-git
 arcolinux-dwm-git
-arcolinux-dwm-slstatus-git
 arcolinux-fonts-git
 arcolinux-grub-theme-vimix-git
 arcolinux-hblock-git
@@ -38,7 +37,6 @@ arcolinux-logout-git
 arcolinux-logout-themes-git
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
-arcolinux-nitrogen-git
 arcolinux-pipemenus-git
 arcolinux-qt5-git
 arcolinux-rofi-git
@@ -50,11 +48,9 @@ arcolinux-tweak-tool-git
 arcolinux-wallpapers-git
 arcolinux-welcome-app-git
 arcolinux-xfce-git
-arcolinux-zsh-git
 asciidoctor
 asciinema
 atool
-audacious
 autoconf
 autocutsel
 automake
@@ -69,7 +65,6 @@ bind
 binutils
 bison
 bleachbit
-blender
 bluez
 bluez-libs
 bluez-utils
@@ -142,7 +137,6 @@ gdb
 gettext
 ghc
 ghostscript
-gimp
 git
 gksu
 glxinfo
@@ -192,7 +186,6 @@ hw-probe
 hwinfo
 imagemagick
 inetutils
-inkscape
 intel-ucode
 intltool
 inxi
@@ -200,7 +193,7 @@ ipw2100-fw
 ipw2200-fw
 irssi
 iw
-jdk
+jdk-openjdk
 jdtls
 jfsutils
 jq
@@ -279,6 +272,7 @@ nodejs
 nomacs
 notification-daemon
 noto-fonts
+noto-fonts-emoji
 npm
 nss-mdns
 ntfs-3g
@@ -321,6 +315,7 @@ polkit
 polkit-gnome
 poppler-glib
 poppler-qt5
+powerline-fonts
 ppp
 pptpclient
 procs
@@ -377,10 +372,9 @@ smartmontools
 speedtest-cli
 splix
 squashfs-tools
+starship
 stfl
-stremio-beta
 sudo
-surf-git
 surfn-icons-git
 sxhkd
 sxiv
@@ -429,6 +423,7 @@ volctl
 vpnc
 vulkan-intel
 w3m
+warsaw
 wd719x-firmware
 webkit2gtk
 wget

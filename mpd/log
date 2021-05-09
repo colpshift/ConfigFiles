@@ -3503,3 +3503,31 @@ May 08 21:39 : player: played "Beauty Freak - My Beauty My Soul Edit.mp3"
 XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
 May 08 21:40 : exception: Failed to enable output "pulse audio mpd" (pulse); pa_context_connect() has failed: Connection refused
 May 08 21:40 : avahi: Service 'Music Player @ colpsarco' successfully established.
+May 09 02:01 : player: played "Beauty Freak - My Beauty My Soul Edit.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+May 09 09:11 : exception: Failed to enable output "pulse audio mpd" (pulse); pa_context_connect() has failed: Connection refused
+May 09 09:11 : avahi: Service 'Music Player @ colpsarco' successfully established.
+May 09 10:11 : player: played "Beauty Freak - My Beauty My Soul Edit.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+May 09 10:17 : exception: Failed to enable output "pulse audio mpd" (pulse); pa_context_connect() has failed: Connection refused
+May 09 10:17 : avahi: Service 'Music Player @ colpsarco' successfully established.
+May 09 10:43 : player: played "Beauty Freak - My Beauty My Soul Edit.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+May 09 10:45 : exception: Failed to enable output "pulse audio mpd" (pulse); pa_context_connect() has failed: Connection refused
+May 09 10:45 : avahi: Service 'Music Player @ colpsarco' successfully established.
+May 09 11:26 : player: played "Beauty Freak - My Beauty My Soul Edit.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+May 09 11:27 : exception: Failed to enable output "pulse audio mpd" (pulse); pa_context_connect() has failed: Connection refused
+May 09 11:27 : avahi: Service 'Music Player @ colpsarco' successfully established.
+May 09 15:29 : player: played "Beauty Freak - My Beauty My Soul Edit.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+May 09 15:31 : exception: Failed to enable output "pulse audio mpd" (pulse); pa_context_connect() has failed: Connection refused
+May 09 15:31 : avahi: Service 'Music Player @ colpsarco' successfully established.
+May 09 15:33 : player: played "Beauty Freak - My Beauty My Soul Edit.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+May 09 17:49 : exception: Failed to enable output "pulse audio mpd" (pulse); pa_context_connect() has failed: Connection refused
+May 09 17:49 : avahi: Service 'Music Player @ colpsarco' successfully established.
+May 09 18:46 : player: played "Beauty Freak - My Beauty My Soul Edit.mp3"
+XDG_RUNTIME_DIR (/run/user/) is not owned by us (uid 1000), but by uid 0! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+May 09 18:48 : exception: Failed to enable output "pulse audio mpd" (pulse); pa_context_connect() has failed: Connection refused
+May 09 18:48 : avahi: Service 'Music Player @ colpsarco' successfully established.

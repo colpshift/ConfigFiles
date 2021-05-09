@@ -1,41 +1,46 @@
---Unread---
+---Unread---
 "query:Unread:unread = \"yes\"" meta
 ---Newsboat---
 https://newsboat.org/news.atom
---News---
-http://rss.cnn.com/rss/edition.rss                                              "CNN News"
-http://rss.cnn.com/rss/edition_americas.rss                                     "CNN News AMS"
-http://feeds.bbci.co.uk/news/rss.xml                                            "BBC News"
-http://feeds.bbci.co.uk/news/world/latin_america/rss.xml                        "BBC LA"
+---News---
+http://rss.cnn.com/rss/edition.rss                                            "CNN News"
+http://rss.cnn.com/rss/edition_americas.rss                                   "CNN News AMS"
+http://feeds.bbci.co.uk/news/rss.xml                                          "BBC News"
+http://feeds.bbci.co.uk/news/world/latin_america/rss.xml                      "BBC LA"
 ---Sec---
-https://feeds.feedburner.com/TheHackersNews                                     "Hacker News"
-http://feeds.feedburner.com/gbhackers                                           "gbhackers"
+https://feeds.feedburner.com/TheHackersNews                                   "Hacker News"
+http://feeds.feedburner.com/gbhackers                                         "gbhackers"
 ---Arch---
-https://archlinux.org/feeds/news/                                               "Arch Linux"
-https://arcolinuxforum.com/app.php/feed                                         "ArcoLinux"
+https://archlinux.org/feeds/news/                                             "Arch Linux"
+https://arcolinuxforum.com/app.php/feed                                       "ArcoLinux"
 ---Dev---
-https://github.com/colpshift.private.atom?token=AJJUXHQBPLVMT65WRVUHN5F6PHLEE   "github"
-https://gitlab.com/colpshift.atom?feed_token=gFkiNJPVagWFkBexBrjx               "gitlab"
-https://suckless.org/atom.xml                                                   "suckless"
-https://hackernoon.com/feed                                                     "Hackernoon"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC-T8W79DN6PBnzomelvqJYw    "James Q Quick"
-https://www.youtube.com/feeds/videos.xml?channel_id=UClb90NQQcskPUGDIXsQEz5Q    "Dev Ed"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCFuIUoyHB12qpYa8Jpxoxow    "Código Fonte TV"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCS97tchJDq17Qms3cux8wcA    "ChrisAtMachine"
+https://github.com/colpshift.private.atom?token=AJJUXHQBPLVMT65WRVUHN5F6PHLEE "github"
+https://gitlab.com/colpshift.atom?feed_token=gFkiNJPVagWFkBexBrjx             "gitlab"
+https://suckless.org/atom.xml                                                 "suckless"
+https://hackernoon.com/feed                                                   "Hackernoon"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-T8W79DN6PBnzomelvqJYw  "James Q Quick"
+https://www.youtube.com/feeds/videos.xml?channel_id=UClb90NQQcskPUGDIXsQEz5Q  "Dev Ed"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFuIUoyHB12qpYa8Jpxoxow  "Código Fonte TV"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCS97tchJDq17Qms3cux8wcA  "ChrisAtMachine"
+---Editor--
+https://www.youtube.com/feeds/videos.xml?channel_id=UCa0tJguRNbU6I8OO3nUvXxQ  "Josh vim"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCs5Y5_7XK8HLDX0SLNwkd3w  "Visual Studio Code"
 ---Linux---
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg    "Distrotube"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA    "Brodie"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA    "Mental"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA    "Diolinux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCa0tJguRNbU6I8OO3nUvXxQ    "Josh vim"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCfp-lNJy4QkIGnaEE6NtDSg    "Learn Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsYVQUylCMLg    "Erick Dubois"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCvA_wgsX6eFAOXI8Rbg_WiQ    "Tutorial Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UClu474HMt895mVxZdlIHXEA    "Nerdologia"
-https://terminalroot.com.br/feed.xml  "TerminalRoot"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg  "Distrotube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA  "Brodie"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA  "Mental"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA  "Diolinux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsYVQUylCMLg  "Erick Dubois"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCvA_wgsX6eFAOXI8Rbg_WiQ  "Tutorial Linux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCZiL6BoryLWxyapUuVYW27g  "Average Linux User"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCqd9oVuR4tuKD5Y9AFwxz7Q  "TerminalRoot"
 ---Win---
-https://www.youtube.com/feeds/videos.xml?channel_id=UCQSpnDG3YsFNf5-qHocF-WQ    "ThioJoe"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCQSpnDG3YsFNf5-qHocF-WQ  "ThioJoe"
+---ServiceNow---
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDTdlx80nh1DG6s4G4H-sFg  "ServiceNow Events"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCLukrOQYSgsHUR_NSiVZndQ  "ServiceNow"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCdXorgCT87YlFRN9n8oJ7_A  "ServiceNow Dev"
 ---Soul---
-https://www.youtube.com/feeds/videos.xml?channel_id=UCMBASOtCn9BI_kq7bD6iCcw    "Calafrios"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCUbBQ3yTGhJJd5DXphwWvEw    "Spooky"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCMBASOtCn9BI_kq7bD6iCcw  "Calafrios"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUbBQ3yTGhJJd5DXphwWvEw  "Spooky"
 

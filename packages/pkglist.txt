@@ -193,7 +193,7 @@ ipw2100-fw
 ipw2200-fw
 irssi
 iw
-jdk-openjdk
+jdk
 jdtls
 jfsutils
 jq
@@ -245,14 +245,12 @@ mobile-broadband-provider-info
 modemmanager
 moka-icon-theme-git
 mpc
-mpd
 mpv
 mtools
 mtpfs
 mtr
 nano
 nbd
-ncmpcpp
 ndisc6
 neofetch
 nerd-fonts-fira-code

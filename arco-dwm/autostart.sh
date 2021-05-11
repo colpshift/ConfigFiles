@@ -19,13 +19,11 @@ sh ~/.scripts/sxhkd_start.sh
 sh ~/.scripts/picom_start.sh 
 sh ~/.scripts/xbanish_start.sh
 sh ~/.scripts/autocutsel_start.sh
-sh ~/.scripts/mpd_start.sh
 ~/.fehbg &
 # apps
 run "qtpad" && 
 run "rambox" &&
 run "joplin-desktop" && 
-run "volctl" &&
 run "alacritty"
 # conky bar
 sh ~/.scripts/conky_start.sh

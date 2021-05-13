@@ -91,8 +91,9 @@ alias vi='/bin/nvim'
 alias vim='/bin/nvim'
 alias gvim='/bin/nvim'
 alias grep='rg'
-alias cat='bat'
-alias bat='bat --theme TwoDark'
+alias cat='batcat'
+alias bat='batcat'
+alias batcat='batcat --theme TwoDark'
 alias gitu='git add . && git commit'
 alias gitp='git add . && git commit && git push'
 alias gitl='git log --oneline'
@@ -102,7 +103,6 @@ alias umpv='$HOME/.scripts/devour.sh umpv.py'
 alias sxiv='$HOME/.scripts/devour.sh sxiv'
 alias zathura='$HOME/.scripts/devour.sh zathura'
 alias cls='clear'
-alias timeshift='sudo timeshift-gtk'
 alias cmatrix='cmatrix -fs'
 alias myip='curl http://ipecho.net/plain; echo'
 alias neofetch="neofetch --color_blocks off "
@@ -111,13 +111,6 @@ alias net_monitor='bmon'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias grub_install='grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck'
-alias parui='sh $HOME/.scripts/fzf_pkg_paru_install.sh'
-alias parur='sh $HOME/.scripts/fzf_pkg_paru_remove.sh'
-alias pacman='sudo pacman --color=always'
-alias pacu='pacman -Syu'
-alias pacman-key_update='sudo pacman-key --refresh-keys && sudo pacman -Syu'
-alias pacman-arch_mirror_update='sudo reflector --country "United States" --country Brazil --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist-arch'
 
 ### Set prompt
 ##############
@@ -126,6 +119,7 @@ compinit -d
 promptinit
 #
 # Prompt starship
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 ### ruby
@@ -136,17 +130,13 @@ eval "$(rbenv init -)"
 ########
 eval "$(fasd --init auto)"
 
-### pkgfile
-###########
-# command_not_found_handler
-source /usr/share/doc/pkgfile/command-not-found.zsh
-
 ### forgit
 ##########
 source $HOME/Projects/src/forgit/forgit.plugin.zsh
 
 # fzf completion
 ################
+source /usr/share/doc/fzf/examples/key-bindings.zsh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

@@ -42,7 +42,7 @@ font:
     family: JetBrainsMono Nerd Font
     style: Bold Italic
 
-  size: 9
+  size: 10
   thin_strokes: true
   antialias: lcd
   hinting: true
@@ -106,7 +106,7 @@ mouse:
   triple_click: { threshold: 300 }
   hide_when_typing: true
 
-  url:
+  hints:
     launcher:
       program: xdg-open
       args: []

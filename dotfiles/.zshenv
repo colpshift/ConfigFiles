@@ -10,7 +10,7 @@
 
 ### path
 typeset -U path
-path=($HOME/.local/bin $HOME/.local/share/gem/ruby/3.0.0/bin $HOME/.scripts $HOME/.SpaceVim/bin $HOME/.rbenv/bin $HOME/.cargo/bin $HOME/.config/nvcode/utils/bin $GEM_HOME/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
+path=($HOME/.local/bin $HOME/.local/share/gem/ruby/2.7.0/bin/bin $HOME/.local/share/gem/ruby/2.7.0/bin/ $HOME/go/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin $HOME/.config/nvcode/utils/bin $GEM_HOME/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
 
 ### fzf
 # using fd
@@ -30,7 +30,7 @@ export CHEAT_CONFIG_PATH="$HOME/.config/cheat/conf.yml"
 export CHEAT_USE_FZF=true
 
 ### ruby
-export GEM_HOME="$HOME/.local/share/gem/ruby/2.7.0/bin"
+export GEM_HOME="$HOME/.local/share/gem/ruby/2.7.0/bin/"
 
 ### rust
 . "$HOME/.cargo/env"

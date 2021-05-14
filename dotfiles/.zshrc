@@ -106,7 +106,6 @@ alias cls='clear'
 alias cmatrix='cmatrix -fs'
 alias myip='curl http://ipecho.net/plain; echo'
 alias neofetch="neofetch --color_blocks off "
-alias disk_monitor='duf'
 alias net_monitor='bmon'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'

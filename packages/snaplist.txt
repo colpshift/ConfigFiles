@@ -14,13 +14,13 @@ gimp                     2.10.24                         372    latest/stable  s
 gnome-3-28-1804          3.28.0-19-g98f9e67.98f9e67      145    latest/stable  canonical*          -
 gnome-3-34-1804          0+git.3556cb3                   66     latest/stable  canonical*          -
 gnome-3-38-2004          0+git.3d25b9b                   39     latest/stable  canonical*          -
-gopls                    0.6.11                          260    latest/edge    alexmurray          classic
+gopls                    0.6.11                          268    latest/edge    alexmurray          classic
 gtk-common-themes        0.1-52-gb92ac40                 1515   latest/stable  canonical*          -
 inkscape                 1.0.2-394de47547-2021-03-26     8746   latest/stable  inkscape*           -
 joplin-desktop           v1.8.5                          8      latest/stable  james-carroll       -
 kde-frameworks-5-core18  5.61.0                          32     latest/stable  kde*                -
 newsflash                1.4.0                           2      latest/stable  popey               -
-nvim                     v0.5.0-1318-g61aefaf29-nightly  1118   latest/edge    neovim-snap         classic
+nvim                     v0.5.0-1321-gc57a85d53-nightly  1123   latest/edge    neovim-snap         classic
 procs                    v0.11.3                         525    latest/stable  dalance             -
 rambox                   0.7.7                           16     latest/stable  ramboxapp*          -
 signal-desktop           5.0.0                           354    latest/stable  snapcrafters        -

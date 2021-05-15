@@ -109,7 +109,6 @@ alias neofetch="neofetch --color_blocks off "
 alias net_monitor='bmon'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
-alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 ### Set prompt
 ##############

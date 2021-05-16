@@ -44,5 +44,13 @@ Sound Input & Output Device Chooser by kgshank
 Ubuntu AppIndicators by didrocks
 User Themes by fmuellner
 WindowOverlay Icons by sustmi
-
+#
+#  icons
+#
+parpirus-dark
+flatery-dark
+#
+# cursor
+#
+bibata ice
 

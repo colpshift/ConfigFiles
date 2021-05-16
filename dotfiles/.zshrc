@@ -120,6 +120,10 @@ promptinit
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
+### kitty terminal
+##################
+kitty + complete setup zsh | source /dev/stdin
+
 ### ruby
 ########
 eval "$(rbenv init -)"

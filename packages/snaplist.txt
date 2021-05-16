@@ -1,9 +1,8 @@
 Name                     Version                         Rev    Tracking       Publisher           Notes
-alacritty                0.8.0-rc4                       26     latest/beta    tunix               classic
 bash-language-server     1.17.0                          13     latest/stable  alexmurray          -
 bitwarden                1.26.3                          48     latest/stable  bitwarden*          -
 blender                  2.92.0                          111    latest/stable  blenderfoundation*  classic
-brave                    1.24.85                         114    latest/stable  brave               -
+chromium                 90.0.4430.212                   1589   latest/stable  canonical*          -
 code                     054a9295                        65     latest/stable  vscode*             classic
 core                     16-2.50                         11081  latest/stable  canonical*          core
 core18                   20210309                        1997   latest/stable  canonical*          base

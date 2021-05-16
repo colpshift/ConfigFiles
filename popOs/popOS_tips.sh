@@ -33,6 +33,7 @@ Pop Shell
 Pop Shop Details
 System76 Power
 # community
+Dash to Dock by michele_g
 Applications Overview Tooltip by RaphaelR
 Auto Move Windows by fmuellner
 CPU Power Manager by martin31821
@@ -53,4 +54,8 @@ flatery-dark
 # cursor
 #
 bibata ice
+#
+# default terminal
+#
+sudo update-alternatives --config x-terminal-emulator
 

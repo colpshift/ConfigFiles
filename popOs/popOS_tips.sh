@@ -45,6 +45,7 @@ Sound Input & Output Device Chooser by kgshank
 Ubuntu AppIndicators by didrocks
 User Themes by fmuellner
 WindowOverlay Icons by sustmi
+OpenWeather by jens
 #
 #  icons
 #

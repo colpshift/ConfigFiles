@@ -1,3 +1,6 @@
-127.0.0.1	localhost
-::1		localhost
-127.0.1.1	pop-os.localdomain	pop-os
+# Host addresses
+127.0.0.1  localhost
+127.0.1.1  colpsman
+::1        localhost ip6-localhost ip6-loopback
+ff02::1    ip6-allnodes
+ff02::2    ip6-allrouters

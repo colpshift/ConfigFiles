@@ -74,8 +74,7 @@ source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 ### Set alias
 #############
 alias ps='procs'
-alias exa='exa --header --long --group --git'
-alias ll='exa'
+alias ll='exa --header --long --group --git'
 alias ls='ls -lh --color=auto --group-directories-first'
 alias la='ls -ah'  # show hidden files and folders
 alias lx='ls -BXh' # sort by extension
@@ -91,24 +90,27 @@ alias vi='/bin/nvim'
 alias vim='/bin/nvim'
 alias gvim='/bin/nvim'
 alias grep='rg'
-alias cat='batcat'
-alias bat='batcat'
-alias batcat='batcat --theme TwoDark'
+alias cat='bat'
+alias bat='bat --theme TwoDark'
+alias find='fd'
 alias gitu='git add . && git commit'
 alias gitp='git add . && git commit && git push'
 alias gitl='git log --oneline'
-alias surf='surf -DI'
 alias mpv='$HOME/.scripts/devour.sh umpv.py'
 alias umpv='$HOME/.scripts/devour.sh umpv.py'
 alias sxiv='$HOME/.scripts/devour.sh sxiv'
 alias zathura='$HOME/.scripts/devour.sh zathura'
 alias cls='clear'
-alias cmatrix='cmatrix -fs'
+alias newsnotify='notify-send --icon=rssguard'
 alias myip='curl http://ipecho.net/plain; echo'
-alias neofetch='clear && neofetch --color_blocks off'
-alias net_monitor='bmon'
+alias neofetch="neofetch --color_blocks off "
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
+alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias grub_install='grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck'
+alias pacman='sudo pacman --color=always'
+#alias parui='$HOME/.scripts/fzf_pkg_install.sh'
+#alias parur='$HOME/.scripts/fzf_pkg_remove.sh'
 
 ### Set prompt
 ##############
@@ -132,21 +134,8 @@ eval "$(rbenv init -)"
 ########
 eval "$(fasd --init auto)"
 
-### forgit
-##########
-source $HOME/Projects/src/forgit/forgit.plugin.zsh
-
 # fzf completion
 ################
-source /usr/share/doc/fzf/examples/key-bindings.zsh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
-alias luamake=/home/colps/Downloads/lua-language-server/3rd/luamake/luamake
-
-PATH="/home/colps/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/colps/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/colps/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/colps/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/colps/perl5"; export PERL_MM_OPT;

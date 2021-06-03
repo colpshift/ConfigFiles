@@ -4,17 +4,17 @@
 # Path: ~/
 # Tags: zsh shell
 # Description: zsh env config
-# Last update: 25/03/2021 00:40
+# Last update: 30/05/2021 10:21
 # Author: Colpshift
 #
 
 ### path
 typeset -U path
-path=($HOME/.local/bin $HOME/.local/share/gem/ruby/2.7.0/bin/bin $HOME/.local/share/gem/ruby/2.7.0/bin/ $HOME/go/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin $HOME/.config/nvcode/utils/bin $GEM_HOME/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
+path=($HOME/.local/bin $HOME/.local/share/gem/ruby/3.0.0/bin $HOME/go/bin $HOME/.scripts $GEM_HOME/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $HOME/.cargo/bin $path[@])
 
 ### fzf
 # using fd
-export FZF_DEFAULT_COMMAND="fdfind --type file --color=always"
+export FZF_DEFAULT_COMMAND="fd --type file --color=always"
 export FZF_DEFAULT_OPTS="--ansi"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # search
@@ -28,10 +28,4 @@ export DEFAULT_RECIPIENT="marcos.colpani@gmail.com"
 ### cheat
 export CHEAT_CONFIG_PATH="$HOME/.config/cheat/conf.yml"
 export CHEAT_USE_FZF=true
-
-### ruby
-export GEM_HOME="$HOME/.local/share/gem/ruby/2.7.0/bin/"
-
-### rust
-. "$HOME/.cargo/env"
 

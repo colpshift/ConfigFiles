@@ -10,7 +10,7 @@
 
 ### path
 typeset -U path
-path=($HOME/.local/bin $HOME/go/bin $HOME/.scripts $GEM_HOME/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
+path=($HOME/.local/bin $HOME/.local/share/gem/ruby/3.0.0/bin $HOME/go/bin $HOME/.scripts $GEM_HOME/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $HOME/.cargo/bin $path[@])
 
 ### fzf
 # using fd

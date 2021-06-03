@@ -102,17 +102,15 @@ alias sxiv='$HOME/.scripts/devour.sh sxiv'
 alias zathura='$HOME/.scripts/devour.sh zathura'
 alias cls='clear'
 alias newsnotify='notify-send --icon=rssguard'
-alias timeshift='sudo timeshift-gtk'
 alias myip='curl http://ipecho.net/plain; echo'
 alias neofetch="neofetch --color_blocks off "
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias grub_install='grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck'
-alias parui='sh $HOME/.scripts/fzf_pkg_aur.sh'
 alias pacman='sudo pacman --color=always'
-alias pacu='pacman -Syu'
-alias paci='sh $HOME/.scripts/fzf_pkg_pac.sh'
+#alias parui='$HOME/.scripts/fzf_pkg_install.sh'
+#alias parur='$HOME/.scripts/fzf_pkg_remove.sh'
 
 ### Set prompt
 ##############
@@ -136,20 +134,8 @@ eval "$(rbenv init -)"
 ########
 eval "$(fasd --init auto)"
 
-### forgit
-##########
-source $HOME/Projects/src/forgit/forgit.plugin.zsh
-
 # fzf completion
 ################
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
-alias luamake=/home/colps/Downloads/lua-language-server/3rd/luamake/luamake
-
-PATH="/home/colps/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/colps/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/colps/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/colps/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/colps/perl5"; export PERL_MM_OPT;

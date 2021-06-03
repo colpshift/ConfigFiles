@@ -1,0 +1,4 @@
+default	org.freedesktop.Platform.GL.default		20.08	system
+Intel	org.freedesktop.Platform.VAAPI.Intel		20.08	system
+openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
+Freedesktop SDK	org.freedesktop.Sdk	20.08.12	20.08	system

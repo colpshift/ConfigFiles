@@ -87,6 +87,8 @@ cups-filters 1.28.8-1
 cups-pdf 3.0.1-6
 cups-pk-helper 0.2.6-4
 curl 7.76.1-1
+dash 0.5.11.3-1
+dashbinsh 0.1-5
 dav1d 0.8.2-1
 db 5.3.28-5
 dbus-glib 0.112-1

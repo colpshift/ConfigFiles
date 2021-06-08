@@ -8,68 +8,72 @@
 # Author: Colpshift
 #
 
-### Set variables
-#################
-WORDCHARS=${WORDCHARS//\/[&.;]}
+# ### Set variables
+# #################
+# WORDCHARS=${WORDCHARS//\/[&.;]}
+#
+# ### Set/unset ZSH options
+# #########################
+# setopt INC_APPEND_HISTORY SHARE_HISTORY
+# setopt EXTENDED_HISTORY
+# setopt APPEND_HISTORY
+# setopt AUTO_LIST
+# setopt MENUCOMPLETE
+# setopt COMPLETE_ALIASES
+# setopt ALL_EXPORT
+#
+# ### Set/unset shell options
+# ############################
+# setopt   notify globdots pushdtohome cdablevars autolist numericglobsort
+# setopt   autocd recexact rcexpandparam nocheckjobs nobeep
+# setopt   autopushd autoresume histignoredups pushdsilent pushdignoredups
+# setopt   pushdminus extendedglob nocaseglob rcquotes
+#
+# ### Completion Styles
+# #####################
+# autoload -Uz compinit
+# compinit
+# zstyle ':completion::complete:*' use-cache on
+# zstyle ':completion::complete:*' cache-path ~/.zsh/cache/$HOST
+# zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+# zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
+# zstyle ':completion:*' menu select=1 _complete _ignored _approximate
+# zstyle ':completion:*' group-name ''
+# zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
+#
+# ### History
+# ###########
+# HISTFILE=$HOME/.zhistory
+# HISTSIZE=1000
+# SAVEHIST=1000
+# autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+# zle -N up-line-or-beginning-search
+# zle -N down-line-or-beginning-search
+# zle -N history-beginning-search-backward-end history-search-end
+# zle -N history-beginning-search-forward-end history-search-end
+#
+# ### Load colors
+# ###############
+# autoload -U colors && colors
+# colors
+#
+# ### Source plugins
+# ##################
+# # Use syntax highlighting
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# # Use history substring search
+# source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# # auto sugestions
+# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=9'
+# #ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd)
+# #ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+# # interactive cd
+# #source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 
-### Set/unset ZSH options
-#########################
-setopt INC_APPEND_HISTORY SHARE_HISTORY
-setopt EXTENDED_HISTORY
-setopt APPEND_HISTORY
-setopt AUTO_LIST
-setopt MENUCOMPLETE
-setopt COMPLETE_ALIASES
-setopt ALL_EXPORT
-
-### Set/unset shell options
-############################
-setopt   notify globdots pushdtohome cdablevars autolist numericglobsort
-setopt   autocd recexact rcexpandparam nocheckjobs nobeep
-setopt   autopushd autoresume histignoredups pushdsilent pushdignoredups
-setopt   pushdminus extendedglob nocaseglob rcquotes
-
-### Completion Styles
-#####################
-autoload -Uz compinit
-compinit
-zstyle ':completion::complete:*' use-cache on
-zstyle ':completion::complete:*' cache-path ~/.zsh/cache/$HOST
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
-zstyle ':completion:*' menu select=1 _complete _ignored _approximate
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
-
-### History
-###########
-HISTFILE=$HOME/.zhistory
-HISTSIZE=1000
-SAVEHIST=1000
-autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
-
-### Load colors
-###############
-autoload -U colors && colors
-colors
-
-### Source plugins
+### Manjaro config
 ##################
-# Use syntax highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# Use history substring search
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-# auto sugestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=9'
-ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd)
-ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
-# interactive cd
-source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
+source /usr/share/zsh/manjaro-zsh-config
 
 ### Set alias
 #############
@@ -121,6 +125,9 @@ promptinit
 # Prompt starship
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
+#
+# Prompt Manjaro
+#source /usr/share/zsh/zsh-maia-prompt
 
 ### kitty terminal
 ##################

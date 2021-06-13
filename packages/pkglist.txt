@@ -80,6 +80,7 @@ cairomm 1.14.3-2
 cantarell-fonts 1:0.301-1
 cblas 3.9.1-1
 cdparanoia 10.2-8
+checkbashisms 2.20.5-1
 cheese 3.38.0-1
 chromaprint 1.5.0-3
 chrome-gnome-shell 10.1-6
@@ -110,6 +111,7 @@ cups-filters 1.28.8-1
 cups-pdf 3.0.1-6
 cups-pk-helper 0.2.6-4
 curl 7.77.0-1
+dash 0.5.11.3-1
 dav1d 0.9.0-1
 db 5.3.28-5
 dbus 1.12.20-1
@@ -117,7 +119,6 @@ dbus-glib 0.112-1
 dbus-python 1.2.16-4
 dconf 0.40.0-1
 dconf-editor 3.38.3-1
-deja-dup 42.7-1
 desktop-file-utils 0.26-1
 device-mapper 2.03.12-1
 dhclient 4.4.2.P1-1
@@ -425,6 +426,7 @@ kwindowsystem 5.82.0-1
 l-smash 2.14.5-2
 lame 3.100-3
 lapack 3.9.1-1
+lazygit 0.28.1-1
 lcms2 2.12-1
 ldb 1:2.3.0-1
 ldns 1.7.1-2
@@ -788,7 +790,7 @@ manjaro-ranger-settings 20190513-2
 manjaro-release 21.0.6-1
 manjaro-settings-manager 0.5.6-14
 manjaro-settings-manager-notifier 0.5.6-14
-manjaro-system 20210523-1
+manjaro-system 20210612-1
 manjaro-wallpapers-18.0 1.4-3
 manjaro-zsh-config 0.20-3
 matcha-gtk-theme 20210602-0.1

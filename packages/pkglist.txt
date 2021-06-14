@@ -106,6 +106,7 @@ cracklib 2.9.7-2
 crda 4.14-4
 cronie 1.5.7-2
 cryptsetup 2.3.6-1
+ctags 1:r20210106+g08b1c490-1
 cups 1:2.3.3op2-3
 cups-filters 1.28.8-1
 cups-pdf 3.0.1-6
@@ -142,6 +143,7 @@ e2fsprogs 1.46.2-1
 ecryptfs-utils 111-4
 efibootmgr 17-2
 efivar 37-4
+efm-langserver 0.0.30-1
 electron 12.0.9-1
 elfutils 0.184-1
 embree 3.12.2-1
@@ -272,9 +274,11 @@ gnome-video-effects 0.5.0+4+g9554041-2
 gnome-wallpapers 20201020-1
 gnupg 2.2.27-1
 gnutls 3.7.1-1
+go 2:1.16.4-1
 gobject-introspection 1.68.0-1
 gobject-introspection-runtime 1.68.0-1
 gom 0.4-3
+gopls 0.6.11-1
 gparted 1.3.0-4
 gpgme 1.15.1-1
 gpm 1.20.7.r38.ge82d1a6-3
@@ -368,6 +372,7 @@ haskell-unordered-containers 0.2.14.0-2
 haskell-uuid-types 1.0.5-6
 haskell-vector 0.12.3.0-16
 haveged 1.9.14-1
+hddtemp 0.3.beta15.53-3
 hdf5 1.12.0-2
 hdparm 9.61-1
 hicolor-icon-theme 0.17-2
@@ -754,6 +759,7 @@ lua52-expat 1.3.0-5
 lua52-lpeg 1.0.2-3
 lua52-luajson 1.3.4-3
 lua52-socket 20200329-1
+luarocks 3.7.0-1
 lvm2 2.03.12-1
 lz4 1:1.9.3-2
 lzo 2.10-3
@@ -847,6 +853,7 @@ newsflash 1.4.1-1
 nextcloud-client 3.2.1-1
 nfs-utils 2.5.3-1
 nfsidmap 2.5.3-1
+ninja 1.10.2-1
 nm-connection-editor 1.22.0-1
 node-gyp 8.1.0-1
 nodejs 16.2.0-1
@@ -994,6 +1001,7 @@ python-attrs 21.2.0-1
 python-bcrypt 3.2.0-3
 python-beaker 1.11.0-6
 python-beautifulsoup4 4.9.3-4
+python-bottle 0.12.19-3
 python-cachecontrol 0.12.6-3
 python-cachetools 4.2.2-1
 python-cairo 1.20.0-3
@@ -1005,10 +1013,13 @@ python-configobj 5.0.6.r110.g3e2f4cc-1
 python-contextlib2 0.6.0.post1-3
 python-cryptography 3.4.7-1
 python-cssselect 1.1.0-7
+python-cycler 0.10.0-8
 python-dateutil 2.8.1-6
 python-distlib 0.3.1-2
 python-distro 1.5.0-3
 python-dnspython 1:1.16.0-3
+python-docker 5.0.0-1
+python-docker-pycreds 0.4.0-7
 python-docopt 0.6.2-9
 python-ewmh 0.1.6-3
 python-fasteners 0.15-5
@@ -1024,14 +1035,18 @@ python-googleapis-common-protos 1.53.0-1
 python-html5lib 1.1-6
 python-httplib2 0.19.1-1
 python-idna 3.1-1
+python-ifaddr 0.1.7-3
+python-kiwisolver 1.3.1-3
 python-listparser 0.18-3
 python-lxml 4.6.3-1
 python-mako 1.1.4-1
 python-markdown 3.3.4-1
 python-markupsafe 2.0.1-1
+python-matplotlib 3.4.1-2
 python-monotonic 1.6-1
 python-msgpack 1.0.2-2
 python-nautilus 1.2.3-5
+python-netifaces 0.10.9-6
 python-npyscreen 4.10.5-5
 python-numpy 1.20.3-1
 python-oauth2client 4.1.3-6
@@ -1058,6 +1073,7 @@ python-pyparsing 2.4.7-3
 python-pyqt5 5.15.4-1
 python-pyqt5-sip 12.9.0-1
 python-pysmbc 1.0.23-2
+python-pystache 0.5.4-9
 python-pytz 2021.1-1
 python-pyxdg 0.27-1
 python-readability-lxml 0.8.1-3
@@ -1077,10 +1093,13 @@ python-toml 0.10.2-3
 python-uritemplate 3.0.1-3
 python-urllib3 1.26.5-1
 python-webencodings 0.5.1-6
+python-websocket-client 0.59.0-1
 python-xlib 0.30-1
 python-yaml 5.4.1.1-2
+python-zeroconf 0.29.0-2
 python2 2.7.18-3
 qgnomeplatform 0.7.1-1
+qhull 2020.2-4
 qpdf 10.3.2-1
 qt5-base 5.15.2+kde+r196-1
 qt5-declarative 5.15.2+kde+r26-1
@@ -1192,6 +1211,7 @@ tracker-miners 2.3.5+2+gec09554af-2
 tracker3 3.1.1-2
 tracker3-miners 3.1.1-2
 transmission-gtk 3.00-2
+tree-sitter 0.19.4-1
 tslib 1.22-1
 ttf-carlito 20130920-6
 ttf-dejavu 2.37+18+g9b5d1b2f-3
@@ -1250,6 +1270,7 @@ wpebackend-fdo 1.9.92-1
 x264 3:0.161.r3039.544c61f-1
 x265 3.5-1
 xapp 2.0.7-1
+xbanish 1.7-1
 xcb-proto 1.14.1-3
 xcb-util 0.4.0-3
 xcb-util-image 0.4.0-3
@@ -1299,6 +1320,7 @@ xxhash 0.8.0-1
 xz 5.2.5-1
 yad 10.1-1
 yaml-cpp 0.6.3-2
+yarn 1.22.10-1
 yelp 40.0-1
 yelp-tools 40.0-1
 yelp-xsl 40.0-1

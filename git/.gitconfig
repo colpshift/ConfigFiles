@@ -1,7 +1,6 @@
 [user]
 	email = marcos.colpani@gmail.com
 	name = colpshift
-        editor = nvim 
 [color]
 	ui = true
 [core]

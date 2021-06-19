@@ -68,7 +68,8 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 ## Alias section 
 alias cp="cp -i"      
 alias free='free -m'
-alias ll='exa --header --long --group --git'
+alias exa='exa --header --long --group --git'
+alias ll='ls'
 alias ls='ls -lh --color=auto --group-directories-first'
 alias la='ls -ah --group-directories-first'  						# show hidden files and folders
 alias lx='ls -BXh --group-directories-first' 						# sort by extension
@@ -78,17 +79,16 @@ alias dir='dir --color'
 alias grep='grep --color'
 alias dmesg='dmesg --color'
 alias df='df -h'
-alias du='dust'
+alias du='du -h'
 alias su='sudo -i'
 alias vi='/bin/nvim'
 alias vim='/bin/nvim'
 alias gvim='/bin/nvim'
-alias grep='rg'
 alias cat='bat'
 alias bat='bat --theme TwoDark'
 alias find='fd'
-alias gitu='git add . && git commit -m backup'
-alias gitp='git add . && git commit -m backup && git push'
+alias gitp='git add . && git commit --allow-empty-message && git push'
+alias gitpm='git add . && git commit && git push'
 alias gitl='git log --oneline'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
@@ -222,9 +222,6 @@ function mzc_termsupport_preexec {
 
 # kitty terminal
 kitty + complete setup zsh | source /dev/stdin
-
-# ruby
-source $HOME/.rbenv/completions/rbenv.zsh
 
 # fzf
 source /usr/share/fzf/completion.zsh

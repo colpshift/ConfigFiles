@@ -90,8 +90,16 @@ alias find='fd'
 alias gitp='git add . && git commit -m backup && git push'
 alias gitpm='git add . && git commit && git push'
 alias gitl='git log --oneline'
+alias cpan='perl -MCPAN -e shell'
 alias cls='clear'
+alias cmatrix='cmatrix -fs'
 alias myip='curl http://ipecho.net/plain; echo'
+alias neofetch="neofetch --color_blocks off "
+alias disk_monitor='duf'
+alias net_monitor='bmon'
+alias sys_monitor='glances'
+alias systemctl_error='sudo systemctl --failed'
+alias journal_error='sudo journalctl -p 3 -xb'
 
 # Theming section  
 autoload -U compinit colors zcalc

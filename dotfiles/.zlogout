@@ -1,11 +1,8 @@
-#!/usr/bin/env zsh
 #
-# File: .zlogout
-# Path: $HOME
-# Tags: zsh shell
-# Description: zsh logout commands
-# Last update: 11/12/2019 20:26
-# Author: Colpshift
+# path: ~/.zlogout
+# author: colpshift
+# tag: zsh dotfiles
+# description: zsh env config
+# last modified: 20/06/2021 18:16
 #
-firefox-sync
 

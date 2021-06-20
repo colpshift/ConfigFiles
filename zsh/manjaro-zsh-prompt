@@ -1,3 +1,10 @@
+#
+# path: /usr/share/zsh/manjaro-zsh-prompt 
+# author: colpshift
+# tag: zsh dotfiles
+# description: zsh env config
+# last modified: 20/06/2021 18:16
+#
 # Apply different settigns for different terminals
 case $(basename "$(cat "/proc/$PPID/comm")") in
   login)

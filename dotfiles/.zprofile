@@ -1,11 +1,9 @@
-#!/bin/zsh
 #
-# File: .zprofile
-# Path: ~/
-# Tags: zsh shell
-# Description: zsh config
-# Last update: 07/04/2021 10:26
-# Author: Colpshift
+# path: ~/.zprofile
+# author: colpshift
+# tag: zsh dotfiles
+# description: zsh env config
+# last modified: 20/06/2021 18:16
 #
-
 emulate sh -c 'source /etc/profile'
+

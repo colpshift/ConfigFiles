@@ -1,9 +1,9 @@
 #
-# Path: usr/share/zsh/manjaro-zsh-config  
-# Tags: zsh shell
-# Description: manjaro zsh config
-# Last update: 11/06/2021 10:26
-# Author: Colpshift
+# path: /usr/share/zsh/manjaro-zsh-config 
+# author: colpshift
+# tag: zsh dotfiles
+# description: zsh env config
+# last modified: 20/06/2021 18:16
 #
 
 ## Options section
@@ -19,7 +19,7 @@ setopt histignorealldups                                        # If a new comma
 setopt autocd                                                   # if only directory path is entered, cd there.
 setopt inc_append_history                                       # save commands are added to the history immediately, otherwise only when shell exits.
 
-# zsh style
+### zsh style
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
 zstyle ':completion:*' rehash true                              # automatically find new executables in path 
@@ -27,18 +27,18 @@ zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
 
-# zsh history
+### zsh history
 HISTFILE=~/.zhistory
 HISTSIZE=10000
 SAVEHIST=10000
 
-# Editor
+### Editor
 export EDITOR=/usr/bin/kitty
 export VISUAL=/usr/bin/kitty
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
 
-## Keybindings section
+### Keybindings section
 bindkey -e
 bindkey '^[[7~' beginning-of-line                               # Home key
 bindkey '^[[H' beginning-of-line                                # Home key
@@ -65,7 +65,7 @@ bindkey '^[[1;5C' forward-word                                  #
 bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
-## Alias section 
+### Alias section 
 alias cp="cp -i"      
 alias free='free -m'
 alias exa='exa --header --long --group --git'
@@ -101,12 +101,12 @@ alias sys_monitor='glances'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 
-# Theming section  
+### Theming section  
 autoload -U compinit colors zcalc
 compinit -d
 colors
 
-# Color man pages
+### Color man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'
 export LESS_TERMCAP_md=$'\E[01;32m'
 export LESS_TERMCAP_me=$'\E[0m'
@@ -116,7 +116,7 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;36m'
 export LESS=-R
 
-# Zsh Plugins
+### Zsh Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 # bind UP and DOWN arrow keys to history substring search
@@ -132,7 +132,7 @@ if [[ -r /usr/share/zsh/functions/command-not-found.zsh ]]; then
     export PKGFILE_PROMPT_INSTALL_MISSING=1
 fi
 
-# Set terminal window and tab/icon title
+### Set terminal window and tab/icon title
 #
 # usage: title short_tab_title [long_window_title]
 #
@@ -172,13 +172,13 @@ function title {
 ZSH_THEME_TERM_TAB_TITLE_IDLE="%15<..<%~%<<" #15 char left truncated PWD
 ZSH_THEME_TERM_TITLE_IDLE="%n@%m:%~"
 
-# Runs before showing the prompt
+### Runs before showing the prompt
 function mzc_termsupport_precmd {
   [[ "${DISABLE_AUTO_TITLE:-}" == true ]] && return
   title $ZSH_THEME_TERM_TAB_TITLE_IDLE $ZSH_THEME_TERM_TITLE_IDLE
 }
 
-# Runs before executing the command
+### Runs before executing the command
 function mzc_termsupport_preexec {
   [[ "${DISABLE_AUTO_TITLE:-}" == true ]] && return
 
@@ -228,13 +228,14 @@ function mzc_termsupport_preexec {
   title '$CMD' '%100>...>$LINE%<<'
 }
 
-# kitty terminal
+### kitty terminal
 kitty + complete setup zsh | source /dev/stdin
 
-# fzf
+### fzf
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
+### zsh term
 autoload -U add-zsh-hook
 add-zsh-hook precmd mzc_termsupport_precmd
 add-zsh-hook preexec mzc_termsupport_preexec

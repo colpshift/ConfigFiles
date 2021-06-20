@@ -1,10 +1,8 @@
-#!/usr/bin/env zsh
 #
-# File: .zlogin
-# Path: $HOME
-# Tags: zsh shell
-# Description: zsh login commands
-# Last update: 11/12/2019 20:25
-# Author: Colpshift
+# path: ~/.zlogin
+# author: colpshift
+# tag: zsh dotfiles
+# description: zsh env config
+# last modified: 20/06/2021 18:16
 #
-firefox-sync
+

@@ -17,10 +17,3 @@ QT_STYLE_OVERRIDE="kvantum"
 #Not tested: this should disable window decorations
 # QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 
-### defaults apps
-export EDITOR=nvim
-export BROWSER=firefox
-export MANPAGER="sh -c 'col -bx | batcat -l man -p'" # using bat to read man
-#export MANPAGER="nvim -c 'set ft=man' -" # using neovim to read man
-export MANWIDTH=999
-export TERM=alacritty

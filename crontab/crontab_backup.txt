@@ -1,0 +1,18 @@
+#
+# crontab 22/06/2021 08:31
+#
+
+SHELL=/bin/sh
+MAILTO=root
+
+# .---------------- minute (0 - 59)
+# | .-------------- hour (0 - 23)
+# | | .------------ day of month (1 - 31)
+# | | | .---------- month (1 - 12) OR jan,feb,mar ...
+# | | | | .-------- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue ...
+# | | | | |
+# * * * * * command to be executed
+
+* 9 * * * $HOME/.scripts/neovim_update.sh
+* 9 * * * $HOME/.scripts/manjaroConfigBackup.sh
+

@@ -51,6 +51,7 @@ unset MANPATH
 
 ### defaults apps
 export EDITOR=nvim
+export VISUAL=nvim
 export BROWSER=firefox
 export MANPAGER="sh -c 'col -bx | bat -l man -p'" # using bat to read man
 #export MANPAGER="nvim -c 'set ft=man' -" # using neovim to read man

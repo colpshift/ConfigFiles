@@ -11,7 +11,6 @@ rambox                0.7.7                       16     latest/stable  ramboxap
 skype                 8.73.0.92                   176    latest/stable  skype*            -
 snapd                 2.51                        12159  latest/stable  canonical*        snapd
 spotify               1.1.55.498.gf9a83c60        46     latest/stable  spotify*          -
-teams                 1.4.00.13653                5      latest/stable  msteams*          -
 todoist               0.4.1                       7      latest/stable  doist*            -
 xmind                 10.3.1                      9      latest/stable  xmindltd          -
 yaml-language-server  0.16.0                      20     latest/stable  alexmurray        -

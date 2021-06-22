@@ -33,8 +33,6 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 ### Editor
-export EDITOR=/usr/bin/kitty
-export VISUAL=/usr/bin/kitty
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
 
@@ -97,7 +95,6 @@ alias myip='curl http://ipecho.net/plain; echo'
 alias neofetch="neofetch --color_blocks off "
 alias disk_monitor='duf'
 alias net_monitor='bmon'
-alias sys_monitor='glances'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 

@@ -14,4 +14,5 @@ MAILTO=root
 # * * * * * command to be executed
 
 * 8 * * * $HOME/.scripts/manjaroConfigBackup.sh
+* 9 * * * $HOME/.scripts/neovim_update.sh
 

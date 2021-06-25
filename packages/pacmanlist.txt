@@ -690,7 +690,6 @@ libqxp 0.0.2-6
 libraqm 0.7.1-1
 libraw 0.20.2-1
 libraw1394 2.1.2-3
-libreoffice-still 7.0.6-2
 librevenge 0.0.4-3
 librsvg 2:2.50.7-1
 libsamplerate 0.2.1-1
@@ -855,7 +854,7 @@ manjaro-system 20210612-1
 manjaro-users-artwork-wallpapers 2013.05-1
 manjaro-wallpapers-18.0 1.4-3
 manjaro-zsh-config 0.20-3
-matcha-gtk-theme 20210602-0.1
+matcha-gtk-theme 20210624-0.1
 mc 4.8.26-1
 md4c 0.4.8-1
 mdadm 4.1-2

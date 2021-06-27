@@ -171,8 +171,6 @@ file 5.40-5
 file-roller 3.40.0-1
 filesystem 2021.01.19-1
 findutils 4.8.0-1
-firefox 89.0.1-1
-firefox-gnome-theme-maia 20210214-1
 flac 1.3.3-3
 flameshot 0.9.0-1
 flashrom 1.2-2
@@ -223,6 +221,8 @@ ghc-libs 8.10.5-1
 ghostscript 9.54.0-2
 giflib 5.2.1-2
 gimp 2.10.24-4
+gimp-help-en 2.10.0-3
+gimp-help-pt_br 2.10.0-3
 girara 0.3.5-1
 git 2.32.0-1
 gjs 2:1.68.1-1
@@ -391,10 +391,13 @@ highlight 4.1-1
 hplip 1:3.21.4-1
 http-parser 2.9.4-1
 hunspell 1.7.0-3
+hunspell-en_us 2020.12.07-2
+hunspell-pt_br 3.2-5.0
 hwids 20201207-1
 hwinfo 21.74-1
 hwloc 2.4.1-1
 hyphen 2.8.8-3
+hyphen-en 2.8.8-3
 iana-etc 20210202-1
 ibus 1.5.24-1
 icu 69.1-1
@@ -788,6 +791,8 @@ libyuv r2212+dfaf7534-2
 libzen 0.4.38-2
 libzmf 0.0.2-10
 licenses 20200427-1
+lightdm 1:1.30.0-4
+lightdm-gtk-greeter 1:2.0.8-1
 lilv 0.24.12-1
 linux-api-headers 5.12.3-1
 linux-firmware 20210518.r1928.f846292-1
@@ -821,6 +826,7 @@ mailcap 2.1.53-1
 make 4.3-3
 man-db 2.9.4-1
 man-pages 5.11-1
+man-pages-pt_br 4.9.3-1
 manjaro-alsa 20210109-1
 manjaro-application-utility 1.3.3-4.1
 manjaro-artwork 1.0.8-4
@@ -1019,6 +1025,7 @@ pkgfile 21-2
 plotutils 2.6-10
 plymouth 0.9.5.r84.ge554475-1
 plymouth-theme-manjaro 2.1-2
+plymouth-theme-manjaro-extra-elegant 1.1-4
 polkit 0.119-1
 polkit-gnome 0.105-8
 polkit-qt5 0.113.0-2

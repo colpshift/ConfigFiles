@@ -1,4 +1,5 @@
 Name                       Version                     Rev    Tracking       Publisher         Notes
+chromium                   91.0.4472.114               1646   latest/stable  canonical*        -
 code                       507ce72a                    67     latest/stable  vscode*           classic
 core                       16-2.51                     11187  latest/stable  canonical*        core
 core18                     20210611                    2074   latest/stable  canonical*        base

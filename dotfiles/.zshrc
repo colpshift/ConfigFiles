@@ -28,5 +28,5 @@ eval "$(rbenv init -)"
 eval "$(fasd --init auto)"
 
 ### forgit
-source ~/Projects/src/forgit/forgit.plugin.zsh
+source ~/src/forgit/forgit.plugin.zsh
 

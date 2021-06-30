@@ -49,11 +49,11 @@ automake 1.16.3-1
 avahi 0.8+20+gd1e71b3-1
 b43-fwcutter 019-3
 babl 0.1.86-1
+balena-etcher 2:1.5.120-1
 baobab 40.0-1
 bash 5.1.008-3
 bash-language-server 1.17.0-4
 bashrc-manjaro 5.1.008-3
-bashtop 0.9.25-1
 bat 0.18.1-1
 bc 1.07.1-4
 binutils 2.36.1-3
@@ -69,6 +69,7 @@ bmenu 0.16-1
 bmon 4.0-4
 bolt 0.9.1-1
 boost-libs 1.75.0-5
+bpytop 1.0.67-1
 brave 1.25.68-1
 brotli 1.0.9-4
 btrfs-progs 5.12.1-1
@@ -145,6 +146,7 @@ ed 1.17-1
 efibootmgr 17-2
 efivar 37-4
 efm-langserver 0.0.31-1
+electron 12.0.9-1
 electron11 11.4.8-1
 elfutils 0.185-1
 embree 3.12.2-1
@@ -422,6 +424,7 @@ java-runtime-common 3-3
 jbig2dec 0.19-1
 jemalloc 1:5.2.1-3
 jfsutils 1.1.15-7
+jq 1.6-4
 jre8-openjdk 8.u292-1
 jre8-openjdk-headless 8.u292-1
 js78 78.11.0-1
@@ -864,6 +867,7 @@ matcha-gtk-theme 20210624-0.1
 mc 4.8.26-1
 md4c 0.4.8-1
 mdadm 4.1-2
+mdcat 0.22.4-2
 mediainfo 20.09-1
 memtest86+ 5.01-4
 mesa 21.1.2-1
@@ -932,6 +936,7 @@ nss-mdns 0.14.1-3
 ntfs-3g 2017.3.23-5
 ntp 4.2.8.p15-1
 numlockx 1.2-5
+oniguruma 6.9.7.1-1
 openal 1.21.1-1
 opencollada 1:1.6.68-2
 opencolorio 2.0.1-2
@@ -1132,6 +1137,7 @@ python-webencodings 0.5.1-6
 python-websocket-client 0.59.0-1
 python-xlib 0.30-1
 python-zeroconf 0.29.0-2
+python2 2.7.18-3
 qgnomeplatform 0.7.1-1
 qhull 2020.2-4
 qpdf 10.3.2-1

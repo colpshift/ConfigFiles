@@ -17,4 +17,4 @@ spotify                    1.1.55.498.gf9a83c60        46     latest/stable  spo
 todoist                    0.4.2                       8      latest/stable  doist*            -
 xmind                      11.0.1                      10     latest/stable  xmindltd          -
 yaml-language-server       0.16.0                      20     latest/stable  alexmurray        -
-zoom-client                5.7.0-25958.0621            150    latest/stable  ogra              -
+zoom-client                5.7.1-26030.0627            151    latest/stable  ogra              -

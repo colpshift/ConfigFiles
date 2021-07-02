@@ -1,10 +1,10 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 #
-# File: .zprofile
-# Path: ~/
+# File: zprofile
+# Path: /etc/zsh/
 # Tags: zsh shell
-# Description: zsh config
-# Last update: 07/04/2021 10:26
+# Description: zsh profile config
+# Last update: 11/12/2019 20:25
 # Author: Colpshift
 #
 

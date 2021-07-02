@@ -6,10 +6,13 @@
 rofi.modi: window,drun,run,ssh
 
 ! "Font to use" Set from: Default
-rofi.font: JetBrainsMono Nerd Font 9
+rofi.font: jetBrainsMono Nerd Font Mono Mediumm 10
 
 ! "Border width" Set from: Default
 rofi.bw: 1
+
+! "Whether to load and show icons" Set from: Default
+rofi.show-icons: true
 
 ! "Terminal to use" Set from: Default
 rofi.terminal: alacritty
@@ -18,13 +21,23 @@ rofi.terminal: alacritty
 rofi.cycle: true
 
 ! "Enable sidebar-mode" Set from: Default
-rofi.sidebar-mode: false
+rofi.sidebar-mode: true
+
+! "Fake transparency *DEPRECATED*" Set from: Default
+rofi.fake-transparency: true
+
+! "Background to use for fake transparency. 
+! (background or screenshot)" Set from: Default
+rofi.fake-background: background
+
+! "New style theme file" Set from: File
 
 ! "Switch to the next mode." Set from: Default
-rofi.kb-mode-next: Alt+l
+ rofi.kb-mode-next: Alt+l
 
 ! "Switch to the previous mode." Set from: Default
 rofi.kb-mode-previous: Alt+h
 
-! "New style theme file" Set from: File
-rofi.theme: /home/colps/.config/rofi/themes/dmenu.rasi
+! "Take a screenshot of the rofi window" Set from: Default
+! rofi.kb-screenshot: Alt+j
+rofi.theme: /usr/share/rofi/themes/Arc-Dark-Evopop.rasi

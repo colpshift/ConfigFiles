@@ -25,8 +25,9 @@ run rambox
 run nextcloud
 run copyq
 run flameshot
+run dunst
 run nm-applet &
-run ~/.scripts/caffeine_start.sh
+run caffeine-indicator
 run ~/.scripts/mpd_start.sh
 #
 picom --config $HOME/.config/bspwm/picom.conf &

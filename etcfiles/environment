@@ -1,4 +1,9 @@
+#
+# Path: /etc/environment
+# Tags: system
+# Description: system env config
+# Author: colpshift
+# Last update: 03/07/2021 13:27
+#
+
 QT_QPA_PLATFORMTHEME=qt5ct
-EDITOR=nvim
-JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
-JAVA_FONTS=/usr/share/fonts/TTF

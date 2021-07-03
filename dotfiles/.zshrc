@@ -1,10 +1,9 @@
 #
-# File: .zshrc
-# Path: ~/
+# Path: ~/.zshrc
 # Tags: zsh shell
-# Description: zsh config
-# Last update: 07/04/2021 10:26
-# Author: Colpshift
+# Description: zsh env config
+# Author: colpshift
+# Last update: 03/07/2021 13:14 
 #
 
 ## Options section

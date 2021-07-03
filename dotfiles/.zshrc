@@ -1,4 +1,3 @@
-#!/bin/sh
 #
 # File: .zshrc
 # Path: ~/
@@ -8,74 +7,67 @@
 # Author: Colpshift
 #
 
-### Set variables
-#################
-WORDCHARS=${WORDCHARS//\/[&.;]}
+## Options section
+setopt correct                                                  # Auto correct mistakes
+setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
+setopt nocaseglob                                               # Case insensitive globbing
+setopt rcexpandparam                                            # Array expension with parameters
+setopt nocheckjobs                                              # Don't warn about running processes when exiting
+setopt numericglobsort                                          # Sort filenames numerically when it makes sense
+setopt nobeep                                                   # No beep
+setopt appendhistory                                            # Immediately append history instead of overwriting
+setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
+setopt autocd                                                   # if only directory path is entered, cd there.
+setopt inc_append_history                                       # save commands are added to the history immediately, otherwise only when shell exits.
 
-### Set/unset ZSH options
-#########################
-setopt INC_APPEND_HISTORY SHARE_HISTORY
-setopt EXTENDED_HISTORY
-setopt APPEND_HISTORY
-setopt AUTO_LIST
-setopt MENUCOMPLETE
-setopt COMPLETE_ALIASES
-setopt ALL_EXPORT
+### zsh style
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
+zstyle ':completion:*' rehash true                              # automatically find new executables in path 
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
 
-### Set/unset shell options
-############################
-setopt   notify globdots pushdtohome cdablevars autolist numericglobsort
-setopt   autocd recexact rcexpandparam nocheckjobs nobeep
-setopt   autopushd autoresume histignoredups pushdsilent pushdignoredups
-setopt   pushdminus extendedglob nocaseglob rcquotes
+### zsh history
+HISTFILE=~/.zhistory
+HISTSIZE=10000
+SAVEHIST=10000
 
-### Completion Styles
-#####################
-autoload -Uz compinit
-compinit
-zstyle ':completion::complete:*' use-cache on
-zstyle ':completion::complete:*' cache-path ~/.zsh/cache/$HOST
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
-zstyle ':completion:*' menu select=1 _complete _ignored _approximate
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
+### Editor
+WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
-### History
-###########
-HISTFILE=$HOME/.zhistory
-HISTSIZE=1000
-SAVEHIST=1000
-autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
 
-### Load colors
-###############
-autoload -U colors && colors
-colors
+### Keybindings section
+bindkey -e
+bindkey '^[[7~' beginning-of-line                               # Home key
+bindkey '^[[H' beginning-of-line                                # Home key
+if [[ "${terminfo[khome]}" != "" ]]; then
+  bindkey "${terminfo[khome]}" beginning-of-line                # [Home] - Go to beginning of line
+fi
+bindkey '^[[8~' end-of-line                                     # End key
+bindkey '^[[F' end-of-line                                     	# End key
+if [[ "${terminfo[kend]}" != "" ]]; then
+  bindkey "${terminfo[kend]}" end-of-line                       # [End] - Go to end of line
+fi
+bindkey '^[[2~' overwrite-mode                                  # Insert key
+bindkey '^[[3~' delete-char                                     # Delete key
+bindkey '^[[C'  forward-char                                    # Right key
+bindkey '^[[D'  backward-char                                   # Left key
+bindkey '^[[5~' history-beginning-search-backward               # Page up key
+bindkey '^[[6~' history-beginning-search-forward                # Page down key
 
-### Source plugins
-##################
-# Use syntax highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# Use history substring search
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-# auto sugestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=9'
-ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd)
-ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
-# interactive cd
-source /usr/share/zsh/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
+# Navigate words with ctrl+arrow keys
+bindkey '^[Oc' forward-word                                     #
+bindkey '^[Od' backward-word                                    #
+bindkey '^[[1;5D' backward-word                                 #
+bindkey '^[[1;5C' forward-word                                  #
+bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
+bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 ### Set alias
 #############
-alias ps='procs'
 alias exa='exa --header --long --group --git'
-alias ll='exa'
+alias ll='ls'
 alias ls='ls -lh --color=auto --group-directories-first'
 alias la='ls -ah'  # show hidden files and folders
 alias lx='ls -BXh' # sort by extension
@@ -85,32 +77,56 @@ alias dir='dir --color'
 alias grep='grep --color'
 alias dmesg='dmesg --color'
 alias df='df -h'
-alias du='dust'
+alias du='du -h'
 alias su='sudo -i'
 alias vi='/bin/nvim'
 alias vim='/bin/nvim'
 alias gvim='/bin/nvim'
-alias grep='rg'
-alias cat='batcat'
-alias bat='batcat'
-alias batcat='batcat --theme TwoDark'
+alias bat='bat --theme TwoDark'
 alias gitu='git add . && git commit'
 alias gitp='git add . && git commit && git push'
 alias gitl='git log --oneline'
 alias surf='surf -DI'
-alias mpv='$HOME/.scripts/devour.sh umpv.py'
-alias umpv='$HOME/.scripts/devour.sh umpv.py'
-alias sxiv='$HOME/.scripts/devour.sh sxiv'
-alias zathura='$HOME/.scripts/devour.sh zathura'
+# alias mpv='$HOME/.scripts/devour.sh umpv.py'
+# alias umpv='$HOME/.scripts/devour.sh umpv.py'
+# alias sxiv='$HOME/.scripts/devour.sh sxiv'
+# alias zathura='$HOME/.scripts/devour.sh zathura'
 alias cls='clear'
 alias cmatrix='cmatrix -fs'
 alias myip='curl http://ipecho.net/plain; echo'
-alias neofetch="neofetch --color_blocks off "
-alias disk_monitor='duf'
-alias net_monitor='bmon'
+alias neofetch='clear && neofetch --color_blocks off'
+alias parui='~/.scripts/fzf_paru_install.sh'
+alias parur='~/.scripts/fzf_paru_remove.sh'
+alias parup='~/.scripts/paru_update.sh'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
-alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+
+### Theming section  
+autoload -U compinit colors zcalc
+compinit -d
+colors
+
+### Color man pages
+export LESS_TERMCAP_mb=$'\E[01;32m'
+export LESS_TERMCAP_md=$'\E[01;32m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;47;34m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;36m'
+export LESS=-R
+
+### Zsh Plugins
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# bind UP and DOWN arrow keys to history substring search
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey '^[[A' history-substring-search-up			
+bindkey '^[[B' history-substring-search-down
+# command is not found
+source /usr/share/doc/pkgfile/command-not-found.zsh
 
 ### Set prompt
 ##############
@@ -132,11 +148,10 @@ eval "$(fasd --init auto)"
 
 ### forgit
 ##########
-source $HOME/Projects/src/forgit/forgit.plugin.zsh
+source $HOME/Src/forgit/forgit.plugin.zsh
 
 # fzf completion
 ################
-source /usr/share/doc/fzf/examples/key-bindings.zsh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

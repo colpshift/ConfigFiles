@@ -17,7 +17,7 @@ vicmd_symbol = "[ </>](bold fg:3)"
 format = "[ $duration](fg:3)"
 
 [directory]
-format = '[  $path]($style)($read_only_style)'
+format = '[  $path ]($style)($read_only_style)'
 style = "bold cyan"
 truncation_length = 12
 truncation_symbol = "…/"

@@ -1,10 +1,9 @@
-#!/usr/bin/env zsh
+# /etc/zsh/zlogin: system-wide .zlogin file for zsh(1).
 #
-# File: .zlogin
-# Path: $HOME
-# Tags: zsh shell
-# Description: zsh login commands
-# Last update: 11/12/2019 20:25
-# Author: Colpshift
+# This file is sourced only for login shells. It
+# should contain commands that should be executed only
+# in login shells. It should be used to set the terminal
+# type and run a series of external commands (fortune,
+# msgs, from, etc.)
 #
-firefox-sync
+# Global Order: zshenv, zprofile, zshrc, zlogin

@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 #
 # $HOME/.config/sxiv/exec/key-handler
 # Author: Colpshift
@@ -20,7 +20,6 @@ do
       echo "$file" | xclip -selection clipboard ;;
     "C-w")
       feh --bg-fill "$file" "$file" ;;
-      #feh --bg-scale "$file" ;;
     "C-g")
       gimp "$file" ;;
   esac

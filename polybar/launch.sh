@@ -17,19 +17,17 @@ count=$(xrandr --query | grep " connected" | cut -d" " -f1 | wc -l)
 
 case $desktop in
 
-    # main polybar at bottom
+    # main polybar at top
     bspwm|/usr/share/xsessions/bspwm)
-    MONITOR=$(polybar -m|tail -1|sed -e 's/:.*$//g')
-    polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
 
-    #if type "xrandr" > /dev/null; then
-    #  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    #    MONITOR=$m polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
-    #  done
-    #else
-    #polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
-    #fi
-    
+    if type "xrandr" > /dev/null; then
+      for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+        MONITOR=$m polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
+      done
+    else
+      polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
+    fi
+
     # # extra polybar at bottom
     # if type "xrandr" > /dev/null; then
     #   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do

@@ -30,11 +30,11 @@ super + Print
 super + h
     alacritty -e bpytop
 
-#Xcfe4-TaskManager
-super + shift + h
-    xfce4-taskmanager
+#newsboat
+super + r
+    alacritty -e newsboat
 
-#rofi
+rofi
 super + z
     rofi -show drun
 

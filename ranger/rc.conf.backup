@@ -1,9 +1,29 @@
+# ===================================================================
+# This file contains the default startup commands for ranger.
+# To change them, it is recommended to create either /etc/ranger/rc.conf
+# (system-wide) or ~/.config/ranger/rc.conf (per user) and add your custom
+# commands there.
 #
+# If you copy this whole file there, you may want to set the environment
+# variable RANGER_LOAD_DEFAULT_RC to FALSE to avoid loading it twice.
+#
+# The purpose of this file is mainly to define keybindings and settings.
+# For running more complex python code, please create a plugin in "plugins/" or
+# a command in "commands.py".
+#
+# Each line is a command that will be run before the user interface
+# is initialized.  As a result, you can not use commands which rely
+# on the UI such as :delete or :mark.
+# ===================================================================
+
 # ===================================================================
 # == Options
 # ===================================================================
 
-# miller: Use miller columns which show multiple levels of the hierarchy
+# Which viewmode should be used?  Possible values are:
+#     miller: Use miller columns which show multiple levels of the hierarchy
+#     multipane: Midnight-commander like multipane view showing all tabs next
+#                to each other
 set viewmode miller
 
 # How many columns are there, and what are their relative widths?
@@ -15,8 +35,15 @@ set hidden_filter ^\.|\.(?:pyc|pyo|bak|swp)$|^lost\+found$|^__(py)?cache__$
 # Show hidden files? You can toggle this by typing 'zh'
 set show_hidden false
 
+# Ask for a confirmation when running the "delete" command?
+# Valid values are "always", "never", "multiple" (default)
 # With "multiple", ranger will ask only if you delete multiple files at once.
 set confirm_on_delete multiple
+
+# Use non-default path for file preview script?
+# ranger ships with scope.sh, a script that calls external programs (see
+# README.md for dependencies) to preview images, archives, etc.
+#set preview_script ~/.config/ranger/scope.sh
 
 # Use the external preview script or display simple plain text or image previews?
 set use_preview_script true
@@ -31,7 +58,9 @@ set open_all_images true
 # Be aware of version control systems and display information.
 set vcs_aware true
 
-# State of the four backends git, hg, bzr, svn.
+# State of the four backends git, hg, bzr, svn. The possible states are
+# disabled, local (only show local info), enabled (show local and remote
+# information).
 set vcs_backend_git enabled
 set vcs_backend_hg disabled
 set vcs_backend_bzr disabled
@@ -43,8 +72,55 @@ set vcs_msg_length 50
 # Use one of the supported image preview protocols
 set preview_images true
 
-# Only for users who run X11 in GNU/Linux.
+# Set the preview image method. Supported methods:
+#
+# * w3m (default):
+#   Preview images in full color with the external command "w3mimgpreview"?
+#   This requires the console web browser "w3m" and a supported terminal.
+#   It has been successfully tested with "xterm" and "urxvt" without tmux.
+#
+# * iterm2:
+#   Preview images in full color using iTerm2 image previews
+#   (http://iterm2.com/images.html). This requires using iTerm2 compiled
+#   with image preview support.
+#
+#   This feature relies on the dimensions of the terminal's font.  By default, a
+#   width of 8 and height of 11 are used.  To use other values, set the options
+#   iterm2_font_width and iterm2_font_height to the desired values.
+#
+# * terminology:
+#   Previews images in full color in the terminology terminal emulator.
+#   Supports a wide variety of formats, even vector graphics like svg.
+#
+# * urxvt:
+#   Preview images in full color using urxvt image backgrounds. This
+#   requires using urxvt compiled with pixbuf support.
+#
+# * urxvt-full:
+#   The same as urxvt but utilizing not only the preview pane but the
+#   whole terminal window.
+#
+# * kitty:
+#   Preview images in full color using kitty image protocol.
+#   Requires python PIL or pillow library.
+#   If ranger does not share the local filesystem with kitty
+#   the transfer method is changed to encode the whole image;
+#   while slower, this allows remote previews,
+#   for example during an ssh session.
+#   Tmux is unsupported.
+#
+# * ueberzug:
+#   Preview images in full color with the external command "ueberzug".
+#   Images are shown by using a child window.
+#   Only for users who run X11 in GNU/Linux.
 set preview_images_method ueberzug
+
+# Delay in seconds before displaying an image with the w3m method.
+# Increase it in case of experiencing display corruption.
+set w3m_delay 0.03
+
+# Manually adjust the w3mimg offset when using a terminal which needs this
+set w3m_offset 0
 
 # Default iTerm2 font size (see: preview_images_method: iterm2)
 set iterm2_font_width 9
@@ -84,6 +160,9 @@ set status_bar_on_top false
 set draw_progress_bar_in_status_bar true
 
 # Draw borders around columns? (separators, outline, both, or none)
+# Separators are vertical lines between columns.
+# Outline draws a box around all the columns.
+# Both combines the two.
 set draw_borders both
 
 # Display the directory name in tabs?
@@ -132,6 +211,9 @@ set flushinput true
 # This allows you to click into the space to run the file.
 set padding_right true
 
+# Save bookmarks (used with mX and `X) instantly?
+# This helps to synchronize bookmarks between multiple ranger
+# instances but leads to *slight* performance loss.
 # When false, bookmarks are saved when ranger is exited.
 set autosave_bookmarks true
 
@@ -228,6 +310,13 @@ set size_in_bytes false
 # give a warning when you nest ranger in a subshell started by ranger.
 # Special value "error" makes the warning more visible.
 set nested_ranger_warning true
+
+# ===================================================================
+# == Local Options
+# ===================================================================
+# You can set local options that only affect a single directory.
+# Examples:
+# setlocal path=~/downloads sort mtime
 
 # ===================================================================
 # == Command Aliases in the Console

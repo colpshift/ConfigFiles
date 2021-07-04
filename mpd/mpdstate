@@ -1,9 +1,9 @@
 sw_volume: 51
 audio_device_state:1:pulse audio
 audio_device_state:1:FIFO
-state: pause
-current: 0
-time: 26.438000
+state: play
+current: 51
+time: 31.280000
 random: 0
 repeat: 1
 single: 0
@@ -14,4 +14,55 @@ mixrampdelay: -1.000000
 playlist_begin
 0:Banks - Gemini Feed.mp3
 1:Banks - Beggin For Thread.mp3
+2:Jon Bon Jovi-Janie,Don't take your love.mp3
+3:Banks - Beggin For Thread.mp3
+4:Banks - Gemini Feed.mp3
+5:Banks - Beggin For Thread.mp3
+6:Banks - Gemini Feed.mp3
+7:Banks - Beggin For Thread.mp3
+8:Banks - Gemini Feed.mp3
+9:Banks - Beggin For Thread.mp3
+10:Banks - Gemini Feed.mp3
+11:Banks - Beggin For Thread.mp3
+12:Banks - Gemini Feed.mp3
+13:Banks - Beggin For Thread.mp3
+14:Banks - Gemini Feed.mp3
+15:Ponto de Defumaçao  - Ze Mauricio Machline (Toques de Umbanda).mp3
+16:Ponto de Exu  - Ze Mauricio Machline (Toques de Umbanda).mp3
+17:Pontos de Pretos Velhos - Ze Mauricio Machline (Toques de Umbanda).mp3
+18:Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3
+19:Ponto de Ogum - Ze Mauricio Machline (Toques de Umbanda).mp3
+20:Ponto de Boiadeiro   Plichas - Zé Maurício Machline (Toques de Umbanda).mp3
+21:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
+22:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
+23:Ponto de Marinheiro   Marinheiro Só - Ze Mauricio Machline (Toques de Umbanda).mp3
+24:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
+25:Ponto de Oxóssi - Ze Mauricio Machline (Toques de Umbanda).mp3
+26:Ponto de Xangô - Ze Mauricio Machline (Toques de Umbanda).mp3
+27:Pontos de Iansa - Ze Mauricio Machline (Toques de Umbanda).mp3
+28:Pontos de Oxum (Dengue   Mamae Oxum) - Ze Mauricio Machline (Toques de Umbanda).mp3
+29:Ponto de Defumaçao  - Ze Mauricio Machline (Toques de Umbanda).mp3
+30:Ponto de Exu  - Ze Mauricio Machline (Toques de Umbanda).mp3
+31:Pontos de Pretos Velhos - Ze Mauricio Machline (Toques de Umbanda).mp3
+32:Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3
+33:Ponto de Ogum - Ze Mauricio Machline (Toques de Umbanda).mp3
+34:Ponto de Boiadeiro   Plichas - Zé Maurício Machline (Toques de Umbanda).mp3
+35:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
+36:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
+37:Ponto de Marinheiro   Marinheiro Só - Ze Mauricio Machline (Toques de Umbanda).mp3
+38:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
+39:Ponto de Oxóssi - Ze Mauricio Machline (Toques de Umbanda).mp3
+40:Ponto de Xangô - Ze Mauricio Machline (Toques de Umbanda).mp3
+41:Pontos de Iansa - Ze Mauricio Machline (Toques de Umbanda).mp3
+42:Pontos de Oxum (Dengue   Mamae Oxum) - Ze Mauricio Machline (Toques de Umbanda).mp3
+43:Banks - Beggin For Thread.mp3
+44:Banks - Gemini Feed.mp3
+45:Banks - Beggin For Thread.mp3
+46:Banks - Gemini Feed.mp3
+47:Banks - Beggin For Thread.mp3
+48:Banks - Gemini Feed.mp3
+49:Banks - Beggin For Thread.mp3
+50:Banks - Gemini Feed.mp3
+51:Banks - Beggin For Thread.mp3
+52:Banks - Gemini Feed.mp3
 playlist_end

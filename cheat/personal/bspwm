@@ -1,0 +1,148 @@
+# 
+# bspwm keybinds
+# 
+
+# thunar
+super + f
+
+# vscode
+super + e
+
+# brave
+super + w
+
+# chromium
+super + shift + w
+
+# alacritty
+super + Return
+
+# bpytop
+super + h
+
+# newsboat
+super + r
+
+# ncmpcpp
+super + m
+
+# audacious
+super + shift + m
+
+# flameshot
+super + Print
+
+# rofi
+super + z
+
+# dmenu
+super + shift + d
+
+# logout
+super + x
+
+# Xkill
+super + Escape
+
+# reload sxhkd:
+super + shift + s
+
+# Pavucontrol
+super + v
+
+# Hide polybar
+super + y
+
+# Picom Toggle
+ctrl + alt + o
+
+# Toggle fullscreen of window
+super + f
+
+# Toggle pseudo tiling of window
+super + p
+
+# kill
+super + q
+
+# Focus selected desktop
+super + Tab
+
+# Increase/decrease window gap on focused desktop
+super + bracket{left,right}
+
+# set the window state
+super + space
+
+# Move focus to other monitor
+super + BackSpace
+
+# Move floating window
+super + alt + {_,shift + }{Left,Down,Up,Right}
+
+# Cancel preselection
+super + ctrl + space
+
+# Reload bspwm
+super + shift + r
+
+# Focus/swap windows by direction
+super + {_,shift + }{h,j,k,l}
+
+# Flip layout vertically/horizontally
+super + {_,shift + }a
+
+# Move focused window to other monitor
+super + shift + Left
+
+# Move focused window to other monitor
+super + shift + Right
+
+# Move focused window to other monitor
+super + shift + Up
+
+# Move focused window to other monitor
+super + shift + Down
+
+# Focus/swap windows by direction
+super + ctrl + {Left,Down,Up,Right}
+
+# Contract tiled space
+super + ctrl + {h,j,k,l}
+
+# Focus parent/brother/first/second for preselection
+super + ctrl + {e,r,t,y}
+
+# Preselect the splitting area for next window on leaf/parent
+super + ctrl + {u,i,o,p}
+
+# Define splitting ratio for next window on leaf/parent
+super + ctrl + {_,shift +}{1-9}
+
+# Focus selected desktop
+alt + Tab
+
+# Focus selected desktop
+alt + shift + Tab
+
+# Rotate desktop
+alt + space
+
+# Expand tiled space
+alt + shift + {h,j,k,l}
+
+# Focus next/previous window
+ctrl + alt + Left
+
+# Focus next/previous window
+ctrl + alt + Right
+
+# Focus Up window
+ctrl +alt + Up
+
+# Focus Down window
+ctrl + alt + Down
+
+# Focused desktop window gap
+super + button{4,5}
+

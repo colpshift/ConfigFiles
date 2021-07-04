@@ -1,27 +1,27 @@
 #!/bin/sh
 #
-# $HOME/.config/sxiv/exec/key-handler
-# Author: Colpshift
-# Github: https://github.com/colpshift
-# Description: sxiv action
-# Last Modified: 18/11/2019 20:45
+# ~/.config/sxiv/exec/key-handler
 #
 
-while read -r file
-do
-  case "$1" in
-    "C-d")
-      mv "$file" ~/.local/share/Trash/files ;;
-    "C-p")
-      lpr -o media="A4" -o print-quality=4 -P HP_Printer "$file" ;;
-    "C-r")
-      convert -rotate 90 "$file" "$file" ;;
-    "C-c")
-      echo "$file" | xclip -selection clipboard ;;
-    "C-w")
-      feh --bg-fill "$file" "$file" ;;
-    "C-g")
-      gimp "$file" ;;
+rotate() {
+  degree="$1"
+  tr '\n' '\0' | xargs -0 realpath | sort | uniq | while read file; do
+  case "$(file -b -i "$file")" in
+    image/jpeg*) jpegtran -rotate "$degree" -copy all -outfile "$file" "$file" ;;
+    *)           mogrify  -rotate "$degree" "$file" ;;
   esac
 done
+}
+
+case "$1" in
+  "C-x")      xclip -in -filter | tr '\n' ' ' | xclip -in -selection clipboard ;;
+  "C-c")      while read file; do xclip -selection clipboard -target image/png "$file"; done ;;
+  "C-e")      while read file; do alacritty -e sh -c "exiv2 pr -q -pa '$file' | less" & done ;;
+  "C-g")      while read file; do gimp "$file" & done ;;
+  "C-r")      while read file; do rawtherapee "$file" & done ;;
+  "C-w")      while read file; do feh --bg-fill "$file" & done ;;
+  "C-comma")  rotate 270 ;;
+  "C-period") rotate  90 ;;
+  "C-slash")  rotate 180 ;;
+esac
 

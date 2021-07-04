@@ -66,6 +66,7 @@ automake 1.16.3-1
 avahi 0.8+20+gd1e71b3-1
 awesome-terminal-fonts 1.1.0-4
 ayatana-ido 0.8.2-1
+babl 0.1.86-1
 base 2-2
 bash 5.1.008-1
 bash-completion 2.11-2
@@ -219,12 +220,14 @@ gdb 10.2-2
 gdb-common 10.2-2
 gdbm 1.20-1
 gdk-pixbuf2 2.42.6-1
+gegl 0.4.30-4
 geoclue 2.5.7-3
 geocode-glib 3.26.2-1
 gettext 0.21-1
 ghc-libs 8.10.5-1
 ghostscript 9.54.0-2
 giflib 5.2.1-2
+gimp 2.10.24-5
 girara 0.3.5-1
 git 2.32.0-1
 gksu 2.0.2-6
@@ -233,7 +236,7 @@ glib2 2.68.3-1
 glib2-docs 2.68.3-1
 glibc 2.33-5
 glibmm 2.66.1-2
-glslang 11.4.0-1
+glslang 11.5.0-1
 gmp 6.2.1-1
 gmrun 1.2w-1
 gnome-desktop 1:40.2-1
@@ -330,6 +333,7 @@ iana-etc 20210624-1
 icu 69.1-1
 ijs 0.35-3
 imagemagick 7.1.0.2-2
+imath 3.0.5-1
 imlib2 1.7.1-1
 inkscape 1.1-4
 iproute2 5.13.0-1
@@ -342,6 +346,7 @@ iso-codes 4.6.0-1
 iw 5.9-1
 jack 0.125.0-9
 jansson 2.13.1-1
+jasper 2.0.32-1
 jbig2dec 0.19-1
 jfsutils 1.1.15-7
 joplin-desktop 2.1.7-1
@@ -366,6 +371,7 @@ lbzip2 2.5-5
 lcms2 2.12-1
 ldb 1:2.3.0-1
 ldns 1.7.1-2
+lensfun 0.3.95-4
 less 1:581.2-1
 lib2geom 1.1-1
 libabw 0.1.3-2
@@ -431,6 +437,7 @@ libfontenc 1.1.4-3
 libfreehand 0.1.2-3
 libftdi 1.5-2
 libgcrypt 1.9.3-1
+libgexiv2 0.12.2-1
 libgit2 1:1.1.1-1
 libgksu 2.0.12-8
 libglvnd 1.3.3-1
@@ -459,6 +466,7 @@ libindicator-gtk3 12.10.1-9
 libinih 53-1
 libinput 1.18.0-1
 libinstpatch 1.1.6-1
+libiptcdata 1.0.4-5
 libixion 0.16.1-6
 libjpeg-turbo 2.1.0-1
 libksba 1.6.0-1
@@ -477,6 +485,7 @@ libmicrohttpd 0.9.73-1
 libmikmod 3.3.11.1-4
 libmm-glib 1.16.6-1
 libmms 0.6.4-3
+libmng 2.0.3-3
 libmnl 1.0.4-3
 libmodplug 0.8.9.0-3
 libmpc 1.2.1-1
@@ -485,6 +494,7 @@ libmpdclient 2.19-3
 libmspub 0.1.4-10
 libmtp 1.1.18-1
 libmwaw 0.3.19-1
+libmypaint 1.6.1-1
 libndp 1.8-1
 libnetfilter_conntrack 1.0.8-1
 libnewt 0.52.21-5
@@ -512,7 +522,7 @@ libpcap 1.10.1-1
 libpciaccess 0.16-2
 libpgm 5.3.128-1
 libpipeline 1.5.3-1
-libplacebo 3.120.3-1
+libplacebo 3.120.3-2
 libplist 2.2.0-3
 libpng 1.6.37-3
 libproxy 0.4.17-2
@@ -523,6 +533,7 @@ libqmi 1.28.6-1
 libqrtr-glib 1.0.0-1
 libqxp 0.0.2-6
 libraqm 0.7.1-1
+libraw 0.20.2-1
 libraw1394 2.1.2-3
 libreoffice-fresh 7.1.4-1
 librevenge 0.0.4-3
@@ -540,6 +551,7 @@ libsodium 1.0.18-2
 libsoup 2.72.0+10+gfe1e295d-1
 libsoxr 0.1.3-2
 libspectre 0.2.9-2
+libspiro 1:20200505-2
 libssh 0.9.5-1
 libssh2 1.9.0-3
 libstaroffice 0.0.7-1
@@ -570,6 +582,7 @@ libvorbis 1.3.7-2
 libvpx 1.10.0-1
 libwacom 1.10-1
 libwebp 1.2.0-1
+libwmf 0.2.12-2
 libwnck3 40.0-1
 libwpd 0.10.3-3
 libwpe 1.10.1-1
@@ -642,6 +655,7 @@ lua 5.4.3-1
 lua-language-server 2.0.1-1
 lua51 5.1.5-9
 lua52 5.2.4-5
+luajit 2.0.5-3
 lvm2 2.03.12-1
 lxappearance-gtk3 0.6.3-4
 lynx 2.8.9-3
@@ -658,6 +672,7 @@ mdadm 4.1-2
 mediainfo 21.03-1
 memtest86+ 5.31b-1
 mesa 21.1.3-1
+metis 5.1.0.p10-2
 minizip 1:1.2.11-4
 mkinitcpio 30-1
 mkinitcpio-busybox 1.33.1-1
@@ -674,6 +689,7 @@ mpv 1:0.33.1-2
 mtdev 1.1.6-1
 mtools 1:4.0.31-1
 mujs 1.1.3-1
+mypaint-brushes1 1.3.1-1
 nano 5.8-1
 nbd 3.21-2
 ncdu 1.16-1
@@ -716,6 +732,7 @@ odt2txt 0.5-4
 openal 1.21.1-1
 openconnect 1:8.10-1
 opencore-amr 0.1.5-5
+openexr 3.0.5-1
 openjpeg2 2.4.0-1
 openmpi 4.1.1-2
 openresolv 3.12.0-1
@@ -804,6 +821,7 @@ polkit 0.119-1
 polkit-gnome 0.105-8
 polybar 3.5.6-1
 poppler 21.06.1-1
+poppler-data 0.4.10-1
 poppler-glib 21.06.1-1
 popt 1.18-1
 portaudio 1:19.7.0-1
@@ -897,6 +915,7 @@ ranger 1.9.3-3
 raptor 2.0.15-16
 rasqal 1:0.9.33-4
 rav1e 0.4.1-1
+rawtherapee 1:5.8-1
 rbenv 1.1.2-1
 re2 1:20210601-1
 readline 8.1.001-1
@@ -930,7 +949,7 @@ sdparm 1.12-1
 sed 4.8-1
 semver 7.3.5-2
 sg3_utils 1.46-1
-shaderc 2021.0-1
+shaderc 2021.1-1
 shadow 4.8.1-4
 shared-mime-info 2.0+57+gc1d1c70-1
 shellcheck 0.7.2-36
@@ -959,6 +978,7 @@ stfl 0.24-5
 stoken 0.92-4
 stremio 4.4.137-1
 sudo 1.9.7.p1-1
+suitesparse 5.10.1-1
 surfn-icons-git 21.07-02
 sutils-git 35-1
 svt-av1 0.8.7-1
@@ -972,6 +992,7 @@ systemd-sysvcompat 248.3-2
 taglib 1.12-1
 talloc 2.3.2-1
 tar 1.34-1
+tbb 2020.3-1
 tcl 8.6.11-1
 tcpdump 4.99.1-1
 tdb 1.4.3-4

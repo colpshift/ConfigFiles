@@ -20,16 +20,16 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 xset r rate 210 40  # Faster key repeat and delay
 numlockx on &
 # apps
-run xbanish &
 run rambox
 run nextcloud
 run copyq
 run flameshot
 run dunst
-run nm-applet &
 run caffeine-indicator
-run ~/.scripts/mpd_start.sh
+run /home/colps/.scripts/mpd_start.sh
 #
+run xbanish &
+run nm-applet &
 picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/notification-daemon-1.0/notification-daemon &

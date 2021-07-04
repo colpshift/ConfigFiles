@@ -126,7 +126,9 @@ cracklib 2.9.7-2
 crda 4.14-4
 cronie 1.5.7-2
 cryptsetup 2.3.6-1
+cups 1:2.3.3op2-3
 cups-filters 1.28.9-1
+cups-pdf 3.0.1-6
 curl 7.77.0-1
 darkhttpd 1.13-1
 dash 0.5.11.4-1
@@ -173,6 +175,7 @@ enchant 2.3.0-1
 ethtool 1:5.12-1
 exa 0.10.1-1
 exfatprogs 1.1.2-1
+exiv2 0.27.4-2
 exo 4.16.2-1
 expac 10-3
 expat 2.4.1-1
@@ -271,6 +274,7 @@ gtk2 2.24.33-2
 gtk3 1:3.24.29-2
 gtkmm3 3.24.5-2
 gts 0.7.6.121130-2
+gufw 21.04.0-1
 guile 2.2.7-1
 gvfs 1.48.1-1
 gzip 1.10-3
@@ -733,9 +737,12 @@ pamac-all 10.1.3-3
 pambase 20210605-2
 pango 1:1.48.7-1
 pangomm 2.46.1-2
+paper-gtk-theme-git 302.770aba4-1
+paper-icon-theme-git 832.aa3e8af7-1
 papirus-folders 1.9.0-1
 papirus-icon-theme 20210701-1
 papirus-libreoffice-theme 1:20170228-4
+papirus-nord 1:3.1.0-1
 partclone 0.3.17-1
 parted 3.4-2
 partimage 0.6.9-13
@@ -843,7 +850,7 @@ python-numpy 1.20.3-1
 python-ordered-set 4.0.2-3
 python-packaging 20.9-1
 python-pep517 0.10.0-2
-python-pillow 8.2.0-2
+python-pillow 8.3.0-1
 python-pip 20.3.4-1
 python-ply 3.11-7
 python-progress 1.5-5
@@ -994,6 +1001,7 @@ uchardet 0.0.7-1
 udftools 2.3-1
 udisks2 2.9.2-1
 ueberzug 18.1.9-2
+ufw 0.36-5
 unzip 6.0-14
 upower 0.99.12-2
 urxvt-perls 2.3-1

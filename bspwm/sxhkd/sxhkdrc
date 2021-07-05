@@ -52,7 +52,7 @@ super + shift + d
 
 # lockscreen
 super + l
-    i3lock -i Pictures/backgrounds/Arcolinux/koi-fishes-1920x1080.png -t
+    i3lock -i ~/Pictures/backgrounds/Arcolinux/koi-fishes-1920x1080.png -t
 
 # logout
 super + x

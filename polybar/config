@@ -47,26 +47,6 @@ volume-med = #ebcb8b
 volume-max = #bf616a
 ; =======================
 
-; Gotham theme ==========
-; background = #0a0f14
-; foreground = #99d1ce
-; alert = #d26937
-; volume-min = #2aa889
-; volume-med = #edb443
-; volume-max = #c23127
-; =======================
-
-; INTRCPTR theme ============
-;background = ${xrdb:color0:#222}
-;background = #aa000000
-;background-alt = #444
-;foreground = ${xrdb:color7:#222}
-;foreground = #fff
-;foreground-alt = #555
-;primary = #ffb52a
-;secondary = #e60053
-;alert = #bd2c40
-
 ################################################################################
 ################################################################################
 ############                  MAINBAR-BSPWM                         ############
@@ -82,7 +62,7 @@ height = 25
 radius = 0.0
 fixed-center = true
 bottom = false
-separator = |
+;separator = |
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -118,7 +98,7 @@ font-3 = "Noto Sans Mono:size=9;0"
 
 modules-left = bspwm
 ;wmodules-center = networkspeeddown networkspeedup
-modules-right = kernel arch-updates gmail cpu2 memory2 temperature1 battery pavolume date
+modules-right = kernel arch-updates gmail cpu2 temperature1 memory2 battery xbacklight pavolume date
 
 tray-detached = false
 tray-offset-x = 0
@@ -145,6 +125,7 @@ enable-click = true
 enable-scroll = true
 reverse-scroll = true
 pin-workspaces = true
+
 
 ws-icon-0 = 1;
 ws-icon-1 = 2;
@@ -240,26 +221,24 @@ card = intel_backlight
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix-foreground = #7D49B6
-format-prefix-underline = #7D49B6
-format-underline = #7D49B6
+format-prefix-underline = #6790eb
+format-underline = #6790eb
+
 ################################################################################
 
 [module/backlight]
-;https://github.com/jaagr/polybar/wiki/Module:-backlight
+;https://github.com/polybar/polybar/wiki/Module:-backlight
 
 type = internal/backlight
-
-; Use the following command to list available cards:
-; $ ls -1 /sys/class/backlight/
 card = intel_backlight
+use-actual-brightness = true
+enable-scroll = true
 
 ; Available tags:
 ;   <label> (default)
 ;   <ramp>
 ;   <bar>
-format = <label>
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
+format = <ramp>
 
 ; Available tokens:
 ;   %percentage% (default)
@@ -300,7 +279,7 @@ format-discharging-foreground = ${colors.foreground}
 format-discharging-background = ${colors.background}
 
 format-full-prefix = " "
-format-full-prefix-foreground = #a3c725
+format-full-prefix-foreground = #cd1f3f
 format-full-underline = #cd1f3f
 format-full-foreground = ${colors.foreground}
 format-full-background = ${colors.background}
@@ -310,14 +289,14 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-ramp-capacity-foreground = #c7ae25
+ramp-capacity-foreground = #cd1f3f
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
-animation-charging-foreground = #a3c725
+animation-charging-foreground = #cd1f3f
 animation-charging-framerate = 750
 
 ################################################################################
@@ -1055,12 +1034,13 @@ ramp-signal-foreground = #7e52c6
 [module/xbacklight]
 ;https://github.com/jaagr/polybar/wiki/Module:-xbacklight
 type = internal/xbacklight
-format = <label> <bar>
+;format = <label> <bar>
+format = <label>
 format-prefix = "   "
 format-prefix-foreground = ${colors.foreground}
 format-prefix-background = ${colors.background}
-format-prefix-underline = #9f78e1
-format-underline = #9f78e1
+format-prefix-underline = #6790eb
+format-underline = #6790eb
 label = %percentage%%
 bar-width = 10
 bar-indicator = 

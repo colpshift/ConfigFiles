@@ -32,7 +32,7 @@ super + r
 
 # ncmpcpp
 super + m
-    alacritty -e ncmpcpp -s playlist_editor -S visualizer
+    alacritty -e ncmpcpp -s media_library -S visualizer
 
 # audacious
 super + shift + m

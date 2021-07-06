@@ -116,9 +116,9 @@ font-1 = "FontAwesome:size=10;0"
 font-2 = "Noto Sans:size=9;0"
 font-3 = "Noto Sans Mono:size=9;0"
 
-modules-left = bspwm xwindow
+modules-left = bspwm
 ;wmodules-center = networkspeeddown networkspeedup
-modules-right = arch-updates kernel cpu2 memory2 temperature2 battery pavolume date
+modules-right = kernel arch-updates gmail cpu2 memory2 temperature1 battery pavolume date
 
 tray-detached = false
 tray-offset-x = 0
@@ -291,17 +291,17 @@ format-charging = <animation-charging> <label-charging>
 label-charging =  %percentage%%
 format-charging-foreground = ${colors.foreground}
 format-charging-background = ${colors.background}
-format-charging-underline = #a3c725
+format-charging-underline = #cd1f3f
 
 format-discharging = <ramp-capacity> <label-discharging>
 label-discharging =  %percentage%%
-format-discharging-underline = #c7ae25
+format-discharging-underline = #cd1f3f
 format-discharging-foreground = ${colors.foreground}
 format-discharging-background = ${colors.background}
 
 format-full-prefix = " "
 format-full-prefix-foreground = #a3c725
-format-full-underline = #a3c725
+format-full-underline = #cd1f3f
 format-full-foreground = ${colors.foreground}
 format-full-background = ${colors.background}
 
@@ -420,8 +420,8 @@ date-alt = " %d-%m-%Y"
 time = %H:%M
 time-alt = %H:%M
 format-prefix = " "
-format-prefix-foreground = #c1941a
-format-underline = #c1941a
+format-prefix-foreground = #6790eb
+format-underline = #6790eb
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 label = %date% %time%
@@ -548,8 +548,8 @@ interval = 1024
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix = "  "
-format-prefix-foreground = #0084FF
-format-underline = #0084FF
+format-prefix-foreground = #6790eb
+format-underline = #6790eb
 
 ################################################################################
 
@@ -627,8 +627,8 @@ label = %percentage_used%%
 
 format = Mem <label>
 format-prefix = "  "
-format-prefix-foreground = #3384d0
-format-underline = #3384d0
+format-prefix-foreground = #cd1f3f
+format-underline = #cd1f3f
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -750,7 +750,7 @@ click-right = exec pavucontrol
 click-left = ~/.config/polybar/scripts/pavolume.sh --togmute
 scroll-up = ~/.config/polybar/scripts/pavolume.sh --up
 scroll-down = ~/.config/polybar/scripts/pavolume.sh --down
-format-underline = #3EC13F
+format-underline = #6790eb
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -867,15 +867,15 @@ thermal-zone = 0
 ; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
 ; to find path to desired file
 ; Default reverts to thermal zone setting
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input
 
 warn-temperature = 70
 format = <ramp> <label>
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-underline = #c72581
+format-underline = #cd1f3f
 format-warn = <ramp> <label-warn>
-format-warn-underline = #c7254f
+format-warn-underline = #cd1f3f
 label = %temperature%
 label-warn =  %temperature%
 label-warn-foreground = #c7254f
@@ -896,8 +896,8 @@ interval = 2
 format-padding = 1
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-underline = #C1B93E
-format-prefix-foreground = #C1B93E
+format-underline = #cd1f3f
+format-prefix-foreground = #cd1f3f
 label =  %output:0:150:%
 
 ################################################################################
@@ -1112,3 +1112,18 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
 ###############################################################################
+
+[module/gmail]
+type = custom/script
+interval = 10
+format = <label>
+format-prefix = " "
+format-prefix-foreground = #FFBB00
+format-underline = #FFBB00
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+exec = python -u ~/.config/polybar/scripts/gmail.py
+tail = true
+
+#################################################################################
+

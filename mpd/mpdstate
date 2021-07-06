@@ -1,9 +1,9 @@
-sw_volume: 43
+sw_volume: 71
 audio_device_state:1:pulse audio
 audio_device_state:1:FIFO
 state: pause
-current: 54
-time: 28.969000
+current: 51
+time: 13.000000
 random: 0
 repeat: 1
 single: 0
@@ -12,65 +12,56 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Banks - Gemini Feed.mp3
-1:Jon Bon Jovi-Janie,Don't take your love.mp3
-2:Banks - Gemini Feed.mp3
-3:Banks - Gemini Feed.mp3
-4:Banks - Gemini Feed.mp3
-5:Banks - Gemini Feed.mp3
-6:Banks - Gemini Feed.mp3
-7:Banks - Gemini Feed.mp3
-8:Ponto de Defumaçao  - Ze Mauricio Machline (Toques de Umbanda).mp3
-9:Ponto de Exu  - Ze Mauricio Machline (Toques de Umbanda).mp3
-10:Pontos de Pretos Velhos - Ze Mauricio Machline (Toques de Umbanda).mp3
-11:Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3
-12:Ponto de Ogum - Ze Mauricio Machline (Toques de Umbanda).mp3
-13:Ponto de Boiadeiro   Plichas - Zé Maurício Machline (Toques de Umbanda).mp3
-14:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
-15:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
-16:Ponto de Marinheiro   Marinheiro Só - Ze Mauricio Machline (Toques de Umbanda).mp3
-17:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
-18:Ponto de Oxóssi - Ze Mauricio Machline (Toques de Umbanda).mp3
-19:Ponto de Xangô - Ze Mauricio Machline (Toques de Umbanda).mp3
-20:Pontos de Iansa - Ze Mauricio Machline (Toques de Umbanda).mp3
-21:Pontos de Oxum (Dengue   Mamae Oxum) - Ze Mauricio Machline (Toques de Umbanda).mp3
-22:Ponto de Defumaçao  - Ze Mauricio Machline (Toques de Umbanda).mp3
-23:Ponto de Exu  - Ze Mauricio Machline (Toques de Umbanda).mp3
-24:Pontos de Pretos Velhos - Ze Mauricio Machline (Toques de Umbanda).mp3
-25:Ponto de Oxala - Ze Mauricio Machline (Toques de Umbanda).mp3
-26:Ponto de Ogum - Ze Mauricio Machline (Toques de Umbanda).mp3
-27:Ponto de Boiadeiro   Plichas - Zé Maurício Machline (Toques de Umbanda).mp3
-28:Ponto de Ibeji - Ze Mauricio Machline (Toques de Umbanda).mp3
-29:Ponto de Iemanja - Ze Mauricio Machline (Toques de Umbanda).mp3
-30:Ponto de Marinheiro   Marinheiro Só - Ze Mauricio Machline (Toques de Umbanda).mp3
-31:Ponto de Obaluaie   Abaluaie - Ze Mauricio Machline (Toques de Umbanda).mp3
-32:Ponto de Oxóssi - Ze Mauricio Machline (Toques de Umbanda).mp3
-33:Ponto de Xangô - Ze Mauricio Machline (Toques de Umbanda).mp3
-34:Pontos de Iansa - Ze Mauricio Machline (Toques de Umbanda).mp3
-35:Pontos de Oxum (Dengue   Mamae Oxum) - Ze Mauricio Machline (Toques de Umbanda).mp3
-36:Banks - Gemini Feed.mp3
-37:Banks - Gemini Feed.mp3
-38:Banks - Gemini Feed.mp3
-39:Banks - Gemini Feed.mp3
-40:Banks - Gemini Feed.mp3
-41:Banks - Gemini Feed.mp3
-42:Banks - Gemini Feed.mp3
-43:Banks - Contaminated.mp3
-44:Banks - Beggin For Thread.mp3
-45:Banks - Brain.mp3
-46:Banks - Drowning.mp3
-47:Banks - Gimme.mp3
-48:Banks - Goddess.mp3
-49:Banks - If We Were Made Of Water.mp3
-50:Banks - Mind Games.mp3
-51:Banks - Stroke.mp3
-52:Banks - This Is What It Feels Like.mp3
-53:Banks - Trainwreck.mp3
-54:Banks - Underdog.mp3
-55:Banks - Waiting Game.mp3
-56:Banks - You Should Know Where Im Coming From.mp3
-57:Yemi Banks - Meditation Song.mp3
-58:Banks - Beggin For Thread.mp3
-59:Banks - Gemini Feed.mp3
-60:Banks - Underdog.mp3
+0:Johnny_Rivers-You_Ve_Lost_That_Lovin_Feeling.mp3
+1:02 - Andança Serrana.ogg
+2:Banks_-_Beggin_For_Thread.mp3
+3:Banks_-_Brain.mp3
+4:Banks_-_Contaminated.mp3
+5:Banks_-_Drowning.mp3
+6:Banks_-_You_Should_Know_Where_Im_Coming_From.mp3
+7:Banks_-_Waiting_Game.mp3
+8:Banks_-_Gimme.mp3
+9:Banks_-_Goddess.mp3
+10:Banks_-_If_We_Were_Made_Of_Water.mp3
+11:Banks_-_Meditation_Song.mp3
+12:Banks_-_Mind_Games.mp3
+13:Banks_-_Stroke.mp3
+14:Banks_-_This_Is_What_It_Feels_Like.mp3
+15:Banks_-_Trainwreck.mp3
+16:Banks_-_Underdog.mp3
+17:Banks_-_Gemini_Feed.mp3
+18:Ponto_De_Exu_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+19:Ponto_De_Ibeji_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+20:Ponto_De_Iemanja_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+21:Ponto_De_Marinheiro_Marinheiro_Só_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+22:Ponto_De_Obaluaie_Abaluaie_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+23:Ponto_De_Ogum_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+24:Ponto_De_Oxala_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+25:Ponto_De_Oxóssi_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+26:Ponto_De_Xangô_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+27:Pontos_De_Iansa_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+28:Pontos_De_Oxum_(Dengue_Mamae_Oxum)_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+29:Pontos_De_Pretos_Velhos_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+30:Ponto_De_Boiadeiro_Plichas_-_Zé_Maurício_Machline_(Toques_De_Umbanda).mp3
+31:Ponto_De_Defumaçao_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+32:Ponto_De_Boiadeiro_Plichas_-_Zé_Maurício_Machline_(Toques_De_Umbanda).mp3
+33:Ponto_De_Defumaçao_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+34:Ponto_De_Exu_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+35:Ponto_De_Ibeji_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+36:Ponto_De_Iemanja_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+37:Ponto_De_Marinheiro_Marinheiro_Só_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+38:Ponto_De_Obaluaie_Abaluaie_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+39:Ponto_De_Ogum_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+40:Ponto_De_Oxala_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+41:Ponto_De_Oxóssi_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+42:Ponto_De_Xangô_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+43:Pontos_De_Iansa_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+44:Pontos_De_Oxum_(Dengue_Mamae_Oxum)_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+45:Pontos_De_Pretos_Velhos_-_Ze_Mauricio_Machline_(Toques_De_Umbanda).mp3
+46:Jon_Bon_Jovi-Janie,don't_Take_Your_Love.mp3
+47:Bon Jovi _-_It's My Life.mp3
+48:Bon Jovi _-_It's My Life.mp3
+49:The_Beatles_-_Cant_Buy_Me_Love_Remastered_2015.mp3
+50:The_Dillingers_-_A_Hard_Days_Night.mp3
+51:Bob_Marley_-_Punky_Reggae_Party.mp3
 playlist_end

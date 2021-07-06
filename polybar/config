@@ -98,7 +98,7 @@ font-3 = "Noto Sans Mono:size=9;0"
 
 modules-left = bspwm
 ;wmodules-center = networkspeeddown networkspeedup
-modules-right = kernel arch-updates gmail cpu2 temperature1 memory2 battery xbacklight pavolume date
+modules-right = kernel arch-updates gmail cpu2 temperature1 memory2 battery xbacklight pavolume weather date
 
 tray-detached = false
 tray-offset-x = 0
@@ -194,12 +194,12 @@ format-background = ${colors.background}
 type = custom/script
 exec = ~/.config/polybar/scripts/check-arch-updates.sh
 interval = 1000
-label = Pkg: %output%
+label = %output%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
-format-prefix-foreground = #FFBB00
-format-underline = #FFBB00
+format-prefix = "  "
+format-prefix-foreground = #ffd04e
+format-underline = #ffd04e
 
 [module/aur-updates]
 type = custom/script
@@ -209,8 +209,8 @@ label = Aur: %output%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix = "  "
-format-prefix-foreground = #FFBB00
-format-underline = #FFBB00
+format-prefix-foreground = #ffd04e
+format-underline = #ffd04e
 
 ################################################################################
 
@@ -270,17 +270,17 @@ format-charging = <animation-charging> <label-charging>
 label-charging =  %percentage%%
 format-charging-foreground = ${colors.foreground}
 format-charging-background = ${colors.background}
-format-charging-underline = #cd1f3f
+format-charging-underline = #e2235f
 
 format-discharging = <ramp-capacity> <label-discharging>
 label-discharging =  %percentage%%
-format-discharging-underline = #cd1f3f
+format-discharging-underline = #e2235f
 format-discharging-foreground = ${colors.foreground}
 format-discharging-background = ${colors.background}
 
 format-full-prefix = " "
-format-full-prefix-foreground = #cd1f3f
-format-full-underline = #cd1f3f
+format-full-prefix-foreground = #e2235f
+format-full-underline = #e2235f
 format-full-foreground = ${colors.foreground}
 format-full-background = ${colors.background}
 
@@ -289,14 +289,14 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-ramp-capacity-foreground = #cd1f3f
+ramp-capacity-foreground = #e2235f
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
-animation-charging-foreground = #cd1f3f
+animation-charging-foreground = #e2235f
 animation-charging-framerate = 750
 
 ################################################################################
@@ -311,8 +311,8 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 ;   
 format-prefix = " "
-format-prefix-foreground = #cd1f3f
-format-underline = #cd1f3f
+format-prefix-foreground = #e2235f
+format-underline = #e2235f
 
 ; Available tags:
 ;   <label> (default)
@@ -364,9 +364,9 @@ type = internal/cpu
 interval = 1
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
-format-prefix-foreground = #cd1f3f
-format-underline = #cd1f3f
+format-prefix = " "
+format-prefix-foreground = #e2235f
+format-underline = #e2235f
 
 label-font = 3
 
@@ -383,7 +383,7 @@ format-padding = 2
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = Cpu %percentage:3%%
+label = %percentage:3%%
 
 ################################################################################
 
@@ -604,10 +604,10 @@ interval = 1
 ;   %mb_total%
 label = %percentage_used%%
 
-format = Mem <label>
+format = <label>
 format-prefix = "  "
-format-prefix-foreground = #cd1f3f
-format-underline = #cd1f3f
+format-prefix-foreground = #e2235f
+format-underline = #e2235f
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -699,8 +699,8 @@ label = Repo: %output%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-prefix = "  "
-format-prefix-foreground = #FFBB00
-format-underline = #FFBB00
+format-prefix-foreground = #ffd04e
+format-underline = #ffd04e
 
 ################################################################################
 
@@ -731,6 +731,7 @@ scroll-up = ~/.config/polybar/scripts/pavolume.sh --up
 scroll-down = ~/.config/polybar/scripts/pavolume.sh --down
 format-underline = #6790eb
 format-foreground = ${colors.foreground}
+;format-foreground = #6790eb
 format-background = ${colors.background}
 
 ################################################################################
@@ -742,10 +743,10 @@ exec = ~/.config/polybar/scripts/pub-ip.sh
 interval = 100
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-underline = #FFBB00
+format-underline = #ffd04e
 label = %output%
 format-prefix = "  "
-format-prefix-foreground = #FFBB00
+format-prefix-foreground = #ffd04e
 
 ################################################################################
 
@@ -852,9 +853,9 @@ warn-temperature = 70
 format = <ramp> <label>
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-underline = #cd1f3f
+format-underline = #e2235f
 format-warn = <ramp> <label-warn>
-format-warn-underline = #cd1f3f
+format-warn-underline = #e2235f
 label = %temperature%
 label-warn =  %temperature%
 label-warn-foreground = #c7254f
@@ -864,7 +865,7 @@ ramp-1 = 
 ramp-2 = 
 ramp-3 = 
 ramp-4 = 
-ramp-foreground =${colors.foreground}
+ramp-foreground = #e2235f
 
 ################################################################################
 
@@ -875,8 +876,8 @@ interval = 2
 format-padding = 1
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-underline = #cd1f3f
-format-prefix-foreground = #cd1f3f
+format-underline = #e2235f
+format-prefix-foreground = #e2235f
 label =  %output:0:150:%
 
 ################################################################################
@@ -951,8 +952,8 @@ type = custom/script
 interval = 10
 format = <label>
 format-prefix = " "
-format-prefix-foreground = #3EC13F
-format-underline = #3EC13F
+format-prefix-foreground = #6790eb
+format-underline = #6790eb
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 exec = python -u ~/.config/polybar/scripts/weather.py
@@ -1037,7 +1038,8 @@ type = internal/xbacklight
 ;format = <label> <bar>
 format = <label>
 format-prefix = "   "
-format-prefix-foreground = ${colors.foreground}
+;format-prefix-foreground = ${colors.foreground}
+format-prefix-foreground = #6790eb
 format-prefix-background = ${colors.background}
 format-prefix-underline = #6790eb
 format-underline = #6790eb
@@ -1098,8 +1100,8 @@ type = custom/script
 interval = 10
 format = <label>
 format-prefix = " "
-format-prefix-foreground = #FFBB00
-format-underline = #FFBB00
+format-prefix-foreground = #ffd04e
+format-underline = #ffd04e
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 exec = python -u ~/.config/polybar/scripts/gmail.py

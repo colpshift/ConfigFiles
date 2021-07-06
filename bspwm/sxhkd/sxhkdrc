@@ -32,7 +32,7 @@ super + r
 
 # ncmpcpp
 super + m
-    alacritty -e ncmpcpp -s media_library -S visualizer
+    alacritty -e ncmpcpp -s browser -S visualizer
 
 # audacious
 super + shift + m
@@ -52,7 +52,7 @@ super + shift + d
 
 # lockscreen
 super + l
-    i3lock -i ~/Pictures/backgrounds/Arcolinux/koi-fishes-1920x1080.png -t
+    i3lock -i /usr/share/backgrounds/lock-image.jpg -t -S 1
 
 # logout
 super + x

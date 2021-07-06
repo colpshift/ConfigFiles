@@ -526,7 +526,7 @@ interval = 1024
 
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
+format-prefix = " "
 format-prefix-foreground = #6790eb
 format-underline = #6790eb
 

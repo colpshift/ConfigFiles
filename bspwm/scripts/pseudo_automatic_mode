@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 fwid=$(bspc query -N -n focused.automatic)
 wid=$1

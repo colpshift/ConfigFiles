@@ -13,5 +13,5 @@ MAILTO=root
 # | | | | |
 # * * * * * command to be executed
 
-* 9 * * * $HOME/.scripts/neovim_update.sh
+* 11 * * * $HOME/.scripts/neovim_update.sh
 

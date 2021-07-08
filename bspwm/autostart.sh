@@ -25,7 +25,6 @@ run nextcloud
 run copyq
 run flameshot
 run dunst
-run caffeine-indicator
 run /home/colps/.scripts/mpd_start.sh
 #
 run xbanish &

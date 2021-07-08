@@ -54,7 +54,7 @@ volume-max = #bf616a
 ################################################################################
 
 [bar/mainbar-bspwm]
-monitor = ${env:MONITOR:eDP1}
+monitor = eDP1
 width = 100%
 height = 25
 ;offset-x = 1%
@@ -98,7 +98,7 @@ font-3 = "Noto Sans Mono:size=9;0"
 
 modules-left = bspwm
 ;wmodules-center = networkspeeddown networkspeedup
-modules-right = kernel arch-updates gmail cpu2 temperature1 memory2 battery xbacklight pavolume weather date
+modules-right = kernel arch-updates gmail load-average cpu2 temperature1 memory2 battery xbacklight pavolume weather date
 
 tray-detached = false
 tray-offset-x = 0
@@ -108,6 +108,62 @@ tray-maxsize = 15
 tray-scale = 1.0
 tray-position = right
 tray-background = ${colors.background}
+
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
+
+################################################################################
+################################################################################
+############                  HDMI1-BSPWM                         ############
+################################################################################
+################################################################################
+
+[bar/HDMI1-bspwm]
+monitor = HDMI1
+width = 100%
+height = 25
+;offset-x = 1%
+;offset-y = 1%
+radius = 0.0
+fixed-center = true
+bottom = false
+;separator = |
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = #f00
+
+wm-restack = bspwm
+override-redirect = true
+
+; Enable support for inter-process messaging
+; See the Messaging wiki page for more details.
+enable-ipc = true
+
+border-size = 0
+;border-left-size = 0
+;border-right-size = 25
+;border-top-size = 0
+;border-bottom-size = 25
+border-color = #00000000
+
+padding-left = 0
+padding-right = 1
+
+module-margin-left = 3
+module-margin-right = 3
+
+;https://github.com/jaagr/polybar/wiki/Fonts
+font-0 = "Noto Sans:size=9;0"
+font-1 = "FontAwesome:size=10;0"
+font-2 = "Noto Sans:size=9;0"
+font-3 = "Noto Sans Mono:size=9;0"
+
+modules-left = bspwm
+;wmodules-center = networkspeeddown networkspeedup
+;modules-right = networkspeeddown networkspeedup
 
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
@@ -364,7 +420,7 @@ type = internal/cpu
 interval = 1
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = " "
+format-prefix = ""
 format-prefix-foreground = #e2235f
 format-underline = #e2235f
 
@@ -394,8 +450,8 @@ type = internal/date
 interval = 5
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = " %Y-%m-%d%"
-date-alt = " %d-%m-%Y"
+date = "%a %Y-%m-%d%"
+date-alt = "%a %d-%m-%Y"
 time = %H:%M
 time-alt = %H:%M
 format-prefix = " "
@@ -553,9 +609,9 @@ label = %output:10%
 
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
-format-prefix-foreground = #62FF00
-format-underline = #62FF00
+format-prefix = "  "
+format-prefix-foreground = #e2235f
+format-underline = #e2235f
 
 ################################################################################
 
@@ -605,7 +661,7 @@ interval = 1
 label = %percentage_used%%
 
 format = <label>
-format-prefix = "  "
+format-prefix = " "
 format-prefix-foreground = #e2235f
 format-underline = #e2235f
 format-foreground = ${colors.foreground}

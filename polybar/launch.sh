@@ -17,25 +17,25 @@ count=$(xrandr --query | grep " connected" | cut -d" " -f1 | wc -l)
 
 case $desktop in
 
-    # main polybar at top
+    # main polybar at eDP1
     bspwm|/usr/share/xsessions/bspwm)
 
     if type "xrandr" > /dev/null; then
-      for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+      for m in $(xrandr --query | grep "eDP1 connected" | cut -d" " -f1); do
         MONITOR=$m polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
       done
     else
       polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
     fi
 
-    # # extra polybar at bottom
-    # if type "xrandr" > /dev/null; then
-    #   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    #     MONITOR=$m polybar --reload mainbar-bspwm-extra -c ~/.config/polybar/config &
-    #   done
-    # else
-    # polybar --reload mainbar-bspwm-extra -c ~/.config/polybar/config &
-    # fi
+    # extra polybar at HDMI1
+    if type "xrandr" > /dev/null; then
+      for m in $(xrandr --query | grep "HDMI1 connected" | cut -d" " -f1); do
+        MONITOR=$m polybar --reload HDMI1-bspwm -c ~/.config/polybar/config &
+      done
+    else
+    polybar --reload mainbar-bspwm -c ~/.config/polybar/config &
+    fi
 
     ;;
 esac

@@ -383,9 +383,11 @@ nmap <F7> mzgg=G`z
 " To open all folds,                run zR
 " To close all folds,               run zM
 "
-set foldenable          " enable fold
-set foldcolumn=2        " show column indent
-set foldmethod=indent   " indentation method
+set foldmethod=indent   
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+set foldcolumn=2
 
 "------------------------------------------------------------------------------
 " swap, undo and backup

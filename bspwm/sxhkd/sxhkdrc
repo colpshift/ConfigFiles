@@ -1,13 +1,13 @@
 # 
-# KEYBOARD BINDINGS 
+# apps hotkeys ---------------------------------------------
 #
 
 # thunar
-super + f
+super + e
     thunar
 
 # vscode
-super + e
+super + c
     code
 
 # Browser
@@ -50,6 +50,10 @@ super + z
 super + shift + d
     dmenu_run -i -nb '#191919' -nf '#6790eb' -sb '#6790eb' -sf '#191919' -fn 'NotoMonoRegular:pixelsize=14'
 
+#
+# bspwm hotkeys --------------------------------------------
+#
+
 # lockscreen
 super + l
     i3lock -i /usr/share/backgrounds/lock-image.jpg -t -S 1
@@ -58,13 +62,133 @@ super + l
 super + x
     arcolinux-logout
 
+# kill
+super + q
+    bspc node -c
+
 # Xkill
 super + Escape
     xkill
 
+# Reload bspwm
+super + shift + r
+    ~/.config/bspwm/bspwmrc
+
 # reload sxhkd:
 super + shift + s
     pkill -USR1 -x sxhkd
+
+# hide polybar
+super + y
+    polybar-msg cmd toggle
+
+# Picom Toggle
+ctrl + alt + o
+    ~/.config/bspwm/scripts/picom-toggle.sh
+
+#
+# focus hotkeys --------------------------------------------
+#
+
+# Focus selected desktop
+super + Tab
+    bspc desktop -f '^{1-9,10}'
+
+# Focus windows by direction
+super + ctrl + {Left,Down,Up,Right}
+    bspc node --{focus} {west,south,north,east}
+
+# Focus parent/brother/first/second for preselection
+super + ctrl + {e,r,t,y}
+    bspc node --focus @{parent,brother,first,second}
+
+#
+# move hotkeys ---------------------------------------------
+#
+
+# Move focused window to other monitor
+super + shift + Left
+    bspc node -m next --follow
+
+# Move focused window to other monitor
+super + shift + Right
+    bspc node -m next --follow
+
+# move focused window to the next workspace
+super + shift + {1-9}
+    id=$(bspc query -N -n); bspc node -d ^{1-9}; bspc node -f ${id}
+
+# move focused window to the next workspace and then switch to that
+alt + shift + {Left,Right}
+    id=$(bspc query --nodes --node); bspc node --to-desktop {prev,next}; bspc desktop --focus next; bspc node --focus ${id}
+
+# Rotate desktop
+alt + space
+    bspc node @/ --rotate {90,-90}
+
+# Flip layout vertically/horizontally
+super + {_,shift + }a
+    bspc node @/ --flip {vertical,horizontal}
+
+#
+# resize hotkeys -------------------------------------------
+#
+
+# Toggle fullscreen of window
+super + u
+    bspc node --state \~fullscreen
+
+# Contract tiled space
+super + ctrl + {h,j,k,l}
+    bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
+
+# Expand tiled space
+alt + shift + {h,j,k,l}
+    bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
+
+#
+# window state hotkeys -------------------------------------
+#
+
+# set the window state
+super + space
+    bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Toggle pseudo tiling of window
+super + p
+    bspc node --state \~pseudo_tiled
+
+# Toggle floating of window
+super + f
+    bspc node --state \~floating
+
+# Preselect the splitting area for next window on leaf/parent
+super + ctrl + {u,i,o,p}
+    bspc node --presel-dir \~{west,south,north,east}
+
+# Define splitting ratio for next window on leaf/parent
+super + ctrl + {_,shift +}{1-9}
+    bspc node {_,@/} --presel-ratio 0.{1-9}
+
+# Cancel preselection
+super + ctrl + space
+    bspc node --presel-dir cancel
+
+#
+# mouse ---------------------------------------------------- 
+#
+
+# Focused desktop window gap
+super + button{4,5}
+    bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 2 ))
+
+# Resize floating windows
+super + !button{1-3}
+    bspc pointer -t %i %i
+
+#
+# nultimedia hotkeys ---------------------------------------
+#
 
 # Raises volume
 XF86AudioRaiseVolume
@@ -101,146 +225,4 @@ XF86MonBrightnessUp
 # Brightness down
 XF86MonBrightnessDown
     xbacklight -dec 10
-
-# Hide polybar
-super + y
-    polybar-msg cmd toggle
-
-# Picom Toggle
-ctrl + alt + o
-    ~/.config/bspwm/scripts/picom-toggle.sh
-
-# Toggle fullscreen of window
-super + f
-    bspc node --state \~fullscreen
-
-# Toggle pseudo tiling of window
-super + p
-    bspc node --state \~pseudo_tiled
-
-# kill
-super + q
-    bspc node -c
-
-# Focus selected desktop
-super + Tab
-    bspc desktop -f '^{1-9,10}'
-
-# Increase/decrease window gap on focused desktop
-super + bracket{left,right}
-    bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
-
-# set the window state
-super + space
-    bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
-
-# Move floating window
-super + alt + {_,shift + }{Left,Down,Up,Right}
-    ~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
-
-# Cancel preselection
-super + ctrl + space
-    bspc node --presel-dir cancel
-
-# Reload bspwm
-super + shift + r
-    ~/.config/bspwm/bspwmrc
-
-# kill
-super + shift + q
-    bspc node -c
-
-# Focus/swap windows by direction
-super + {_,shift + }{h,j,k,l}
-    bspc node --{focus,swap} {west,south,north,east}
-
-# Flip layout vertically/horizontally
-super + {_,shift + }a
-    bspc node @/ --flip {vertical,horizontal}
-
-# Move focused window to other monitor
-super + shift + Left
-    bspc node -m next --follow
-
-# Move focused window to other monitor
-super + shift + Right
-    bspc node -m next --follow
-
-# Move focused window to other monitor
-super + shift + Up
-    bspc node -m next --follow
-
-# Move focused window to other monitor
-super + shift + Down
-    bspc node -m next --follow
-
-# focus or send to the given desktop
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
-
-# move focused window to the next workspace
-super + shift + {1-9}
-    id=$(bspc query -N -n); bspc node -d ^{1-9}; bspc node -f ${id}
-
-# move focused window to the next workspace and then switch to that workspace
-alt + shift + {Left,Right}
-    id=$(bspc query --nodes --node); bspc node --to-desktop {prev,next}; bspc desktop --focus next; bspc node --focus ${id}
-
-# Focus/swap windows by direction
-super + ctrl + {Left,Down,Up,Right}
-    bspc node --{focus} {west,south,north,east}
-
-# Contract tiled space
-super + ctrl + {h,j,k,l}
-    bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
-
-# Focus parent/brother/first/second for preselection
-super + ctrl + {e,r,t,y}
-    bspc node --focus @{parent,brother,first,second}
-
-# Preselect the splitting area for next window on leaf/parent
-super + ctrl + {u,i,o,p}
-    bspc node --presel-dir \~{west,south,north,east}
-
-# Define splitting ratio for next window on leaf/parent
-super + ctrl + {_,shift +}{1-9}
-    bspc node {_,@/} --presel-ratio 0.{1-9}
-
-# Focus selected desktop
-alt + Tab
-    bspc desktop -f '^{1-9,10}'
-
-# Focus selected desktop
-alt + shift + Tab
-    bspc desktop -f '^{1-9,10}'
-
-# Rotate desktop
-alt + space
-    bspc node @/ --rotate {90,-90}
-
-# Expand tiled space
-alt + shift + {h,j,k,l}
-    bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
-
-# Focus next/previous window
-ctrl + alt + Left
-    bspc node --focus west
-
-# Focus next/previous window
-ctrl + alt + Right
-    bspc node --focus east
-
-# Focus Up window
-ctrl +alt + Up
-    bspc node --focus north
-
-# Focus Down window
-ctrl + alt + Down
-    bspc node --focus south
-
-# # super & mouse scroll
-
-# Focused desktop window gap
-super + button{4,5}
-    bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 2 ))
 

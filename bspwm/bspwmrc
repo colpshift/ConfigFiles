@@ -48,24 +48,27 @@ bspc monitor HDMI1 -d 10
 
 #Floating applications
 bspc rule -a Arandr state=floating
-bspc rule -a Arcolinux-tweak-tool.py state=floating
-bspc rule -a Arcolinux-welcome-app.py state=floating
-bspc rule -a Arcolinux-calamares-tool.py state=floating
 bspc rule -a Galculator state=floating
 bspc rule -a Pavucontrol state=floating sticky=on
 bspc rule -a rofi state=floating sticky=on
-bspc rule -a Skype state=floating
 
 #Tiled applications
 #bspc rule -a Gnome-disks state=tiled
 
 #open applications on specific workspaces
-#bspc rule -a Firefox desktop='^1' follow=on
-
-#Spotify fix  --move desktop 10
-#sleep 1
-#wmctrl -r Spotify -t 10
-#exit
+bspc rule -a Skype desktop='^9'
+bspc rule -a Discord desktop='^9'
+bspc rule -a Audacious desktop='^6'
+bspc rule -a Gimp-2.10 desktop='^5'
+bspc rule -a Dia deskt:op='^6'
+bspc rule -a Inkscape desktop='^6'
+bspc rule -a Arcolinux-tweak-tool.py desktop='^7' follow=on
+bspc rule -a Arcolinux-welcome-app.py desktop='^7' follow=on
+bspc rule -a Arcolinux-calamares-tool.py desktop='^7' follow=on
+#Spotify fix
+sleep 1
+wmctrl -r spotify -t 6
+exit
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_eDP1)

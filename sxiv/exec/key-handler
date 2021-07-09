@@ -22,6 +22,7 @@ do
     "C-g")      gimp "$file" ;;
     "C-r")      rawtherapee "$file" ;;
     "C-w")      feh --bg-fill "$file" ;;
+    "C-l")      cp -f "$file" "/home/colps/Pictures/lockimages/lock-image.jpg" ;;
     "C-i")      notify-send "File information" "$(mediainfo "$file")" ;;
     "C-comma")  rotate 270 ;;
     "C-period") rotate  90 ;;

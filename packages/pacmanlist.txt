@@ -78,7 +78,7 @@ bibata-cursor-theme-bin 1.1.1-1
 bind 9.16.18-1
 binutils 2.36.1-3
 bison 3.7.6-1
-bitwarden-bin 1.27.0-1
+bitwarden-bin 1.27.1-1
 blas 3.10.0-1
 bleachbit 4.4.0-1
 blueman 2.1.4-1
@@ -91,7 +91,7 @@ boost-libs 1.76.0-1
 box2d 2.4.1-1
 bpytop 1.0.67-1
 brave-bin 1:1.26.74-1
-broadcom-wl 6.30.223.271-308
+broadcom-wl 6.30.223.271-309
 brotli 1.0.9-4
 bspwm 0.9.10-1
 btrfs-progs 5.12.1-1
@@ -639,11 +639,11 @@ licenses 20200427-1
 lightdm 1:1.30.0-4
 lightdm-gtk-greeter 1:2.0.8-1
 lightdm-gtk-greeter-settings 1.2.2-5
-linux 5.12.14.arch1-1
+linux 5.12.15.arch1-1
 linux-api-headers 5.12.3-1
 linux-atm 2.5.2-6
 linux-firmware 20210511.7685cf4-1
-linux-headers 5.12.14.arch1-1
+linux-headers 5.12.15.arch1-1
 lirc 1:0.10.1-8
 lldb 12.0.0-1
 llvm-libs 12.0.0-2
@@ -730,7 +730,7 @@ nss 3.67-1
 ntfs-3g 2017.3.23-5
 ntp 4.2.8.p15-1
 numlockx 1.2-5
-nvme-cli 1.14-1
+nvme-cli 1.14-2
 odt2txt 0.5-4
 openal 1.21.1-1
 openconnect 1:8.10-1
@@ -962,7 +962,7 @@ shadow 4.8.1-4
 shared-mime-info 2.0+57+gc1d1c70-1
 shellcheck 0.7.2-36
 simple-scan 40.1-1
-skypeforlinux-stable-bin 8.73.0.92-1
+skypeforlinux-stable-bin 8.73.0.129-1
 slang 2.3.2-2
 smartmontools 7.2-1
 smbclient 4.14.5-1
@@ -1044,8 +1044,6 @@ util-linux-libs 2.37-3
 v4l-utils 1.20.0-1
 vala 0.52.4-1
 vid.stab 1.1-3
-vim 8.2.2891-1
-vim-runtime 8.2.2891-1
 vmaf 1.5.3-1
 volume_key 0.3.12-5
 vpnc 1:0.5.3.r468.r81-2
@@ -1113,8 +1111,8 @@ xorg-bdftopcf 1.1-2
 xorg-fonts-encodings 1.0.5-2
 xorg-iceauth 1.0.8-2
 xorg-mkfontscale 1.2.1-2
-xorg-server 1.20.11-1
-xorg-server-common 1.20.11-1
+xorg-server 1.20.12-1
+xorg-server-common 1.20.12-1
 xorg-sessreg 1.1.2-2
 xorg-setxkbmap 1.3.2-2
 xorg-smproxy 1.0.6-3

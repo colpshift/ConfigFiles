@@ -56,7 +56,7 @@ super + shift + d
 
 # lockscreen
 super + l
-    i3lock -i /home/colps/Pictures/lockimages/lock-image.jpg -t -S 1
+    /home/colps/.config/i3lock-multimonitor/lock
 
 # logout
 super + x

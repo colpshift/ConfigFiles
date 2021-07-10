@@ -1,11 +1,10 @@
 "
-" File: .vimrc
-" Path: $HOME
+" Path: $HOME/.config/nvim/init.vim
 " Tags: neovim editor
 " Description: nvim configuration file
-" Last Modified: 03/04/2021 00:15
 " Author: Colpshift
-"
+" Last Modified: 09/07/2021 19:57
+" 
 " https://neovim.io/
 "
 "------------------------------------------------------------------------------
@@ -16,8 +15,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'drewtempelmeyer/palenight.vim'
-Plug 'rakr/vim-one'
-Plug 'flrnd/plastic.vim'
+Plug 'arcticicestudio/nord-vim'
 " vim color themes
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -76,7 +74,7 @@ call plug#end()
 "
 " statusline
 "
-let g:airline_theme = 'palenight'
+let g:airline_theme = 'nord'
 let g:airline_highlighting_cache = 1
 let g:airline_left_sep = ' '
 let g:airline_left_alt_sep = '|'
@@ -335,8 +333,7 @@ set splitbelow          " Horizontal split below current.
 set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
-colorscheme palenight
-let g:palenight_terminal_italics=1
+colorscheme nord
 " move to next and previous buffer
 nnoremap <F3> :bnext<CR>
 
@@ -383,7 +380,7 @@ nmap <F7> mzgg=G`z
 " To open all folds,                run zR
 " To close all folds,               run zM
 "
-set foldmethod=indent   
+set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=2

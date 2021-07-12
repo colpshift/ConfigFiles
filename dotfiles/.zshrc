@@ -149,8 +149,11 @@ eval "$(fasd --init auto)"
 ##########
 source $HOME/Src/forgit/forgit.plugin.zsh
 
+### zsh_functions
+#################
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+
 # fzf completion
 ################
-fpath+=${ZDOTDIR:-~}/.zsh_functions
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

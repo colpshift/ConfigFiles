@@ -53,13 +53,13 @@ fi
 unset TERMCAP
 
 # Man is much better than us at figuring this out
-unset MANPATH
+#unset MANPATH
+#export MANPAGER="sh -c 'col -bx | bat -l man -p --paging always'"
+#export MANPAGER="nvim -c 'set ft=man' -" # using neovim to read man
+#export MANWIDTH=999
 
 ### defaults apps
 export EDITOR=nvim
 export BROWSER=brave
-export MANPAGER="sh -c 'col -bx | bat -l man -p'" # using bat to read man
-#export MANPAGER="nvim -c 'set ft=man' -" # using neovim to read man
-export MANWIDTH=999
 export TERM=alacritty
 

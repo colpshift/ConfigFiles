@@ -11,14 +11,15 @@ typeset -U path
 path=($HOME/.local/bin $HOME/go/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $HOME/.local/share/gem/ruby/3.0.0/bin/bin $HOME/.local/share/gem/ruby/3.0.0/bin/ $path[@])
 
 ### fzf
+# colorscheme nord
+export FZF_DEFAULT_OPTS='--ansi --color=bg+:#3B4252,bg:#2E3440,spinner:#81A1C1,hl:#616E88,fg:#D8DEE9,header:#616E88,info:#81A1C1,pointer:#81A1C1,marker:#81A1C1,fg+:#D8DEE9,prompt:#81A1C1,hl+:#81A1C1'
 # using fd
 export FZF_DEFAULT_COMMAND="fd --type file --color=always"
-export FZF_DEFAULT_OPTS="--ansi"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # search
 export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 # preview
-export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || bat {} || tree -C {}) 2> /dev/null | head -200'"
+export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || bat --theme Nord {} || tree -C {}) 2> /dev/null | head -200'"
 
 ### forgit
 export FORGIT_LOG_GRAPH_ENABLE="true"

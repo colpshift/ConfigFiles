@@ -54,6 +54,7 @@ bspc rule -a rofi state=floating sticky=on
 
 #Tiled applications
 #bspc rule -a Gnome-disks state=tiled
+bspc rule -a Surf state=tiled
 
 #open applications on specific workspaces
 bspc rule -a Skype desktop='^9'

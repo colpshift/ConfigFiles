@@ -376,6 +376,7 @@ set pastetoggle=<F5>    " Turn off auto-indent when pasting text
 " auto indent the whole file and keep your cursor in the last position
 nmap <F7> mzgg=G`z
 
+
 "------------------------------------------------------------------------------
 " folding
 "------------------------------------------------------------------------------

@@ -12,11 +12,11 @@ super + c
 
 # Browser
 super + w
-    brave
+    firefox
 
-# chromium
+# brave
 super + shift + w
-    chromium
+    brave
 
 # alacritty
 super + Return
@@ -44,7 +44,7 @@ super + Print
 
 # rofi
 super + z
-    rofi -show drun
+    rofi -show drun -markup
 
 # dmenu
 super + shift + d

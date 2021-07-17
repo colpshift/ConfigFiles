@@ -1,0 +1,20 @@
+#
+# ~/.xprofile
+#
+#startup daemons
+xbindkeys &
+autocutsel -fork &
+autocutsel -selection PRIMARY -fork &
+flameshot &
+xscreensaver -nosplash &
+#
+# startup apps
+~/.fehbg &
+#nm-applet
+#qgmailnotifier &
+sh ~/.scripts/picom_start.sh
+/usr/local/bin/st
+#
+# startup checks
+sh ~/.scripts/devices_start.sh
+#

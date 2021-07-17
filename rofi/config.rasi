@@ -1,7 +1,7 @@
 configuration {
 	modi: "drun,run,window,ssh";
-/*	width: 50;*/
-/*	lines: 15;*/
+	width: 30;
+	lines: 10;
 /*	columns: 1;*/
 	font: "Noto Sans Regular 11";
 /*	bw: 1;*/
@@ -27,7 +27,7 @@ configuration {
 	drun-url-launcher: "xdg-open";
 /*	disable-history: false;*/
 /*	ignored-prefixes: "";*/
-/*	sort: false;*/
+	sort: true;
 	sorting-method: "fzf";
 /*	case-sensitive: false;*/
 	cycle: true;
@@ -46,7 +46,7 @@ configuration {
 /*	separator-style: "dash";*/
 /*	hide-scrollbar: false;*/
 /*	fullscreen: false;*/
-/*	fake-transparency: false;*/
+	fake-transparency: true;
 /*	dpi: -1;*/
 /*	threads: 0;*/
 /*	scrollbar-width: 8;*/

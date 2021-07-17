@@ -3,7 +3,7 @@
 # Tags: zsh shell
 # Description: zsh env config
 # Author: colpshift
-# Last update: 03/07/2021 13:14 
+# Last update: 03/07/2021 13:14
 #
 
 ## Options section
@@ -22,7 +22,7 @@ setopt inc_append_history                                       # save commands 
 ### zsh style
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
-zstyle ':completion:*' rehash true                              # automatically find new executables in path 
+zstyle ':completion:*' rehash true                              # automatically find new executables in path
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
@@ -34,7 +34,6 @@ SAVEHIST=10000
 
 ### Editor
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
-
 
 ### Keybindings section
 bindkey -e
@@ -64,7 +63,6 @@ bindkey '^H' backward-kill-word                                 # delete previou
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 ### Set alias
-#############
 alias exa='exa --header --long --group --git'
 alias ll='ls'
 alias ls='ls -lh --color=auto --group-directories-first'
@@ -89,6 +87,7 @@ alias surf='surf -DI'
 alias mpv='devour mpv'
 alias sxiv='devour sxiv'
 alias zathura='devour zathura'
+alias surf='devour surf -DI'
 alias cls='clear'
 alias cmatrix='cmatrix -fs'
 alias myip='curl http://ipecho.net/plain; echo'
@@ -100,35 +99,45 @@ alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 
-### Theming section  
+### Theming section
 autoload -U compinit colors zcalc
 compinit -d
 colors
 
-### Color man pages
-export LESS_TERMCAP_mb=$'\E[01;32m'
-export LESS_TERMCAP_md=$'\E[01;32m'
-export LESS_TERMCAP_me=$'\E[0m'
-export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;47;34m'
-export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;36m'
-export LESS=-R
+### man using fzf, fd and bat.
+unset MANPATH
+fman() {
+  man -k . | fzf -q "$1" --prompt='man> '  --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man | col -bx | bat --theme Nord -l man -p --color always' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
+}
+export MANPAGER="sh -c 'col -bx | bat --theme Nord -l man -p --paging always'"
+export MANWIDTH=999
 
-### Zsh Plugins
+### Zsh fzf-tab
+source /home/colps/Src/fzf-tab/fzf-tab.zsh
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+# set descriptions format to enable group support
+zstyle ':completion:*:descriptions' format '[%d]'
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# preview directory's content with exa when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+# switch group using `,` and `.`
+zstyle ':fzf-tab:*' switch-group ',' '.'
+
+### Zsh plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-bindkey '^[[A' history-substring-search-up			
+bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 # command is not found
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
 ### Set prompt
-##############
 autoload -Uz compinit promptinit
 compinit -d
 promptinit
@@ -138,22 +147,17 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 ### ruby
-########
 eval "$(rbenv init -)"
 
 ### fasd
-########
 eval "$(fasd --init auto)"
 
 ### forgit
-##########
 source $HOME/Src/forgit/forgit.plugin.zsh
 
 ### zsh_functions
-#################
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # fzf completion
-################
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

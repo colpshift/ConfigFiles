@@ -154,20 +154,21 @@ let g:fzf_action = {
       \ 'ctrl-x': 'split',
       \ 'ctrl-v': 'vsplit' }
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
-let g:fzf_colors = {
-      \ 'fg':      ['fg', 'Normal'],
-      \ 'bg':      ['bg', 'Normal'],
-      \ 'hl':      ['fg', 'Comment'],
-      \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-      \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-      \ 'hl+':     ['fg', 'Statement'],
-      \ 'info':    ['fg', 'PreProc'],
-      \ 'border':  ['fg', 'Ignore'],
-      \ 'prompt':  ['fg', 'Conditional'],
-      \ 'pointer': ['fg', 'Exception'],
-      \ 'marker':  ['fg', 'Keyword'],
-      \ 'spinner': ['fg', 'Label'],
-      \ 'header':  ['fg', 'Comment'] }
+let g:fzf_colors =
+\ { 'fg':         ['fg', 'Normal'],
+  \ 'bg':         ['bg', 'Normal'],
+  \ 'preview-bg': ['bg', 'NormalFloat'],
+  \ 'hl':         ['fg', 'Comment'],
+  \ 'fg+':        ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':        ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':        ['fg', 'Statement'],
+  \ 'info':       ['fg', 'PreProc'],
+  \ 'border':     ['fg', 'Ignore'],
+  \ 'prompt':     ['fg', 'Conditional'],
+  \ 'pointer':    ['fg', 'Exception'],
+  \ 'marker':     ['fg', 'Keyword'],
+  \ 'spinner':    ['fg', 'Label'],
+  \ 'header':     ['fg', 'Comment'] }
 "
 " fzf window preview ProjectFiles
 "
@@ -374,6 +375,7 @@ set backspace=eol,start,indent  " Make sure backspace works in insert mode
 set pastetoggle=<F5>    " Turn off auto-indent when pasting text
 " auto indent the whole file and keep your cursor in the last position
 nmap <F7> mzgg=G`z
+
 
 "------------------------------------------------------------------------------
 " folding

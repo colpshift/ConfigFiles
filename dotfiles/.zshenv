@@ -8,7 +8,7 @@
 
 ### path
 typeset -U path
-path=($HOME/.local/bin $HOME/go/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $HOME/.local/share/gem/ruby/3.0.0/bin/bin $HOME/.local/share/gem/ruby/3.0.0/bin/ $path[@])
+path=($HOME/.local/bin $HOME/go/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $HOME/.local/share/gem/ruby/3.0.0/bin/ $path[@])
 
 ### fzf
 # colorscheme nord
@@ -26,13 +26,13 @@ export FORGIT_LOG_GRAPH_ENABLE="true"
 export FORGIT_LOG_FZF_OPTS='
 --bind="ctrl-e:execute(echo {} |grep -Eo [a-f0-9]+ |head -1 |xargs git show |vim -)"
 '
-#
 export FORGIT_FZF_DEFAULT_OPTS="
 --exact
 --border
 --reverse
 --height '80%'
 "
+export FORGIT_COPY_CMD='xclip -selection clipboard'
 
 # default e-mail
 export DEFAULT_RECIPIENT="marcos.colpani@gmail.com"

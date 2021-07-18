@@ -31,6 +31,7 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 HISTFILE=~/.zhistory
 HISTSIZE=10000
 SAVEHIST=10000
+HISTCONTROL='ignoredups'
 
 ### Editor
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
@@ -96,6 +97,7 @@ alias parui='~/.scripts/fzf_paru_install.sh'
 alias parur='~/.scripts/fzf_paru_remove.sh'
 alias parup='~/.scripts/paru_update.sh'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias mirror_update='sudo reflector --age 6 --latest 10 --fastest 10 --threads 10 --sort rate --protocol https --save /etc/pacman.d/mirrorlist'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 
@@ -147,6 +149,9 @@ promptinit
 # Prompt starship
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
+
+### rust
+source $HOME/.cargo/env
 
 ### ruby
 eval "$(rbenv init -)"

@@ -136,6 +136,8 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 # command is not found
 source /usr/share/doc/pkgfile/command-not-found.zsh
+# emoji
+source /home/colps/Src/emoji-cli/fuzzy-emoji-zle.zsh
 
 ### Set prompt
 autoload -Uz compinit promptinit

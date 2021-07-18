@@ -2,8 +2,8 @@ sw_volume: 57
 audio_device_state:1:pulse audio
 audio_device_state:1:FIFO
 state: pause
-current: 49
-time: 69.938000
+current: 2
+time: 126.692000
 random: 0
 repeat: 1
 single: 0
@@ -62,4 +62,953 @@ playlist_begin
 47:02_-_Caminhos.mp3
 48:Bon Jovi _-_It's My Life.mp3
 49:Jon Bon Jovi _-_Miracle.mp3
+50:Bon Jovi _-_It's My Life.mp3
+51:Bon Jovi _-_Keep The Faith.mp3
+52:Bon Jovi _-_Livin' On A Prayer.mp3
+53:Bon Jovi _-_Wanted Dead Or Alive.mp3
+54:Bon Jovi _-_You Give Love A Bad Name.mp3
+55:Jon Bon Jovi _-_Blaze Of Glory.mp3
+56:Jon Bon Jovi _-_Miracle.mp3
+57:Jon_Bon_Jovi-Janie,don't_Take_Your_Love.mp3
+58:01_-_Abertura.mp3
+59:01_Andei_Só.mp3
+60:01-Beams_Of_The_Light_Rmx-Upe.mp3
+61:01_Boiadeiro_1.m4a
+62:01-Crazy_On_Chocolate.mp3
+63:01 Criado em Galpão.wma
+64:01_De_Cara_Pro_Mundo.mp3
+65:01_-_De_Pies_A_Cabeza.mp3
+66:01._Donos_Do_Palco.mp3
+67:01-Dust_In_The_Wind.mp3
+68:01-Em_Nada_A_Ver,_Te_Cuida_Coração.mp3
+69:01_Em_Troca_De_Paz.mp3
+70:(01)_G-Mini_Click.mp3
+71:01_It's_Like_That.mp3
+72:01_Ivete_Sangalo_-_Amor_Perfeito.mp3
+73:01_Jamaica_Roots.mp3
+74:01_Jaw_The_Box.mp3
+75:01._João_Carreiro_&_Capataz_-_Cemo_Porque_Cemo.mp3
+76:01._João_Carreiro_&_Capataz_-_Nao_Toca_Em_Minha_Vitrola.mp3
+77:01-Korn-Word_Up_(Cameo_Cover)-H8me.mp3
+78:01_Lady_Gaga_-_Fashion.mp3
+79:01_Linkin_Park_-_Wake.mp3
+80:01-Logic_Bomb_-_Rascar_Capac-Mycel.mp3
+81:01_-_Maria_De_Verdade_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+82:01-Michel_Telo_-_Ei_Psiu_Beijo_Me_Liga.mp3
+83:01_Não_Chore_Meu_Amor.mp3
+84:01-Nelly_Furtado_-_Afraid_(Feat._Attitude)-Ysp.mp3
+85:01 Never Gonna Give You Up.wma
+86:01._Oração_De_São_Francisco.mp3
+87:01-Os_Serranos_-_De_Chao_Batido.mp3
+88:01-Pássaro_De_Fogo.mp3
+89:01_Passe_O_Tempo_Que_Passar(2).mp3
+90:01-Paula_Fernandes_-_Passaro_De_Fogo.mp3
+91:01-Pixel_Vs_Space_Cat_-_New_Vision-Mycel.mp3
+92:01_Poker_Face.mp3
+93:01_-_Preciso_Te_Amar.mp3
+94:01-Quando_A_Chuva_Passar-.mp3
+95:01_Rosa_Dourada.mp3
+96:01_-_Sa-De.mp3
+97:01_School.mp3
+98:01._Seu_Astral.mp3
+99:01._Teenage_Dream.mp3
+100:01_Track_01.mp3
+101:01_-_Universo_Ao_Meu_Redor.mp3
+102:01_-_Vai_Começar_De_Novo.mp3
+103:01-Who_Can_It_Be_Now_.mp3
+104:02._Amo_Noite_E_Dia.mp3
+105:02_-_Amor_Desencontrado.mp3
+106:02_Basta_Querer.mp3
+107:02_-_Berço_De_Deus.mp3
+108:02._Cancao_Ao_Mundo_Novo.mp3
+109:02_Carla.mp3
+110:02_-_Chase_The_Sun.mp3
+111:02_Check_It_Out.mp3
+112:02-Chuva_Chover.mp3
+113:02-Cinnamon_Eoll-Upe.mp3
+114:02_-_Coracao_Radiante.mp3
+115:02-Fallen.mp3
+116:02_Floyd_The_Barber.mp3
+117:02_-Fogueira.mp3
+118:02-Hidden_Signs.mp3
+119:02-I_Can_See_It_In_Your_Eyes.mp3
+120:02._João_Carreiro_&_Capataz_-_A_Tradicao_Nao_Morre_Jamais.mp3
+121:02._João_Carreiro_&_Capataz_-_Ela_Eh_Muito_Boa.mp3
+122:02_Just_Dance.mp3
+123:02-Kool_And_The_Gang-Hollywood_Swinging.mp3
+124:02-Korn-Another_Brick_In_The_Wall_(Parts_1_2_3)_(Pink_Floyd_Cover)-H8me.mp3
+125:02_Lady_Gaga_-_Starstruck_[Ft._Space_Cowboy_&_Flo_Rida].mp3
+126:02._Last_Friday_Night_(T.G.I.F.).mp3
+127:02_-_Lembrança.mp3
+128:02_Linkin_Park_-_Given_Up.mp3
+129:02_Lithium.mp3
+130:02-Logic_Bomb_-_Mov_Ax-Mycel.mp3
+131:02_-_Marisa_Monte_-_Vilarejo.mp3
+132:02_-_Meio_Fio.mp3
+133:02_Meu_Reggae_É_Roots.mp3
+134:02-Michel_Telo_-_Me_Odeie.mp3
+135:02._Minha_Benção.mp3
+136:02_-_Minha_Prece.mp3
+137:02_Moda_Da_Mula_Preta_1.m4a
+138:02_-_Munhoz_E_Mariano_-_Fim_De_Semana.mp3
+139:02_-_Na_Estrada_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+140:02_-_Natiruts_-_Eu_Luto.mp3
+141:02-Nelly_Furtado_-_Maneater-Ysp.mp3
+142:02_Nossa_Missão.mp3
+143:02 Nossa Vanera.wma
+144:02_-_O_Bonde_Do_Dom.mp3
+145:02_Ok!.mp3
+146:02-Os_Serranos_-_Panela_Velha.mp3
+147:02_-_Oye_MI_Amor.mp3
+148:02_-_Paixao_De_Um_Homem.mp3
+149:02-Pássaro_De_Fogo.mp3
+150:02-Paula_Fernandes_-_Meu_Eu_Em_Voce.mp3
+151:02-Pixel_And_Wrecked_Machines_-_Weekend-Mycel.mp3
+152:02_Seu_Amor_Ainda_É_Tudo.mp3
+153:02_Sliver.mp3
+154:(02)_Subinya.mp3
+155:02_Tô_No_Barato.mp3
+156:02._Você_Não_Sabe_O_Que_É_Amor.mp3
+157:02_We_Belong_Together.mp3
+158:02 Whenever You Need Somebody.wma
+159:03_-_60_Dias_Apaixonado.mp3
+160:03_A_Dois_Passo_Do_Paraíso.mp3
+161:03-Amor_Não_É_Jogo_De_Azar.mp3
+162:03_Andei_So.mp3
+163:03_Anjos_Resgate.mp3
+164:03_-_Another_Brick_In_The_Wall.mp3
+165:03_-_Ao_Meu_Redor_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+166:03_-_Artist_-_Pagina_De_Amigos372.mp3
+167:03_Au_De_Cabeça.mp3
+168:03_-_Cachito.mp3
+169:03._California_Gurls.mp3
+170:03._Chove,_Chove.mp3
+171:03_-_Deixa_Clarear;_Dora.mp3
+172:03-Down_Under.mp3
+173:03_Eh_Eh_(Nothing_Else_I_Can_Say).mp3
+174:03_Get_It_Boy.mp3
+175:03-Iris.mp3
+176:03_Jesus_Doesn't_Want_Me_For_A_Su.mp3
+177:03._João_Carreiro_&_Capataz_-_Caipira_De_Fato.mp3
+178:03._João_Carreiro_&_Capataz_-_O_Que_Essa_Moca_Fez_Aqui.mp3
+179:03-Korn-Y'all_Want_A_Single-H8me.mp3
+180:03_Lady_Gaga_-_Disco_Heaven.mp3
+181:03 - La Puñalada.ogg
+182:03_-_Let_Me_Entertain_You.mp3
+183:03_Linkin_Park_-_Leave_Out_All_The_Rest.mp3
+184:03-Logic_Bomb_-_Sonic_Algebra-Mycel.mp3
+185:03_-_Mam-E_Natureza.mp3
+186:03-Manpower-Upe.mp3
+187:03_-_Marisa_Monte_-_Pra_Ser_Sincero.mp3
+188:03_-_Meu_Anjo.mp3
+189:03_-_Meu_Canário.mp3
+190:03_Meu_Eu_Em_Voce.mp3
+191:03-Meu_Eu_Em_Você.mp3
+192:03-Michel_Telo_-_Fugidinha.mp3
+193:03_-_Movido_Pela_Emoção.mp3
+194:03_-_Munhoz_E_Mariano_-_Camaro_Amarelo.mp3
+195:03-Mystic_Machine.mp3
+196:03-Nelly_Furtado_-_Promiscuous_(Feat._Timbaland)-Ysp.mp3
+197:03._Noites_Traiçoeiras.mp3
+198:03-Ok!.mp3
+199:03._Os_18_Do_Ambrosio.mp3
+200:03-Os_Serranos_-_O_Cancionero_Das_Coxilhas.mp3
+201:(03)_Past_Progressive.mp3
+202:03-Paula_Fernandes_-_Pra_Voce.mp3
+203:03-Pixel_Vs_Gms_-_Let_Me_Out-Mycel.mp3
+204:03_-_Saudade_Da_Minha_Terra.mp3
+205:03_Shake_It_Off.mp3
+206:03._Sinais.mp3
+207:03_Siri_Jogando_Bola_1.m4a
+208:03_-_Sonhei_Com_Você.mp3
+209:03_-_Sonho_De_Um_Caminhoneiro.mp3
+210:03_Spank_Thru.mp3
+211:03_Stain.mp3
+212:03 Together Forever.wma
+213:03 VANERÃO SAMBADO.wma
+214:03_Você_Chegou.mp3
+215:04._Amigo.mp3
+216:04_Anjos_De_Deus.mp3
+217:04._Baita_Macho.mp3
+218:04_Been_A_Son.mp3
+219:04_Bleeding_Heart.mp3
+220:04_-_Cabecinha_No_Ombro.mp3
+221:04_Dance_Se_Quiser_Dançar.mp3
+222:04_-_Do_Jeito_Que_A_Vida_Quer.mp3
+223:04_-_Duas_Camisas.mp3
+224:(04)_Engines_On.mp3
+225:04_-_Esperando_Na_Janela.mp3
+226:04_Espere_Por_Min_Morena.mp3
+227:04_-_Esse_Tal_De_Roque_Enrow_(Com_Pitty).mp3
+228:04._Firework.mp3
+229:04 It Would Take a Strong, Strong Man.wma
+230:04._João_Carreiro_&_Capataz_-_E_Pra_Caba.mp3
+231:04._João_Carreiro_&_Capataz_-_Viola_E_Cantador.mp3
+232:04-Kool_And_The_Gang-Take_It_To_The_Top.mp3
+233:04-Korn-Right_Now-H8me.mp3
+234:04_Lady_Gaga_-_No_Floods.mp3
+235:04_Linkin_Park_-_Bleed_It_Out.mp3
+236:04-Logic_Bomb_-_Jack_In_The_Box-Mycel.mp3
+237:04_-_Marisa_Monte_-_Levante.mp3
+238:04-Michel_Telo_-_Pode_Ir.mp3
+239:04_-_Millennium.mp3
+240:04_Mine_Again.mp3
+241:04_-_Munhoz_E_Mariano_-_Vai_Embora_Coração.mp3
+242:04-Nelly_Furtado_-_Glow-Ysp.mp3
+243:04-Ode_To_My_Family.mp3
+244:04-Os_Serranos_-_E_Disso_Que_O_Velho_Gosta.mp3
+245:04-Paixão_Goiana.mp3
+246:04-Paula_Fernandes_-_Tocando_Em_Frente_(Part._Leonardo).mp3
+247:04 Peão Não Chora.wma
+248:04-Pixel_-_Mind_Moving-Mycel.mp3
+249:04_Pra_Você.mp3
+250:04_Quem_Planta_Preconceito_.mp3
+251:04-Quero_Sim.mp3
+252:04_Qui_Nem_Gilo_1.m4a
+253:04 - Resto De Baile.ogg
+254:04-Sarah_Tonin.mp3
+255:04_Scoff.mp3
+256:04_-_Segue_O_Seco_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+257:04_Sem_Voce.mp3
+258:04-Sem_Você.mp3
+259:04-Step_By_Step-Upe.mp3
+260:04._Tempo_Ao_Tempo.mp3
+261:04_-_Teu_Beijo.mp3
+262:04._Tô_De_Cara.mp3
+263:04_-_Três_Letrinhas.mp3
+264:04_-_Tribunal_Do_Amor.mp3
+265:04-Underground.mp3
+266:04_-_Viva_A_Vida!.mp3
+267:04_-_Vivir_Sin_Aire.mp3
+268:05_-_Amor_E_Sexo.mp3
+269:05-Angel.mp3
+270:05 A Primeira Vez.wma
+271:05_Asa_Branca_1.m4a
+272:05_Bossa_Nova_Em_Kington.mp3
+273:05-Castigo.mp3
+274:05-Complicado_Demais.mp3
+275:05_-_Desventura.mp3
+276:05._Deus_É_Dez.mp3
+277:05-Dust_In_The_Wind.mp3
+278:05_-_Filho_De_Ninguém.mp3
+279:05_Funky_Little_Peat.mp3
+280:05._Ginete_De_Fronteira.mp3
+281:05-Helpless_Automation.mp3
+282:05_-_Hundido_En_Un_Rincon.mp3
+283:(05)_In_Rage.mp3
+284:05_-_Inversao_De_Valores.mp3
+285:05._João_Carreiro_&_Capataz_-_Cade.mp3
+286:05._João_Carreiro_&_Capataz_-_Lampiao.mp3
+287:05_Jovens.mp3
+288:05-Kool_And_The_Gang-Take_My_Heart_(You_Can_Have_It_If_You_Want_It).mp3
+289:05-Korn-Did_My_Time-H8me.mp3
+290:05_Lady_Gaga_-_Kaboom_[Ft._Kalena].mp3
+291:05_-_Lápis_De_Cor.mp3
+292:05_Leve_Com_Voce.mp3
+293:05_Linkin_Park_-_Shadow_Of_The_Day.mp3
+294:05-Logic_Bomb_-_Videorome-Mycel.mp3
+295:05_Lounge_Act.mp3
+296:05_Luz_Divina.mp3
+297:05_-_Marisa_Monte_-_Aqueta.mp3
+298:05-Michel_Telo_-_Curtindo_Solidao.mp3
+299:05_-_Munhoz_E_Mariano_Part._Fred_E_Gustavo_-_Casa_Amarela.mp3
+300:05_Musica_E_Rodeio.mp3
+301:05-Nelly_Furtado_-_Showtime-Ysp.mp3
+302:05_No_Fim.mp3
+303:05_-_No_Regrets.mp3
+304:05_-_O_Grito_Da_Galera.mp3
+305:05-Os_Serranos_-_Timbre_De_Galo.mp3
+306:05_-_Pale_Blue_Eyes_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+307:05-Paula_Fernandes_-_Amargourado-Sem_Voce-Ainda_Ontem_Chorei_De_Saudade.mp3
+308:05._Peacock.mp3
+309:05-Pixel_Vs_X-Noize_-_Beats_From_Beyond_Gms_Remix-Mycel.mp3
+310:05._Pot-Pourri_Aqui_É_Seu_Lugar_-_Digitais.mp3
+311:05_-_Quatro_Paredes.mp3
+312:05_Say_Somethin.mp3
+313:05._Se_Eu_Chorar.mp3
+314:05-Spaceshifter.mp3
+315:05 - Te Vas Milonga.ogg
+316:05 The Love Has Gone.wma
+317:05-Time_Rulers_Rmx-Upe.mp3
+318:05_Turnaround.mp3
+319:05_-_Vinte_Anos.mp3
+320:05_-_Ze_Meningite.mp3
+321:06_Assum_Preto_1.m4a
+322:06 BATE COXA NO TOTONHO.wma
+323:06_Cançoes_Do_Vento_Sul.mp3
+324:06-Canções_Do_Vento_Sul.mp3
+325:06_-_Coraçao_De_Pedra.mp3
+326:06_-_Dança_Da_Solidão_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+327:06_Deixa_O_Menino_Joga.mp3
+328:06_-_Denguinho.mp3
+329:06 Don't Say Goodbye.wma
+330:(06)_Elastic_Mood.mp3
+331:06_-_El_Reloj_Cucu.mp3
+332:06-Espaço_Sideral.mp3
+333:06._Esquece_O_Medo.mp3
+334:06_-_Eterno_Apaixonado.mp3
+335:06-Funky_Kangaruh.mp3
+336:06_High_Steppin'_Hip.mp3
+337:06._João_Carreiro_&_Capataz_-_Casinha_Verde.mp3
+338:06._João_Carreiro_&_Capataz_-_E_Bao_Demais.mp3
+339:06-Juliano_Cesar_-_A_Turma_Da_Latinha.mp3
+340:06-Kool_And_The_Gang-Get_Down_On_It.mp3
+341:06-Korn-Alone_I_Break-H8me.mp3
+342:06_Lady_Gaga_-_I_Like_It_Rough.mp3
+343:06_Linkin_Park_-_What_I've_Done.mp3
+344:06-Logic_Bomb_-_Reverser-Mycel.mp3
+345:06_-_Marisa_Monte_-_A_Primeira_Pedra.mp3
+346:06-Michel_Telo_-_Larga_De_Bobeira.mp3
+347:06._Minha_Boca_Você_Não_Beija_Mais.mp3
+348:06_Molly's_Lips.mp3
+349:06-Morena_Proibida.mp3
+350:06_-_Munhoz_E_Mariano_-_Força_Estranha.mp3
+351:06_-_Não_Tô_Nem_Aí.mp3
+352:06-Nelly_Furtado_-_No_Hay_Igual-Ysp.mp3
+353:06_Nosso_Filme_Www_Mp3facil_Blogspot_Com_Inimigos_Da_Hp_Pagode327.mp3
+354:06_Ondas.mp3
+355:06-One_Of_Us.mp3
+356:06-Os_Serranos_-_Lembrancas.mp3
+357:06._Pai_Nosso.mp3
+358:06_-_Panis_Et_Circenses.mp3
+359:06-Paula_Fernandes_-_Complicados_Demais.mp3
+360:06-People_Just_Love_To_Play_With_Words.mp3
+361:06_-_Perdoa,_Meu_Amor.mp3
+362:06-Pixel_Vs_Space_Cat_-_Unknown-Mycel.mp3
+363:06._Poncho_Molhado.mp3
+364:06_Quando_Você_Acordar.mp3
+365:06_-_Sereia.mp3
+366:06_-_Something.mp3
+367:06_Sou_Um_Milagre.mp3
+368:06_Stay_The_Night.mp3
+369:06_-_Strong.mp3
+370:06-Subliminal-Upe.mp3
+371:06_-_Tempestade_De_Paixao.mp3
+372:06 - Tio Mederico.ogg
+373:06_Uma_Carta.mp3
+374:06_-_Vacilao.mp3
+375:07_-_A_Fossa.mp3
+376:07_-_Amor_Divido.mp3
+377:07-Apaixonados_Pela_Lua.mp3
+378:07-Atlantis-Upe.mp3
+379:07-Be_Good_Johnny.mp3
+380:07_Breed.mp3
+381:07_-_Cantinho_Escondido.mp3
+382:07._Cilada.mp3
+383:07_-_Cuando_Los_Angeles_Lloran.mp3
+384:07_-_De_Mais_Ninguém_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+385:07-Do_It.mp3
+386:07._Fala,_Senhor.mp3
+387:07_-_Fim_De_Noite.mp3
+388:07_Get_Your_Number.mp3
+389:07_Hora_Do_Adeus_1.m4a
+390:07_Iluminar.mp3
+391:07._João_Carreiro_&_Capataz_-_O_Encardido_Nao_Domina.mp3
+392:07._João_Carreiro_&_Capataz_-_Volta_Pro_Meu_Coracao.mp3
+393:07._Jogo_Do_Amor.mp3
+394:07-Kool_And_The_Gang-Joanna.mp3
+395:07-Korn-Here_To_Stay-H8me.mp3
+396:07_Lady_Gaga_-_Vanity.mp3
+397:07_Light_Years_Away.mp3
+398:07_Linkin_Park_-_Hands_Held_High.mp3
+399:07-Logic_Bomb_-_Ansi-Mycel.mp3
+400:07_-_Lucy_In_The_Sky_With_Diamonds.mp3
+401:07_-_Mais_E_Mais.mp3
+402:07_-_Marisa_Monte_-_Orio.mp3
+403:07-Meu_Eu_Em_Você.mp3
+404:07-Michel_Telo_-_Amanha_Sei_La.mp3
+405:07_Misteriosa_Atracao.mp3
+406:07_-_Munhoz_E_Mariano_-_Te_Quero_Bem.mp3
+407:07 Não Chora China Véia.wma
+408:07_-_Natiruts_-_Gotas_De_Vidro.mp3
+409:07-Nelly_Furtado_-_Te_Busque_(Feat._Juanes)-Ysp.mp3
+410:07_Nossa_Senhora.mp3
+411:07_-_O_Show_Tem_Que_Continuar.mp3
+412:07-Os_Serranos_-_Ala_Pucha.mp3
+413:07-Paula_Fernandes_-_Voa.mp3
+414:07-Pixel_-_Technology_Spirit_And_Mind_Double_Impact_Remix-Mycel.mp3
+415:07._Pout_-_Pourri_(Bugios)_Resto_De_Baile_Bugio_Da_Fronteira_Bugio_Novo_Bugio_Dos_Bailes.mp3
+416:07-Querendo_Te_Amar.mp3
+417:07 - Que Saudade.ogg
+418:07_-_She's_The_One.mp3
+419:07 Slipping Away.wma
+420:(07)_Sun_Dance.mp3
+421:07-Sweet_Wate.mp3
+422:07_-_Tendel.mp3
+423:07_Vagalumes.mp3
+424:07_Vai_Moleque.mp3
+425:07_-_Velho_Candieiro.mp3
+426:(08)_1_Missed_Call.mp3
+427:08_-_Alimenta_Meu_Sonho.mp3
+428:08_-_Alta_Noite_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+429:08_-_Amor_Da_Minha_Vida.mp3
+430:08-Behind_Blue_Eyes.mp3
+431:08_Big_Cheese.mp3
+432:08_Blue.mp3
+433:08_Caraiva.mp3
+434:08_-_Cora--O_Bab-O.mp3
+435:08_-_Corpo_E_Alma.mp3
+436:08-Debaixo_Do_Cacho.mp3
+437:08_-_De_Bem_Com_A_Vida.mp3
+438:08_Dessa_Vez.mp3
+439:08-De_Tanto_Te_Querer.mp3
+440:08_É_Preciso_Perdoar.mp3
+441:08_Espaço_Sideral.mp3
+442:08_Estrada_De_Caninde_1.m4a
+443:08_Fleshes_E_Ambição.mp3
+444:08_-_Grades_Do_Coracao.mp3
+445:08-Groov_On-Upe.mp3
+446:08_Hip_Hop_Bee_Boop.mp3
+447:08._João_Carreiro_&_Capataz_-_Oracao_Em_Canturia.mp3
+448:08._João_Carreiro_&_Capataz_-_Saudade_Doce.mp3
+449:08-Kool_And_The_Gang-Cherish.mp3
+450:08-Korn-Trash-H8me.mp3
+451:08_Lady_Gaga_-_Paper_Gangsta.mp3
+452:08_Linkin_Park_-_No_More_Sorrow.mp3
+453:08-Logic_Bomb_-_Life_Is_Progressbar-Mycel.mp3
+454:08_-_Marisa_Monte_-_Geranio.mp3
+455:08-Michel_Telo_-_E_Amor_Pra_Valer.mp3
+456:08 Morena Rosa.wma
+457:08_-_Munhoz_E_Mariano_-_A_Bela_E_O_Fera.mp3
+458:08_Naticongo.mp3
+459:08-Nelly_Furtado_-_Say_It_Right-Ysp.mp3
+460:08_-_No_Ha_Parado_De_Llover.mp3
+461:08 No More Looking for Love.wma
+462:08._Nossa_Vanera.mp3
+463:08_One_And_Only.mp3
+464:08-Os_Serranos_-_Guri.mp3
+465:08-Outer_Body.mp3
+466:08_-_Outra_Noite_Sem_Meu_Bem.mp3
+467:08-Paula_Fernandes_-_Jeito_De_Mato.mp3
+468:08-Pixel_Vs_Domestic_And_Intelabeam_-_Came_As_Quite_A_Shock_Live_MIX-Mycel.mp3
+469:08._Rei_Dav.mp3
+470:08_-_Rock_Dj.mp3
+471:08_Santo,_Santo,_Santo.mp3
+472:08_-_Statue_Of_Liberty.mp3
+473:08-The_Boxer.mp3
+474:08-Touching_The_Untouchables.mp3
+475:08_-_Triste_Liçao.mp3
+476:08 - Valsa Do Cuco (Cuckoo Waltz).ogg
+477:08._Volta_Pra_Minha_Vida.mp3
+478:08._Vou_Voar.mp3
+479:09_-_A_Alma_E_A_Matéria.mp3
+480:09 Baile na Serra.wma
+481:09 Bob Falou.mp3
+482:09-Catch A Star.mp3
+483:09 Circles.mp3
+484:09_-_Como_Dueles_En_Los_Labios.mp3
+485:09 Como se Fosse.mp3
+486:09 Como um Menino.mp3
+487:09_-_Cowboy_Universitário.mp3
+488:09-Dança_Menina.mp3
+489:09_-_Do_Mundo_Nada_Se_Leva.mp3
+490:09-electromatic.mp3
+491:09_-_Escravo_Do_Amor.mp3
+492:09 Eu Eternamente Cantarei a Paz.mp3
+493:09 - Gauchinha.ogg
+494:09 Homem do Povo.mp3
+495:09._João_Carreiro_&_Capataz_-_Aniversario.mp3
+496:09._João_Carreiro_&_Capataz_-_Pirei_O_Cabecao.mp3
+497:09_-_Kids.mp3
+498:09-kool_and_the_gang-fresh.mp3
+499:09-korn-somebody_someone-h8me.mp3
+500:09_Lady_Gaga_-_Fancy_Pants.mp3
+501:09_Linkin_Park_-_Valentine's_Day.mp3
+502:09-Logic_Bomb_-_Insanity_Insanitly-Mycel.mp3
+503:(09) Long Cut.mp3
+504:09 Love Buzz.mp3
+505:09_Luz,_Paixao,_Rodeio.mp3
+506:09 Maria, mãe de todos nós.mp3
+507:09_-_Marisa_Monte_-_Quem_Foi.mp3
+508:09_-_Meu_Mundo_Vazio.mp3
+509:09_-_Meu_Primeiro_Amor.mp3
+510:09-Michel_Telo_-_Fala_Coracao.mp3
+511:09_-_Munhoz_E_Mariano_-_Grita_Amor.mp3
+512:09-Nelly_Furtado_-_Do_It-Ysp.mp3
+513:09. Nossa Senhora Do Brasil.mp3
+514:09-Nothing Else Matters.mp3
+515:09_Numa_Sala_De_Reboco_-_O_Cheiro_1.m4a
+516:09_-_O_Céu_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+517:09-Os_Serranos_-_Bailinho_Na_Capela.mp3
+518:09_-_Pagu_(Com_Zelia_Dunca).mp3
+519:09-Paula_Fernandes_-_Nao_Precisa_(Part._Victor_E_Leo).mp3
+520:09. Pecador Y Guitarrero.mp3
+521:09- PODE CHORAR.mp3
+522:09. Refém.mp3
+523:09._Sempre_Com_Você.mp3
+524:09_-_Se_Voce_Me_Chamar_Eu_Vou-Vai_La,_Vai_La-O_Irene.mp3
+525:09 Smerphies Dance.mp3
+526:09-Só Penso Em Nós.mp3
+527:09_-_Tô_Por_Aí.mp3
+528:09_-_Um_Novo_Dia.mp3
+529:09-waterfield-upe.mp3
+530:09 You Move Me.wma
+531:0_-_Matogrosso_E_Mathias_-_Na_Hora_Do_Adeus.mp3
+532:10. 10 Mil Anos.mp3
+533:101-James_Brown-Please_Please_Please-.mp3
+534:101-Justin_Bieber-One_Time_(Acoustic_Version).mp3
+535:102-James_Brown-Try_Me-.mp3
+536:102-Justin_Bieber-Baby_(Acoustic_Version).mp3
+537:103-James_Brown-Good_Good_Lovin-.mp3
+538:103-Justin_Bieber-One_Less_Lonely_Girl_(Acoustic_Version).mp3
+539:104-James_Brown-Ill_Go_Crazy-.mp3
+540:104-Justin_Bieber-Down_To_Earth_(Acoustic_Version).mp3
+541:105-James_Brown-Think-.mp3
+542:105-Justin_Bieber-U_Smile_(Acoustic_Version).mp3
+543:106-James_Brown-Lost_Someone-.mp3
+544:106-Justin_Bieber-Stuck_In_The_Moment_(Acoustic_Version).mp3
+545:107-James_Brown-Night_Train-.mp3
+546:107-Justin_Bieber-Favorite_Girl_(Live).mp3
+547:108-James_Brown-Prisoner_Of_Love-.mp3
+548:108-Justin_Bieber-That_Should_Be_Me_(Acoustic_Version).mp3
+549:109-james_brown-out_of_sight-.mp3
+550:109-justin_bieber-never_say_never_(acoustic_version).mp3
+551:10. Abre o Fole Tio Bilia.mp3
+552:10 Adeus, Rio 1.m4a
+553:10_-_Baila_Comigo.mp3
+554:10 Bailanta do Tio Flor.wma
+555:10_-_Bem_Leve_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+556:10 Cheiro de Flor.mp3
+557:10_-_Clavado_En_Un_Bar.mp3
+558:10-Complicado Demais.mp3
+559:10-Dont.mp3
+560:10-Down By The Sea.mp3
+561:10-dusty_lizard.mp3
+562:10._Eu_Tô_Jogando_Verde.mp3
+563:10 Here She Comes Now.mp3
+564:10_-_Homem_Apaixonado.mp3
+565:10_-_Homem_Triste.mp3
+566:10 I Hate To Go To Work.mp3
+567:10._João_Carreiro_&_Capataz_-_Se_Eh_Amor_Nao_Tem_Nada_Que_Apague.mp3
+568:10._João_Carreiro_&_Capataz_-_Sete_Sentidos.mp3
+569:10-kool_and_the_gang-higher_plane.mp3
+570:10-korn-make_me_bad-h8me.mp3
+571:10_Lady_Gaga_-_Wonderful.mp3
+572:10_-_Lágrimas_E_Tormentos.mp3
+573:10_Lindo_Céu.mp3
+574:10_Linkin_Park_-_In_Between.mp3
+575:10. Marcas Do Que Se Foi.mp3
+576:10_-_Marisa_Monte_-_Pernambucobucolismo.mp3
+577:10-Michel_Telo_-_Saudade_Da_Minha_Terra-60_Dias_Apaixonado.mp3
+578:10_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_One_Country.mp3
+579:10_-_Munhoz_E_Mariano_Part._Marilia_Cecilia_E_Rodolfo_-_Dois_Mundos.mp3
+580:10_-_Nasci_Pra_Te_Amar.mp3
+581:10-Nelly_Furtado_-_In_God_S_Hands-Ysp.mp3
+582:10_-_No_Fim_Desta_Estrada.mp3
+583:10-Os_Serranos_-_Morenaca.mp3
+584:10-Paula_Fernandes_-_Navegar_Em_Mim.mp3
+585:10_-_Quem_Disse_Que_Esqueci.mp3
+586:10 - Rio Grande Tchê!.ogg
+587:10_Roots_Reggae_Groove.mp3
+588:10-Sede_De_Amar.mp3
+589:10_So_Penso_Em_Nos.mp3
+590:10_-_Supreme.mp3
+591:10-Ta_Faltando_Amor.mp3
+592:10_-_Vem_Ficar_Comigo.mp3
+593:10_-_Vida_Particular.mp3
+594:(10)_Wired.mp3
+595:10_Your_Girl.mp3
+596:110-James_Brown-Papas_Got_A_Brand_New_Bag-.mp3
+597:110-Justin_Bieber-Pray.mp3
+598:111-james_brown-i_got_you_(i_feel_good)-.mp3
+599:111-justin_bieber-somebody_to_love_(remix)_feat._usher.mp3
+600:112-james_brown-its_a_mans_mans_mans_world-.mp3
+601:112-justin_bieber-never_say_never_feat._jaden_smith_(single_version).mp3
+602:113-james_brown-money_wont_change_you-.mp3
+603:113-justin_bieber-somebody_to_love_(j-stax_remix).mp3
+604:114-james_brown-cold_sweat-.mp3
+605:115-james_brown-there_was_a_time-.mp3
+606:116-james_brown-i_got_the_feelin-.mp3
+607:117-james_brown-licking_stick-licking_stick-.mp3
+608:118-james_brown-say_it_loud-im_black_and_im_proud-.mp3
+609:119-james_brown-give_it_up_or_turnit_a_loose-.mp3
+610:11. Alguém no seu Lugar.mp3
+611:11 Amizade de Gaiteiro.wma
+612:11_-_Apaixonado.mp3
+613:11_-_Balança_Pema_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+614:11-Behind Blue Eyes.mp3
+615:11_-_Better_Man.mp3
+616:11_-_Caso_S-Rio.mp3
+617:11-Crazy (Non LP B-Side).mp3
+618:11_Dança_Viva.mp3
+619:11 dificil248185.mp3
+620:11 Discípulo De Mestre Bimba.mp3
+621:11_-_En_El_Muelle_De_San_Blas.mp3
+622:11_-_Essencia_Da_Paixao.mp3
+623:11_-_Explosao_De_Amor.mp3
+624:11_-_Fascínio.mp3
+625:11 - Gavião.ogg
+626:11 I Wish You Knew.mp3
+627:11._João_Carreiro_&_Capataz_-_Maldade_De_Um_Falso_Amor.mp3
+628:11._João_Carreiro_&_Capataz_-_To_Te_Querendo.mp3
+629:11-kool_and_the_gang-spirit_of_the_boogie.mp3
+630:11-korn-falling_away_from_me-h8me.mp3
+631:11_Lady_Gaga_-_Big_Girl_Now_[Ft._New_Kids_On_The_Block].mp3
+632:11_-_Lenha.mp3
+633:11_-_Levando_A_Vida.mp3
+634:11_Linkin_Park_-_In_Pieces.mp3
+635:11_-_Marisa_Monte_-_Aconteceu.mp3
+636:11-Michel_Telo_-_Dominou_Geral.mp3
+637:11_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_Best_Of_Both_Worlds.mp3
+638:11_-_Munhoz_E_Mariano_-_Vou_Pegar_Você_E_Tãe.mp3
+639:11 Na língua dos Anjos.mp3
+640:11 Nao Chores Mais.mp3
+641:11-Nelly_Furtado_-_Wait_For_You-Ysp.mp3
+642:11 No Meu Pe De Serra.m4a
+643:11-Os_Serranos_-_Castelhana.mp3
+644:11. Parabéns Pra Jesus.mp3
+645:11-Paula_Fernandes_-_Quando_A_Chuva_Pasar_(Part._Marcus_Viana).mp3
+646:11- POUT PURRI PAGODES.mp3
+647:11 Quero Ser Feliz Também.mp3
+648:11-Quero_Sim.mp3
+649:11_-_Satisfeito.mp3
+650:11 Sempre Que eu Sair.mp3
+651:11-Sem Você.mp3
+652:11._Sobrenatural.mp3
+653:11 The Challeng.mp3
+654:11_-_Vá_Pro_Inferno_Com_Seu_Amor.mp3
+655:120-james_brown-i_dont_want_nobody_to_give_me_nothing_(open_up_the_door_ill_get_it_myself)-.mp3
+656:121-james_brown-mother_popcorn-.mp3
+657:122-james_brown-aint_it_funky_now-.mp3
+658:12 Ária da Suite Orquestral nº 3.mp3
+659:12 - Capão De Mato.ogg
+660:12-Chuva Chover.mp3
+661:12. Como É Grande O Meu Amor Por Você.mp3
+662:12_-_Enquanto_Isso_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+663:12_-_Esquina_Do_Adeus.mp3
+664:12_-_Eu_Quero_Ser_Sedado.mp3
+665:12_-_Faz_Um_Ano.mp3
+666:1_2_Full.mp3
+667:12 Iguaria Campeira.wma
+668:12._João_Carreiro_&_Capataz_-_Saci.mp3
+669:12._João_Carreiro_&_Capataz_-_Vou_Achar_Outra_Saida.mp3
+670:12-kool_and_the_gang-jungle_boogie.mp3
+671:12-korn-got_the_life-h8me.mp3
+672:12_Lady_Gaga_-_Rock_Show.mp3
+673:12_-_Let_Love_Be_Your_Energy.mp3
+674:12_Linkin_Park_-_The_Little_Things_Give_You_Away.mp3
+675:12_-_Marisa_Monte_-_Ate_Parece.mp3
+676:12- ME LEVA.mp3
+677:12_-_Meu_Lamento.mp3
+678:12-Michel_Telo_-_Se_Nao_Tem_Mar_Vamos_Pro_Bar.mp3
+679:12_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_Truganini.mp3
+680:12_-_Mindblower.mp3
+681:12_-_Munhoz_E_Mariano_-_Momento_Errado.mp3
+682:12_-_Natiruts_-_O_Fundo_Do_Mar.mp3
+683:12-Nelly_Furtado_-_Somebody_To_Love_(Int_L_Bonus_Track)-Ysp.mp3
+684:12-Os_Serranos_-_Pe_Na_Estrada.mp3
+685:12_-_Outra_Pessoa.mp3
+686:12_-_Para_Mais_Ninguém.mp3
+687:12 Pau De Arara.m4a
+688:12-Paula_Fernandes_-_Sensacoes.mp3
+689:12 Pay To Play.mp3
+690:12_-_Planeta_Azul.mp3
+691:12._Pot-Pourri_-_Apaixonada_-_A_Loira_Do_Carro_Branco.mp3
+692:12. Pra Ter o Seu Amor.mp3
+693:12_-_Samba_De_Arere-O_Simpatico.mp3
+694:12 Save The Children.mp3
+695:12_-_Se_Me_Olvido_Otra_Vez.mp3
+696:12 Toca Fogo.mp3
+697:12_Todo_Seu.mp3
+698:12. Tordilho Negro.mp3
+699:12 To The Floor.mp3
+700:12 Track 12.mp3
+701:12-Underground (Live).mp3
+702:12-Un Dia Sin Ti.mp3
+703:12-Vai.mp3
+704:12 Vamos Dançar.mp3
+705:12_-_Vontade_Dividida.mp3
+706:13_-_Ando_Jururu.mp3
+707:13_-_Aquelas_Noites.mp3
+708:13 Ave Maria.mp3
+709:13_Ave_Maria_Natureza.mp3
+710:13 Bailanta do Tio Flor.wma
+711:13_-_Batucada_Instrumental_.mp3
+712:13 Been A Son-Stain.mp3
+713:13. Cristo Amigo.mp3
+714:13 Derramaro O Gai.m4a
+715:13_-_Esta_Melodia_-_Marisa_Monte_-_Cor_De_Rosa_E_Carvão.mp3
+716:13_-_Feel.mp3
+717:13_-_Frio_Da_Madrugada.mp3
+718:13_-_Homens.mp3
+719:13._João_Carreiro_&_Capataz_-_E_Judiacao.mp3
+720:13._João_Carreiro_&_Capataz_-_Sacada_Do_Apartamento.mp3
+721:13 Joy Ride.mp3
+722:13-kool_and_the_gang-misled.mp3
+723:13-korn-freak_on_a_leash-h8me.mp3
+724:13_Lady_Gaga_-_Christmas_Tree_[Ft._Space_Cowboy].mp3
+725:13_-_Marisa_Monte_-_Pelo_Tempo_Que_Durar.mp3
+726:13-Michel_Telo_-_Olhos_Negros.mp3
+727:13_-_Midnight_Oil_-_King_Of_The_Mountain.mp3
+728:13_-_Minha_Culpa.mp3
+729:13_-_Minha_Verdade.mp3
+730:13_-_Munhoz_E_Mariano_-_Eu_Te_Avisei.mp3
+731:13-Nelly_Furtado_-_All_Good_Things_(Come_To_An_End)-Ysp.mp3
+732:13_-_Ninguém_É_De_Ninguém.mp3
+733:13 - Novas Andanças.ogg
+734:13-One of Us.mp3
+735:13-Os_Serranos_-_Madrugada.mp3
+736:13-Paula_Fernandes_-_Quero_Sim.mp3
+737:13_-_Perdidos_En_Un_Barco.mp3
+738:13._Pra_Você_Lembrar_De_Mim.mp3
+739:13 Quem Foi.mp3
+740:13 Radio Activity Rapp.mp3
+741:13. Serrano Cantor.mp3
+742:13 Tô de Bem.mp3
+743:13 Track 13.mp3
+744:13-TRAZ ELA DE VOLTA PRA MIM.mp3
+745:13_-_Vai_Saber.mp3
+746:13. Vestígios.mp3
+747:13-Who Can It Be Now  (Live).mp3
+748:14 A Feira De Caruaru.m4a
+749:14. Aí Já Era.mp3
+750:14 Bailanta do Tio Flor.wma
+751:14_-_Boiadeiro_E_Violeiro.mp3
+752:14 - Chico Espera.ogg
+753:14_-_Come_Undone.mp3
+754:14. Criado Em Galpao.mp3
+755:14. Erguei As Mãos.mp3
+756:14-ESPINHO NA CAMA, AVIÃO DAS 9.mp3
+757:14-F-19 (Non LP B-Side).mp3
+758:14 Fly Like A Bird.mp3
+759:14 Glória a Deus.mp3
+760:14_-_Guitar.mp3
+761:14 Jam On It.mp3
+762:14-Jeito_De_Mato.mp3
+763:14 Jesus Cristo.mp3
+764:14._João_Carreiro_&_Capataz_-_Papel_Em_Branco.mp3
+765:14._João_Carreiro_&_Capataz_-_Primeiro_Brinquedo.mp3
+766:14-korn-twist-h8me.mp3
+767:14_Lady_Gaga_-_Shake_Ur_Kitty.mp3
+768:14_-_Mentira_Também_É_Verdade.mp3
+769:14_Meu_Eu_Em_Voce.mp3
+770:14-Michel_Telo_-_Barquinho-Eu_Quero_Voce.mp3
+771:14_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_Hercules.mp3
+772:14_-_Munhoz_E_Mariano_-_Nuvem_Negra.mp3
+773:14-Música e Rodeio.mp3
+774:14 Negative Creep.mp3
+775:14-Nelly_Furtado_-_Te_Busque_(Spanish_Version)-Ysp.mp3
+776:14_-_Orgulhosa_E_Bonita.mp3
+777:14-Os_Serranos_-_Cambichos.mp3
+778:14_-_O_Tropeiro.mp3
+779:14-Paula_Fernandes_-_Pra_Que_Conversar.mp3
+780:14_-_Pétalas_Esquecidas.mp3
+781:14_-_Pombinha_Mensageira.mp3
+782:14_-_Se.mp3
+783:14_-_Subita_Paixão.mp3
+784:14_-_Te_Solte_La_Rienda.mp3
+785:14 Track 14.mp3
+786:14_-_Tudo_Vira_Bosta.mp3
+787:14._Você_Do_Meu_Lado.mp3
+788:14 Vôo Do Carcará.mp3
+789:14_Where_Did_You_Sleep_Last_Night.mp3
+790:15._A_Louca.mp3
+791:15_-_Eres_MI_Religion.mp3
+792:15-Espaço Sideral.mp3
+793:15_-_Fast_Foward_To_Madness.mp3
+794:15 - Flor Nativa.ogg
+795:15 Hairspray Queen.mp3
+796:15._João_Carreiro_&_Capataz_-_Melhor_Do_Brasil.mp3
+797:15._João_Carreiro_&_Capataz_-_Voce_Nunca_Me_Amou.mp3
+798:15-kool_and_the_gang-victory.mp3
+799:15-korn-adidas-h8me.mp3
+800:15_Lady_Gaga_-_Fever.mp3
+801:15_-_Meu_Céu,_Meu_Sol,_Meu_Mar.mp3
+802:15-Meu_Eu_Em_Você_[Acústico].mp3
+803:15-Michel_Telo_-_Orelhao.mp3
+804:15_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_Surf's_Up_Tonight.mp3
+805:15_-_Munhoz_E_Mariano_-_Sorte_Que_A_Gente_Tem_A_Vida_Inteira.mp3
+806:15_-_Na_Sola_Da_Bota.mp3
+807:15-Nelly_Furtado_-_Lo_Bueno_Siempre_Tiene_Un_Final-Ysp.mp3
+808:15 Olha A Pisada.m4a
+809:15-Os_Serranos_-_Felicidade.mp3
+810:15-Paula_Fernandes_-_Costumes.mp3
+811:15. Quando Sopra o Minuano.mp3
+812:15 Se Liga Natty Dread.mp3
+813:15_-_Sexed_Up.mp3
+814:15 Sprung.mp3
+815:15-TE AMO TANTO QUE NEM SEI.mp3
+816:16_-_Angel_De_Amor.mp3
+817:16._Chocolate.mp3
+818:16 Don't Forget About Us.mp3
+819:16._João_Carreiro_&_Capataz_-_Mangueira.mp3
+820:16._João_Carreiro_&_Capataz_-_Sonho_De_Caboclo.mp3
+821:16-korn-clown-h8me.mp3
+822:16_Lady_Gaga_-_Let_Love_Down.mp3
+823:16-Luz, Paixão, Rodeio.mp3
+824:16- MEU DESESPERO.mp3
+825:16-Michel_Telo_-_Amor_Nao_E_Paixao.mp3
+826:16_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_Back_On_The_Borderline.mp3
+827:16_-_Munhoz_E_Mariano_-_Uma_Saudade.mp3
+828:16-Paula_Fernandes_-_Seio_De_Minas.mp3
+829:16 - Quarto Centenário.ogg
+830:16_-_Só_Alegria.mp3
+831:16_-_Something_Beautiful.mp3
+832:16 Track 16.mp3
+833:17 - Alegria Do Daniel.ogg
+834:17._Amigos_Pela_Fé.mp3
+835:17_-_Bate_O_Pé.mp3
+836:17-GOIÂNIA ME ESPERA.mp3
+837:17-Jeito De Mato.mp3
+838:17._João_Carreiro_&_Capataz_-_Buscando_A_Felicidade.mp3
+839:17._João_Carreiro_&_Capataz_-_Roqueirinha.mp3
+840:17-korn-shoots_and_ladders-h8me.mp3
+841:17_Lady_Gaga_-_Eh,_Eh_[Nothing_Else_I_Can_Say]_[Electric_Piano_&_Human_Beat_Box_Version].mp3
+842:17 Makin' It Last All Night.mp3
+843:17-Michel_Telo_-_A_Voz.mp3
+844:17_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_Don't_Wanna_Be_The_One.mp3
+845:17_-_Monsoon.mp3
+846:17_-_Munhoz_E_Mariano_-_Sexto_Sentido.mp3
+847:17-Paula_Fernandes_-_Isso_E_Amar_Voce.mp3
+848:17_Seu_Amor_Ainda_É_Tudo.mp3
+849:17 Track 17.mp3
+850:17 Verse Chorus Verse.mp3
+851:18- DO BRASIL A ARGENTINA.mp3
+852:18_-_Estrela_Guia-A_Gente_Se_Entrega_Pout.Pourri_.mp3
+853:18._João_Carreiro_&_Capataz_-_Presente_Especial.mp3
+854:18._João_Carreiro_&_Capataz_-_Sarafa.mp3
+855:18-korn-blind-h8me.mp3
+856:18_Lady_Gaga_-_Pokerface_[Piano_&_Voice].mp3
+857:18-Michel_Telo_-_Balada_Sertaneja.mp3
+858:18_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_Forgotten_Years.mp3
+859:18_-_Munhoz_E_Mariano_Part._João_Neto_E_Frederico_-_Balada_Louca.mp3
+860:18_-_Radio.mp3
+861:18-Rosa Dourada.mp3
+862:18 - Saudade.ogg
+863:18 So Lonely.mp3
+864:18 Track 18.mp3
+865:1999.mp3
+866:19-CAVACO DO PAU.mp3
+867:19 - Hino Às Andorinhas.ogg
+868:19._João_Carreiro_&_Capataz_-_Mera_Ilusao.mp3
+869:19-korn-freak_on_a_leash_(dante_ross_mix)-h8me.mp3
+870:19_Lady_Gaga_-_Just_Dance_[Ft._Kardinal_Offishall]_[Remix].mp3
+871:19_-_Misunderstood.mp3
+872:19_-_Munhoz_E_Mariano_-_Assume.mp3
+873:19-Sem Você.mp3
+874:19 Son Of A Gun.mp3
+875:19_-_Tá_Mentindo.mp3
+876:19 Track 19.mp3
+877:19 We Belong Together.mp3
+878:1_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_What_Goes_On.mp3
+879:1_Sublime_Renuncia.mp3
+880:201-james_brown-get_up_i_feel_like_being_a_sex_machine-.mp3
+881:201-Justin_Bieber-One_Time_(Album_Version).mp3
+882:202-james_brown-super_bad-.mp3
+883:202-Justin_Bieber-Favorite_Girl.mp3
+884:203-james_brown-soul_power-.mp3
+885:203-Justin_Bieber-Down_To_Earth.mp3
+886:204-james_brown-hot_pants-.mp3
+887:204-Justin_Bieber-Bigger.mp3
+888:205-james_brown-make_it_funky-.mp3
+889:205-Justin_Bieber-One_Less_Lonely_Girl.mp3
+890:206-james_brown-talkin_loud_and_sayin_nothing-.mp3
+891:206-Justin_Bieber-First_Dance_Feat._Usher.mp3
+892:207-james_brown-king_heroin-.mp3
+893:207-Justin_Bieber-Love_Me.mp3
+894:208-james_brown-there_it_is-.mp3
+895:208-Justin_Bieber-Common_Denominator.mp3
+896:209-james_brown-get_on_the_good_foot-.mp3
+897:209-justin_bieber-baby_feat._ludacris.mp3
+898:20 Dive.mp3
+899:20_-_Floresce.mp3
+900:20._João_Carreiro_&_Capataz_-_Sertanejo_Solitario.mp3
+901:20_-_Munhoz_E_Mariano_-_Me_Rendo_A_Você.mp3
+902:20 - Rastro Do Bugio.ogg
+903:210-james_brown-down_and_out_in_new_york_city-.mp3
+904:210-Justin_Bieber-Somebody_To_Love.mp3
+905:211-james_brown-doing_it_to_death-.mp3
+906:211-justin_bieber-stuck_in_the_moment.mp3
+907:212-james_brown-the_payback-.mp3
+908:212-justin_bieber-u_smile.mp3
+909:213-james_brown-papa_dont_take_no_mess-.mp3
+910:213-justin_bieber-runaway_love.mp3
+911:214-james_brown-my_thang-.mp3
+912:214-justin_bieber-never_let_you_go.mp3
+913:215-james_brown-funky_president_(people_its_bad)-.mp3
+914:215-justin_bieber-overboard_feat._jessica_jarrell.mp3
+915:216-james_brown-get_up_offa_that_thing-.mp3
+916:216-justin_bieber-eenie_meenie_feat._sean_kingston.mp3
+917:217-james_brown-bodyheat-.mp3
+918:217-justin_bieber-up.mp3
+919:218-james_brown-its_too_funky_in_here-.mp3
+920:218-justin_bieber-that_should_be_me.mp3
+921:21._João_Carreiro_&_Capataz_-_Pergunte_A_Ela.mp3
+922:21_-_Munhoz_E_Mariano_-_Vem_Cuidar_Do_Seu_Bebê.mp3
+923:21 - Sanga.ogg
+924:22._João_Carreiro_&_Capataz_-_Sao_Jose.mp3
+925:22_-_Munhoz_E_Mariano_-_Sonho_Bom.mp3
+926:2_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_Power_And_The_Passion.mp3
+927:3_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_Dreamworld.mp3
+928:4_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_White_Skin_Black_Heart.mp3
+929:50_Cent_-_In_Da_Club.mp3
+930:5_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_Kosciuszko.mp3
+931:6_-_Midnight_Oil_-_The_Dead_Heart.mp3
+932:7_-_Midnight_Oil_-_Blue_Sky_Mine.mp3
+933:8_-_Midnight_Oil_-_20,000_Watts_R.S.L.-_Greatest_Hits_-_U.S._Forces.mp3
+934:9_-_Midnight_Oil_-_Beds_Are_Burning.mp3
+935:Actrindades_-_Pescador_De_Ilusoes_O_Rappa.mp3
+936:Aerial.mp3
+937:Ain't_Nothin'_Wrong.mp3
+938:Allergic.mp3
+939:All_Or_None.mp3
+940:All_Over_You.mp3
+941:Alphabet_St.mp3
+942:Alright.mp3
+943:Always_On_My_Mind.mp3
+944:And_One.mp3
+945:Animal_Boy.mp3
+946:Anne_Caroline_Joy_-_Down_Fifth_Harmony_Ft_Gucci_Mane_Tribute.mp3
+947:Arc.mp3
+948:Art_Popular_-_01_-_Fricote.mp3
+949:Art_Popular_-_04_-_Falando_Segredo_Ao_Vivo.mp3
+950:Art_Popular_-_E_No_Pagode.mp3
+951:Art_Popular_-_Ta_Doendo_Demais_Essa_Saudade.mp3
+952:Asc_-_05_-_Missing_You.mp3
+953:Audioslave_-_Like_A_Stone.mp3
+954:Baby_I_Want_Your_Loving.mp3
+955:Baitaca_-_Cadela_Baia.mp3
+956:Baitaca_-_Campeiro_Não_Tem_Enfeite.mp3
+957:Baitaca_-_Coiceando_A_Cola_E_Cadela_Baia.mp3
+958:Baitaca_-_Dedo_Inchado.mp3
+959:Baitaca_-_Fazenda_Da_Viuva.mp3
+960:Baitaca_-_Festa_De_Campo.mp3
+961:Baitaca_-_Historia_Do_Tico_Loco.mp3
+962:Baitaca_-_Lamento_De_Pobre.mp3
+963:Baitaca_-_Lida_Campeira.mp3
+964:Baitaca_-_Reformando_A_Mulher_Véia.mp3
+965:Baitaca_-_Tenho_Orgulho_Em_Ser_Campeiro.mp3
+966:Ballerina_Girl.mp3
+967:Banana_Pancakes.mp3
+968:Bon Jovi _-_It's My Life.mp3
+969:Barao_Vermelho_-_21_-_Por_Voce.mp3
+970:Batukilin_Brasil_-_Grupo_Art_Popular_Agamamou.mp3
+971:Beat_On_The_Brat.mp3
+972:Beautiful.mp3
+973:Beauty_Freak_-_My_Beauty_My_Soul_Edit.mp3
+974:Being_Boring.mp3
+975:Believe_Me.mp3
+976:Belle.mp3
+977:Beth.mp3
+978:Better_The_Devil_You_Know.mp3
+979:Better_Together.mp3
+980:Bigmouth_Strikes_Again.mp3
+981:Biko.mp3
+982:Bizarre_Love_Triangle.mp3
+983:Black_Diamond.mp3
+984:Black_Eyed_Peas_-_Lets_Get_It_Started.mp3
+985:Black_-_Wonderful_Life.mp3
+986:Blitzkrieg_Bop.mp3
+987:Blow_Your_Mind.mp3
+988:Bluearmyaudio_-_The_Rolling_Stones_9_Loving_Cup_Exile_On_Main_Street_1972.mp3
+989:Blue_Paper.mp3
+990:Bob_Marley_-_Africa_Unite.mp3
+991:Bob_Marley_-_Natural_Mystic.mp3
+992:Bob_Marley_-_One_Drop.mp3
+993:Bob_Marley_-_Punky_Reggae_Party.mp3
+994:Bob_Marley_-_So_Much_Trouble_In_The_World.mp3
+995:Bob_Marley_-_Zimbabwe.mp3
+996:Boiler.mp3
+997:Bon Jovi _-_It's My Life.mp3
+998:Bon Jovi _-_It's My Life.mp3
 playlist_end

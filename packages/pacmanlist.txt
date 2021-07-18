@@ -120,7 +120,6 @@ colord 1.4.5-4
 colord-sane 1.4.5-4
 compiler-rt 12.0.1-2
 confuse 3.3-3
-conky-lua-archers 1.11.3-2
 copyq 4.1.0-1
 coreutils 8.32-1
 cracklib 2.9.7-2
@@ -147,6 +146,7 @@ dex 0.9.0-1
 dhclient 4.4.2.P1-1
 dia 0.97.3-8
 dialog 1:1.3_20210621-1
+diff-so-fancy 1.4.2-1
 diffutils 3.7-3
 ding-libs 0.6.1-3
 discord 0.0.15-1
@@ -244,7 +244,7 @@ gmrun 1.2w-1
 gnome-desktop 1:40.2-1
 gnome-keyring 1:40.0-1
 gnu-netcat 0.7.1-8
-gnupg 2.2.28-2
+gnupg 2.2.29-1
 gnutls 3.7.2-2
 go 2:1.16.6-1
 gobject-introspection 1.68.0-1
@@ -329,7 +329,7 @@ hunspell 1.7.0-3
 hw-probe 1.5-1
 hwids 20210613-1
 hwinfo 21.75-1
-hwloc 2.4.1-1
+hwloc 2.5.0-1
 hyphen 2.8.8-3
 i3lock-color 2.13.c.3-1
 iana-etc 20210624-1
@@ -353,6 +353,7 @@ jasper 2.0.32-1
 jbig2dec 0.19-1
 jfsutils 1.1.15-7
 joplin-desktop 2.1.7-1
+jq 1.6-4
 js78 78.12.0-1
 json-c 0.15-1
 json-glib 1.6.2-1
@@ -617,7 +618,6 @@ libxkbfile 1.1.0-2
 libxklavier 5.4-3
 libxml2 2.9.10-9
 libxmu 1.1.3-2
-libxnvctrl 465.31-1
 libxpm 3.5.13-2
 libxrandr 1.5.2-3
 libxrender 0.9.10-4
@@ -690,7 +690,7 @@ mpfr 4.1.0-2
 mpg123 1.28.2-1
 mpv 1:0.33.1-2
 mtdev 1.1.6-1
-mtools 1:4.0.32-1
+mtools 1:4.0.33-1
 mujs 1.1.3-1
 mypaint-brushes1 1.3.1-1
 nano 5.8-1
@@ -732,6 +732,7 @@ ntp 4.2.8.p15-1
 numlockx 1.2-5
 nvme-cli 1.14-2
 odt2txt 0.5-4
+oniguruma 6.9.7.1-1
 openal 1.21.1-1
 openconnect 1:8.10-1
 opencore-amr 0.1.5-5
@@ -745,7 +746,7 @@ openssl-1.0 1.0.2.u-1
 openvpn 2.5.3-1
 opus 1.3.1-2
 orc 0.4.32-1
-os-prober 1.78-1
+os-prober 1.79-1
 ostree 2021.3-1
 p11-kit 0.24.0-1
 pacman 6.0.0-5
@@ -1016,7 +1017,6 @@ thunar-volman 4.16.0-1
 tinyxml2 9.0.0-1
 tk 8.6.11.1-1
 tmux 3.2_a-1
-tolua++ 1.0.93-4
 tpm2-tss 3.1.0-1
 transmission-cli 3.00-2
 tre 0.8.0-6
@@ -1030,6 +1030,7 @@ udftools 2.3-1
 udisks2 2.9.2-1
 ueberzug 18.1.9-2
 ufw 0.36-5
+unrar 1:6.0.7-1
 unzip 6.0-14
 upower 0.99.12-2
 usb_modeswitch 2.6.1-1

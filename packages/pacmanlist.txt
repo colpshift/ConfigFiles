@@ -7,7 +7,6 @@ adobe-source-han-sans-jp-fonts 2.004-1
 adobe-source-han-sans-kr-fonts 2.004-1
 adwaita-icon-theme 40.1.1-1
 aic94xx-firmware 30-9
-alacritty-ligatures 0.8.0.1772.g3ed0430-1
 alsa-card-profiles 1:0.3.31-1
 alsa-lib 1.2.5.1-3
 alsa-plugins 1:1.2.5-2
@@ -112,13 +111,12 @@ chaotic-mirrorlist 20210716-1
 checkbashisms 2.20.5-1
 chromaprint 1.5.0-3
 cifs-utils 6.13-2
-clang 12.0.1-1
 clonezilla 3.35.2-3
 clucene 2.3.3.4-11
+cmake 3.21.0-1
 cmatrix 2.0-2
 colord 1.4.5-4
 colord-sane 1.4.5-4
-compiler-rt 12.0.1-2
 confuse 3.3-3
 copyq 4.1.0-1
 coreutils 8.32-1
@@ -171,7 +169,6 @@ edk2-shell 202105-1
 efibootmgr 17-2
 efivar 37-4
 efm-langserver 0.0.34-1
-electron 13.1.6-1
 elfutils 0.185-1
 elinks 0.14.1-1
 enchant 2.3.0-1
@@ -200,7 +197,7 @@ flameshot 0.9.0-1
 flatpak 1.11.2-1
 flex 2.6.4-3
 fluidsynth 2.1.8-1
-font-manager-git 0.8.6.r18.gf961888-1
+font-manager-git 0.8.6.r29.gfd14993-1
 fontconfig 2:2.13.94-1
 foomatic-db-engine 4:20200206-1
 freetype2 2.10.4-1
@@ -218,8 +215,6 @@ gcc-libs 11.1.0-1
 gconf 3.2.6+11+g07808097-10
 gcr 3.40.0-1
 gd 2.3.2-4
-gdb 10.2-2
-gdb-common 10.2-2
 gdbm 1.20-1
 gdk-pixbuf2 2.42.6-1
 gegl 0.4.30-4
@@ -352,7 +347,6 @@ jansson 2.13.1-1
 jasper 2.0.32-1
 jbig2dec 0.19-1
 jfsutils 1.1.15-7
-joplin-desktop 2.1.7-1
 jq 1.6-4
 js78 78.12.0-1
 json-c 0.15-1
@@ -450,7 +444,6 @@ libgme 0.6.3-1
 libgnome-keyring 3.12.0+13+g4f8ab73-3
 libgpg-error 1.42-1
 libgphoto2 2.5.27-1
-libgsf 1.14.47-1
 libgtop 2.40.0+2+g31db82ef-2
 libgudev 236-1
 libguess 1.2-3
@@ -645,7 +638,6 @@ linux-atm 2.5.2-6
 linux-firmware 20210511.7685cf4-1
 linux-headers 5.12.15.arch1-1
 lirc 1:0.10.1-8
-lldb 12.0.1-1
 llvm-libs 12.0.1-1
 lm_sensors 1:3.6.0.r41.g31d1f125-1
 lmdb 0.9.29-1
@@ -674,7 +666,7 @@ md4c 0.4.8-1
 mdadm 4.1-2
 mediainfo 21.03-1
 memtest86+ 5.31b-1
-mesa 21.1.4-1
+mesa 21.1.5-1
 metis 5.1.0.p10-2
 minizip 1:1.2.11-4
 mkinitcpio 30-2
@@ -751,7 +743,7 @@ ostree 2021.3-1
 p11-kit 0.24.0-1
 pacman 6.0.0-5
 pacman-contrib 1.4.0-4
-pacman-mirrorlist 20210509-1
+pacman-mirrorlist 20210718-1
 pahole 1.21-1
 pam 1.5.1-1
 pamac-all 10.1.3-3
@@ -932,6 +924,7 @@ redland 1:1.0.17-8
 reflector 2021.7.8-1
 reiserfsprogs 3.6.27-3
 rest 0.8.1-3
+rhash 1.4.2-1
 ripgrep 13.0.0-2
 rmlint 2.10.1-2
 rofi 1.6.1-1
@@ -946,7 +939,6 @@ ruby-irb 1.3.6-1
 ruby-reline 0.2.5-1
 rubygems 3.2.21-1
 run-parts 4.11.2-1
-rust 1:1.53.0-2
 sane 1.0.32-3
 sardi-icons 21.07-05
 sbc 1.5-2
@@ -970,7 +962,6 @@ snapd-glib 1.59-1
 snappy 1.1.8-2
 sof-firmware 1.8-1
 sound-theme-freedesktop 0.8-4
-source-highlight 3.1.9-5
 speex 1.2.0-3
 speexdsp 1.2.0-2
 spice 0.15.0-1
@@ -1046,7 +1037,7 @@ volume_key 0.3.12-5
 vpnc 1:0.5.3.r468.r81-2
 vscode-html-languageserver 1.56.0-1
 vte-common 0.64.2-2
-vulkan-icd-loader 1.2.183-1
+vulkan-icd-loader 1.2.184-1
 w3m 0.5.3.git20210102_6-1
 warsaw-bin 2.20.0.13-2
 wavpack 5.4.0-1

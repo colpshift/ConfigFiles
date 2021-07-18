@@ -18,4 +18,3 @@ _arguments \
   "*"{-o=,--option=}"[override config file options]:option" \
   "(-t --title)"{-t=,--title=}"[define the window title]:title" \
   "--working-directory=[start shell in specified directory]:directory:_directories"
-

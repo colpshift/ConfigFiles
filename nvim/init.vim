@@ -62,6 +62,9 @@ Plug 'honza/vim-snippets'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 " markdown preview
 Plug 'rust-lang/rust.vim'
+" rust
+Plug 'fladson/vim-kitty'
+" kitty terminal
 " Languages
 "---------------------------
 call plug#end()

@@ -61,5 +61,5 @@ unset TERMCAP
 ### defaults apps
 export EDITOR=nvim
 export BROWSER=firefox
-export TERM=alacritty
+export TERM=kitty
 

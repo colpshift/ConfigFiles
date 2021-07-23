@@ -1,0 +1,321 @@
+
+  	function autenticadorUOL() {
+		return new Promise((resolve, reject) => {
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', 'https://contentpw.uol.com.br/rest/token', true);
+          xhr.withCredentials = true;
+          xhr.send();
+
+          xhr.onload = function() {
+              if (this.status == 200) {
+                  resolve(JSON.parse(xhr.responseText));
+              }else {
+                  reject(xhr);
+              }
+          }
+
+          xhr.onerror = function (error) {
+              reject(error);
+          };
+
+      });  
+  	}	
+  
+	// custom events
+    customEvents = {
+      countClick: function(event){
+        if(typeof (window.hitAudience||{}).countClick == 'function'){
+          let myObj = JSON.parse(event.data)
+          let metrics_obj = {
+              component: 'paywall',
+              pTemplate: myObj.component || '',
+              reference: myObj.reference || '',
+              source: myObj.source || ''
+          }
+          let metric = Object.assign({},metrics_obj, (window.universal_variable || {}).aud);
+          (window.hitAudience||{}).countClick(metric, event.url);
+          if(event.url){
+            let isUserLoggedIn = typeof widgetProfile == 'object' && widgetProfile.Login.isUserLoggedIn();
+            // Deslogando do contauol
+            if(isUserLoggedIn && metric.reference.indexOf('assinante') != -1){
+              widgetProfile && widgetProfile.Login.doLogout(false, function(){
+                window.location.href = event.url;
+              });
+            } else {
+              window.location.href = event.url;
+            }
+          }
+
+          if(metric.closedContent){
+            window.uolAnalytics && window.uolAnalytics('porteiraconteudo2.event',metric);
+          }
+        }
+      },
+      countPrint: function(params){
+        let component = { component: 'paywall', reference: "componente-visualizado", pTemplate: params.templateId };
+        const selector = params.containerSelector || '.tp-modal';
+        const container = document.querySelector(selector);
+        container.setAttribute('data-audience-print', JSON.stringify(component));
+      },
+	  countPrintClosed(templateId){
+        let metric = (window.universal_variable || {}).aud || {};
+        let component = { component: 'paywall', reference: "componente-visualizado", action:'impressao', pTemplate: templateId, nonInteraction: true };
+        metric = Object.assign({}, metric, component);
+
+        (window.hitAudience||{}).countEvent(metric, true);
+
+        // disparo de metricas para conteúdo fechado
+        window.uolAnalytics && window.uolAnalytics('porteiraconteudo2.event',metric);
+      },
+      countEvent: function(component){
+        if(typeof (window.hitAudience||{}).countEvent == 'function'){
+          let metric = Object.assign({}, component, (window.universal_variable || {}).aud);
+          (window.hitAudience||{}).countEvent(metric, true);
+        }
+      },
+
+    	setPrint: function(params){
+          const isClosed = ((window.universal_variable || {}).aud || {}).closedContent || false;
+          if(isClosed){
+            customEvents.countPrintClosed(params.templateId);
+          } else {
+            customEvents.countPrint(params);
+          }
+		}
+    };
+
+    tp = window["tp"] || [];
+
+    /* Checkout related */
+    /**
+     * Event properties
+     *
+     * chargeAmount - amount of purchase
+     * chargeCurrency
+     * uid
+     * email
+     * expires
+     * rid
+     * startedAt
+     * termConversionId
+     * termId
+     * promotionId
+     * token_list
+     * cookie_domain
+     * user_token
+     *
+     */
+    function onCheckoutComplete(data) {
+    }
+
+    function onCheckoutExternalEvent() {
+    }
+
+    function onCheckoutClose(event) {
+        /* Default behavior is to refresh the page on successful checkout */
+        if (event && event.state == "checkoutCompleted") {
+            location.reload();
+        }
+    }
+
+    function onCheckoutCancel() {
+    }
+
+    function onCheckoutError() {
+    }
+
+    function onCheckoutSubmitPayment() {
+    }
+
+    /* Meter callback */
+    function onMeterExpired() {
+
+    }
+
+    /* Meter callback */
+    function onMeterActive() {
+
+    }
+
+    /* Callback executed when a user must login */
+    function onLoginRequired() {
+        // this is a reference implementation only
+        // your own custom login/registration implementation would
+        // need to return the tinypass-compatible userRef inside the callback
+
+        // mysite.showLoginRegistration(function (tinypassUserRef)
+        // tp.push(["setUserRef", tinypassUserRef]); // tp.offer.startCheckout(params); // }
+        // this will prevent the tinypass error screen from displaying
+
+        return false;
+    }
+
+    /* Callback executed after a tinypassAccounts login */
+    function onLoginSuccess() {
+    }
+
+    /* Callback executed after an experience executed successfully */
+    function onExperienceExecute(event) {
+    }
+
+    /* Callback executed if experience execution has been failed */
+    function onExperienceExecutionFailed(event) {
+    }
+
+    /* Callback executed if external checkout has been completed successfully */
+    function onExternalCheckoutComplete(event) {
+        /* Default behavior is to refresh the page on successful checkout */
+        location.reload();
+    }
+	
+	function onShowTemplate(templateParams) {
+    	customEvents.setPrint(templateParams);
+    }
+	
+	/* get GA id from cookie */
+	function getGA(findBy) {
+        const [, cookieValue] = document.cookie
+        .split(";")
+        .map((cookie) => cookie.split("="))
+        .find(([name = ""]) => name.trim() === findBy) || [,""];
+        return cookieValue.replace(/^([^.]+\.){2}/, "");
+    }
+
+	/* save custom variables */
+    function setCustomVariables(obj) {
+      for( const tag in obj ){
+        if(typeof obj[tag] == 'string'){
+          tp.setCustomVariable(tag, obj[tag])
+        }
+      }
+    }
+
+	function registerLead() {
+        return new Promise((resolve, reject) => {
+            var xhr = new XMLHttpRequest();
+            var leadsTeams = {
+                'corinthians-agora' : 'leads_corinthians',
+                'flamengo-agora' : 'leads_flamengo',
+                'palmeiras-agora' : 'leads_palmeiras',
+                'santos-agora' : 'leads_santos',
+                'sao-paulo-agora' : 'leads_sao_paulo'
+            };
+            var teamSlug = window.universal_variable.aud.mediaTitle.replace(/\s+/g, '-');
+            var teamLead = leadsTeams[teamSlug] || '';
+            var urlApi = 'https://n.comentarios.uol.com.br/ws/v5/user/login?event_code=' + teamLead;
+            xhr.open('GET', urlApi, true);
+            xhr.withCredentials = true;
+            xhr.send();
+
+            xhr.onload = function() {
+                if (this.status == 200) {
+                    resolve(JSON.parse(xhr.responseText));
+                }else {
+                    reject(xhr);
+                }
+            }
+
+            xhr.onerror = function (error) {
+                reject(error);
+            };
+        });
+    }
+
+    tp.push(["setAid", 'ivPmBDGgpu']);
+    tp.push(["setCxenseSiteId", "1137479910722123061"]);
+    tp.push(["setEndpoint", 'https://buy.tinypass.com/api/v3']);
+    tp.push(["setUseTinypassAccounts", false ]);
+	tp.push(["setUsePianoIdUserProvider", false ]);  // Custom addon: Piano Lite
+    tp.push(["setUsePianoIdLiteUserProvider", true ]);  // Custom addon: Piano Lite*/
+   
+    /* checkout related events */
+    tp.push(["addHandler", "checkoutComplete", onCheckoutComplete]);
+    tp.push(["addHandler", "checkoutClose", onCheckoutClose]);
+    tp.push(["addHandler", "checkoutCustomEvent", onCheckoutExternalEvent]);
+    tp.push(["addHandler", "checkoutCancel", onCheckoutCancel]);
+    tp.push(["addHandler", "checkoutError", onCheckoutError]);
+    tp.push(["addHandler", "checkoutSubmitPayment", onCheckoutSubmitPayment]);
+
+    /* user login events */
+    tp.push(["addHandler", "loginRequired", onLoginRequired]);
+    tp.push(["addHandler", "loginSuccess", onLoginSuccess]);
+
+	tp.push(["addHandler", "customEvent", function (event) {
+      customEvents[event.eventName](event.params);
+      // AP11AM-1704 - Alteração em 23/06/2021 - Altera o trackingId de localStorage para cookie
+      if(localStorage.getItem('p_trk_id')) {
+        localStorage.removeItem('p_trk_id');
+      }
+      if(event.params.trackingid && document.cookie.indexOf('p_trk_id') === -1) {
+        var cookie = 'p_trk_id=' + event.params.trackingid + ';path=/;domain=.uol.com.br;';
+        document.cookie = cookie;
+      }
+      // fim da alteração
+    }]);
+
+    /* meter related */
+    tp.push(["addHandler", "meterExpired", onMeterExpired]);
+    tp.push(["addHandler", "meterActive", onMeterActive]);
+
+    /* audience */
+	tp.push(["addHandler", "showTemplate", onShowTemplate]);
+
+    tp.push(["addHandler", "experienceExecute", onExperienceExecute]);
+    tp.push(["addHandler", "experienceExecutionFailed", onExperienceExecutionFailed]);
+
+    /* external checkout related events */
+    tp.push(["addHandler", "externalCheckoutComplete", onExternalCheckoutComplete]);
+
+    tp.push(["init", function () {
+      
+      	const gaID = getGA('_ga');
+        tp.enableGACrossDomainLinking(gaID);
+        tp.setGAClientId(gaID);
+      
+      	if(typeof Audience == 'object'){
+          setCustomVariables(Audience);
+        }
+      
+      	if(document.cookie.indexOf("JS_SESS=") < 0 || location.host == 'www.uol.com.br' && location.pathname.length == 1){
+          	tp.push(["setExternalJWT", ""]);
+            tp.experience.init();
+            return;
+        }
+      
+        autenticadorUOL()
+        .then(function (data) { 
+            tp.push(["setExternalJWT", data.data]);
+            tp.experience.init();
+          	return;
+        })
+        .catch( function(error)  {
+          
+            var status = error.status;
+            if(status == 500){
+                return;
+            }
+
+            if(status == 401) {
+                tp.push(["setExternalJWT", ""]);
+              	tp.experience.init();
+            }
+          
+        });	
+      
+      	if(window.location.search.indexOf('register') > -1 && document.cookie.indexOf('SESS') > -1) {
+            registerLead().then(response => {
+                if(response.code !== '200') {
+                    console.error(response.error);
+                }
+            });
+        }
+     	
+    }]);
+
+
+
+    // do not change this section
+    // |BEGIN INCLUDE TINYPASS JS|
+    (function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("//cdn.tinypass.com/api/tinypass.min.js");
+    // |END   INCLUDE TINYPASS JS|
+

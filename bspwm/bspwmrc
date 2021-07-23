@@ -9,7 +9,7 @@ bspc config external_rules_command ~/.config/bspwm/scripts/external_rules_comman
 #bspc config border_radius       8
 bspc config border_width         2
 bspc config window_gap           4
-bspc config top_padding          25
+bspc config top_padding          20
 bspc config bottom_padding       1
 bspc config left_padding         1
 bspc config right_padding        1
@@ -51,6 +51,7 @@ bspc rule -a Arandr state=floating
 bspc rule -a Galculator state=floating
 bspc rule -a Pavucontrol state=floating sticky=on
 bspc rule -a rofi state=floating sticky=on
+bspc rule -a 'QML Timer' state=floating sticky=on
 
 #Tiled applications
 #bspc rule -a Gnome-disks state=tiled
@@ -59,8 +60,10 @@ bspc rule -a Surf state=tiled
 #open applications on specific workspaces
 bspc rule -a Skype desktop='^9'
 bspc rule -a discord desktop='^9'
+bspc rule -a TelegramDesktop desktop='^9'
 bspc rule -a Audacious desktop='^6'
 bspc rule -a Gimp-2.10 desktop='^5'
+bspc rule -a Mirage desktop='^5'
 bspc rule -a Dia deskt:op='^6'
 bspc rule -a Inkscape desktop='^6'
 bspc rule -a Arcolinux-tweak-tool.py desktop='^7' follow=on

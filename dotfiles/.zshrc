@@ -21,7 +21,7 @@ setopt inc_append_history                                       # save commands 
 
 ### zsh style
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
-zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
+#zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
 zstyle ':completion:*' rehash true                              # automatically find new executables in path
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
@@ -83,8 +83,7 @@ alias gvim='/home/colps/.local/bin/nvim'
 alias bat='bat --theme Nord'
 alias gitu='git add . && git commit && git push'
 alias gitb='git add . && git commit -m 'backup' && git push'
-alias gitl='git log --oneline'
-alias surf='surf -DI'
+alias gitl='git log --graph'
 alias mpv='devour mpv'
 alias sxiv='devour sxiv'
 alias zathura='devour zathura'
@@ -97,7 +96,7 @@ alias parui='~/.scripts/fzf_paru_install.sh'
 alias parur='~/.scripts/fzf_paru_remove.sh'
 alias parup='~/.scripts/paru_update.sh'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias mirror_update='sudo reflector --age 6 --latest 10 --fastest 10 --threads 10 --sort rate --protocol https --save /etc/pacman.d/mirrorlist'
+alias mirror_update='sudo reflector --age 6 --latest 20 --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 

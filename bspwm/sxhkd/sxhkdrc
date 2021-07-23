@@ -18,21 +18,21 @@ super + w
 super + shift + w
     brave
 
-# alacritty
+# kitty
 super + Return
-    alacritty
+    kitty
 
 # bpytop
 super + h
-    alacritty -e bpytop
+    kitty -e bpytop
 
 # newsboat
 super + r
-    alacritty -e newsboat
+    kitty -e newsboat
 
 # ncmpcpp
 super + m
-    alacritty -e ncmpcpp -s browser -S visualizer
+    kitty -e ncmpcpp -s browser -S visualizer
 
 # audacious
 super + shift + m

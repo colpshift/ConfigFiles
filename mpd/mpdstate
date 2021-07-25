@@ -1,9 +1,8 @@
 sw_volume: 57
 audio_device_state:1:pulse audio
 audio_device_state:1:FIFO
-state: pause
-current: 2
-time: 126.692000
+state: stop
+current: 992
 random: 0
 repeat: 1
 single: 0
@@ -1004,4 +1003,5 @@ playlist_begin
 989:Bob_Marley_-_So_Much_Trouble_In_The_World.mp3
 990:Bob_Marley_-_Zimbabwe.mp3
 991:Boiler.mp3
+992:Sharon Jones & the Dap-Kings _-_This Land Is Your Land.mp3
 playlist_end

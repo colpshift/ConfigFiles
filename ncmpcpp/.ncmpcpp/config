@@ -6,6 +6,9 @@ mpd_port =                  "6600"
 mpd_music_dir =	            "~/Music"
 lyrics_directory =	    "~/.ncmpcpp/lyrics"
 
+## Colors
+colors_enabled = "yes"
+# discard_colors_if_item_is_selected = ""yes""
 ## Appearance
 message_delay_time = "1"
 visualizer_type = "wave"

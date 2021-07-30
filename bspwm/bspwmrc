@@ -54,22 +54,28 @@ bspc rule -a rofi state=floating sticky=on
 bspc rule -a 'QML Timer' state=floating sticky=on
 
 #Tiled applications
-#bspc rule -a Gnome-disks state=tiled
+bspc rule -a Zathura state=tiled
 bspc rule -a Surf state=tiled
 
 #open applications on specific workspaces
+# messages
 bspc rule -a Skype desktop='^9'
 bspc rule -a discord desktop='^9'
 bspc rule -a TelegramDesktop desktop='^9'
-bspc rule -a Audacious desktop='^6'
+# images
 bspc rule -a Gimp-2.10 desktop='^5'
 bspc rule -a Mirage desktop='^5'
-bspc rule -a Dia deskt:op='^6'
-bspc rule -a Inkscape desktop='^6'
+bspc rule -a Dia desktop='^5'
+bspc rule -a Inkscape desktop='^5'
+bspc rule -a XMind desktop='^5'
+# arcolinux
 bspc rule -a Arcolinux-tweak-tool.py desktop='^7' follow=on
 bspc rule -a Arcolinux-welcome-app.py desktop='^7' follow=on
 bspc rule -a Arcolinux-calamares-tool.py desktop='^7' follow=on
-#Spotify fix
+# music
+bspc rule -a Audacious desktop='^6'
+bspc rule -a Picard='^6'
+# spotify fix
 sleep 1
 wmctrl -r spotify -t 6
 exit

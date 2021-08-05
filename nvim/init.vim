@@ -410,7 +410,7 @@ set nowritebackup
 "
 " Python
 let g:python3_host_prog = '/bin/python3'
-let g:python2_host_prog = '/bin/python2'
+let g:python_host_prog = '/bin/python2'
 "
 " Rust
 let g:rust_clip_command = 'xclip -selection clipboard'

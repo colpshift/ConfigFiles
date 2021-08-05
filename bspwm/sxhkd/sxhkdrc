@@ -14,9 +14,9 @@ super + c
 super + w
     firefox
 
-# brave
+# chromium
 super + shift + w
-    brave
+    chromium
 
 # kitty
 super + Return

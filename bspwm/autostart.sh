@@ -20,10 +20,10 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 xset r rate 210 40  # Faster key repeat and delay
 numlockx on &
 # apps
-run rambox
 run nextcloud
 run copyq
 run flameshot
+run rambox
 run dunst
 run /home/colps/.scripts/mpd_start.sh
 #

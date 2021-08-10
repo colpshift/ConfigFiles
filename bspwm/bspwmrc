@@ -9,7 +9,7 @@ bspc config external_rules_command ~/.config/bspwm/scripts/external_rules_comman
 #bspc config border_radius       8
 bspc config border_width         2
 bspc config window_gap           4
-bspc config top_padding          20
+bspc config top_padding          25
 bspc config bottom_padding       1
 bspc config left_padding         1
 bspc config right_padding        1
@@ -62,6 +62,8 @@ bspc rule -a Surf state=tiled
 bspc rule -a Skype desktop='^9'
 bspc rule -a discord desktop='^9'
 bspc rule -a TelegramDesktop desktop='^9'
+bspc rule -a Rambox desktop='^9'
+bspc rule -a zoom desktop='^9'
 # images
 bspc rule -a Gimp-2.10 desktop='^5'
 bspc rule -a Mirage desktop='^5'

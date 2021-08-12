@@ -12,6 +12,7 @@ http://feeds.feedburner.com/gbhackers                                         "g
 ---Arch---
 https://archlinux.org/feeds/news/                                             "Archlinux"
 https://arcolinuxforum.com/app.php/feed                                       "Arcolinux"
+https://sourceforge.net/projects/arcolinux-community-editions/rss?path=/bspwm "ArcoLinuxB"
 ---Dev---
 https://github.com/colpshift.private.atom?token=AJJUXHQBPLVMT65WRVUHN5F6PHLEE "github"
 https://gitlab.com/colpshift.atom?feed_token=gFkiNJPVagWFkBexBrjx             "gitlab"

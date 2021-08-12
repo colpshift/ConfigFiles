@@ -14,9 +14,9 @@ super + c
 super + w
     firefox
 
-# chromium
+# firefox "GP Colps"
 super + shift + w
-    chromium
+    firefox -P "GP Colps"
 
 # kitty
 super + Return
@@ -48,7 +48,7 @@ super + z
 
 # dmenu
 super + shift + d
-    dmenu_run -i -nb '#191919' -nf '#6790eb' -sb '#6790eb' -sf '#191919' -fn 'NotoMonoRegular:pixelsize=14'
+    dmenu_run -i -nb '#191919' -nf '#6790eb' -sb '#6790eb' -sf '#191919' -fn 'JetBrains Mono Regular Nerd Font Complete:pixelsize=10'
 
 #
 # bspwm hotkeys --------------------------------------------

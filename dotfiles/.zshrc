@@ -66,16 +66,16 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 ### Set alias
 alias exa='exa --header --long --group --git'
 alias ll='ls'
-alias ls='ls -lh --color=auto --group-directories-first'
-alias la='ls -ah'  # show hidden files and folders
-alias lx='ls -BXh' # sort by extension
-alias lz='ls -rSh' # sort by size
-alias lt='ls -rth' # sort by date
+alias ls='lsd -lh --group-dirs first'
+alias la='ls -a'  # show hidden files and folders
+alias lx='ls -X'  # sort by extension
+alias lz='ls -rS' # sort by size
+alias lt='ls -rt' # sort by date
 alias dir='dir --color'
 alias grep='grep --color'
 alias dmesg='dmesg --color'
-alias df='df -h'
-alias du='du -h'
+alias df='dust'
+alias du='duf'
 alias su='sudo -i'
 alias vi='/home/colps/.local/bin/nvim'
 alias vim='/home/colps/.local/bin/nvim'

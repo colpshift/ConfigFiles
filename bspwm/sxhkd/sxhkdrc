@@ -14,9 +14,9 @@ super + c
 super + w
     firefox
 
-# chromium
+# firefox "GP Colps"
 super + shift + w
-    chromium
+    firefox -P "GP Colps"
 
 # kitty
 super + Return

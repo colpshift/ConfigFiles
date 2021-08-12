@@ -64,6 +64,8 @@ bspc rule -a discord desktop='^9'
 bspc rule -a TelegramDesktop desktop='^9'
 bspc rule -a Rambox desktop='^9'
 bspc rule -a zoom desktop='^9'
+bspc rule -a 'Microsoft Teams - Preview' desktop='^9'
+
 # images
 bspc rule -a Gimp-2.10 desktop='^5'
 bspc rule -a Mirage desktop='^5'

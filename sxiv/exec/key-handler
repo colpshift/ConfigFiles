@@ -18,11 +18,11 @@ do
   case "$1" in
     "C-x")      xclip -in -filter | tr '\n' ' ' | xclip -in -selection clipboard ;;
     "C-c")      xclip -selection clipboard -target image/png "$file" ;;
-    "C-e")      alacritty -e sh -c "exiv2 pr -q -pa '$file' | less" ;;
+    "C-e")      kitty -e sh -c "exiv2 pr -q -pa '$file' | less" ;;
     "C-g")      gimp "$file" ;;
     "C-r")      rawtherapee "$file" ;;
-    "C-w")      feh --bg-fill "$file" ;;
-    "C-l")      cp -f "$file" "/home/colps/.config/i3lock-multimonitor/img/background.png" ;;
+    "C-w")      betterlockscreen -u "$file" && betterlockscreen -w ;;
+    "C-l")      betterlockscreen -u "$file" --span && betterlockscreen -w ;;
     "C-i")      notify-send "File information" "$(mediainfo "$file")" ;;
     "C-comma")  rotate 270 ;;
     "C-period") rotate  90 ;;

@@ -56,7 +56,7 @@ super + shift + d
 
 # lockscreen
 super + l
-    /home/colps/.config/i3lock-multimonitor/lock
+    betterlockscreen -l dimblur -- --layout-pos="ix-1000:iy+1000"
 
 # logout
 super + x

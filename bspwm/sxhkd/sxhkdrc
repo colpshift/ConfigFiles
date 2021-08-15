@@ -48,7 +48,7 @@ super + z
 
 # dmenu
 super + shift + d
-    dmenu_run -i -nb '#191919' -nf '#6790eb' -sb '#6790eb' -sf '#191919' 
+    dmenu_run -i -nb '#191919' -nf '#6790eb' -sb '#6790eb' -sf '#191919' 'NotoSans:pixelsize=10'
 
 #
 # bspwm hotkeys --------------------------------------------

@@ -467,7 +467,7 @@ libe-book 0.1.3-9
 libebml 1.4.2-1
 libedit 20210522_3.1-1
 libelf 0.185-1
-libepoxy 1.5.8-1
+libepoxy 1.5.9-1
 libepubgen 0.1.1-2
 libetonyek 0.1.10-1
 libev 4.33-1
@@ -493,7 +493,7 @@ libgnome-keyring 3.12.0+13+g4f8ab73-3
 libgpg-error 1.42-1
 libgphoto2 2.5.27-1
 libgtop 2.40.0+2+g31db82ef-2
-libgudev 236-1
+libgudev 237-1
 libguess 1.2-3
 libgusb 0.3.7-1
 libhandy 1.2.3-1
@@ -632,7 +632,7 @@ libvisual 0.4.0-8
 libvorbis 1.3.7-2
 libvpx 1.10.0-1
 libwacom 1.11-1
-libwebp 1.2.0-1
+libwebp 1.2.1-1
 libwmf 0.2.12-2
 libwnck3 40.0-1
 libwpd 0.10.3-3

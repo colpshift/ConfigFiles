@@ -3,7 +3,7 @@
 # v0.6.3
 # Copyright (c) 2013 Thiago de Arruda
 # Copyright (c) 2016-2019 Eric Freese
-# 
+#
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
 # files (the "Software"), to deal in the Software without
@@ -12,10 +12,10 @@
 # copies of the Software, and to permit persons to whom the
 # Software is furnished to do so, subject to the following
 # conditions:
-# 
+#
 # The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
-# 
+#
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 # EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
 # OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
@@ -632,7 +632,7 @@ _zsh_autosuggest_strategy_history() {
 	# Escape backslashes and all of the glob operators so we can use
 	# this string as a pattern to search the $history associative array.
 	# - (#m) globbing flag enables setting references for match data
-	# TODO: Use (b) flag when we can drop support for zsh older than v5.0.8
+	# * TODO: Use (b) flag when we can drop support for zsh older than v5.0.8
 	local prefix="${1//(#m)[\\*?[\]<>()|^~#]/\\$MATCH}"
 
 	# Get the history items that match
@@ -667,8 +667,6 @@ _zsh_autosuggest_strategy_match_prev_cmd() {
 
 	# Enable globbing flags so that we can use (#m)
 	setopt EXTENDED_GLOB
-
-	# TODO: Use (b) flag when we can drop support for zsh older than v5.0.8
 	local prefix="${1//(#m)[\\*?[\]<>()|^~#]/\\$MATCH}"
 
 	# Get all history event numbers that correspond to history

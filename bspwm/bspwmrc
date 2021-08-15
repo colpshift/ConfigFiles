@@ -65,13 +65,13 @@ bspc rule -a TelegramDesktop desktop='^9'
 bspc rule -a Rambox desktop='^9'
 bspc rule -a zoom desktop='^9'
 bspc rule -a 'Microsoft Teams - Preview' desktop='^9'
-
 # images
-bspc rule -a Gimp-2.10 desktop='^5'
+bspc rule -a 'Gimp-2.10' desktop='^5'
 bspc rule -a Mirage desktop='^5'
 bspc rule -a Dia desktop='^5'
 bspc rule -a Inkscape desktop='^5'
 bspc rule -a XMind desktop='^5'
+bspc rule -a 'Master PDF Editor' desktop='^5'
 # arcolinux
 bspc rule -a Arcolinux-tweak-tool.py desktop='^7' follow=on
 bspc rule -a Arcolinux-welcome-app.py desktop='^7' follow=on

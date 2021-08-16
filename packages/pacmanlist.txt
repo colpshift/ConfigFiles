@@ -46,12 +46,13 @@ arcolinux-rofi-git 21.07-01
 arcolinux-rofi-themes-git 21.07-01
 arcolinux-root-git 21.08-04
 arcolinux-systemd-services-git 21.08-05
-arcolinux-tweak-tool-git 21.07-06
+arcolinux-tweak-tool-git 21.08-13
 arcolinux-volumeicon-git 21.07-01
 arcolinux-wallpapers-git 21.07-01
 arcolinux-welcome-app-git 21.08-04
 arcolinux-xfce-git 21.08-01
-arcolinuxd-system-config-git 21.08-06
+arcolinuxd-system-config-git 21.08-09
+ardis-icon-theme-circle 1.2-0
 argon2 20190702-3
 asciinema 2.0.2-5
 at-spi2-atk 2.38.0-1
@@ -143,8 +144,8 @@ dbus-python 1.2.18-1
 dconf 0.40.0-1
 ddrescue 1.25-1
 desktop-file-utils 0.26-1
-device-mapper 2.03.12-1
-devour 12-1
+device-mapper 2.03.13-1
+devour 12-2
 dex 0.9.0-1
 dhclient 4.4.2.P1-1
 dia 0.97.3-8
@@ -330,6 +331,7 @@ http-parser 2.9.4-1
 humanity-icon-theme 0.6.15-1
 hunspell 1.7.0-3
 hw-probe 1.5-1
+hwdetect 2016.01-4
 hwids 20210613-1
 hwinfo 21.76-1
 hwloc 2.5.0-1
@@ -386,7 +388,7 @@ kiconthemes 5.85.0-1
 kio 5.85.0-1
 kirigami2 5.85.0-1
 kitemviews 5.85.0-1
-kitty-terminfo 0.22.2-1
+kitty-terminfo 0.23.0-1
 kjobwidgets 5.85.0-1
 kjs 5.85.0-1
 kmod 29-1
@@ -484,7 +486,7 @@ libfreeaptx 0.1.1-1
 libfreehand 0.1.2-3
 libftdi 1.5-2
 libgcrypt 1.9.3-1
-libgexiv2 0.12.2-1
+libgexiv2 0.12.3-1
 libgit2 1:1.1.1-1
 libgksu 2.0.12-8
 libglvnd 1.3.3-1
@@ -707,7 +709,7 @@ lua-language-server 2.3.6-1
 lua51 5.1.5-9
 lua52 5.2.4-5
 luajit 2.0.5-3
-lvm2 2.03.12-1
+lvm2 2.03.13-1
 lxappearance-gtk3 0.6.3-4
 lynx 2.8.9-4
 lz4 1:1.9.3-2
@@ -780,6 +782,9 @@ nspr 4.32-1
 nss 3.69-1
 ntfs-3g 2017.3.23-5
 ntp 4.2.8.p15-1
+numix-circle-arc-icons-git 20.1-1
+numix-circle-icon-theme-git 21.07.17.r0.g6a03312-1
+numix-icon-theme-git 21.04.14.r0.g97c01aee9-1
 numlockx 1.2-5
 nvme-cli 1.15-1
 odt2txt 0.5-4
@@ -848,7 +853,7 @@ perl-http-daemon 6.06-3
 perl-http-date 6.05-4
 perl-http-message 6.33-1
 perl-http-negotiate 6.01-9
-perl-image-exiftool 12.26-2
+perl-image-exiftool 12.30-1
 perl-io-html 1.004-2
 perl-libwww 6.55-1
 perl-lwp-mediatypes 6.02-9
@@ -945,7 +950,7 @@ python-progress 1.5-5
 python-psutil 5.8.0-1
 python-pycparser 2.20-3
 python-pycryptodome 3.10.1-1
-python-pygments 2.9.0-1
+python-pygments 2.10.0-1
 python-pyopenssl 20.0.1-1
 python-pyparsing 2.4.7-3
 python-pyqt5 5.15.4-1
@@ -1154,6 +1159,7 @@ util-linux-libs 2.37.1-3
 v4l-utils 1.20.0-1
 vala 0.52.4-1
 vid.stab 1.1-3
+vieb 5.3.0-3
 vlc 3.0.16-3
 vmaf 1.5.3-1
 volume_key 0.3.12-5

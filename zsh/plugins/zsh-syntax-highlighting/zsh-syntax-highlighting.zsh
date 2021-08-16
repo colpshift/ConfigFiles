@@ -112,7 +112,6 @@ _zsh_highlight()
       # If highlighter needs to be invoked
       if ! type "_zsh_highlight_highlighter_${highlighter}_predicate" >&/dev/null; then
         echo "zsh-syntax-highlighting: warning: disabling the ${(qq)highlighter} highlighter as it has not been loaded" >&2
-        # TODO: use ${(b)} rather than ${(q)} if supported
         ZSH_HIGHLIGHT_HIGHLIGHTERS=( ${ZSH_HIGHLIGHT_HIGHLIGHTERS:#${highlighter}} )
       elif "_zsh_highlight_highlighter_${highlighter}_predicate"; then
 
@@ -263,7 +262,7 @@ _zsh_highlight_add_highlight()
 # $1 is name of widget to call
 _zsh_highlight_call_widget()
 {
-  builtin zle "$@" && 
+  builtin zle "$@" &&
   _zsh_highlight
 }
 
@@ -312,7 +311,7 @@ _zsh_highlight_bind_widgets()
               zle -N $cur_widget _zsh_highlight_widget_$prefix-$cur_widget;;
 
       # Completion widget: override and rebind old one with prefix "orig-".
-      completion:*) zle -C $prefix-$cur_widget ${${(s.:.)widgets[$cur_widget]}[2,3]} 
+      completion:*) zle -C $prefix-$cur_widget ${${(s.:.)widgets[$cur_widget]}[2,3]}
                     eval "_zsh_highlight_widget_${(q)prefix}-${(q)cur_widget}() { _zsh_highlight_call_widget ${(q)prefix}-${(q)cur_widget} -- \"\$@\" }"
                     zle -N $cur_widget _zsh_highlight_widget_$prefix-$cur_widget;;
 
@@ -321,7 +320,7 @@ _zsh_highlight_bind_widgets()
                zle -N $cur_widget _zsh_highlight_widget_$prefix-$cur_widget;;
 
       # Incomplete or nonexistent widget: Bind to z-sy-h directly.
-      *) 
+      *)
          if [[ $cur_widget == zle-* ]] && [[ -z $widgets[$cur_widget] ]]; then
            _zsh_highlight_widget_${cur_widget}() { :; _zsh_highlight }
            zle -N $cur_widget _zsh_highlight_widget_$cur_widget
@@ -363,7 +362,7 @@ _zsh_highlight_load_highlighters()
     then
         # Old (0.4.x) function names
         if false; then
-            # TODO: only show this warning for plugin authors/maintainers, not for end users
+            # * tarefa: only show this warning for plugin authors/maintainers, not for end users
             print -r -- >&2 "zsh-syntax-highlighting: warning: ${(qq)highlighter} highlighter uses deprecated entry point names; please ask its maintainer to update it: https://github.com/zsh-users/zsh-syntax-highlighting/issues/329"
         fi
         # Make it work.

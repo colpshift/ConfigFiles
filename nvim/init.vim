@@ -190,7 +190,7 @@ autocmd! FileType fzf set laststatus=0 noshowmode noruler
 "
 " markdown preview
 "
-let g:mkdp_browser = 'surf'
+let g:mkdp_browser = 'vieb'
 let g:mkdp_page_title = '「${name}」'
 let g:mkdp_filetypes = ['markdown']
 "

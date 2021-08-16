@@ -81,13 +81,12 @@ alias vi='/home/colps/.local/bin/nvim'
 alias vim='/home/colps/.local/bin/nvim'
 alias gvim='/home/colps/.local/bin/nvim'
 alias bat='bat --theme Nord'
-alias gitu='git add . && git commit && git push'
-alias gitb='git add . && git commit -m 'backup' && git push'
+alias gitu='git add . && git commit -S && git push'
+alias gitb='git add . && git commit -S -m 'backup' && git push'
 alias gitl='git log --graph'
 alias mpv='devour mpv'
 alias sxiv='devour sxiv'
 alias zathura='devour zathura'
-alias surf='devour surf -DI'
 alias cls='clear'
 alias cmatrix='cmatrix -fs'
 alias myip='curl http://ipecho.net/plain; echo'
@@ -148,6 +147,10 @@ promptinit
 # Prompt starship
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
+
+### gpg agent
+GPG_TTY=$(tty)
+export GPG_TTY
 
 ### rust
 source $HOME/.cargo/env

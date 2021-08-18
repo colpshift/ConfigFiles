@@ -56,7 +56,7 @@ super + shift + d
 
 # lockscreen
 super + l
-    betterlockscreen -l dim -- --layout-pos="ix-1000:iy+1000"
+    betterlockscreen -l
 
 # logout
 super + x

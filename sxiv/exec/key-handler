@@ -21,8 +21,8 @@ do
     "C-e")      kitty -e sh -c "exiv2 pr -q -pa '$file' | less" ;;
     "C-g")      gimp "$file" ;;
     "C-r")      rawtherapee "$file" ;;
-    "C-w")      betterlockscreen -u "$file" && betterlockscreen -w ;;
-    "C-l")      betterlockscreen -u "$file" --span && betterlockscreen -w ;;
+    "C-w")      betterlockscreen -u "$file" -r 1366x768 && betterlockscreen -w ;;
+    "C-l")      betterlockscreen -u "$file" -r 1366x768 --span && betterlockscreen -w ;;
     "C-i")      notify-send "File information" "$(mediainfo "$file")" ;;
     "C-comma")  rotate 270 ;;
     "C-period") rotate  90 ;;

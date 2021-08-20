@@ -27,7 +27,7 @@ arc-gtk-theme 20210412-1
 arch-install-scripts 24-2
 archlinux-appstream-data-pamac 20210723-1
 archlinux-keyring 20210802-1
-arcolinux-betterlockscreen-git 21.07-01
+arcolinux-betterlockscreen-git 21.08-03
 arcolinux-bspwm-git 21.07-01
 arcolinux-config-all-desktops-git 21.07-01
 arcolinux-dconf-all-desktops-git 21.07-01
@@ -35,7 +35,7 @@ arcolinux-desktop-trasher-git 21.07-45
 arcolinux-grub-theme-vimix-git 20200928-1
 arcolinux-gtk3-sardi-arc-git 21.07-01
 arcolinux-local-xfce4-git 21.07-01
-arcolinux-logout-git 21.08-02
+arcolinux-logout-git 21.08-03
 arcolinux-logout-themes-git 21.08-01
 arcolinux-meta-logout 21.07-01
 arcolinux-mirrorlist-git 21.08-01
@@ -44,14 +44,14 @@ arcolinux-paru-git 21.07-01
 arcolinux-polybar-git 21.07-01
 arcolinux-rofi-git 21.07-01
 arcolinux-rofi-themes-git 21.07-01
-arcolinux-root-git 21.08-04
+arcolinux-root-git 21.08-08
 arcolinux-systemd-services-git 21.08-05
-arcolinux-tweak-tool-git 21.08-13
+arcolinux-tweak-tool-git 21.08-29
 arcolinux-volumeicon-git 21.07-01
 arcolinux-wallpapers-git 21.07-01
 arcolinux-welcome-app-git 21.08-04
 arcolinux-xfce-git 21.08-01
-arcolinuxd-system-config-git 21.08-09
+arcolinuxd-system-config-git 21.08-29
 ardis-icon-theme-circle 1.2-0
 argon2 20190702-3
 asciinema 2.0.2-5
@@ -65,7 +65,7 @@ attr 2.5.1-1
 audacious 4.1-3
 audacious-plugins 4.1-4
 audiofile 0.3.6-6
-audit 3.0.3-1
+audit 3.0.4-1
 autoconf 2.71-1
 automake 1.16.4-1
 avahi 0.8+20+gd1e71b3-1
@@ -78,9 +78,9 @@ bash-completion 2.11-2
 bash-language-server 2.0.0-2
 bat 0.18.2-1
 bc 1.07.1-4
-betterlockscreen-git r126.4a95562-1
+betterlockscreen-git r167.9260018-1
 bibata-cursor-theme-bin 1.1.2-1
-bind 9.16.19-1
+bind 9.16.20-1
 binutils 2.36.1-3
 bison 3.7.6-1
 blas 3.10.0-1
@@ -94,7 +94,8 @@ bluez-utils 5.60-1
 boost-libs 1.76.0-1
 box2d 2.4.1-1
 bpytop 1.0.67-1
-broadcom-wl 6.30.223.271-318
+brave-bin 1:1.28.105-1
+broadcom-wl 6.30.223.271-319
 brotli 1.0.9-4
 bspwm 0.9.10-1
 btrfs-progs 5.13.1-1
@@ -179,7 +180,7 @@ efm-langserver 0.0.36-1
 electron9 9.4.4-1
 elfutils 0.185-1
 elinks 0.14.1-1
-enchant 2.3.0-1
+enchant 2.3.1-1
 ethtool 1:5.13-1
 exa 0.10.1-1
 exfatprogs 1.1.2-1
@@ -233,7 +234,7 @@ ghostscript 9.54.0-2
 giflib 5.2.1-2
 gimp 2.10.24-6
 girara 0.3.6-1
-git 2.32.0-1
+git 2.33.0-1
 gksu 2.0.2-6
 glib-networking 1:2.68.1-1
 glib2 2.68.3-1
@@ -243,7 +244,7 @@ glibmm 2.66.1-2
 glslang 11.5.0-1
 gmp 6.2.1-1
 gmrun 1.2w-1
-gnome-desktop 1:40.3-1
+gnome-desktop 1:40.4-1
 gnome-keyring 1:40.0-1
 gnome-themes-extra 3.28-2
 gnu-netcat 0.7.1-8
@@ -287,8 +288,8 @@ gufw 21.04.0-1
 guile 2.2.7-1
 gvfs 1.48.1-1
 gzip 1.10-3
-harfbuzz 2.8.2-1
-harfbuzz-icu 2.8.2-1
+harfbuzz 2.9.0-1
+harfbuzz-icu 2.9.0-1
 haskell-aeson 1.5.6.0-32
 haskell-assoc 1.0.2-85
 haskell-attoparsec 0.14.1-16
@@ -555,7 +556,7 @@ libnfs 4.0.0-4
 libnftnl 1.2.0-1
 libnghttp2 1.44.0-1
 libnl 3.5.0-3
-libnm 1.32.8-1
+libnm 1.32.10-1
 libnma 1.8.30-1
 libnotify 0.7.9-1
 libnsl 1.3.0-2
@@ -688,11 +689,11 @@ licenses 20200427-1
 lightdm 1:1.30.0-4
 lightdm-gtk-greeter 1:2.0.8-1
 lightdm-gtk-greeter-settings 1.2.2-6
-linux 5.13.10.arch1-1
+linux 5.13.12.arch1-1
 linux-api-headers 5.12.3-1
 linux-atm 2.5.2-6
 linux-firmware 20210716.b7c134f-1
-linux-headers 5.13.10.arch1-1
+linux-headers 5.13.12.arch1-1
 lirc 1:0.10.1-8
 llvm-libs 12.0.1-3
 lm_sensors 1:3.6.0.r41.g31d1f125-1
@@ -720,7 +721,7 @@ make 4.3-3
 man-db 2.9.4-2
 man-pages 5.12-2
 masterpdfeditor-free 4.3.89-1
-mc 4.8.26-1
+mc 4.8.27-1
 md4c 0.4.8-1
 mdadm 4.1-2
 media-player-info 24-2
@@ -760,7 +761,7 @@ net-tools 2.10-1
 netpbm 10.73.36-1
 nettle 3.7.3-1
 network-manager-applet 1.24.0-1
-networkmanager 1.32.8-1
+networkmanager 1.32.10-1
 networkmanager-openconnect 1.2.7dev+65+gca4187c-1
 networkmanager-openvpn 1.8.14-1
 networkmanager-pptp 1.2.9dev+10+gb41b0d0-4
@@ -772,11 +773,11 @@ nfsidmap 2.5.4-1
 nilfs-utils 2.2.8-2
 nm-connection-editor 1.24.0-1
 node-gyp 8.1.0-2
-nodejs 16.6.2-1
+nodejs 16.7.0-1
 nodejs-nopt 5.0.0-2
 notification-daemon 3.20.0-4
 noto-fonts 20201226-2
-npm 7.20.6-1
+npm 7.21.0-1
 npth 1.6-3
 nspr 4.32-1
 nss 3.69-1
@@ -814,7 +815,7 @@ pahole 1.21-1
 pam 1.5.1-1
 pamac-all 10.1.3-3
 pambase 20210605-2
-pango 1:1.48.8-1
+pango 1:1.48.9-1
 pangomm 2.46.1-2
 paper-gtk-theme-git 302.770aba4-1
 paper-icon-theme-git 832.aa3e8af7-1
@@ -855,7 +856,7 @@ perl-http-message 6.33-1
 perl-http-negotiate 6.01-9
 perl-image-exiftool 12.30-1
 perl-io-html 1.004-2
-perl-libwww 6.55-1
+perl-libwww 6.56-1
 perl-lwp-mediatypes 6.02-9
 perl-mailtools 2.21-5
 perl-net-http 6.21-2
@@ -1154,8 +1155,8 @@ upower 0.99.12-2
 usb_modeswitch 2.6.1-1
 usbmuxd 1.1.1-1
 usbutils 013-1
-util-linux 2.37.1-3
-util-linux-libs 2.37.1-3
+util-linux 2.37.2-1
+util-linux-libs 2.37.2-1
 v4l-utils 1.20.0-1
 vala 0.52.5-1
 vid.stab 1.1-3
@@ -1166,7 +1167,7 @@ volume_key 0.3.12-5
 vpnc 1:0.5.3.r496.r153-2
 vscode-html-languageserver 1.56.0-1
 vte-common 0.64.2-2
-vulkan-icd-loader 1.2.186-1
+vulkan-icd-loader 1.2.187-1
 w3m 0.5.3.git20210102_6-1
 warsaw-bin 2.20.0.13-2
 wavpack 5.4.0-1

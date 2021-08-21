@@ -132,6 +132,7 @@ cracklib 2.9.7-2
 crda 4.14-4
 cronie 1.5.7-2
 cryptsetup 2.4.0-1
+ctags 1:r20210106+g08b1c490-1
 cups 1:2.3.3op2-3
 cups-filters 1.28.9-1
 cups-pdf 3.0.1-6
@@ -172,7 +173,7 @@ dragon-drag-and-drop 1.1.1-1
 drbl 2.30.5-1
 duf-bin 0.6.2-1
 dunst 1.6.1-2
-e2fsprogs 1.46.3-3
+e2fsprogs 1.46.4-1
 ecryptfs-utils 111-4
 edid-decode-git r544.4fdf6f2-1
 edk2-shell 202105-1
@@ -533,7 +534,7 @@ libmaxminddb 1.6.0-1
 libmbim 1.26.0-2
 libmd 1.0.3-1
 libmediainfo 21.03-1
-libmfx 21.2.3-1
+libmfx 21.3.2-1
 libmicrohttpd 0.9.73-1
 libmikmod 3.3.11.1-4
 libmm-glib 1.16.10-1

@@ -81,9 +81,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
   },
-  ["lightline.vim"] = {
+  ["nvim-colorizer.lua"] = {
     loaded = true,
-    path = "/home/colps/.local/share/nvim/site/pack/packer/start/lightline.vim"
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
   },
   ["nvim-compe"] = {
     loaded = true,
@@ -100,6 +100,10 @@ _G.packer_plugins = {
   ["nvim-treesitter-textobjects"] = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["onedark.vim"] = {
     loaded = true,

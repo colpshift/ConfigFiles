@@ -170,3 +170,5 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 # fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+alias luamake=/home/colps/Src/lua-language-server/3rd/luamake/luamake

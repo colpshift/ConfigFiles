@@ -3,18 +3,17 @@
 ---News---
 http://rss.cnn.com/rss/edition.rss                                            "CNN News"
 http://feeds.bbci.co.uk/news/rss.xml                                          "BBC News"
-https://noticias.r7.com/feed.xml                                              "R7 BR"
-https://noticias.r7.com/sao-paulo/feed.xml                                    "R7 SP"
 https://braziljournal.com/rss                                                 "BR News"
 ---Sec---
 https://feeds.feedburner.com/TheHackersNews                                   "Hacker News"
 http://feeds.feedburner.com/gbhackers                                         "gbhackers"
 ---Arch---
+https://www.kernel.org/feeds/kdist.xml                                        "Kernel"
 https://archlinux.org/feeds/news/                                             "Archlinux"
 https://arcolinuxforum.com/app.php/feed                                       "Arcolinux"
 https://sourceforge.net/projects/arcolinux-community-editions/rss?path=/bspwm "ArcoLinuxB"
 ---Dev---
-https://github.com/colpshift.private.atom?token=AJJUXHQBPLVMT65WRVUHN5F6PHLEE "github"
+https://github.com/colpshift.private.atom?token=AJJUXHVMOKPFUU6PUNN655N7FQDZK "github"
 https://gitlab.com/colpshift.atom?feed_token=gFkiNJPVagWFkBexBrjx             "gitlab"
 https://hackernoon.com/feed                                                   "Hackernoon"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA  "Fireship"
@@ -25,6 +24,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCFuIUoyHB12qpYa8Jpxoxow  "C
 ---DevOps---
 https://www.youtube.com/feeds/videos.xml?channel_id=UCoOq-DtESvayx5yJE5H6-qQ  "Thetips4you"
 ---Editor---
+https://neovim.io/news.xml                                                    "Neovim"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCs5Y5_7XK8HLDX0SLNwkd3w  "Visual Studio Code"
 ---Linux---
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg  "Distrotube"
@@ -33,7 +33,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA  "M
 https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA  "Diolinux"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsYVQUylCMLg  "Erick Dubois"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCvA_wgsX6eFAOXI8Rbg_WiQ  "Tutorial Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCZiL6BoryLWxyapUuVYW27g  "Average Linux User"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCqd9oVuR4tuKD5Y9AFwxz7Q  "TerminalRoot"
 https://linuxhandbook.com/rss/                                                "Linuxhandbook"          
 ---Win---
@@ -42,5 +41,4 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCQSpnDG3YsFNf5-qHocF-WQ  "T
 https://www.youtube.com/feeds/videos.xml?channel_id=UCDTdlx80nh1DG6s4G4H-sFg  "ServiceNow Events"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCLukrOQYSgsHUR_NSiVZndQ  "ServiceNow"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCdXorgCT87YlFRN9n8oJ7_A  "ServiceNow Dev"
----Science---
-https://www.youtube.com/feeds/videos.xml?channel_id=UCWq1xltHB2fDe6YkYoOrryg  "Schwarza"
+

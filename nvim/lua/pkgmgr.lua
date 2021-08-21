@@ -25,12 +25,19 @@ require('packer').startup(function()
   use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
   use 'tpope/vim-commentary' -- "gc" to comment visual regions/lines
   use 'ludovicchabant/vim-gutentags' -- Automatic tags management
+  use 'norcalli/nvim-colorizer.lua' -- Color highlighter
+  use 'kyazdani42/nvim-web-devicons' -- Fork of vim-devicons
+  use 'shaunsingh/nord.nvim' -- Nord theme
   -- UI to select things (files, grep results, open buffers...)
   use 'nvim-lua/popup.nvim' -- Popup API from vim in Neovim
   use 'nvim-lua/plenary.nvim' -- All the lua functions.
   use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } } }
   use 'joshdick/onedark.vim' -- Theme inspired by Atom
-  use 'itchyny/lightline.vim' -- Fancier statusline
+  -- use 'itchyny/lightline.vim' -- Fancier statusline
+  use {
+  'hoob3rt/lualine.nvim',
+  requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
   -- Add indentation guides even on blank lines
   use 'lukas-reineke/indent-blankline.nvim'
   -- Add git related info in the signs columns and popups

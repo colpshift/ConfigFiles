@@ -11,15 +11,15 @@ reload-threads 100
 show-read-feeds yes
 
 article-sort-order date-asc
-keep-articles-days 30
+keep-articles-days 60
 cache-file "/home/colps/.newsboat/cache.db"
 cookie-cache "/home/colps/.newsboat/cookies.txt"
 
-browser "firefox --new-tab %u"
+browser "brave --new-tab %u"
 macro m set browser "devour mpv %u" ; open-in-browser ;
 
-notify-always no
-notify-format "Newsboat :: %n unread articles :: %f unread feeds"
+notify-always yes
+notify-format "Newsboat :: %n unread articles"
 notify-program "/bin/notify-send"
 
 # nord theme

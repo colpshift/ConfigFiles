@@ -21,27 +21,29 @@ vim.api.nvim_exec(
 local use = require('packer').use
 require('packer').startup(function()
   use 'wbthomason/packer.nvim' -- Package manager
-  use 'tpope/vim-fugitive' -- Git commands in nvim
-  use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
   use 'tpope/vim-commentary' -- "gc" to comment visual regions/lines
   use 'ludovicchabant/vim-gutentags' -- Automatic tags management
+  use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
+  -- interface
   use 'norcalli/nvim-colorizer.lua' -- Color highlighter
   use 'kyazdani42/nvim-web-devicons' -- Fork of vim-devicons
   use 'shaunsingh/nord.nvim' -- Nord theme
+  use 'joshdick/onedark.vim' -- Theme inspired by Atom
+  use { 'hoob3rt/lualine.nvim',
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
   -- UI to select things (files, grep results, open buffers...)
   use 'nvim-lua/popup.nvim' -- Popup API from vim in Neovim
   use 'nvim-lua/plenary.nvim' -- All the lua functions.
-  use { 'nvim-telescope/telescope.nvim', requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } } }
-  use 'joshdick/onedark.vim' -- Theme inspired by Atom
-  -- use 'itchyny/lightline.vim' -- Fancier statusline
-  use {
-  'hoob3rt/lualine.nvim',
-  requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  use { 'nvim-telescope/telescope.nvim',
+    requires = { { 'nvim-lua/popup.nvim' }, { 'nvim-lua/plenary.nvim' } }
   }
-  -- Add indentation guides even on blank lines
-  use 'lukas-reineke/indent-blankline.nvim'
   -- Add git related info in the signs columns and popups
-  use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+  use 'tpope/vim-fugitive' -- Git commands in nvim
+  use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
+  use { 'lewis6991/gitsigns.nvim',
+    requires = { 'nvim-lua/plenary.nvim' }
+  }
   -- Highlight, edit, and navigate code using a fast incremental parsing library
   use 'nvim-treesitter/nvim-treesitter'
   -- Additional textobjects for treesitter

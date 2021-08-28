@@ -21,7 +21,6 @@ setopt inc_append_history                                       # save commands 
 
 ### zsh style
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
-#zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
 zstyle ':completion:*' rehash true                              # automatically find new executables in path
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
@@ -95,9 +94,18 @@ alias parui='~/.scripts/fzf_paru_install.sh'
 alias parur='~/.scripts/fzf_paru_remove.sh'
 alias parup='~/.scripts/paru_update.sh'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias mirror_update='sudo reflector --age 6 --latest 20 --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
+#get fastest mirrors in your neighborhood
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --latest 30 --number 10 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 30 --number 10 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pacman.d/mirrorlist"
+#our experimental - best option for the moment
+alias mirrorx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
+alias mirrorxx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
+
+
 
 ### Theming section
 autoload -U compinit colors zcalc
@@ -152,6 +160,9 @@ eval "$(starship init zsh)"
 GPG_TTY=$(tty)
 export GPG_TTY
 
+### lua
+alias luamake=/home/colps/Src/lua-language-server/3rd/luamake/luamake
+
 ### rust
 source $HOME/.cargo/env
 
@@ -170,5 +181,3 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 # fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
-alias luamake=/home/colps/Src/lua-language-server/3rd/luamake/luamake

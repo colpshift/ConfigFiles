@@ -73,13 +73,34 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/LuaSnip"
   },
+  ["cheatsheet.nvim"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
+  ["glow.nvim"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/glow.nvim"
+  },
+  hop = {
+    config = { "\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0" },
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/hop"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+  },
+  ["nord.nvim"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/nord.nvim"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
@@ -89,9 +110,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/nvim-compe"
   },
+  ["nvim-cursorline"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/nvim-cursorline"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-lspinstall"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -125,6 +154,15 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
+  ["todo-comments.nvim"] = {
+    config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0" },
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/todo-comments.nvim"
+  },
+  ultisnips = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/ultisnips"
+  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/vim-commentary"
@@ -140,10 +178,22 @@ _G.packer_plugins = {
   ["vim-rhubarb"] = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
+  },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/vim-snippets"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: todo-comments.nvim
+time([[Config for todo-comments.nvim]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
+time([[Config for todo-comments.nvim]], false)
+-- Config for: hop
+time([[Config for hop]], true)
+try_loadstring("\27LJ\2\nU\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\28etovxqpdygfblzhckisuran\nsetup\bhop\frequire\0", "config", "hop")
+time([[Config for hop]], false)
 if should_profile then save_profiles() end
 
 end)

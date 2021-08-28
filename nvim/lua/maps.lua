@@ -2,10 +2,12 @@
 -- lua nvim maps
 --
 
---Remap space as leader key
+--[=====[
+Remap space as leader key
 vim.api.nvim_set_keymap('', '<Space>', '<Nop>', { noremap = true, silent = true })
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+--]=====]
 
 --Remap for dealing with word wrap
 vim.api.nvim_set_keymap('n', 'k', "v:count == 0 ? 'gk' : 'k'", { noremap = true, expr = true, silent = true })
@@ -21,4 +23,11 @@ vim.api.nvim_set_keymap('n', '<leader>sd', [[<cmd>lua require('telescope.builtin
 vim.api.nvim_set_keymap('n', '<leader>sp', [[<cmd>lua require('telescope.builtin').live_grep()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>so', [[<cmd>lua require('telescope.builtin').tags{ only_current_buffer = true }<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>?', [[<cmd>lua require('telescope.builtin').oldfiles()<CR>]], { noremap = true, silent = true })
+
+
+--Set a timestamp
+vim.api.nvim_set_keymap('i', '<F10>', [[<C-R>=strftime("%d/%m/%Y %H:%M:%S")<CR><Esc>]], { noremap = true, silent = true })
+
+--Clear whitespace
+vim.api.nvim_set_keymap('i', '<F9>', [[<cmd>:%s/\s\+$//e<CR>]], { noremap = true, silent = true })
 

@@ -1,12 +1,13 @@
 --
 -- lua nvim lsp settings
 --
+-- https://opensourcelibs.com/lib/nvim-lspconfig
+--
 
 -- LSP settings
-local nvim_lsp = require 'lspconfig'
+local nvim_lsp = require'lspconfig'
 local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
-
   local opts = { noremap = true, silent = true }
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
@@ -32,13 +33,13 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
--- Enable the following language servers
-local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver', 'bashls', 'gopls', 'html', 'yamlls', 'perlls', 'efm' }
-for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-  }
+local servers = {'clangd','rust_analyzer','pyright','tsserver','bashls','gopls','html','yamlls','perlls','efm'}
+ for _, lsp in ipairs(servers) do
+   nvim_lsp[lsp].setup {
+     on_attach = on_attach,
+     capabilities = capabilities,
+     lint = true,
+   }
 end
 
 -- Example custom server
@@ -77,4 +78,5 @@ require('lspconfig').sumneko_lua.setup {
     },
   },
 }
+
 

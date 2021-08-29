@@ -77,6 +77,30 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim"
   },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/cmp-buffer"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+  },
+  ["cmp-nvim-tags"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/cmp-nvim-tags"
+  },
+  ["cmp-nvim-ultisnips"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/cmp-nvim-ultisnips"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
@@ -102,13 +126,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/nord.nvim"
   },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+  },
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
-  },
-  ["nvim-compe"] = {
-    loaded = true,
-    path = "/home/colps/.local/share/nvim/site/pack/packer/start/nvim-compe"
   },
   ["nvim-cursorline"] = {
     loaded = true,
@@ -158,6 +182,10 @@ _G.packer_plugins = {
     config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0" },
     loaded = true,
     path = "/home/colps/.local/share/nvim/site/pack/packer/start/todo-comments.nvim"
+  },
+  ["trim.nvim"] = {
+    loaded = true,
+    path = "/home/colps/.local/share/nvim/site/pack/packer/start/trim.nvim"
   },
   ultisnips = {
     loaded = true,

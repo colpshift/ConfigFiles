@@ -180,4 +180,3 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-

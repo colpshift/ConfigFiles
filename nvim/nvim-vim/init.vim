@@ -4,7 +4,7 @@
 " Description: nvim configuration file
 " Author: Colpshift
 " Last Modified: 09/07/2021 19:57
-" 
+"
 " https://neovim.io/
 "
 "------------------------------------------------------------------------------
@@ -22,8 +22,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 " icons
 "---------------------------
-Plug 'RRethy/vim-illuminate'
-" automatically highlighting other uses of the word under the cursor
 Plug 'kshenoy/vim-signature'
 " place, toggle and display marks.
 Plug 'luochen1990/rainbow'
@@ -41,13 +39,13 @@ Plug 'andymass/vim-matchup'
 " extends vim's % key to language-specific words
 Plug 'preservim/nerdcommenter'
 " nerdy commenting powers
-Plug 'francoiscabrol/ranger.vim'
-Plug 'rbgrouleff/bclose.vim'
-" ranger
+Plug 'preservim/nerdtree'
+" nerdtree
 Plug 'easymotion/vim-easymotion'
 " vim motion
 "---------------------------
 Plug 'neovim/nvim-lspconfig'
+Plug 'kabouzeid/nvim-lspinstall'
 " LSP Native
 Plug 'hrsh7th/nvim-compe'
 Plug 'tamago324/compe-zsh'
@@ -97,10 +95,6 @@ let g:airline#extensions#tabline#right_alt_sep = '|'
 " ]`           Jump to next mark
 " [`           Jump to prev mark
 "
-" iluminate
-"
-let g:Illuminate_delay = 200
-"
 " Sandwich
 "
 " include - saiw( makes foo to (foo).
@@ -132,6 +126,20 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 "
 let g:rainbow_active = 1
 "
+" Nerd tree
+"
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+" Start NERDTree when Vim starts with a directory argument.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
+      \ execute 'NERDTree' argv()[0] | wincmd p | enew | execute 'cd '.argv()[0] | endif
+"
 " Nerdcommenter
 "
 " Insert comment leader+cc
@@ -143,11 +151,6 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 "
-" ranger
-"
-" open ranger when vim open a directory
-let g:ranger_replace_netrw = 1
-"
 " fzf
 "
 map <silent> <leader>l :FZF<CR>
@@ -158,35 +161,29 @@ let g:fzf_action = {
       \ 'ctrl-v': 'vsplit' }
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
 let g:fzf_colors =
-\ { 'fg':         ['fg', 'Normal'],
-  \ 'bg':         ['bg', 'Normal'],
-  \ 'preview-bg': ['bg', 'NormalFloat'],
-  \ 'hl':         ['fg', 'Comment'],
-  \ 'fg+':        ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':        ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':        ['fg', 'Statement'],
-  \ 'info':       ['fg', 'PreProc'],
-  \ 'border':     ['fg', 'Ignore'],
-  \ 'prompt':     ['fg', 'Conditional'],
-  \ 'pointer':    ['fg', 'Exception'],
-  \ 'marker':     ['fg', 'Keyword'],
-  \ 'spinner':    ['fg', 'Label'],
-  \ 'header':     ['fg', 'Comment'] }
-"
+      \ { 'fg':         ['fg', 'Normal'],
+      \ 'bg':         ['bg', 'Normal'],
+      \ 'preview-bg': ['bg', 'NormalFloat'],
+      \ 'hl':         ['fg', 'Comment'],
+      \ 'fg+':        ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+      \ 'bg+':        ['bg', 'CursorLine', 'CursorColumn'],
+      \ 'hl+':        ['fg', 'Statement'],
+      \ 'info':       ['fg', 'PreProc'],
+      \ 'border':     ['fg', 'Ignore'],
+      \ 'prompt':     ['fg', 'Conditional'],
+      \ 'pointer':    ['fg', 'Exception'],
+      \ 'marker':     ['fg', 'Keyword'],
+      \ 'spinner':    ['fg', 'Label'],
+      \ 'header':     ['fg', 'Comment'] }
 " fzf window preview ProjectFiles
-"
 command! -bang -nargs=? -complete=dir ProjectFiles
-    \ call fzf#vim#files('~/Projects', fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
-"
+      \ call fzf#vim#files('~/Projects', fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
 " fzf window preview Files
-"
 command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files('~', fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
-"
+      \ call fzf#vim#files('~', fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
 " fzf hide statusline
-"
 autocmd! FileType fzf set laststatus=0 noshowmode noruler
-  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+      \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 "
 " markdown preview
 "
@@ -231,78 +228,113 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "
-" lua config
+" LSP config
 "
 lua << EOF
 --
--- completion
---
-require'compe'.setup {
-  source = {
-    zsh = true,
-  },
-}
---
--- lsp native
---
-require'lspconfig'.pyright.setup{}
-require'lspconfig'.gopls.setup{}
-require'lspconfig'.bashls.setup{}
-require'lspconfig'.html.setup{}
-require'lspconfig'.yamlls.setup{}
-require'lspconfig'.perlls.setup{}
-require'lspconfig'.efm.setup{}
---
-local custom_lsp_attach = function(client)
-      -- See `:help nvim_buf_set_keymap()` for more information
-      vim.api.nvim_buf_set_keymap(0, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = true})
-      vim.api.nvim_buf_set_keymap(0, 'n', '<c-]>', '<cmd>lua vim.lsp.buf.definition()<CR>', {noremap = true})
-      -- ... and other keymappings for LSP
-
-      -- Use LSP as the handler for omnifunc.
-      --    See `:help omnifunc` and `:help ins-completion` for more information.
-      vim.api.nvim_buf_set_option(0, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
-
-      -- For plugins with an `on_attach` callback, call them here. For example:
-      -- require('completion').on_attach()
-    end
-
-    -- An example of configuring for `sumneko_lua`,
-    --  a language server for Lua.
-
-    -- set the path to the sumneko installation
-    local system_name = "Linux" -- (Linux, macOS, or Windows)
-    local sumneko_root_path = '/bin/lua-language-server'
-    local sumneko_binary = sumneko_root_path
-
-    require('lspconfig').sumneko_lua.setup({
-      cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"};
-      -- An example of settings for an LSP server.
-      --    For more options, see nvim-lspconfig
-      settings = {
-        Lua = {
-          runtime = {
-            -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-            version = 'LuaJIT',
-            -- Setup your lua path
-            path = vim.split(package.path, ';'),
-          },
-          diagnostics = {
-            -- Get the language server to recognize the `vim` global
-            globals = {'vim'},
-          },
-          workspace = {
-            -- Make the server aware of Neovim runtime files
-            library = {
-              [vim.fn.expand('$VIMRUNTIME/lua')] = true,
-              [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
-            },
-          },
-        }
+-- keymaps
+local on_attach = function(client, bufnr)
+local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
+buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
+-- Mappings.
+local opts = { noremap=true, silent=true }
+buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
+buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
+buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
+buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+buf_set_keymap('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
+buf_set_keymap('n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)
+buf_set_keymap('n', '<space>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opts)
+buf_set_keymap('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
+buf_set_keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
+buf_set_keymap('n', '<space>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
+buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
+buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
+buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
+-- Set some keybinds conditional on server capabilities
+if client.resolved_capabilities.document_formatting then
+  buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+elseif client.resolved_capabilities.document_range_formatting then
+  buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.range_formatting()<CR>", opts)
+end
+-- Set autocommands conditional on server_capabilities
+if client.resolved_capabilities.document_highlight then
+  vim.api.nvim_exec([[
+  augroup lsp_document_highlight
+    autocmd! * <buffer>
+    autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
+    autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+  augroup END
+  ]], false)
+  end
+end
+-- Configure lua language server for neovim development
+local lua_settings = {
+  Lua = {
+    runtime = {
+      -- LuaJIT in the case of Neovim
+      version = 'LuaJIT',
+      path = vim.split(package.path, ';'),
       },
+    diagnostics = {
+      -- Get the language server to recognize the `vim` global
+      globals = {'vim'},
+      },
+    workspace = {
+      -- Make the server aware of Neovim runtime files
+      library = {
+        [vim.fn.expand('$VIMRUNTIME/lua')] = true,
+        [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
+        },
+      },
+    }
+  }
+-- config that activates keymaps and enables snippet support
+local function make_config()
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+return {
+  -- enable snippet support
+  capabilities = capabilities,
+  -- map buffer local keybindings when the language server attaches
+  on_attach = on_attach,
+  }
+end
+-- lsp-install
+local function setup_servers()
+require'lspinstall'.setup()
+-- get all installed servers
+local servers = require'lspinstall'.installed_servers()
+-- ... and add manually installed servers
+table.insert(servers, "clangd")
+table.insert(servers, "sourcekit")
+for _, server in pairs(servers) do
+  local config = make_config()
+  -- language specific config
+  if server == "lua" then
+    config.settings = lua_settings
+  end
+  if server == "sourcekit" then
+    config.filetypes = {"swift", "objective-c", "objective-cpp"}; -- we don't want c and cpp!
+  end
+  if server == "clangd" then
+    config.filetypes = {"c", "cpp"}; -- we don't want objective-c and objective-cpp!
+  end
+  require'lspconfig'[server].setup(config)
+end
+end
+--
+setup_servers()
+-- Automatically reload after `:LspInstall <server>` so we don't have to restart neovim
+require'lspinstall'.post_install_hook = function ()
+setup_servers() -- reload installed servers
+vim.cmd("bufdo e") -- this triggers the FileType autocmd that starts the server
+end
+-- enable languages
 
-      on_attach = custom_lsp_attach
-    })
 --
 EOF
 
@@ -319,7 +351,6 @@ set formatoptions+=l    " make settings permanent.
 set shortmess+=atIc     " Don’t show the intro message when starting Vim
 set nostartofline       " Don’t reset cursor start of line when moving around.
 set number
-set relativenumber
 set cursorline
 set ruler               " right side of the status line at the bottom
 set mouse=a             " allow mouse clicks to change cursor position
@@ -329,16 +360,11 @@ set colorcolumn=+2      " color de last column to wrap.
 set textwidth=79        " set width for text
 set winwidth=110        " set the minimal width of the current window.
 set pumheight=10        " makes popup menu smaller
-set scrolloff=1         " Number screen lines keep above and below cursor.
-set sidescrolloff=5     " Number screen columns keep left and right cursor.
 set showcmd             " show command in bottom bar
 set showmode            " change the color in according of mode
 set clipboard+=unnamedplus " copy and paste between vim and all.
 set noerrorbells        " Disable beep on errors.
-set visualbell          " Flash the screen instead of beeping on errors.
 set nojoinspaces        " Prevents inserting spaces after punctuation on join.
-set splitbelow          " Horizontal split below current.
-set splitright          " Vertical split to right of current.
 set laststatus=2        " Size of command area and airline
 set background=dark
 colorscheme nord

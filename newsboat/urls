@@ -4,6 +4,7 @@
 http://rss.cnn.com/rss/edition.rss                                            "CNN News"
 http://feeds.bbci.co.uk/news/rss.xml                                          "BBC News"
 https://braziljournal.com/rss                                                 "BR News"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCiZ5zLSOBM5-3zBUHevecIA  "Historia"
 ---Sec---
 https://feeds.feedburner.com/TheHackersNews                                   "Hacker News"
 http://feeds.feedburner.com/gbhackers                                         "gbhackers"
@@ -33,12 +34,11 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA  "D
 https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsYVQUylCMLg  "Erick Dubois"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCvA_wgsX6eFAOXI8Rbg_WiQ  "Tutorial Linux"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCqd9oVuR4tuKD5Y9AFwxz7Q  "TerminalRoot"
-https://linuxhandbook.com/rss/                                                "Linuxhandbook"          
+https://linuxhandbook.com/rss/                                                "Linuxhandbook"
 ---Win---
 https://www.youtube.com/feeds/videos.xml?channel_id=UCQSpnDG3YsFNf5-qHocF-WQ  "ThioJoe"
 ---ServiceNow---
-https://www.youtube.com/feeds/videos.xml?channel_id=UCDTdlx80nh1DG6s4G4H-sFg  "ServiceNow Events"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDTdlx80nh1DG6s4G4H-sFg  "SN Events"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCLukrOQYSgsHUR_NSiVZndQ  "ServiceNow"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCdXorgCT87YlFRN9n8oJ7_A  "ServiceNow Dev"
-
-
+https://www.youtube.com/feeds/videos.xml?channel_id=UCdXorgCT87YlFRN9n8oJ7_A  "SN Dev"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCCBQU8mlFrElxQNR2mo-gLg  "SN Community"

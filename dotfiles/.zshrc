@@ -17,7 +17,7 @@ setopt nobeep                                                   # No beep
 setopt appendhistory                                            # Immediately append history instead of overwriting
 setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
 setopt autocd                                                   # if only directory path is entered, cd there.
-setopt inc_append_history                                       # save commands are added to the history immediately, otherwise only when shell exits.
+setopt inc_append_history                                       # save commands are added to the history, otherwise only when shell exits.
 
 ### zsh style
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
@@ -105,8 +105,6 @@ alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pac
 alias mirrorx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
 alias mirrorxx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
 
-
-
 ### Theming section
 autoload -U compinit colors zcalc
 compinit -d
@@ -159,9 +157,6 @@ eval "$(starship init zsh)"
 ### gpg agent
 GPG_TTY=$(tty)
 export GPG_TTY
-
-### lua
-alias luamake=/home/colps/Src/lua-language-server/3rd/luamake/luamake
 
 ### rust
 source $HOME/.cargo/env

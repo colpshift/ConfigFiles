@@ -1,6 +1,6 @@
 #
 # $HOME/.newsboat/config
-# 
+#
 
 # Feed settings
 prepopulate-query-feeds yes
@@ -11,7 +11,7 @@ reload-threads 100
 show-read-feeds yes
 
 article-sort-order date-asc
-keep-articles-days 60
+keep-articles-days 90
 cache-file "/home/colps/.newsboat/cache.db"
 cookie-cache "/home/colps/.newsboat/cookies.txt"
 
@@ -38,4 +38,3 @@ highlight article "https?://[^ ]+" color10 default underline
 highlight article "\\[[0-9]+\\]" color10 default bold
 highlight article "\\[image\\ [0-9]+\\]" color10 default bold
 highlight feedlist "^─.*$" color6 color236 bold
-

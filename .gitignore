@@ -159,5 +159,7 @@ e2e/*.map
 *.exe
 *.out
 *.app
-
+# nvim
+autoload
+plugged
 

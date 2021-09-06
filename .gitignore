@@ -160,6 +160,7 @@ e2e/*.map
 *.out
 *.app
 # nvim
-autoload
-plugged
+~/Projects/configFiles/nvim/plugged
+~/Projects/configFiles/nvim/autoload
+
 

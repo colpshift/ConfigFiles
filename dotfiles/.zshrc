@@ -17,11 +17,10 @@ setopt nobeep                                                   # No beep
 setopt appendhistory                                            # Immediately append history instead of overwriting
 setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
 setopt autocd                                                   # if only directory path is entered, cd there.
-setopt inc_append_history                                       # save commands are added to the history immediately, otherwise only when shell exits.
+setopt inc_append_history                                       # save commands are added to the history, otherwise only when shell exits.
 
 ### zsh style
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
-#zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
 zstyle ':completion:*' rehash true                              # automatically find new executables in path
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
@@ -81,13 +80,12 @@ alias vi='/home/colps/.local/bin/nvim'
 alias vim='/home/colps/.local/bin/nvim'
 alias gvim='/home/colps/.local/bin/nvim'
 alias bat='bat --theme Nord'
-alias gitu='git add . && git commit && git push'
-alias gitb='git add . && git commit -m 'backup' && git push'
+alias gitu='git add . && git commit -S && git push'
+alias gitb='git add . && git commit -S -m 'backup' && git push'
 alias gitl='git log --graph'
 alias mpv='devour mpv'
 alias sxiv='devour sxiv'
 alias zathura='devour zathura'
-alias surf='devour surf -DI'
 alias cls='clear'
 alias cmatrix='cmatrix -fs'
 alias myip='curl http://ipecho.net/plain; echo'
@@ -96,9 +94,16 @@ alias parui='~/.scripts/fzf_paru_install.sh'
 alias parur='~/.scripts/fzf_paru_remove.sh'
 alias parup='~/.scripts/paru_update.sh'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias mirror_update='sudo reflector --age 6 --latest 20 --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
+#get fastest mirrors in your neighborhood
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --latest 30 --number 10 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 30 --number 10 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pacman.d/mirrorlist"
+#our experimental - best option for the moment
+alias mirrorx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
+alias mirrorxx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
 
 ### Theming section
 autoload -U compinit colors zcalc
@@ -149,6 +154,10 @@ promptinit
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
+### gpg agent
+GPG_TTY=$(tty)
+export GPG_TTY
+
 ### rust
 source $HOME/.cargo/env
 
@@ -166,4 +175,3 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-

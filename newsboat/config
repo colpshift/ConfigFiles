@@ -1,0 +1,40 @@
+#
+# $HOME/.newsboat/config
+#
+
+# Feed settings
+prepopulate-query-feeds yes
+
+auto-reload yes
+reload-time 30
+reload-threads 100
+show-read-feeds yes
+
+article-sort-order date-asc
+keep-articles-days 90
+cache-file "/home/colps/.newsboat/cache.db"
+cookie-cache "/home/colps/.newsboat/cookies.txt"
+
+browser "brave --new-tab %u"
+macro m set browser "devour mpv %u" ; open-in-browser ;
+
+notify-always yes
+notify-format "Newsboat :: %n unread articles"
+notify-program "/bin/notify-send"
+
+# nord theme
+color background          color236   default
+color listnormal          color248   default
+color listnormal_unread   color6     default
+color listfocus           color236   color12
+color listfocus_unread    color15    color12
+color info                blue       default
+color article             color248   default
+# highlights
+highlight all "---.*---" blue
+highlight article "^(Feed|Link):.*$" color6 default bold
+highlight article "^(Title|Date|Author):.*$" color6 default bold
+highlight article "https?://[^ ]+" color10 default underline
+highlight article "\\[[0-9]+\\]" color10 default bold
+highlight article "\\[image\\ [0-9]+\\]" color10 default bold
+highlight feedlist "^─.*$" color6 color236 bold

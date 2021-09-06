@@ -12,11 +12,11 @@ super + c
 
 # Browser
 super + w
-    firefox
+    brave
 
-# firefox "GP Colps"
+# brave "GP Colps"
 super + shift + w
-    firefox -P "GP Colps"
+    brave -P "GP Colps"
 
 # kitty
 super + Return
@@ -48,7 +48,7 @@ super + z
 
 # dmenu
 super + shift + d
-    dmenu_run -i -nb '#191919' -nf '#6790eb' -sb '#6790eb' -sf '#191919' -fn 'JetBrains Mono Regular Nerd Font Complete:pixelsize=10'
+    dmenu_run -i -nb '#2F343F' -nf '#f3f4f5' -sb '#4682B4' -sf '#ffffff' -fn 'NotoSans:pixelsize=13'
 
 #
 # bspwm hotkeys --------------------------------------------
@@ -56,7 +56,7 @@ super + shift + d
 
 # lockscreen
 super + l
-    /home/colps/.config/i3lock-multimonitor/lock
+    betterlockscreen -l
 
 # logout
 super + x

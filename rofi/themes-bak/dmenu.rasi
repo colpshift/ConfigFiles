@@ -1,0 +1,120 @@
+/**
+ * ROFI Color theme
+ * User: Qball
+ * Copyright: Dave Davenport
+ */
+
+* {
+    background:                  #2f343f;
+    bordercolor:                 #f3f4f5;
+    text-color:                  #f3f4f5;
+    font:                        "Noto Sans Regular 10";
+}
+
+window {
+    anchor:     north;
+    location:   north;
+    width:      100%;
+    padding:    4px;
+    children:   [ horibox ];
+}
+
+horibox {
+    orientation: horizontal;
+    children:   [ prompt, entry, listview ];
+}
+
+listview {
+    layout:     horizontal;
+    spacing:    5px;
+    lines:      100;
+}
+
+entry {
+    expand:     false;
+    width:      10em;
+}
+
+#element {
+    border:  0;
+    padding: 5px ;
+}
+#element.normal.normal {
+    background-color: #2F343F;
+    text-color:       #f3f4f5;
+}
+#element.normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+#element.normal.active {
+    background-color: #f3f4f5;
+    text-color:       #fef4f5;
+}
+#element.selected.normal {
+    background-color: #2F343F;
+    text-color:       #f3f4f5;
+}
+#element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @selected-urgent-foreground;
+}
+#element.selected.active {
+    background-color: #fef4f5;
+    text-color:       #2F343F;
+}
+#element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
+}
+#element.alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color:       @alternate-urgent-foreground;
+}
+#element.alternate.active {
+    background-color: @alternate-active-background;
+    text-color:       @alternate-active-foreground;
+}
+#scrollbar {
+    width:        4px ;
+    border:       0;
+    handle-color: #f3f4f5;
+    handle-width: 8px ;
+    padding:      0;
+}
+#sidebar {
+    border:       2px 0px 0px ;
+    border-color: @separatorcolor;
+}
+#button {
+    spacing:    0;
+    text-color: #f3f4f5;
+}
+#button.selected {
+    background-color: #f3f4f5;
+    text-color:       #2F343F;
+}
+#inputbar {
+    spacing:    0;
+    text-color: #f3f4f5;
+    padding:    1px ;
+}
+#case-indicator {
+    spacing:    0;
+    text-color: #f3f4f5;
+}
+#entry {
+    spacing:    0;
+    text-color: #f3f4f5;
+}
+#prompt {
+    spacing:    0;
+    text-color: #f3f4f5;
+}
+#inputbar {
+    spacing:    5;
+    text-color: #f3f4f5;
+    padding:    5px ;
+    border:	0 0 2;
+    border-color: @separatorcolor;
+}

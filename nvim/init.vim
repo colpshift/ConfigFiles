@@ -30,6 +30,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-sensible'
 " Color schemes
 Plug 'sainnhe/edge'
+Plug 'arcticicestudio/nord-vim'
+Plug 'cormacrelf/vim-colors-github'
 " lsp
 Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall'
@@ -54,6 +56,9 @@ Plug 'nvim-treesitter/playground'
 " File Explorer
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
+" Comments
+Plug 'preservim/nerdcommenter'
+"
 " Status Line
 Plug 'glepnir/galaxyline.nvim'
 "
@@ -71,13 +76,13 @@ autocmd VimEnter *
 let g:edge_style = 'aura'
 let g:edge_enable_italic = 1
 let g:edge_disable_italic_comment = 1
-colorscheme edge
 "
 "- ultisnips
 let g:completion_enable_snippet = 'UltiSnips'
 "
 " Status line
 luafile ~/.config/nvim/lua/eviline.lua
+set laststatus=2        " Size of command area statusline
 "
 "- file explorer
 nnoremap <leader>tt :NvimTreeToggle<CR>
@@ -90,6 +95,17 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>ft <cmd>Telescope tags<cr>
 nnoremap <leader>fm <cmd>Telescope marks<cr>
+
+"
+" Nerdcommenter
+" Insert comment leader+cc
+" Invert comment leader+ci
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDToggleCheckAllLines = 1
 
 "
 " treesitter
@@ -152,6 +168,9 @@ set wrap
 "Case insensitive searching UNLESS /C or capital in search
 set ignorecase
 set smartcase
+"theme
+set background=dark
+colorscheme edge
 "
 augroup highlight_yank
   autocmd!
@@ -166,7 +185,7 @@ set pastetoggle=<F5>
 nmap <F7> mzgg=G`z
 " Clear whitespaces
 nnoremap <silent> <F9> <Esc>:%s/\s\+$//e<CR>
-"Insert timestamp
+" Insert timestamp
 inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
 "
 " ---- LSP ----

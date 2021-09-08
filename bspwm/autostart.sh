@@ -29,6 +29,7 @@ run /home/colps/.scripts/mpd_start.sh
 #
 run xbanish &
 run nm-applet &
+run wezterm
 picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/notification-daemon-1.0/notification-daemon &

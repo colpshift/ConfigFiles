@@ -18,21 +18,21 @@ super + w
 super + shift + w
     brave -P "GP Colps"
 
-# kitty
+# wezterm
 super + Return
-    kitty
+    wezterm
 
 # bpytop
 super + h
-    kitty -e bpytop
+    wezterm start bpytop
 
 # newsboat
 super + r
-    kitty -e newsboat
+    wezterm start newsboat
 
 # ncmpcpp
 super + m
-    kitty -e ncmpcpp -s browser -S visualizer
+    wezterm start ncmpcpp
 
 # audacious
 super + shift + m

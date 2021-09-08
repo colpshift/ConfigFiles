@@ -61,5 +61,4 @@ unset TERMCAP
 ### defaults apps
 export EDITOR=nvim
 export BROWSER=brave
-export TERM=kitty
 

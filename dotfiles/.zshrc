@@ -170,6 +170,9 @@ eval "$(fasd --init auto)"
 ### forgit
 source $HOME/Src/forgit/forgit.plugin.zsh
 
+### wezterm
+source $HOME/.config/wezterm/wezterm_integration.sh
+
 ### zsh_functions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 

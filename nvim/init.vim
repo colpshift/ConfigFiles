@@ -136,38 +136,62 @@ endif
 syntax enable
 filetype plugin indent on
 "
+"Start
 set completeopt=menuone,noinsert,noselect
-set cmdheight=2
 set updatetime=50
-set signcolumn=yes
-"Set highlight on search
-set hlsearch
-"Don’t show the intro message when starting neovim
 set shortmess=atIc
-"Set tabstop and shiftwidth
+"
+"Tab and shiftwidth
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set smarttab
 set expandtab
-"Make line numbers default
+set switchbuf=usetab
+nnoremap <F4> :sbnext<CR>
+nnoremap <S-F4> :sbprevious<CR>
+"
+"Line numbers 
 set number
 set relativenumber
-"Do not save when switching buffers (note: this is now a default on master)
-set hidden
-"No double spaces with join
-set joinspaces
-"Enable mouse mode
-set mouse=a
-"Enable break indent
+"
+"Indent
 set breakindent
-"clipboard
+"Turn off auto-indent when pasting text
+set pastetoggle=<F5>    
+"Auto indent the whole file and keep your cursor in the last position
+nmap <F7> mzgg=G`z
+"
+"Clipboard
 set clipboard+=unnamedplus
-"Disable line wrap
-set wrap
-"Case insensitive searching UNLESS /C or capital in search
+"
+"Set highlight and case on search
+set hlsearch
 set ignorecase
 set smartcase
+"undo hlsearch
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+"
+"Swap, undo and backup
+set undofile
+set undodir=$HOME/.local/share/nvim/undo
+set noswapfile
+set nobackup
+set nowritebackup
+"
+"Visual Adjustments
+set cmdheight=2
+set signcolumn=auto      
+set hidden              " keep multiple buffers open.
+set nojoinspaces        " prevents inserting spaces after punctuation on join.
+set mouse=a             " allow mouse clicks to change cursor position
+set showcmd             " show command in bottom bar
+set showmode            " change the color in according of mode
+set noerrorbells        " disable beep on errors.
+set showmatch           " highlight matching [{()}]
+set wildmenu            " wildmenu enable
+set nowrap              " disable wrap
+"
 "theme
 set background=dark
 colorscheme edge
@@ -177,15 +201,10 @@ augroup highlight_yank
   autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank()
 augroup END
 "
-" undo hlsearch
-nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
-" Turn off auto-indent when pasting text
-set pastetoggle=<F5>    
-" auto indent the whole file and keep your cursor in the last position
-nmap <F7> mzgg=G`z
-" Clear whitespaces
+"Maps
+"Clear whitespaces
 nnoremap <silent> <F9> <Esc>:%s/\s\+$//e<CR>
-" Insert timestamp
+"Insert timestamp
 inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
 "
 " ---- LSP ----

@@ -159,8 +159,5 @@ e2e/*.map
 *.exe
 *.out
 *.app
-# nvim
-~/Projects/configFiles/nvim/plugged
-~/Projects/configFiles/nvim/autoload
 
 

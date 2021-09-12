@@ -1,8 +1,3 @@
-Name                     Version                     Rev    Tracking       Publisher       Notes
-code                     e7d7e9a9                    73     latest/stable  vscode*         classic
-core                     16-2.51.4                   11606  latest/stable  canonical*      core
-core18                   20210722                    2128   latest/stable  canonical*      base
-flameshot                v0.10.1+git0.4e406ec        135    latest/stable  borgman-jeremy  -
-gnome-3-28-1804          3.28.0-19-g98f9e67.98f9e67  161    latest/stable  canonical*      -
-gtk-common-themes        0.1-52-gb92ac40             1515   latest/stable  canonical*      -
-kde-frameworks-5-core18  5.61.0                      32     latest/stable  kde*            -
+Name  Version    Rev    Tracking       Publisher   Notes
+code  e7d7e9a9   73     latest/stable  vscode*     classic
+core  16-2.51.4  11606  latest/stable  canonical*  core

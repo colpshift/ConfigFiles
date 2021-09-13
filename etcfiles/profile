@@ -1,10 +1,4 @@
-#
-# Path: /etc/profile
-# Tags: bash shell
-# Description: bash env config
-# Author: colpshift
-# Last update: 03/07/2021 13:24
-#
+# /etc/profile
 
 # Set our umask
 umask 022
@@ -53,12 +47,11 @@ fi
 unset TERMCAP
 
 # Man is much better than us at figuring this out
-#unset MANPATH
-#export MANPAGER="sh -c 'col -bx | bat -l man -p --paging always'"
-#export MANPAGER="nvim -c 'set ft=man' -" # using neovim to read man
-#export MANWIDTH=999
+export MANPAGER="sh -c 'col -bx | bat -l man -p --paging always'"
+export MANWIDTH=999
 
 ### defaults apps
 export EDITOR=nvim
+export VISUAL=nvim
 export BROWSER=brave
 

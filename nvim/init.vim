@@ -227,6 +227,7 @@ inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetDirectories=["/home/colps/.config/nvim/UltiSnips", "UltiSnips"]
 "
 " LSP config
 "
@@ -339,8 +340,6 @@ require'lspinstall'.post_install_hook = function ()
 setup_servers() -- reload installed servers
 vim.cmd("bufdo e") -- this triggers the FileType autocmd that starts the server
 end
--- enable languages
-
 --
 EOF
 
@@ -451,7 +450,7 @@ let g:rust_clip_command = 'xclip -selection clipboard'
 nnoremap <silent> <F9> <Esc>:%s/\s\+$//e<CR>
 "
 "Insert timestamp
-inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M")<CR>
+inoremap <F10> <C-R>=strftime("%d/%m/%Y %H:%M:%S")<CR>
 "
 " Copying to X11 primary selection with the mouse
 vnoremap <LeftRelease> "*ygv

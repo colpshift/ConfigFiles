@@ -8,7 +8,7 @@ function run {
 }
 
 # monitor
-xrandr --output eDP1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output HDMI1 --mode 1440x900 --pos 1366x0 --rotate normal --output VIRTUAL1 --off
+xrandr --output eDP-1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output HDMI-1 --mode 1440x900 --pos 1366x0 --rotate normal --output VIRTUAL1 --off
 # polybar
 $HOME/.config/polybar/launch.sh &
 # wallpaper

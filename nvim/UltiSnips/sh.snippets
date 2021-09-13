@@ -1,14 +1,14 @@
-snippet doc "description"
-#
-# Path: `!v expand('%:p')` 
-# Tags: ${1:tag}
-# Description: ${2}
-# Author: Colpshift
-# Last Modified: `!v strftime("%d/%m/%Y %H:%M:%S")`
-#
-endsnippet
-
 snippet dash "dashbang"
 #!/bin/sh
+endsnippet
+
+snippet doc "standard file header"
+#
+# File: ${1:`expand('%:t')`}
+# Tags: ${2}
+# Description: ${3}
+# Author: Colpshift
+# Last Modified: ${4:`strftime('%d/%m/%Y %H:%M:%S')`}
+#
 endsnippet
 

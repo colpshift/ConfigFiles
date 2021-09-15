@@ -76,9 +76,10 @@ alias dmesg='dmesg --color'
 alias df='dust'
 alias du='duf'
 alias su='sudo -i'
-alias vi='/home/colps/.local/bin/nvim'
-alias vim='/home/colps/.local/bin/nvim'
-alias gvim='/home/colps/.local/bin/nvim'
+alias vi='lvim'
+alias vim='lvim'
+alias gvim='lvim'
+alias nvim='lvim'
 alias bat='bat --theme Nord'
 alias gitu='git add . && git commit -S && git push'
 alias gitb='git add . && git commit -S -m 'backup' && git push'
@@ -119,7 +120,7 @@ export MANPAGER="sh -c 'col -bx | bat --theme Nord -l man -p --paging always'"
 export MANWIDTH=999
 
 ### Zsh fzf-tab
-source /home/colps/Src/fzf-tab/fzf-tab.zsh
+source /home/colps/Src/fzf-tab/fzf-tab.plugin.zsh
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
@@ -142,8 +143,6 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 # command is not found
 source /usr/share/doc/pkgfile/command-not-found.zsh
-# emoji
-source /home/colps/Src/emoji-cli/fuzzy-emoji-zle.zsh
 
 ### Set prompt
 autoload -Uz compinit promptinit
@@ -160,6 +159,10 @@ export GPG_TTY
 
 ### rust
 source $HOME/.cargo/env
+
+### nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 ### ruby
 eval "$(rbenv init -)"

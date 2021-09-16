@@ -58,7 +58,7 @@ arcolinux-polybar-git 21.09-01
 arcolinux-qt5-git 21.07-01
 arcolinux-rofi-git 21.07-01
 arcolinux-rofi-themes-git 21.07-01
-arcolinux-root-git 21.09-01
+arcolinux-root-git 21.09-03
 arcolinux-sddm-sugar-candy-git 21.07-02
 arcolinux-system-config-git 21.09-01
 arcolinux-systemd-services-git 21.08-05
@@ -227,6 +227,7 @@ fsarchiver 0.8.6-1
 fuse-common 3.10.5-1
 fuse2 2.9.9-4
 fuse3 3.10.5-1
+galculator 2.1.4-5
 garcon 4.16.1-1
 gawk 5.1.0-1
 gc 8.0.4-4
@@ -433,7 +434,7 @@ libburn 1.5.4-1
 libbytesize 2.6-1
 libcaca 0.99.beta19-5
 libcanberra 0.30+2+gc0620e4-5
-libcap 2.56-1
+libcap 2.57-1
 libcap-ng 0.8.2-3
 libcbor 0.8.0-1
 libcddb 1.3.2-6
@@ -716,7 +717,7 @@ mpc 0.33-3
 mpd 0.22.11-1
 mpfr 4.1.0.p13-1
 mpg123 1.29.0-1
-mpv 1:0.33.1-2
+mpv 1:0.33.1-3
 mtdev 1.1.6-1
 mtools 1:4.0.35-1
 mtpfs 1.1-4
@@ -782,7 +783,7 @@ os-prober 1.79-1
 ostree 2021.4-1
 p11-kit 0.24.0-1
 p7zip 1:17.04-3
-pacman 6.0.1-1
+pacman 6.0.1-2
 pacman-contrib 1.4.0-4
 pacman-mirrorlist 20210822-1
 pahole 1.22-1
@@ -1068,7 +1069,7 @@ startup-notification 0.12-7
 stfl 0.24-5
 stoken 0.92-4
 stremio-beta 4.4.142-0
-sudo 1.9.8-1
+sudo 1.9.8-2
 suitesparse 5.10.1-1
 surfn-icons-git 21.09-02
 sutils-git 35-1

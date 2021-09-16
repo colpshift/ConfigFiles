@@ -75,7 +75,8 @@ bspc rule -a Arcolinux-welcome-app.py desktop='^7' follow=on
 bspc rule -a Arcolinux-calamares-tool.py desktop='^7' follow=on
 # music
 bspc rule -a Audacious desktop='^6'
-bspc rule -a Picard='^6'
+bspc rule -a Picard desktop='^6'
+bspc rule -a 'YouTube to MP3' desktop='^6'
 # spotify fix
 sleep 1
 wmctrl -r spotify -t 6

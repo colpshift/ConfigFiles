@@ -2,6 +2,7 @@ a52dec 0.7.4-11
 aalib 1.4rc5-14
 accountsservice 0.6.55-3
 acl 2.3.1-1
+acorn 1:8.5.0-1
 acpi 1.7-3
 adobe-source-code-pro-fonts 2.038ro+1.058it+1.018var-1
 adobe-source-han-sans-cn-fonts 2.004-1
@@ -113,7 +114,7 @@ brave-bin 1:1.29.81-1
 broadcom-wl 6.30.223.271-327
 brotli 1.0.9-4
 bspwm 0.9.10-1
-btrfs-progs 5.13.1-1
+btrfs-progs 5.14-1
 bubblewrap 0.5.0-1
 bzip2 1.0.8-4
 c-ares 1.17.2-1
@@ -140,12 +141,12 @@ coreutils 8.32-1
 cracklib 2.9.7-2
 crda 4.14-4
 cronie 1.5.7-2
-cryptsetup 2.4.0-1
+cryptsetup 2.4.1-1
 cups 1:2.3.3op2-3
 cups-filters 1.28.10-1
 cups-pdf 3.0.1-6
 cups-pk-helper 0.2.6-4
-curl 7.78.0-1
+curl 7.79.0-3
 dash 0.5.11.4-1
 dav1d 0.9.2-1
 db 5.3.28-5
@@ -189,6 +190,7 @@ electron 14.0.1-1
 elfutils 0.185-1
 elinks 0.14.1-1
 enchant 2.3.1-1
+eslint 7.32.0-1
 ethtool 1:5.13-1
 exa 0.10.1-1
 exfatprogs 1.1.2-1
@@ -445,7 +447,7 @@ libcolord 1.4.5-4
 libconfig 1.7.3-1
 libcroco 0.6.13-2
 libcups 1:2.3.3op2-3
-libcurl-gnutls 7.78.0-1
+libcurl-gnutls 7.79.0-2
 libdaemon 0.14-5
 libdatrie 0.2.13-1
 libdbusmenu-glib 16.04.0-4
@@ -751,9 +753,12 @@ nfsidmap 2.5.4-1
 nilfs-utils 2.2.8-2
 nitrogen 1.6.1-3
 nm-connection-editor 1.24.0-1
+node-gyp 8.1.0-2
 nodejs 16.9.1-1
+nodejs-nopt 5.0.0-2
 noto-fonts 20201226-2
 noto-fonts-emoji 20210625-1
+npm 7.23.0-1
 npth 1.6-3
 nspr 4.32-1
 nss 3.70-1
@@ -788,7 +793,7 @@ pacman 6.0.1-2
 pacman-contrib 1.4.0-4
 pacman-mirrorlist 20210822-1
 pahole 1.22-1
-pam 1.5.1-1
+pam 1.5.2-1
 pamac-all 10.2.0-1
 pambase 20210605-2
 pango 1:1.48.10-1
@@ -870,6 +875,7 @@ powerline-common 2.8.2-2
 powerline-fonts 2.8.2-2
 ppp 2.4.9-1
 pptpclient 1.10.0-2
+prettier 2.4.1-1
 procps-ng 3.3.17-1
 procs 0.11.9-1
 progsreiserfs 0.3.0.5-10
@@ -893,7 +899,7 @@ python-dateutil 2.8.2-1
 python-discid 1.2.0-5
 python-distlib 0.3.2-1
 python-distro 1.6.0-1
-python-dnspython 1:1.16.0-3
+python-dnspython 1:2.1.0-1
 python-docopt 0.6.2-9
 python-ewmh 0.1.6-3
 python-fasteners 0.16-1
@@ -993,7 +999,7 @@ qt5-sensors 5.15.2-1
 qt5-speech 5.15.2-1
 qt5-svg 5.15.2+kde+r7-1
 qt5-translations 5.15.2+kde+r20-1
-qt5-virtualkeyboard 5.15.2-1
+qt5-virtualkeyboard 5.15.2+kde+r4-1
 qt5-wayland 5.15.2+kde+r30-1
 qt5-webchannel 5.15.2-1
 qt5-webengine 5.15.6-1
@@ -1040,6 +1046,7 @@ sddm-futuristic-theme 0.1-3
 sdl2 2.0.16-2
 sdparm 1.12-1
 sed 4.8-1
+semver 7.3.5-2
 serd 0.30.10-1
 sg3_utils 1.46-1
 shaderc 2021.1-2
@@ -1075,7 +1082,7 @@ startup-notification 0.12-7
 stfl 0.24-5
 stoken 0.92-4
 stremio-beta 4.4.142-0
-sudo 1.9.8-2
+sudo 1.9.8.p1-1
 suitesparse 5.10.1-1
 surfn-icons-git 21.09-02
 sutils-git 35-1

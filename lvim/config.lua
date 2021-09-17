@@ -99,17 +99,17 @@ lvim.lang.python.linters = {
 }
 
 -- bash formatters and linters
-lvim.lang.bash.formatters = {
-  {
-    exe = "shfmt",
-  }
-}
---
-lvim.lang.bash.linters = {
-  {
-    exe = "shellcheck",
-  }
-}
+-- lvim.lang.bash.formatters = {
+--   {
+--     exe = "shfmt",
+--   }
+-- }
+-- --
+-- lvim.lang.bash.linters = {
+--   {
+--     exe = "shellcheck",
+--   }
+-- }
 
 -- Additional Plugins
 lvim.plugins = {

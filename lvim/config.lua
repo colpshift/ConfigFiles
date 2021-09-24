@@ -1,5 +1,13 @@
 --[[
 lvim is the global options object
+
+Linters should be
+filled in as strings with either
+a global executable or a path to
+an executable
+]]
+--[[
+lvim is the global options object
 ]]
 -- general
 lvim.log.level = "warn"

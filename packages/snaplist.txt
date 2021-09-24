@@ -1,3 +1,5 @@
-Name  Version    Rev    Tracking       Publisher   Notes
-code  83bd43bc   74     latest/stable  vscode*     classic
-core  16-2.51.4  11606  latest/stable  canonical*  core
+Name         Version    Rev    Tracking       Publisher   Notes
+code         7f6ab548   75     latest/stable  vscode*     classic
+core         16-2.51.4  11606  latest/stable  canonical*  core
+core18       20210722   2128   latest/stable  canonical*  base
+zoom-client  5.8.0.16   160    latest/stable  ogra        -

@@ -25,7 +25,7 @@ run copyq
 run flameshot
 run rambox
 run dunst
-blueberry-tray &
+#blueberry-tray &
 run /home/colps/.scripts/mpd_start.sh
 #
 run xbanish &

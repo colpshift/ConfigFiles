@@ -7,11 +7,12 @@
 local wezterm = require 'wezterm';
 return {
   --font, color and opacity
-  --font = wezterm.font("Fira Code"),
-  --font = wezterm.font('Iosevka Term', {stretch="Expanded", weight="Regular"}),
-  font_size = 10.0,
+  font = wezterm.font("JetBrainsMono NF"),
+  font_size = 10.5,
   window_background_opacity = 0.82,
-  color_scheme = "GitHub Dark",
+  color_scheme = "nord",
+  --
+  warn_about_missing_glyphs = false,
   --tab
   hide_tab_bar_if_only_one_tab = true,
   -- padding

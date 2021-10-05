@@ -12,11 +12,11 @@ super + c
 
 # Browser
 super + w
-    brave
+    firefox
 
-# brave "GP Colps"
+# firefox
 super + shift + w
-    brave -P "GP Colps"
+    firefox
 
 # wezterm
 super + Return

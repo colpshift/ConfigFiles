@@ -53,5 +53,5 @@ export MANWIDTH=999
 ### defaults apps
 export EDITOR=nvim
 export VISUAL=nvim
-export BROWSER=brave
+export BROWSER=firefox
 

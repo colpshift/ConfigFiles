@@ -1,9 +1,0 @@
-# Directory to copy the kernel
-ESP_DIR="/boot/efi"
-
-build () {
-	cp -af /boot/vmlinuz-linux "${ESP_DIR}/"
-	cp -af /boot/intel-ucode.img "${ESP_DIR}/"
-	cp -af /boot/amd-ucode.img "${ESP_DIR}/"
-}
-

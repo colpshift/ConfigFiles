@@ -7,9 +7,8 @@
 local wezterm = require 'wezterm';
 return {
   --font, color and opacity
-  font = wezterm.font("JetBrainsMono NF"),
   font_size = 10.5,
-  window_background_opacity = 0.82,
+  window_background_opacity = 0.80,
   color_scheme = "nord",
   --
   warn_about_missing_glyphs = false,
@@ -17,10 +16,10 @@ return {
   hide_tab_bar_if_only_one_tab = true,
   -- padding
   window_padding = {
-    left = 2,
-    right = 2,
-    top = 0,
-    bottom = 0,
+    left = 3,
+    right = 4,
+    top = 1,
+    bottom = 1,
   },
   -- check updates
   check_for_updates = true,

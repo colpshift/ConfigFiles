@@ -1,4 +1,6 @@
 Ferdi	com.getferdi.Ferdi	5.6.2	stable	user
+CopyQ	com.github.hluk.copyq	5.0.0	stable	user
+Minder	com.github.phase1geo.minder	1.13.1	stable	user
 NewsFlash	com.gitlab.newsflash	1.4.3	stable	user
 Microsoft Teams	com.microsoft.Teams	1.4.00.26453	stable	user
 Nextcloud Desktop	com.nextcloud.desktopclient.nextcloud	3.3.5	stable	user
@@ -29,5 +31,6 @@ QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15	user
+Telegram Desktop	org.telegram.desktop	3.1.1	stable	user
 VLC	org.videolan.VLC	3.0.16	stable	user
 Zoom	us.zoom.Zoom	5.8.0.16	stable	user

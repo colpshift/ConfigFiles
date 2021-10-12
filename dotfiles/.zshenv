@@ -8,7 +8,7 @@
 
 ### path
 typeset -U path
-path=($HOME/.local/bin $HOME/go/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $HOME/.local/share/gem/ruby/3.0.0/bin/ $path[@])
+path=($HOME/.local/bin $HOME/.scripts $HOME/.rbenv $HOME/.cargo/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $HOME/.local/share/gem/ruby/3.0.0/bin/bin $HOME/.local/share/gem/ruby/2.7.0/bin $path[@])
 
 ### fzf
 # colorscheme nord

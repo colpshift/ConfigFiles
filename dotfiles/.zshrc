@@ -6,34 +6,48 @@
 # Last update: 03/07/2021 13:14
 #
 
-## Options section
-setopt correct                                                  # Auto correct mistakes
-setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
-setopt nocaseglob                                               # Case insensitive globbing
-setopt rcexpandparam                                            # Array expension with parameters
-setopt nocheckjobs                                              # Don't warn about running processes when exiting
-setopt numericglobsort                                          # Sort filenames numerically when it makes sense
-setopt nobeep                                                   # No beep
-setopt appendhistory                                            # Immediately append history instead of overwriting
-setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
-setopt autocd                                                   # if only directory path is entered, cd there.
-setopt inc_append_history                                       # save commands are added to the history, otherwise only when shell exits.
+### Set variables
+WORDCHARS=${WORDCHARS//\/[&.;]}
 
-### zsh style
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
-zstyle ':completion:*' rehash true                              # automatically find new executables in path
-zstyle ':completion:*' accept-exact '*(N)'
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh/cache
+### Set/unset ZSH options
+setopt INC_APPEND_HISTORY SHARE_HISTORY
+setopt EXTENDED_HISTORY
+setopt APPEND_HISTORY
+setopt AUTO_LIST
+setopt MENUCOMPLETE
+setopt COMPLETE_ALIASES
+setopt ALL_EXPORT
 
-### zsh history
-HISTFILE=~/.zhistory
-HISTSIZE=10000
-SAVEHIST=10000
-HISTCONTROL='ignoredups'
+### Set/unset shell options
+setopt   notify globdots pushdtohome cdablevars autolist numericglobsort
+setopt   autocd recexact rcexpandparam nocheckjobs nobeep
+setopt   autopushd autoresume histignoredups pushdsilent pushdignoredups
+setopt   pushdminus extendedglob nocaseglob rcquotes
 
-### Editor
-WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
+### Completion Styles
+autoload -Uz compinit
+compinit
+zstyle ':completion::complete:*' use-cache on
+zstyle ':completion::complete:*' cache-path ~/.zsh/cache/$HOST
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
+zstyle ':completion:*' menu select=1 _complete _ignored _approximate
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
+
+### History
+HISTFILE=$HOME/.zhistory
+HISTSIZE=1000
+SAVEHIST=1000
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+
+### Load colors
+autoload -U colors && colors
+colors
 
 ### Keybindings section
 bindkey -e
@@ -65,7 +79,7 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 ### Set alias
 alias exa='exa --header --long --group --git'
 alias ll='ls'
-alias ls='lsd -lh --color=auto --group-dirs'
+alias ls='lsd -lh --color=auto --group-dirs=first'
 alias la='ls -a'  # show hidden files and folders
 alias lx='ls -X'  # sort by extension
 alias lz='ls -rS' # sort by size

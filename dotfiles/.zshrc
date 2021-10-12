@@ -158,7 +158,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 ### ruby
-#eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 ### fasd
 eval "$(fasd --init auto)"

@@ -1,6 +1,8 @@
 --[[
+
 lvim is the global options object
 After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
+
 ]]
 
 --
@@ -19,10 +21,25 @@ lvim.builtin.nvimtree.show_icons.git = 1
 --
 -- view all the defaults by pressing <leader>Lk
 lvim.leader = "space"
-lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
---
--- Use which-key to add extra bindings with the leader-key prefix
+lvim.keys.normal_mode = {
+  -- Page down/up
+  ["[d"] = "<PageUp>",
+  ["]d"] = "<PageDown>",
+  -- Navigate buffers
+  ["<Tab>"] = ":bnext<CR>",
+  ["<S-Tab>"] = ":bprevious<CR>",
+  -- save, quit
+  ["<C-s>"] = ":w<cr>",
+  ["<C-q>"] = ":q<cr>",
+  -- undo search highlight results
+  ["<F2>"] = ":nohlsearch",
+  -- indent whole file
+  ["<F7>"] = "mzgg=G`z",
+}
+-- nvim keybind
+-- timestamp
+vim.api.nvim_set_keymap('i', '<F10>',  [[<C-R>=strftime("%d/%m/%Y %H:%M:%S")<CR>]], { noremap = true, silent = true })
+-- which-key
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 lvim.builtin.which_key.mappings["t"] = {
   name = "+Trouble",
@@ -38,15 +55,15 @@ lvim.builtin.which_key.mappings["t"] = {
 -- Additional Plugins ----------
 --
 lvim.plugins = {
-    { "folke/tokyonight.nvim" },
-    { "folke/trouble.nvim", cmd = "TroubleToggle" },
-    { "onsails/lspkind-nvim" },
-    { "hrsh7th/cmp-emoji" },
-    { "ray-x/cmp-treesitter" },
-    { "tamago324/cmp-zsh" },
-    { "hrsh7th/cmp-vsnip" },
-    { "hrsh7th/vim-vsnip" },
-    { "hrsh7th/vim-vsnip-integ" },
+  { "folke/tokyonight.nvim" },
+  { "folke/trouble.nvim", cmd = "TroubleToggle" },
+  { "onsails/lspkind-nvim" },
+  { "hrsh7th/cmp-emoji" },
+  { "ray-x/cmp-treesitter" },
+  { "tamago324/cmp-zsh" },
+  { "hrsh7th/cmp-vsnip" },
+  { "hrsh7th/vim-vsnip" },
+  { "hrsh7th/vim-vsnip-integ" },
 }
 
 --
@@ -59,49 +76,64 @@ lvim.autocommands.custom_groups = {
 --
 -- options ----------
 --
-vim.opt.backup = false -- creates a backup file
+vim.opt.timeoutlen = 100 -- time to wait for a mapped sequence to complete (in milliseconds)
+vim.opt.updatetime = 300 -- faster completion
+vim.opt.title = true -- set the title of window to the value of the titlestring
+vim.opt.titlestring = "%<%F%=%l/%L - nvim" -- what the title of the window will be set to
+vim.opt.fileencoding = "utf-8" -- the encoding written to a file
 vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
 vim.opt.cmdheight = 2 -- more space in the neovim command line for displaying messages
 vim.opt.colorcolumn = "99999" -- fixes indentline for now
-vim.opt.completeopt = { "menu", "menuone", "noselect" }
 vim.opt.lazyredraw = true
-vim.opt.conceallevel = 0 -- so that `` is visible in markdown files
-vim.opt.fileencoding = "utf-8" -- the encoding written to a file
-vim.opt.foldmethod = "manual" -- folding set to "expr" for treesitter based folding
-vim.opt.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
 vim.opt.hidden = true -- required to keep multiple buffers and open multiple buffers
-vim.opt.hlsearch = true -- highlight all matches on previous search pattern
-vim.opt.ignorecase = true -- ignore case in search patterns
 vim.opt.mouse = "a" -- allow the mouse to be used in neovim
 vim.opt.pumheight = 10 -- pop up menu height
 vim.opt.showmode = false -- we don't need to see things like -- INSERT -- anymore
 vim.opt.showtabline = 2 -- always show tabs
-vim.opt.smartcase = true -- smart case
-vim.opt.smartindent = true -- make indenting smarter again
 vim.opt.splitbelow = true -- force all horizontal splits to go below current window
 vim.opt.splitright = true -- force all vertical splits to go to the right of current window
-vim.opt.swapfile = false -- creates a swapfile
 vim.opt.termguicolors = true -- set term gui colors (most terminals support this)
-vim.opt.timeoutlen = 100 -- time to wait for a mapped sequence to complete (in milliseconds)
-vim.opt.title = true -- set the title of window to the value of the titlestring
-vim.opt.titlestring = "%<%F%=%l/%L - nvim" -- what the title of the window will be set to
-vim.opt.undodir = vim.fn.stdpath "cache" .. "/undo"
-vim.opt.undofile = true -- enable persistent undo
-vim.opt.updatetime = 300 -- faster completion
-vim.opt.writebackup = false -- if a file is being edited by another program (or was written to file while editing with another program) it is not allowed to be edited
-vim.opt.expandtab = true -- convert tabs to spaces
-vim.opt.shiftwidth = 2 -- the number of spaces inserted for each indentation
-vim.opt.tabstop = 2 -- insert 2 spaces for a tab
 vim.opt.cursorline = true -- highlight the current line
-vim.opt.number = true -- set numbered lines
-vim.opt.relativenumber = false -- set relative numbered lines
-vim.opt.numberwidth = 4 -- set number column width to 2 {default 4}
 vim.opt.signcolumn = "yes" -- always show the sign column otherwise it would shift the text each time
+vim.opt.completeopt = { "menu", "menuone", "noselect" }
+--
+vim.opt.smartcase = true -- smart case
+vim.opt.hlsearch = true -- highlight all matches on previous search pattern
+vim.opt.ignorecase = true -- ignore case in search patterns
+vim.opt.inccommand = "split"  -- Show interactive preview of substitute changes
+--
+vim.opt.foldmethod = "manual" -- folding set to "expr" for treesitter based folding
+vim.opt.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
+--
+vim.opt.autoindent = true -- indent match with the previous line
+vim.opt.smartindent = true -- make indenting smarter again
+vim.opt.smartindent = true -- indent after colon for if or for statements
+vim.opt.smarttab = true -- Uses shiftwidth instead of tabstop at start of lines
+vim.opt.shiftwidth = 2 -- the number of spaces inserted for each indentation
+vim.opt.softtabstop = 2 -- Causes backspace to delete 2 spaces converted tab
+vim.backspace = "eol,start,indent" -- Make sure backspace works in insert mode
+--
+vim.opt.expandtab = true -- convert tabs to spaces
+vim.opt.tabstop = 2 -- insert 2 spaces for a tab
+--
+vim.opt.number = true -- set numbered lines
+vim.opt.relativenumber = true -- set relative numbered lines
+vim.opt.numberwidth = 4 -- set number column width to 2 {default 4}
+--
 vim.opt.wrap = false -- display lines as one long line
 vim.opt.spell = false
 vim.opt.spelllang = "en"
-vim.opt.scrolloff = 2 -- is one of my fav
+--
+vim.opt.scrolloff = 2
 vim.opt.sidescrolloff = 2
+--
+vim.opt.undodir = vim.fn.stdpath "cache" .. "/undo"
+vim.opt.undofile = true -- enable persistent undo
+vim.opt.backup = false -- creates a backup file
+vim.opt.writebackup = false -- if a file is being edited by another program (or was written to file while editing with another program) it is not allowed to be edited
+vim.opt.swapfile = false -- creates a swapfile
+--
+vim.opt.conceallevel = 0 -- so that `` is visible in markdown files
 vim.g.python3_host_prog = "/bin/python3"
 vim.g.python_host_prog = "/bin/python2"
 vim.g.ruby_host_prog = "/home/colps/.local/share/gem/ruby/3.0.0/bin/bin/neovim-ruby-host"
@@ -122,18 +154,6 @@ end
 lvim.lsp.null_ls.setup = {
   root_dir = require("lspconfig").util.root_pattern("Makefile", ".git", "node_modules"),
 }
--- or if you need something more advanced
--- lvim.lsp.null_ls.setup.root_dir = function(fname)
---   if vim.bo.filetype == "javascript" then
---     return require("lspconfig/util").root_pattern("Makefile", ".git", "node_modules")(fname)
---       or require("lspconfig/util").path.dirname(fname)
---   elseif vim.bo.filetype == "php" then
---     return require("lspconfig/util").root_pattern("Makefile", ".git", "composer.json")(fname) or vim.fn.getcwd()
---   else
---     return require("lspconfig/util").root_pattern("Makefile", ".git")(fname) or require("lspconfig/util").path.dirname(fname)
---   end
--- end
---
 -- formatters
 lvim.lang.python.formatters = { { exe = "black" } }
 -- linters

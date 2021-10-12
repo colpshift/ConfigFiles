@@ -9,7 +9,9 @@ return {
   --font, color and opacity
   font_size = 10.5,
   window_background_opacity = 0.80,
-  color_scheme = "nord",
+  color_scheme = "GitHub Dark",
+  --
+  default_cursor_style = "SteadyBar",
   --
   warn_about_missing_glyphs = false,
   --tab

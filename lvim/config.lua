@@ -143,14 +143,14 @@ vim.g.ruby_host_prog = "/home/colps/.local/share/gem/ruby/3.0.0/bin/bin/neovim-r
 --
 -- you can set a custom on_attach function that will be used for all the language servers
 -- See <https://github.com/neovim/nvim-lspconfig#keybindings-and-completion>
-lvim.lsp.on_attach_callback = function(bufnr)
-  local function buf_set_option(...)
-    vim.api.nvim_buf_set_option(bufnr, ...)
-  end
-  --Enable completion triggered by <c-x><c-o>
-  buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
-end
--- you can overwrite the null_ls setup table (useful for setting the root_dir function)
+-- lvim.lsp.on_attach_callback = function(client,bufnr)
+--   local function buf_set_option(...)
+--     vim.api.nvim_buf_set_option(bufnr, ...)
+--   end
+--   --Enable completion triggered by <c-x><c-o>
+--   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
+-- end
+-- -- you can overwrite the null_ls setup table (useful for setting the root_dir function)
 lvim.lsp.null_ls.setup = {
   root_dir = require("lspconfig").util.root_pattern("Makefile", ".git", "node_modules"),
 }
@@ -190,6 +190,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "rust",
   "java",
   "yaml",
+  "html",
 }
 --
 lvim.builtin.treesitter.ignore_install = { "haskell" }

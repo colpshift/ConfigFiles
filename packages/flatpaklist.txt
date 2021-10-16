@@ -34,6 +34,7 @@ QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15	user
+ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	6.3.1	stable	user
 Telegram Desktop	org.telegram.desktop	3.1.9	stable	user
 VLC	org.videolan.VLC	3.0.16	stable	user
 Zoom	us.zoom.Zoom	5.8.0.16	stable	user

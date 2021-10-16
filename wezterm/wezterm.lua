@@ -18,8 +18,8 @@ return {
   hide_tab_bar_if_only_one_tab = true,
   -- padding
   window_padding = {
-    left = 3,
-    right = 4,
+    left = 6,
+    right = 3,
     top = 1,
     bottom = 1,
   },

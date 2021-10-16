@@ -3,7 +3,7 @@
 # Tags: zsh shell
 # Description: zsh env config
 # Author: colpshift
-# Last update: 03/07/2021 13:14
+# Last update: 16/10/2021 15:39:48
 #
 
 ### Set variables
@@ -101,9 +101,6 @@ alias nvim='lvim'
 alias gitu='git add . && git commit -S && git push'
 alias gitb='git add . && git commit -S -m 'backup' && git push'
 alias gitl='git log --graph'
-alias mpv='devour mpv'
-alias sxiv='devour sxiv'
-alias zathura='devour zathura'
 alias cls='clear'
 alias cmatrix='cmatrix -fs'
 alias myip='curl http://ipecho.net/plain; echo'
@@ -139,13 +136,16 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
+### Completion
+source /home/colps/.config/cheat/cheat.zsh
+
 ### Zsh plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/emoji-cli/emoji-cli.zsh
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
-#bindkey "$terminfo[kcuu1]" history-substring-search-up
-#bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 # command is not found
@@ -167,10 +167,6 @@ export GPG_TTY
 ### rust
 source $HOME/.cargo/env
 
-### nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
 ### ruby
 eval "$(rbenv init -)"
 
@@ -180,12 +176,13 @@ eval "$(fasd --init auto)"
 ### forgit
 source $HOME/Src/forgit/forgit.plugin.zsh
 
-### wezterm
-source $HOME/.config/wezterm/wezterm_integration.sh
-
 ### zsh_functions
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+### wezterm
+sh $HOME/.config/wezterm/wezterm_integration.sh
+

@@ -9,7 +9,7 @@ return {
   --font, color and opacity
   font_size = 10.5,
   window_background_opacity = 0.80,
-  color_scheme = "GitHub Dark",
+  color_scheme = "iceberg-dark",
   --
   default_cursor_style = "SteadyBar",
   --
@@ -18,8 +18,8 @@ return {
   hide_tab_bar_if_only_one_tab = true,
   -- padding
   window_padding = {
-    left = 3,
-    right = 4,
+    left = 6,
+    right = 3,
     top = 1,
     bottom = 1,
   },

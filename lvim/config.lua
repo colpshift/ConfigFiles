@@ -1,8 +1,6 @@
 --[[
-
 lvim is the global options object
 After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-
 ]]
 
 --
@@ -155,9 +153,9 @@ lvim.lsp.null_ls.setup = {
   root_dir = require("lspconfig").util.root_pattern("Makefile", ".git", "node_modules"),
 }
 -- formatters
-lvim.lang.python.formatters = { { exe = "black" } }
+--lvim.lang.python.formatters = { { exe = "black" } }
 -- linters
-lvim.lang.python.linters = { { exe = "flake8" } }
+--lvim.lang.python.linters = { { exe = "flake8" } }
 
 --
 -- Plugins settings ----------
@@ -191,6 +189,32 @@ lvim.builtin.treesitter.ensure_installed = {
   "java",
   "yaml",
   "html",
+}
+require'nvim-treesitter.configs'.setup {
+  indent = {
+    enable = true
+  },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "gnn",
+      node_incremental = "grn",
+      scope_incremental = "grc",
+      node_decremental = "grm",
+    },
+  },
+   highlight = {
+    enable = true,
+    custom_captures = {
+      -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
+      ["foo.bar"] = "Identifier",
+    },
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
 }
 --
 lvim.builtin.treesitter.ignore_install = { "haskell" }

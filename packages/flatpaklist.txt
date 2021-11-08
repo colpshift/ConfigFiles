@@ -1,19 +1,16 @@
 Ferdi	com.getferdi.Ferdi	5.6.2	stable	user
 CopyQ	com.github.hluk.copyq	5.0.0	stable	user
-Foliate	com.github.johnfactotum.Foliate	2.6.3	stable	user
 Minder	com.github.phase1geo.minder	1.13.1	stable	user
-NewsFlash	com.gitlab.newsflash	1.4.3	stable	user
+NewsFlash	com.gitlab.newsflash	1.5.1	stable	user
 Microsoft Teams	com.microsoft.Teams	1.4.00.26453	stable	user
-Nextcloud Desktop	com.nextcloud.desktopclient.nextcloud	3.3.5	stable	user
+Nextcloud Desktop	com.nextcloud.desktopclient.nextcloud	3.3.6	stable	user
 Spotify	com.spotify.Client	1.1.68.632.g2b11de83	stable	user
 Stremio	com.stremio.Stremio	4.4.137	stable	user
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.1	stable	user
 Shortwave	de.haeckerfelix.Shortwave	2.0.1	stable	user
 Master PDF Editor	net.codeindustry.MasterPDFEditor	5.8.06	stable	user
-Joplin	net.cozic.joplin_desktop	2.4.12	stable	user
+Joplin	net.cozic.joplin_desktop	2.5.10	stable	user
 Audacious	org.atheme.audacious	4.1	stable	user
-Chromium Web Browser	org.chromium.Chromium	94.0.4606.71	stable	user
-Codecs	org.chromium.Chromium.Codecs		stable	user
 Freedesktop Platform	org.freedesktop.Platform	20.08.15	20.08	user
 Freedesktop Platform	org.freedesktop.Platform	21.08.4	21.08	user
 Mesa	org.freedesktop.Platform.GL.default	21.1.7	20.08	user
@@ -31,10 +28,11 @@ Pop Gtk theme	org.gtk.Gtk3theme.Pop-dark		3.22	user
 KDE Application Platform	org.kde.Platform		5.15	user
 KDE Application Platform	org.kde.Platform		5.15-21.08	user
 QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15	user
+QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-21.08	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15	user
-ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	6.3.1	stable	user
-Telegram Desktop	org.telegram.desktop	3.1.9	stable	user
+QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	user
+Telegram Desktop	org.telegram.desktop	3.2.2	stable	user
 VLC	org.videolan.VLC	3.0.16	stable	user
-Zoom	us.zoom.Zoom	5.8.0.16	stable	user
+Zoom	us.zoom.Zoom	5.8.3.145	stable	user

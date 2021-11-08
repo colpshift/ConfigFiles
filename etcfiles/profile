@@ -28,5 +28,7 @@ fi
 
 # defaults apps
 export EDITOR=lvim
-export VISUAL=lvim
+export VISUAL=code	
 export BROWSER=firefox
+# defaults config
+xset r rate 210 40  # Faster key repeat and delay

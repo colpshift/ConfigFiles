@@ -1,6 +1,7 @@
 Package                Version
 ---------------------- ---------------------
 apsw                   3.34.0.post1
+attrs                  21.2.0
 beautifulsoup4         4.9.3
 black                  21.9b0
 blinker                1.4
@@ -22,6 +23,7 @@ dbus-python            1.2.16
 defer                  1.0.6
 distro                 1.5.0
 dnspython              1.16.0
+docopt                 0.6.2
 ecdsa                  0.16.1
 feedparser             5.2.1
 flake8                 3.9.2
@@ -106,7 +108,7 @@ texttable              1.6.3
 tomli                  1.2.1
 ttystatus              0.38
 typing-extensions      3.10.0.2
-ubuntu-advantage-tools 27.3
+ubuntu-advantage-tools 27.4
 ubuntu-drivers-common  0.0.0
 ufw                    0.36
 urllib3                1.26.2

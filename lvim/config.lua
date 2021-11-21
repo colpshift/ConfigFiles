@@ -20,19 +20,19 @@ lvim.builtin.nvimtree.show_icons.git = 1
 -- view all the defaults by pressing <leader>Lk
 lvim.leader = "space"
 lvim.keys.normal_mode = {
-  -- Page down/up
-  ["[d"] = "<PageUp>",
-  ["]d"] = "<PageDown>",
-  -- Navigate buffers
-  ["<Tab>"] = ":bnext<CR>",
-  ["<S-Tab>"] = ":bprevious<CR>",
-  -- save, quit
-  ["<C-s>"] = ":w<cr>",
-  ["<C-q>"] = ":q<cr>",
-  -- undo search highlight results
-  ["<F2>"] = ":nohlsearch",
-  -- indent whole file
-  ["<F7>"] = "mzgg=G`z",
+        -- Page down/up
+        ["[d"] = "<PageUp>",
+        ["]d"] = "<PageDown>",
+        -- Navigate buffers
+        ["<Tab>"] = ":bnext<CR>",
+        ["<S-Tab>"] = ":bprevious<CR>",
+        -- save, quit
+        ["<C-s>"] = ":w<cr>",
+        ["<C-q>"] = ":q<cr>",
+        -- undo search highlight results
+        ["<F2>"] = ":nohlsearch",
+        -- indent whole file
+        ["<F7>"] = "mzgg=G`z",
 }
 -- nvim keybind
 -- timestamp
@@ -40,35 +40,35 @@ vim.api.nvim_set_keymap('i', '<F10>',  [[<C-R>=strftime("%d/%m/%Y %H:%M:%S")<CR>
 -- which-key
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 lvim.builtin.which_key.mappings["t"] = {
-  name = "+Trouble",
-  r = { "<cmd>Trouble lsp_references<cr>", "References" },
-  f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
-  d = { "<cmd>Trouble lsp_document_diagnostics<cr>", "Diagnostics" },
-  q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
-  l = { "<cmd>Trouble loclist<cr>", "LocationList" },
-  w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
+        name = "+Trouble",
+        r = { "<cmd>Trouble lsp_references<cr>", "References" },
+        f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
+        d = { "<cmd>Trouble lsp_document_diagnostics<cr>", "Diagnostics" },
+        q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
+        l = { "<cmd>Trouble loclist<cr>", "LocationList" },
+        w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
 }
 
 --
 -- Additional Plugins ----------
 --
 lvim.plugins = {
-  { "folke/tokyonight.nvim" },
-  { "folke/trouble.nvim", cmd = "TroubleToggle" },
-  { "onsails/lspkind-nvim" },
-  { "hrsh7th/cmp-emoji" },
-  { "ray-x/cmp-treesitter" },
-  { "tamago324/cmp-zsh" },
-  { "hrsh7th/cmp-vsnip" },
-  { "hrsh7th/vim-vsnip" },
-  { "hrsh7th/vim-vsnip-integ" },
+        { "folke/tokyonight.nvim" },
+        { "folke/trouble.nvim", cmd = "TroubleToggle" },
+        { "onsails/lspkind-nvim" },
+        { "hrsh7th/cmp-emoji" },
+        { "ray-x/cmp-treesitter" },
+        { "tamago324/cmp-zsh" },
+        { "hrsh7th/cmp-vsnip" },
+        { "hrsh7th/vim-vsnip" },
+        { "hrsh7th/vim-vsnip-integ" },
 }
 
 --
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 --
 lvim.autocommands.custom_groups = {
-  { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
+        { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
 }
 
 --
@@ -150,7 +150,7 @@ vim.g.ruby_host_prog = "/home/colps/.local/share/gem/ruby/3.0.0/bin/bin/neovim-r
 -- end
 -- -- you can overwrite the null_ls setup table (useful for setting the root_dir function)
 lvim.lsp.null_ls.setup = {
-  root_dir = require("lspconfig").util.root_pattern("Makefile", ".git", "node_modules"),
+        root_dir = require("lspconfig").util.root_pattern("Makefile", ".git", "node_modules"),
 }
 -- formatters
 --lvim.lang.python.formatters = { { exe = "black" } }
@@ -164,59 +164,58 @@ lvim.lsp.null_ls.setup = {
 -- Telescope
 -- use j and k for navigation and n and p for history in both input and normal mode.
 lvim.builtin.telescope.on_config_done = function()
-  local actions = require "telescope.actions"
-  -- for input mode
-  lvim.builtin.telescope.defaults.mappings.i["<C-j>"] = actions.move_selection_next
-  lvim.builtin.telescope.defaults.mappings.i["<C-k>"] = actions.move_selection_previous
-  lvim.builtin.telescope.defaults.mappings.i["<C-n>"] = actions.cycle_history_next
-  lvim.builtin.telescope.defaults.mappings.i["<C-p>"] = actions.cycle_history_prev
-  -- for normal mode
-  lvim.builtin.telescope.defaults.mappings.n["<C-j>"] = actions.move_selection_next
-  lvim.builtin.telescope.defaults.mappings.n["<C-k>"] = actions.move_selection_previous
+        local actions = require "telescope.actions"
+        -- for input mode
+        lvim.builtin.telescope.defaults.mappings.i["<C-j>"] = actions.move_selection_next
+        lvim.builtin.telescope.defaults.mappings.i["<C-k>"] = actions.move_selection_previous
+        lvim.builtin.telescope.defaults.mappings.i["<C-n>"] = actions.cycle_history_next
+        lvim.builtin.telescope.defaults.mappings.i["<C-p>"] = actions.cycle_history_prev
+        -- for normal mode
+        lvim.builtin.telescope.defaults.mappings.n["<C-j>"] = actions.move_selection_next
+        lvim.builtin.telescope.defaults.mappings.n["<C-k>"] = actions.move_selection_previous
 end
 
 -- treesitter
 lvim.builtin.treesitter.ensure_installed = {
-  "bash",
-  "c",
-  "javascript",
-  "json",
-  "lua",
-  "python",
-  "typescript",
-  "css",
-  "rust",
-  "java",
-  "yaml",
-  "html",
+        "bash",
+        "c",
+        "javascript",
+        "json",
+        "lua",
+        "python",
+        "typescript",
+        "css",
+        "rust",
+        "java",
+        "yaml",
+        "html",
 }
 require'nvim-treesitter.configs'.setup {
-  indent = {
-    enable = true
-  },
-  incremental_selection = {
-    enable = true,
-    keymaps = {
-      init_selection = "gnn",
-      node_incremental = "grn",
-      scope_incremental = "grc",
-      node_decremental = "grm",
-    },
-  },
-   highlight = {
-    enable = true,
-    custom_captures = {
-      -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
-      ["foo.bar"] = "Identifier",
-    },
-    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-    -- Using this option may slow down your editor, and you may see some duplicate highlights.
-    -- Instead of true it can also be a list of languages
-    additional_vim_regex_highlighting = false,
-  },
+        indent = {
+                enable = true
+        },
+        incremental_selection = {
+                enable = true,
+                keymaps = {
+                        init_selection = "gnn",
+                        node_incremental = "grn",
+                        scope_incremental = "grc",
+                        node_decremental = "grm",
+                },
+        },
+        highlight = {
+                enable = true,
+                custom_captures = {
+                        -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
+                        ["foo.bar"] = "Identifier",
+                },
+                -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+                -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+                -- Using this option may slow down your editor, and you may see some duplicate highlights.
+                -- Instead of true it can also be a list of languages
+                additional_vim_regex_highlighting = false,
+        },
 }
 --
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
-

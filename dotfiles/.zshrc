@@ -180,7 +180,7 @@ source $HOME/Src/forgit/forgit.plugin.zsh
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-# fzf completion
+### fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ### wezterm

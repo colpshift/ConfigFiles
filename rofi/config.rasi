@@ -10,4 +10,6 @@ onfiguration {
 	kb-mode-next: "Shift+Right,Control+Tab";
 }
 //@theme "/usr/share/rofi/themes/dmenu.rasi"
-@theme "/usr/local/share/rofi/themes/dmenu.rasi"
+//@theme "/usr/local/share/rofi/themes/dmenu.rasi"
+//@theme "/usr/share/rofi/themes/dmenu.rasi"
+@theme "/usr/share/rofi/themes/dmenu.rasi"

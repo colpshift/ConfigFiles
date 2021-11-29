@@ -36,11 +36,11 @@ bspc config presel_feedback_color	"#5e81ac"
 #bspc config urgent_border_color 	"#dd2727"
 
 #Single monitor
-#bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 #Dual monitor
-bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9
-bspc monitor HDMI-1 -d 10
+#bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9
+#bspc monitor HDMI-1 -d 10
 
 #Fullscreen applications
 #bspc rule -a Gimp state=fullscreen
@@ -56,6 +56,8 @@ bspc rule -a 'QML Timer' state=floating sticky=on
 bspc rule -a Zathura state=tiled
 
 #open applications on specific workspaces
+# Office
+bspc rule -a Joplin desktop='^3'
 # messages
 bspc rule -a Skype desktop='^9'
 bspc rule -a discord desktop='^9'
@@ -64,11 +66,13 @@ bspc rule -a Rambox desktop='^9'
 bspc rule -a zoom desktop='^9'
 bspc rule -a 'Microsoft Teams - Preview' desktop='^9'
 # images
-bspc rule -a 'Gimp-2.10' desktop='^5'
+bspc rule -a Gimp desktop='^5'
 bspc rule -a Ristretto desktop='^5'
 bspc rule -a Dia desktop='^5'
 bspc rule -a Inkscape desktop='^5'
 bspc rule -a XMind desktop='^5'
+# video
+bspc rule -a Stremio desktop='^10'
 # arcolinux
 bspc rule -a Arcolinux-tweak-tool.py desktop='^7' follow=on
 bspc rule -a Arcolinux-welcome-app.py desktop='^7' follow=on

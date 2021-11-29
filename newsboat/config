@@ -15,7 +15,7 @@ keep-articles-days 90
 cache-file "/home/colps/.newsboat/cache.db"
 cookie-cache "/home/colps/.newsboat/cookies.txt"
 
-browser "brave --new-tab %u"
+browser "firefox %u"
 macro m set browser "devour mpv %u" ; open-in-browser ;
 
 notify-always yes

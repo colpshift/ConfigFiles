@@ -2,42 +2,42 @@
  * ROFI Color theme
  * User: Qball
  * Copyright: Dave Davenport
- * /usr/share/rofi/theme/dmenu.rasi
  */
-* {
-    background-color:   #2F343F;
-    border-color:       White;
-    text-color:         #f3f4f5;
-    font:            	"Noto Sans 10";
-}
 
+* {
+    background-color:      Black;
+    border-color:          White;
+    text-color:           White;
+    font:            "Times New Roman 12";
+}
 window {
     anchor:     north;
     location:   north;
     width:      100%;
-    padding:    3px;
+    padding:    4px;
     children:   [ horibox ];
 }
-
 horibox {
     orientation: horizontal;
     children:   [ prompt, entry, listview ];
 }
-
 listview {
     layout:     horizontal;
-    spacing:    3px;
+    spacing:    5px;
     lines:      100;
 }
-
 entry {
     expand:     false;
     width:      10em;
 }
-
 element {
-    padding: 1px 1px;
+    padding: 0px 2px;
 }
 element selected {
-    background-color: #5e81ac;
+    background-color: SteelBlue;
+}
+
+element-text, element-icon {
+  background-color: inherit;
+  text-color: inherit;
 }

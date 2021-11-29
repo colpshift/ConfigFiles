@@ -134,7 +134,7 @@ vim.opt.swapfile = false -- creates a swapfile
 vim.opt.conceallevel = 0 -- so that `` is visible in markdown files
 vim.g.python3_host_prog = "/bin/python3"
 vim.g.python_host_prog = "/bin/python2"
-vim.g.ruby_host_prog = "/home/colps/.local/share/gem/ruby/3.0.0/bin/bin/neovim-ruby-host"
+vim.g.ruby_host_prog = "/home/colps/.local/share/gem/ruby/3.0.0/bin/neovim-ruby-host"
 
 --
 -- LSP settings ----------

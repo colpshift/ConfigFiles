@@ -4,19 +4,19 @@
 
 # thunar
 super + e
-    thunar
+    bspc desktop --focus ^8 && pcmanfm
 
 # vscode
 super + c
-    code
+    bspc desktop --focus ^4 && code
 
 # Browser
 super + w
-    firefox
+    bspc desktop --focus ^2 && firefox
 
 # firefox
 super + shift + w
-    firefox
+    bspc desktop --focus ^2 && firefox
 
 # wezterm
 super + Return
@@ -24,15 +24,15 @@ super + Return
 
 # bpytop
 super + h
-    wezterm start bpytop
+    bspc desktop --focus ^7 && wezterm start bpytop
 
 # newsboat
 super + r
-    wezterm start newsboat
+    bspc desktop --focus ^3 && wezterm start newsboat
 
 # ncmpcpp
 super + m
-    wezterm start ncmpcpp
+    bspc desktop --focus ^6 && wezterm start ncmpcpp
 
 # audacious
 super + shift + m
@@ -42,25 +42,20 @@ super + shift + m
 super + Print
     flameshot gui
 
-# rofi
-super + z
-    rofi -show drun -markup
+# logout
+super + x
+    arcolinux-logout
 
 # dmenu
 super + shift + d
     dmenu_run -i -nb '#2F343F' -nf '#f3f4f5' -sb '#4682B4' -sf '#ffffff' -fn 'NotoSans:pixelsize=13'
 
+# rofi
+super + z
+    rofi -show drun
 #
 # bspwm hotkeys --------------------------------------------
 #
-
-# lockscreen
-super + l
-    betterlockscreen -l
-
-# logout
-super + x
-    arcolinux-logout
 
 # kill
 super + q

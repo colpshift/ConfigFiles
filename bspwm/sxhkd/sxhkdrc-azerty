@@ -64,7 +64,7 @@ super + e
 
 #Browser
 super + w
-    firefox
+    vivaldi-stable
 
 #Conky-toggle
 super + c
@@ -94,9 +94,9 @@ super + v
 super + m
     pragha
 
-#terminal
+#urxvt
 super + Return
-    wezterm
+    urxvt
 
 #Xkill
 super + Escape
@@ -573,12 +573,12 @@ ctrl + alt + Down
 
 #Switch here between qwerty and azerty or make new one
 #Focus selected desktop FOR QWERTY KEYBOARDS
-super + {1-9,0}
-	bspc desktop -f '^{1-9,10}'
+#super + {1-9,0}
+#	bspc desktop -f '^{1-9,10}'1323&
 
 #Focus selected desktop	FOR BELIGIAN AZERTY KEYBOARDS
-#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-#    bspc desktop -f '^{1-9,10}'
+super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+    bspc desktop -f '^{1-9,10}'
 
 #Focus selected desktop	FOR FRNECH AZERTY KEYBOARDS
 #super + {ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
@@ -588,12 +588,12 @@ super + {1-9,0}
 
 #Switch here between qwerty and azerty or make new one
 #Move window to selected desktop FOR QWERTY KEYBOARDS
-super + shift + {1-9,0}
-    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
+#super + shift + {1-9,0}
+#    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
 #Move window to selected desktop FOR AZERTY KEYBOARDS
-#super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-#    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
+super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
 #################################################################
 

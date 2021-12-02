@@ -41,6 +41,9 @@ export DEFAULT_RECIPIENT="marcos.colpani@gmail.com"
 export CHEAT_CONFIG_PATH="$HOME/.config/cheat/conf.yml"
 export CHEAT_USE_FZF=true
 
+### go
+export GOPATH="$HOME/go"
+
 ### ruby
 export GEM_HOME="$HOME/.local/share/gem/ruby/3.0.0/bin"
 

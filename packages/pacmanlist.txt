@@ -122,7 +122,7 @@ bubblewrap 0.5.0-1
 bzip2 1.0.8-4
 c-ares 1.18.1-1
 ca-certificates 20210603-1
-ca-certificates-mozilla 3.72-2
+ca-certificates-mozilla 3.73-1
 ca-certificates-utils 20210603-1
 caffeine-ng 3.5.1-2
 cairo 1.17.4-5
@@ -262,7 +262,7 @@ glib-networking 1:2.70.0-1
 glib2 2.70.1-1
 glibc 2.33-5
 glibmm 2.66.2-1
-glslang 11.7.1-1
+glslang 11.7.1-2
 gmp 6.2.1-1
 gnome-bluetooth 3.34.5-2
 gnome-desktop 1:41.1-1
@@ -699,8 +699,11 @@ lshw B.02.19.2-3
 lsof 4.94.0-1
 lsscsi 0.32-1
 lua 5.4.3-1
+lua-argparse 0.7.1-1
+lua-filesystem 1.8.0-3
 lua51 5.1.5-9
 lua52 5.2.4-5
+luacheck 0.25.0-1
 luajit 2.0.5-3
 luit 20210218-1
 lv2 1.18.2-1
@@ -775,7 +778,7 @@ noto-fonts 20201226-2
 npm 8.1.3-1
 npth 1.6-3
 nspr 4.32-1
-nss 3.72-2
+nss 3.73-1
 nss-mdns 0.15.1-1
 ntfs-3g 2021.8.22-1
 ntp 4.2.8.p15-1

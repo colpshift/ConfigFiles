@@ -7,6 +7,7 @@
 local wezterm = require 'wezterm';
 return {
   --font, color and opacity
+  font = wezterm.font("JetBrains Mono"),
   font_size = 10,
   window_background_opacity = 0.80,
   color_scheme = "iceberg-dark",

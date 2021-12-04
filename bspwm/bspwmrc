@@ -58,6 +58,7 @@ bspc rule -a Zathura state=tiled
 #open applications on specific workspaces
 # Office
 bspc rule -a Joplin desktop='^3'
+bspc rule -a Todoist desktop='^3'
 # messages
 bspc rule -a Skype desktop='^9'
 bspc rule -a discord desktop='^9'

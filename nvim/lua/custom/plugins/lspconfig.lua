@@ -9,7 +9,19 @@ M.setup_lsp = function(attach, capabilities)
 
    -- lspservers with default config
 
-   local servers = { "html", "cssls", "pyright", "bashls", "jsonls", "tsserver", "vimls", "sumneko_lua", "rust_analyzer", "solargraph", "gopls" }
+   local servers = {
+      "html",
+      "cssls",
+      "pyright",
+      "bashls",
+      "jsonls",
+      "tsserver",
+      "vimls",
+      "sumneko_lua",
+      "rust_analyzer",
+      "solargraph",
+      "gopls",
+   }
 
    for _, lsp in ipairs(servers) do
       lspconfig[lsp].setup {
@@ -20,20 +32,20 @@ M.setup_lsp = function(attach, capabilities)
          },
       }
    end
-   
+   --
    -- typescript
 
- lspconfig.tsserver.setup {
+   lspconfig.tsserver.setup {
       on_attach = function(client, bufnr)
          client.resolved_capabilities.document_formatting = false
          vim.api.nvim_buf_set_keymap(bufnr, "n", "<space>fm", "<cmd>lua vim.lsp.buf.formatting()<CR>", {})
       end,
    }
 
--- the above tsserver config will remvoe the tsserver's inbuilt formatting 
--- since I use null-ls with denofmt for formatting ts/js stuff.
+   -- the above tsserver config will remvoe the tsserver's inbuilt formatting
+   -- since I use null-ls with denofmt for formatting ts/js stuff.
 
--- lsp installer
+   -- lsp installer
    local lsp_installer = require "nvim-lsp-installer"
 
    lsp_installer.on_server_ready(function(server)
@@ -64,16 +76,26 @@ M.setup_lsp = function(attach, capabilities)
             attach(client, bufnr)
 
             -- Use nvim-code-action-menu for code actions for rust
-            buf_set_keymap(bufnr, "n", "<leader>ca", "lua vim.lsp.buf.range_code_action()<CR>", { noremap = true, silent = true })
-            buf_set_keymap(bufnr, "v", "<leader>ca", "lua vim.lsp.buf.range_code_action()<CR>", { noremap = true, silent = true })
+            buf_set_keymap(
+               bufnr,
+               "n",
+               "<leader>ca",
+               "lua vim.lsp.buf.range_code_action()<CR>",
+               { noremap = true, silent = true }
+            )
+            buf_set_keymap(
+               bufnr,
+               "v",
+               "<leader>ca",
+               "lua vim.lsp.buf.range_code_action()<CR>",
+               { noremap = true, silent = true }
+            )
          end
       end
 
       server:setup(opts)
       vim.cmd [[ do User LspAttachBuffers ]]
    end)
-
 end
 
 return M
-

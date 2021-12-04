@@ -11,7 +11,7 @@ adobe-source-han-sans-kr-fonts 2.004-1
 adobe-source-sans-fonts 3.046-1
 adwaita-icon-theme 41.0-1
 aic94xx-firmware 30-9
-alacritty 0.9.0-1
+alacritty 0.9.0-2
 alsa-card-profiles 1:0.3.40-1
 alsa-firmware 1.2.4-2
 alsa-lib 1.2.5.1-3
@@ -21,7 +21,7 @@ alsa-ucm-conf 1.2.5.1-1
 alsa-utils 1.2.5.1-1
 aom 3.2.0-1
 apparmor 3.0.3-1
-appstream 0.14.6-2
+appstream 0.15.0-1
 appstream-glib 0.7.18-2
 arandr 0.1.10-6
 arc-darkest-theme-git r172.c8bdaead59-1
@@ -60,7 +60,7 @@ arcolinux-neofetch-git 21.07-01
 arcolinux-nitrogen-git 21.07-01
 arcolinux-paru-git 21.07-01
 arcolinux-pipemenus-git 21.11-01
-arcolinux-polybar-git 21.09-02
+arcolinux-polybar-git 21.12-03
 arcolinux-qt5-git 21.07-01
 arcolinux-rofi-git 21.09-02
 arcolinux-rofi-themes-git 21.07-01
@@ -114,7 +114,7 @@ bluez-libs 5.62-1
 bluez-tools 0.2.0-5
 bluez-utils 5.62-1
 bpytop 1.0.67-1
-broadcom-wl 6.30.223.271-346
+broadcom-wl 6.30.223.271-347
 brotli 1.0.9-4
 bspwm 0.9.10-1
 btrfs-progs 5.15.1-1
@@ -137,6 +137,7 @@ chaotic-mirrorlist 20211129-1
 chromaprint 1.5.0-3
 cifs-utils 6.14-1
 clonezilla 3.35.2-3
+cmake 3.22.0-1
 cmatrix 2.0-2
 colord 1.4.5-4
 confuse 3.3-3
@@ -272,7 +273,7 @@ gnome-themes-extra 3.28-2
 gnu-netcat 0.7.1-8
 gnupg 2.2.32-2
 gnutls 3.7.2-2
-go 2:1.17.3-1
+go 2:1.17.4-1
 gobject-introspection 1.70.0-2
 gobject-introspection-runtime 1.70.0-2
 gopls 0.7.3-1
@@ -660,6 +661,7 @@ libxkbcommon-x11 1.3.1-1
 libxkbfile 1.1.0-2
 libxklavier 5.4-3
 libxml2 2.9.12-3
+libxmlb 0.3.4-1
 libxmu 1.1.3-2
 libxnvctrl 495.44-1
 libxpm 3.5.13-2
@@ -682,11 +684,11 @@ lightdm 1:1.30.0-4
 lightdm-gtk-greeter 1:2.0.8-1
 lightdm-gtk-greeter-settings 1.2.2-6
 lilv 0.24.12-2
-linux 5.15.5.arch1-1
+linux 5.15.6.arch2-1
 linux-api-headers 5.12.3-1
 linux-atm 2.5.2-7
 linux-firmware 20211027.1d00989-1
-linux-headers 5.15.5.arch1-1
+linux-headers 5.15.6.arch2-1
 lirc 1:0.10.1-8
 llvm-libs 13.0.0-3
 lm_sensors 1:3.6.0.r41.g31d1f125-1
@@ -701,10 +703,13 @@ lsscsi 0.32-1
 lua 5.4.3-1
 lua-argparse 0.7.1-1
 lua-filesystem 1.8.0-3
+lua-sec 2:1.0.2-1
+lua-socket 20200329-1
 lua51 5.1.5-9
 lua52 5.2.4-5
 luacheck 0.25.0-1
 luajit 2.0.5-3
+luarocks 3.8.0-1
 luit 20210218-1
 lv2 1.18.2-1
 lvm2 2.03.14-2
@@ -730,7 +735,7 @@ metis 5.1.0.p10-2
 minizip 1:1.2.11-4
 mintstick-git r221.e7b1893-1
 mjpegtools 2.2.1-1
-mkinitcpio 31-1
+mkinitcpio 31-2
 mkinitcpio-busybox 1.34.1-1
 mkinitcpio-nfs-utils 0.3-7
 mkinitcpio-openswap 0.1.0-3
@@ -816,7 +821,7 @@ pahole 1.22-1
 pam 1.5.2-1
 pamac-all 10.3.0-2
 pambase 20211111-1
-pango 1:1.48.10-1
+pango 1:1.50.0-1
 pangomm 2.46.1-2
 paper-icon-theme 1.5.0-2
 papirus-icon-theme 20211101-1
@@ -1026,10 +1031,11 @@ readline 8.1.001-1
 reflector 2021.7.8-1
 reiserfsprogs 3.6.27-3
 rest 0.8.1-3
+rhash 1.4.2-1
 ripgrep 13.0.0-2
 ristretto 0.12.1-1
 rnnoise 0.4.1-1
-rofi 1.7.1-1
+rofi 1.7.2-1
 rp-pppoe 3.15-2
 rpcbind 1.2.6-1
 rsync 3.2.3-4
@@ -1125,6 +1131,7 @@ timeshift 21.09.1-3
 tk 8.6.12-1
 tlp 1.4.0-1
 tmux 3.2_a-1
+todoist-appimage 1.0.2-1
 tolua++ 1.0.93-4
 tor-browser 11.0-1
 tpm2-tss 3.1.0-1

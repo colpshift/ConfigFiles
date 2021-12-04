@@ -15,13 +15,13 @@ M.options = {
 }
 
 -- M.ui = {
---   theme = "Tokyonight",
+--    theme = "Tokyonight",
 -- }
 
 -- NvChad included plugin options & overrides
 M.plugins = {
    status = {
-      dashboard = true,
+      -- dashboard = true,
    },
    options = {
       lspconfig = {

@@ -24,6 +24,9 @@ opt.ignorecase = options.ignorecase
 opt.smartcase = options.smartcase
 opt.mouse = options.mouse
 
+-- Stop sourcing filetype.vim
+vim.g.did_load_filetypes = 1
+
 -- Numbers
 opt.number = options.number
 opt.numberwidth = options.numberwidth

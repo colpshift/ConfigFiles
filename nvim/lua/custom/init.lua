@@ -31,18 +31,33 @@ local hooks = require "core.hooks"
 -- see: https://github.com/wbthomason/packer.nvim
 -- examples below:
 
- hooks.add("install_plugins", function(use)
-    use {
+hooks.add("install_plugins", function(use)
+   use {
       "williamboman/nvim-lsp-installer",
    }
-    use {
+   use {
       "jose-elias-alvarez/null-ls.nvim",
       after = "nvim-lspconfig",
       config = function()
          require("custom.plugins.null-ls").setup()
       end,
    }
- end)
+   use {
+      "nathom/filetype.nvim",
+   }
+   use {
+      "karb94/neoscroll.nvim",
+      opt = true,
+      config = function()
+         require("neoscroll").setup()
+      end,
+
+      -- lazy loading
+      setup = function()
+         require("core.utils").packer_lazy_load "neoscroll.nvim"
+      end,
+   }
+end)
 
 -- alternatively, put this in a sub-folder like "lua/custom/plugins/mkdir"
 -- then source it with

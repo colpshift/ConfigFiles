@@ -164,6 +164,6 @@ source $HOME/.config/wezterm/wezterm_integration.sh
 ### zsh_functions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
-# fzf completion
+### fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

@@ -137,8 +137,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
-#bindkey "$terminfo[kcuu1]" history-substring-search-up
-#bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 # command is not found
@@ -157,21 +155,8 @@ eval "$(starship init zsh)"
 GPG_TTY=$(tty)
 export GPG_TTY
 
-### rust
-source $HOME/.cargo/env
-
-### nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-### ruby
-eval "$(rbenv init -)"
-
 ### fasd
 eval "$(fasd --init auto)"
-
-### forgit
-source $HOME/Src/forgit/forgit.plugin.zsh
 
 ### wezterm
 source $HOME/.config/wezterm/wezterm_integration.sh
@@ -181,3 +166,4 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 # fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

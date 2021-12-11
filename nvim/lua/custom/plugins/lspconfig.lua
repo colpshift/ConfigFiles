@@ -21,6 +21,9 @@ M.setup_lsp = function(attach, capabilities)
       "rust_analyzer",
       "solargraph",
       "gopls",
+      "php",
+      "intelephense",
+      "jdtls",
    }
 
    for _, lsp in ipairs(servers) do
@@ -44,6 +47,34 @@ M.setup_lsp = function(attach, capabilities)
 
    -- the above tsserver config will remvoe the tsserver's inbuilt formatting
    -- since I use null-ls with denofmt for formatting ts/js stuff.
+   --
+   -- php
+
+   lspconfig.intelephense.setup {
+      settings = {
+         intelephense = {
+            stubs = {
+               "bcmath",
+               "bz2",
+               "calendar",
+               "Core",
+               "curl",
+               "zip",
+               "zlib",
+               "wordpress",
+               "woocommerce",
+               "acf-pro",
+               "wordpress-globals",
+               "wp-cli",
+               "genesis",
+               "polylang",
+            },
+            files = {
+               maxSize = 5000000,
+            },
+         },
+      },
+   }
 
    -- lsp installer
    local lsp_installer = require "nvim-lsp-installer"

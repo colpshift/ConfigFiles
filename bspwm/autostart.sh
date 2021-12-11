@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function run {
-  if ! pgrep $1 ;
+  if ! pgrep "$1" ;
   then
     $@&
   fi
@@ -16,13 +16,13 @@ function run {
 #autorandr horizontal
 
 ### polybar
-$HOME/.config/polybar/launch.sh &
+"$HOME/.config/polybar/launch.sh" &
 
 ### keyboard
-keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')	## layout
-run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &	## keybinds
-xset r rate 210 40	# faster key repeat and delay
-numlockx on & # active numlock
+#keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')	## layout
+run sxhkd -c "$HOME/.config/bspwm/sxhkd/sxhkdrc" &	# keybinds
+xset r rate 210 40                                      # faster key repeat and delay
+numlockx on &                                           # active numlock
 run xbanish &
 
 ### wallpaper 
@@ -30,7 +30,7 @@ run xbanish &
 #feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #feh --randomize --bg-fill ~/Képek/*
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
-$HOME/.fehbg
+"$HOME/.fehbg"
 
 ### cursor
 xsetroot -cursor_name left_ptr &
@@ -46,10 +46,10 @@ run copyq
 run flameshot
 run joplin-desktop
 run wezterm
-picom --config $HOME/.config/bspwm/picom.conf &
+picom --config "$HOME/.config/bspwm/picom.conf" &
 
 ### daemons
 run xfce4-power-manager &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-/usr/lib/xfce4/notifyd/xfce4-notifyd &
+"/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" &
+"/usr/lib/xfce4/notifyd/xfce4-notifyd" &
 

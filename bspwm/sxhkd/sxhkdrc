@@ -4,7 +4,7 @@
 
 # thunar
 super + e
-    bspc desktop --focus ^8 && pcmanfm
+    bspc desktop --focus ^8 && thunar
 
 # vscode
 super + c

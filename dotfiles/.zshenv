@@ -10,6 +10,9 @@
 typeset -U path
 path=($HOME/.local/bin $HOME/go/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $HOME/.local/share/gem/ruby/3.0.0/bin/ $HOME/.node_modules $path[@])
 
+# default e-mail
+export DEFAULT_RECIPIENT="marcos.colpani@gmail.com"
+
 ### fzf
 # colorscheme nord
 export FZF_DEFAULT_OPTS='--ansi --color=bg+:#3B4252,bg:#2E3440,spinner:#81A1C1,hl:#616E88,fg:#D8DEE9,header:#616E88,info:#81A1C1,pointer:#81A1C1,marker:#81A1C1,fg+:#D8DEE9,prompt:#81A1C1,hl+:#81A1C1'
@@ -22,6 +25,7 @@ export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap 
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || bat --theme Nord {} || tree -C {}) 2> /dev/null | head -200'"
 
 ### forgit
+source $HOME/Src/forgit/forgit.plugin.zsh
 export FORGIT_LOG_GRAPH_ENABLE="true"
 export FORGIT_LOG_FZF_OPTS='
 --bind="ctrl-e:execute(echo {} |grep -Eo [a-f0-9]+ |head -1 |xargs git show |vim -)"
@@ -34,9 +38,6 @@ export FORGIT_FZF_DEFAULT_OPTS="
 "
 export FORGIT_COPY_CMD='xclip -selection clipboard'
 
-# default e-mail
-export DEFAULT_RECIPIENT="marcos.colpani@gmail.com"
-
 ### cheat
 export CHEAT_CONFIG_PATH="$HOME/.config/cheat/conf.yml"
 export CHEAT_USE_FZF=true
@@ -45,13 +46,23 @@ export CHEAT_USE_FZF=true
 export GOPATH="$HOME/go"
 
 ### ruby
+eval "$(rbenv init -)"
 export GEM_HOME="$HOME/.local/share/gem/ruby/3.0.0/bin"
+export RUBY_HOST_PROG="/home/colps/.local/share/gem/ruby/3.0.0/bin/neovim-ruby-host",
+
+### rust
+source $HOME/.cargo/env
+# . "$HOME/.cargo/env"
+
+### nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ### perl
-PATH="/home/colps/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/colps/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/colps/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/colps/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/colps/perl5"; export PERL_MM_OPT;
+# PATH="/home/colps/perl5/bin${PATH:+:${PATH}}"; export PATH;
+# PERL5LIB="/home/colps/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+# PERL_LOCAL_LIB_ROOT="/home/colps/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+# PERL_MB_OPT="--install_base \"/home/colps/perl5\""; export PERL_MB_OPT;
+# PERL_MM_OPT="INSTALL_BASE=/home/colps/perl5"; export PERL_MM_OPT;
 
-. "$HOME/.cargo/env"

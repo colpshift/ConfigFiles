@@ -57,6 +57,10 @@ hooks.add("install_plugins", function(use)
          require("core.utils").packer_lazy_load "neoscroll.nvim"
       end,
    }
+   use {
+      "hrsh7th/cmp-emoji",
+      after = "nvim-cmp",
+   }
 end)
 
 -- alternatively, put this in a sub-folder like "lua/custom/plugins/mkdir"

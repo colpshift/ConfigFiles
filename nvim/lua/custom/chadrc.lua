@@ -9,9 +9,6 @@ M.options = {
    dashboard = true,
    writebackup = false,
    swapfile = false,
-   python3_host_prog = "/bin/python3",
-   python_host_prog = "/bin/python2",
-   ruby_host_prog = "/home/colps/.local/share/gem/ruby/3.0.0/bin/neovim-ruby-host",
 }
 
 -- M.ui = {
@@ -27,7 +24,7 @@ M.plugins = {
       lspconfig = {
          setup_lspconf = "custom.plugins.lspconfig",
       },
-   },
+    },
    -- To change the Packer `config` of a plugin that comes with NvChad,
    -- add a table entry below matching the plugin github name
    --              '-' -> '_', remove any '.lua', '.nvim' extensions
@@ -38,3 +35,4 @@ M.plugins = {
 }
 
 return M
+

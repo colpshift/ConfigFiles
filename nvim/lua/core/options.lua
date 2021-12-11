@@ -51,6 +51,10 @@ opt.updatetime = options.updatetime
 -- when cursor reaches end/beginning of line
 opt.whichwrap:append "<>[]hl"
 
+-- variables paths
+g.python_host_prog = "/bin/python2"
+g.python3_host_prog = "/bin/python3"
+
 g.mapleader = options.mapleader
 
 -- disable some builtin vim plugins

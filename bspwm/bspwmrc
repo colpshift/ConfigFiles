@@ -59,6 +59,7 @@ bspc rule -a Zathura state=tiled
 # Office
 bspc rule -a Joplin desktop='^3'
 bspc rule -a Todoist desktop='^3'
+bspc rule -a Chromium desktop='^3'
 # messages
 bspc rule -a Skype desktop='^9'
 bspc rule -a discord desktop='^9'

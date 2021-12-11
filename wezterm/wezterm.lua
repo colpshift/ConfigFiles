@@ -7,7 +7,8 @@
 local wezterm = require 'wezterm';
 return {
   --font, color and opacity
-  font = wezterm.font("JetBrains Mono"),
+  -- font = wezterm.font("JetBrains Mono Medium Nerd Font Complete"),
+  -- font = wezterm.font("Sauce Code Pro Nerd Font Mono"),
   font_size = 10,
   window_background_opacity = 0.80,
   color_scheme = "iceberg-dark",
@@ -25,7 +26,7 @@ return {
     bottom = 1,
   },
   -- check updates
-  --check_for_updates = true,
-  --check_for_updates_interval_seconds = 86400,
+  check_for_updates = true,
+  check_for_updates_interval_seconds = 86400,
 }
 

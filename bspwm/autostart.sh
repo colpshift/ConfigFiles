@@ -36,7 +36,7 @@ run xbanish &
 xsetroot -cursor_name left_ptr &
 
 ### tray apps
-run caffeine &
+# run caffeine &
 run rambox
 blueberry-tray &
 run nm-applet &

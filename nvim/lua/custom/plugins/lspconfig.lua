@@ -21,8 +21,6 @@ M.setup_lsp = function(attach, capabilities)
       "rust_analyzer",
       "solargraph",
       "gopls",
-      "php",
-      "intelephense",
       "jdtls",
    }
 

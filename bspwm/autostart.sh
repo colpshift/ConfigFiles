@@ -52,4 +52,5 @@ picom --config "$HOME/.config/bspwm/picom.conf" &
 run xfce4-power-manager &
 "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" &
 "/usr/lib/xfce4/notifyd/xfce4-notifyd" &
+"$HOME/.scripts/mpd_start.sh"
 

@@ -56,10 +56,12 @@ bspc rule -a 'QML Timer' state=floating sticky=on
 bspc rule -a Zathura state=tiled
 
 #open applications on specific workspaces
+# dev
+bspc rule -a Luakit desktop='^4'
 # Office
 bspc rule -a Joplin desktop='^3'
 bspc rule -a Todoist desktop='^3'
-bspc rule -a Chromium desktop='^3'
+bspc rule -a Google-chrome desktop='^3'
 bspc rule -a libreoffice-startcenter desktop='^3'
 # messages
 bspc rule -a Skype desktop='^9'

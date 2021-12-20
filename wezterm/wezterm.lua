@@ -27,13 +27,13 @@ return {
 	keys = {
 		-- SplitHorizontal
 		{
-			key = "h",
+			key = "v",
 			mods = "CTRL|ALT",
 			action = wezterm.action({ SplitHorizontal = { domain = "CurrentPaneDomain" } }),
 		},
 		-- SplitVertical
 		{
-			key = "v",
+			key = "h",
 			mods = "CTRL|ALT",
 			action = wezterm.action({ SplitVertical = { domain = "CurrentPaneDomain" } }),
 		},

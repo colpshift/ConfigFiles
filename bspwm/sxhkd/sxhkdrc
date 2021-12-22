@@ -18,21 +18,21 @@ super + w
 super + shift + w
     bspc desktop --focus ^2 && firefox
 
-# wezterm
+# kitty
 super + Return
-    wezterm
+    kitty
 
 # bpytop
 super + h
-    bspc desktop --focus ^7 && wezterm start bpytop
+    bspc desktop --focus ^7 && kitty bpytop
 
 # newsboat
 super + r
-    bspc desktop --focus ^3 && wezterm start newsboat
+    bspc desktop --focus ^3 && kitty newsboat
 
 # ncmpcpp
 super + m
-    bspc desktop --focus ^6 && wezterm start ncmpcpp
+    bspc desktop --focus ^6 && kitty ncmpcpp
 
 # audacious
 super + shift + m

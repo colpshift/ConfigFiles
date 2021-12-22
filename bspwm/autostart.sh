@@ -45,7 +45,7 @@ run nm-applet &
 run copyq
 run flameshot
 run joplin-desktop
-run wezterm
+run kitty
 picom --config "$HOME/.config/bspwm/picom.conf" &
 
 ### daemons

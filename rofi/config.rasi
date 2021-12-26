@@ -1,8 +1,8 @@
-onfiguration {
+Configuration {
 	modi: "drun,run,window,ssh";
 	width: 30;
 	lines: 10;
-	font: "Noto Sans Regular 10";
+        font: "Fira Code Regular Nerd Font Complete Mono 8";
 	show-icons: true;
 	ssh-client: "ssh";
 	cycle: true;

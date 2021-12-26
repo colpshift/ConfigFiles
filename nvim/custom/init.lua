@@ -43,13 +43,12 @@ hooks.add("install_plugins", function(use)
       end,
    }
    use {
-      "nathom/filetype.nvim",
-   }
-   use {
       "hrsh7th/cmp-emoji",
       after = "nvim-cmp",
    }
-   use { "davidgranstrom/nvim-markdown-preview" }
+   use {
+      "davidgranstrom/nvim-markdown-preview",
+   }
 end)
 
 -- alternatively, put this in a sub-folder like "lua/custom/plugins/mkdir"

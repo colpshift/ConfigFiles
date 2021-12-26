@@ -54,4 +54,5 @@ export MANWIDTH=999
 export EDITOR=nvim
 export VISUAL=nvim
 export BROWSER=firefox
+export TERM=xterm-kitty
 

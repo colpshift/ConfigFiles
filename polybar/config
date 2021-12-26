@@ -87,8 +87,8 @@ border-color = #00000000
 padding-left = 1
 padding-right = 1
 
-module-margin-left = 3
-module-margin-right = 3
+module-margin-left = 2
+module-margin-right = 2
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "Noto Sans:size=9;0"
@@ -98,7 +98,7 @@ font-3 = "Noto Sans Mono:size=9;0"
 
 modules-left = bspwm
 ;wmodules-center = networkspeeddown networkspeedup
-modules-right = kernel load-average cpu2 temperature1 memory2 battery arch-updates gmail check-internet backlight-acpi pavolume weather date
+modules-right = kernel cpu2 temperature1 memory2 battery networkspeeddown networkspeedup check-internet arch-updates gmail backlight-acpi pavolume weather date
 
 tray-detached = false
 tray-offset-x = 0
@@ -270,6 +270,9 @@ format-underline = #ffd04e
 ################################################################################
 
 [module/backlight-acpi]
+;
+; add the user to the `video` group and give that group write-privileges for the `brightness` file.
+;
 inherit = module/xbacklight
 type = internal/backlight
 card = intel_backlight
@@ -451,8 +454,8 @@ type = internal/date
 interval = 5
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = "%a %Y-%m-%d%"
-date-alt = "%a %d-%m-%Y"
+date = "%Y-%m-%d%"
+date-alt = "%A %d-%m-%Y"
 time = %H:%M
 time-alt = %H:%M
 format-prefix = " "
@@ -727,7 +730,7 @@ format-connected-prefix = ""
 format-connected-prefix-foreground = #FE522C
 format-connected-foreground = ${colors.foreground}
 format-connected-background = ${colors.background}
-;format-connected-underline = #62FF00
+format-connected-underline = #62FF00
 
 ################################################################################
 
@@ -741,7 +744,7 @@ format-connected-prefix = ""
 format-connected-prefix-foreground = #3EC13F
 format-connected-foreground = ${colors.foreground}
 format-connected-background = ${colors.background}
-;format-connected-underline = #62FF00
+format-connected-underline = #62FF00
 
 ################################################################################
 
@@ -799,7 +802,7 @@ exec = ~/.config/polybar/scripts/check_internet.sh
 interval = 5
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-underline = #ffd04e
+format-underline = #62FF00
 label = %output%
 format-prefix = "  "
 format-prefix-foreground = #ffd04e

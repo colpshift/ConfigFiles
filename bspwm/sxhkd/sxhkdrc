@@ -10,13 +10,13 @@ super + e
 super + c
     bspc desktop --focus ^4 && code
 
-# Browser
+# firefox
 super + w
     bspc desktop --focus ^2 && firefox
 
-# firefox
+# chrome
 super + shift + w
-    bspc desktop --focus ^2 && firefox
+    bspc desktop --focus ^3 && google-chrome-stable
 
 # kitty
 super + Return

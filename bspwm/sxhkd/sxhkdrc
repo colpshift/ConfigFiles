@@ -38,6 +38,10 @@ super + m
 super + shift + m
     audacious
 
+# backup restore
+super + shift + b
+    bspc desktop --focus ^7 && timeshift-launcher 
+
 # flameshot
 super + Print
     flameshot gui

@@ -158,12 +158,6 @@ export GPG_TTY
 ### fasd
 eval "$(fasd --init auto)"
 
-### wezterm
-sh $HOME/.config/wezterm/wezterm_integration.sh
-
 ### zsh_functions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-
-### fzf completion
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

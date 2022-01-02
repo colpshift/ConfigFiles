@@ -6,20 +6,21 @@
 prepopulate-query-feeds yes
 
 auto-reload yes
-reload-time 30
-reload-threads 100
+reload-time 60
+reload-threads 3
 show-read-feeds yes
 
 article-sort-order date-asc
-keep-articles-days 90
+keep-articles-days 30
 cache-file "/home/colps/.newsboat/cache.db"
 cookie-cache "/home/colps/.newsboat/cookies.txt"
 
-browser "firefox %u"
+browser "brave %u"
 macro m set browser "devour mpv %u" ; open-in-browser ;
 
 notify-always yes
-notify-format "Newsboat :: %n unread articles"
+#notify-format "Newsboat :: %n unread articles"
+notify-format "%d new articles :: %n unread articles"
 notify-program "/bin/notify-send"
 
 # nord theme

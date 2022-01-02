@@ -11,12 +11,12 @@ super + c
     bspc desktop --focus ^4 && code
 
 # firefox
-super + w
-    bspc desktop --focus ^2 && firefox
+super + shift + w
+    bspc desktop --focus ^3 && firefox
 
 # chrome
-super + shift + w
-    bspc desktop --focus ^3 && google-chrome-stable
+super + w
+    bspc desktop --focus ^2 && brave
 
 # kitty
 super + Return

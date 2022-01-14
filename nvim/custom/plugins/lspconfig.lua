@@ -25,7 +25,7 @@ M.setup_lsp = function(attach, capabilities)
       "html",
       "tsserver",
       "vimls",
-      --"null_ls",
+      "null_ls",
    }
 
    for _, lsp in ipairs(servers) do

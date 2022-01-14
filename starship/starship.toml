@@ -27,7 +27,7 @@ read_only_style = ""
 
 [time]
 disabled = false
-format = '[\[$time\]](fg:3)'
+format = '[\[$time\]](green)'
 time_format = "%T"
 
 [cmd_duration]
@@ -35,11 +35,8 @@ format = "[ $duration](cyan)"
 
 [battery]
 disabled = false
-format = "[ $symbol$percentage]($style) "
-charging_symbol = "⚡️"
-discharging_symbol = " "
+format = "[ $symbol$percentage](red) "
 
 [[battery.display]]
 threshold = 30
-style = "bold yellow"
 

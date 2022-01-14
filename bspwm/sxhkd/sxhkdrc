@@ -12,7 +12,7 @@ super + c
 
 # firefox
 super + shift + w
-    bspc desktop --focus ^3 && firefox
+    bspc desktop --focus ^3 && google-chrome-stable
 
 # chrome
 super + w

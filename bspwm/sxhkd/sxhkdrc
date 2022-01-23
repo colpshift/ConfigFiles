@@ -11,16 +11,28 @@ super + c
     bspc desktop --focus ^4 && code
 
 # firefox
-super + shift + w
-    bspc desktop --focus ^3 && google-chrome-stable
-
-# chrome
 super + w
-    bspc desktop --focus ^2 && brave
+    bspc desktop --focus ^2 && firefox
 
 # kitty
 super + Return
     kitty
+
+# chrome
+super + shift + w
+    bspc desktop --focus ^3 && google-chrome-stable
+
+# gmail
+super + shift + g
+    bspc desktop --focus ^7 && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=fmgjjmmmlfnkbppncabfkddbjimcfncm
+
+# calendar
+super + shift + c
+    bspc desktop --focus ^7 && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=kjbdgfilnfhdoflbpgamdcdgpehopbep
+
+# youtube
+super +shift + y
+    bspc desktop --focus ^10 && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=agimnkijcaahngcdmfeangaknmldooml
 
 # bpytop
 super + h

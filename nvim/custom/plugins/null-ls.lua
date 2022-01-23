@@ -23,15 +23,28 @@ local sources = {
    -- Shell
    b.formatting.shfmt,
    b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
+
+   b.formatting.fixjson,
+   b.formatting.gofmt,
+   b.formatting.gofumpt,
+   b.formatting.json_tool,
+   b.formatting.rustfmt,
 }
 
 local M = {}
 
-M.setup = function(on_attach)
-   null_ls.config {
+M.setup = function()
+   null_ls.setup {
+      debug = true,
       sources = sources,
+
+      -- format on save
+      on_attach = function(client)
+         if client.resolved_capabilities.document_formatting then
+            vim.cmd "autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()"
+         end
+      end,
    }
-   require("lspconfig")["null-ls"].setup { on_attach = on_attach }
 end
 
 return M

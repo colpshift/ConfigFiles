@@ -1,10 +1,9 @@
 #!/bin/bash
 
 function run {
-  if ! pgrep "$1" ;
-  then
-    "$@" &
-  fi
+	if ! pgrep "$1"; then
+		"$@" &
+	fi
 }
 
 ### monitors
@@ -20,12 +19,12 @@ function run {
 
 ### keyboard
 #keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')	## layout
-run sxhkd -c "$HOME/.config/bspwm/sxhkd/sxhkdrc" &	# keybinds
-xset r rate 210 40                                      # faster key repeat and delay
-numlockx on &                                           # active numlock
+run sxhkd -c "$HOME/.config/bspwm/sxhkd/sxhkdrc" & # keybinds
+xset r rate 210 40                                 # faster key repeat and delay
+numlockx on &                                      # active numlock
 run xbanish &
 
-### wallpaper 
+### wallpaper
 #feh --bg-scale ~/.config/bspwm/wall.png &
 #feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #feh --randomize --bg-fill ~/Képek/*
@@ -53,4 +52,3 @@ run xfce4-power-manager &
 "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" &
 "/usr/lib/xfce4/notifyd/xfce4-notifyd" &
 "$HOME/.scripts/mpd_start.sh"
-

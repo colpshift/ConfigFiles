@@ -8,17 +8,14 @@ map("n", "<leader>q", ":q <CR>")
 local customPlugins = require "core.customPlugins"
 customPlugins.add(function(use)
    use {
-      "max397574/better-escape.nvim",
-      event = "InsertEnter",
-   }
-   use {
       "williamboman/nvim-lsp-installer",
    }
    use {
       "jose-elias-alvarez/null-ls.nvim",
       after = "nvim-lspconfig",
       config = function()
-         require("custom.plugins.null-ls").setup()
+        require("custom.plugins.null-ls").setup()
+         -- require("customPlugins.confs.null-ls").setup()
       end,
    }
    use {
@@ -29,4 +26,3 @@ customPlugins.add(function(use)
       "davidgranstrom/nvim-markdown-preview",
    }
 end)
-

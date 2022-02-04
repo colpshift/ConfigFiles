@@ -37,7 +37,7 @@ xsetroot -cursor_name left_ptr &
 ### tray apps
 # run caffeine &
 run rambox
-blueberry-tray &
+#blueberry-tray &
 run nm-applet &
 
 ### apps

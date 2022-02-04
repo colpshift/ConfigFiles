@@ -4,7 +4,7 @@
 
 # thunar
 super + e
-    bspc desktop --focus ^8 && thunar
+    bspc desktop --focus ^7 && thunar
 
 # vscode
 super + c
@@ -18,21 +18,9 @@ super + w
 super + Return
     kitty
 
-# chrome
-super + shift + w
-    bspc desktop --focus ^3 && google-chrome-stable
-
-# gmail
-super + shift + g
-    bspc desktop --focus ^7 && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=fmgjjmmmlfnkbppncabfkddbjimcfncm
-
-# calendar
-super + shift + c
-    bspc desktop --focus ^7 && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=kjbdgfilnfhdoflbpgamdcdgpehopbep
-
-# youtube
-super +shift + y
-    bspc desktop --focus ^10 && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=agimnkijcaahngcdmfeangaknmldooml
+# geary
+super + g
+    bspc desktop --focus ^8 && geary
 
 # bpytop
 super + h
@@ -48,27 +36,36 @@ super + m
 
 # audacious
 super + shift + m
-    audacious
-
-# backup restore
-super + shift + b
-    bspc desktop --focus ^7 && timeshift-launcher 
+    bspc desktop --focus ^6 && audacious
 
 # flameshot
-super + Print
+Print
     flameshot gui
 
 # logout
 super + x
     arcolinux-logout
 
+# rofi
+super + z
+    rofi -show drun
+
+# chrome
+super + shift + w
+    bspc desktop --focus ^3 && google-chrome-stable
+
+# calendar
+super + shift + c
+    bspc desktop --focus ^7 && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=kjbdgfilnfhdoflbpgamdcdgpehopbep
+
+# youtube
+super + shift + y
+    bspc desktop --focus ^10 && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=agimnkijcaahngcdmfeangaknmldooml
+
 # dmenu
 super + shift + d
     dmenu_run -i -nb '#2F343F' -nf '#f3f4f5' -sb '#4682B4' -sf '#ffffff' -fn 'NotoSans:pixelsize=13'
 
-# rofi
-super + z
-    rofi -show drun
 #
 # bspwm hotkeys --------------------------------------------
 #

@@ -7,17 +7,17 @@ bspc config external_rules_command ~/.config/bspwm/scripts/external_rules_comman
 
 #BSPWM configuration
 #bspc config border_radius       8
-bspc config border_width         2
-bspc config window_gap           4
-bspc config top_padding          30
-bspc config bottom_padding       1
-bspc config left_padding         1
-bspc config right_padding        1
-bspc config single_monocle       false
+bspc config border_width 2
+bspc config window_gap 4
+bspc config top_padding 30
+bspc config bottom_padding 1
+bspc config left_padding 1
+bspc config right_padding 1
+bspc config single_monocle false
 #bspc config click_to_focus       true
-bspc config split_ratio          0.50
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config split_ratio 0.50
+bspc config borderless_monocle true
+bspc config gapless_monocle true
 #bspc config focus_by_distance    true
 bspc config focus_follows_pointer true
 #bspc config history_aware_focus  true
@@ -29,10 +29,10 @@ bspc config remove_disabled_monitors true
 bspc config merge_overlapping_monitors true
 
 #BSPWM coloring
-bspc config normal_border_color		"#4c566a"
-bspc config active_border_color		"#1e1e1e"
-bspc config focused_border_color	"#5e81ac"
-bspc config presel_feedback_color	"#5e81ac"
+bspc config normal_border_color "#4c566a"
+bspc config active_border_color "#1e1e1e"
+bspc config focused_border_color "#5e81ac"
+bspc config presel_feedback_color "#5e81ac"
 #bspc config urgent_border_color 	"#dd2727"
 
 #Single monitor
@@ -79,6 +79,8 @@ bspc rule -a 'YouTube to MP3' desktop='^6'
 bspc rule -a Arcolinux-tweak-tool.py desktop='^7' follow=on
 bspc rule -a Arcolinux-welcome-app.py desktop='^7' follow=on
 bspc rule -a Arcolinux-calamares-tool.py desktop='^7' follow=on
+# e-mail
+bspc rule -a Geary desktop='^8'
 # messages
 bspc rule -a Skype desktop='^9'
 bspc rule -a discord desktop='^9'
@@ -102,4 +104,3 @@ exit
 #bspc config external_rules_command ~/.config/bspwm/scripts/pseudo_automatic_mode
 ##Adjust new window: splits biggest windows to keep windows about the same size
 #bspc config external_rules_command ~/.config/bspwm/scripts/adjust-new-window
-

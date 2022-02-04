@@ -1,38 +1,23 @@
--- IMPORTANT NOTE : This is the user config, can be edited. Will be preserved if updated with internal updater
--- This file is for NvChad options & tools, custom settings are split between here and 'lua/custom/init.lua'
+-- This is an example chadrc file , its supposed to be placed in /lua/custom/
 
 local M = {}
-M.options, M.ui, M.mappings, M.plugins = {}, {}, {}, {}
 
-M.options = {
-   relativenumber = true,
-   dashboard = true,
-   writebackup = false,
-   swapfile = false,
+-- make sure you maintain the structure of `core/default_config.lua` here,
+-- example of changing theme:
+
+M.ui = {
+   theme = "tokyonight",
 }
 
--- M.ui = {
---    theme = "Tokyonight",
--- }
+-- Install plugins
+local userPlugins = require "custom.plugins" -- path to table
 
--- NvChad included plugin options & overrides
 M.plugins = {
-   status = {
-      -- dashboard = true,
-   },
-   options = {
-      lspconfig = {
-         setup_lspconf = "custom.plugins.lspconfig",
-      },
-    },
-   -- To change the Packer `config` of a plugin that comes with NvChad,
-   -- add a table entry below matching the plugin github name
-   --              '-' -> '_', remove any '.lua', '.nvim' extensions
-   -- this string will be called in a `require`
-   --              use "(custom.configs).my_func()" to call a function
-   --              use "custom.blankline" to call a file
-   default_plugin_config_replace = {},
+   install = userPlugins,
 }
+
+-- NOTE: we heavily suggest using Packer's lazy loading (with the 'event','cmd' fields)
+-- see: https://github.com/wbthomason/packer.nvim
+-- https://nvchad.github.io/config/walkthrough
 
 return M
-

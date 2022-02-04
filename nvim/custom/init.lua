@@ -1,28 +1,11 @@
+-- Please check NvChad docs if you're totally new to nvchad + dont know lua!!
+-- This is an example init file in /lua/custom/
+-- this init.lua can load stuffs etc too so treat it like your ~/.config/nvim/
+
 -- MAPPINGS
 local map = require("core.utils").map
+
 map("n", "<leader>cc", ":Telescope <CR>")
 map("n", "<leader>q", ":q <CR>")
--- NOTE: the 4th argument in the map function can be a table i.e options but its most likely un-needed so dont worry about it
 
--- Install plugins
-local customPlugins = require "core.customPlugins"
-customPlugins.add(function(use)
-   use {
-      "williamboman/nvim-lsp-installer",
-   }
-   use {
-      "jose-elias-alvarez/null-ls.nvim",
-      after = "nvim-lspconfig",
-      config = function()
-        require("custom.plugins.null-ls").setup()
-         -- require("customPlugins.confs.null-ls").setup()
-      end,
-   }
-   use {
-      "hrsh7th/cmp-emoji",
-      after = "nvim-cmp",
-   }
-   use {
-      "davidgranstrom/nvim-markdown-preview",
-   }
-end)
+-- NOTE: the 4th argument in the map function is be a table i.e options but its most likely un-needed so dont worry about it

@@ -8,7 +8,7 @@
     background-color:      Black;
     border-color:          White;
     text-color:           White;
-    font:            "Fira Code Regular Nerd Font Complete Mono 11";
+    font:            "Times New Roman 12";
 }
 window {
     anchor:     north;

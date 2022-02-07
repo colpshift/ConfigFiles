@@ -171,6 +171,7 @@ devour 12-2
 dex 0.9.0-1
 dhclient 4.4.2.P1-4
 dialog 1:1.3_20220117-1
+diff-so-fancy 1.4.3-1
 diffutils 3.8-1
 ding-libs 0.6.1-4
 discord 0.0.16-1
@@ -1398,6 +1399,7 @@ xcb-util-keysyms 0.4.0-3
 xcb-util-renderutil 0.3.9-3
 xcb-util-wm 0.4.1-3
 xcb-util-xrm 1.3-2
+xclip 0.13-3
 xdg-dbus-proxy 0.1.2-3
 xdg-desktop-portal 1.12.1-1
 xdg-desktop-portal-gnome 41.1-1

@@ -33,10 +33,14 @@ export FORGIT_LOG_FZF_OPTS='
 export FORGIT_FZF_DEFAULT_OPTS="
 --exact
 --border
+--cycle
 --reverse
 --height '80%'
 "
 export FORGIT_COPY_CMD='xclip -selection clipboard'
+
+### emoji-cli
+source $HOME/Src/emoji-cli/fuzzy-emoji-zle.zsh
 
 ### cheat
 export CHEAT_CONFIG_PATH="$HOME/.config/cheat/conf.yml"

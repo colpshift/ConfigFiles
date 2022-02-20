@@ -57,7 +57,6 @@ bspc rule -a Zathura state=tiled
 
 #open applications on specific workspaces
 # internet
-bspc rule -a Brave-browser='^2'
 bspc rule -a Firefox='^2'
 # office
 bspc rule -a Joplin desktop='^3'
@@ -75,25 +74,25 @@ bspc rule -a XMind desktop='^5'
 bspc rule -a Audacious desktop='^6'
 bspc rule -a Picard desktop='^6'
 bspc rule -a 'YouTube to MP3' desktop='^6'
+# spotify fix
+sleep 1
+wmctrl -r Spotify -t 6
+exit
+# video
+bspc rule -a Stremio desktop='^6'
 # arcolinux
 bspc rule -a Arcolinux-tweak-tool.py desktop='^7' follow=on
 bspc rule -a Arcolinux-welcome-app.py desktop='^7' follow=on
 bspc rule -a Arcolinux-calamares-tool.py desktop='^7' follow=on
-# e-mail
-bspc rule -a Geary desktop='^8'
 # messages
-bspc rule -a Skype desktop='^9'
-bspc rule -a discord desktop='^9'
-bspc rule -a TelegramDesktop desktop='^9'
-bspc rule -a Rambox desktop='^9'
-bspc rule -a zoom desktop='^9'
-bspc rule -a 'Microsoft Teams - Preview' desktop='^9'
-# video
-bspc rule -a Stremio desktop='^10'
-# spotify fix
-sleep 1
-wmctrl -r spotify -t 6
-exit
+bspc rule -a Skype desktop='^8'
+bspc rule -a discord desktop='^8'
+bspc rule -a TelegramDesktop desktop='^8'
+bspc rule -a Rambox desktop='^8'
+bspc rule -a zoom desktop='^8'
+bspc rule -a 'Microsoft Teams - Preview' desktop='^8'
+# e-mail
+bspc rule -a Geary desktop='^10'
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_eDP1)

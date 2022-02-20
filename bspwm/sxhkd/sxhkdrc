@@ -10,29 +10,33 @@ super + e
 super + c
     bspc desktop --focus ^4 && code
 
-# firefox
+# brave
 super + w
-    bspc desktop --focus ^2 && firefox
+    bspc desktop --focus ^2 && brave
 
-# kitty
+# wezterm
 super + Return
-    kitty
+    wezterm
 
-# geary
+# gmail
 super + g
-    bspc desktop --focus ^8 && geary
+    bspc desktop --focus ^10 && brave "--profile-directory=Profile 1" --app-id=fmgjjmmmlfnkbppncabfkddbjimcfncm
+
+# gdrive
+super + d
+    bspc desktop --focus ^3 && brave "--profile-directory=Profile 1" --app-id=aghbiahbpaijignceidepookljebhfak 
 
 # bpytop
 super + h
-    bspc desktop --focus ^7 && kitty bpytop
+    bspc desktop --focus ^7 && wezterm start bpytop
 
 # newsboat
 super + r
-    bspc desktop --focus ^3 && kitty newsboat
+    bspc desktop --focus ^3 && wezterm start newsboat
 
 # ncmpcpp
 super + m
-    bspc desktop --focus ^6 && kitty ncmpcpp
+    bspc desktop --focus ^6 && wezterm start ncmpcpp
 
 # audacious
 super + shift + m
@@ -56,11 +60,7 @@ super + shift + w
 
 # calendar
 super + shift + c
-    bspc desktop --focus ^7 && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=kjbdgfilnfhdoflbpgamdcdgpehopbep
-
-# youtube
-super + shift + y
-    bspc desktop --focus ^10 && /opt/google/chrome/google-chrome --profile-directory=Default --app-id=agimnkijcaahngcdmfeangaknmldooml
+    bspc desktop --focus ^9 && brave "--profile-directory=Profile 1" --app-id=kjbdgfilnfhdoflbpgamdcdgpehopbep
 
 # dmenu
 super + shift + d

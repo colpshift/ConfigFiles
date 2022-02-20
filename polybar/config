@@ -98,7 +98,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = bspwm
 ;wmodules-center = networkspeeddown networkspeedup
-modules-right = kernel cpu2 temperature1 memory2 battery networkspeeddown networkspeedup check-internet arch-updates gmail backlight-acpi pavolume weather date
+modules-right = kernel cpu2 temperature1 memory2 battery networkspeeddown networkspeedup check-internet arch-updates backlight-acpi weather date
 
 tray-detached = false
 tray-offset-x = 0
@@ -189,9 +189,9 @@ ws-icon-3 = 4;
 ws-icon-4 = 5;
 ws-icon-5 = 6;
 ws-icon-6 = 7;
-ws-icon-7 = 8;
-ws-icon-8 = 9;
-ws-icon-9 = 10;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
 ws-icon-default = " "
 
 format = <label-state> <label-mode>
@@ -327,13 +327,13 @@ adapter = AC0
 full-at = 95
 
 format-charging = <animation-charging> <label-charging>
-label-charging =  %percentage%%
+label-charging = + %percentage%%
 format-charging-foreground = ${colors.foreground}
 format-charging-background = ${colors.background}
 format-charging-underline = #e2235f
 
 format-discharging = <ramp-capacity> <label-discharging>
-label-discharging =  %percentage%%
+label-discharging = - %percentage%%
 format-discharging-underline = #e2235f
 format-discharging-foreground = ${colors.foreground}
 format-discharging-background = ${colors.background}

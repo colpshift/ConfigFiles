@@ -88,7 +88,7 @@ bspc rule -a Arcolinux-calamares-tool.py desktop='^7' follow=on
 bspc rule -a Skype desktop='^8'
 bspc rule -a discord desktop='^8'
 bspc rule -a TelegramDesktop desktop='^8'
-bspc rule -a Rambox desktop='^8'
+bspc rule -a Ferdi desktop='^8'
 bspc rule -a zoom desktop='^8'
 bspc rule -a 'Microsoft Teams - Preview' desktop='^8'
 # e-mail

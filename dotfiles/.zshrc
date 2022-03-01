@@ -6,34 +6,48 @@
 # Last update: 03/07/2021 13:14
 #
 
-## Options section
-setopt correct                                                  # Auto correct mistakes
-setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
-setopt nocaseglob                                               # Case insensitive globbing
-setopt rcexpandparam                                            # Array expension with parameters
-setopt nocheckjobs                                              # Don't warn about running processes when exiting
-setopt numericglobsort                                          # Sort filenames numerically when it makes sense
-setopt nobeep                                                   # No beep
-setopt appendhistory                                            # Immediately append history instead of overwriting
-setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
-setopt autocd                                                   # if only directory path is entered, cd there.
-setopt inc_append_history                                       # save commands are added to the history, otherwise only when shell exits.
+### Set variables
+WORDCHARS=${WORDCHARS//\/[&.;]}
 
-### zsh style
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
-zstyle ':completion:*' rehash true                              # automatically find new executables in path
-zstyle ':completion:*' accept-exact '*(N)'
-zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh/cache
+### Set/unset ZSH options
+setopt INC_APPEND_HISTORY SHARE_HISTORY
+setopt EXTENDED_HISTORY
+setopt APPEND_HISTORY
+setopt AUTO_LIST
+setopt MENUCOMPLETE
+setopt COMPLETE_ALIASES
+setopt ALL_EXPORT
 
-### zsh history
-HISTFILE=~/.zhistory
-HISTSIZE=10000
-SAVEHIST=10000
-HISTCONTROL='ignoredups'
+### Set/unset shell options
+setopt   notify globdots pushdtohome cdablevars autolist numericglobsort
+setopt   autocd recexact rcexpandparam nocheckjobs nobeep
+setopt   autopushd autoresume histignoredups pushdsilent pushdignoredups
+setopt   pushdminus extendedglob nocaseglob rcquotes
 
-### Editor
-WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
+### Completion Styles
+autoload -Uz compinit
+compinit
+zstyle ':completion::complete:*' use-cache on
+zstyle ':completion::complete:*' cache-path ~/.zsh/cache/$HOST
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
+zstyle ':completion:*' menu select=1 _complete _ignored _approximate
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
+
+### History
+HISTFILE=$HOME/.zhistory
+HISTSIZE=1000
+SAVEHIST=1000
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+
+### Load colors
+autoload -U colors && colors
+colors
 
 ### Keybindings section
 bindkey -e
@@ -77,11 +91,13 @@ alias df='dust'
 alias du='duf'
 alias ps='procs'
 alias su='sudo -i'
+alias nvim='lvim'
 alias vi='nvim'
 alias vim='nvim'
 alias gvim='nvim'
-alias nvim='lvim'
-alias bat='bat --theme Nord'
+alias fd='fdfind'
+alias bat='batcat'
+alias batcat='batcat --theme OneHalfDark'
 alias gitu='git add . && git commit -S && git push'
 alias gitb='git add . && git commit -S -m 'backup' && git push'
 alias gitl='git log --graph'
@@ -98,14 +114,6 @@ alias parup='~/.scripts/paru_update.sh'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
-#get fastest mirrors in your neighborhood
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
-alias mirrord="sudo reflector --latest 30 --number 10 --sort delay --save /etc/pacman.d/mirrorlist"
-alias mirrors="sudo reflector --latest 30 --number 10 --sort score --save /etc/pacman.d/mirrorlist"
-alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pacman.d/mirrorlist"
-#our experimental - best option for the moment
-alias mirrorx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
-alias mirrorxx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
 
 ### Theming section
 autoload -U compinit colors zcalc
@@ -117,11 +125,11 @@ unset MANPATH
 fman() {
   man -k . | fzf -q "$1" --prompt='man> '  --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man | col -bx | bat --theme Nord -l man -p --color always' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
 }
-export MANPAGER="sh -c 'col -bx | bat --theme Nord -l man -p --paging always'"
+export MANPAGER="sh -c 'col -bx | batcat --theme OneHalfDark -l man -p --paging always'"
 export MANWIDTH=999
 
 ### Zsh fzf-tab
-source /home/colps/Src/fzf-tab/fzf-tab.plugin.zsh
+source $HOME/Src/fzf-tab/fzf-tab.plugin.zsh
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
@@ -133,15 +141,18 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
+### Zsh forgit
+source $HOME/Src/emoji-cli/fuzzy-emoji-zle.zsh
+source $HOME/Src/forgit/forgit.plugin.zsh
+
 ### Zsh plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-# command is not found
-source /usr/share/doc/pkgfile/command-not-found.zsh
 
 ### Set prompt
 autoload -Uz compinit promptinit
@@ -159,6 +170,15 @@ export GPG_TTY
 ### fasd
 eval "$(fasd --init auto)"
 
+### wezterm
+sh $HOME/.config/wezterm/wezterm_integration.sh
+
 ### zsh_functions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 
+### fzf completion
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

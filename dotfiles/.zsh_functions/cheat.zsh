@@ -63,4 +63,3 @@ _cheat() {
 }
 
 compdef _cheat cheat
-

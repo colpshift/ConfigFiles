@@ -157,6 +157,6 @@ lvim.plugins = {
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
-lvim.autocommands.custom_groups = {
-  { "BufWinEnter", "*.lua, *.js", "setlocal ts=4 sw=4" },
-}
+-- lvim.autocommands.custom_groups = {
+--   { "BufWinEnter", "*.lua, *.js", "setlocal ts=4 sw=4" },
+-- }

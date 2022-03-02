@@ -1,13 +1,13 @@
-Ferdi	com.getferdi.Ferdi	5.7.0	stable	user
+Ferdi	com.getferdi.Ferdi	5.8.0	stable	user
 Stremio	com.stremio.Stremio	4.4.142	stable	user
 Master PDF Editor	net.codeindustry.MasterPDFEditor	5.8.33	stable	user
 Joplin	net.cozic.joplin_desktop	2.7.13	stable	user
 Audacious	org.atheme.audacious	4.1	stable	user
 Flameshot	org.flameshot.Flameshot	11.0.0	stable	user
 Freedesktop Platform	org.freedesktop.Platform	20.08.18	20.08	user
-Freedesktop Platform	org.freedesktop.Platform	21.08.10	21.08	user
+Freedesktop Platform	org.freedesktop.Platform	21.08.11	21.08	user
 Mesa	org.freedesktop.Platform.GL.default	21.1.8	20.08	user
-Mesa	org.freedesktop.Platform.GL.default	21.3.5	21.08	user
+Mesa	org.freedesktop.Platform.GL.default	21.3.6	21.08	user
 Intel	org.freedesktop.Platform.VAAPI.Intel		20.08	user
 Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	user
 ffmpeg-full	org.freedesktop.Platform.ffmpeg-full		21.08	user
@@ -21,4 +21,3 @@ QtSNI	org.kde.PlatformTheme.QtSNI		5.15	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	user
-ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.0.0	stable	user

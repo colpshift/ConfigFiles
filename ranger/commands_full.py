@@ -1,4 +1,93 @@
 # -*- coding: utf-8 -*-
+# This file is part of ranger, the console file manager.
+# This configuration file is licensed under the same terms as ranger.
+# ===================================================================
+#
+# NOTE: If you copied this file to /etc/ranger/commands_full.py or
+# ~/.config/ranger/commands_full.py, then it will NOT be loaded by ranger,
+# and only serve as a reference.
+#
+# ===================================================================
+# This file contains ranger's commands.
+# It's all in python; lines beginning with # are comments.
+#
+# Note that additional commands are automatically generated from the methods
+# of the class ranger.core.actions.Actions.
+#
+# You can customize commands in the files /etc/ranger/commands.py (system-wide)
+# and ~/.config/ranger/commands.py (per user).
+# They have the same syntax as this file.  In fact, you can just copy this
+# file to ~/.config/ranger/commands_full.py with
+# `ranger --copy-config=commands_full' and make your modifications, don't
+# forget to rename it to commands.py.  You can also use
+# `ranger --copy-config=commands' to copy a short sample commands.py that
+# has everything you need to get started.
+# But make sure you update your configs when you update ranger.
+#
+# ===================================================================
+# Every class defined here which is a subclass of `Command' will be used as a
+# command in ranger.  Several methods are defined to interface with ranger:
+#   execute():   called when the command is executed.
+#   cancel():    called when closing the console.
+#   tab(tabnum): called when <TAB> is pressed.
+#   quick():     called after each keypress.
+#
+# tab() argument tabnum is 1 for <TAB> and -1 for <S-TAB> by default
+#
+# The return values for tab() can be either:
+#   None: There is no tab completion
+#   A string: Change the console to this string
+#   A list/tuple/generator: cycle through every item in it
+#
+# The return value for quick() can be:
+#   False: Nothing happens
+#   True: Execute the command afterwards
+#
+# The return value for execute() and cancel() doesn't matter.
+#
+# ===================================================================
+# Commands have certain attributes and methods that facilitate parsing of
+# the arguments:
+#
+# self.line: The whole line that was written in the console.
+# self.args: A list of all (space-separated) arguments to the command.
+# self.quantifier: If this command was mapped to the key "X" and
+#      the user pressed 6X, self.quantifier will be 6.
+# self.arg(n): The n-th argument, or an empty string if it doesn't exist.
+# self.rest(n): The n-th argument plus everything that followed.  For example,
+#      if the command was "search foo bar a b c", rest(2) will be "bar a b c"
+# self.start(n): Anything before the n-th argument.  For example, if the
+#      command was "search foo bar a b c", start(2) will be "search foo"
+#
+# ===================================================================
+# And this is a little reference for common ranger functions and objects:
+#
+# self.fm: A reference to the "fm" object which contains most information
+#      about ranger.
+# self.fm.notify(string): Print the given string on the screen.
+# self.fm.notify(string, bad=True): Print the given string in RED.
+# self.fm.reload_cwd(): Reload the current working directory.
+# self.fm.thisdir: The current working directory. (A File object.)
+# self.fm.thisfile: The current file. (A File object too.)
+# self.fm.thistab.get_selection(): A list of all selected files.
+# self.fm.execute_console(string): Execute the string as a ranger command.
+# self.fm.open_console(string): Open the console with the given string
+#      already typed in for you.
+# self.fm.move(direction): Moves the cursor in the given direction, which
+#      can be something like down=3, up=5, right=1, left=1, to=6, ...
+#
+# File objects (for example self.fm.thisfile) have these useful attributes and
+# methods:
+#
+# tfile.path: The path to the file.
+# tfile.basename: The base name only.
+# tfile.load_content(): Force a loading of the directories content (which
+#      obviously works with directories only)
+# tfile.is_directory: True/False depending on whether it's a directory.
+#
+# For advanced commands it is unavoidable to dive a bit into the source code
+# of ranger.
+# ===================================================================
 
 from __future__ import (absolute_import, division, print_function)
 
@@ -154,8 +243,9 @@ class cd(Command):
 
         paths = self._tab_fuzzy_match(basepath, tokens)
         if not os.path.isabs(dest):
-            paths_rel = basepath
-            paths = [os.path.relpath(path, paths_rel) for path in paths]
+            paths_rel = self.fm.thisdir.path
+            paths = [os.path.relpath(os.path.join(basepath, path), paths_rel)
+                     for path in paths]
         else:
             paths_rel = ''
         return paths, paths_rel
@@ -185,7 +275,7 @@ class cd(Command):
             return None
         if len(paths) == 1:
             return start + paths[0] + sep
-        return [start + dirname for dirname in paths]
+        return [start + dirname + sep for dirname in paths]
 
 
 class chain(Command):
@@ -193,6 +283,7 @@ class chain(Command):
 
     Calls multiple commands at once, separated by semicolons.
     """
+    resolve_macros = False
 
     def execute(self):
         if not self.rest(1).strip():
@@ -483,7 +574,7 @@ class default_linemode(Command):
 class quit(Command):  # pylint: disable=redefined-builtin
     """:quit
 
-    Closes the current tab, if there's only one tab.
+    Closes the current tab, if there's more than one tab.
     Otherwise quits if there are no tasks in progress.
     """
     def _exit_no_work(self):
@@ -502,7 +593,7 @@ class quit(Command):  # pylint: disable=redefined-builtin
 class quit_bang(Command):
     """:quit!
 
-    Closes the current tab, if there's only one tab.
+    Closes the current tab, if there's more than one tab.
     Otherwise force quits immediately.
     """
     name = 'quit!'
@@ -608,6 +699,64 @@ class delete(Command):
     def _question_callback(self, files, answer):
         if answer == 'y' or answer == 'Y':
             self.fm.delete(files)
+
+
+class trash(Command):
+    """:trash
+
+    Tries to move the selection or the files passed in arguments (if any) to
+    the trash, using rifle rules with label "trash".
+    The arguments use a shell-like escaping.
+
+    "Selection" is defined as all the "marked files" (by default, you
+    can mark files with space or v). If there are no marked files,
+    use the "current file" (where the cursor is)
+
+    When attempting to trash non-empty directories or multiple
+    marked files, it will require a confirmation.
+    """
+
+    allow_abbrev = False
+    escape_macros_for_shell = True
+
+    def execute(self):
+        import shlex
+        from functools import partial
+
+        def is_directory_with_files(path):
+            return os.path.isdir(path) and not os.path.islink(path) and len(os.listdir(path)) > 0
+
+        if self.rest(1):
+            files = shlex.split(self.rest(1))
+            many_files = (len(files) > 1 or is_directory_with_files(files[0]))
+        else:
+            cwd = self.fm.thisdir
+            tfile = self.fm.thisfile
+            if not cwd or not tfile:
+                self.fm.notify("Error: no file selected for deletion!", bad=True)
+                return
+
+            # relative_path used for a user-friendly output in the confirmation.
+            files = [f.relative_path for f in self.fm.thistab.get_selection()]
+            many_files = (cwd.marked_items or is_directory_with_files(tfile.path))
+
+        confirm = self.fm.settings.confirm_on_delete
+        if confirm != 'never' and (confirm != 'multiple' or many_files):
+            self.fm.ui.console.ask(
+                "Confirm deletion of: %s (y/N)" % ', '.join(files),
+                partial(self._question_callback, files),
+                ('n', 'N', 'y', 'Y'),
+            )
+        else:
+            # no need for a confirmation, just delete
+            self.fm.execute_file(files, label='trash')
+
+    def tab(self, tabnum):
+        return self._tab_directory_content()
+
+    def _question_callback(self, files, answer):
+        if answer == 'y' or answer == 'Y':
+            self.fm.execute_file(files, label='trash')
 
 
 class jump_non(Command):
@@ -907,7 +1056,7 @@ class rename_append(Command):
         relpath = tfile.relative_path.replace(MACRO_DELIMITER, MACRO_DELIMITER_ESC)
         basename = tfile.basename.replace(MACRO_DELIMITER, MACRO_DELIMITER_ESC)
 
-        if basename.find('.') <= 0:
+        if basename.find('.') <= 0 or os.path.isdir(relpath):
             self.fm.open_console('rename ' + relpath)
             return
 
@@ -939,8 +1088,9 @@ class chmod(Command):
     def execute(self):
         mode_str = self.rest(1)
         if not mode_str:
-            if not self.quantifier:
-                self.fm.notify("Syntax: chmod <octal number>", bad=True)
+            if self.quantifier is None:
+                self.fm.notify("Syntax: chmod <octal number> "
+                               "or specify a quantifier", bad=True)
                 return
             mode_str = str(self.quantifier)
 
@@ -974,7 +1124,8 @@ class bulkrename(Command):
     After you close it, it will be executed.
     """
 
-    def execute(self):  # pylint: disable=too-many-locals,too-many-statements
+    def execute(self):
+        # pylint: disable=too-many-locals,too-many-statements,too-many-branches
         import sys
         import tempfile
         from ranger.container.file import File
@@ -983,46 +1134,57 @@ class bulkrename(Command):
 
         # Create and edit the file list
         filenames = [f.relative_path for f in self.fm.thistab.get_selection()]
-        listfile = tempfile.NamedTemporaryFile(delete=False)
-        listpath = listfile.name
-
-        if py3:
-            listfile.write("\n".join(filenames).encode("utf-8"))
-        else:
-            listfile.write("\n".join(filenames))
-        listfile.close()
+        with tempfile.NamedTemporaryFile(delete=False) as listfile:
+            listpath = listfile.name
+            if py3:
+                listfile.write("\n".join(filenames).encode(
+                    encoding="utf-8", errors="surrogateescape"))
+            else:
+                listfile.write("\n".join(filenames))
         self.fm.execute_file([File(listpath)], app='editor')
-        listfile = open(listpath, 'r')
-        new_filenames = listfile.read().split("\n")
-        listfile.close()
+        with (open(listpath, 'r', encoding="utf-8", errors="surrogateescape") if
+              py3 else open(listpath, 'r')) as listfile:
+            new_filenames = listfile.read().split("\n")
         os.unlink(listpath)
         if all(a == b for a, b in zip(filenames, new_filenames)):
             self.fm.notify("No renaming to be done!")
             return
 
         # Generate script
-        cmdfile = tempfile.NamedTemporaryFile()
-        script_lines = []
-        script_lines.append("# This file will be executed when you close the editor.\n")
-        script_lines.append("# Please double-check everything, clear the file to abort.\n")
-        script_lines.extend("mv -vi -- %s %s\n" % (esc(old), esc(new))
-                            for old, new in zip(filenames, new_filenames) if old != new)
-        script_content = "".join(script_lines)
-        if py3:
-            cmdfile.write(script_content.encode("utf-8"))
-        else:
-            cmdfile.write(script_content)
-        cmdfile.flush()
+        with tempfile.NamedTemporaryFile() as cmdfile:
+            script_lines = []
+            script_lines.append("# This file will be executed when you close"
+                                " the editor.")
+            script_lines.append("# Please double-check everything, clear the"
+                                " file to abort.")
+            new_dirs = []
+            for old, new in zip(filenames, new_filenames):
+                if old != new:
+                    basepath, _ = os.path.split(new)
+                    if (basepath and basepath not in new_dirs
+                            and not os.path.isdir(basepath)):
+                        script_lines.append("mkdir -vp -- {dir}".format(
+                            dir=esc(basepath)))
+                        new_dirs.append(basepath)
+                    script_lines.append("mv -vi -- {old} {new}".format(
+                        old=esc(old), new=esc(new)))
+            # Make sure not to forget the ending newline
+            script_content = "\n".join(script_lines) + "\n"
+            if py3:
+                cmdfile.write(script_content.encode(encoding="utf-8",
+                                                    errors="surrogateescape"))
+            else:
+                cmdfile.write(script_content)
+            cmdfile.flush()
 
-        # Open the script and let the user review it, then check if the script
-        # was modified by the user
-        self.fm.execute_file([File(cmdfile.name)], app='editor')
-        cmdfile.seek(0)
-        script_was_edited = (script_content != cmdfile.read())
+            # Open the script and let the user review it, then check if the
+            # script was modified by the user
+            self.fm.execute_file([File(cmdfile.name)], app='editor')
+            cmdfile.seek(0)
+            script_was_edited = (script_content != cmdfile.read())
 
-        # Do the renaming
-        self.fm.run(['/bin/sh', cmdfile.name], flags='w')
-        cmdfile.close()
+            # Do the renaming
+            self.fm.run(['/bin/sh', cmdfile.name], flags='w')
 
         # Retag the files, but only if the script wasn't changed during review,
         # because only then we know which are the source and destination files.
@@ -1141,7 +1303,7 @@ class copycmap(copymap):
 
 
 class copytmap(copymap):
-    """:copycmap <keys> <newkeys1> [<newkeys2>...]
+    """:copytmap <keys> <newkeys1> [<newkeys2>...]
 
     Copies a "taskview" keybinding from <keys> to <newkeys>
     """
@@ -1160,28 +1322,67 @@ class unmap(Command):
             self.fm.ui.keymaps.unbind(self.context, arg)
 
 
-class cunmap(unmap):
-    """:cunmap <keys> [<keys2>, ...]
+class uncmap(unmap):
+    """:uncmap <keys> [<keys2>, ...]
 
     Remove the given "console" mappings
     """
-    context = 'browser'
+    context = 'console'
 
 
-class punmap(unmap):
-    """:punmap <keys> [<keys2>, ...]
+class cunmap(uncmap):
+    """:cunmap <keys> [<keys2>, ...]
+
+    Remove the given "console" mappings
+
+    DEPRECATED in favor of uncmap.
+    """
+
+    def execute(self):
+        self.fm.notify("cunmap is deprecated in favor of uncmap!")
+        super(cunmap, self).execute()
+
+
+class unpmap(unmap):
+    """:unpmap <keys> [<keys2>, ...]
 
     Remove the given "pager" mappings
     """
     context = 'pager'
 
 
-class tunmap(unmap):
-    """:tunmap <keys> [<keys2>, ...]
+class punmap(unpmap):
+    """:punmap <keys> [<keys2>, ...]
+
+    Remove the given "pager" mappings
+
+    DEPRECATED in favor of unpmap.
+    """
+
+    def execute(self):
+        self.fm.notify("punmap is deprecated in favor of unpmap!")
+        super(punmap, self).execute()
+
+
+class untmap(unmap):
+    """:untmap <keys> [<keys2>, ...]
 
     Remove the given "taskview" mappings
     """
     context = 'taskview'
+
+
+class tunmap(untmap):
+    """:tunmap <keys> [<keys2>, ...]
+
+    Remove the given "taskview" mappings
+
+    DEPRECATED in favor of untmap.
+    """
+
+    def execute(self):
+        self.fm.notify("tunmap is deprecated in favor of untmap!")
+        super(tunmap, self).execute()
 
 
 class map_(Command):
@@ -1490,7 +1691,7 @@ class filter_stack(Command):
         elif subcommand == "clear":
             self.fm.thisdir.filter_stack = []
         elif subcommand == "rotate":
-            rotate_by = int(self.arg(2) or 1)
+            rotate_by = int(self.arg(2) or self.quantifier or 1)
             self.fm.thisdir.filter_stack = (
                 self.fm.thisdir.filter_stack[-rotate_by:]
                 + self.fm.thisdir.filter_stack[:-rotate_by]
@@ -1549,6 +1750,17 @@ class flat(Command):
         self.fm.thisdir.unload()
         self.fm.thisdir.flat = level
         self.fm.thisdir.load_content()
+
+
+class reset_previews(Command):
+    """:reset_previews
+
+    Reset the file previews.
+    """
+    def execute(self):
+        self.fm.previews = {}
+        self.fm.ui.need_redraw = True
+
 
 # Version control commands
 # --------------------------------
@@ -1713,11 +1925,14 @@ class yank(Command):
                     ['xsel'],
                     ['xsel', '-b'],
                 ],
+                'wl-copy': [
+                    ['wl-copy'],
+                ],
                 'pbcopy': [
                     ['pbcopy'],
                 ],
             }
-            ordered_managers = ['pbcopy', 'xclip', 'xsel']
+            ordered_managers = ['pbcopy', 'wl-copy', 'xclip', 'xsel']
             executables = get_executables()
             for manager in ordered_managers:
                 if manager in executables:
@@ -1745,3 +1960,34 @@ class yank(Command):
             in sorted(self.modes.keys())
             if mode
         )
+
+
+class paste_ext(Command):
+    """
+    :paste_ext
+
+    Like paste but tries to rename conflicting files so that the
+    file extension stays intact (e.g. file_.ext).
+    """
+
+    @staticmethod
+    def make_safe_path(dst):
+        if not os.path.exists(dst):
+            return dst
+
+        dst_name, dst_ext = os.path.splitext(dst)
+
+        if not dst_name.endswith("_"):
+            dst_name += "_"
+            if not os.path.exists(dst_name + dst_ext):
+                return dst_name + dst_ext
+        n = 0
+        test_dst = dst_name + str(n)
+        while os.path.exists(test_dst + dst_ext):
+            n += 1
+            test_dst = dst_name + str(n)
+
+        return test_dst + dst_ext
+
+    def execute(self):
+        return self.fm.paste(make_safe_path=paste_ext.make_safe_path)

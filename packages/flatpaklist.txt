@@ -1,4 +1,6 @@
-Ferdi	com.getferdi.Ferdi	5.8.0	stable	user
+Bitwarden	com.bitwarden.desktop	1.31.3	stable	user
+Meteo	com.gitlab.bitseater.meteo	0.9.9	stable	user
+Spotify	com.spotify.Client	1.1.77.643.g3c4c6fc6	stable	user
 Stremio	com.stremio.Stremio	4.4.142	stable	user
 Master PDF Editor	net.codeindustry.MasterPDFEditor	5.8.33	stable	user
 Joplin	net.cozic.joplin_desktop	2.7.13	stable	user
@@ -12,6 +14,9 @@ Intel	org.freedesktop.Platform.VAAPI.Intel		20.08	user
 Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	user
 ffmpeg-full	org.freedesktop.Platform.ffmpeg-full		21.08	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	user
+Geary	org.gnome.Geary	40.0	stable	user
+GNOME Application Platform version 40	org.gnome.Platform		40	user
+GNOME Application Platform version 41	org.gnome.Platform		41	user
 Pop Gtk theme	org.gtk.Gtk3theme.Pop-dark		3.22	user
 KDE Application Platform	org.kde.Platform		5.15	user
 KDE Application Platform	org.kde.Platform		5.15-21.08	user
@@ -21,3 +26,4 @@ QtSNI	org.kde.PlatformTheme.QtSNI		5.15	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	user
+Signal Desktop	org.signal.Signal	5.34.0	stable	user

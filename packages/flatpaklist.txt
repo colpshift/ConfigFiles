@@ -1,5 +1,8 @@
-Bitwarden	com.bitwarden.desktop	1.31.3	stable	user
+Bitwarden	com.bitwarden.desktop	1.32.0	stable	user
 Meteo	com.gitlab.bitseater.meteo	0.9.9	stable	user
+NewsFlash	com.gitlab.newsflash	1.5.1	stable	user
+Microsoft Teams	com.microsoft.Teams	1.4.00.26453	stable	user
+Musixmatch	com.musixmatch.Musixmatch	3.10	stable	user
 Spotify	com.spotify.Client	1.1.77.643.g3c4c6fc6	stable	user
 Stremio	com.stremio.Stremio	4.4.142	stable	user
 Master PDF Editor	net.codeindustry.MasterPDFEditor	5.8.33	stable	user
@@ -26,4 +29,4 @@ QtSNI	org.kde.PlatformTheme.QtSNI		5.15	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	user
-Signal Desktop	org.signal.Signal	5.34.0	stable	user
+Signal Desktop	org.signal.Signal	5.35.0	stable	user

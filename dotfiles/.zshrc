@@ -1,12 +1,10 @@
-### Use powerline
+# Use powerline
 USE_POWERLINE="true"
-
-### Source manjaro-zsh-configuration
+# Source manjaro-zsh-configuration
 if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
   source /usr/share/zsh/manjaro-zsh-config
 fi
-
-### Use manjaro zsh prompt
+# Use manjaro zsh prompt
 if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
@@ -77,7 +75,7 @@ export GPG_TTY
 eval "$(fasd --init auto)"
 
 ### wezterm
-source $HOME/.config/wezterm/wezterm_integration
+source $HOME/.config/wezterm/wezterm_integration.sh
 
 ### zsh_functions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
@@ -86,3 +84,9 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
+
+PATH="/home/colps/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/colps/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/colps/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/colps/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/colps/perl5"; export PERL_MM_OPT;

@@ -1,6 +1,6 @@
 ---
 # The editor to use with 'cheat -e <sheet>'. Defaults to $EDITOR or $VISUAL.
-editor: nvim
+editor: vim
 
 # Should 'cheat' always colorize output?
 colorize: true
@@ -47,14 +47,14 @@ cheatpaths:
   # Once downloaded, ensure that 'path' below points to the location at which
   # you downloaded the community cheatsheets.
   - name: community
-    path: /home/colps/.config/cheat/community
+    path: /home/colps/.config/cheat/cheatsheets/community
     tags: [ community ]
     readonly: true
 
   # If you have personalized cheatsheets, list them last. They will take
   # precedence over the more global cheatsheets.
   - name: personal
-    path: /home/colps/.config/cheat/personal
+    path: /home/colps/.config/cheat/cheatsheets/personal
     tags: [ personal ]
     readonly: false
 

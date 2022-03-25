@@ -7,7 +7,7 @@
 local wezterm = require("wezterm")
 return {
 	-- font and size
-	font = wezterm.font("FiraCode Nerd Font"),
+	font = wezterm.font("Hasklug NF"),
 	font_size = 10.5,
 	-- opacity and color theme
 	window_background_opacity = 0.80,

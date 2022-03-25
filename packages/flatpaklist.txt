@@ -1,5 +1,11 @@
 Spotify	com.spotify.Client	1.1.80.699.gc3dac750	stable	system
-Freedesktop Platform	org.freedesktop.Platform	21.08.11	21.08	system
-Mesa	org.freedesktop.Platform.GL.default	21.3.6	21.08	system
+Joplin	net.cozic.joplin_desktop	2.7.15	stable	system
+Freedesktop Platform	org.freedesktop.Platform	21.08.12	21.08	system
+Mesa	org.freedesktop.Platform.GL.default	21.3.8	21.08	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
+Freedesktop SDK	org.freedesktop.Sdk	21.08.12	21.08	system
+KDE Application Platform	org.kde.Platform		5.15-21.08	system
+QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-21.08	system
+QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	system
+QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	system

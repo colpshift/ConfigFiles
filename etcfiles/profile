@@ -54,8 +54,8 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p --paging always'"
 export MANWIDTH=999
 
 # defaults apps
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR=lvim
+export VISUAL=lvim
 export BROWSER=firefox
 export TERM=wezterm
 

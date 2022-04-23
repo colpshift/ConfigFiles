@@ -26,21 +26,24 @@ _cheat_complete_paths()
   _describe -t pathlist 'pathlist' pathlist
 }
 
-_cheat() {
+# _cheat() {
 
-  _arguments -C \
-    '(--init)--init[Write a default config file to stdout]: :->none' \
-    '(-c --colorize)'{-c,--colorize}'[Colorize output]: :->none' \
-    '(-d --directories)'{-d,--directories}'[List cheatsheet directories]: :->none' \
-    '(-e --edit)'{-e,--edit}'[Edit <sheet>]: :->personal' \
-    '(-l --list)'{-l,--list}'[List cheatsheets]: :->full' \
-    '(-p --path)'{-p,--path}'[Return only sheets found on path <name>]: :->pathlist' \
-    '(-r --regex)'{-r,--regex}'[Treat search <phrase> as a regex]: :->none' \
-    '(-s --search)'{-s,--search}'[Search cheatsheets for <phrase>]: :->none' \
-    '(-t --tag)'{-t,--tag}'[Return only sheets matching <tag>]: :->taglist' \
-    '(-T --tags)'{-T,--tags}'[List all tags in use]: :->none' \
-    '(-v --version)'{-v,--version}'[Print the version number]: :->none' \
-    '(--rm)--rm[Remove (delete) <sheet>]: :->personal' 
+#   _arguments -C \
+#     '(--init)--init[Write a default config file to stdout]: :->none' \
+#     '(-c --colorize)'{-c,--colorize}'[Colorize output]: :->none' \
+#     '(-d --directories)'{-d,--directories}'[List cheatsheet directories]: :->none' \
+#     '(-e --edit)'{-e,--edit}'[Edit <sheet>]: :->personal' \
+#     '(-l --list)'{-l,--list}'[List cheatsheets]: :->full' \
+#     '(-p --path)'{-p,--path}'[Return only sheets found on path <name>]: :->pathlist' \
+#     '(-r --regex)'{-r,--regex}'[Treat search <phrase> as a regex]: :->none' \
+#     '(-s --search)'{-s,--search}'[Search cheatsheets for <phrase>]: :->none' \
+#     '(-t --tag)'{-t,--tag}'[Return only sheets matching <tag>]: :->taglist' \
+#     '(-T --tags)'{-T,--tags}'[List all tags in use]: :->none' \
+#     '(-v --version)'{-v,--version}'[Print the version number]: :->none' \
+#     '(--rm)--rm[Remove (delete) <sheet>]: :->personal' 
+_cheat() {
+  local state
+  state='full'
 
   case $state in
     (none)

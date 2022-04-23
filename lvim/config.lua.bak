@@ -18,7 +18,7 @@ lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- unmap a default keymapping
-lvim.keys.normal_mode["<C-Up>"] = false
+lvim.keys.normal_mode["<C- Up>"] = false
 -- edit a default keymapping
 lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
 
@@ -107,7 +107,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 --   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 -- end
 
--- set a formatter, this will override the language server formatting capabilities (if it exists)
+-- -- set a formatter, this will override the language server formatting capabilities (if it exists)
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
   { command = "black", filetypes = { "python" } },
@@ -119,7 +119,7 @@ formatters.setup {
     -- these cannot contain whitespaces, options such as `--line-width 80` become either `{'--line-width', '80'}` or `{'--line-width=80'}`
     extra_args = { "--print-with", "100" },
     ---@usage specify which filetypes to enable. By default a providers will attach to all the filetypes it supports.
-    filetypes = { "typescript", "typescriptreact" },
+    filetypes = { "typescript", "typescriptreact", "json", "javascript" },
   },
   { command = "shfmt", filetypes = { "sh" } },
 }
@@ -136,7 +136,7 @@ linters.setup {
     extra_args = { "--severity", "warning" },
   },
   {
-    command = "eslint", filetypes = { "javascript" },
+    command = "eslint", filetypes = "javascript",
   },
   -- {
   --   command = "codespell",
@@ -149,9 +149,9 @@ linters.setup {
 lvim.plugins = {
   { "folke/tokyonight.nvim" },
   -- {
-  --       "folke/trouble.nvim",
-  --       cmd = "TroubleToggle",
-  --     },
+  --   "folke/trouble.nvim",
+  --   cmd = "TroubleToggle",
+  -- },
   {
     "lukas-reineke/indent-blankline.nvim",
     event = "BufRead",
@@ -164,6 +164,7 @@ lvim.plugins = {
       vim.g.indent_blankline_show_first_indent_level = false
     end
   },
+
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)

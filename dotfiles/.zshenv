@@ -8,7 +8,7 @@
 
 ### path
 typeset -U path
-path=($HOME/.local/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin $HOME/go/bin /bin /usr/bin /sbin /usr/sbin /usr/local/go/bin /usr/local/bin $HOME/.node_modules $path[@])
+path=($HOME/.local/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin $HOME/go/bin /home/colps/.local/share/gem/ruby/3.0.0/bin /bin /usr/bin /sbin /usr/sbin /usr/local/go/bin /usr/local/julia-1.7.2 /usr/local/bin $HOME/.node_modules $path[@])
 
 # default e-mail
 export DEFAULT_RECIPIENT="marcos.colpani@gmail.com"
@@ -47,10 +47,4 @@ eval "$(rbenv init -)"
 
 ### rust
 source $HOME/.cargo/env
-# . "$HOME/.cargo/env"
-
-### nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 

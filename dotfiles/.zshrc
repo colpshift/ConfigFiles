@@ -77,7 +77,7 @@ bindkey '^H' backward-kill-word                                 # delete previou
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 ### Set alias
-alias exa='exa --header --long --group --git'
+alias exa='exa --header --long --group'
 alias ll='ls'
 alias ls='lsd -lh --group-dirs first'
 alias la='ls -a'  # show hidden files and folders
@@ -146,13 +146,15 @@ source $HOME/Src/emoji-cli/fuzzy-emoji-zle.zsh
 source $HOME/Src/forgit/forgit.plugin.zsh
 
 ### Zsh plugins
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+# bindkey "$terminfo[kcuu1]" history-substring-search-up
+# bindkey "$terminfo[kcud1]" history-substring-search-down
 
 ### Set prompt
 autoload -Uz compinit promptinit
@@ -183,6 +185,3 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-### neofetch
-clear
-neofetch

@@ -6,12 +6,15 @@
 --
 local wezterm = require("wezterm")
 return {
+	-- term definition
+	term = "wezterm",
 	-- font and size
-	--font = wezterm.font("Hasklug Nerd Font Mono"),
-	font_size = 10.5,
+	font = wezterm.font("Fira Code Nerd Font"),
+	-- font = wezterm.font("Hasklug Nerd Font Mono"),
+	font_size = 10.50,
 	-- opacity and color theme
 	window_background_opacity = 0.80,
-	color_scheme = "iceberg-dark",
+	color_scheme = "nord",
 	-- cursor
 	default_cursor_style = "SteadyBar",
 	-- tab

@@ -123,13 +123,13 @@ colors
 ### man using fzf, fd and bat.
 unset MANPATH
 fman() {
-  man -k . | fzf -q "$1" --prompt='man> '  --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man | col -bx | bat --theme Nord -l man -p --color always' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
+  man -k . | fzf -q "$1" --prompt='man> '  --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man | col -bx | batcat --theme Nord -l man -p --color always' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
 }
 export MANPAGER="sh -c 'col -bx | batcat --theme OneHalfDark -l man -p --paging always'"
 export MANWIDTH=999
 
 ### Zsh fzf-tab
-source $HOME/Src/fzf-tab/fzf-tab.plugin.zsh
+source $HOME/Src/fzf-tab/fzf-tab.zsh
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
@@ -180,8 +180,4 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 ### fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 

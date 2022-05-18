@@ -10,7 +10,6 @@ return {
   -- font = wezterm.font("JetBrainsMono Nerd Font"),
   font = wezterm.font("MesloLGS NF"),
   font_size = 10.5,
-  harfbuzz_features = { "liga=1" },
   -- opacity and color theme
   window_background_opacity = 0.90,
   color_scheme = "iceberg-dark",

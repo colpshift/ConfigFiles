@@ -9,6 +9,10 @@ an executable
 
 -- variables
 vim.g.python3_host_prog = "/bin/python3"
+vim.opt.updatetime = 300 -- faster completion
+vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
+vim.opt.foldmethod = "manual" -- folding set to "expr" for treesitter based folding
+vim.opt.foldexpr = "" -- set to "nvim_treesitter#foldexpr()" for treesitter based folding
 
 -- general
 lvim.log.level = "warn"
@@ -23,6 +27,11 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-Up>"] = false
 -- edit a default keymapping
 lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
+-- set timestamp
+vim.cmd([[
+nmap <F3> i<C-R>=strftime("%Y-%m-%d %a %H:%M ")<CR><Esc>
+imap <F3> <C-R>=strftime("%Y-%m-%d %a %H:%M ")<CR>
+]])
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 -- we use protected-mode (pcall) just in case the plugin wasn't loaded yet.
@@ -43,16 +52,16 @@ lvim.builtin.telescope.defaults.mappings = {
 }
 
 -- Use which-key to add extra bindings with the leader-key prefix
--- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
--- lvim.builtin.which_key.mappings["t"] = {
---   name = "+Trouble",
---   r = { "<cmd>Trouble lsp_references<cr>", "References" },
---   f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
---   d = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
---   q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
---   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
---   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Wordspace Diagnostics" },
--- }
+lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
+lvim.builtin.which_key.mappings["t"] = {
+  name = "+Trouble",
+  r = { "<cmd>Trouble lsp_references<cr>", "References" },
+  f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
+  d = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
+  q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
+  l = { "<cmd>Trouble loclist<cr>", "LocationList" },
+  w = { "<cmd>Trouble workspace_diagnostics<cr>", "Wordspace Diagnostics" },
+}
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -150,10 +159,10 @@ linters.setup {
 -- Additional Plugins
 lvim.plugins = {
   { "folke/tokyonight.nvim" },
-  -- {
-  --       "folke/trouble.nvim",
-  --       cmd = "TroubleToggle",
-  --     },
+  {
+    "folke/trouble.nvim",
+    cmd = "TroubleToggle",
+  },
   {
     "lukas-reineke/indent-blankline.nvim",
     event = "BufRead",
@@ -165,6 +174,27 @@ lvim.plugins = {
       vim.g.indent_blankline_show_trailing_blankline_indent = false
       vim.g.indent_blankline_show_first_indent_level = false
     end
+  },
+  {
+    "norcalli/nvim-colorizer.lua",
+    config = function()
+      require("colorizer").setup({ "*" }, {
+        RGB = true, -- #RGB hex codes
+        RRGGBB = true, -- #RRGGBB hex codes
+        RRGGBBAA = true, -- #RRGGBBAA hex codes
+        rgb_fn = true, -- CSS rgb() and rgba() functions
+        hsl_fn = true, -- CSS hsl() and hsla() functions
+        css = true, -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+        css_fn = true, -- Enable all CSS *functions*: rgb_fn, hsl_fn
+      })
+    end,
+  },
+  {
+    "folke/todo-comments.nvim",
+    event = "BufRead",
+    config = function()
+      require("todo-comments").setup()
+    end,
   },
 }
 

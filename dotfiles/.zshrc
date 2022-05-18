@@ -3,7 +3,7 @@
 # Tags: zsh shell
 # Description: zsh env config
 # Author: colpshift
-# Last update: 03/07/2021 13:14
+# Last update: 2022-05-16 Mon 07:58 PM
 #
 
 ### Set variables
@@ -80,10 +80,10 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 alias exa='exa --header --long --group'
 alias ll='ls'
 alias ls='lsd -lh --group-dirs first'
-alias la='ls -a'  # show hidden files and folders
-alias lx='ls -X'  # sort by extension
-alias lz='ls -rS' # sort by size
-alias lt='ls -rt' # sort by date
+alias la='ls -a'                                                # show hidden files and folders
+alias lx='ls -X'                                                # sort by extension
+alias lz='ls -rS'                                               # sort by size
+alias lt='ls -rt'                                               # sort by date
 alias dir='dir --color'
 alias grep='rg'
 alias dmesg='dmesg --color'

@@ -4,11 +4,8 @@ Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.7	stable	user
 Master PDF Editor	net.codeindustry.MasterPDFEditor	5.8.52	stable	user
 Joplin	net.cozic.joplin_desktop	2.7.15	stable	user
 XMind (2022)	net.xmind.XMind	12.0.2	stable	user
-Freedesktop Platform	org.freedesktop.Platform	20.08.19	20.08	user
 Freedesktop Platform	org.freedesktop.Platform	21.08.13	21.08	user
-Mesa	org.freedesktop.Platform.GL.default	21.1.8	20.08	user
 Mesa	org.freedesktop.Platform.GL.default	21.3.8	21.08	user
-Intel	org.freedesktop.Platform.VAAPI.Intel		20.08	user
 Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	user
 Freedesktop SDK	org.freedesktop.Sdk	21.08.13	21.08	user
@@ -18,5 +15,5 @@ KDE Application Platform	org.kde.Platform		5.15-21.08	user
 QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-21.08	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	user
-ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.0.1	stable	user
+ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.1.0	stable	user
 VLC	org.videolan.VLC	3.0.17.4	stable	user

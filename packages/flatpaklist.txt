@@ -1,5 +1,6 @@
 Bitwarden	com.bitwarden.desktop	1.32.1	stable	user
 Spotify	com.spotify.Client	1.1.84.716.gc5f8b819	stable	user
+Stremio	com.stremio.Stremio	4.4.142	stable	user
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.8	stable	user
 Master PDF Editor	net.codeindustry.MasterPDFEditor	5.8.52	stable	user
 Joplin	net.cozic.joplin_desktop	2.7.15	stable	user

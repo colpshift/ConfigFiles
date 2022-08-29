@@ -7,13 +7,11 @@
 local wezterm = require("wezterm")
 return {
   -- font and size
-  font = wezterm.font {
-    family = "JetBrains Mono",
-    harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
-  },
-  font_size = 10,
+  -- font = wezterm.font("JetBrainsMono Nerd Font"),
+  -- font = wezterm.font("MesloLGS NF"),
+  font_size = 10.5,
   -- opacity and color theme
-  window_background_opacity = 0.85,
+  window_background_opacity = 0.90,
   color_scheme = "iceberg-dark",
   -- cursor
   default_cursor_style = "SteadyBar",
@@ -50,6 +48,6 @@ return {
   -- disable warnings
   warn_about_missing_glyphs = false,
   -- check updates
-  check_for_updates = false,
+  check_for_updates = true,
   check_for_updates_interval_seconds = 86400,
 }

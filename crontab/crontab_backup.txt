@@ -1,0 +1,20 @@
+#--------------------------------------------------
+# https://crontab.guru/examples.html
+#--------------------------------------------------
+# https://wiki.archlinux.org/index.php/Cron
+#--------------------------------------------------
+#SHELL=/bin/sh
+#MAILTO=colps
+#
+# Example of job definition:
+#
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- weekday (0-6) (Sun=0-7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+0 8 * * * $HOME/.scripts/nvim_update.sh
+30 8 * * fri $HOME/.scripts/backup_manjaro.sh
+0 9 * * fri gitb

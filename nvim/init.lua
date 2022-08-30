@@ -1,58 +1,25 @@
--- This is where your custom modules and plugins go.
--- See the wiki for a guide on how to extend NvChad
+vim.defer_fn(function()
+  pcall(require, "impatient")
+end, 0)
 
-local hooks = require "core.hooks"
+require "core"
+require "core.options"
 
--- NOTE: To use this, make a copy with `cp example_init.lua init.lua`
+-- setup packer + plugins
+local fn = vim.fn
+local install_path = fn.stdpath "data" .. "/site/pack/packer/opt/packer.nvim"
 
---------------------------------------------------------------------
+if fn.empty(fn.glob(install_path)) > 0 then
+  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e222a" })
+  print "Cloning packer .."
+  fn.system { "git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path }
 
--- To modify packaged plugin configs, use the overrides functionality
--- if the override does not exist in the plugin config, make or request a PR,
--- or you can override the whole plugin config with 'chadrc' -> M.plugins.default_plugin_config_replace{}
--- this will run your config instead of the NvChad config for the given plugin
+  -- install plugins + compile their configs
+  vim.cmd "packadd packer.nvim"
+  require "plugins"
+  vim.cmd "PackerSync"
+end
 
--- hooks.override("lsp", "publish_diagnostics", function(current)
---   current.virtual_text = false;
---   return current;
--- end)
+pcall(require, "custom")
 
--- To add new mappings, use the "setup_mappings" hook,
--- you can set one or many mappings
--- example below:
-
--- hooks.add("setup_mappings", function(map)
---    map("n", "<leader>cc", "gg0vG$d", opt) -- example to delete the buffer
---    .... many more mappings ....
--- end)
-
--- To add new plugins, use the "install_plugin" hook,
--- NOTE: we heavily suggest using Packer's lazy loading (with the 'event' field)
--- see: https://github.com/wbthomason/packer.nvim
--- examples below:
-
-hooks.add("install_plugins", function(use)
-   use {
-      "williamboman/nvim-lsp-installer",
-   }
-   use {
-      "jose-elias-alvarez/null-ls.nvim",
-      after = "nvim-lspconfig",
-      config = function()
-         require("custom.plugins.null-ls").setup()
-      end,
-   }
-   use {
-      "nathom/filetype.nvim",
-   }
-   use {
-      "hrsh7th/cmp-emoji",
-      after = "nvim-cmp",
-   }
-   use { "davidgranstrom/nvim-markdown-preview" }
-end)
-
--- alternatively, put this in a sub-folder like "lua/custom/plugins/mkdir"
--- then source it with
-
--- require "custom.plugins.mkdir"
+require("core.utils").load_mappings()

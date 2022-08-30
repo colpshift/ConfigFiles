@@ -1,0 +1,32 @@
+
+
+
+├── init.lua
+├── lua
+│   ├── chadrc.lua
+│   ├── default_config.lua
+|   |
+│   ├── core
+│   │   ├── init.lua
+│   │   ├── autocmds.lua
+│   │   ├── mappings.lua
+│   │   ├── options.lua
+│   │   └── utils.lua
+|   |
+│   ├── plugins
+│   │    ├── init.lua
+│   │    ├── packerInit.lua
+│   │    └── configs
+│   │        ├── bufferline.lua
+│   │        ├── others.lua
+│   │        └── <many more plugin configs>
+|   |
+│   └── colors
+│       ├── init.lua
+│       ├── highlights.lua
+│       └── themes
+│           ├── onedark.lua
+│           └── <many more themes>
+
+
+

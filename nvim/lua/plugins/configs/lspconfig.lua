@@ -71,19 +71,4 @@ lspconfig.sumneko_lua.setup {
   },
 }
 
-lspconfig.bashls.setup{
-  "bash-language-server", "start"
-}
-
-lsp.config.tsserver.setup{
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es6",
-    "checkJs": false
-  },
-  "exclude": [
-    "node_modules"
-  ]
-}
-
 return M

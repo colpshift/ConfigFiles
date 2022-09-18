@@ -1,9 +1,5 @@
-#--------------------------------------------------
-# https://crontab.guru/examples.html
-#--------------------------------------------------
 # https://wiki.archlinux.org/index.php/Cron
-#--------------------------------------------------
-#SHELL=/bin/sh
+#SHELL=/usr/bin/sh
 #MAILTO=colps
 #
 # Example of job definition:

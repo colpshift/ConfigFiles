@@ -1,7 +1,7 @@
 Google Chrome	com.google.Chrome	105.0.5195.125-1	stable	user
 draw.io	com.jgraph.drawio.desktop	20.3.0	stable	user
 tidal-hifi	com.mastermindzh.tidal-hifi	4.1.1	stable	user
-Microsoft Teams	com.microsoft.Teams	1.5.00.10453	stable	user
+Microsoft Teams	com.microsoft.Teams	1.5.00.23861	stable	user
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.8	stable	user
 Obsidian	md.obsidian.Obsidian	0.15.9	stable	user
 Flameshot	org.flameshot.Flameshot	12.1.0	stable	user
@@ -14,6 +14,7 @@ Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.3.0	user
 Freedesktop SDK	org.freedesktop.Sdk	21.08.15	21.08	user
+GNU Image Manipulation Program	org.gimp.GIMP	2.10.32	stable	user
 GNOME Application Platform version 42	org.gnome.Platform		42	user
 Pop Gtk theme	org.gtk.Gtk3theme.Pop-dark		3.22	user
 KDE Application Platform	org.kde.Platform		5.15-21.08	user

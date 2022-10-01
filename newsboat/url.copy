@@ -1,0 +1,61 @@
+---Unread---
+"query:Unread:unread = \"yes\"" meta
+---News---
+http://rss.cnn.com/rss/edition.rss                                              "CNN News"
+http://feeds.bbci.co.uk/news/rss.xml                                            "BBC News"
+https://braziljournal.com/rss                                                   "BR News"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCiZ5zLSOBM5-3zBUHevecIA    "Historia"
+---Soul---
+https://www.youtube.com/feeds/videos.xml?channel_id=UCQUHdEfKRmy5zowYEkWoHLg    "Canal Espirita"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYatoBlRirWhMrgjTK0b6Pg    "Amigos da Luz"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC3bXRwWHoPOC2yoUzKgb6eQ    "Viagem Astral"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7263Wu5ruI38CyGi8TpfTA    "Espiritualidade e Vida"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC_6U_pPct8NnEALOWOk1ZCg    "Saber Espiritismo"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCLwPoIbzHJw-kHY5KUFag8A    "Estrada Sem Fim"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbmys32MHOyDe7agPWM6rRg    "Aprendendo sobre Mediunidade"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCfgEWRpiRztDXdI5I_AtYFA    "Coaching Espirita"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCB5CMjFwP0GN8aq-eNWRw7g    "Espiritismo Raiz"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9fu3YZJFP-Gso8I-TcY3oQ    "Wagner Borges"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCt6JIPb0HQEs9nzMoa1bmHg    "Juan Marcello"
+---Sec---
+https://www.youtube.com/feeds/videos.xml?channel_id=UCWFmlmegFcu6lvAmeBtV3cg    "safesrc"
+https://feeds.feedburner.com/TheHackersNews                                     "Hacker News"
+http://feeds.feedburner.com/gbhackers                                           "gbhackers"
+---Arch---
+https://www.kernel.org/feeds/kdist.xml                                          "Kernel"
+https://archlinux.org/feeds/news/                                               "Archlinux"
+https://arcolinuxforum.com/app.php/feed                                         "Arcolinux"
+https://sourceforge.net/projects/arcolinux-community-editions/rss?path=/bspwm   "ArcoLinuxB"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsYVQUylCMLg    "Erick Dubois"
+---Linux---
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg    "Distrotube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA    "Brodie"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA    "Mental"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEf5U1dB5a2e2S-XUlnhxSA    "Diolinux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCvA_wgsX6eFAOXI8Rbg_WiQ    "Tutorial Linux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCqd9oVuR4tuKD5Y9AFwxz7Q    "TerminalRoot"
+https://linuxhandbook.com/rss/                                                  "Linuxhandbook"
+---Dev---
+https://github.com/colpshift.private.atom?token=AJJUXHVMOKPFUU6PUNN655N7FQDZK   "github"
+https://gitlab.com/colpshift.atom?feed_token=gFkiNJPVagWFkBexBrjx               "gitlab"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCs5Y5_7XK8HLDX0SLNwkd3w    "Visual Studio Code"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDCHcqyeQgJ-jVSd6VJkbCw    "codeSTACKr"
+https://hackernoon.com/feed                                                     "Hackernoon"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA    "Fireship"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8butISFwT-Wl7EV0hUK0BQ    "freeCodeCamp"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-T8W79DN6PBnzomelvqJYw    "James Q Quick"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCaYr5yxgOyk599Mnb3TGh-g    "Tapas Adhikary"
+https://www.youtube.com/feeds/videos.xml?channel_id=UClb90NQQcskPUGDIXsQEz5Q    "Dev Ed"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFuIUoyHB12qpYa8Jpxoxow    "Código Fonte TV"
+---DevOps---
+https://www.youtube.com/feeds/videos.xml?channel_id=UCoOq-DtESvayx5yJE5H6-qQ    "Thetips4you"
+---ServiceManagement---
+https://thewalkingtech.com/feed/podcast/
+---ServiceNow---
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDTdlx80nh1DG6s4G4H-sFg    "SN Events"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCLukrOQYSgsHUR_NSiVZndQ    "ServiceNow"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCdXorgCT87YlFRN9n8oJ7_A    "SN Dev"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCCBQU8mlFrElxQNR2mo-gLg    "SN Community"
+---Win---
+https://www.youtube.com/feeds/videos.xml?channel_id=UCQSpnDG3YsFNf5-qHocF-WQ    "ThioJoe"
+

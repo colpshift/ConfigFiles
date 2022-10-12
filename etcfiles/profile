@@ -25,8 +25,10 @@ if [ -d /etc/profile.d ]; then
   done
   unset i
 fi
+# default apps
 # defaults apps
 export EDITOR=lvim
 export VISUAL=lvim
-export BROWSER=firefox
-#export TERM=wezterm
+export BROWSER=brave-browser-stable
+export TERM=wezterm
+

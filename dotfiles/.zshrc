@@ -10,9 +10,11 @@
 WORDCHARS=${WORDCHARS//\/[&.;]}
 
 ### Set/unset ZSH options
-setopt INC_APPEND_HISTORY SHARE_HISTORY
+setopt INC_APPEND_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
 setopt EXTENDED_HISTORY
 setopt APPEND_HISTORY
+setopt SHARE_HISTORY
 setopt AUTO_LIST
 setopt MENUCOMPLETE
 setopt COMPLETE_ALIASES
@@ -37,13 +39,13 @@ zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
 
 ### History
 HISTFILE=$HOME/.zhistory
-HISTSIZE=1000
+HISTSIZE=999
 SAVEHIST=1000
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
+# zle -N up-line-or-beginning-search
+# zle -N down-line-or-beginning-search
+# zle -N history-beginning-search-backward-end history-search-end
+# zle -N history-beginning-search-forward-end history-search-end
 
 ### Load colors
 autoload -U colors && colors
@@ -91,27 +93,20 @@ alias df='dust'
 alias du='duf'
 alias ps='procs'
 alias su='sudo -i'
-alias nvim='lvim'
 alias vi='nvim'
 alias vim='nvim'
 alias gvim='nvim'
+alias nvim='lvim'
 alias fd='fdfind'
 alias bat='batcat'
 alias batcat='batcat --theme OneHalfDark'
 alias gitu='git add . && git commit -S && git push'
 alias gitb='git add . && git commit -S -m 'backup' && git push'
 alias gitl='git log --graph'
-alias mpv='devour mpv'
-alias sxiv='devour sxiv'
-alias zathura='devour zathura'
 alias cls='clear'
-alias cmatrix='cmatrix -fs'
 alias myip='curl http://ipecho.net/plain; echo'
+alias ports='netstat -tulanp'
 alias neofetch='clear && neofetch --color_blocks off'
-alias parui='~/.scripts/fzf_paru_install.sh'
-alias parur='~/.scripts/fzf_paru_remove.sh'
-alias parup='~/.scripts/paru_update.sh'
-alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 
@@ -129,7 +124,7 @@ export MANPAGER="sh -c 'col -bx | batcat --theme OneHalfDark -l man -p --paging 
 export MANWIDTH=999
 
 ### Zsh fzf-tab
-source $HOME/Src/fzf-tab/fzf-tab.zsh
+source $HOME/.src/fzf-tab/fzf-tab.zsh
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
@@ -142,13 +137,14 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
 ### Zsh forgit
-source $HOME/Src/emoji-cli/fuzzy-emoji-zle.zsh
-source $HOME/Src/forgit/forgit.plugin.zsh
+source $HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh
+source $HOME/.src/forgit/forgit.plugin.zsh
 
 ### Zsh plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-command-not-found/command-not-found.plugin.zsh
+source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
 bindkey '^[[A' history-substring-search-up
@@ -171,9 +167,6 @@ export GPG_TTY
 
 ### fasd
 eval "$(fasd --init auto)"
-
-### wezterm
-sh $HOME/.config/wezterm/wezterm_integration.sh
 
 ### zsh_functions
 fpath+=${ZDOTDIR:-~}/.zsh_functions

@@ -701,7 +701,7 @@ copy_on_select yes
 #: to be pts. Note that borders are displayed only when more than one
 #: window is visible. They are meant to separate multiple windows.
 
-draw_minimal_borders yes
+# draw_minimal_borders yes
 
 #: Draw only the minimum borders needed. This means that only the
 #: borders that separate the inactive window from a neighbor are
@@ -993,7 +993,7 @@ draw_minimal_borders yes
 
 #: The foreground and background colors.
 
-background_opacity 0.80
+# background_opacity 1.0
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -1043,7 +1043,7 @@ background_opacity 0.80
 #: only if background_opacity is set and transparent windows are
 #: supported or background_image is set.
 
-dim_opacity 0.75
+# dim_opacity 0.75
 
 #: How much to dim text that has the DIM/FAINT attribute set. One
 #: means no dimming and zero means fully dimmed (i.e. invisible).
@@ -1335,7 +1335,7 @@ dim_opacity 0.75
 #: remote machine to read/write to the local filesystem, without
 #: permission.
 
-allow_hyperlinks yes
+# allow_hyperlinks yes
 
 #: Process hyperlink escape sequences (OSC 8). If disabled OSC 8
 #: escape sequences are ignored. Otherwise they become clickable
@@ -1344,7 +1344,7 @@ allow_hyperlinks yes
 #: special value of ask means that kitty will ask before opening the
 #: link when clicked.
 
-shell_integration enabled
+# shell_integration enabled
 
 #: Enable shell integration on supported shells. This enables features
 #: such as jumping to previous prompts, browsing the output of the
@@ -2242,6 +2242,6 @@ shell_integration enabled
 
 
 # BEGIN_KITTY_THEME
-# Ayu Mirage
+# Snazzy
 include current-theme.conf
 # END_KITTY_THEME

@@ -1,6 +1,6 @@
-Google Chrome	com.google.Chrome	106.0.5249.119-1	stable	user
+Google Chrome	com.google.Chrome	107.0.5304.87-1	stable	user
 draw.io	com.jgraph.drawio.desktop	20.3.0	stable	user
-tidal-hifi	com.mastermindzh.tidal-hifi	4.3.0	stable	user
+tidal-hifi	com.mastermindzh.tidal-hifi	4.3.1	stable	user
 Microsoft Teams	com.microsoft.Teams	1.5.00.23861	stable	user
 Stremio	com.stremio.Stremio	4.4.159	stable	user
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.9	stable	user
@@ -23,4 +23,3 @@ KDE Application Platform	org.kde.Platform		5.15-21.08	user
 QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-21.08	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	user
-ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.1.1	stable	user

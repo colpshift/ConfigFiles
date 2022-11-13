@@ -29,6 +29,6 @@ fi
 # defaults apps
 export EDITOR=lvim
 export VISUAL=lvim
-export BROWSER=/usr/local/bin/firefox
+export BROWSER=/bin/brave-browser
 export TERM=wezterm
 

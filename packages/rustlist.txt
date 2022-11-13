@@ -1,0 +1,10 @@
+startship #prompt
+exa
+ripgrip
+dust
+duf
+procs
+fd
+bat
+tokei
+

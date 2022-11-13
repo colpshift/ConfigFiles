@@ -100,9 +100,9 @@ alias nvim='lvim'
 alias fd='fdfind'
 alias bat='batcat'
 alias batcat='batcat --theme OneHalfDark'
-alias gitu='git add . && git commit -S && git push'
-alias gitb='git add . && git commit -S -m 'backup' && git push'
-alias gitl='git log --graph'
+# alias gitu='git add . && git commit -S && git push'
+# alias gitb='git add . && git commit -S -m 'backup' && git push'
+# alias gitl='git log --graph'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
@@ -140,6 +140,8 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 source $HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh
 source $HOME/.src/forgit/forgit.plugin.zsh
 
+
+
 ### Zsh plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -151,6 +153,9 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 # bindkey "$terminfo[kcuu1]" history-substring-search-up
 # bindkey "$terminfo[kcud1]" history-substring-search-down
+
+### Zsh autocompletion
+source /usr/share/zsh-autocompletion/cheat.zsh
 
 ### Set prompt
 autoload -Uz compinit promptinit

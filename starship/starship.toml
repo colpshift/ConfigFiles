@@ -14,9 +14,9 @@ scan_timeout = 10
 #add_newline = false
 
 [character]
-success_symbol = "[➜](bold green)"
-error_symbol = "[✗](bold red)"
-vicmd_symbol = "[vi](bold fg:3)"
+success_symbol =  "[](bold green)"
+error_symbol =    "[](bold red)"
+vicmd_symbol =    "[ ](bold fg:3)"
 
 [directory]
 format = '[ $path ]($style)($read_only_style)'

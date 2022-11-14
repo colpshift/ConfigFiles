@@ -25,7 +25,6 @@ if [ -d /etc/profile.d ]; then
   done
   unset i
 fi
-# default apps
 # defaults apps
 export EDITOR=lvim
 export VISUAL=lvim

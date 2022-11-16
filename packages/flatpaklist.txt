@@ -1,0 +1,8 @@
+Stremio	com.stremio.Stremio	4.4.159	stable	system
+Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	system
+Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	system
+openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
+KDE Application Platform	org.kde.Platform		5.15-21.08	system
+QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-21.08	system
+QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	system
+QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	system

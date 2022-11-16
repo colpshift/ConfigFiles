@@ -25,6 +25,10 @@ if [ -d /etc/profile.d ]; then
   done
   unset i
 fi
+
+# fix control file error
+export XDG_RUNTIME_DIR=/run/user/$UID
+
 # defaults apps
 export EDITOR=lvim
 export VISUAL=lvim

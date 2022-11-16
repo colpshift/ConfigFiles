@@ -13,12 +13,13 @@ gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  161    latest/stable    c
 gnome-3-38-2004            0+git.6f39565               119    latest/stable/…  canonical**     -
 gtk-common-themes          0.1-81-g442e511             1535   latest/stable/…  canonical**     -
 gtk-theme-pocillo          0.14.4.1                    5      latest/stable    ubuntubudgie    -
+gtk-theme-qogirbudgie      22.04.1                     8      latest/stable    ubuntubudgie    -
 gtk2-common-themes         0.1                         13     latest/stable    canonical**     -
 notion-snap                1.4.0                       16     latest/stable    steverydz       -
 onlyoffice-desktopeditors  7.2.1                       133    latest/stable    onlyoffice**    -
 rambox                     2.0.7                       22     latest/stable    ramboxapp**     -
 snapd                      2.57.4                      17336  latest/stable    canonical**     snapd
-snapd-desktop-integration  0.1                         14     latest/stable/…  canonical**     -
-todoist                    1.1.0                       946    latest/edge      doist**         -
+snapd-desktop-integration  0.1                         14     latest/stable    canonical**     -
+todoist                    1.1.0                       947    latest/edge      doist**         -
 ubuntu-budgie-welcome      0.18.6                      427    latest/stable/…  ubuntubudgie    classic
 xmind                      22.10.972                   20     latest/stable    xmindltd        -

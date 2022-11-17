@@ -7,7 +7,7 @@ core18                     20221027                    2620   latest/stable    c
 core20                     20221027                    1695   latest/stable    canonical**     base
 cups                       2.4.2-4                     836    latest/stable    openprinting**  -
 drawio                     20.3.0                      166    latest/stable    jgraph**        -
-firefox                    106.0-1                     1969   latest/stable/…  mozilla**       -
+firefox                    107.0-2                     2088   latest/stable/…  mozilla**       -
 gimp                       2.10.30                     393    latest/stable    snapcrafters    -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  161    latest/stable    canonical**     -
 gnome-3-38-2004            0+git.6f39565               119    latest/stable/…  canonical**     -
@@ -18,7 +18,7 @@ gtk2-common-themes         0.1                         13     latest/stable    c
 notion-snap                1.4.0                       16     latest/stable    steverydz       -
 onlyoffice-desktopeditors  7.2.1                       133    latest/stable    onlyoffice**    -
 rambox                     2.0.7                       22     latest/stable    ramboxapp**     -
-snapd                      2.57.4                      17336  latest/stable    canonical**     snapd
+snapd                      2.57.5                      17576  latest/stable    canonical**     snapd
 snapd-desktop-integration  0.1                         14     latest/stable    canonical**     -
 todoist                    1.1.0                       947    latest/edge      doist**         -
 ubuntu-budgie-welcome      0.18.6                      427    latest/stable/…  ubuntubudgie    classic

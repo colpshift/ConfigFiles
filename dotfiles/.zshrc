@@ -3,7 +3,7 @@
 # Tags: zsh shell
 # Description: zsh env config
 # Author: colpshift
-# Last update: 2022-05-16 Mon 07:58 PM
+# Last update: 2022-11-14 Mon 12:21 AM
 #
 
 ### Set variables
@@ -103,6 +103,9 @@ alias batcat='batcat --theme OneHalfDark'
 # alias gitu='git add . && git commit -S && git push'
 # alias gitb='git add . && git commit -S -m 'backup' && git push'
 # alias gitl='git log --graph'
+alias pkgi='pkg_fzf_install.sh'
+alias pkgr='pkg_fzf_remove.sh'
+alias pkgu='sudo apt update && sudo apt upgrade'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
@@ -139,8 +142,6 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 ### Zsh forgit
 source $HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh
 source $HOME/.src/forgit/forgit.plugin.zsh
-
-
 
 ### Zsh plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

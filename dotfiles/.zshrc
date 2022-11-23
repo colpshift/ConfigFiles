@@ -112,6 +112,7 @@ alias ports='netstat -tulanp'
 alias neofetch='clear && neofetch --color_blocks off'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
+alias wezterm='flatpak run org.wezfurlong.wezterm'
 
 ### Theming section
 autoload -U compinit colors zcalc

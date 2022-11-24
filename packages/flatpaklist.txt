@@ -7,11 +7,16 @@ Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	system
 Mesa	org.freedesktop.Platform.GL.default	22.1.7	22.08	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	system
+ffmpeg-full	org.freedesktop.Platform.ffmpeg-full		21.08	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	system
+GNOME Application Platform version 42	org.gnome.Platform		42	system
+Passwords and Keys	org.gnome.seahorse.Application	42.0	stable	system
 KDE Application Platform	org.kde.Platform		5.15-21.08	system
 QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-21.08	system
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	system
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	system
-Thunderbird	org.mozilla.Thunderbird	102.5.0	stable	system
+Signal Desktop	org.signal.Signal	5.63.1	stable	system
+Telegram Desktop	org.telegram.desktop	4.3.1	stable	system
+Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.38.2	stable	system
 Wez's Terminal Emulator	org.wezfurlong.wezterm	20221119-145034-49b9839f	stable	system

@@ -2,8 +2,6 @@ bat v0.22.1:
     bat
 du-dust v0.8.3:
     dust
-duf v0.19.0:
-    duf
 exa v0.10.1:
     exa
 fd-find v8.5.2:

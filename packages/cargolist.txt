@@ -1,16 +1,4 @@
-bat v0.22.1:
-    bat
-du-dust v0.8.3:
-    dust
-exa v0.10.1:
-    exa
-fd-find v8.5.2:
-    fd
-lsd v0.23.1 (https://github.com/Peltoche/lsd.git?branch=master#c2cf8359):
-    lsd
-procs v0.13.3:
-    procs
-ripgrep v13.0.0:
-    rg
-tokei v12.1.2:
-    tokei
+starship v1.12.0:
+    starship
+stylua v0.15.3:
+    stylua

@@ -8,8 +8,7 @@ local wezterm = require("wezterm")
 return {
 	-- font and size
 	-- font = wezterm.font("FiraCode Nerd Font"),
-  font = wezterm.font("DejaVuSansMono Nerd Font"),
-	font_size = 10.5,
+	-- font_size = 10.5,
 	-- opacity and color theme
 	window_background_opacity = 0.85,
 	color_scheme = "iceberg-dark",

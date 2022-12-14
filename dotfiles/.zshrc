@@ -79,9 +79,9 @@ bindkey '^H' backward-kill-word                                 # delete previou
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 ### Set alias
-alias exa='exa --header --long --group'
+alias exa='exa --header --long --group --icons'
 alias ll='ls'
-alias ls='lsd -lh --group-dirs first'
+alias ls='exa'
 alias la='ls -a'                                                # show hidden files and folders
 alias lx='ls -X'                                                # sort by extension
 alias lz='ls -rS'                                               # sort by size
@@ -103,9 +103,9 @@ alias batcat='batcat --theme OneHalfDark'
 # alias gitu='git add . && git commit -S && git push'
 # alias gitb='git add . && git commit -S -m 'backup' && git push'
 # alias gitl='git log --graph'
-alias pkgi='pkg_fzf_install.sh'
-alias pkgr='pkg_fzf_remove.sh'
-alias pkgu='sudo apt update && sudo apt upgrade'
+alias pkgi='fzf_pkg_pop_install.sh'
+alias pkgr='fzf_pkg_pop_remove.sh'
+alias pkgu='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
@@ -157,7 +157,7 @@ bindkey '^[[B' history-substring-search-down
 # bindkey "$terminfo[kcud1]" history-substring-search-down
 
 ### Zsh autocompletion
-source /usr/share/zsh-autocompletion/cheat.zsh
+#source /usr/share/zsh-autocompletion/cheat.zsh
 
 ### Set prompt
 autoload -Uz compinit promptinit

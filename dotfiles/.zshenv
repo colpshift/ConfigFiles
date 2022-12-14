@@ -8,7 +8,7 @@
 
 ### path
 typeset -U path
-path=($HOME/.local/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin $HOME/go/bin /bin /usr/bin /sbin /usr/sbin /usr/local/go/bin /usr/local/bin $path[@])
+path=($HOME/.local/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin /usr/local/go/bin /bin /usr/bin /sbin /usr/sbin /usr/local/go/bin /usr/local/bin $path[@])
 
 # default e-mail
 export DEFAULT_RECIPIENT="marcos.colpani@gmail.com"
@@ -46,10 +46,10 @@ eval "$(rbenv init -)"
 source $HOME/.cargo/env
 . "$HOME/.cargo/env"
 
-### perl
-PATH="/home/colps/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/colps/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/colps/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/colps/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/colps/perl5"; export PERL_MM_OPT;
+# ### perl
+# PATH="/home/colps/perl5/bin${PATH:+:${PATH}}"; export PATH;
+# PERL5LIB="/home/colps/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+# PERL_LOCAL_LIB_ROOT="/home/colps/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+# PERL_MB_OPT="--install_base \"/home/colps/perl5\""; export PERL_MB_OPT;
+# PERL_MM_OPT="INSTALL_BASE=/home/colps/perl5"; export PERL_MM_OPT;
 

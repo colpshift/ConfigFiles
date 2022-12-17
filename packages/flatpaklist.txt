@@ -1,5 +1,9 @@
-Bitwarden	com.bitwarden.desktop	2022.11.0	stable	user
+Bitwarden	com.bitwarden.desktop	2022.12.0	stable	user
+Brave Browser	com.brave.Browser	1.46.144	stable	user
+Minder	com.github.phase1geo.minder	1.14.0	stable	user
+draw.io	com.jgraph.drawio.desktop	20.6.2	stable	user
 tidal-hifi	com.mastermindzh.tidal-hifi	4.3.1	stable	user
+Skype	com.skype.Client	8.92.0.204	stable	user
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.9	stable	user
 GitHub Desktop	io.github.shiftey.Desktop	3.1.1-linux1	stable	user
 Flameshot	org.flameshot.Flameshot	12.1.0	stable	user
@@ -13,6 +17,9 @@ Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	user
 Freedesktop SDK	org.freedesktop.Sdk	22.08.4	22.08	user
+GNU Image Manipulation Program	org.gimp.GIMP	2.10.32	stable	user
+Déjà Dup Backups	org.gnome.DejaDup	44.0	stable	user
+GNOME Application Platform version 43	org.gnome.Platform		43	user
 Pop Gtk theme	org.gtk.Gtk3theme.Pop-dark		3.22	user
 KDE Application Platform	org.kde.Platform		5.15-21.08	user
 KDE Application Platform	org.kde.Platform		5.15-22.08	user

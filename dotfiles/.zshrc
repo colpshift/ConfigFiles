@@ -79,9 +79,8 @@ bindkey '^H' backward-kill-word                                 # delete previou
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 ### Set alias
-alias exa='exa --header --long --group --icons'
 alias ll='ls'
-alias ls='exa'
+alias ls='lsd -lh --group-dirs first'
 alias la='ls -a'                                                # show hidden files and folders
 alias lx='ls -X'                                                # sort by extension
 alias lz='ls -rS'                                               # sort by size
@@ -181,3 +180,5 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 ### fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+source /home/colps/.config/broot/launcher/bash/br

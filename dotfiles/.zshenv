@@ -15,13 +15,12 @@ export DEFAULT_RECIPIENT="marcos.colpani@gmail.com"
 
 ### fzf
 export FZF_DEFAULT_COMMAND="fdfind --type file --color=always"
-# export FZF_DEFAULT_OPTS="--ansi"
-export FZF_DEFAULT_OPTS="--inline-info"
+export FZF_DEFAULT_OPTS="--ansi"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # search
 export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 # preview
-export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || bat {} || tree -C {}) 2> /dev/null | head -200'"
 
 ### forgit
 export FORGIT_LOG_GRAPH_ENABLE="true"

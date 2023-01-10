@@ -42,10 +42,6 @@ HISTFILE=$HOME/.zhistory
 HISTSIZE=999
 SAVEHIST=1000
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
-# zle -N up-line-or-beginning-search
-# zle -N down-line-or-beginning-search
-# zle -N history-beginning-search-backward-end history-search-end
-# zle -N history-beginning-search-forward-end history-search-end
 
 ### Load colors
 autoload -U colors && colors
@@ -148,15 +144,12 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-command-not-found/command-not-found.plugin.zsh
 source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh-cheat/cheat.zsh
+
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-# bindkey "$terminfo[kcuu1]" history-substring-search-up
-# bindkey "$terminfo[kcud1]" history-substring-search-down
-
-### Zsh autocompletion
-#source /usr/share/zsh-autocompletion/cheat.zsh
 
 ### Set prompt
 autoload -Uz compinit promptinit
@@ -179,6 +172,5 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 ### fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 
 source /home/colps/.config/broot/launcher/bash/br

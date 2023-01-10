@@ -11,10 +11,11 @@ return {
 	font_size = 10,
 	-- opacity and color theme
 	window_background_opacity = 0.85,
-	color_scheme = "iceberg-dark",
+	-- color_scheme = "iceberg-dark",
+	color_scheme = "wilmersdorf",
 	-- cursor
 	default_cursor_style = "SteadyBar",
-	-- tab
+	-- tab,
 	hide_tab_bar_if_only_one_tab = true,
 	-- padding
 	window_padding = {

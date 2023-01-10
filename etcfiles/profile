@@ -33,6 +33,6 @@ export MANWIDTH=999
 # defaults apps
 export EDITOR=lvim
 export VISUAL=lvim
-export BROWSER=firefox
+export BROWSER="flatpak run com.brave.Browser"
 export TERM=wezterm
 

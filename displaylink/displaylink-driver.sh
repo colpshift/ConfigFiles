@@ -45,7 +45,7 @@ cd ./displaylink-driver-5.4.0-55.153
 # I just downloaded a tarball from the latest dev branch from their Github like so: 
 curl -L https://github.com/DisplayLink/evdi/archive/refs/heads/devel.tar.gz -o evdi.tar.gz
 
-# Because the structure of the tar.gz file from Github has an extra folder in its root level,
+# 5. Because the structure of the tar.gz file from Github has an extra folder in its root level,
 # you also need to modify the install_evdi() function in the displaylink-installer.sh file. 
 # Look for this:
 #

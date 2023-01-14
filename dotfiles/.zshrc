@@ -144,7 +144,7 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-command-not-found/command-not-found.plugin.zsh
 source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-source /usr/share/zsh-cheat/cheat.zsh
+# source /usr/share/zsh-cheat/cheat.zsh
 
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
@@ -161,8 +161,10 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 ### gpg agent
-GPG_TTY=$(tty)
-export GPG_TTY
+export GPG_TTY=$(tty)
+
+### broot
+source /home/colps/.config/broot/launcher/bash/br
 
 ### fasd
 eval "$(fasd --init auto)"
@@ -173,4 +175,3 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 ### fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source /home/colps/.config/broot/launcher/bash/br

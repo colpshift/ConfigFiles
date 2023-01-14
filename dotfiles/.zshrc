@@ -164,6 +164,9 @@ eval "$(starship init zsh)"
 GPG_TTY=$(tty)
 export GPG_TTY
 
+### broot
+source /home/colps/.config/broot/launcher/bash/br
+
 ### fasd
 eval "$(fasd --init auto)"
 
@@ -173,4 +176,3 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 ### fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source /home/colps/.config/broot/launcher/bash/br

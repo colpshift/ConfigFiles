@@ -12,4 +12,4 @@
 # |  |  |  |  |
 # *  *  *  *  * user-name  command to be executed
 0 8 * * * $HOME/.scripts/nvim_update.sh
-0 9 * * 5 lvim +LvimUpdate +q
+0 9 * * 5 $HOME/.scripts/lvim_update.sh

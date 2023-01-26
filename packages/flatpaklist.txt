@@ -1,7 +1,7 @@
 Bitwarden	com.bitwarden.desktop	2023.1.1	stable	user
 Discord	com.discordapp.Discord	0.0.24	stable	user
 draw.io	com.jgraph.drawio.desktop	20.7.4	stable	user
-tidal-hifi	com.mastermindzh.tidal-hifi	4.3.1	stable	user
+tidal-hifi	com.mastermindzh.tidal-hifi	4.4.0	stable	user
 Microsoft Teams	com.microsoft.Teams	1.5.00.23861	stable	user
 Skype	com.skype.Client	8.93.0.404	stable	user
 Stremio	com.stremio.Stremio	4.4.159	stable	user

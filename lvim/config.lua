@@ -4,12 +4,10 @@
 ]]
 
 -- vim options
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.relativenumber = true
-vim.opt.updatetime = 300
-vim.opt.expandtab = true
-vim.opt.termguicolors = true
+vim.opt.number = true
+vim.opt.cursorline = false
+vim.opt.cursorcolumn = false
+vim.opt.relativenumber = false
 
 -- general
 lvim.log.level = "info"
@@ -48,7 +46,7 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
 lvim.builtin.treesitter.auto_install = true
 
 -- linters and formatters <https://www.lunarvim.org/docs/languages#lintingformatting>
-local formatters = require("lvim.lsp.null-ls.formatters")
+local formatters = reload("lvim.lsp.null-ls.formatters")
 formatters.setup({
 	{ command = "stylua" },
 	{ command = "black", filetypes = { "python" } },
@@ -61,7 +59,7 @@ formatters.setup({
 	{ command = "shfmt", filetypes = { "sh" } },
 })
 
-local linters = require("lvim.lsp.null-ls.linters")
+local linters = reload("lvim.lsp.null-ls.linters")
 linters.setup({
 	{ command = "flake8", filetypes = { "python" } },
 	{
@@ -77,14 +75,16 @@ lvim.plugins = {
 		cmd = "TroubleToggle",
 	},
 	{
-		"folke/lsp-colors.nvim",
-		event = "BufRead",
-	},
-	{
 		"folke/todo-comments.nvim",
 		event = "BufRead",
 		config = function()
-			require("todo-comments").setup()
+			reload("todo-comments").setup()
+		end,
+	},
+	{
+		"nvim-treesitter/nvim-treesitter-angular",
+		config = function()
+			reload("lvim.lsp.manager").setup("angularls")
 		end,
 	},
 }
@@ -94,6 +94,6 @@ vim.api.nvim_create_autocmd("FileType", {
 	pattern = "zsh",
 	callback = function()
 		-- let treesitter use bash highlight for zsh files as well
-		require("nvim-treesitter.highlight").attach(0, "bash")
+		reload("nvim-treesitter.highlight").attach(0, "bash")
 	end,
 })

@@ -1,13 +1,13 @@
 Bitwarden	com.bitwarden.desktop	2023.1.1	stable	user
 Discord	com.discordapp.Discord	0.0.24	stable	user
 draw.io	com.jgraph.drawio.desktop	20.7.4	stable	user
-tidal-hifi	com.mastermindzh.tidal-hifi	4.3.1	stable	user
+tidal-hifi	com.mastermindzh.tidal-hifi	4.4.0	stable	user
 Microsoft Teams	com.microsoft.Teams	1.5.00.23861	stable	user
-Skype	com.skype.Client	8.92.0.401	stable	user
+Skype	com.skype.Client	8.93.0.404	stable	user
 Stremio	com.stremio.Stremio	4.4.159	stable	user
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.9	stable	user
 GitHub Desktop	io.github.shiftey.Desktop	3.1.1-linux1	stable	user
-Xmind (2022)	net.xmind.XMind	22.11.2677	stable	user
+Xmind (2022)	net.xmind.XMind	22.11.3656	stable	user
 Flameshot	org.flameshot.Flameshot	12.1.0	stable	user
 Freedesktop Platform	org.freedesktop.Platform	21.08.17.1	21.08	user
 Freedesktop Platform	org.freedesktop.Platform	22.08.5	22.08	user

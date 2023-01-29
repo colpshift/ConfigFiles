@@ -30,5 +30,4 @@ QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-22.08	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-22.08	user
-ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.2.1	stable	user
 VLC	org.videolan.VLC	3.0.18	stable	user

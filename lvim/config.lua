@@ -4,10 +4,7 @@
 ]]
 
 -- vim options
-vim.opt.number = true
-vim.opt.cursorline = false
-vim.opt.cursorcolumn = false
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 
 -- general
 lvim.log.level = "info"
@@ -21,19 +18,18 @@ lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without formatting" }
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 -- trouble which-key bindings
-lvim.builtin.which_key.mappings["t"] =
-	{
-		name = "Diagnostics",
-		t = { "<cmd>TroubleToggle<cr>", "trouble" },
-		w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "workspace" },
-		d = { "<cmd>TroubleToggle document_diagnostics<cr>", "document" },
-		q = { "<cmd>TroubleToggle quickfix<cr>", "quickfix" },
-		l = { "<cmd>TroubleToggle loclist<cr>", "loclist" },
-		r = { "<cmd>TroubleToggle lsp_references<cr>", "references" },
-	},
-	
-	-- Change theme settings
-lvim.colorscheme == "lunar"
+lvim.builtin.which_key.mappings["t"] = {
+	name = "Diagnostics",
+	t = { "<cmd>TroubleToggle<cr>", "trouble" },
+	w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "workspace" },
+	d = { "<cmd>TroubleToggle document_diagnostics<cr>", "document" },
+	q = { "<cmd>TroubleToggle quickfix<cr>", "quickfix" },
+	l = { "<cmd>TroubleToggle loclist<cr>", "loclist" },
+	r = { "<cmd>TroubleToggle lsp_references<cr>", "references" },
+}
+
+-- Change theme settings
+lvim.colorscheme = "nord"
 
 -- After changing plugin config exit and reopen LunarVim, Run :PackerSync
 lvim.builtin.alpha.active = true
@@ -87,13 +83,15 @@ lvim.plugins = {
 			reload("lvim.lsp.manager").setup("angularls")
 		end,
 	},
+	{ "lunarvim/colorschemes" },
+	{ "arcticicestudio/nord-vim" },
 }
 
--- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "zsh",
-	callback = function()
-		-- let treesitter use bash highlight for zsh files as well
-		reload("nvim-treesitter.highlight").attach(0, "bash")
-	end,
-})
+-- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
+-- vim.api.nvim_create_autocmd("FileType", {
+-- 	pattern = "zsh",
+-- 	callback = function()
+-- 		-- let treesitter use bash highlight for zsh files as well
+-- 		reload("nvim-treesitter.highlight").attach(0, "bash")
+-- 	end,
+-- })

@@ -1,28 +1,36 @@
-Bitwarden	com.bitwarden.desktop	2023.1.1	stable	user
-Discord	com.discordapp.Discord	0.0.24	stable	user
+Bitwarden	com.bitwarden.desktop	2023.2.0	stable	user
+Discord	com.discordapp.Discord	0.0.25	stable	user
 draw.io	com.jgraph.drawio.desktop	20.7.4	stable	user
 tidal-hifi	com.mastermindzh.tidal-hifi	4.4.0	stable	user
 Microsoft Teams	com.microsoft.Teams	1.5.00.23861	stable	user
-Skype	com.skype.Client	8.93.0.404	stable	user
+Skype	com.skype.Client	8.94.0.422	stable	user
 Stremio	com.stremio.Stremio	4.4.159	stable	user
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.9	stable	user
-GitHub Desktop	io.github.shiftey.Desktop	3.1.1-linux1	stable	user
+GitHub Desktop	io.github.shiftey.Desktop	3.1.7-linux1	stable	user
 Xmind (2022)	net.xmind.XMind	22.11.3656	stable	user
+Audacity	org.audacityteam.Audacity	3.2.3	stable	user
+Codecs	org.audacityteam.Audacity.Codecs		stable	user
+Blender	org.blender.Blender	3.4.1	stable	user
+Codecs	org.blender.Blender.Codecs		stable	user
+darktable	org.darktable.Darktable	4.2.0	stable	user
 Flameshot	org.flameshot.Flameshot	12.1.0	stable	user
-Freedesktop Platform	org.freedesktop.Platform	21.08.17.1	21.08	user
-Freedesktop Platform	org.freedesktop.Platform	22.08.5	22.08	user
+Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	user
+Freedesktop Platform	org.freedesktop.Platform	22.08.7	22.08	user
 Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	user
-Mesa	org.freedesktop.Platform.GL.default	22.3.2	22.08	user
-Mesa (Extra)	org.freedesktop.Platform.GL.default	22.3.2	22.08-extra	user
+Mesa	org.freedesktop.Platform.GL.default	22.3.4	22.08	user
+Mesa (Extra)	org.freedesktop.Platform.GL.default	22.3.4	22.08-extra	user
 Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	user
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	user
+ffmpeg-full	org.freedesktop.Platform.ffmpeg-full		22.08	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	user
-Freedesktop SDK	org.freedesktop.Sdk	22.08.5	22.08	user
+Freedesktop SDK	org.freedesktop.Sdk	22.08.7	22.08	user
 GNU Image Manipulation Program	org.gimp.GIMP	2.10.32	stable	user
 Déjà Dup Backups	org.gnome.DejaDup	44.0	stable	user
+GNOME Application Platform version 42	org.gnome.Platform		42	user
 GNOME Application Platform version 43	org.gnome.Platform		43	user
 Pop Gtk theme	org.gtk.Gtk3theme.Pop-dark		3.22	user
+Inkscape	org.inkscape.Inkscape	1.2.2	stable	user
 KDE Application Platform	org.kde.Platform		5.15-21.08	user
 KDE Application Platform	org.kde.Platform		5.15-22.08	user
 QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-21.08	user
@@ -30,5 +38,5 @@ QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-22.08	user
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	user
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-22.08	user
-ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.2.1	stable	user
+Okular	org.kde.okular	22.12.2	stable	user
 VLC	org.videolan.VLC	3.0.18	stable	user

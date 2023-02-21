@@ -75,12 +75,12 @@ bindkey '^H' backward-kill-word                                 # delete previou
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 ### Set alias
-alias ll='ls'
-alias ls='lsd -lh --group-dirs first'
-alias la='ls -a'                                                # show hidden files and folders
-alias lx='ls -X'                                                # sort by extension
-alias lz='ls -rS'                                               # sort by size
-alias lt='ls -rt'                                               # sort by date
+alias ll='lsd -lh --group-dirs first'
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 alias dir='dir --color'
 alias grep='rg'
 alias dmesg='dmesg --color'

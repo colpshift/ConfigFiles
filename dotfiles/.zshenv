@@ -23,17 +23,17 @@ export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap 
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || bat {} || tree -C {}) 2> /dev/null | head -200'"
 
 ### forgit
-export FORGIT_LOG_GRAPH_ENABLE="true"
-export FORGIT_LOG_FZF_OPTS='
---bind="ctrl-e:execute(echo {} |grep -Eo [a-f0-9]+ |head -1 |xargs git show |vim -)"
-'
-export FORGIT_FZF_DEFAULT_OPTS="
---exact
---border
---reverse
---height '80%'
-"
-export FORGIT_COPY_CMD='xclip -selection clipboard'
+# export FORGIT_LOG_GRAPH_ENABLE="true"
+# export FORGIT_LOG_FZF_OPTS="
+# --bind="ctrl-e:execute(echo {} |grep -Eo [a-f0-9]+ |head -1 |xargs git show |vim -)"
+# "
+# export FORGIT_FZF_DEFAULT_OPTS="
+# --exact
+# --border
+# --reverse
+# --height '80%'
+# "
+# export FORGIT_COPY_CMD="xclip -selection clipboard"
 
 ### cheat
 export CHEAT_USE_FZF=true

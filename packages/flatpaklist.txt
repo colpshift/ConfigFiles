@@ -25,7 +25,7 @@ ffmpeg-full	org.freedesktop.Platform.ffmpeg-full		22.08	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	user
 Freedesktop SDK	org.freedesktop.Sdk	22.08.7	22.08	user
-GNU Image Manipulation Program	org.gimp.GIMP	2.10.32	stable	user
+GNU Image Manipulation Program	org.gimp.GIMP	2.10.34	stable	user
 Déjà Dup Backups	org.gnome.DejaDup	44.0	stable	user
 GNOME Application Platform version 42	org.gnome.Platform		42	user
 GNOME Application Platform version 43	org.gnome.Platform		43	user

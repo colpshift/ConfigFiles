@@ -15,16 +15,16 @@ Codecs	org.blender.Blender.Codecs		stable	user
 darktable	org.darktable.Darktable	4.2.0	stable	user
 Flameshot	org.flameshot.Flameshot	12.1.0	stable	user
 Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	user
-Freedesktop Platform	org.freedesktop.Platform	22.08.7	22.08	user
+Freedesktop Platform	org.freedesktop.Platform	22.08.8	22.08	user
 Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	user
-Mesa	org.freedesktop.Platform.GL.default	22.3.4	22.08	user
-Mesa (Extra)	org.freedesktop.Platform.GL.default	22.3.4	22.08-extra	user
+Mesa	org.freedesktop.Platform.GL.default	22.3.5	22.08	user
+Mesa (Extra)	org.freedesktop.Platform.GL.default	22.3.5	22.08-extra	user
 Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	user
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	user
 ffmpeg-full	org.freedesktop.Platform.ffmpeg-full		22.08	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	user
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	user
-Freedesktop SDK	org.freedesktop.Sdk	22.08.7	22.08	user
+Freedesktop SDK	org.freedesktop.Sdk	22.08.8	22.08	user
 GNU Image Manipulation Program	org.gimp.GIMP	2.10.34	stable	user
 Déjà Dup Backups	org.gnome.DejaDup	44.0	stable	user
 GNOME Application Platform version 42	org.gnome.Platform		42	user

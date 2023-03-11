@@ -6,15 +6,15 @@
 ### Pin
 calendar
 contacts
-geary
+thunderbird
 notion
 todoist
-rambox
+whatsapp web
 discord
 
 ### office
 libreoffice
-okular
+evince
 xmind
 document scanner
 

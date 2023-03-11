@@ -169,6 +169,10 @@ source /home/colps/.config/broot/launcher/bash/br
 ### fasd
 eval "$(fasd --init auto)"
 
+### nix os
+export NIX_REMOTE=daemon
+export NIXPKGS_ALLOW_UNFREE=1
+
 ### zsh_functions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
 

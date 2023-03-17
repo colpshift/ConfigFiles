@@ -35,8 +35,8 @@ export MANPAGER="sh -c 'col -bx | batcat --theme OneHalfDark -l man -p --paging 
 export MANWIDTH=999
 
 # defaults apps
-export EDITOR=lvim
-export VISUAL=lvim
+export EDITOR=nvim
+export VISUAL=nvim
 export BROWSER=firefox
 export TERM=wezterm
 

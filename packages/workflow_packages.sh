@@ -44,12 +44,13 @@ inkscape
 gedit
 github desktop
 neovim
-lunarvim
+astronvim
 vscode
 nodejs
 python
 rust
 go
+
 
 ### Security
 bitwarden
@@ -68,6 +69,10 @@ wezterm
 starship
 lsd
 ripgrep
+lazygit
+go DiskUsage()
+bottom
+node
 dust
 duf
 procs

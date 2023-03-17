@@ -3,7 +3,7 @@ Discord	com.discordapp.Discord	0.0.25	stable	user
 draw.io	com.jgraph.drawio.desktop	20.7.4	stable	user
 tidal-hifi	com.mastermindzh.tidal-hifi	4.4.0	stable	user
 Microsoft Teams	com.microsoft.Teams	1.5.00.23861	stable	user
-Skype	com.skype.Client	8.94.0.422	stable	user
+Skype	com.skype.Client	8.95.0.408	stable	user
 Stremio	com.stremio.Stremio	4.4.159	stable	user
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.9	stable	user
 GitHub Desktop	io.github.shiftey.Desktop	3.2.0-linux1	stable	user

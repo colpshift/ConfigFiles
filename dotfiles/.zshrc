@@ -91,22 +91,16 @@ alias su='sudo -i'
 alias vi='nvim'
 alias vim='nvim'
 alias gvim='nvim'
-alias fd='fdfind'
-alias bat='batcat'
-alias batcat='batcat --theme OneHalfDark'
+alias cat='bat --theme OneHalfDark'
 # alias gitu='git add . && git commit -S && git push'
 # alias gitb='git add . && git commit -S -m 'backup' && git push'
 # alias gitl='git log --graph'
-alias pkgi='fzf_pkg_pop_install.sh'
-alias pkgr='fzf_pkg_pop_remove.sh'
-alias pkgu='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
 alias neofetch='clear && neofetch --color_blocks off'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
-alias wezterm='flatpak run org.wezfurlong.wezterm'
 
 ### Theming section
 autoload -U compinit colors zcalc
@@ -118,7 +112,7 @@ unset MANPATH
 fman() {
   man -k . | fzf -q "$1" --prompt='man> '  --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man | col -bx | batcat --theme Nord -l man -p --color always' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
 }
-export MANPAGER="sh -c 'col -bx | batcat --theme OneHalfDark -l man -p --paging always'"
+export MANPAGER="sh -c 'col -bx | bat --theme OneHalfDark -l man -p --paging always'"
 export MANWIDTH=999
 
 ### Zsh fzf-tab
@@ -139,10 +133,10 @@ source $HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh
 source $HOME/.src/forgit/forgit.plugin.zsh
 
 ### Zsh plugins
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-command-not-found/command-not-found.plugin.zsh
-source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/zsh-command-not-found/command-not-found.plugin.zsh
+source /usr/share/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 # source /usr/share/zsh-cheat/cheat.zsh
 
 # bind UP and DOWN arrow keys to history substring search
@@ -162,19 +156,4 @@ eval "$(starship init zsh)"
 ### gpg agent
 export GPG_TTY=$(tty)
 
-### broot
-source /home/colps/.config/broot/launcher/bash/br
-
-### fasd
-eval "$(fasd --init auto)"
-
-### nix os
-export NIX_REMOTE=daemon
-export NIXPKGS_ALLOW_UNFREE=1
-
-### zsh_functions
-fpath+=${ZDOTDIR:-~}/.zsh_functions
-
-### fzf completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-

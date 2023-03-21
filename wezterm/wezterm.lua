@@ -48,6 +48,6 @@ return {
 	-- disable warnings
 	warn_about_missing_glyphs = false,
 	-- check updates
-	check_for_updates = true,
-	check_for_updates_interval_seconds = 86400,
+	-- check_for_updates = true,
+	-- check_for_updates_interval_seconds = 86400,
 }

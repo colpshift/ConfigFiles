@@ -1,9 +1,12 @@
+Bitwarden	com.bitwarden.desktop	2023.2.0	stable	flathub	system
 Discord	com.discordapp.Discord	0.0.25	stable	flathub	system
 tidal-hifi	com.mastermindzh.tidal-hifi	4.4.0	stable	flathub	system
+Stremio	com.stremio.Stremio	4.4.159	stable	flathub	system
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.9	stable	flathub	system
 WhatsApp Desktop	io.github.mimbrero.WhatsAppDesktop	1.2.3	stable	flathub	system
 GitHub Desktop	io.github.shiftey.Desktop	3.2.0-linux1	stable	flathub	system
-Audacious	org.atheme.audacious	4.1	stable	fedora	system
+Xmind (2022)	net.xmind.XMind	22.11.3656	stable	flathub	system
+Fedora Platform	org.fedoraproject.Platform	36	f36	fedora	system
 Fedora Platform	org.fedoraproject.Platform	37	f37	fedora	system
 Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	flathub	system
 Freedesktop Platform	org.freedesktop.Platform	22.08.9	22.08	flathub	system
@@ -17,6 +20,7 @@ openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	flathub	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	flathub	system
 Freedesktop SDK	org.freedesktop.Sdk	22.08.9	22.08	flathub	system
 GNU Image Manipulation Program	org.gimp.GIMP	2.10.32	stable	fedora	system
+Inkscape	org.inkscape.Inkscape	1.2.2	stable	fedora	system
 Adwaita theme	org.kde.KStyle.Adwaita		5.15-21.08	flathub	system
 Adwaita theme	org.kde.KStyle.Adwaita		5.15-22.08	flathub	system
 KDE Application Platform	org.kde.Platform		5.15-21.08	flathub	system
@@ -29,4 +33,3 @@ QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5
 LibreOffice	org.libreoffice.LibreOffice		stable	fedora	system
 Thunderbird	org.mozilla.Thunderbird	102.9.0	stable	flathub	system
 VLC	org.videolan.VLC	3.0.18	stable	flathub	system
-Wez's Terminal Emulator	org.wezfurlong.wezterm	20221119-145034-49b9839f	stable	flathub	system

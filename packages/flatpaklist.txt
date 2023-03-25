@@ -1,4 +1,4 @@
-Bitwarden	com.bitwarden.desktop	2023.2.0	stable	flathub	system
+Bitwarden	com.bitwarden.desktop	2023.3.0	stable	flathub	system
 Discord	com.discordapp.Discord	0.0.25	stable	flathub	system
 tidal-hifi	com.mastermindzh.tidal-hifi	4.4.0	stable	flathub	system
 Stremio	com.stremio.Stremio	4.4.159	stable	flathub	system

@@ -156,4 +156,13 @@ eval "$(starship init zsh)"
 ### gpg agent
 export GPG_TTY=$(tty)
 
+### perl
+PATH="/home/colps/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/colps/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/colps/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/colps/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/colps/perl5"; export PERL_MM_OPT;
+
+### fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

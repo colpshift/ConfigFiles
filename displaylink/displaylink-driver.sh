@@ -1,5 +1,17 @@
 #!/bin/sh
 
+#
+# ------------------------------------------------------- fedora
+#
+# https://github.com/displaylink-rpm/displaylink-rpm/releases/tag/v5.3.1-1
+#
+
+fedora-33-displaylink-1.7.2-1.x86_64
+
+#
+# ------------------------------------------------------- ubuntu 
+#
+
 # dkms
 sudo apt install dkms
 
@@ -24,8 +36,9 @@ sudo ./displaylink-driver-5.4.1-55.174.run
 # service
 displaylink-driver.service
 
----------------------------------------------------------
-# pop os install
+#
+# ------------------------------------------------------- popOs 
+#
 
 # https://www.displaylink.org/forum/showpost.php?p=92453&postcount=3
 
@@ -59,4 +72,5 @@ curl -L https://github.com/DisplayLink/evdi/archive/refs/heads/devel.tar.gz -o e
 sudo ./displaylink-installer.sh 
 # and it should install and compile the very latest EVDI driver which is compatible with 
 #linux kernels up til and including 5.14. 
+
 

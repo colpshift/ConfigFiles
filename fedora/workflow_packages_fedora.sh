@@ -64,7 +64,7 @@ caffeine
 copyq
 
 ### terminal
-wezterm
+tilix
 starship
 lsd
 ripgrep

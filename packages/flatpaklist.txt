@@ -1,5 +1,5 @@
 Bitwarden	com.bitwarden.desktop	2023.3.1	stable	flathub	system
-Discord	com.discordapp.Discord	0.0.25	stable	flathub	system
+Discord	com.discordapp.Discord	0.0.26	stable	flathub	system
 tidal-hifi	com.mastermindzh.tidal-hifi	4.4.0	stable	flathub	system
 Stremio	com.stremio.Stremio	4.4.159	stable	flathub	system
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.9	stable	flathub	system
@@ -31,5 +31,5 @@ QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	flathub	system
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	flathub	system
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-22.08	flathub	system
 LibreOffice	org.libreoffice.LibreOffice		stable	fedora	system
-Thunderbird	org.mozilla.Thunderbird	102.9.1	stable	flathub	system
 VLC	org.videolan.VLC	3.0.18	stable	flathub	system
+Zoom	us.zoom.Zoom	5.13.11.1288	stable	flathub	system

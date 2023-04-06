@@ -5,14 +5,16 @@
 
 ### Pin
 #
+seahorse
 calendar
 contacts
-thunderbird
+evolution
 notion
 todoist
-whatsapp 
+rambox
 discord
 telegram
+zoom
 
 ### office
 #
@@ -25,7 +27,7 @@ document scanner
 #
 firefox
 chrome
-
+edge
 ### Audio
 #
 Harmonoid
@@ -92,14 +94,14 @@ highlight
 
 ### gnome extensions
 #
-"BackSlide"         by p91paul
-"Caffeine"          by eon
-"Compact Top Bar"   by wete
-"Dash to Dock"      by michele_g
-"Lock Keys"         by kazimieras.vaina
-"OpenWeather"       by skrewball
-"CPU Power Manager" by martin31821
-"Vitals"            by corecoding
+"Wallpaper Switcher"  by rishuinfinity
+"Caffeine"            by eon
+"Compact Top Bar"     by wete
+"Dash to Dock"        by michele_g
+"Lock Keys"           by kazimieras.vaina
+"OpenWeather"         by skrewball
+"CPU Power Manager"   by martin31821
+"Vitals"              by corecoding
 
 ### Things to do After Installing
 #

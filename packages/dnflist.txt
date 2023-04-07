@@ -1723,6 +1723,7 @@ popt.x86_64                                          1.19-1.fc37                
 portmidi.x86_64                                      217-48.fc37                         @fedora                                        
 potrace.x86_64                                       1.16-8.fc37                         @fedora                                        
 power-profiles-daemon.x86_64                         0.12-2.fc37                         @anaconda                                      
+powerline-fonts.noarch                               2.8.3-7.fc37                        @fedora                                        
 ppp.x86_64                                           2.4.9-8.fc37                        @anaconda                                      
 pptp.x86_64                                          1.10.0-15.fc37                      @anaconda                                      
 preload.x86_64                                       0.6.4-19.fc31                       @copr:copr.fedorainfracloud.org:elxreno:preload

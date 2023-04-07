@@ -102,6 +102,7 @@ highlight
 "OpenWeather"         by skrewball
 "CPU Power Manager"   by martin31821
 "Vitals"              by corecoding
+"AppIndicator and KStatusNotifierItem Support" by 3v1n0
 
 ### Things to do After Installing
 #

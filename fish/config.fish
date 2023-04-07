@@ -38,6 +38,10 @@ alias systemctl_error="sudo systemctl --failed"
 alias journal_error="sudo journalctl -p 3 -xb"
 
 #
+# gpg agent
+set -x GPG_TTY $(tty)
+
+#
 # starship prompt
-starship init fish | source
+# starship init fish | source
 

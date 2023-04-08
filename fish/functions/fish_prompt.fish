@@ -34,7 +34,7 @@ function fish_prompt --description 'Write out the prompt'
         else
             set git_status (set_color green):
         end
-        set git_info "(git$git_status$git_branch"(set_color white)")"
+        set git_info "( git$git_status $git_branch"(set_color white)")"
     end
 
     # Disable PWD shortening by default.

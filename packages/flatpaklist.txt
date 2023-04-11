@@ -4,7 +4,7 @@ tidal-hifi	com.mastermindzh.tidal-hifi	4.4.0	stable	flathub	system
 Stremio	com.stremio.Stremio	4.4.159	stable	flathub	system
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.9	stable	flathub	system
 WhatsApp Desktop	io.github.mimbrero.WhatsAppDesktop	1.2.3	stable	flathub	system
-GitHub Desktop	io.github.shiftey.Desktop	3.2.0-linux1	stable	flathub	system
+GitHub Desktop	io.github.shiftey.Desktop	3.2.1-linux2	stable	flathub	system
 Xmind (2022)	net.xmind.XMind	22.11.3656	stable	flathub	system
 Fedora Platform	org.fedoraproject.Platform	36	f36	fedora	system
 Fedora Platform	org.fedoraproject.Platform	37	f37	fedora	system
@@ -32,4 +32,4 @@ QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-22.08	flathub	system
 LibreOffice	org.libreoffice.LibreOffice		stable	fedora	system
 VLC	org.videolan.VLC	3.0.18	stable	flathub	system
-Zoom	us.zoom.Zoom	5.13.11.1288	stable	flathub	system
+Zoom	us.zoom.Zoom	5.14.2.2046	stable	flathub	system

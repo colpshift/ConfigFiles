@@ -62,7 +62,7 @@ go
 ### Security
 #
 bitwarden
-
+google-authenticator.x86_64
 ### utilities
 #
 bleachbit

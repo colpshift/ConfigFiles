@@ -194,7 +194,7 @@ cmake.x86_64                                         3.26.2-1.fc37              
 cmake-data.noarch                                    3.26.2-1.fc37                       @updates                                       
 cmake-filesystem.x86_64                              3.26.2-1.fc37                       @updates                                       
 cmake-rpm-macros.noarch                              3.26.2-1.fc37                       @updates                                       
-code.x86_64                                          1.77.1-1680651749.el7               @code                                          
+code.x86_64                                          1.77.2-1680777222.el7               @code                                          
 cogl.x86_64                                          1.22.8-6.fc37                       @anaconda                                      
 color-filesystem.noarch                              1-29.fc37                           @anaconda                                      
 colord.x86_64                                        1.4.6-2.fc37                        @anaconda                                      
@@ -245,7 +245,6 @@ cyrus-sasl.x86_64                                    2.1.28-8.fc37              
 cyrus-sasl-gssapi.x86_64                             2.1.28-8.fc37                       @anaconda                                      
 cyrus-sasl-lib.x86_64                                2.1.28-8.fc37                       @anaconda                                      
 cyrus-sasl-plain.x86_64                              2.1.28-8.fc37                       @anaconda                                      
-darktable.x86_64                                     4.2.1-1.fc37                        @updates                                       
 daxctl-libs.x86_64                                   76.1-1.fc37                         @updates                                       
 dbus.x86_64                                          1:1.14.6-1.fc37                     @updates                                       
 dbus-broker.x86_64                                   33-1.fc37                           @updates                                       
@@ -2173,9 +2172,9 @@ vamp-plugin-sdk.x86_64                               2.9.0-6.fc37               
 vapoursynth-libs.x86_64                              58-3.fc37                           @fedora                                        
 vazirmatn-vf-fonts.noarch                            33.003-2.fc37                       @anaconda                                      
 vid.stab.x86_64                                      1.1.0-20.20201110gitf9166e9.fc37    @fedora                                        
-vim-data.noarch                                      2:9.0.1429-1.fc37                   @updates                                       
-vim-filesystem.noarch                                2:9.0.1429-1.fc37                   @updates                                       
-vim-minimal.x86_64                                   2:9.0.1429-1.fc37                   @updates                                       
+vim-data.noarch                                      2:9.0.1440-1.fc37                   @updates                                       
+vim-filesystem.noarch                                2:9.0.1440-1.fc37                   @updates                                       
+vim-minimal.x86_64                                   2:9.0.1440-1.fc37                   @updates                                       
 virglrenderer.x86_64                                 0.9.1-4.20210420git36391559.fc37    @anaconda                                      
 virtualbox-guest-additions.x86_64                    7.0.6-1.fc37                        @updates                                       
 vmaf-models.noarch                                   2.3.0-4.fc37                        @fedora                                        

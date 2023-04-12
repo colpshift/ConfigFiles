@@ -8,7 +8,6 @@
 seahorse
 calendar
 contacts
-evolution
 notion
 todoist
 rambox
@@ -27,7 +26,8 @@ document scanner
 #
 firefox
 chrome
-edge
+brave
+
 ### Audio
 #
 Harmonoid
@@ -62,7 +62,7 @@ go
 ### Security
 #
 bitwarden
-google-authenticator.x86_64
+
 ### utilities
 #
 bleachbit

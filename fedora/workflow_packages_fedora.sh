@@ -8,7 +8,6 @@
 seahorse
 calendar
 contacts
-evolution
 notion
 todoist
 rambox
@@ -27,7 +26,8 @@ document scanner
 #
 firefox
 chrome
-edge
+brave
+
 ### Audio
 #
 Harmonoid
@@ -102,6 +102,7 @@ highlight
 "OpenWeather"         by skrewball
 "CPU Power Manager"   by martin31821
 "Vitals"              by corecoding
+"AppIndicator and KStatusNotifierItem Support" by 3v1n0
 
 ### Things to do After Installing
 #

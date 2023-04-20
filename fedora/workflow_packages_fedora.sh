@@ -70,6 +70,7 @@ timeshift
 
 ### terminal
 #
+shell-genie
 namebench
 tilix
 starship

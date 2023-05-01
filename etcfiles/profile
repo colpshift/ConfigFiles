@@ -83,7 +83,7 @@ fi
 # defaults apps
 export EDITOR=nvim
 export VISUAL=nvim
-export BROWSER=firefox
+export BROWSER=brave-browser-stable
 export TERM=tilix
 
 

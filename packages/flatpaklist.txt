@@ -1,12 +1,13 @@
-Bitwarden	com.bitwarden.desktop	2023.3.2	stable	flathub	system
-Discord	com.discordapp.Discord	0.0.26	stable	flathub	system
+Bitwarden	com.bitwarden.desktop	2023.4.0	stable	flathub	system
+Discord	com.discordapp.Discord	0.0.27	stable	flathub	system
 Stremio	com.stremio.Stremio	4.4.159	stable	flathub	system
 Todoist: To-Do List & Tasks	com.todoist.Todoist	1.0.9	stable	flathub	system
 GitHub Desktop	io.github.shiftey.Desktop	3.2.1-linux2	stable	flathub	system
 Xmind (2022)	net.xmind.XMind	22.11.3656	stable	flathub	system
 Fedora Platform	org.fedoraproject.Platform	37	f37	fedora	system
+Fedora Platform	org.fedoraproject.Platform	38	f38	fedora	system
 Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	flathub	system
-Freedesktop Platform	org.freedesktop.Platform	22.08.10	22.08	flathub	system
+Freedesktop Platform	org.freedesktop.Platform	22.08.11	22.08	flathub	system
 Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	flathub	system
 Mesa	org.freedesktop.Platform.GL.default	23.0.2	22.08	flathub	system
 Mesa (Extra)	org.freedesktop.Platform.GL.default	23.0.2	22.08-extra	flathub	system
@@ -14,8 +15,8 @@ Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	flathub	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	flathub	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	flathub	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	flathub	system
-Freedesktop SDK	org.freedesktop.Sdk	22.08.10	22.08	flathub	system
-GNU Image Manipulation Program	org.gimp.GIMP	2.10.32	stable	fedora	system
+Freedesktop SDK	org.freedesktop.Sdk	22.08.11	22.08	flathub	system
+GNU Image Manipulation Program	org.gimp.GIMP	2.10.34	stable	fedora	system
 Inkscape	org.inkscape.Inkscape	1.2.2	stable	fedora	system
 Adwaita theme	org.kde.KStyle.Adwaita		5.15-21.08	flathub	system
 Adwaita theme	org.kde.KStyle.Adwaita		5.15-22.08	flathub	system
@@ -28,4 +29,4 @@ QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-22.08	flathub	system
 LibreOffice	org.libreoffice.LibreOffice		stable	fedora	system
 VLC	org.videolan.VLC	3.0.18	stable	flathub	system
-Zoom	us.zoom.Zoom	5.14.2.2046	stable	flathub	system
+Zoom	us.zoom.Zoom	5.14.5.2430	stable	flathub	system

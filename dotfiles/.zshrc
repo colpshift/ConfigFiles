@@ -96,8 +96,11 @@ alias cat='bat --theme OneHalfDark'
 # alias gitb='git add . && git commit -S -m 'backup' && git push'
 alias gitb='git commit -S -m 'backup' && git push'
 # alias gitl='git log --graph'
+alias pacu='/home/colps/.scripts/package_update.sh'
+alias paci='/home/colps/.scripts/fzf_yay_install.sh'
+alias pacr='/home/colps/.scripts/fzf_yay_remove.sh'
 alias cls='clear'
-alias iachat='shell-genie ask'
+#alias iachat='shell-genie ask'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
 alias neofetch='clear && neofetch --color_blocks off'
@@ -135,10 +138,10 @@ source $HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh
 source $HOME/.src/forgit/forgit.plugin.zsh
 
 ### Zsh plugins
-source /usr/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/zsh-command-not-found/command-not-found.plugin.zsh
-source /usr/share/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-command-not-found/command-not-found.plugin.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 # source /usr/share/zsh-cheat/cheat.zsh
 
 # bind UP and DOWN arrow keys to history substring search
@@ -159,5 +162,5 @@ eval "$(starship init zsh)"
 export GPG_TTY=$(tty)
 
 ### fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

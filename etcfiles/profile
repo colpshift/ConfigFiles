@@ -1,89 +1,57 @@
 # /etc/profile
 
-# System wide environment and startup programs, for login setup
-# Functions and aliases go in /etc/bashrc
+# Set our umask
+umask 022
 
-# It's NOT a good idea to change this file unless you know what you
-# are doing. It's much better to create a custom.sh shell script in
-# /etc/profile.d/ to make custom changes to your environment, as this
-# will prevent the need for merging in future updates.
-
-pathmunge () {
-    case ":${PATH}:" in
+# Append "$1" to $PATH when not already in.
+# This function API is accessible to scripts in /etc/profile.d
+append_path () {
+    case ":$PATH:" in
         *:"$1":*)
             ;;
         *)
-            if [ "$2" = "after" ] ; then
-                PATH=$PATH:$1
-            else
-                PATH=$1:$PATH
-            fi
+            PATH="${PATH:+$PATH:}$1"
     esac
 }
 
+# Append our default paths
+append_path '/usr/local/sbin'
+append_path '/usr/local/bin'
+append_path '/usr/bin'
 
-if [ -x /usr/bin/id ]; then
-    if [ -z "$EUID" ]; then
-        # ksh workaround
-        EUID=`/usr/bin/id -u`
-        UID=`/usr/bin/id -ru`
-    fi
-    USER="`/usr/bin/id -un`"
-    LOGNAME=$USER
-    MAIL="/var/spool/mail/$USER"
+# Force PATH to be environment
+export PATH
+
+# Load profiles from /etc/profile.d
+if test -d /etc/profile.d/; then
+	for profile in /etc/profile.d/*.sh; do
+		test -r "$profile" && . "$profile"
+	done
+	unset profile
 fi
 
-# Path manipulation
-if [ "$EUID" = "0" ]; then
-    pathmunge /usr/sbin
-    pathmunge /usr/local/sbin
-else
-    pathmunge /usr/local/sbin after
-    pathmunge /usr/sbin after
-fi
-
-HOSTNAME=$(/usr/bin/hostnamectl --transient 2>/dev/null) || \
-HOSTNAME=$(/usr/bin/hostname 2>/dev/null) || \
-HOSTNAME=$(/usr/bin/uname -n)
-
-HISTSIZE=1000
-if [ "$HISTCONTROL" = "ignorespace" ] ; then
-    export HISTCONTROL=ignoreboth
-else
-    export HISTCONTROL=ignoredups
-fi
-
-export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL
-
-for i in /etc/profile.d/*.sh /etc/profile.d/sh.local ; do
-    if [ -r "$i" ]; then
-        if [ "${-#*i}" != "$-" ]; then 
-            . "$i"
-        else
-            . "$i" >/dev/null
-        fi
-    fi
-done
-
-unset i
-unset -f pathmunge
+# Unload our profile API functions
+unset -f append_path
 
 # Source global bash config, when interactive but not posix or sh mode
 if test "$BASH" &&\
+   test "$PS1" &&\
    test -z "$POSIXLY_CORRECT" &&\
    test "${0#-}" != sh &&\
-   test -r /etc/bashrc
+   test -r /etc/bash.bashrc
 then
-   # Bash login shells run only /etc/profile
-   # Bash non-login shells run only /etc/bashrc
-   # Check for double sourcing is done in /etc/bashrc.
-   . /etc/bashrc
+	. /etc/bash.bashrc
 fi
+
+# Termcap is outdated, old, and crusty, kill it.
+unset TERMCAP
+
+# Man is much better than us at figuring this out
+unset MANPATH
 
 # defaults apps
 export EDITOR=nvim
 export VISUAL=nvim
-export BROWSER=brave-browser-stable
-export TERM=tilix
-
+export BROWSER=brave
+export TERM=wezterm
 

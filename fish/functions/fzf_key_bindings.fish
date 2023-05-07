@@ -1,1 +1,0 @@
-/home/colps/.fzf/shell/key-bindings.fish

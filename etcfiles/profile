@@ -49,9 +49,3 @@ unset TERMCAP
 # Man is much better than us at figuring this out
 unset MANPATH
 
-# defaults apps
-export EDITOR=nvim
-export VISUAL=nvim
-export BROWSER=brave
-export TERM=wezterm
-

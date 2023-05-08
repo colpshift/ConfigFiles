@@ -1,4 +1,6 @@
+tidal-hifi	com.mastermindzh.tidal-hifi	5.1.0	stable	system
 Stremio	com.stremio.Stremio	4.4.159	stable	system
+Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	system
 Freedesktop Platform	org.freedesktop.Platform	22.08.11	22.08	system
 Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	system
 Mesa	org.freedesktop.Platform.GL.default	23.0.2	22.08	system

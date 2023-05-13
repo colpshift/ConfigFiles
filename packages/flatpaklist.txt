@@ -9,5 +9,7 @@ Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	system
+Calculator	org.gnome.Calculator	44.0	stable	system
+GNOME Application Platform version 44	org.gnome.Platform		44	system
 Adwaita theme	org.kde.KStyle.Adwaita		5.15-21.08	system
 KDE Application Platform	org.kde.Platform		5.15-21.08	system

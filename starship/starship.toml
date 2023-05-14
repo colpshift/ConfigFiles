@@ -1,5 +1,5 @@
 #
-# https://starship.rs/
+# https://starship.rs
 #
 
 # Get editor completions based on the config schema
@@ -11,11 +11,8 @@ format = """$directory$all$character"""
 # right
 right_format = """$cmd_duration$time"""
 
-# # Wait 10 milliseconds for starship to check files under the current directory.
+# Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
-#
-# # Disable the blank line at the start of the prompt
-#add_newline = false
 
 [character]
 success_symbol =  "[](bold green)"

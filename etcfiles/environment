@@ -5,7 +5,3 @@
 #
 #QT_QPA_PLATFORMTHEME=qt5ct
 #QT_STYLE_OVERRIDE=kvantum
-EDITOR=nvim
-VISUAL=nvim
-BROWSER=brave
-TERM=wezterm

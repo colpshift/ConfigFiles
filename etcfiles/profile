@@ -52,6 +52,6 @@ unset MANPATH
 # Default Apps
 EDITOR=nvim
 VISUAL=nvim
-BROWSER=brave
+BROWSER=firefox
 TERM=wezterm
 

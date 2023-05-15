@@ -166,6 +166,9 @@ eval "$(starship init zsh)"
 ### gpg agent
 export GPG_TTY=$(tty)
 
+### ssh agent
+eval "$(ssh-agent -s)" > /dev/null
+
 ### fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

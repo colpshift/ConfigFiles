@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d I II III IV V
 # bspc monitor eDP-1      -d II III IV V VI VII VIII IX 
 # bspc monitor DVI-I-1-1  -d I
 # bspc monitor HDMI-1     -d X
@@ -16,9 +16,9 @@ bspc config gapless_monocle         true
 bspc config pointer_follows_focus   true
 bspc config focus_follows_pointer   true
 
-bspc rule -a rambox         desktop='^0'
-bspc rule -a gimp-2.10      desktop='^7' 
-bspc rule -a tidal-hifi     desktop='^8' 
+bspc rule -a rambox         desktop='^5'
+bspc rule -a gimp-2.10      desktop='^3' 
+bspc rule -a tidal-hifi     desktop='^4' 
 
 # miscellaneous
 bspc rule -a Kupfer.py      focus=on
@@ -46,7 +46,7 @@ sh ~/.screenlayout/three_monitors.sh &
 # Bar
 pkill firewalld
 pkill polybar
-~/.config/polybar/launch.sh &
+~/.config/polybar/launch.sh --forest &
 #
 # Notifications
 /usr/bin/dunst &
@@ -76,4 +76,8 @@ xset r rate 300 50
 #
 # apps
 rambox &
+
+# Services
+#
+~/.scripts/mpd_start.sh
 

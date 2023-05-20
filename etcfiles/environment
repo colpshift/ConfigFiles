@@ -9,10 +9,3 @@
 # QT_QPA_PLATFORMTHEME=qt5ct
 # QT_STYLE_OVERRIDE=kvantum
 
-# Default Apps
-#
-EDITOR=nvim
-VISUAL=nvim
-BROWSER=firefox
-TERM=wezterm
-

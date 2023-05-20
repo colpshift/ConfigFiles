@@ -49,3 +49,9 @@ unset TERMCAP
 # Man is much better than us at figuring this out
 unset MANPATH
 
+# Default Apps
+EDITOR=nvim
+VISUAL=nvim
+BROWSER=firefox
+TERM=wezterm
+

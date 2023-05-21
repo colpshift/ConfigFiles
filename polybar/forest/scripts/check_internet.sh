@@ -8,7 +8,7 @@
 #
 
 if ping -W 5 -c 1 google.com >/dev/null; then
- echo "  "
+ echo " "
 else
- echo "  "
+ echo " "
 fi

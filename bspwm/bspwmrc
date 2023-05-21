@@ -30,6 +30,7 @@ bspc rule -a zoom state=floating
 bspc rule -a discord state=floating
 bspc rule -a mplayer2 state=floating
 bspc rule -a Yad state=floating
+bspc rule -a Radiotray state=floating
 
 # Border
 bspc config focused_border_color "#6c71c4"

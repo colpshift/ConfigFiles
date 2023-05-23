@@ -162,7 +162,7 @@ mesa-utils 9.0.0-2
 mlocate 0.26.git.20170220-7
 modemmanager 1.20.6-1
 mpc 0.34-3
-mpd 0.23.12-3
+mpd 0.23.13-1
 mpv 1:0.35.1-6
 mtools 1:4.0.43-1
 nano 7.2-1

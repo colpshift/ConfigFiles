@@ -104,10 +104,10 @@ go 2:1.20.4-1
 google-chrome 113.0.5672.126-1
 gparted 1.5.0-1
 grub 2:2.06.r499.ge67a551a4-1
-gst-libav 1.22.2-1
+gst-libav 1.22.3-1
 gst-plugin-pipewire 1:0.3.70-2
-gst-plugins-bad 1.22.2-1
-gst-plugins-ugly 1.22.2-1
+gst-plugins-bad 1.22.3-1
+gst-plugins-ugly 1.22.3-1
 gtk-engine-murrine 0.98.2-4
 gvfs 1.50.4-3
 gvfs-afc 1.50.4-3
@@ -125,7 +125,7 @@ hwdetect 2023.02.20-1
 hwinfo 22.2-2
 inetutils 2.4-1
 inkscape 1.2.2-7
-intel-ucode 20230516-1
+intel-ucode 20230516.a-1
 inxi 3.3.27.1-1
 iptables-nft 1:1.8.9-1
 iwd 2.4-2
@@ -144,9 +144,9 @@ libwnck3 43.0-3
 lightdm 1:1.32.0-4
 lightdm-gtk-greeter-settings 1.2.2-8
 lightdm-slick-greeter 1.6.1-1
-linux 6.3.2.arch1-1
+linux 6.3.3.arch1-1
 linux-firmware 20230404.2e92a49f-1
-linux-headers 6.3.2.arch1-1
+linux-headers 6.3.3.arch1-1
 logrotate 3.21.0-2
 lsb-release 2.0.r48.3cf5103-1
 lsd 0.23.1-2
@@ -173,7 +173,7 @@ netctl 1.28-2
 network-manager-applet 1.32.0-2
 networkmanager 1.42.6-1
 networkmanager-dmenu-git r170.8e8d3b7-1
-networkmanager-openconnect 1.2.8-2
+networkmanager-openconnect 1.2.10-1
 networkmanager-openvpn 1.10.2-1
 nfs-utils 2.6.3-1
 nilfs-utils 2.2.9-2
@@ -269,11 +269,12 @@ visual-studio-code-bin 1.78.2-1
 vlc 3.0.18-9
 w3m 0.5.3.git20230121_1-1
 warsaw-bin 2.21.3.1-2
+webapp-manager 1.2.8-1
 welcome 3.63-1
 wezterm 20230408.112425.69ae8472-1
 wezterm-shell-integration 20230408.112425.69ae8472-1
 wezterm-terminfo 20230408.112425.69ae8472-1
-wget 1.21.3-1
+wget 1.21.4-1
 which 2.21-6
 wildmidi 0.4.5-1
 wireplumber 0.4.14-1

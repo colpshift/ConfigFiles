@@ -17,18 +17,20 @@ export DEFAULT_RECIPIENT="marcos.colpani@gmail.com"
 export FZF_DEFAULT_COMMAND="fd --type file --color=always"
 export FZF_DEFAULT_OPTS="--ansi"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-# Preview file content using bat
+#
+# Search file - Ctrl-t
 export FZF_CTRL_T_OPTS="
   --preview 'bat -n --color=always {}'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
-# CTRL-/ to toggle small preview window to see the full command
-# CTRL-Y to copy the command into clipboard using pbcopy
+# 
+# Search history - Ctrl-r
 export FZF_CTRL_R_OPTS="
   --preview 'echo {}' --preview-window up:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
   --color header:italic
   --header 'Press CTRL-Y to copy command into clipboard'"
-# Print tree structure in the preview window
+#
+# Search file tree structure - Alt-c
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 

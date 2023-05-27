@@ -49,30 +49,30 @@ colors
 
 ### Keybindings section
 bindkey -e
-bindkey '^[[7~' beginning-of-line                               # Home key
-bindkey '^[[H' beginning-of-line                                # Home key
+bindkey '^[[7~' beginning-of-line                   # Home key
+bindkey '^[[H' beginning-of-line                    # Home key
 if [[ "${terminfo[khome]}" != "" ]]; then
-  bindkey "${terminfo[khome]}" beginning-of-line                # [Home] - Go to beginning of line
+  bindkey "${terminfo[khome]}" beginning-of-line    # [Home] - Go to beginning of line
 fi
-bindkey '^[[8~' end-of-line                                     # End key
-bindkey '^[[F' end-of-line                                     	# End key
+bindkey '^[[8~' end-of-line                         # End key
+bindkey '^[[F' end-of-line                          # End key
 if [[ "${terminfo[kend]}" != "" ]]; then
-  bindkey "${terminfo[kend]}" end-of-line                       # [End] - Go to end of line
+  bindkey "${terminfo[kend]}" end-of-line           # [End] - Go to end of line
 fi
-bindkey '^[[2~' overwrite-mode                                  # Insert key
-bindkey '^[[3~' delete-char                                     # Delete key
-bindkey '^[[C'  forward-char                                    # Right key
-bindkey '^[[D'  backward-char                                   # Left key
-bindkey '^[[5~' history-beginning-search-backward               # Page up key
-bindkey '^[[6~' history-beginning-search-forward                # Page down key
+bindkey '^[[2~' overwrite-mode                      # Insert key
+bindkey '^[[3~' delete-char                         # Delete key
+bindkey '^[[C'  forward-char                        # Right key
+bindkey '^[[D'  backward-char                       # Left key
+bindkey '^[[5~' history-beginning-search-backward   # Page up key
+bindkey '^[[6~' history-beginning-search-forward    # Page down key
 
 # Navigate words with ctrl+arrow keys
-bindkey '^[Oc' forward-word                                     #
-bindkey '^[Od' backward-word                                    #
-bindkey '^[[1;5D' backward-word                                 #
-bindkey '^[[1;5C' forward-word                                  #
-bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
-bindkey '^[[Z' undo                                             # Shift+tab undo last action
+bindkey '^[Oc' forward-word                                     
+bindkey '^[Od' backward-word                                   
+bindkey '^[[1;5D' backward-word                              
+bindkey '^[[1;5C' forward-word                                
+bindkey '^H' backward-kill-word                     # delete previous word with ctrl+backspace
+bindkey '^[[Z' undo                                 # Shift+tab undo last action
 
 ### Set alias
 alias ll='lsd -lh --group-dirs first'
@@ -91,7 +91,8 @@ alias su='sudo -i'
 alias vi='nvim'
 alias vim='nvim'
 alias gvim='nvim'
-alias cat='bat --theme OneHalfDark'
+alias cat='bat --theme Nord'
+alias bat='bat --theme Nord'
 # alias gitu='git add . && git commit -S && git push'
 # alias gitb='git add . && git commit -S -m 'backup' && git push'
 alias gitb='git commit -S -m 'backup' && git push'
@@ -117,15 +118,29 @@ autoload -U compinit colors zcalc
 compinit -d
 colors
 
-### man using fzf, fd and bat.
+### fzf search man - 'Ctrl-H'
 unset MANPATH
-fman() {
-  man -k . | fzf -q "$1" --prompt='man> '  --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man | col -bx | batcat --theme Nord -l man -p --color always' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
+fzf-man-widget() {
+  batman="man {1} | col -bx | bat --language=man --plain --color always --theme=\"Monokai Extended\""
+   man -k . | sort \
+   | awk -v cyan=$(tput setaf 6) -v blue=$(tput setaf 4) -v res=$(tput sgr0) -v bld=$(tput bold) '{ $1=cyan bld $1; $2=res blue;} 1' \
+   | fzf  \
+      -q "$1" \
+      --ansi \
+      --tiebreak=begin \
+      --prompt=' Man > '  \
+      --preview-window '50%,rounded,<50(up,85%,border-bottom)' \
+      --preview "${batman}" \
+      --bind "enter:execute(man {1})" \
+      --bind "alt-c:+change-preview(cheat {1})+change-prompt(ﯽ Cheat > )" \
+      --bind "alt-m:+change-preview(${batman})+change-prompt( Man > )" \
+      --bind "alt-t:+change-preview(tldr --color=always {1})+change-prompt(ﳁ TLDR > )"
+  zle reset-prompt
 }
-export MANPAGER="sh -c 'col -bx | bat --theme OneHalfDark -l man -p --paging always'"
-export MANWIDTH=999
+bindkey '^h' fzf-man-widget
+zle -N fzf-man-widget
 
-### Zsh fzf-tab
+### fzf-tab -'Tab'
 source $HOME/.src/fzf-tab/fzf-tab.zsh
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
@@ -138,7 +153,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
-### Zsh forgit
+### fzf forgit - 'ga','glo','gi','gd'
 source $HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh
 source $HOME/.src/forgit/forgit.plugin.zsh
 
@@ -147,7 +162,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-command-not-found/command-not-found.plugin.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-# source /usr/share/zsh-cheat/cheat.zsh
 
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo

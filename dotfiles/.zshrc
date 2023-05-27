@@ -3,7 +3,7 @@
 # Tags: zsh shell
 # Description: zsh env config
 # Author: colpshift
-# Last update: 2022-11-14 Mon 12:21 AM
+# Last update: 2023-05-27T14:50:38
 #
 
 ### Set variables
@@ -118,6 +118,27 @@ autoload -U compinit colors zcalc
 compinit -d
 colors
 
+### fzf search
+export FZF_DEFAULT_COMMAND="fd --type file --color=always"
+export FZF_DEFAULT_OPTS="--ansi"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+#
+# Search file - Ctrl-T
+export FZF_CTRL_T_OPTS="
+  --preview 'bat -n --color=always {}'
+  --bind 'ctrl-/:change-preview-window(down|hidden|)'"
+# 
+# Search history - Ctrl-R
+export FZF_CTRL_R_OPTS="
+  --preview 'echo {}' --preview-window up:3:hidden:wrap
+  --bind 'ctrl-/:toggle-preview'
+  --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
+  --color header:italic
+  --header 'Press CTRL-Y to copy command into clipboard'"
+#
+# Search file tree structure - Alt-C
+export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
+
 ### fzf search man - 'Ctrl-H'
 unset MANPATH
 fzf-man-widget() {
@@ -134,7 +155,7 @@ fzf-man-widget() {
       --bind "enter:execute(man {1})" \
       --bind "alt-c:+change-preview(cheat {1})+change-prompt(ﯽ Cheat > )" \
       --bind "alt-m:+change-preview(${batman})+change-prompt( Man > )" \
-      --bind "alt-t:+change-preview(tldr --color=always {1})+change-prompt(ﳁ TLDR > )"
+      --bind "alt-t:+change-preview(tldr {1})+change-prompt(ﳁ TLDR > )"
   zle reset-prompt
 }
 bindkey '^h' fzf-man-widget

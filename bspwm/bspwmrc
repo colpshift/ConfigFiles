@@ -16,7 +16,8 @@ bspc config gapless_monocle true
 bspc config pointer_follows_focus true
 bspc config focus_follows_pointer true
 
-bspc rule -a rambox desktop='^5'
+bspc rule -a WhatSie='^5'
+bsps rule -a whatsie='^5'
 bspc rule -a gimp-2.10 desktop='^3'
 bspc rule -a tidal-hifi desktop='^4'
 
@@ -76,7 +77,7 @@ xset r rate 300 50
 ~/.config/bspwm/scripts/low_bat_notifier.sh
 #
 # apps
-rambox &
+flatpak run com.ktechpit.whatsie &
 
 # Services
 #

@@ -12,7 +12,6 @@ archlinux-xdg-menu 0.7.6.6-1
 arcolinux-betterlockscreen 21.08.03-1
 aspell 0.60.8-3
 atool 0.39.0-8
-audacious 4.3.1-1
 b43-fwcutter 019-4
 base 3-1
 base-devel 1-1
@@ -99,7 +98,7 @@ gimp 2.10.34-2
 git 2.40.1-1
 github-desktop-bin 3.2.1_linux1-1
 gnome-calculator 44.0-1
-go 2:1.20.4-1
+go 2:1.20.4-2
 google-chrome 113.0.5672.126-1
 gparted 1.5.0-1
 grub 2:2.06.r499.ge67a551a4-1
@@ -114,6 +113,7 @@ gvfs-gphoto2 1.50.4-3
 gvfs-mtp 1.50.4-3
 gvfs-nfs 1.50.4-3
 gvfs-smb 1.50.4-3
+harmonoid-bin 0.3.8-1
 haveged 1.9.18-1
 hdparm 9.65-1
 highlight 4.5-1

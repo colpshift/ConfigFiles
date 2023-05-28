@@ -1,4 +1,6 @@
+Whatsie	com.ktechpit.whatsie	4.14	stable	system
 tidal-hifi	com.mastermindzh.tidal-hifi	5.1.0	stable	system
+Microsoft Edge	com.microsoft.Edge	113.0.1774.57-1	stable	system
 Stremio	com.stremio.Stremio	4.4.159	stable	system
 Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	system
 Freedesktop Platform	org.freedesktop.Platform	22.08.11	22.08	system
@@ -11,4 +13,6 @@ openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	system
 GNOME Application Platform version 44	org.gnome.Platform		44	system
 Adwaita theme	org.kde.KStyle.Adwaita		5.15-21.08	system
+Adwaita theme	org.kde.KStyle.Adwaita		5.15-22.08	system
 KDE Application Platform	org.kde.Platform		5.15-21.08	system
+KDE Application Platform	org.kde.Platform		5.15-22.08	system

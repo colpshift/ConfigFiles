@@ -92,6 +92,10 @@ emoji-cli
 highlight
 ranger +devicons2 plugin
 
+### Power
+slimbookbattery
+tlp
+
 ### gnome extensions
 "BackSlide" by p91paul
 "CPU Power Manager" by martin31821

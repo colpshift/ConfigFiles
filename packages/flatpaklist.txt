@@ -1,7 +1,9 @@
+CopyQ	com.github.hluk.copyq	7.0.0	stable	system
 Whatsie	com.ktechpit.whatsie	4.14	stable	system
 tidal-hifi	com.mastermindzh.tidal-hifi	5.1.0	stable	system
 Microsoft Edge	com.microsoft.Edge	113.0.1774.57-1	stable	system
 Stremio	com.stremio.Stremio	4.4.159	stable	system
+Xmind (2022)	net.xmind.XMind	22.11.3656	stable	system
 Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	system
 Freedesktop Platform	org.freedesktop.Platform	22.08.11	22.08	system
 Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	system

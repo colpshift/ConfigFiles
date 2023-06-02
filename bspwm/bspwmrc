@@ -78,11 +78,9 @@ xset r rate 300 50
 ~/.config/bspwm/scripts/low_bat_notifier.sh
 #
 # apps
+pkill copyq
+copyq &
 flatpak run com.ktechpit.whatsie &
-
+#
 # Services
-#
-pkill ntfd
-ntfd &
-#
 ~/.scripts/mpd_start.sh

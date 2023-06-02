@@ -15,7 +15,6 @@ telegram
 
 ### office
 libreoffice
-xed
 xmind
 okular
 xreader
@@ -27,7 +26,7 @@ chrome
 edge
 
 ### Audio
-Harmonoid
+Cantata mpd
 Tidal Hi-Fi
 ncmpcpp
 
@@ -49,7 +48,7 @@ inkscape
 neovim
 nvchad
 vscode
-xedit
+xed
 git
 github desktop
 nodejs

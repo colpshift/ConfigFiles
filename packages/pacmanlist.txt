@@ -31,7 +31,7 @@ brillo 1.4.12-1
 bspwm 0.9.10-3
 btrfs-progs 6.3-2
 caffeine 2.9.12-1
-calc 2.14.1.5-1
+calc 2.14.1.6-1
 cantarell-fonts 1:0.303.1-1
 cantata 2.5.0-3
 cheese 44.0.1-1
@@ -102,7 +102,7 @@ git 2.41.0-1
 github-desktop-bin 3.2.1_linux1-1
 gnome-calculator 44.0-1
 go 2:1.20.4-2
-google-chrome 114.0.5735.90-1
+google-chrome 114.0.5735.90-2
 gparted 1.5.0-1
 grub 2:2.06.r499.ge67a551a4-1
 gst-libav 1.22.3-3
@@ -139,7 +139,6 @@ libdvdcss 1.4.3-1
 libebur128 1.2.6-1
 libgsf 1.14.50-1
 libopenraw 0.3.5-1
-libreoffice-fresh 7.5.3-2
 libsecret 0.20.5-2
 libvoikko 4.3.2-2
 libwnck3 43.0-3
@@ -178,12 +177,13 @@ network-manager-applet 1.32.0-2
 networkmanager 1.42.6-1
 networkmanager-dmenu-git r172.18440df-1
 networkmanager-openconnect 1.2.10-1
-networkmanager-openvpn 1.10.2-1
+networkmanager-openvpn 1.10.2-2
 nfs-utils 2.6.3-1
 nilfs-utils 2.2.9-2
 nitrogen 1.6.1-4
 noto-fonts 20230601-1
 nss-mdns 0.15.1-1
+ntfd-bin 0.2.2-1
 ntfs-3g 2022.10.3-1
 ntp 4.2.8.p16-1
 nuspell 5.1.2-2
@@ -191,7 +191,7 @@ os-prober 1.81-1
 pacman-contrib 1.9.0-1
 pamac-all 10.5.1-1
 paper-icon-theme 1.5.0.832.aa3e8af-1
-papirus-icon-theme 20230301-1
+papirus-icon-theme 20230601-1
 pavucontrol 1:5.0+r61+gee77d86-2
 perl 5.36.1-1
 picom 10.2-1
@@ -227,7 +227,7 @@ s-nail 14.9.24-2
 scrot 1.9-1
 seahorse 1:43.0-2
 sg3_utils 1.47-1
-shellcheck 0.9.0-38
+shellcheck 0.9.0-39
 shfmt 3.6.0-1
 siji-ttf r22.14e7da9-1
 simple-scan 44.0-1
@@ -258,9 +258,11 @@ ttf-droid-sans-mono-dotted-powerline-git r202.e80e3eb-1
 ttf-fantasque-sans-mono 1.8.0-2
 ttf-icomoon-feather 1.0-1
 ttf-liberation 2.1.5-1
+ttf-material-design-icons 4.0.0-1
 ttf-nerd-fonts-symbols 3.0.1-1
 ttf-opensans 1.101-2
 ttf-roboto 2.138-4
+ttf-weather-icons 2.0.12-1
 tumbler 4.18.1-1
 ueberzug 18.2.0-2
 unrar 1:6.2.8-1
@@ -288,11 +290,12 @@ xclip 0.13-3
 xdg-user-dirs 0.18-1
 xdg-user-dirs-gtk 0.11-1
 xdg-utils 1.1.3+25+g8ae0263-1
-xed 3.2.8-1
+xed 3.4.0-1
 xf86-input-libinput 1.3.0-1
 xfce4-terminal 1.0.4-1
 xfsprogs 6.3.0-1
 xl2tpd 1.3.18-1
+xorg-fonts-misc 1.0.4-1
 xorg-server 21.1.8-1
 xorg-xbacklight 1.2.3-3
 xorg-xdpyinfo 1.3.4-1
@@ -301,11 +304,10 @@ xorg-xinput 1.6.4-1
 xorg-xkill 1.0.6-1
 xorg-xrandr 1.5.2-1
 xorg-xsetroot 1.1.3-1
-xreader 3.6.3-1
+xreader 3.8.0-2
 xsane 0.999-6
 xterm 382-1
 yay 12.0.5-1
-zoom 5.14.7-1
 zsh 5.9-3
 zsh-completions 0.34.0-4
 zsh-history-substring-search 1.0.2-2

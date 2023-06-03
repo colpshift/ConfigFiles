@@ -1,13 +1,13 @@
 Whatsie	com.ktechpit.whatsie	4.14	stable	system
 tidal-hifi	com.mastermindzh.tidal-hifi	5.1.0	stable	system
-Microsoft Edge	com.microsoft.Edge	113.0.1774.57-1	stable	system
-Stremio	com.stremio.Stremio	4.4.159	stable	system
+Microsoft Edge	com.microsoft.Edge	114.0.1823.37-1	stable	system
+Stremio	com.stremio.Stremio	4.4.160	stable	system
 Xmind (2022)	net.xmind.XMind	22.11.3656	stable	system
 Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	system
-Freedesktop Platform	org.freedesktop.Platform	22.08.11	22.08	system
+Freedesktop Platform	org.freedesktop.Platform	22.08.12.1	22.08	system
 Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	system
-Mesa	org.freedesktop.Platform.GL.default	23.0.2	22.08	system
-Mesa (Extra)	org.freedesktop.Platform.GL.default	23.0.2	22.08-extra	system
+Mesa	org.freedesktop.Platform.GL.default	23.1.1	22.08	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	23.1.1	22.08-extra	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
@@ -17,3 +17,5 @@ Adwaita theme	org.kde.KStyle.Adwaita		5.15-21.08	system
 Adwaita theme	org.kde.KStyle.Adwaita		5.15-22.08	system
 KDE Application Platform	org.kde.Platform		5.15-21.08	system
 KDE Application Platform	org.kde.Platform		5.15-22.08	system
+ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.3.3	stable	system
+Zoom	us.zoom.Zoom	5.14.7.2928	stable	system

@@ -36,14 +36,14 @@ display = "{{ temp_icon }} {{ temp_celsius }}°C"
 # GitHub configuration
 [github]
 # Enable / disable GitHub integration
-enabled = false
+enabled = true
 # Go to https://github.com/settings/tokens
 # Click on "Generate a new token", give it a name and check the "notifications" checkbox
 # Use one of the following forms to set your token:
 # api_key = "file:~/your_folder/some-token.txt"   # Read from a file
 # api_key = "env:GITHUB_TOKEN"                    # Read from an environment variable
-# api_key = "PLAINTEXT_VALUE"                     # Read the value directly
-api_key = "file:~/.config/ntfd/github.txt"
+api_key = "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"  # Read the value directly
+# api_key = "file:~/.config/ntfd/github.txt"
 # How long GitHub notifications should stay up (in seconds)
 notification_timeout = 20
 # Whether or not the organization/owner avatar should be shown in the notification

@@ -260,6 +260,7 @@ ttf-icomoon-feather 1.0-1
 ttf-liberation 2.1.5-1
 ttf-material-design-icons 4.0.0-1
 ttf-nerd-fonts-symbols 3.0.1-1
+ttf-octicons 19.1.0-1
 ttf-opensans 1.101-2
 ttf-roboto 2.138-4
 ttf-weather-icons 2.0.12-1

@@ -56,6 +56,27 @@ python
 rust
 go
 
+### fonts
+font-manager
+noto-fonts
+tamsyn-font
+terminus-font-ttf
+xorg-fonts-misc
+siji-ttf
+terminus-font-ttf
+ttf-bitstream-vera
+ttf-dejavu
+ttf-droid-sans-mono-dotted-powerline-git
+ttf-fantasque-sans-mono
+ttf-icomoon-feather
+ttf-liberation
+ttf-material-design-icons
+ttf-nerd-fonts-symbols
+ttf-octicons
+ttf-opensans
+ttf-roboto
+ttf-weather-icons
+
 ### Security
 bitwarden
 firewalld

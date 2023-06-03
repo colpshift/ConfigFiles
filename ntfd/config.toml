@@ -12,7 +12,7 @@ display = "{{ temp_celsius }}°C"
 # GitHub configuration
 [github]
 enabled = true
-api_key = "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"
+api_key = "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"
 notification_timeout = 20
 show_avatar = true
 sync_frequency = 30

@@ -71,8 +71,8 @@ bindkey '^[Oc' forward-word
 bindkey '^[Od' backward-word                                   
 bindkey '^[[1;5D' backward-word                              
 bindkey '^[[1;5C' forward-word                                
-bindkey '^H' backward-kill-word                     # delete previous word with ctrl+backspace
-bindkey '^[[Z' undo                                 # Shift+tab undo last action
+bindkey '^H' backward-kill-word
+bindkey '^[[Z' undo
 
 ### Set alias
 alias ll='lsd -lh --group-dirs first'
@@ -197,12 +197,6 @@ promptinit
 # Prompt starship
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
-
-### gpg agent
-export GPG_TTY=$(tty)
-
-### ssh agent
-eval "$(ssh-agent -s)" > /dev/null
 
 ### fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

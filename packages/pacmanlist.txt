@@ -222,7 +222,7 @@ ristretto 0.13.1-1
 rofi 1.7.5-1
 rsync 3.2.7-4
 rtkit 0.13-2
-rust 1:1.69.0-3
+rust 1:1.70.0-1
 s-nail 14.9.24-2
 scrot 1.9-1
 seahorse 1:43.0-2

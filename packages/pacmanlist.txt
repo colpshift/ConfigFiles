@@ -99,6 +99,7 @@ galculator 2.1.4-8
 gdu 5.24.0-1
 gimp 2.10.34-2
 git 2.41.0-1
+git-credential-oauth 0.7.0-1
 github-desktop-bin 3.2.1_linux1-1
 gnome-calculator 44.0-1
 go 2:1.20.4-2

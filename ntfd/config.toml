@@ -12,11 +12,12 @@ display = "{{ temp_celsius }}°C"
 # GitHub configuration
 [github]
 enabled = true
-api_key = "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"
+api_key = "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"
 notification_timeout = 20
-show_avatar = true
+show_avatar = false
 sync_frequency = 30
-display = "{{ unread_count }}"
+# display = "{{ unread_count }}"
+display = " {{ unread_count }}"
 
 # MPD configuration
 [mpd]

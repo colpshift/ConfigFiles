@@ -13,3 +13,17 @@ path=($HOME/.local/bin $HOME/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bi
 ### default e-mail
 export DEFAULT_RECIPIENT="marcos.colpani@gmail.com"
 
+### Default apps
+export TERMINAL=wezterm
+export TERM="xterm-256color"
+export EDITOR=nvim
+export VISUAL=nvim
+export PAGER=less
+export BROWSER=firefox
+
+### gpg agent
+export GPG_TTY=$(tty)
+
+### ssh agent
+eval "$(ssh-agent -s)" > /dev/null
+

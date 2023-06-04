@@ -81,6 +81,9 @@ xset r rate 300 50
 pkill copyq
 copyq &
 flatpak run com.ktechpit.whatsie &
+pkill ntfd
+ntfd &
+
 #
 # Services
 ~/.scripts/mpd_start.sh

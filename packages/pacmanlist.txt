@@ -227,7 +227,7 @@ s-nail 14.9.24-2
 scrot 1.9-1
 seahorse 1:43.0-2
 sg3_utils 1.47-1
-shellcheck 0.9.0-39
+shellcheck 0.9.0-40
 shfmt 3.6.0-1
 siji-ttf r22.14e7da9-1
 simple-scan 44.0-1

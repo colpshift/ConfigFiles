@@ -228,7 +228,7 @@ s-nail 14.9.24-2
 scrot 1.9-1
 seahorse 1:43.0-2
 sg3_utils 1.47-1
-shellcheck 0.9.0-40
+shellcheck 0.9.0-41
 shfmt 3.6.0-1
 siji-ttf r22.14e7da9-1
 simple-scan 44.0-1
@@ -260,7 +260,7 @@ ttf-fantasque-sans-mono 1.8.0-2
 ttf-icomoon-feather 1.0-1
 ttf-liberation 2.1.5-1
 ttf-material-design-icons 4.0.0-1
-ttf-nerd-fonts-symbols 3.0.1-1
+ttf-nerd-fonts-symbols 3.0.2-1
 ttf-octicons 19.1.0-1
 ttf-opensans 1.101-2
 ttf-roboto 2.138-4

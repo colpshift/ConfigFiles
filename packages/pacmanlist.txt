@@ -27,6 +27,7 @@ bluez 5.66-1
 bluez-utils 5.66-1
 bottom 0.9.1-2
 bpytop 1.0.68-1
+brave-bin 1:1.52.117-1
 brillo 1.4.12-1
 bspwm 0.9.10-3
 btrfs-progs 6.3-2

@@ -19,7 +19,7 @@ export TERM="xterm-256color"
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export BROWSER=firefox
+export BROWSER=brave
 
 ### gpg agent
 export GPG_TTY=$(tty)

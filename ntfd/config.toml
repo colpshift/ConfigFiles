@@ -12,10 +12,10 @@ display = "{{ temp_celsius }}°C"
 # GitHub configuration
 [github]
 enabled = true
-api_key = "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"
+api_key = "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"
 notification_timeout = 20
 show_avatar = false
-sync_frequency = 30
+sync_frequency = 900 # 15 minutes
 # display = "{{ unread_count }}"
 display = " {{ unread_count }}"
 

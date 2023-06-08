@@ -23,7 +23,7 @@ document scanner
 ### internet
 firefox
 chrome
-edge
+brave
 
 ### Audio
 Cantata mpd

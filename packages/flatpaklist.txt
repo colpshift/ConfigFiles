@@ -1,7 +1,6 @@
-Brave Browser	com.brave.Browser	1.52.117	stable	system
-Whatsie	com.ktechpit.whatsie	4.14	stable	system
+Brave Browser	com.brave.Browser	1.52.122	stable	system
 tidal-hifi	com.mastermindzh.tidal-hifi	5.1.0	stable	system
-Microsoft Edge	com.microsoft.Edge	114.0.1823.37-1	stable	system
+Microsoft Edge	com.microsoft.Edge	114.0.1823.41-1	stable	system
 Stremio	com.stremio.Stremio	4.4.160	stable	system
 Xmind (2022)	net.xmind.XMind	22.11.3771	stable	system
 Freedesktop Platform	org.freedesktop.Platform	21.08.18	21.08	system

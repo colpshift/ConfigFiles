@@ -174,7 +174,7 @@ nano-syntax-highlighting 2020.10.10-1
 ncmpcpp 0.9.2-10
 neofetch 7.1.0-2
 netctl 1.28-2
-network-manager-applet 1.32.0-2
+network-manager-applet 1.32.0-3
 networkmanager 1.42.6-1
 networkmanager-dmenu-git r172.18440df-1
 networkmanager-openconnect 1.2.10-1
@@ -183,6 +183,7 @@ nfs-utils 2.6.3-1
 nilfs-utils 2.2.9-2
 nitrogen 1.6.1-4
 noto-fonts 20230601-1
+noto-fonts-emoji 20220920-1
 nss-mdns 0.15.1-1
 ntfd-bin 0.2.2-1
 ntfs-3g 2022.10.3-1
@@ -231,7 +232,7 @@ sg3_utils 1.47-1
 shellcheck 0.9.0-42
 shfmt 3.6.0-1
 siji-ttf r22.14e7da9-1
-simple-scan 44.0-1
+simple-scan 44.0-2
 slimbookbattery 4.0.8beta-3
 smartmontools 7.3-1
 sof-firmware 2.2.5-1
@@ -261,6 +262,7 @@ ttf-icomoon-feather 1.0-2
 ttf-liberation 2.1.5-1
 ttf-material-design-icons 4.0.0-1
 ttf-nerd-fonts-symbols 3.0.2-1
+ttf-nerd-fonts-symbols-mono 3.0.2-1
 ttf-octicons 19.1.0-1
 ttf-opensans 1.101-2
 ttf-roboto 2.138-4
@@ -280,9 +282,9 @@ w3m 0.5.3.git20230121_1-1
 warsaw-bin 2.21.3.1-2
 webapp-manager 1.2.9-1
 welcome 3.64-1
-wezterm 20230408.112425.69ae8472-1
-wezterm-shell-integration 20230408.112425.69ae8472-1
-wezterm-terminfo 20230408.112425.69ae8472-1
+wezterm 20230408.112425.69ae8472-2
+wezterm-shell-integration 20230408.112425.69ae8472-2
+wezterm-terminfo 20230408.112425.69ae8472-2
 wget 1.21.4-1
 which 2.21-6
 wildmidi 0.4.5-2

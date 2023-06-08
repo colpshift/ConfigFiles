@@ -6,10 +6,10 @@
 ### Pin
 browser plugin checker plus gmail 
 browser plugin checker plus gcalendar
-contacts gcontacts
+contacts webapp
 notion webapp
 todoist webapp
-whatsapp whatsie app
+whatsapp webapp
 discord
 telegram
 

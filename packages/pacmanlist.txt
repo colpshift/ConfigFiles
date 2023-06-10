@@ -10,6 +10,7 @@ arandr 0.1.11-2
 arc-gtk-theme-eos 20221218-1
 archlinux-xdg-menu 0.7.6.6-1
 arcolinux-betterlockscreen 21.08.03-1
+asp 8-1
 aspell 0.60.8-3
 atool 0.39.0-8
 b43-fwcutter 019-4
@@ -20,7 +21,7 @@ bash-completion 2.11-3
 bat 0.23.0-3
 betterlockscreen 4.0.4-2
 bind 9.18.15-1
-bitwarden 2023.5.0-1
+bitwarden 2023.5.0-2
 bleachbit 4.4.2-4
 blender 17:3.5.1-6
 bluez 5.66-1
@@ -45,9 +46,10 @@ darktable 2:4.2.1-6
 dash 0.5.12-1
 dashbinsh 0.1-5
 device-mapper 2.03.21-1
+devtools 1:1.0.2-1
 dex 0.9.0-1
 dhclient 4.4.3.P1-2
-diff-so-fancy 1.4.3-1
+diff-so-fancy 1.4.4-1
 diffutils 3.10-1
 discord 0.0.27-2
 displaylink 5.7-1
@@ -64,7 +66,7 @@ e2fsprogs 1.47.0-1
 efibootmgr 18-2
 efitools 1.9.2-5
 endeavouros-keyring 20230523-1
-endeavouros-mirrorlist 23.5-1
+endeavouros-mirrorlist 23.6-1
 endeavouros-theming 22.12.3.3-2
 endeavouros-xfce4-terminal-colors 5-1
 eos-apps-info 1.6-1
@@ -88,7 +90,7 @@ feh 3.10-1
 ffmpegthumbnailer 2.2.2-5
 file 5.44-3
 file-roller 43.0-2
-firefox 114.0-1
+firefox 114.0.1-1
 firewalld 1.3.2-1
 flameshot 12.1.0-1
 font-manager 0.8.8-1
@@ -106,10 +108,10 @@ go 2:1.20.5-1
 google-chrome 114.0.5735.106-1
 gparted 1.5.0-1
 grub 2:2.06.r499.ge67a551a4-1
-gst-libav 1.22.3-4
+gst-libav 1.22.3-5
 gst-plugin-pipewire 1:0.3.71-2
-gst-plugins-bad 1.22.3-4
-gst-plugins-ugly 1.22.3-4
+gst-plugins-bad 1.22.3-5
+gst-plugins-ugly 1.22.3-5
 gtk-engine-murrine 0.98.2-4
 gvfs 1.50.4-3
 gvfs-afc 1.50.4-3
@@ -146,6 +148,8 @@ libwnck3 43.0-3
 lightdm 1:1.32.0-4
 lightdm-gtk-greeter-settings 1.2.2-8
 lightdm-slick-greeter 1.8.1-1
+lightdm-web-greeter-theme-arch 1:0.1.0-1
+lightdm-webkit-theme-aether 2.2.2-1
 linux 6.3.6.arch1-1
 linux-firmware 20230404.2e92a49f-1
 linux-headers 6.3.6.arch1-1
@@ -194,6 +198,7 @@ pacman-contrib 1.9.0-1
 pamac-all 10.5.1-1
 paper-icon-theme 1.5.0.832.aa3e8af-1
 papirus-icon-theme 20230601-1
+paru 1.11.2-1
 pavucontrol 1:5.0+r61+gee77d86-2
 perl 5.36.1-1
 picom 10.2-1
@@ -244,7 +249,7 @@ sysstat 12.7.2-1
 system-config-printer 1.5.18-2
 systemd-sysvcompat 253.5-1
 tamsyn-font 1.11-6
-telegram-desktop 4.8.1-3
+telegram-desktop 4.8.3-1
 terminus-font-ttf 4.49.3-1
 texinfo 7.0.3-1
 thunar 4.18.6-1
@@ -276,8 +281,8 @@ upower 1.90.0-4
 usb_modeswitch 2.6.1-3
 usbutils 015-3
 vi 1:070224-6
-visual-studio-code-bin 1.78.2-1
-vlc 3.0.18-10
+visual-studio-code-bin 1.79.0-1
+vlc 3.0.18-11
 w3m 0.5.3.git20230121_1-1
 warsaw-bin 2.21.3.1-2
 welcome 3.64-1
@@ -289,13 +294,13 @@ which 2.21-6
 wildmidi 0.4.5-2
 wireplumber 0.4.14-1
 wpa_supplicant 2:2.10-8
-xapp 2.6.0-1
+xapp 2.6.1-1
 xbindkeys 1.8.7-4
 xclip 0.13-3
 xdg-user-dirs 0.18-1
 xdg-user-dirs-gtk 0.11-2
 xdg-utils 1.1.3+25+g8ae0263-1
-xed 3.4.0-1
+xed 3.4.1-1
 xf86-input-libinput 1.3.0-1
 xfce4-terminal 1.0.4-1
 xfsprogs 6.3.0-1
@@ -309,7 +314,7 @@ xorg-xinput 1.6.4-1
 xorg-xkill 1.0.6-1
 xorg-xrandr 1.5.2-1
 xorg-xsetroot 1.1.3-1
-xreader 3.8.0-2
+xreader 3.8.1-1
 xsane 0.999-6
 xterm 382-1
 yay 12.0.5-1

@@ -56,6 +56,14 @@ python
 rust
 go
 
+### pacman
+sudo pacman -S --needed base-devel /
+  git clone https://aur.archlinux.org/paru.git
+  cd paru || exit
+  makepkg -si
+asp
+devtools
+
 ### fonts
 font-manager
 noto-fonts

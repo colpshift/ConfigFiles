@@ -2,10 +2,8 @@
 
 pgrep -x sxhkd >/dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI
-# bspc monitor eDP-1      -d II III IV V VI VII VIII IX
-# bspc monitor DVI-I-1-1  -d I
-# bspc monitor HDMI-1     -d X
+# Monitor Notebook - eDP-1
+bspc monitor eDP-1 -d I II III IV V VI
 
 bspc config border_width 2
 bspc config window_gap 5
@@ -45,6 +43,18 @@ bspc config active_border_color "#073642"
 
 # Set display from arandr saved script
 sh ~/.screenlayout/three_monitors.sh &
+# Set workspace to monitors
+if [[ $(xrandr -q | grep "HDMI-1 connected") ]];
+then
+  # Monitor Samsung - HDMI-1
+  bspc monitor HDMI-1 -d VII
+elif [[ xrandr -q | grep "DVI-I-1-1 connected" ]]; 
+then
+  # Monitor LG - DVI-I-1-1
+  bspc monitor DVI-I-1-1 -d VIII
+else
+  bspc monitor eDP-1 -d I II III IV V VI
+fi
 #
 # Bar
 pkill firewalld

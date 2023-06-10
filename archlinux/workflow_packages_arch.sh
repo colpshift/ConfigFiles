@@ -97,6 +97,7 @@ caffeine
 copyq
 hplip
 balena etcher
+namebench
 
 ### terminal
 wezterm

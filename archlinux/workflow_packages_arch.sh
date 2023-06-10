@@ -57,12 +57,13 @@ rust
 go
 
 ### pacman
-sudo pacman -S --needed base-devel /
+asp
+devtools
+paru
+  sudo pacman -S --needed base-devel
   git clone https://aur.archlinux.org/paru.git
   cd paru || exit
   makepkg -si
-asp
-devtools
 
 ### fonts
 font-manager

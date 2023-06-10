@@ -81,7 +81,7 @@ eos-rankmirrors 2.14-1
 eos-skel-ce-bspwm 1.5-2
 eos-update-notifier 23-5
 ethtool 1:6.3-1
-evdi-compat-git 1.13.1.r0.g85a347a-1
+evdi-compat-git 1.14.03.r0.g19476e7-1
 exa 0.10.1-7
 exfatprogs 1.2.1-1
 f2fs-tools 1.16.0-2
@@ -231,7 +231,7 @@ rsync 3.2.7-4
 rtkit 0.13-2
 rust 1:1.70.0-1
 s-nail 14.9.24-2
-scrot 1.9-1
+scrot 1.10-1
 seahorse 1:43.0-2
 sg3_utils 1.47-1
 shellcheck 0.9.0-42
@@ -261,7 +261,6 @@ tlp 1.5.0-6
 tree 2.1.1-1
 ttf-bitstream-vera 1.10-15
 ttf-dejavu 2.37+18+g9b5d1b2f-3
-ttf-droid-sans-mono-dotted-powerline-git r202.e80e3eb-1
 ttf-fantasque-sans-mono 1.8.0-2
 ttf-icomoon-feather 1.0-2
 ttf-liberation 2.1.5-1

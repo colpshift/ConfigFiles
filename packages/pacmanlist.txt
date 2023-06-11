@@ -193,6 +193,7 @@ ntfd-bin 0.2.2-1
 ntfs-3g 2022.10.3-1
 ntp 4.2.8.p17-1
 nuspell 5.1.2-2
+okular 23.04.2-1
 os-prober 1.81-1
 pacman-contrib 1.9.0-1
 pamac-all 10.5.1-1

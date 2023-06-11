@@ -1,0 +1,33 @@
+---
+tags: [ pacman helper ]
+---
+# Interactively search and install <target>.
+paru <target>
+
+# Alias for paru -Syu.
+paru
+
+# Install a specific package.
+paru -S <target>
+
+# Upgrade AUR packages.
+paru -Sua
+
+# Print available AUR updates.
+paru -Qua
+
+# Download the PKGBUILD and related files of <target>.
+paru -G <target>
+
+# Print the PKGBUILD of <target>.
+paru -Gp <target>
+
+# Print the AUR comments of <target>.
+paru -Gc <target>
+
+# Generate devel database for tracking *-git packages. 
+# Is only needed when you initially start using paru.
+paru --gendb
+
+# Build and install a PKGBUILD in the current directory.
+paru -Ui

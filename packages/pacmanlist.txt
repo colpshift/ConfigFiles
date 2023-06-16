@@ -128,7 +128,7 @@ htop 3.2.2-1
 hwdetect 2023.02.20-1
 hwinfo 22.2-2
 inetutils 2.4-1
-inkscape 1.2.2-7
+inkscape 1.2.2-8
 intel-ucode 20230613-1
 inxi 3.3.27.1-1
 iptables-nft 1:1.8.9-1
@@ -150,9 +150,9 @@ lightdm-gtk-greeter-settings 1.2.2-8
 lightdm-slick-greeter 1.8.1-1
 lightdm-web-greeter-theme-arch 1:0.1.0-1
 lightdm-webkit-theme-aether 2.2.2-1
-linux 6.3.7.arch1-1
+linux 6.3.8.arch1-1
 linux-firmware 20230404.2e92a49f-1
-linux-headers 6.3.7.arch1-1
+linux-headers 6.3.8.arch1-1
 logrotate 3.21.0-2
 lsb-release 2.0.r48.3cf5103-1
 lsd 0.23.1-2
@@ -208,7 +208,7 @@ pipewire-pulse 1:0.3.71-2
 pkgfile 21-2
 polkit-gnome 0.105-10
 polybar 3.6.3-3
-poppler-glib 23.05.0-1
+poppler-glib 23.06.0-1
 procs 0.14.0-1
 pv 1.6.20-2
 python 3.11.3-2
@@ -233,7 +233,7 @@ s-nail 14.9.24-2
 scrot 1.10-1
 seahorse 1:43.0-2
 sg3_utils 1.47-1
-shellcheck 0.9.0-43
+shellcheck 0.9.0-44
 shfmt 3.6.0-1
 siji-ttf r22.14e7da9-1
 simple-scan 44.0-2

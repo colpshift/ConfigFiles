@@ -1,4 +1,4 @@
-Brave Browser	com.brave.Browser	1.52.122	stable	system
+Brave Browser	com.brave.Browser	1.52.126	stable	system
 tidal-hifi	com.mastermindzh.tidal-hifi	5.1.0	stable	system
 Stremio	com.stremio.Stremio	4.4.160	stable	system
 Xmind (2022)	net.xmind.XMind	22.11.3771	stable	system

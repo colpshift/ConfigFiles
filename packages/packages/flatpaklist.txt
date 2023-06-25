@@ -1,4 +1,4 @@
-Bitwarden	com.bitwarden.desktop	2023.5.0	stable	flathub	system
+Bitwarden	com.bitwarden.desktop	2023.5.1	stable	flathub	system
 Brave Browser	com.brave.Browser	1.52.126	stable	flathub	system
 Discord	com.discordapp.Discord	0.0.27	stable	flathub	system
 draw.io	com.jgraph.drawio.desktop	21.3.7	stable	flathub	system
@@ -34,7 +34,7 @@ QGnomePlatform	org.kde.PlatformTheme.QGnomePlatform		5.15-22.08	flathub	system
 QtSNI	org.kde.PlatformTheme.QtSNI		5.15-21.08	flathub	system
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-21.08	flathub	system
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-22.08	flathub	system
-Okular	org.kde.okular	23.04.1	stable	fedora	system
+Okular	org.kde.okular	23.04.2	stable	fedora	system
 ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.3.3	stable	flathub	system
 Telegram Desktop	org.telegram.desktop	4.8.4	stable	flathub	system
 Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.40.1	stable	flathub	system

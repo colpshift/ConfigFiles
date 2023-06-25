@@ -74,3 +74,18 @@ sudo ./displaylink-installer.sh
 #linux kernels up til and including 5.14. 
 
 
+#
+# ------------------------------------------------------- Fedora
+#
+
+# https://kcore.org/2023/01/01/installing-evdi-fedora37/
+
+Install RPMFusion
+Install RPMSphere (for evdi)
+$ sudo dnf install evdi
+$ git clone https://github.com/DisplayLink/evdi
+$ cd evdi
+$ sudo cp evdi/module/* /usr/src/evdi-1.12.0
+$ sudo dkms build -m evdi -v 1.12.0 --force
+$ sudo dkms install -m evdi -v 1.12.0
+

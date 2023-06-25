@@ -107,11 +107,6 @@ alias ports='netstat -tulanp'
 alias neofetch='clear && neofetch --color_blocks off'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
-# pacman fastest mirrors
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --protocol http,https --save /etc/pacman.d/mirrorlist"
-alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --protocol http,https --save /etc/pacman.d/mirrorlist"
-alias mirrors="sudo reflector --latest 50 --number 20 --sort score --protocol http,https --save /etc/pacman.d/mirrorlist"
-alias mirrora="sudo reflector --latest 50 --number 20 --sort age --protocol http,https --save /etc/pacman.d/mirrorlist"
 
 ### Theming section
 autoload -U compinit colors zcalc
@@ -181,7 +176,6 @@ source $HOME/.src/forgit/forgit.plugin.zsh
 ### Zsh plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-command-not-found/command-not-found.plugin.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # bind UP and DOWN arrow keys to history substring search

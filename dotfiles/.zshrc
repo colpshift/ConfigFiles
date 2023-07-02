@@ -195,3 +195,7 @@ eval "$(starship init zsh)"
 ### fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

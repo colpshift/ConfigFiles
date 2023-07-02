@@ -5,28 +5,31 @@
 
 ### Pin
 #
-seahorse
 calendar
 contacts
 notion
 todoist
-rambox
+
+### Collaboration
+#
 discord
 telegram
 zoom
+skype
 
 ### office
 #
-libreoffice
 evince
-xmind
-document scanner
+drawio
+okular
 
 ### internet
 #
+brave
 firefox
 chrome
 brave
+edge
 
 ### Audio
 #
@@ -46,6 +49,9 @@ Stremio
 gimp
 darktable
 inkscape
+document scanner
+fonts
+ristretto
 
 ### code
 #
@@ -62,6 +68,8 @@ go
 ### Security
 #
 bitwarden
+seaworse
+https://cloud.gastecnologia.com.br/bb/downloads/ws/warsaw_setup64.rpm
 
 ### utilities
 #
@@ -72,7 +80,7 @@ timeshift
 #
 shell-genie
 namebench
-  tilix
+  wezterm
   starship
   lsd
   ripgrep
@@ -95,15 +103,15 @@ broot
 
 ### gnome extensions
 #
-"Wallpaper Switcher"  by rishuinfinity
-"Caffeine"            by eon
-"Compact Top Bar"     by wete
-"Dash to Dock"        by michele_g
-"Lock Keys"           by kazimieras.vaina
-"OpenWeather"         by skrewball
-"CPU Power Manager"   by martin31821
-"Vitals"              by corecoding
-"AppIndicator and KStatusNotifierItem Support" by 3v1n0
+"AppIndicator and KStatusNotifierItem Support"  by 3v1n0
+"Bing Wallpaper" by neffo
+"Caffeine" by eon
+"Compact Top Bar" by wete
+"Dash to Dock" by michele_g
+"Lock Keys" by kazimieras.vaina
+"OpenWeather by" skrewball
+"Pano - Clipboard Manager" by alperenelhan
+"Vitals" by corecoding
 
 ### Things to do After Installing
 #

@@ -67,7 +67,7 @@ local plugins = {
 	-- follow latest release.
 	version = "<CurrentMajor>.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
 	-- install jsregexp (optional!).
-	build = "make install_jsregexp"
+	-- build = "make install_jsregexp"
 },
   -- Install a plugin
   {

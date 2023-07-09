@@ -1,5 +1,5 @@
 Bitwarden	com.bitwarden.desktop	2023.5.1	stable	flathub	system
-Brave Browser	com.brave.Browser	1.52.129	stable	flathub	system
+Brave Browser	com.brave.Browser	1.52.130	stable	flathub	system
 Discord	com.discordapp.Discord	0.0.27	stable	flathub	system
 draw.io	com.jgraph.drawio.desktop	21.3.7	stable	flathub	system
 tidal-hifi	com.mastermindzh.tidal-hifi	5.3.0	stable	flathub	system

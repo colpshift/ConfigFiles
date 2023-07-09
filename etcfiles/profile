@@ -81,8 +81,7 @@ then
 fi
 
 ### Default apps
-export TERMINAL=wezterm
-export TERM="xterm-256color"
+export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less

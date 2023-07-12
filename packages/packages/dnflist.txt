@@ -137,6 +137,7 @@ brcmfmac-firmware.noarch                             20230625-151.fc38          
 brlapi.x86_64                                        0.8.4-10.fc38                      @anaconda                                            
 brltty.x86_64                                        6.5-10.fc38                        @anaconda                                            
 btrfs-progs.x86_64                                   6.3.2-1.fc38                       @updates                                             
+bubblemail.x86_64                                    1.8-5.fc38                         @fedora                                              
 bubblewrap.x86_64                                    0.7.0-1.fc38                       @anaconda                                            
 bzip2.x86_64                                         1.0.8-13.fc38                      @anaconda                                            
 bzip2-libs.x86_64                                    1.0.8-13.fc38                      @anaconda                                            
@@ -398,7 +399,7 @@ git-core.x86_64                                      2.41.0-1.fc38              
 git-core-doc.noarch                                  2.41.0-1.fc38                      @updates                                             
 gjs.x86_64                                           1.76.2-1.fc38                      @updates                                             
 glib-networking.x86_64                               2.76.1-1.fc38                      @updates                                             
-glib2.x86_64                                         2.76.3-1.fc38                      @updates                                             
+glib2.x86_64                                         2.76.4-1.fc38                      @updates                                             
 glibc.x86_64                                         2.37-4.fc38                        @updates                                             
 glibc-all-langpacks.x86_64                           2.37-4.fc38                        @updates                                             
 glibc-common.x86_64                                  2.37-4.fc38                        @updates                                             
@@ -450,6 +451,7 @@ gnome-settings-daemon.x86_64                         44.1-1.fc38                
 gnome-shell.x86_64                                   44.2-1.fc38                        @updates                                             
 gnome-shell-extension-apps-menu.noarch               44.0-1.fc38                        @anaconda                                            
 gnome-shell-extension-background-logo.noarch         44~beta-1.fc38                     @anaconda                                            
+gnome-shell-extension-bubblemail.noarch              20.1-1.fc38                        @updates                                             
 gnome-shell-extension-common.noarch                  44.0-1.fc38                        @anaconda                                            
 gnome-shell-extension-launch-new-instance.noarch     44.0-1.fc38                        @anaconda                                            
 gnome-shell-extension-places-menu.noarch             44.0-1.fc38                        @anaconda                                            
@@ -462,7 +464,7 @@ gnome-text-editor.x86_64                             44.0-1.fc38                
 gnome-themes-extra.x86_64                            3.28-16.fc38                       @anaconda                                            
 gnome-tour.x86_64                                    44.0-1.fc38                        @anaconda                                            
 gnome-tweaks.noarch                                  42~beta-5.fc38                     @fedora                                              
-gnome-user-docs.noarch                               44.1-1.fc38                        @updates                                             
+gnome-user-docs.noarch                               44.3-1.fc38                        @updates                                             
 gnome-user-share.x86_64                              43.0-2.fc38                        @anaconda                                            
 gnome-video-effects.noarch                           0.6.0-1.fc38                       @updates                                             
 gnupg2.x86_64                                        2.4.0-3.fc38                       @anaconda                                            
@@ -613,7 +615,7 @@ ilbc.x86_64                                          3.0.4-4.fc38               
 ima-evm-utils.x86_64                                 1.4-7.fc38                         @anaconda                                            
 imath.x86_64                                         3.1.9-1.fc38                       @updates                                             
 imlib2.x86_64                                        1.7.4-4.fc38                       @fedora                                              
-inih.x86_64                                          56-3.fc38                          @anaconda                                            
+inih.x86_64                                          57-1.fc38                          @updates                                             
 iniparser.x86_64                                     4.1-12.fc38                        @updates                                             
 initscripts.x86_64                                   10.19-1.fc38                       @updates                                             
 initscripts-rename-device.x86_64                     10.19-1.fc38                       @updates                                             
@@ -692,7 +694,7 @@ kitty-terminfo.noarch                                0.28.1-4.fc38              
 kmod.x86_64                                          30-4.fc38                          @anaconda                                            
 kmod-libs.x86_64                                     30-4.fc38                          @anaconda                                            
 kpartx.x86_64                                        0.9.4-2.fc38                       @anaconda                                            
-krb5-libs.x86_64                                     1.20.1-8.fc38                      @anaconda                                            
+krb5-libs.x86_64                                     1.21-2.fc38                        @updates                                             
 ladspa.x86_64                                        1.13-30.fc38                       @anaconda                                            
 lame.x86_64                                          3.100-14.fc38                      @fedora                                              
 lame-libs.x86_64                                     3.100-14.fc38                      @anaconda                                            
@@ -1530,6 +1532,7 @@ python3-gobject.x86_64                               3.44.1-1.fc38              
 python3-gobject-base.x86_64                          3.44.1-1.fc38                      @anaconda                                            
 python3-gobject-base-noarch.noarch                   3.44.1-1.fc38                      @anaconda                                            
 python3-gpg.x86_64                                   1.17.1-3.fc38                      @anaconda                                            
+python3-gstreamer1.x86_64                            1.22.4-1.fc38                      @updates                                             
 python3-hawkey.x86_64                                0.70.1-1.fc38                      @updates                                             
 python3-humanize.noarch                              3.13.1-6.fc38                      @anaconda                                            
 python3-idna.noarch                                  3.4-2.fc38                         @anaconda                                            

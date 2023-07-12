@@ -251,7 +251,6 @@ libmysofa-1.2.1-4.fc38.x86_64
 double-conversion-3.1.5-8.fc38.x86_64
 graphite2-1.3.14-11.fc38.x86_64
 groff-base-1.22.4-11.fc38.x86_64
-inih-56-3.fc38.x86_64
 libvmaf-2.3.0-5.fc38.x86_64
 webrtc-audio-processing-0.3.1-10.fc38.x86_64
 zimg-3.0.4-2.fc38.x86_64
@@ -475,7 +474,6 @@ crypto-policies-scripts-20230301-1.gita12f7b2.fc38.noarch
 authselect-1.4.2-2.fc38.x86_64
 authselect-libs-1.4.2-2.fc38.x86_64
 ca-certificates-2023.2.60-2.fc38.noarch
-krb5-libs-1.20.1-8.fc38.x86_64
 kmod-libs-30-4.fc38.x86_64
 openldap-2.6.4-1.fc38.x86_64
 libldb-2.7.2-1.fc38.x86_64
@@ -1071,7 +1069,6 @@ glibc-common-2.37-4.fc38.x86_64
 glibc-gconv-extra-2.37-4.fc38.x86_64
 glibc-langpack-en-2.37-4.fc38.x86_64
 glibc-2.37-4.fc38.x86_64
-glib2-2.76.3-1.fc38.x86_64
 libstdc++-13.1.1-4.fc38.x86_64
 openssl-libs-3.0.9-1.fc38.x86_64
 libxml2-2.10.4-1.fc38.x86_64
@@ -1510,7 +1507,6 @@ publicsuffix-list-dafsa-20230614-1.fc38.noarch
 microcode_ctl-2.1-55.fc38.x86_64
 livesys-scripts-0.4.3-1.fc38.noarch
 google-noto-sans-cjk-vf-fonts-2.004-2.fc38.noarch
-gnome-user-docs-44.1-1.fc38.noarch
 distribution-gpg-keys-1.89-1.fc38.noarch
 alsa-sof-firmware-2.2.5-1.fc38.noarch
 aajohan-comfortaa-fonts-3.101-9.fc38.noarch
@@ -1993,3 +1989,10 @@ unrar-6.2.8-1.fc38.x86_64
 libnetfilter_conntrack-1.0.9-1.fc38.x86_64
 hwdata-0.372-1.fc38.noarch
 container-selinux-2.219.0-1.fc38.noarch
+gnome-user-docs-44.3-1.fc38.noarch
+glib2-2.76.4-1.fc38.x86_64
+krb5-libs-1.21-2.fc38.x86_64
+inih-57-1.fc38.x86_64
+python3-gstreamer1-1.22.4-1.fc38.x86_64
+gnome-shell-extension-bubblemail-20.1-1.fc38.noarch
+bubblemail-1.8-5.fc38.x86_64

@@ -1,6 +1,6 @@
-Bitwarden	com.bitwarden.desktop	2023.5.1	stable	flathub	system
+Bitwarden	com.bitwarden.desktop	2023.7.0	stable	flathub	system
 Brave Browser	com.brave.Browser	1.52.130	stable	flathub	system
-Discord	com.discordapp.Discord	0.0.27	stable	flathub	system
+Discord	com.discordapp.Discord	0.0.28	stable	flathub	system
 draw.io	com.jgraph.drawio.desktop	21.3.7	stable	flathub	system
 tidal-hifi	com.mastermindzh.tidal-hifi	5.3.0	stable	flathub	system
 Stremio	com.stremio.Stremio	4.4.160	stable	flathub	system
@@ -38,5 +38,5 @@ ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.4.0	stable	flathub	sy
 Telegram Desktop	org.telegram.desktop	4.8.4	stable	flathub	system
 Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.40.3	stable	flathub	system
 VLC	org.videolan.VLC	3.0.18	stable	flathub	system
-Wez's Terminal Emulator	org.wezfurlong.wezterm	20230408-112425-69ae8472	stable	flathub	system
-Zoom	us.zoom.Zoom	5.14.10.3738	stable	flathub	system
+Wez's Terminal Emulator	org.wezfurlong.wezterm	20230712-072601-f4abf8fd	stable	flathub	system
+Zoom	us.zoom.Zoom	5.15.3.4839	stable	flathub	system

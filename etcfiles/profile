@@ -85,5 +85,5 @@ export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export BROWSER="flatpak run com.brave.Browser"
+export BROWSER=/usr/local/bin/firefox
 

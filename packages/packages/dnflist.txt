@@ -1155,7 +1155,7 @@ lohit-telugu-fonts.noarch                            2.5.5-14.fc38              
 low-memory-monitor.x86_64                            2.1-7.fc38                         @anaconda                                            
 lpcnetfreedv.x86_64                                  0.2-13.fc38                        @anaconda                                            
 lrzsz.x86_64                                         0.12.20-58.fc38                    @anaconda                                            
-lsd.x86_64                                           0.22.0-4.fc38                      @fedora                                              
+lsd.x86_64                                           0.23.1-1.fc38                      @updates                                             
 lsof.x86_64                                          4.96.3-3.fc38                      @anaconda                                            
 lttng-ust.x86_64                                     2.13.5-2.fc38                      @anaconda                                            
 lua-language-server.x86_64                           3.6.22-1.fc38                      @@commandline                                        
@@ -1203,7 +1203,7 @@ mesa-libxatracker.x86_64                             23.1.3-1.fc38              
 mesa-va-drivers.x86_64                               23.1.3-1.fc38                      @updates                                             
 mesa-vulkan-drivers.x86_64                           23.1.3-1.fc38                      @updates                                             
 microcode_ctl.x86_64                                 2:2.1-55.fc38                      @updates                                             
-microsoft-edge-dev.x86_64                            116.0.1938.27-1                    @microsoft-edge-dev                                  
+microsoft-edge-dev.x86_64                            116.0.1938.29-1                    @microsoft-edge-dev                                  
 mkfontscale.x86_64                                   1.2.2-3.fc38                       @anaconda                                            
 mkpasswd.x86_64                                      5.5.17-1.fc38                      @updates                                             
 mobile-broadband-provider-info.noarch                20221107-2.fc38                    @anaconda                                            
@@ -1978,7 +1978,7 @@ xrandr.x86_64                                        1.5.2-2.fc38               
 xrdb.x86_64                                          1.2.1-5.fc38                       @anaconda                                            
 xsel.x86_64                                          1.2.0-32.fc38                      @fedora                                              
 xvidcore.x86_64                                      1.3.7-9.fc38                       @anaconda                                            
-xxhash-libs.x86_64                                   0.8.1-4.fc38                       @anaconda                                            
+xxhash-libs.x86_64                                   0.8.2-1.fc38                       @updates                                             
 xz.x86_64                                            5.4.1-1.fc38                       @anaconda                                            
 xz-libs.x86_64                                       5.4.1-1.fc38                       @anaconda                                            
 yajl.x86_64                                          2.1.0-21.fc38                      @updates                                             

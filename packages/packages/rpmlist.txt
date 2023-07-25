@@ -279,7 +279,6 @@ opencore-amr-0.1.6-3.fc38.x86_64
 pcre2-utf16-10.42-1.fc38.1.x86_64
 qrencode-libs-4.1.1-4.fc38.x86_64
 twolame-libs-0.4.0-2.fc38.x86_64
-xxhash-libs-0.8.1-4.fc38.x86_64
 leptonica-1.83.1-1.fc38.x86_64
 tesseract-langpack-eng-4.1.0-5.fc38.noarch
 tesseract-5.3.0-6.fc38.x86_64
@@ -1485,7 +1484,6 @@ timeshift-22.11.2-1.fc38.x86_64
 gpg-pubkey-90f437f2-5dd896bd
 starship-1.15.0-1.fc38.x86_64
 ripgrep-13.0.0-10.fc38.x86_64
-lsd-0.22.0-4.fc38.x86_64
 http-parser-2.9.4-8.fc38.x86_64
 libgit2-1.6.4-1.fc38.x86_64
 highlight-4.2-3.fc38.x86_64
@@ -1960,7 +1958,6 @@ golang-bin-1.20.6-1.fc38.x86_64
 golang-1.20.6-1.fc38.x86_64
 cargo-1.71.0-1.fc38.x86_64
 google-chrome-stable-115.0.5790.102-1.x86_64
-microsoft-edge-dev-116.0.1938.27-1.x86_64
 glib2-2.76.4-3.fc38.x86_64
 pipewire-0.3.75-1.fc38.x86_64
 pipewire-libs-0.3.75-1.fc38.x86_64
@@ -2013,3 +2010,6 @@ gst-editing-services-1.22.5-1.fc38.x86_64
 gstreamer1-plugin-libav-1.22.5-1.fc38.x86_64
 python3-gstreamer1-1.22.5-1.fc38.x86_64
 kernel-headers-6.4.4-200.fc38.x86_64
+xxhash-libs-0.8.2-1.fc38.x86_64
+lsd-0.23.1-1.fc38.x86_64
+microsoft-edge-dev-116.0.1938.29-1.x86_64

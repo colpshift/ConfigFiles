@@ -5,7 +5,8 @@
 
 ### Pin
 #
-calendar
+thunderbird
+  bublemail
 contacts
 notion
 todoist
@@ -28,8 +29,8 @@ okular
 brave
 firefox
 chrome
-brave
 edge
+webapps
 
 ### Audio
 #
@@ -52,6 +53,7 @@ inkscape
 document scanner
 fonts
 ristretto
+flameshot
 
 ### code
 #
@@ -69,7 +71,8 @@ go
 #
 bitwarden
 seaworse
-https://cloud.gastecnologia.com.br/bb/downloads/ws/warsaw_setup64.rpm
+warsaw
+  https://cloud.gastecnologia.com.br/bb/downloads/ws/warsaw_setup64.rpm
 
 ### utilities
 #
@@ -80,7 +83,7 @@ timeshift
 #
 shell-genie
 namebench
-  wezterm
+  kitty
   starship
   lsd
   ripgrep
@@ -101,17 +104,28 @@ broot
   emoji-cli
   highlight
 
-### gnome extensions
+### gnome
 #
-"AppIndicator and KStatusNotifierItem Support"  by 3v1n0
-"Bing Wallpaper" by neffo
-"Caffeine" by eon
-"Compact Top Bar" by wete
-"Dash to Dock" by michele_g
-"Lock Keys" by kazimieras.vaina
-"OpenWeather by" skrewball
-"Pano - Clipboard Manager" by alperenelhan
-"Vitals" by corecoding
+extensions
+Tweak
+# extensions
+#
+AppIndicator and KStatusNotifierItem Support by 3v1n0
+Bing Wallpaper by neffo
+Bubblemail by Razer
+Caffeine by eon
+Compact Top Bar by wete
+Dash to Dock by michele_g
+Lock Keys by kazimieras.vaina
+OpenWeather by skrewball
+Pano - Clipboard Manager by alperenelhan
+Vitals by corecoding
+#
+system Window List by fmuellner
+system Places Status Indicator by fmuellner
+system Applications Menu by fmuellner
+system Background Logo
+system Launch new instance by fmuellner
 
 ### Things to do After Installing
 #

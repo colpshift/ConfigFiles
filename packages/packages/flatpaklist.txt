@@ -35,7 +35,7 @@ QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-22.08	flathub	system
 Okular	org.kde.okular	23.04.3	stable	fedora	system
 ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.4.1	stable	flathub	system
-Telegram Desktop	org.telegram.desktop	4.9	stable	flathub	system
+Telegram Desktop	org.telegram.desktop	4.9.1	stable	flathub	system
 Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.40.5	stable	flathub	system
 VLC	org.videolan.VLC	3.0.18	stable	flathub	system
 Wez's Terminal Emulator	org.wezfurlong.wezterm	20230712-072601-f4abf8fd	stable	flathub	system

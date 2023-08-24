@@ -1,12 +1,12 @@
 Bitwarden	com.bitwarden.desktop	2023.7.0	stable	flathub	system
-Brave Browser	com.brave.Browser	1.57.47	stable	flathub	system
+Brave Browser	com.brave.Browser	1.57.53	stable	flathub	system
 Discord	com.discordapp.Discord	0.0.28	stable	flathub	system
 draw.io	com.jgraph.drawio.desktop	21.3.7	stable	flathub	system
 tidal-hifi	com.mastermindzh.tidal-hifi	5.6.0	stable	flathub	system
 Stremio	com.stremio.Stremio	4.4.160	stable	flathub	system
 GitHub Desktop	io.github.shiftey.Desktop	3.2.7-linux2	stable	flathub	system
 Neovim	io.neovim.nvim	0.9.1	stable	flathub	system
-Blender	org.blender.Blender	3.6.1	stable	flathub	system
+Blender	org.blender.Blender	3.6.2	stable	flathub	system
 Codecs	org.blender.Blender.Codecs		stable	flathub	system
 Fedora KDE 5 Platform	org.fedoraproject.KDE5Platform	38	f38	fedora	system
 Freedesktop Platform	org.freedesktop.Platform	22.08.14	22.08	flathub	system
@@ -35,8 +35,7 @@ QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-22.08	flathub	system
 Okular	org.kde.okular	23.04.3	stable	fedora	system
 ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.4.1	stable	flathub	system
-Telegram Desktop	org.telegram.desktop	4.9.1	stable	flathub	system
+Telegram Desktop	org.telegram.desktop	4.9.3	stable	flathub	system
 Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.40.5	stable	flathub	system
 VLC	org.videolan.VLC	3.0.18	stable	flathub	system
-Wez's Terminal Emulator	org.wezfurlong.wezterm	20230712-072601-f4abf8fd	stable	flathub	system
-Zoom	us.zoom.Zoom	5.15.7.6521	stable	flathub	system
+Zoom	us.zoom.Zoom	5.15.10.6882	stable	flathub	system

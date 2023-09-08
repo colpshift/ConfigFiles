@@ -1,24 +1,28 @@
-Bitwarden	com.bitwarden.desktop	2023.7.0	stable	flathub	system
-Brave Browser	com.brave.Browser	1.57.47	stable	flathub	system
-Discord	com.discordapp.Discord	0.0.28	stable	flathub	system
+Bitwarden	com.bitwarden.desktop	2023.8.2	stable	flathub	system
+Brave Browser	com.brave.Browser	1.57.62	stable	flathub	system
+Discord	com.discordapp.Discord	0.0.29	stable	flathub	system
 draw.io	com.jgraph.drawio.desktop	21.3.7	stable	flathub	system
-tidal-hifi	com.mastermindzh.tidal-hifi	5.6.0	stable	flathub	system
+tidal-hifi	com.mastermindzh.tidal-hifi	5.7.0	stable	flathub	system
 Stremio	com.stremio.Stremio	4.4.160	stable	flathub	system
-GitHub Desktop	io.github.shiftey.Desktop	3.2.7-linux2	stable	flathub	system
+GitHub Desktop	io.github.shiftey.Desktop	3.3.1-linux1	stable	flathub	system
 Neovim	io.neovim.nvim	0.9.1	stable	flathub	system
-Blender	org.blender.Blender	3.6.1	stable	flathub	system
+Blender	org.blender.Blender	3.6.2	stable	flathub	system
 Codecs	org.blender.Blender.Codecs		stable	flathub	system
 Fedora KDE 5 Platform	org.fedoraproject.KDE5Platform	38	f38	fedora	system
-Freedesktop Platform	org.freedesktop.Platform	22.08.14	22.08	flathub	system
+Freedesktop Platform	org.freedesktop.Platform	22.08.15	22.08	flathub	system
 Mesa	org.freedesktop.Platform.GL.default	21.3.9	21.08	flathub	system
-Mesa	org.freedesktop.Platform.GL.default	23.1.4	22.08	flathub	system
-Mesa (Extra)	org.freedesktop.Platform.GL.default	23.1.4	22.08-extra	flathub	system
+Mesa	org.freedesktop.Platform.GL.default	23.1.6	22.08	flathub	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	23.1.6	22.08-extra	flathub	system
+Mesa	org.freedesktop.Platform.GL.default	23.1.6	23.08	flathub	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	23.1.6	23.08-extra	flathub	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	flathub	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	flathub	system
+Intel	org.freedesktop.Platform.VAAPI.Intel		23.08	flathub	system
 ffmpeg-full	org.freedesktop.Platform.ffmpeg-full		22.08	flathub	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	flathub	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	flathub	system
-Freedesktop SDK	org.freedesktop.Sdk	22.08.14	22.08	flathub	system
+Freedesktop SDK	org.freedesktop.Sdk	22.08.15	22.08	flathub	system
+Freedesktop SDK	org.freedesktop.Sdk	23.08.0	23.08	flathub	system
 GNU Image Manipulation Program	org.gimp.GIMP	2.10.34	stable	flathub	system
 GNOME Application Platform version 43	org.gnome.Platform		43	flathub	system
 GNOME Application Platform version 44	org.gnome.Platform		44	flathub	system
@@ -35,8 +39,7 @@ QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-22.08	flathub	system
 Okular	org.kde.okular	23.04.3	stable	fedora	system
 ONLYOFFICE Desktop Editors	org.onlyoffice.desktopeditors	7.4.1	stable	flathub	system
-Telegram Desktop	org.telegram.desktop	4.9.1	stable	flathub	system
+Telegram Desktop	org.telegram.desktop	4.9.5	stable	flathub	system
 Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.40.5	stable	flathub	system
 VLC	org.videolan.VLC	3.0.18	stable	flathub	system
-Wez's Terminal Emulator	org.wezfurlong.wezterm	20230712-072601-f4abf8fd	stable	flathub	system
-Zoom	us.zoom.Zoom	5.15.7.6521	stable	flathub	system
+Zoom	us.zoom.Zoom	5.15.12.7665	stable	flathub	system

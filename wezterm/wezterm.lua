@@ -9,7 +9,7 @@ return {
 	-- font and size
 	-- font = wezterm.font("RobotoMono Nerd Font"),
   font = wezterm.font("JetBrainsMono Nerd Font Propo"),
-	font_size = 11,
+	font_size = 10.5,
 	-- opacity and color theme
 	window_background_opacity = 0.85,
 	-- color_scheme = "iceberg-dark",

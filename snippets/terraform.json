@@ -1,6 +1,6 @@
 {
   "artifactory_backend": {
-    "prefix": "artifactory_backend",
+    "prefix": "tf-artifactory_backend",
     "description": "Define a backend-artifactory backend",
     "body": [
       "data \"terraform_remote_state\" \"${myBackend}\" {",
@@ -16,7 +16,7 @@
     ]
   },
   "atlas_backend": {
-    "prefix": "atlas_backend",
+    "prefix": "tf-atlas_backend",
     "description": "Define a backend-atlas backend",
     "body": [
       "data \"terraform_remote_state\" \"${myBackend}\" {",
@@ -29,7 +29,7 @@
     ]
   },
   "azure_backend": {
-    "prefix": "azure_backend",
+    "prefix": "tf-azure_backend",
     "description": "Define a backend-azure backend",
     "body": [
       "data \"terraform_remote_state\" \"${myBackend}\" {",
@@ -43,7 +43,7 @@
     ]
   },
   "consul_backend": {
-    "prefix": "consul_backend",
+    "prefix": "tf-consul_backend",
     "description": "Define a backend-consul backend",
     "body": [
       "data \"terraform_remote_state\" \"${myBackend}\" {",
@@ -55,7 +55,7 @@
     ]
   },
   "etcd_backend": {
-    "prefix": "etcd_backend",
+    "prefix": "tf-etcd_backend",
     "description": "Define a backend-etcd backend",
     "body": [
       "data \"terraform_remote_state\" \"${myBackend}\" {",
@@ -68,7 +68,7 @@
     ]
   },
   "gcs_backend": {
-    "prefix": "gcs_backend",
+    "prefix": "tf-gcs_backend",
     "description": "Define a backend-gcs backend",
     "body": [
       "data \"terraform_remote_state\" \"${myBackend}\" {",
@@ -82,7 +82,7 @@
     ]
   },
   "http_backend": {
-    "prefix": "http_backend",
+    "prefix": "tf-http_backend",
     "description": "Define a backend-http backend",
     "body": [
       "data \"terraform_remote_state\" \"${myBackend}\" {",
@@ -94,7 +94,7 @@
     ]
   },
   "local_backend": {
-    "prefix": "local_backend",
+    "prefix": "tf-local_backend",
     "description": "Define a backend-local backend",
     "body": [
       "data \"terraform_remote_state\" \"${myBackend}\" {",
@@ -106,7 +106,7 @@
     ]
   },
   "s3_backend": {
-    "prefix": "s3_backend",
+    "prefix": "tf-s3_backend",
     "description": "Define a backend-s3 backend",
     "body": [
       "data \"terraform_remote_state\" \"${myBackend}\" {",
@@ -120,7 +120,7 @@
     ]
   },
   "swift_backend": {
-    "prefix": "swift_backend",
+    "prefix": "tf-swift_backend",
     "description": "Define a backend-swift backend",
     "body": [
       "data \"terraform_remote_state\" \"${myBackend}\" {",
@@ -132,37 +132,37 @@
     ]
   },
   "module": {
-    "prefix": "module",
+    "prefix": "tf-module",
     "description": "Modules in Terraform are self-contained packages of Terraform configurations that are managed as a group.",
     "body": ["module \"${myModuleName}\" {", "   source = \"\"", "}"]
   },
   "output": {
-    "prefix": "output",
+    "prefix": "tf-output",
     "description": "Outputs are a way to tell Terraform what data is important.",
     "body": ["output \"${myOutput}\" {", "   value = \"\"", "}"]
   },
   "resource": {
-    "prefix": "resource",
+    "prefix": "tf-resource",
     "description": "define a provisioner.",
     "body": ["resource \"${1}\" \"${2}\" {", "\t${3}", "}"]
   },
   "depends_on": {
-    "prefix": "depends_on",
+    "prefix": "tf-depends_on",
     "description": "Define explicit dependencies.",
     "body": ["depends_on = [\"${dependsOn}\"]"]
   },
   "variable": {
-    "prefix": "variable",
+    "prefix": "tf-variable",
     "description": "Define variables.",
     "body": ["variable \"${myVariable}\" { }"]
   },
   "variable-default": {
-    "prefix": "variable-default",
+    "prefix": "tf-variable-default",
     "description": "Define variables with default",
     "body": ["variable \"${myVariable}\" {", "   default =   \"\"", "}"]
   },
   "bitbucket_module": {
-    "prefix": "bitbucket_module",
+    "prefix": "tf-bitbucket_module",
     "description": "Define a module with BitBucket source.",
     "body": [
       "module \"${myModuleName}\" {",
@@ -171,12 +171,12 @@
     ]
   },
   "git_module": {
-    "prefix": "git_module",
+    "prefix": "tf-git_module",
     "description": "Define a module with genertic Git source.",
     "body": ["module \"${myModuleName}\" {", "   source = \"git://\"", "}"]
   },
   "github_private_module": {
-    "prefix": "github_private_module",
+    "prefix": "tf-github_private_module",
     "description": "Define a module with github with private source.",
     "body": [
       "module \"${myModuleName}\" {",
@@ -185,7 +185,7 @@
     ]
   },
   "github_module": {
-    "prefix": "github_module",
+    "prefix": "tf-github_module",
     "description": "Define a module with github source.",
     "body": [
       "module \"${myModuleName}\" {",
@@ -194,12 +194,12 @@
     ]
   },
   "mercurial_module": {
-    "prefix": "mercurial_module",
+    "prefix": "tf-mercurial_module",
     "description": "Define a module with Mercurial source.",
     "body": ["module \"${myModuleName}\" {", "   source = \"hg::http://\"", "}"]
   },
   "s3_module": {
-    "prefix": "s3_module",
+    "prefix": "tf-s3_module",
     "description": "Define a module with S3 source.",
     "body": [
       "module \"${myModuleName}\" {",
@@ -208,12 +208,12 @@
     ]
   },
   "archive": {
-    "prefix": "archive",
+    "prefix": "tf-archive",
     "description": "Defines archive",
     "body": ["provider \"archive\" {", "}"]
   },
   "archive_file": {
-    "prefix": "archive_file",
+    "prefix": "tf-archive_file",
     "description": "Defines archive_file",
     "body": [
       "data \"archive_file\" \"${init}\" {",
@@ -224,7 +224,7 @@
     ]
   },
   "arukas": {
-    "prefix": "arukas",
+    "prefix": "tf-arukas",
     "description": "Defines Arukas provider",
     "body": [
       "provider \"arukas\" {",
@@ -234,7 +234,7 @@
     ]
   },
   "arukas_container": {
-    "prefix": "arukas_container",
+    "prefix": "tf-arukas_container",
     "description": "Defines Arukas container",
     "body": [
       "resource \"arukas_container\" \"${1:arukas_container_id}\" {",
@@ -243,12 +243,12 @@
     ]
   },
   "atlas": {
-    "prefix": "atlas",
+    "prefix": "tf-atlas",
     "description": "Defines atlas",
     "body": ["provider \"atlas\" {", "   token = \"${atlasToken}\"", "}"]
   },
   "atlas_artifact_data": {
-    "prefix": "atlas_artifact",
+    "prefix": "tf-atlas_artifact",
     "description": "Defines atlas_artifact data",
     "body": [
       "data \"atlas_artifact\" \"${web}\" {",
@@ -262,7 +262,7 @@
     ]
   },
   "aws": {
-    "prefix": "aws",
+    "prefix": "tf-aws",
     "description": "define a aws provider.",
     "body": [
       "provider \"aws\" {",
@@ -273,7 +273,7 @@
     ]
   },
   "aws_profile": {
-    "prefix": "aws_profile",
+    "prefix": "tf-aws_profile",
     "description": "define a aws provider with profile.",
     "body": [
       "provider \"aws\" {",
@@ -284,7 +284,7 @@
     ]
   },
   "aws_acm_certificate": {
-    "prefix": "aws_acm_certificate",
+    "prefix": "tf-aws_acm_certificate",
     "description": "Use this data source to get the ARN of a certificate in AWS Certificate Manager (ACM). The process of requesting and verifying a certificate in ACM requires some manual steps, which means that Terraform cannot automate the creation of ACM certificates. But using this data source, you can reference them by domain without having to hard code the ARNs as input.",
     "body": [
       "data \"aws_acm_certificate\" \"${example}\" {",
@@ -294,7 +294,7 @@
     ]
   },
   "aws_alb_listener": {
-    "prefix": "aws_alb_listener",
+    "prefix": "tf-aws_alb_listener",
     "description": "Provides information about an Application Load Balancer Listener. This data source can prove useful when a module accepts an ALB Listener as an input variable and needs to know the ALB it is attached to, or other information specific to the listener in question.",
     "body": [
       "variable \"${listener_arn}\" {",
@@ -306,7 +306,7 @@
     ]
   },
   "aws_ami": {
-    "prefix": "aws_ami",
+    "prefix": "tf-aws_ami",
     "description": "aws_ami - Use this data source to get the ID of a registered AMI for use in other resources.",
     "body": [
       "data \"aws_ami\" \"${ami-name}\" {",
@@ -325,7 +325,7 @@
     ]
   },
   "aws_availability_zone": {
-    "prefix": "aws_availability_zone",
+    "prefix": "tf-aws_availability_zone",
     "description": "aws_availability_zone provides details about a specific availablity zone (AZ) in the current region. This can be used both to validate an availability zone given in a variable and to split the AZ name into its component parts of an AWS region and an AZ identifier letter. The latter may be useful e.g. for implementing a consistent subnet numbering scheme across several regions by mapping both the region and the subnet letter to network numbers.",
     "body": [
       "variable \"${region_number}\" {",
@@ -367,7 +367,7 @@
     ]
   },
   "aws_availability_zones": {
-    "prefix": "aws_availability_zones",
+    "prefix": "tf-aws_availability_zones",
     "description": "aws_ecs_container_definition - The Availability Zones data source allows access to the list of AWS Availability Zones which can be accessed by an AWS account within the region configured in the provider.",
     "body": [
       "# State can be either: available, information, impaired, or unavailable",
@@ -375,7 +375,7 @@
     ]
   },
   "aws_caller_identity": {
-    "prefix": "aws_caller_identity",
+    "prefix": "tf-aws_caller_identity",
     "description": "aws_caller_identity - Use this data source to get the access to the effective Account ID in which Terraform is working.",
     "body": [
       "data \"aws_caller_identity\" \"current\" { }\n",
@@ -385,7 +385,7 @@
     ]
   },
   "aws_cloudformation_stack": {
-    "prefix": "aws_cloudformation_stack",
+    "prefix": "tf-aws_cloudformation_stack",
     "description": "aws_cloudformation_stack - The CloudFormation Stack data source allows access to stack outputs and other useful data including the template body..",
     "body": [
       "data \"aws_cloudformation_stack\" \"network\" {",
@@ -402,7 +402,7 @@
     ]
   },
   "aws_ebs_volume": {
-    "prefix": "aws_ebs_volume",
+    "prefix": "tf-aws_ebs_volume",
     "description": "Use this data source to get information about an EBS volume for use in other resources.",
     "body": [
       "data \"aws_ebs_volume\" \"${ebs_volume}\" {",
@@ -419,7 +419,7 @@
     ]
   },
   "aws_ecs_container_definition": {
-    "prefix": "aws_ecs_container_definition",
+    "prefix": "tf-aws_ecs_container_definition",
     "description": "aws_ecs_container_definition - The ECS container definition data source allows access to details of a specific container within an AWS ECS service.",
     "body": [
       "data \"aws_ecs_container_definition\" \"ecs-${name}\" {",
@@ -429,7 +429,7 @@
     ]
   },
   "aws_elb_service_account": {
-    "prefix": "aws_elb_service_account",
+    "prefix": "tf-aws_elb_service_account",
     "description": "aws_elb_service_account - Use this data source to get the Account ID of the AWS Elastic Load Balancing Service Account in a given region for the purpose of whitelisting in S3 bucket policy.",
     "body": [
       "data \"aws_elb_service_account\" \"${main}\" { }\n",
@@ -476,7 +476,7 @@
     ]
   },
   "aws_iam_policy_document": {
-    "prefix": "aws_iam_policy_document",
+    "prefix": "tf-aws_iam_policy_document",
     "description": "aws_iam_policy_document - Generates an IAM policy document in JSON format.",
     "body": [
       "data \"aws_iam_policy_document\" \"${example}\" {",
@@ -526,7 +526,7 @@
     ]
   },
   "aws_ip_ranges": {
-    "prefix": "aws_ip_ranges",
+    "prefix": "tf-aws_ip_ranges",
     "description": "Use this data source to get the IP ranges of various AWS products and services.",
     "body": [
       "data \"aws_ip_ranges\" \"${european_ec2}\" {",
@@ -549,7 +549,7 @@
     ]
   },
   "aws_prefix_list": {
-    "prefix": "aws_prefix_list",
+    "prefix": "tf-aws_prefix_list",
     "description": "aws_prefix_list provides details about a specific prefix list (PL) in the current region. This can be used both to validate a prefix list given in a variable and to obtain the CIDR blocks (IP address ranges) for the associated AWS service. The latter may be useful e.g. for adding network ACL rules.",
     "body": [
       "resource \"aws_vpc_endpoint\" \"${private_s3}\" {",
@@ -575,7 +575,7 @@
     ]
   },
   "aws_redshift_service_account": {
-    "prefix": "aws_redshift_service_account",
+    "prefix": "tf-aws_redshift_service_account",
     "description": "Use this data source to get the Service Account ID of the AWS Redshift Account in a given region for the purpose of allowing Redshift to store audit data in S3.",
     "body": [
       "data \"aws_redshift_service_account\" \"${main}\" { }\n",
@@ -611,12 +611,12 @@
     ]
   },
   "aws_region": {
-    "prefix": "aws_region",
+    "prefix": "tf-aws_region",
     "description": "aws_region provides details about a specific AWS region. As well as validating a given region name (and optionally obtaining its endpoint) this resource can be used to discover the name of the region configured within the provider. The latter can be useful in a child module which is inheriting an AWS provider configuration from its parent module.",
     "body": ["data \"aws_region\" \"current\" {", "    current = true", "}"]
   },
   "aws_s3_bucket_object": {
-    "prefix": "aws_s3_bucket_object",
+    "prefix": "tf-aws_s3_bucket_object",
     "description": "The S3 object data source allows access to the metadata and optionally (see below) content of an object stored inside S3 bucket.",
     "body": [
       "data \"aws_s3_bucket_object\" \"${lambda}\" {",
@@ -652,7 +652,7 @@
     ]
   },
   "aws_security_group": {
-    "prefix": "aws_security_group",
+    "prefix": "tf-aws_security_group",
     "description": "aws_security_group provides details about a specific Security Group. This resource can prove useful when a module accepts a Security Group id as an input variable and needs to, for example, determine the id of the VPC that the security group belongs to.",
     "body": [
       "variable \"security_group_id\" {}\n",
@@ -666,7 +666,7 @@
     ]
   },
   "aws_subnet": {
-    "prefix": "aws_subnet",
+    "prefix": "tf-aws_subnet",
     "description": "aws_subnet provides details about a specific VPC subnet. This resource can prove useful when a module accepts a subnet id as an input variable and needs to, for example, determine the id of the VPC that the subnet belongs to.",
     "body": [
       "variable \"subnet_id\" {}\n",
@@ -685,7 +685,7 @@
     ]
   },
   "aws_vpc": {
-    "prefix": "aws_vpc",
+    "prefix": "tf-aws_vpc",
     "description": "aws_vpc provides details about a specific VPC. This resource can prove useful when a module accepts a vpc id as an input variable and needs to, for example, determine the CIDR block of that VPC.",
     "body": [
       "variable \"vpc_id\" {}\n",
@@ -700,12 +700,12 @@
     ]
   },
   "aws_api_gateway_account": {
-    "prefix": "aws_api_gateway_account",
+    "prefix": "tf-aws_api_gateway_account",
     "description": "Provides a settings of an API Gateway Account. Settings is applied region-wide per provider block.",
     "body": ["resource \"aws_api_gateway_account\" \"${demo}\" {\n", "}"]
   },
   "aws_api_gateway_api_key": {
-    "prefix": "aws_api_gateway_api_key",
+    "prefix": "tf-aws_api_gateway_api_key",
     "description": "Provides an API Gateway API Key.",
     "body": [
       "resource \"aws_api_gateway_api_key\" \"${MyDemoApiKey}\" {",
@@ -718,7 +718,7 @@
     ]
   },
   "aws_api_gateway_authorizer": {
-    "prefix": "aws_api_gateway_authorizer",
+    "prefix": "tf-aws_api_gateway_authorizer",
     "description": "Provides an API Gateway Authorizer.",
     "body": [
       "resource \"aws_api_gateway_authorizer\" \"${demo}\" {",
@@ -730,7 +730,7 @@
     ]
   },
   "aws_api_gateway_base_path_mapping": {
-    "prefix": "aws_api_gateway_base_path_mapping",
+    "prefix": "tf-aws_api_gateway_base_path_mapping",
     "description": "Connects a custom domain name registered via aws_api_gateway_domain_name with a deployed API so that its methods can be called via the custom domain name.",
     "body": [
       "resource \"aws_api_gateway_base_path_mapping\" \"${test}\" {",
@@ -741,7 +741,7 @@
     ]
   },
   "aws_api_gateway_client_certificate": {
-    "prefix": "aws_api_gateway_client_certificate",
+    "prefix": "tf-aws_api_gateway_client_certificate",
     "description": "Provides an API Gateway Client Certificate.",
     "body": [
       "resource \"aws_api_gateway_client_certificate\" \"${demo}\" {",
@@ -750,7 +750,7 @@
     ]
   },
   "api_gateway_deployment": {
-    "prefix": "api_gateway_deployment",
+    "prefix": "tf-api_gateway_deployment",
     "description": "Provides an API Gateway Deployment.",
     "body": [
       "resource \"aws_api_gateway_deployment\" \"${MyDemoDeployment}\" {",
@@ -764,7 +764,7 @@
     ]
   },
   "aws_api_gateway_domain_name": {
-    "prefix": "aws_api_gateway_domain_name",
+    "prefix": "tf-aws_api_gateway_domain_name",
     "description": "Registers a custom domain name for use with AWS API Gateway.",
     "body": [
       "resource \"aws_api_gateway_domain_name\" \"${example}\" {",
@@ -777,7 +777,7 @@
     ]
   },
   "aws_api_gateway_integration": {
-    "prefix": "aws_api_gateway_integration",
+    "prefix": "tf-aws_api_gateway_integration",
     "description": "Provides an HTTP Method Integration for an API Gateway Resource.",
     "body": [
       "resource \"aws_api_gateway_integration\" \"${MyDemoIntegration}\" {",
@@ -789,7 +789,7 @@
     ]
   },
   "aws_api_gateway_integration_response": {
-    "prefix": "aws_api_gateway_integration_response",
+    "prefix": "tf-aws_api_gateway_integration_response",
     "description": "Provides an HTTP Method Integration Response for an API Gateway Resource.",
     "body": [
       "resource \"aws_api_gateway_integration_response\" \"${MyDemoIntegrationResponse}\" {",
@@ -801,7 +801,7 @@
     ]
   },
   "aws_api_gateway_method": {
-    "prefix": "aws_api_gateway_method",
+    "prefix": "tf-aws_api_gateway_method",
     "description": "Provides a HTTP Method for an API Gateway Resource.",
     "body": [
       "resource \"aws_api_gateway_method\" \"${MyDemoMethod}\" {",
@@ -813,7 +813,7 @@
     ]
   },
   "aws_api_gateway_method_response": {
-    "prefix": "aws_api_gateway_method_response",
+    "prefix": "tf-aws_api_gateway_method_response",
     "description": "Provides an HTTP Method Response for an API Gateway Resource.",
     "body": [
       "resource \"aws_api_gateway_method_response\" \"${200}\" {",
@@ -825,7 +825,7 @@
     ]
   },
   "aws_api_gateway_model": {
-    "prefix": "aws_api_gateway_model",
+    "prefix": "tf-aws_api_gateway_model",
     "description": "Provides a Model for a API Gateway.",
     "body": [
       "resource \"aws_api_gateway_model|\" \"${MyDemoModel}\" {",
@@ -842,7 +842,7 @@
     ]
   },
   "aws_api_gateway_resource": {
-    "prefix": "aws_api_gateway_resource",
+    "prefix": "tf-aws_api_gateway_resource",
     "description": "Provides an API Gateway Resource.",
     "body": [
       "resource \"aws_api_gateway_resource\" \"${MyDemoResource}\" {",
@@ -853,7 +853,7 @@
     ]
   },
   "aws_api_gateway_rest_api": {
-    "prefix": "aws_api_gateway_rest_api",
+    "prefix": "tf-aws_api_gateway_rest_api",
     "description": "",
     "body": [
       "resource \"aws_api_gateway_rest_api\" \"${MyDemoAPI}\" {",
@@ -863,7 +863,7 @@
     ]
   },
   "aws_appautoscaling_policy": {
-    "prefix": "aws_appautoscaling_policy",
+    "prefix": "tf-aws_appautoscaling_policy",
     "description": "Defines aws_appautoscaling_policy",
     "body": [
       "resource \"aws_appautoscaling_policy\" \"${MyAWSResource}\" {",
@@ -871,23 +871,15 @@
     ]
   },
   "aws_appautoscaling_target": {
-    "prefix": "aws_appautoscaling_target",
+    "prefix": "tf-aws_appautoscaling_target",
     "description": "Defines aws_appautoscaling_target",
     "body": [
       "resource \"aws_appautoscaling_target\" \"${MyAWSResource}\" {",
       "}"
     ]
   },
-  "aws_cloudformation_stack": {
-    "prefix": "aws_cloudformation_stack",
-    "description": "Defines aws_cloudformation_stack",
-    "body": [
-      "resource \"aws_cloudformation_stack\" \"${MyAWSResource}\" {",
-      "}"
-    ]
-  },
   "aws_cloudfront_distribution": {
-    "prefix": "aws_cloudfront_distribution",
+    "prefix": "tf-aws_cloudfront_distribution",
     "description": "Defines aws_cloudfront_distribution",
     "body": [
       "resource \"aws_cloudfront_distribution\" \"${MyAWSResource}\" {",
@@ -895,7 +887,7 @@
     ]
   },
   "aws_cloudfront_origin_access_identity": {
-    "prefix": "aws_cloudfront_origin_access_identity",
+    "prefix": "tf-aws_cloudfront_origin_access_identity",
     "description": "Defines aws_cloudfront_origin_access_identity",
     "body": [
       "resource \"aws_cloudfront_origin_access_identity\" \"${MyAWSResource}\" {",
@@ -903,12 +895,12 @@
     ]
   },
   "aws_cloudtrail": {
-    "prefix": "aws_cloudtrail",
+    "prefix": "tf-aws_cloudtrail",
     "description": "Defines aws_cloudtrail",
     "body": ["resource \"aws_cloudtrail\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_cloudwatch_event_rule": {
-    "prefix": "aws_cloudwatch_event_rule",
+    "prefix": "tf-aws_cloudwatch_event_rule",
     "description": "Defines aws_cloudwatch_event_rule",
     "body": [
       "resource \"aws_cloudwatch_event_rule\" \"${MyAWSResource}\" {",
@@ -916,7 +908,7 @@
     ]
   },
   "aws_cloudwatch_event_target": {
-    "prefix": "aws_cloudwatch_event_target",
+    "prefix": "tf-aws_cloudwatch_event_target",
     "description": "Defines aws_cloudwatch_event_target",
     "body": [
       "resource \"aws_cloudwatch_event_target\" \"${MyAWSResource}\" {",
@@ -924,7 +916,7 @@
     ]
   },
   "aws_cloudwatch_log_group": {
-    "prefix": "aws_cloudwatch_log_group",
+    "prefix": "tf-aws_cloudwatch_log_group",
     "description": "Defines aws_cloudwatch_log_group",
     "body": [
       "resource \"aws_cloudwatch_log_group\" \"${MyAWSResource}\" {",
@@ -932,7 +924,7 @@
     ]
   },
   "aws_cloudwatch_log_metric_filter": {
-    "prefix": "aws_cloudwatch_log_metric_filter",
+    "prefix": "tf-aws_cloudwatch_log_metric_filter",
     "description": "Defines aws_cloudwatch_log_metric_filter",
     "body": [
       "resource \"aws_cloudwatch_log_metric_filter\" \"${MyAWSResource}\" {",
@@ -940,7 +932,7 @@
     ]
   },
   "aws_cloudwatch_log_stream": {
-    "prefix": "aws_cloudwatch_log_stream",
+    "prefix": "tf-aws_cloudwatch_log_stream",
     "description": "Defines aws_cloudwatch_log_stream",
     "body": [
       "resource \"aws_cloudwatch_log_stream\" \"${MyAWSResource}\" {",
@@ -948,7 +940,7 @@
     ]
   },
   "aws_cloudwatch_log_subscription_filter": {
-    "prefix": "aws_cloudwatch_log_subscription_filter",
+    "prefix": "tf-aws_cloudwatch_log_subscription_filter",
     "description": "Defines aws_cloudwatch_log_subscription_filter",
     "body": [
       "resource \"aws_cloudwatch_log_subscription_filter\" \"${MyAWSResource}\" {",
@@ -956,7 +948,7 @@
     ]
   },
   "aws_cloudwatch_metric_alarm": {
-    "prefix": "aws_cloudwatch_metric_alarm",
+    "prefix": "tf-aws_cloudwatch_metric_alarm",
     "description": "Defines aws_cloudwatch_metric_alarm",
     "body": [
       "resource \"aws_cloudwatch_metric_alarm\" \"${MyAWSResource}\" {",
@@ -964,7 +956,7 @@
     ]
   },
   "aws_codecommit_repository": {
-    "prefix": "aws_codecommit_repository",
+    "prefix": "tf-aws_codecommit_repository",
     "description": "Defines aws_codecommit_repository",
     "body": [
       "resource \"aws_codecommit_repository\" \"${MyAWSResource}\" {",
@@ -972,17 +964,17 @@
     ]
   },
   "aws_codecommit_trigger": {
-    "prefix": "aws_codecommit_trigger",
+    "prefix": "tf-aws_codecommit_trigger",
     "description": "Defines aws_codecommit_trigger",
     "body": ["resource \"aws_codecommit_trigger\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_codedeploy_app": {
-    "prefix": "aws_codedeploy_app",
+    "prefix": "tf-aws_codedeploy_app",
     "description": "Defines aws_codedeploy_app",
     "body": ["resource \"aws_codedeploy_app\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_codedeploy_deployment_group": {
-    "prefix": "aws_codedeploy_deployment_group",
+    "prefix": "tf-aws_codedeploy_deployment_group",
     "description": "Defines aws_codedeploy_deployment_group",
     "body": [
       "resource \"aws_codedeploy_deployment_group\" \"${MyAWSResource}\" {",
@@ -990,7 +982,7 @@
     ]
   },
   "aws_directory_service_directory": {
-    "prefix": "aws_directory_service_directory",
+    "prefix": "tf-aws_directory_service_directory",
     "description": "Defines aws_directory_service_directory",
     "body": [
       "resource \"aws_directory_service_directory\" \"${MyAWSResource}\" {",
@@ -998,27 +990,27 @@
     ]
   },
   "aws_dynamodb_table": {
-    "prefix": "aws_dynamodb_table",
+    "prefix": "tf-aws_dynamodb_table",
     "description": "Defines aws_dynamodb_table",
     "body": ["resource \"aws_dynamodb_table\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_alb": {
-    "prefix": "aws_alb",
+    "prefix": "tf-aws_alb",
     "description": "Defines aws_alb",
     "body": ["resource \"aws_alb\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_alb_listener_rule": {
-    "prefix": "aws_alb_listener_rule",
+    "prefix": "tf-aws_alb_listener_rule",
     "description": "Defines aws_alb_listener_rule",
     "body": ["resource \"aws_alb_listener_rule\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_alb_target_group": {
-    "prefix": "aws_alb_target_group",
+    "prefix": "tf-aws_alb_target_group",
     "description": "Defines aws_alb_target_group",
     "body": ["resource \"aws_alb_target_group\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_alb_target_group_attachment": {
-    "prefix": "aws_alb_target_group_attachment",
+    "prefix": "tf-aws_alb_target_group_attachment",
     "description": "Defines aws_alb_target_group_attachment",
     "body": [
       "resource \"aws_alb_target_group_attachment\" \"${MyAWSResource}\" {",
@@ -1026,17 +1018,17 @@
     ]
   },
   "aws_ami_copy": {
-    "prefix": "aws_ami_copy",
+    "prefix": "tf-aws_ami_copy",
     "description": "Defines aws_ami_copy",
     "body": ["resource \"aws_ami_copy\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_ami_from_instance": {
-    "prefix": "aws_ami_from_instance",
+    "prefix": "tf-aws_ami_from_instance",
     "description": "Defines aws_ami_from_instance",
     "body": ["resource \"aws_ami_from_instance\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_ami_launch_permission": {
-    "prefix": "aws_ami_launch_permission",
+    "prefix": "tf-aws_ami_launch_permission",
     "description": "Defines aws_ami_launch_permission",
     "body": [
       "resource \"aws_ami_launch_permission\" \"${MyAWSResource}\" {",
@@ -1044,7 +1036,7 @@
     ]
   },
   "aws_app_cookie_stickiness_policy": {
-    "prefix": "aws_app_cookie_stickiness_policy",
+    "prefix": "tf-aws_app_cookie_stickiness_policy",
     "description": "Defines aws_app_cookie_stickiness_policy",
     "body": [
       "resource \"aws_app_cookie_stickiness_policy\" \"${MyAWSResource}\" {",
@@ -1052,12 +1044,12 @@
     ]
   },
   "aws_autoscaling_group": {
-    "prefix": "aws_autoscaling_group",
+    "prefix": "tf-aws_autoscaling_group",
     "description": "Defines aws_autoscaling_group",
     "body": ["resource \"aws_autoscaling_group\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_autoscaling_attachment": {
-    "prefix": "aws_autoscaling_attachment",
+    "prefix": "tf-aws_autoscaling_attachment",
     "description": "Defines aws_autoscaling_attachment",
     "body": [
       "resource \"aws_autoscaling_attachment\" \"${MyAWSResource}\" {",
@@ -1065,7 +1057,7 @@
     ]
   },
   "aws_autoscaling_lifecycle_hook": {
-    "prefix": "aws_autoscaling_lifecycle_hook",
+    "prefix": "tf-aws_autoscaling_lifecycle_hook",
     "description": "Defines aws_autoscaling_lifecycle_hook",
     "body": [
       "resource \"aws_autoscaling_lifecycle_hook\" \"${MyAWSResource}\" {",
@@ -1073,7 +1065,7 @@
     ]
   },
   "aws_autoscaling_notification": {
-    "prefix": "aws_autoscaling_notification",
+    "prefix": "tf-aws_autoscaling_notification",
     "description": "Defines aws_autoscaling_notification",
     "body": [
       "resource \"aws_autoscaling_notification\" \"${MyAWSResource}\" {",
@@ -1081,12 +1073,12 @@
     ]
   },
   "aws_autoscaling_policy": {
-    "prefix": "aws_autoscaling_policy",
+    "prefix": "tf-aws_autoscaling_policy",
     "description": "Defines aws_autoscaling_policy",
     "body": ["resource \"aws_autoscaling_policy\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_autoscaling_schedule": {
-    "prefix": "aws_autoscaling_schedule",
+    "prefix": "tf-aws_autoscaling_schedule",
     "description": "Defines aws_autoscaling_schedule",
     "body": [
       "resource \"aws_autoscaling_schedule\" \"${MyAWSResource}\" {",
@@ -1094,27 +1086,27 @@
     ]
   },
   "aws_eip": {
-    "prefix": "aws_eip",
+    "prefix": "tf-aws_eip",
     "description": "Defines aws_eip",
     "body": ["resource \"aws_eip\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_eip_association": {
-    "prefix": "aws_eip_association",
+    "prefix": "tf-aws_eip_association",
     "description": "Defines aws_eip_association",
     "body": ["resource \"aws_eip_association\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_elb": {
-    "prefix": "aws_elb",
+    "prefix": "tf-aws_elb",
     "description": "Defines aws_elb",
     "body": ["resource \"aws_elb\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_elb_attachment": {
-    "prefix": "aws_elb_attachment",
+    "prefix": "tf-aws_elb_attachment",
     "description": "Defines aws_elb_attachment",
     "body": ["resource \"aws_elb_attachment\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_instance": {
-    "prefix": "aws_instance",
+    "prefix": "tf-aws_instance",
     "description": "Defines aws_instance",
     "body": [
       "resource \"aws_instance\" \"${MyAWSResource}\" {",
@@ -1124,12 +1116,12 @@
     ]
   },
   "aws_key_pair": {
-    "prefix": "aws_key_pair",
+    "prefix": "tf-aws_key_pair",
     "description": "Defines aws_key_pair",
     "body": ["resource \"aws_key_pair\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_launch_configuration": {
-    "prefix": "aws_launch_configuration",
+    "prefix": "tf-aws_launch_configuration",
     "description": "Defines aws_launch_configuration",
     "body": [
       "resource \"aws_launch_configuration\" \"${MyAWSResource}\" {",
@@ -1137,7 +1129,7 @@
     ]
   },
   "aws_lb_cookie_stickiness_policy": {
-    "prefix": "aws_lb_cookie_stickiness_policy",
+    "prefix": "tf-aws_lb_cookie_stickiness_policy",
     "description": "Defines aws_lb_cookie_stickiness_policy",
     "body": [
       "resource \"aws_lb_cookie_stickiness_policy\" \"${MyAWSResource}\" {",
@@ -1145,7 +1137,7 @@
     ]
   },
   "aws_lb_ssl_negotiation_policy": {
-    "prefix": "aws_lb_ssl_negotiation_policy",
+    "prefix": "tf-aws_lb_ssl_negotiation_policy",
     "description": "Defines aws_lb_ssl_negotiation_policy",
     "body": [
       "resource \"aws_lb_ssl_negotiation_policy\" \"${MyAWSResource}\" {",
@@ -1153,7 +1145,7 @@
     ]
   },
   "aws_load_balancer_backend_server_policy": {
-    "prefix": "aws_load_balancer_backend_server_policy",
+    "prefix": "tf-aws_load_balancer_backend_server_policy",
     "description": "Defines aws_load_balancer_backend_server_policy",
     "body": [
       "resource \"aws_load_balancer_backend_server_policy\" \"${MyAWSResource}\" {",
@@ -1161,7 +1153,7 @@
     ]
   },
   "aws_load_balancer_listener_policy": {
-    "prefix": "aws_load_balancer_listener_policy",
+    "prefix": "tf-aws_load_balancer_listener_policy",
     "description": "Defines aws_load_balancer_listener_policy",
     "body": [
       "resource \"aws_load_balancer_listener_policy\" \"${MyAWSResource}\" {",
@@ -1169,7 +1161,7 @@
     ]
   },
   "aws_load_balancer_policy": {
-    "prefix": "aws_load_balancer_policy",
+    "prefix": "tf-aws_load_balancer_policy",
     "description": "Defines aws_load_balancer_policy",
     "body": [
       "resource \"aws_load_balancer_policy\" \"${MyAWSResource}\" {",
@@ -1177,12 +1169,12 @@
     ]
   },
   "aws_placement_group": {
-    "prefix": "aws_placement_group",
+    "prefix": "tf-aws_placement_group",
     "description": "Defines aws_placement_group",
     "body": ["resource \"aws_placement_group\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_proxy_protocol_policy": {
-    "prefix": "aws_proxy_protocol_policy",
+    "prefix": "tf-aws_proxy_protocol_policy",
     "description": "Defines aws_proxy_protocol_policy",
     "body": [
       "resource \"aws_proxy_protocol_policy\" \"${MyAWSResource}\" {",
@@ -1190,7 +1182,7 @@
     ]
   },
   "aws_spot_datafeed_subscription": {
-    "prefix": "aws_spot_datafeed_subscription",
+    "prefix": "tf-aws_spot_datafeed_subscription",
     "description": "Defines aws_spot_datafeed_subscription",
     "body": [
       "resource \"aws_spot_datafeed_subscription\" \"${MyAWSResource}\" {",
@@ -1198,12 +1190,12 @@
     ]
   },
   "aws_spot_fleet_request": {
-    "prefix": "aws_spot_fleet_request",
+    "prefix": "tf-aws_spot_fleet_request",
     "description": "Defines aws_spot_fleet_request",
     "body": ["resource \"aws_spot_fleet_request\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_spot_instance_request": {
-    "prefix": "aws_spot_instance_request",
+    "prefix": "tf-aws_spot_instance_request",
     "description": "Defines aws_spot_instance_request",
     "body": [
       "resource \"aws_spot_instance_request\" \"${MyAWSResource}\" {",
@@ -1211,17 +1203,17 @@
     ]
   },
   "aws_volume_attachment": {
-    "prefix": "aws_volume_attachment",
+    "prefix": "tf-aws_volume_attachment",
     "description": "Defines aws_volume_attachment",
     "body": ["resource \"aws_volume_attachment\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_ecr_repository": {
-    "prefix": "aws_ecr_repository",
+    "prefix": "tf-aws_ecr_repository",
     "description": "Defines aws_ecr_repository",
     "body": ["resource \"aws_ecr_repository\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_ecr_repository_policy": {
-    "prefix": "aws_ecr_repository_policy",
+    "prefix": "tf-aws_ecr_repository_policy",
     "description": "Defines aws_ecr_repository_policy",
     "body": [
       "resource \"aws_ecr_repository_policy\" \"${MyAWSResource}\" {",
@@ -1229,37 +1221,37 @@
     ]
   },
   "aws_ecs_cluster": {
-    "prefix": "aws_ecs_cluster",
+    "prefix": "tf-aws_ecs_cluster",
     "description": "Defines aws_ecs_cluster",
     "body": ["resource \"aws_ecs_cluster\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_ecs_service": {
-    "prefix": "aws_ecs_service",
+    "prefix": "tf-aws_ecs_service",
     "description": "Defines aws_ecs_service",
     "body": ["resource \"aws_ecs_service\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_ecs_task_definition": {
-    "prefix": "aws_ecs_task_definition",
+    "prefix": "tf-aws_ecs_task_definition",
     "description": "Defines aws_ecs_task_definition",
     "body": ["resource \"aws_ecs_task_definition\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_efs_file_system": {
-    "prefix": "aws_efs_file_system",
+    "prefix": "tf-aws_efs_file_system",
     "description": "Defines aws_efs_file_system",
     "body": ["resource \"aws_efs_file_system\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_efs_mount_target": {
-    "prefix": "aws_efs_mount_target",
+    "prefix": "tf-aws_efs_mount_target",
     "description": "Defines aws_efs_mount_target",
     "body": ["resource \"aws_efs_mount_target\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_elasticache_cluster": {
-    "prefix": "aws_elasticache_cluster",
+    "prefix": "tf-aws_elasticache_cluster",
     "description": "Defines aws_elasticache_cluster",
     "body": ["resource \"aws_elasticache_cluster\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_elasticache_parameter_group": {
-    "prefix": "aws_elasticache_parameter_group",
+    "prefix": "tf-aws_elasticache_parameter_group",
     "description": "Defines aws_elasticache_parameter_group",
     "body": [
       "resource \"aws_elasticache_parameter_group\" \"${MyAWSResource}\" {",
@@ -1267,7 +1259,7 @@
     ]
   },
   "aws_elasticache_replication_group": {
-    "prefix": "aws_elasticache_replication_group",
+    "prefix": "tf-aws_elasticache_replication_group",
     "description": "Defines aws_elasticache_replication_group",
     "body": [
       "resource \"aws_elasticache_replication_group\" \"${MyAWSResource}\" {",
@@ -1275,7 +1267,7 @@
     ]
   },
   "aws_elasticache_security_group": {
-    "prefix": "aws_elasticache_security_group",
+    "prefix": "tf-aws_elasticache_security_group",
     "description": "Defines aws_elasticache_security_group",
     "body": [
       "resource \"aws_elasticache_security_group\" \"${MyAWSResource}\" {",
@@ -1283,7 +1275,7 @@
     ]
   },
   "aws_elasticache_subnet_group": {
-    "prefix": "aws_elasticache_subnet_group",
+    "prefix": "tf-aws_elasticache_subnet_group",
     "description": "Defines aws_elasticache_subnet_group",
     "body": [
       "resource \"aws_elasticache_subnet_group\" \"${MyAWSResource}\" {",
@@ -1291,7 +1283,7 @@
     ]
   },
   "aws_elastic_beanstalk_application": {
-    "prefix": "aws_elastic_beanstalk_application",
+    "prefix": "tf-aws_elastic_beanstalk_application",
     "description": "Defines aws_elastic_beanstalk_application",
     "body": [
       "resource \"aws_elastic_beanstalk_application\" \"${MyAWSResource}\" {",
@@ -1299,7 +1291,7 @@
     ]
   },
   "aws_elastic_beanstalk_configuration_template": {
-    "prefix": "aws_elastic_beanstalk_configuration_template",
+    "prefix": "tf-aws_elastic_beanstalk_configuration_template",
     "description": "Defines aws_elastic_beanstalk_configuration_template",
     "body": [
       "resource \"aws_elastic_beanstalk_configuration_template\" \"${MyAWSResource}\" {",
@@ -1307,7 +1299,7 @@
     ]
   },
   "aws_elastic_beanstalk_environment": {
-    "prefix": "aws_elastic_beanstalk_environment",
+    "prefix": "tf-aws_elastic_beanstalk_environment",
     "description": "Defines aws_elastic_beanstalk_environment",
     "body": [
       "resource \"aws_elastic_beanstalk_environment\" \"${MyAWSResource}\" {",
@@ -1315,17 +1307,17 @@
     ]
   },
   "aws_emr_cluster": {
-    "prefix": "aws_emr_cluster",
+    "prefix": "tf-aws_emr_cluster",
     "description": "Defines aws_emr_cluster",
     "body": ["resource \"aws_emr_cluster\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_emr_instance_group": {
-    "prefix": "aws_emr_instance_group",
+    "prefix": "tf-aws_emr_instance_group",
     "description": "Defines aws_emr_instance_group",
     "body": ["resource \"aws_emr_instance_group\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_elasticsearch_domain": {
-    "prefix": "aws_elasticsearch_domain",
+    "prefix": "tf-aws_elasticsearch_domain",
     "description": "Defines aws_elasticsearch_domain",
     "body": [
       "resource \"aws_elasticsearch_domain\" \"${MyAWSResource}\" {",
@@ -1333,7 +1325,7 @@
     ]
   },
   "aws_elastictranscoder_pipeline": {
-    "prefix": "aws_elastictranscoder_pipeline",
+    "prefix": "tf-aws_elastictranscoder_pipeline",
     "description": "Defines aws_elastictranscoder_pipeline",
     "body": [
       "resource \"aws_elastictranscoder_pipeline\" \"${MyAWSResource}\" {",
@@ -1341,7 +1333,7 @@
     ]
   },
   "aws_elastictranscoder_preset": {
-    "prefix": "aws_elastictranscoder_preset",
+    "prefix": "tf-aws_elastictranscoder_preset",
     "description": "Defines aws_elastictranscoder_preset",
     "body": [
       "resource \"aws_elastictranscoder_preset\" \"${MyAWSResource}\" {",
@@ -1349,17 +1341,17 @@
     ]
   },
   "aws_glacier_vault": {
-    "prefix": "aws_glacier_vault",
+    "prefix": "tf-aws_glacier_vault",
     "description": "Defines aws_glacier_vault",
     "body": ["resource \"aws_glacier_vault\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_iam_access_key": {
-    "prefix": "aws_iam_access_key",
+    "prefix": "tf-aws_iam_access_key",
     "description": "Defines aws_iam_access_key",
     "body": ["resource \"aws_iam_access_key\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_iam_account_password_policy": {
-    "prefix": "aws_iam_account_password_policy",
+    "prefix": "tf-aws_iam_account_password_policy",
     "description": "Defines aws_iam_account_password_policy",
     "body": [
       "resource \"aws_iam_account_password_policy\" \"${MyAWSResource}\" {",
@@ -1367,12 +1359,12 @@
     ]
   },
   "aws_iam_group": {
-    "prefix": "aws_iam_group",
+    "prefix": "tf-aws_iam_group",
     "description": "Defines aws_iam_group",
     "body": ["resource \"aws_iam_group\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_iam_group_membership": {
-    "prefix": "aws_iam_group_membership",
+    "prefix": "tf-aws_iam_group_membership",
     "description": "Defines aws_iam_group_membership",
     "body": [
       "resource \"aws_iam_group_membership\" \"${MyAWSResource}\" {",
@@ -1380,12 +1372,12 @@
     ]
   },
   "aws_iam_group_policy": {
-    "prefix": "aws_iam_group_policy",
+    "prefix": "tf-aws_iam_group_policy",
     "description": "Defines aws_iam_group_policy",
     "body": ["resource \"aws_iam_group_policy\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_iam_group_policy_attachment": {
-    "prefix": "aws_iam_group_policy_attachment",
+    "prefix": "tf-aws_iam_group_policy_attachment",
     "description": "Defines aws_iam_group_policy_attachment",
     "body": [
       "resource \"aws_iam_group_policy_attachment\" \"${MyAWSResource}\" {",
@@ -1393,7 +1385,7 @@
     ]
   },
   "aws_iam_instance_profile": {
-    "prefix": "aws_iam_instance_profile",
+    "prefix": "tf-aws_iam_instance_profile",
     "description": "Defines aws_iam_instance_profile",
     "body": [
       "resource \"aws_iam_instance_profile\" \"${MyAWSResource}\" {",
@@ -1401,12 +1393,12 @@
     ]
   },
   "aws_iam_policy": {
-    "prefix": "aws_iam_policy",
+    "prefix": "tf-aws_iam_policy",
     "description": "Defines aws_iam_policy",
     "body": ["resource \"aws_iam_policy\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_iam_policy_attachment": {
-    "prefix": "aws_iam_policy_attachment",
+    "prefix": "tf-aws_iam_policy_attachment",
     "description": "Defines aws_iam_policy_attachment",
     "body": [
       "resource \"aws_iam_policy_attachment\" \"${MyAWSResource}\" {",
@@ -1414,17 +1406,17 @@
     ]
   },
   "aws_iam_role": {
-    "prefix": "aws_iam_role",
+    "prefix": "tf-aws_iam_role",
     "description": "Defines aws_iam_role",
     "body": ["resource \"aws_iam_role\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_iam_role_policy": {
-    "prefix": "aws_iam_role_policy",
+    "prefix": "tf-aws_iam_role_policy",
     "description": "Defines aws_iam_role_policy",
     "body": ["resource \"aws_iam_role_policy\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_iam_role_policy_attachment": {
-    "prefix": "aws_iam_role_policy_attachment",
+    "prefix": "tf-aws_iam_role_policy_attachment",
     "description": "Defines aws_iam_role_policy_attachment",
     "body": [
       "resource \"aws_iam_role_policy_attachment\" \"${MyAWSResource}\" {",
@@ -1432,12 +1424,12 @@
     ]
   },
   "aws_iam_saml_provider": {
-    "prefix": "aws_iam_saml_provider",
+    "prefix": "tf-aws_iam_saml_provider",
     "description": "Defines aws_iam_saml_provider",
     "body": ["resource \"aws_iam_saml_provider\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_iam_server_certificate": {
-    "prefix": "aws_iam_server_certificate",
+    "prefix": "tf-aws_iam_server_certificate",
     "description": "Defines aws_iam_server_certificate",
     "body": [
       "resource \"aws_iam_server_certificate\" \"${MyAWSResource}\" {",
@@ -1445,12 +1437,12 @@
     ]
   },
   "aws_iam_user": {
-    "prefix": "aws_iam_user",
+    "prefix": "tf-aws_iam_user",
     "description": "Defines aws_iam_user",
     "body": ["resource \"aws_iam_user\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_iam_user_login_profile": {
-    "prefix": "aws_iam_user_login_profile",
+    "prefix": "tf-aws_iam_user_login_profile",
     "description": "Defines aws_iam_user_login_profile",
     "body": [
       "resource \"aws_iam_user_login_profile\" \"${MyAWSResource}\" {",
@@ -1458,12 +1450,12 @@
     ]
   },
   "aws_iam_user_policy": {
-    "prefix": "aws_iam_user_policy",
+    "prefix": "tf-aws_iam_user_policy",
     "description": "Defines aws_iam_user_policy",
     "body": ["resource \"aws_iam_user_policy\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_iam_user_policy_attachment": {
-    "prefix": "aws_iam_user_policy_attachment",
+    "prefix": "tf-aws_iam_user_policy_attachment",
     "description": "Defines aws_iam_user_policy_attachment",
     "body": [
       "resource \"aws_iam_user_policy_attachment\" \"${MyAWSResource}\" {",
@@ -1471,17 +1463,17 @@
     ]
   },
   "aws_iam_user_ssh_key": {
-    "prefix": "aws_iam_user_ssh_key",
+    "prefix": "tf-aws_iam_user_ssh_key",
     "description": "Defines aws_iam_user_ssh_key",
     "body": ["resource \"aws_iam_user_ssh_key\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_kinesis_stream": {
-    "prefix": "aws_kinesis_stream",
+    "prefix": "tf-aws_kinesis_stream",
     "description": "Defines aws_kinesis_stream",
     "body": ["resource \"aws_kinesis_stream\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_kinesis_firehose_delivery_stream": {
-    "prefix": "aws_kinesis_firehose_delivery_stream",
+    "prefix": "tf-aws_kinesis_firehose_delivery_stream",
     "description": "Defines aws_kinesis_firehose_delivery_stream",
     "body": [
       "resource \"aws_kinesis_firehose_delivery_stream\" \"${MyAWSResource}\" {",
@@ -1489,22 +1481,22 @@
     ]
   },
   "aws_kms_alias": {
-    "prefix": "aws_kms_alias",
+    "prefix": "tf-aws_kms_alias",
     "description": "Defines aws_kms_alias",
     "body": ["resource \"aws_kms_alias\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_kms_key": {
-    "prefix": "aws_kms_key",
+    "prefix": "tf-aws_kms_key",
     "description": "Defines aws_kms_key",
     "body": ["resource \"aws_kms_key\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_lambda_alias": {
-    "prefix": "aws_lambda_alias",
+    "prefix": "tf-aws_lambda_alias",
     "description": "Defines aws_lambda_alias",
     "body": ["resource \"aws_lambda_alias\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_lambda_event_source_mapping": {
-    "prefix": "aws_lambda_event_source_mapping",
+    "prefix": "tf-aws_lambda_event_source_mapping",
     "description": "Defines aws_lambda_event_source_mapping",
     "body": [
       "resource \"aws_lambda_event_source_mapping\" \"${MyAWSResource}\" {",
@@ -1512,17 +1504,17 @@
     ]
   },
   "aws_lambda_function": {
-    "prefix": "aws_lambda_function",
+    "prefix": "tf-aws_lambda_function",
     "description": "Defines aws_lambda_function",
     "body": ["resource \"aws_lambda_function\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_lambda_permission": {
-    "prefix": "aws_lambda_permission",
+    "prefix": "tf-aws_lambda_permission",
     "description": "Defines aws_lambda_permission",
     "body": ["resource \"aws_lambda_permission\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_opsworks_application": {
-    "prefix": "aws_opsworks_application",
+    "prefix": "tf-aws_opsworks_application",
     "description": "Defines aws_opsworks_application",
     "body": [
       "resource \"aws_opsworks_application\" \"${MyAWSResource}\" {",
@@ -1530,7 +1522,7 @@
     ]
   },
   "aws_opsworks_custom_layer": {
-    "prefix": "aws_opsworks_custom_layer",
+    "prefix": "tf-aws_opsworks_custom_layer",
     "description": "Defines aws_opsworks_custom_layer",
     "body": [
       "resource \"aws_opsworks_custom_layer\" \"${MyAWSResource}\" {",
@@ -1538,7 +1530,7 @@
     ]
   },
   "aws_opsworks_ganglia_layer": {
-    "prefix": "aws_opsworks_ganglia_layer",
+    "prefix": "tf-aws_opsworks_ganglia_layer",
     "description": "Defines aws_opsworks_ganglia_layer",
     "body": [
       "resource \"aws_opsworks_ganglia_layer\" \"${MyAWSResource}\" {",
@@ -1546,7 +1538,7 @@
     ]
   },
   "aws_opsworks_haproxy_layer": {
-    "prefix": "aws_opsworks_haproxy_layer",
+    "prefix": "tf-aws_opsworks_haproxy_layer",
     "description": "Defines aws_opsworks_haproxy_layer",
     "body": [
       "resource \"aws_opsworks_haproxy_layer\" \"${MyAWSResource}\" {",
@@ -1554,12 +1546,12 @@
     ]
   },
   "aws_opsworks_instance": {
-    "prefix": "aws_opsworks_instance",
+    "prefix": "tf-aws_opsworks_instance",
     "description": "Defines aws_opsworks_instance",
     "body": ["resource \"aws_opsworks_instance\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_opsworks_java_app_layer": {
-    "prefix": "aws_opsworks_java_app_layer",
+    "prefix": "tf-aws_opsworks_java_app_layer",
     "description": "Defines aws_opsworks_java_app_layer",
     "body": [
       "resource \"aws_opsworks_java_app_layer\" \"${MyAWSResource}\" {",
@@ -1567,7 +1559,7 @@
     ]
   },
   "aws_opsworks_memcached_layer": {
-    "prefix": "aws_opsworks_memcached_layer",
+    "prefix": "tf-aws_opsworks_memcached_layer",
     "description": "Defines aws_opsworks_memcached_layer",
     "body": [
       "resource \"aws_opsworks_memcached_layer\" \"${MyAWSResource}\" {",
@@ -1575,7 +1567,7 @@
     ]
   },
   "aws_opsworks_mysql_layer": {
-    "prefix": "aws_opsworks_mysql_layer",
+    "prefix": "tf-aws_opsworks_mysql_layer",
     "description": "Defines aws_opsworks_mysql_layer",
     "body": [
       "resource \"aws_opsworks_mysql_layer\" \"${MyAWSResource}\" {",
@@ -1583,7 +1575,7 @@
     ]
   },
   "aws_opsworks_nodejs_app_layer": {
-    "prefix": "aws_opsworks_nodejs_app_layer",
+    "prefix": "tf-aws_opsworks_nodejs_app_layer",
     "description": "Defines aws_opsworks_nodejs_app_layer",
     "body": [
       "resource \"aws_opsworks_nodejs_app_layer\" \"${MyAWSResource}\" {",
@@ -1591,12 +1583,12 @@
     ]
   },
   "aws_opsworks_permission": {
-    "prefix": "aws_opsworks_permission",
+    "prefix": "tf-aws_opsworks_permission",
     "description": "Defines aws_opsworks_permission",
     "body": ["resource \"aws_opsworks_permission\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_opsworks_php_app_layer": {
-    "prefix": "aws_opsworks_php_app_layer",
+    "prefix": "tf-aws_opsworks_php_app_layer",
     "description": "Defines aws_opsworks_php_app_layer",
     "body": [
       "resource \"aws_opsworks_php_app_layer\" \"${MyAWSResource}\" {",
@@ -1604,7 +1596,7 @@
     ]
   },
   "aws_opsworks_rails_app_layer": {
-    "prefix": "aws_opsworks_rails_app_layer",
+    "prefix": "tf-aws_opsworks_rails_app_layer",
     "description": "Defines aws_opsworks_rails_app_layer",
     "body": [
       "resource \"aws_opsworks_rails_app_layer\" \"${MyAWSResource}\" {",
@@ -1612,12 +1604,12 @@
     ]
   },
   "aws_opsworks_stack": {
-    "prefix": "aws_opsworks_stack",
+    "prefix": "tf-aws_opsworks_stack",
     "description": "Defines aws_opsworks_stack",
     "body": ["resource \"aws_opsworks_stack\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_opsworks_static_web_layer": {
-    "prefix": "aws_opsworks_static_web_layer",
+    "prefix": "tf-aws_opsworks_static_web_layer",
     "description": "Defines aws_opsworks_static_web_layer",
     "body": [
       "resource \"aws_opsworks_static_web_layer\" \"${MyAWSResource}\" {",
@@ -1625,7 +1617,7 @@
     ]
   },
   "aws_opsworks_user_profile": {
-    "prefix": "aws_opsworks_user_profile",
+    "prefix": "tf-aws_opsworks_user_profile",
     "description": "Defines aws_opsworks_user_profile",
     "body": [
       "resource \"aws_opsworks_user_profile\" \"${MyAWSResource}\" {",
@@ -1633,7 +1625,7 @@
     ]
   },
   "aws_db_event_subscription": {
-    "prefix": "aws_db_event_subscription",
+    "prefix": "tf-aws_db_event_subscription",
     "description": "Defines aws_db_event_subscription",
     "body": [
       "resource \"aws_db_event_subscription\" \"${MyAWSResource}\" {",
@@ -1641,37 +1633,37 @@
     ]
   },
   "aws_db_instance": {
-    "prefix": "aws_db_instance",
+    "prefix": "tf-aws_db_instance",
     "description": "Defines aws_db_instance",
     "body": ["resource \"aws_db_instance\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_db_option_group": {
-    "prefix": "aws_db_option_group",
+    "prefix": "tf-aws_db_option_group",
     "description": "Defines aws_db_option_group",
     "body": ["resource \"aws_db_option_group\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_db_parameter_group": {
-    "prefix": "aws_db_parameter_group",
+    "prefix": "tf-aws_db_parameter_group",
     "description": "Defines aws_db_parameter_group",
     "body": ["resource \"aws_db_parameter_group\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_db_security_group": {
-    "prefix": "aws_db_security_group",
+    "prefix": "tf-aws_db_security_group",
     "description": "Defines aws_db_security_group",
     "body": ["resource \"aws_db_security_group\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_db_subnet_group": {
-    "prefix": "aws_db_subnet_group",
+    "prefix": "tf-aws_db_subnet_group",
     "description": "Defines aws_db_subnet_group",
     "body": ["resource \"aws_db_subnet_group\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_rds_cluster": {
-    "prefix": "aws_rds_cluster",
+    "prefix": "tf-aws_rds_cluster",
     "description": "Defines aws_rds_cluster",
     "body": ["resource \"aws_rds_cluster\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_rds_cluster_instance": {
-    "prefix": "aws_rds_cluster_instance",
+    "prefix": "tf-aws_rds_cluster_instance",
     "description": "Defines aws_rds_cluster_instance",
     "body": [
       "resource \"aws_rds_cluster_instance\" \"${MyAWSResource}\" {",
@@ -1679,7 +1671,7 @@
     ]
   },
   "aws_rds_cluster_parameter_group": {
-    "prefix": "aws_rds_cluster_parameter_group",
+    "prefix": "tf-aws_rds_cluster_parameter_group",
     "description": "Defines aws_rds_cluster_parameter_group",
     "body": [
       "resource \"aws_rds_cluster_parameter_group\" \"${MyAWSResource}\" {",
@@ -1687,12 +1679,12 @@
     ]
   },
   "aws_redshift_cluster": {
-    "prefix": "aws_redshift_cluster",
+    "prefix": "tf-aws_redshift_cluster",
     "description": "Defines aws_redshift_cluster",
     "body": ["resource \"aws_redshift_cluster\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_redshift_parameter_group": {
-    "prefix": "aws_redshift_parameter_group",
+    "prefix": "tf-aws_redshift_parameter_group",
     "description": "Defines aws_redshift_parameter_group",
     "body": [
       "resource \"aws_redshift_parameter_group\" \"${MyAWSResource}\" {",
@@ -1700,7 +1692,7 @@
     ]
   },
   "aws_redshift_security_group": {
-    "prefix": "aws_redshift_security_group",
+    "prefix": "tf-aws_redshift_security_group",
     "description": "Defines aws_redshift_security_group",
     "body": [
       "resource \"aws_redshift_security_group\" \"${MyAWSResource}\" {",
@@ -1708,7 +1700,7 @@
     ]
   },
   "aws_redshift_subnet_group": {
-    "prefix": "aws_redshift_subnet_group",
+    "prefix": "tf-aws_redshift_subnet_group",
     "description": "Defines aws_redshift_subnet_group",
     "body": [
       "resource \"aws_redshift_subnet_group\" \"${MyAWSResource}\" {",
@@ -1716,17 +1708,17 @@
     ]
   },
   "aws_waf_web_acl": {
-    "prefix": "aws_waf_web_acl",
+    "prefix": "tf-aws_waf_web_acl",
     "description": "Defines aws_waf_web_acl",
     "body": ["resource \"aws_waf_web_acl\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_waf_byte_match_set": {
-    "prefix": "aws_waf_byte_match_set",
+    "prefix": "tf-aws_waf_byte_match_set",
     "description": "Defines aws_waf_byte_match_set",
     "body": ["resource \"aws_waf_byte_match_set\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_waf_size_constraint_set": {
-    "prefix": "aws_waf_size_constraint_set",
+    "prefix": "tf-aws_waf_size_constraint_set",
     "description": "Defines aws_waf_size_constraint_set",
     "body": [
       "resource \"aws_waf_size_constraint_set\" \"${MyAWSResource}\" {",
@@ -1734,22 +1726,22 @@
     ]
   },
   "aws_waf_rule": {
-    "prefix": "aws_waf_rule",
+    "prefix": "tf-aws_waf_rule",
     "description": "Defines aws_waf_rule",
     "body": ["resource \"aws_waf_rule\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_waf_ipset": {
-    "prefix": "aws_waf_ipset",
+    "prefix": "tf-aws_waf_ipset",
     "description": "Defines aws_waf_ipset",
     "body": ["resource \"aws_waf_ipset\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_waf_xss_match_set": {
-    "prefix": "aws_waf_xss_match_set",
+    "prefix": "tf-aws_waf_xss_match_set",
     "description": "Defines aws_waf_xss_match_set",
     "body": ["resource \"aws_waf_xss_match_set\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_waf_sql_injection_match_set": {
-    "prefix": "aws_waf_sql_injection_match_set",
+    "prefix": "tf-aws_waf_sql_injection_match_set",
     "description": "Defines aws_waf_sql_injection_match_set",
     "body": [
       "resource \"aws_waf_sql_injection_match_set\" \"${MyAWSResource}\" {",
@@ -1757,7 +1749,7 @@
     ]
   },
   "aws_route53_delegation_set": {
-    "prefix": "aws_route53_delegation_set",
+    "prefix": "tf-aws_route53_delegation_set",
     "description": "Defines aws_route53_delegation_set",
     "body": [
       "resource \"aws_route53_delegation_set\" \"${MyAWSResource}\" {",
@@ -1765,7 +1757,7 @@
     ]
   },
   "aws_route53_health_check": {
-    "prefix": "aws_route53_health_check",
+    "prefix": "tf-aws_route53_health_check",
     "description": "Defines aws_route53_health_check",
     "body": [
       "resource \"aws_route53_health_check\" \"${MyAWSResource}\" {",
@@ -1773,17 +1765,17 @@
     ]
   },
   "aws_route53_record": {
-    "prefix": "aws_route53_record",
+    "prefix": "tf-aws_route53_record",
     "description": "Defines aws_route53_record",
     "body": ["resource \"aws_route53_record\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_route53_zone": {
-    "prefix": "aws_route53_zone",
+    "prefix": "tf-aws_route53_zone",
     "description": "Defines aws_route53_zone",
     "body": ["resource \"aws_route53_zone\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_route53_zone_association": {
-    "prefix": "aws_route53_zone_association",
+    "prefix": "tf-aws_route53_zone_association",
     "description": "Defines aws_route53_zone_association",
     "body": [
       "resource \"aws_route53_zone_association\" \"${MyAWSResource}\" {",
@@ -1791,12 +1783,12 @@
     ]
   },
   "aws_s3_bucket": {
-    "prefix": "aws_s3_bucket",
+    "prefix": "tf-aws_s3_bucket",
     "description": "Defines aws_s3_bucket",
     "body": ["resource \"aws_s3_bucket\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_s3_bucket_notification": {
-    "prefix": "aws_s3_bucket_notification",
+    "prefix": "tf-aws_s3_bucket_notification",
     "description": "Defines aws_s3_bucket_notification",
     "body": [
       "resource \"aws_s3_bucket_notification\" \"${MyAWSResource}\" {",
@@ -1804,12 +1796,12 @@
     ]
   },
   "aws_s3_bucket_policy": {
-    "prefix": "aws_s3_bucket_policy",
+    "prefix": "tf-aws_s3_bucket_policy",
     "description": "Defines aws_s3_bucket_policy",
     "body": ["resource \"aws_s3_bucket_policy\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_ses_active_receipt_rule_set": {
-    "prefix": "aws_ses_active_receipt_rule_set",
+    "prefix": "tf-aws_ses_active_receipt_rule_set",
     "description": "Defines aws_ses_active_receipt_rule_set",
     "body": [
       "resource \"aws_ses_active_receipt_rule_set\" \"${MyAWSResource}\" {",
@@ -1817,17 +1809,17 @@
     ]
   },
   "aws_ses_receipt_filter": {
-    "prefix": "aws_ses_receipt_filter",
+    "prefix": "tf-aws_ses_receipt_filter",
     "description": "Defines aws_ses_receipt_filter",
     "body": ["resource \"aws_ses_receipt_filter\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_ses_receipt_rule": {
-    "prefix": "aws_ses_receipt_rule",
+    "prefix": "tf-aws_ses_receipt_rule",
     "description": "Defines aws_ses_receipt_rule",
     "body": ["resource \"aws_ses_receipt_rule\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_ses_receipt_rule_set": {
-    "prefix": "aws_ses_receipt_rule_set",
+    "prefix": "tf-aws_ses_receipt_rule_set",
     "description": "Defines aws_ses_receipt_rule_set",
     "body": [
       "resource \"aws_ses_receipt_rule_set\" \"${MyAWSResource}\" {",
@@ -1835,22 +1827,22 @@
     ]
   },
   "aws_simpledb_domain": {
-    "prefix": "aws_simpledb_domain",
+    "prefix": "tf-aws_simpledb_domain",
     "description": "Defines aws_simpledb_domain",
     "body": ["resource \"aws_simpledb_domain\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_sns_topic": {
-    "prefix": "aws_sns_topic",
+    "prefix": "tf-aws_sns_topic",
     "description": "Defines aws_sns_topic",
     "body": ["resource \"aws_sns_topic\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_sns_topic_policy": {
-    "prefix": "aws_sns_topic_policy",
+    "prefix": "tf-aws_sns_topic_policy",
     "description": "Defines aws_sns_topic_policy",
     "body": ["resource \"aws_sns_topic_policy\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_sns_topic_subscription": {
-    "prefix": "aws_sns_topic_subscription",
+    "prefix": "tf-aws_sns_topic_subscription",
     "description": "Defines aws_sns_topic_subscription",
     "body": [
       "resource \"aws_sns_topic_subscription\" \"${MyAWSResource}\" {",
@@ -1858,37 +1850,37 @@
     ]
   },
   "aws_ssm_document": {
-    "prefix": "aws_ssm_document",
+    "prefix": "tf-aws_ssm_document",
     "description": "Defines aws_ssm_document",
     "body": ["resource \"aws_ssm_document\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_sqs_queue": {
-    "prefix": "aws_sqs_queue",
+    "prefix": "tf-aws_sqs_queue",
     "description": "Defines aws_sqs_queue",
     "body": ["resource \"aws_sqs_queue\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_sqs_queue_policy": {
-    "prefix": "aws_sqs_queue_policy",
+    "prefix": "tf-aws_sqs_queue_policy",
     "description": "Defines aws_sqs_queue_policy",
     "body": ["resource \"aws_sqs_queue_policy\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_customer_gateway": {
-    "prefix": "aws_customer_gateway",
+    "prefix": "tf-aws_customer_gateway",
     "description": "Defines aws_customer_gateway",
     "body": ["resource \"aws_customer_gateway\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_default_network_acl": {
-    "prefix": "aws_default_network_acl",
+    "prefix": "tf-aws_default_network_acl",
     "description": "Defines aws_default_network_acl",
     "body": ["resource \"aws_default_network_acl\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_default_route_table": {
-    "prefix": "aws_default_route_table",
+    "prefix": "tf-aws_default_route_table",
     "description": "Defines aws_default_route_table",
     "body": ["resource \"aws_default_route_table\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_default_security_group": {
-    "prefix": "aws_default_security_group",
+    "prefix": "tf-aws_default_security_group",
     "description": "Defines aws_default_security_group",
     "body": [
       "resource \"aws_default_security_group\" \"${MyAWSResource}\" {",
@@ -1896,17 +1888,17 @@
     ]
   },
   "aws_flow_log": {
-    "prefix": "aws_flow_log",
+    "prefix": "tf-aws_flow_log",
     "description": "Defines aws_flow_log",
     "body": ["resource \"aws_flow_log\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_internet_gateway": {
-    "prefix": "aws_internet_gateway",
+    "prefix": "tf-aws_internet_gateway",
     "description": "Defines aws_internet_gateway",
     "body": ["resource \"aws_internet_gateway\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_main_route_table_association": {
-    "prefix": "aws_main_route_table_association",
+    "prefix": "tf-aws_main_route_table_association",
     "description": "Defines aws_main_route_table_association",
     "body": [
       "resource \"aws_main_route_table_association\" \"${MyAWSResource}\" {",
@@ -1914,37 +1906,37 @@
     ]
   },
   "aws_nat_gateway": {
-    "prefix": "aws_nat_gateway",
+    "prefix": "tf-aws_nat_gateway",
     "description": "Defines aws_nat_gateway",
     "body": ["resource \"aws_nat_gateway\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_network_acl": {
-    "prefix": "aws_network_acl",
+    "prefix": "tf-aws_network_acl",
     "description": "Defines aws_network_acl",
     "body": ["resource \"aws_network_acl\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_network_acl_rule": {
-    "prefix": "aws_network_acl_rule",
+    "prefix": "tf-aws_network_acl_rule",
     "description": "Defines aws_network_acl_rule",
     "body": ["resource \"aws_network_acl_rule\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_network_interface": {
-    "prefix": "aws_network_interface",
+    "prefix": "tf-aws_network_interface",
     "description": "Defines aws_network_interface",
     "body": ["resource \"aws_network_interface\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_route": {
-    "prefix": "aws_route",
+    "prefix": "tf-aws_route",
     "description": "Defines aws_route",
     "body": ["resource \"aws_route\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_route_table": {
-    "prefix": "aws_route_table",
+    "prefix": "tf-aws_route_table",
     "description": "Defines aws_route_table",
     "body": ["resource \"aws_route_table\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_route_table_association": {
-    "prefix": "aws_route_table_association",
+    "prefix": "tf-aws_route_table_association",
     "description": "Defines aws_route_table_association",
     "body": [
       "resource \"aws_route_table_association\" \"${MyAWSResource}\" {",
@@ -1952,17 +1944,17 @@
     ]
   },
   "aws_security_group_rule": {
-    "prefix": "aws_security_group_rule",
+    "prefix": "tf-aws_security_group_rule",
     "description": "Defines aws_security_group_rule",
     "body": ["resource \"aws_security_group_rule\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_vpc_dhcp_options": {
-    "prefix": "aws_vpc_dhcp_options",
+    "prefix": "tf-aws_vpc_dhcp_options",
     "description": "Defines aws_vpc_dhcp_options",
     "body": ["resource \"aws_vpc_dhcp_options\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_vpc_dhcp_options_association": {
-    "prefix": "aws_vpc_dhcp_options_association",
+    "prefix": "tf-aws_vpc_dhcp_options_association",
     "description": "Defines aws_vpc_dhcp_options_association",
     "body": [
       "resource \"aws_vpc_dhcp_options_association\" \"${MyAWSResource}\" {",
@@ -1970,12 +1962,12 @@
     ]
   },
   "aws_vpc_endpoint": {
-    "prefix": "aws_vpc_endpoint",
+    "prefix": "tf-aws_vpc_endpoint",
     "description": "Defines aws_vpc_endpoint",
     "body": ["resource \"aws_vpc_endpoint\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_vpc_peering_connection": {
-    "prefix": "aws_vpc_peering_connection",
+    "prefix": "tf-aws_vpc_peering_connection",
     "description": "Defines aws_vpc_peering_connection",
     "body": [
       "resource \"aws_vpc_peering_connection\" \"${MyAWSResource}\" {",
@@ -1983,12 +1975,12 @@
     ]
   },
   "aws_vpn_connection": {
-    "prefix": "aws_vpn_connection",
+    "prefix": "tf-aws_vpn_connection",
     "description": "Defines aws_vpn_connection",
     "body": ["resource \"aws_vpn_connection\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_vpn_connection_route": {
-    "prefix": "aws_vpn_connection_route",
+    "prefix": "tf-aws_vpn_connection_route",
     "description": "Defines aws_vpn_connection_route",
     "body": [
       "resource \"aws_vpn_connection_route\" \"${MyAWSResource}\" {",
@@ -1996,12 +1988,12 @@
     ]
   },
   "aws_vpn_gateway": {
-    "prefix": "aws_vpn_gateway",
+    "prefix": "tf-aws_vpn_gateway",
     "description": "Defines aws_vpn_gateway",
     "body": ["resource \"aws_vpn_gateway\" \"${MyAWSResource}\" {", "}"]
   },
   "aws_vpn_gateway_attachment": {
-    "prefix": "aws_vpn_gateway_attachment",
+    "prefix": "tf-aws_vpn_gateway_attachment",
     "description": "Defines aws_vpn_gateway_attachment",
     "body": [
       "resource \"aws_vpn_gateway_attachment\" \"${MyAWSResource}\" {",
@@ -2009,72 +2001,72 @@
     ]
   },
   "aws-region-us-east-1": {
-    "prefix": "aws-region-us-east-1",
+    "prefix": "tf-aws-region-us-east-1",
     "description": "Define a aws-region-us-east-1 US East (N.Virginia) region code",
     "body": ["\"us-east-1\""]
   },
   "aws-region-us-east-2": {
-    "prefix": "aws-region-us-east-2",
+    "prefix": "tf-aws-region-us-east-2",
     "description": "Define a aws-region-us-east-2 US East (Ohio) region code",
     "body": ["\"us-east-2\""]
   },
   "aws-region-us-west-1": {
-    "prefix": "aws-region-us-west-1",
+    "prefix": "tf-aws-region-us-west-1",
     "description": "Define a aws-region-us-west-1 US West (N. California) region code",
     "body": ["\"us-west-1\""]
   },
   "aws-region-us-west-2": {
-    "prefix": "aws-region-us-west-2",
+    "prefix": "tf-aws-region-us-west-2",
     "description": "Define a aws-region-us-west-2 US West (Oregon) region code",
     "body": ["\"us-west-2\""]
   },
   "aws-region-eu-west-1": {
-    "prefix": "aws-region-eu-west-1",
+    "prefix": "tf-aws-region-eu-west-1",
     "description": "Define a aws-region-eu-west-1 EU (Ireland) region code",
     "body": ["\"eu-west-1\""]
   },
   "aws-region-eu-central-1": {
-    "prefix": "aws-region-eu-central-1",
+    "prefix": "tf-aws-region-eu-central-1",
     "description": "Define a aws-region-eu-central-1 EU (Frankfurt) region code",
     "body": ["\"eu-central-1\""]
   },
   "aws-region-ap-northeast-1": {
-    "prefix": "aws-region-ap-northeast-1",
+    "prefix": "tf-aws-region-ap-northeast-1",
     "description": "Define a aws-region-ap-northeast-1 Asia Pacific (Tokyo) region code",
     "body": ["\"ap-northeast-1\""]
   },
   "aws-region-ap-northeast-2": {
-    "prefix": "aws-region-ap-northeast-2",
+    "prefix": "tf-aws-region-ap-northeast-2",
     "description": "Define a aws-region-ap-northeast-2 Asia Pacific (Seoul) region code",
     "body": ["\"ap-northeast-2\""]
   },
   "aws-region-ap-southeast-1": {
-    "prefix": "aws-region-ap-southeast-1",
+    "prefix": "tf-aws-region-ap-southeast-1",
     "description": "Define a aws-region-ap-southeast-1 Asia Pacific (Singapore) region code",
     "body": ["\"ap-southeast-1\""]
   },
   "aws-region-ap-southeast-2": {
-    "prefix": "aws-region-ap-southeast-2",
+    "prefix": "tf-aws-region-ap-southeast-2",
     "description": "Define a aws-region-ap-southeast-2 Asia Pacific (Sydney) region code",
     "body": ["\"ap-southeast-2\""]
   },
   "aws-region-ap-south-1": {
-    "prefix": "aws-region-ap-south-1",
+    "prefix": "tf-aws-region-ap-south-1",
     "description": "Define a aws-region-ap-south-1 Asia Pacific (Mumbai) region code",
     "body": ["\"ap-south-1\""]
   },
   "aws-region-sa-east-1": {
-    "prefix": "aws-region-sa-east-1",
+    "prefix": "tf-aws-region-sa-east-1",
     "description": "Define a aws-region-sa-east-1 South America (São Paulo) region code",
     "body": ["\"sa-east-1\""]
   },
   "aws-region-ca-central-1": {
-    "prefix": "aws-region-ca-central-1",
+    "prefix": "tf-aws-region-ca-central-1",
     "description": "Define a aws-region-ca-central-1 Canada (Central) region code",
     "body": ["\"ca-central-1\""]
   },
   "azurerm": {
-    "prefix": "azurerm",
+    "prefix": "tf-azurerm",
     "description": "Defines azurerm provider",
     "body": [
       "provider \"azurerm\" {",
@@ -2086,12 +2078,12 @@
     ]
   },
   "azurerm_client_config": {
-    "prefix": "azurerm_client_config",
+    "prefix": "tf-azurerm_client_config",
     "description": "Defines azurerm_client_config provider",
     "body": ["data \"azurerm_client_config\" {", "}"]
   },
   "azurerm_resource_group": {
-    "prefix": "azurerm_resource_group",
+    "prefix": "tf-azurerm_resource_group",
     "description": "Defines azurerm_resource_group resource",
     "body": [
       "resource \"azurerm_resource_group\" \"${MyResource}\" {",
@@ -2101,7 +2093,7 @@
     ]
   },
   "azurerm_cdn_profile": {
-    "prefix": "azurerm_cdn_profile",
+    "prefix": "tf-azurerm_cdn_profile",
     "description": "Defines azurerm_cdn_profile resource",
     "body": [
       "resource \"azurerm_cdn_profile\" \"${MyResource}\" {",
@@ -2113,7 +2105,7 @@
     ]
   },
   "azurerm_cdn_endpoint": {
-    "prefix": "azurerm_cdn_endpoint",
+    "prefix": "tf-azurerm_cdn_endpoint",
     "description": "Defines azurerm_cdn_endpoint resource",
     "body": [
       "resource \"azurerm_cdn_endpoint\" \"${MyResource}\" {",
@@ -2125,7 +2117,7 @@
     ]
   },
   "azurerm_dns_a_record": {
-    "prefix": "azurerm_dns_a_record",
+    "prefix": "tf-azurerm_dns_a_record",
     "description": "Defines azurerm_dns_a_record resource",
     "body": [
       "resource \"azurerm_dns_a_record\" \"${MyResource}\" {",
@@ -2138,7 +2130,7 @@
     ]
   },
   "azurerm_dns_aaaa_record": {
-    "prefix": "azurerm_dns_aaaa_record",
+    "prefix": "tf-azurerm_dns_aaaa_record",
     "description": "Defines azurerm_dns_aaaa_record resource",
     "body": [
       "resource \"azurerm_dns_aaaa_record\" \"${MyResource}\" {",
@@ -2151,7 +2143,7 @@
     ]
   },
   "azurerm_dns_cname_record": {
-    "prefix": "azurerm_dns_cname_record",
+    "prefix": "tf-azurerm_dns_cname_record",
     "description": "Defines azurerm_dns_cname_record resource",
     "body": [
       "resource \"azurerm_dns_cname_record\" \"${MyResource}\" {",
@@ -2164,7 +2156,7 @@
     ]
   },
   "azurerm_dns_mx_record": {
-    "prefix": "azurerm_dns_mx_record",
+    "prefix": "tf-azurerm_dns_mx_record",
     "description": "Defines azurerm_dns_mx_record resource",
     "body": [
       "resource \"azurerm_dns_mx_record\" \"${MyResource}\" {",
@@ -2184,7 +2176,7 @@
     ]
   },
   "azurerm_dns_ns_record": {
-    "prefix": "azurerm_dns_ns_record",
+    "prefix": "tf-azurerm_dns_ns_record",
     "description": "Defines azurerm_dns_ns_record resource",
     "body": [
       "resource \"azurerm_dns_ns_record\" \"${MyResource}\" {",
@@ -2202,7 +2194,7 @@
     ]
   },
   "azurerm_dns_srv_record": {
-    "prefix": "azurerm_dns_srv_record",
+    "prefix": "tf-azurerm_dns_srv_record",
     "description": "Defines azurerm_dns_srv_record resource",
     "body": [
       "resource \"azurerm_dns_srv_record\" \"${MyResource}\" {",
@@ -2220,7 +2212,7 @@
     ]
   },
   "azurerm_dns_txt_record": {
-    "prefix": "azurerm_dns_txt_record",
+    "prefix": "tf-azurerm_dns_txt_record",
     "description": "Defines azurerm_dns_txt_record resource",
     "body": [
       "resource \"azurerm_dns_txt_record\" \"${MyResource}\" {",
@@ -2238,7 +2230,7 @@
     ]
   },
   "azurerm_dns_zone": {
-    "prefix": "azurerm_dns_zone",
+    "prefix": "tf-azurerm_dns_zone",
     "description": "Defines azurerm_dns_zone resource",
     "body": [
       "resource \"azurerm_dns_zone\" \"${MyResource}\" {",
@@ -2248,7 +2240,7 @@
     ]
   },
   "azurerm_eventhub": {
-    "prefix": "azurerm_eventhub",
+    "prefix": "tf-azurerm_eventhub",
     "description": "Defines azurerm_eventhub resource",
     "body": [
       "resource \"azurerm_eventhub\" \"${MyResource}\" {",
@@ -2262,7 +2254,7 @@
     ]
   },
   "azurerm_eventhub_namespace": {
-    "prefix": "azurerm_eventhub_namespace",
+    "prefix": "tf-azurerm_eventhub_namespace",
     "description": "Defines azurerm_eventhub_namespace resource",
     "body": [
       "resource \"azurerm_eventhub_namespace\" \"${MyResource}\" {",
@@ -2275,7 +2267,7 @@
     ]
   },
   "azurerm_key_vault": {
-    "prefix": "azurerm_key_vault",
+    "prefix": "tf-azurerm_key_vault",
     "description": "Defines azurerm_key_vault resource",
     "body": [
       "resource \"azurerm_key_vault\" \"${MyResource}\" {",
@@ -2301,7 +2293,7 @@
     ]
   },
   "azurerm_kubernetes_cluster": {
-    "prefix": "azurerm_kubernetes_cluster",
+    "prefix": "tf-azurerm_kubernetes_cluster",
     "description": "Defines azurerm_kubernetes_cluster (AKS) resource",
     "body": [
       "resource \"azurerm_kubernetes_cluster\" \"${MyResource}\" {",
@@ -2332,7 +2324,7 @@
     ]
   },
   "azurerm_lb": {
-    "prefix": "azurerm_lb",
+    "prefix": "tf-azurerm_lb",
     "description": "Defines azurerm_lb resource",
     "body": [
       "resource \"azurerm_lb\" \"${MyResource}\" {",
@@ -2343,7 +2335,7 @@
     ]
   },
   "azurerm_lb_backend_address_pool": {
-    "prefix": "azurerm_lb_backend_address_pool",
+    "prefix": "tf-azurerm_lb_backend_address_pool",
     "description": "Defines azurerm_lb_backend_address_pool resource",
     "body": [
       "resource \"azurerm_lb_backend_address_pool\" \"${MyResource}\" {",
@@ -2355,7 +2347,7 @@
     ]
   },
   "azurerm_lb_rule": {
-    "prefix": "azurerm_lb_rule",
+    "prefix": "tf-azurerm_lb_rule",
     "description": "Defines azurerm_lb_rule resource",
     "body": [
       "resource \"azurerm_lb_rule\" \"${MyResource}\" {",
@@ -2371,7 +2363,7 @@
     ]
   },
   "azurerm_lb_nat_rule": {
-    "prefix": "azurerm_lb_nat_rule",
+    "prefix": "tf-azurerm_lb_nat_rule",
     "description": "Defines azurerm_lb_nat_rule resource",
     "body": [
       "resource \"azurerm_lb_nat_rule\" \"${MyResource}\" {",
@@ -2387,7 +2379,7 @@
     ]
   },
   "azurerm_lb_nat_pool": {
-    "prefix": "azurerm_lb_nat_pool",
+    "prefix": "tf-azurerm_lb_nat_pool",
     "description": "Defines azurerm_lb_nat_pool resource",
     "body": [
       "resource \"azurerm_lb_nat_pool\" \"${MyResource}\" {",
@@ -2404,7 +2396,7 @@
     ]
   },
   "azurerm_lb_probe": {
-    "prefix": "azurerm_lb_probe",
+    "prefix": "tf-azurerm_lb_probe",
     "description": "Defines azurerm_lb_probe resource",
     "body": [
       "resource \"azurerm_lb_probe\" \"${MyResource}\" {",
@@ -2417,7 +2409,7 @@
     ]
   },
   "azurerm_virtual_network": {
-    "prefix": "azurerm_virtual_network",
+    "prefix": "tf-azurerm_virtual_network",
     "description": "Defines azurerm_virtual_network resource",
     "body": [
       "resource \"azurerm_virtual_network\" \"${MyResource}\" {",
@@ -2430,7 +2422,7 @@
     ]
   },
   "azurerm_virtual_network_peering": {
-    "prefix": "azurerm_virtual_network_peering",
+    "prefix": "tf-azurerm_virtual_network_peering",
     "description": "Defines azurerm_virtual_network_peering resource",
     "body": [
       "resource \"azurerm_virtual_network_peering\" \"${MyResource}\" {",
@@ -2442,7 +2434,7 @@
     ]
   },
   "azurerm_network_security_group": {
-    "prefix": "azurerm_network_security_group",
+    "prefix": "tf-azurerm_network_security_group",
     "description": "Defines azurerm_network_security_group resource",
     "body": [
       "resource \"azurerm_network_security_group\" \"${MyResource}\" {",
@@ -2453,7 +2445,7 @@
     ]
   },
   "azurerm_network_security_rule": {
-    "prefix": "azurerm_network_security_rule",
+    "prefix": "tf-azurerm_network_security_rule",
     "description": "Defines azurerm_network_security_rule resource",
     "body": [
       "resource \"azurerm_network_security_rule\" \"${MyResource}\" {",
@@ -2464,7 +2456,7 @@
     ]
   },
   "azurerm_public_ip": {
-    "prefix": "azurerm_public_ip",
+    "prefix": "tf-azurerm_public_ip",
     "description": "Defines azurerm_public_ip resource",
     "body": [
       "resource \"azurerm_public_ip\" \"${MyResource}\" {",
@@ -2476,7 +2468,7 @@
     ]
   },
   "azurerm_subnet": {
-    "prefix": "azurerm_subnet",
+    "prefix": "tf-azurerm_subnet",
     "description": "Defines azurerm_subnet resource",
     "body": [
       "resource \"azurerm_subnet\" \"${MyResource}\" {",
@@ -2488,7 +2480,7 @@
     ]
   },
   "azurerm_local_network_gateway": {
-    "prefix": "azurerm_local_network_gateway",
+    "prefix": "tf-azurerm_local_network_gateway",
     "description": "Defines azurerm_local_network_gateway resource",
     "body": [
       "resource \"azurerm_local_network_gateway\" \"${MyResource}\" {",
@@ -2501,7 +2493,7 @@
     ]
   },
   "azurerm_network_interface": {
-    "prefix": "azurerm_network_interface",
+    "prefix": "tf-azurerm_network_interface",
     "description": "Defines azurerm_network_interface resource",
     "body": [
       "resource \"azurerm_network_interface\" \"${MyResource}\" {",
@@ -2512,7 +2504,7 @@
     ]
   },
   "azurerm_route_table": {
-    "prefix": "azurerm_route_table",
+    "prefix": "tf-azurerm_route_table",
     "description": "Defines azurerm_route_table resource",
     "body": [
       "resource \"azurerm_route_table\" \"${MyResource}\" {",
@@ -2523,7 +2515,7 @@
     ]
   },
   "azurerm_route": {
-    "prefix": "azurerm_route",
+    "prefix": "tf-azurerm_route",
     "description": "Defines azurerm_route resource",
     "body": [
       "resource \"azurerm_route\" \"${MyResource}\" {",
@@ -2536,7 +2528,7 @@
     ]
   },
   "azurerm_traffic_manager_profile": {
-    "prefix": "azurerm_traffic_manager_profile",
+    "prefix": "tf-azurerm_traffic_manager_profile",
     "description": "Defines azurerm_traffic_manager_profile resource",
     "body": [
       "resource \"azurerm_traffic_manager_profile\" \"${MyResource}\" {",
@@ -2547,7 +2539,7 @@
     ]
   },
   "azurerm_traffic_manager_endpoint": {
-    "prefix": "azurerm_traffic_manager_endpoint",
+    "prefix": "tf-azurerm_traffic_manager_endpoint",
     "description": "Defines azurerm_traffic_manager_endpoint resource",
     "body": [
       "resource \"azurerm_traffic_manager_endpoint\" \"${MyResource}\" {",
@@ -2561,7 +2553,7 @@
     ]
   },
   "azurerm_search_service": {
-    "prefix": "azurerm_search_service",
+    "prefix": "tf-azurerm_search_service",
     "description": "Defines azurerm_search_service resource",
     "body": [
       "resource \"azurerm_search_service\" \"${MyResource}\" {",
@@ -2573,7 +2565,7 @@
     ]
   },
   "azurerm_servicebus_namespace": {
-    "prefix": "azurerm_servicebus_namespace",
+    "prefix": "tf-azurerm_servicebus_namespace",
     "description": "Defines azurerm_servicebus_namespace resource",
     "body": [
       "resource \"azurerm_servicebus_namespace\" \"${MyResource}\" {",
@@ -2585,7 +2577,7 @@
     ]
   },
   "azurerm_servicebus_subscription": {
-    "prefix": "azurerm_servicebus_subscription",
+    "prefix": "tf-azurerm_servicebus_subscription",
     "description": "Defines azurerm_servicebus_subscription resource",
     "body": [
       "resource \"azurerm_servicebus_subscription\" \"${MyResource}\" {",
@@ -2598,7 +2590,7 @@
     ]
   },
   "azurerm_servicebus_topic": {
-    "prefix": "azurerm_servicebus_topic",
+    "prefix": "tf-azurerm_servicebus_topic",
     "description": "Defines azurerm_servicebus_topic resource",
     "body": [
       "resource \"azurerm_servicebus_topic\" \"${MyResource}\" {",
@@ -2611,7 +2603,7 @@
     ]
   },
   "azurerm_sql_database": {
-    "prefix": "azurerm_sql_database",
+    "prefix": "tf-azurerm_sql_database",
     "description": "Defines azurerm_sql_database resource",
     "body": [
       "resource \"azurerm_sql_database\" \"${MyResource}\" {",
@@ -2622,7 +2614,7 @@
     ]
   },
   "azurerm_sql_firewall_rule": {
-    "prefix": "azurerm_sql_firewall_rule",
+    "prefix": "tf-azurerm_sql_firewall_rule",
     "description": "Defines azurerm_sql_firewall_rule resource",
     "body": [
       "resource \"azurerm_sql_firewall_rule\" \"${MyResource}\" {",
@@ -2635,7 +2627,7 @@
     ]
   },
   "azurerm_sql_server": {
-    "prefix": "azurerm_sql_server",
+    "prefix": "tf-azurerm_sql_server",
     "description": "Defines azurerm_sql_server resource",
     "body": [
       "resource \"azurerm_sql_server\" \"${MyResource}\" {",
@@ -2649,7 +2641,7 @@
     ]
   },
   "azurerm_storage_account": {
-    "prefix": "azurerm_storage_account",
+    "prefix": "tf-azurerm_storage_account",
     "description": "Defines azurerm_storage_account resource",
     "body": [
       "resource \"azurerm_storage_account\" \"${1:MyResourceName}\" {",
@@ -2662,7 +2654,7 @@
     ]
   },
   "azurerm_storage_container": {
-    "prefix": "azurerm_storage_container",
+    "prefix": "tf-azurerm_storage_container",
     "description": "Defines azurerm_storage_container resource",
     "body": [
       "resource \"azurerm_storage_container\" \"${MyResource}\" {",
@@ -2674,7 +2666,7 @@
     ]
   },
   "azurerm_storage_blob": {
-    "prefix": "azurerm_storage_blob",
+    "prefix": "tf-azurerm_storage_blob",
     "description": "Defines azurerm_storage_blob resource",
     "body": [
       "resource \"azurerm_storage_blob\" \"${MyResource}\" {",
@@ -2686,7 +2678,7 @@
     ]
   },
   "azurerm_storage_queue": {
-    "prefix": "azurerm_storage_queue",
+    "prefix": "tf-azurerm_storage_queue",
     "description": "Defines azurerm_storage_queue resource",
     "body": [
       "resource \"azurerm_storage_queue\" \"${MyResource}\" {",
@@ -2697,7 +2689,7 @@
     ]
   },
   "azurerm_storage_share": {
-    "prefix": "azurerm_storage_share",
+    "prefix": "tf-azurerm_storage_share",
     "description": "Defines azurerm_storage_share resource",
     "body": [
       "resource \"azurerm_storage_share\" \"${MyResource}\" {",
@@ -2709,7 +2701,7 @@
     ]
   },
   "azurerm_storage_table": {
-    "prefix": "azurerm_storage_table",
+    "prefix": "tf-azurerm_storage_table",
     "description": "Defines azurerm_storage_table resource",
     "body": [
       "resource \"azurerm_storage_table\" \"${MyResource}\" {",
@@ -2720,7 +2712,7 @@
     ]
   },
   "azurerm_template_deployment": {
-    "prefix": "azurerm_template_deployment",
+    "prefix": "tf-azurerm_template_deployment",
     "description": "Defines azurerm_template_deployment resource",
     "body": [
       "resource \"azurerm_template_deployment\" \"${MyResource}\" {",
@@ -2734,7 +2726,7 @@
     ]
   },
   "azurerm_availability_set": {
-    "prefix": "azurerm_availability_set",
+    "prefix": "tf-azurerm_availability_set",
     "description": "Defines azurerm_availability_set resource",
     "body": [
       "resource \"azurerm_availability_set\" \"${MyResource}\" {",
@@ -2745,7 +2737,7 @@
     ]
   },
   "azurerm_virtual_machine": {
-    "prefix": "azurerm_virtual_machine",
+    "prefix": "tf-azurerm_virtual_machine",
     "description": "Defines azurerm_virtual_machine resource",
     "body": [
       "resource \"azurerm_virtual_machine\" \"${MyResource}\" {",
@@ -2785,7 +2777,7 @@
     ]
   },
   "azurerm_virtual_machine_extension": {
-    "prefix": "azurerm_virtual_machine_extension",
+    "prefix": "tf-azurerm_virtual_machine_extension",
     "description": "Defines azurerm_virtual_machine_extension resource",
     "body": [
       "resource \"azurerm_virtual_machine_extension\" \"${MyResource}\" {",
@@ -2805,7 +2797,7 @@
     ]
   },
   "azurerm_virtual_machine_scale_set": {
-    "prefix": "azurerm_virtual_machine_scale_set",
+    "prefix": "tf-azurerm_virtual_machine_scale_set",
     "description": "Defines azurerm_virtual_machine_scale_set resource",
     "body": [
       "resource \"azurerm_virtual_machine_scale_set\" \"${MyResource}\" {",
@@ -2854,7 +2846,7 @@
     ]
   },
   "bitbucket": {
-    "prefix": "bitbucket",
+    "prefix": "tf-bitbucket",
     "description": "Defines bitbucket",
     "body": [
       "provider \"bitbucket\" {",
@@ -2864,7 +2856,7 @@
     ]
   },
   "bitbucket_default_reviewers": {
-    "prefix": "bitbucket_default_reviewers",
+    "prefix": "tf-bitbucket_default_reviewers",
     "description": "Defines bitbucket_default_reviewers",
     "body": [
       "resource \"bitbucket_default_reviewers\" \"${MyResource}\" {",
@@ -2872,17 +2864,17 @@
     ]
   },
   "bitbucket_hook": {
-    "prefix": "bitbucket_hook",
+    "prefix": "tf-bitbucket_hook",
     "description": "Defines bitbucket_hook",
     "body": ["resource \"bitbucket_hook\" \"${MyResource}\" {", "}"]
   },
   "bitbucket_repository": {
-    "prefix": "bitbucket_repository",
+    "prefix": "tf-bitbucket_repository",
     "description": "Defines bitbucket_repository",
     "body": ["resource \"bitbucket_repository\" \"${MyResource}\" {", "}"]
   },
   "clc": {
-    "prefix": "clc",
+    "prefix": "tf-clc",
     "description": "define a clc provider.",
     "body": [
       "provider \"clc\" {",
@@ -2893,7 +2885,7 @@
     ]
   },
   "clc_server": {
-    "prefix": "clc_server",
+    "prefix": "tf-clc_server",
     "description": "define clc_server resource.",
     "body": [
       "resource \"clc_server\" \"${myResourceName}\" {",
@@ -2917,7 +2909,7 @@
     ]
   },
   "clc_group": {
-    "prefix": "clc_group",
+    "prefix": "tf-clc_group",
     "description": "define clc_group resource.",
     "body": [
       "resource \"clc_group\" \"${myResourceName}\" {",
@@ -2930,7 +2922,7 @@
     ]
   },
   "clc_public_ip": {
-    "prefix": "clc_public_ip",
+    "prefix": "tf-clc_public_ip",
     "description": "define clc_public_ip resource.",
     "body": [
       "resource \"clc_public_ip\" \"${myResourceName}\" {",
@@ -2958,7 +2950,7 @@
     ]
   },
   "clc_load_balancer": {
-    "prefix": "clc_load_balancer",
+    "prefix": "tf-clc_load_balancer",
     "description": "define clc_load_balancer resource.",
     "body": [
       "resource \"clc_load_balancer\" \"${myResourceName}\" {",
@@ -2972,7 +2964,7 @@
     ]
   },
   "clc_load_balancer_pool": {
-    "prefix": "clc_load_balancer_pool",
+    "prefix": "tf-clc_load_balancer_pool",
     "description": "define clc_load_balancer_pool resource.",
     "body": [
       "resource \"clc_load_balancer_pool\" \"${myResourceName}\" {",
@@ -2997,7 +2989,7 @@
     ]
   },
   "chef": {
-    "prefix": "chef",
+    "prefix": "tf-chef",
     "description": "Defines chef",
     "body": [
       "provider \"chef\" {",
@@ -3007,7 +2999,7 @@
     ]
   },
   "chef_data_bag": {
-    "prefix": "chef_data_bag",
+    "prefix": "tf-chef_data_bag",
     "description": "Defines chef_data_bag resource",
     "body": [
       "resource \"chef_data_bag\" \"${MyResource}\" {",
@@ -3016,7 +3008,7 @@
     ]
   },
   "chef_data_bag_item": {
-    "prefix": "chef_data_bag_item",
+    "prefix": "tf-chef_data_bag_item",
     "description": "Defines chef_data_bag_item resource",
     "body": [
       "resource \"chef_data_bag_item\" \"${MyResource}\" {",
@@ -3031,7 +3023,7 @@
     ]
   },
   "chef_environment": {
-    "prefix": "chef_environment",
+    "prefix": "tf-chef_environment",
     "description": "Defines chef_environment resource",
     "body": [
       "resource \"chef_environment\" \"${MyResource}\" {",
@@ -3040,7 +3032,7 @@
     ]
   },
   "chef_node": {
-    "prefix": "chef_node",
+    "prefix": "tf-chef_node",
     "description": "Defines chef_node resource",
     "body": [
       "resource \"chef_node\" \"${MyResource}\" {",
@@ -3049,7 +3041,7 @@
     ]
   },
   "chef_role": {
-    "prefix": "chef_role",
+    "prefix": "tf-chef_role",
     "description": "Defines chef_role resource",
     "body": [
       "resource \"chef_role\" \"${MyResource}\" {",
@@ -3058,7 +3050,7 @@
     ]
   },
   "cloudflare": {
-    "prefix": "cloudflare",
+    "prefix": "tf-cloudflare",
     "description": "Defines cloudflare provider",
     "body": [
       "provider \"cloudflare\" {",
@@ -3068,7 +3060,7 @@
     ]
   },
   "cloudflare_record": {
-    "prefix": "cloudflare_record",
+    "prefix": "tf-cloudflare_record",
     "description": "Defines cloudflare_record resource",
     "body": [
       "resource \"cloudflare_record\" \"${MyResource}\" {",
@@ -3081,7 +3073,7 @@
     ]
   },
   "cloudstack": {
-    "prefix": "cloudstack",
+    "prefix": "tf-cloudstack",
     "description": "define a cloudstack.",
     "body": [
       "cloudstack \"${aws}\" {",
@@ -3092,7 +3084,7 @@
     ]
   },
   "cloudstack_affinity_group": {
-    "prefix": "cloudstack_affinity_group",
+    "prefix": "tf-cloudstack_affinity_group",
     "description": "define cloudstack_affinity_group resource.",
     "body": [
       "resource \"cloudstack_affinity_group\" \"${myResourceName}\" {",
@@ -3102,7 +3094,7 @@
     ]
   },
   "cloudstack_disk": {
-    "prefix": "cloudstack_disk",
+    "prefix": "tf-cloudstack_disk",
     "description": "define cloudstack_disk resource.",
     "body": [
       "resource \"cloudstack_disk\" \"${myResourceName}\" {",
@@ -3116,7 +3108,7 @@
     ]
   },
   "cloudstack_egress_firewall": {
-    "prefix": "cloudstack_egress_firewall",
+    "prefix": "tf-cloudstack_egress_firewall",
     "description": "define cloudstack_egress_firewall resource.",
     "body": [
       "resource \"cloudstack_egress_firewall\" \"${myResourceName}\" {",
@@ -3130,7 +3122,7 @@
     ]
   },
   "cloudstack_firewall": {
-    "prefix": "cloudstack_firewall",
+    "prefix": "tf-cloudstack_firewall",
     "description": "define cloudstack_firewall resource.",
     "body": [
       "resource \"cloudstack_firewall\" \"${myResourceName}\" {",
@@ -3144,7 +3136,7 @@
     ]
   },
   "cloudstack_instance": {
-    "prefix": "cloudstack_instance",
+    "prefix": "tf-cloudstack_instance",
     "description": "define cloudstack_instance resource.",
     "body": [
       "resource \"cloudstack_instance\" \"${myResourceName}\" {",
@@ -3157,7 +3149,7 @@
     ]
   },
   "cloudstack_ipaddress": {
-    "prefix": "cloudstack_ipaddress",
+    "prefix": "tf-cloudstack_ipaddress",
     "description": "define cloudstack_ipaddress resource.",
     "body": [
       "resource \"cloudstack_ipaddress\" \"${myResourceName}\" {",
@@ -3166,7 +3158,7 @@
     ]
   },
   "cloudstack_loadbalancer_rule": {
-    "prefix": "cloudstack_loadbalancer_rule",
+    "prefix": "tf-cloudstack_loadbalancer_rule",
     "description": "define cloudstack_loadbalancer_rule resource.",
     "body": [
       "resource \"cloudstack_loadbalancer_rule\" \"${myResourceName}\" {",
@@ -3181,7 +3173,7 @@
     ]
   },
   "cloudstack_network": {
-    "prefix": "cloudstack_network",
+    "prefix": "tf-cloudstack_network",
     "description": "define cloudstack_network resource.",
     "body": [
       "resource \"cloudstack_network\" \"${myResourceName}\" {",
@@ -3193,7 +3185,7 @@
     ]
   },
   "cloudstack_network_acl": {
-    "prefix": "cloudstack_network_acl",
+    "prefix": "tf-cloudstack_network_acl",
     "description": "define cloudstack_network_acl resource.",
     "body": [
       "resource \"cloudstack_network_acl\" \"${myResourceName}\" {",
@@ -3203,7 +3195,7 @@
     ]
   },
   "cloudstack_network_acl_rule": {
-    "prefix": "cloudstack_network_acl_rule",
+    "prefix": "tf-cloudstack_network_acl_rule",
     "description": "define cloudstack_network_acl_rule resource.",
     "body": [
       "resource \"cloudstack_network_acl_rule\" \"${myResourceName}\" {",
@@ -3219,7 +3211,7 @@
     ]
   },
   "cloudstack_nic": {
-    "prefix": "cloudstack_nic",
+    "prefix": "tf-cloudstack_nic",
     "description": "define cloudstack_nic resource.",
     "body": [
       "resource \"cloudstack_nic\" \"${myResourceName}\" {",
@@ -3230,7 +3222,7 @@
     ]
   },
   "cloudstack_port_forward": {
-    "prefix": "cloudstack_port_forward",
+    "prefix": "tf-cloudstack_port_forward",
     "description": "define cloudstack_port_forward resource.",
     "body": [
       "resource \"cloudstack_port_forward\" \"${myResourceName}\" {",
@@ -3245,7 +3237,7 @@
     ]
   },
   "cloudstack_private_gateway": {
-    "prefix": "cloudstack_private_gateway",
+    "prefix": "tf-cloudstack_private_gateway",
     "description": "define cloudstack_private_gateway resource.",
     "body": [
       "resource \"cloudstack_private_gateway\" \"${myResourceName}\" {",
@@ -3258,7 +3250,7 @@
     ]
   },
   "cloudstack_secondary_ipaddress": {
-    "prefix": "cloudstack_secondary_ipaddress",
+    "prefix": "tf-cloudstack_secondary_ipaddress",
     "description": "define cloudstack_secondary_ipaddress resource.",
     "body": [
       "resource \"cloudstack_secondary_ipaddress\" \"${myResourceName}\" {",
@@ -3267,7 +3259,7 @@
     ]
   },
   "cloudstack_security_group": {
-    "prefix": "cloudstack_security_group",
+    "prefix": "tf-cloudstack_security_group",
     "description": "define cloudstack_security_group resource.",
     "body": [
       "resource \"cloudstack_security_group\" \"${myResourceName}\" {",
@@ -3277,7 +3269,7 @@
     ]
   },
   "cloudstack_security_group_rule": {
-    "prefix": "cloudstack_security_group_rule",
+    "prefix": "tf-cloudstack_security_group_rule",
     "description": "define cloudstack_security_group_rule resource.",
     "body": [
       "resource \"cloudstack_security_group_rule\" \"${myResourceName}\" {",
@@ -3298,7 +3290,7 @@
     ]
   },
   "cloudstack_ssh_keypair": {
-    "prefix": "cloudstack_ssh_keypair",
+    "prefix": "tf-cloudstack_ssh_keypair",
     "description": "define cloudstack_ssh_keypair resource.",
     "body": [
       "resource \"cloudstack_ssh_keypair\" \"${myResourceName}\" {",
@@ -3309,7 +3301,7 @@
     ]
   },
   "cloudstack_static_nat": {
-    "prefix": "cloudstack_static_nat",
+    "prefix": "tf-cloudstack_static_nat",
     "description": "define cloudstack_static_nat resource.",
     "body": [
       "resource \"cloudstack_static_nat\" \"${myResourceName}\" {",
@@ -3320,7 +3312,7 @@
     ]
   },
   "cloudstack_static_route": {
-    "prefix": "cloudstack_static_route",
+    "prefix": "tf-cloudstack_static_route",
     "description": "define cloudstack_static_route resource.",
     "body": [
       "resource \"cloudstack_static_route\" \"${myResourceName}\" {",
@@ -3331,7 +3323,7 @@
     ]
   },
   "cloudstack_template": {
-    "prefix": "cloudstack_template",
+    "prefix": "tf-cloudstack_template",
     "description": "define cloudstack_template resource.",
     "body": [
       "resource \"cloudstack_template\" \"${myResourceName}\" {",
@@ -3345,7 +3337,7 @@
     ]
   },
   "cloudstack_vpc": {
-    "prefix": "cloudstack_vpc",
+    "prefix": "tf-cloudstack_vpc",
     "description": "define cloudstack_vpc resource.",
     "body": [
       "resource \"cloudstack_vpc\" \"${myResourceName}\" {",
@@ -3357,7 +3349,7 @@
     ]
   },
   "cloudstack_vpn_gateway": {
-    "prefix": "cloudstack_vpn_gateway",
+    "prefix": "tf-cloudstack_vpn_gateway",
     "description": "define cloudstack_vpn_gateway resource.",
     "body": [
       "resource \"cloudstack_vpn_gateway\" \"${myResourceName}\" {",
@@ -3367,7 +3359,7 @@
     ]
   },
   "cloudstack_vpn_customer_gateway": {
-    "prefix": "cloudstack_vpn_customer_gateway",
+    "prefix": "tf-cloudstack_vpn_customer_gateway",
     "description": "define cloudstack_vpn_customer_gateway resource.",
     "body": [
       "resource \"cloudstack_vpn_customer_gateway\" \"${myResourceName}\" {",
@@ -3381,7 +3373,7 @@
     ]
   },
   "cloudstack_vpn_connection": {
-    "prefix": "cloudstack_vpn_connection",
+    "prefix": "tf-cloudstack_vpn_connection",
     "description": "define cloudstack_vpn_connection resource.",
     "body": [
       "resource \"cloudstack_vpn_connection\" \"${myResourceName}\" {",
@@ -3392,7 +3384,7 @@
     ]
   },
   "cobbler": {
-    "prefix": "cobbler",
+    "prefix": "tf-cobbler",
     "description": "define a cobbler provider.",
     "body": [
       "provider \"cobbler\" {",
@@ -3403,7 +3395,7 @@
     ]
   },
   "cobbler_distro": {
-    "prefix": "cobbler_distro",
+    "prefix": "tf-cobbler_distro",
     "description": "define cobbler_distro resource.",
     "body": [
       "resource \"cobbler_distro\" \"${myResourceName}\" {",
@@ -3418,7 +3410,7 @@
     ]
   },
   "cobbler_kickstart_file": {
-    "prefix": "cobbler_kickstart_file",
+    "prefix": "tf-cobbler_kickstart_file",
     "description": "define cobbler_kickstart_file resource.",
     "body": [
       "resource \"cobbler_kickstart_file\" \"${myResourceName}\" {",
@@ -3429,7 +3421,7 @@
     ]
   },
   "cobbler_profile": {
-    "prefix": "cobbler_profile",
+    "prefix": "tf-cobbler_profile",
     "description": "define cobbler_profile resource.",
     "body": [
       "resource \"cobbler_profile\" \"${myResourceName}\" {",
@@ -3440,7 +3432,7 @@
     ]
   },
   "cobbler_snippet": {
-    "prefix": "cobbler_snippet",
+    "prefix": "tf-cobbler_snippet",
     "description": "define cobbler_snippet resource.",
     "body": [
       "resource \"cobbler_snippet\" \"${myResourceName}\" {",
@@ -3451,7 +3443,7 @@
     ]
   },
   "cobbler_system": {
-    "prefix": "cobbler_system",
+    "prefix": "tf-cobbler_system",
     "description": "define cobbler_system resource.",
     "body": [
       "resource \"cobbler_system\" \"${myResourceName}\" {",
@@ -3478,7 +3470,7 @@
     ]
   },
   "consul_keys": {
-    "prefix": "consul_keys",
+    "prefix": "tf-consul_keys",
     "description": "Defines consul_keys",
     "body": [
       "data \"consul_keys\" \"${MyConsulResource}\" {",
@@ -3489,37 +3481,37 @@
     ]
   },
   "consul_agent_service": {
-    "prefix": "consul_agent_service",
+    "prefix": "tf-consul_agent_service",
     "description": "Defines consul_agent_service",
     "body": ["resource \"consul_agent_service\" \"${MyResource}\" {", "}"]
   },
   "consul_catalog_entry": {
-    "prefix": "consul_catalog_entry",
+    "prefix": "tf-consul_catalog_entry",
     "description": "Defines consul_catalog_entry",
     "body": ["resource \"consul_catalog_entry\" \"${MyResource}\" {", "}"]
   },
   "consul_key_prefix": {
-    "prefix": "consul_key_prefix",
+    "prefix": "tf-consul_key_prefix",
     "description": "Defines consul_key_prefix",
     "body": ["resource \"consul_key_prefix\" \"${MyResource}\" {", "}"]
   },
   "consul_node": {
-    "prefix": "consul_node",
+    "prefix": "tf-consul_node",
     "description": "Defines consul_node",
     "body": ["resource \"consul_node\" \"${MyResource}\" {", "}"]
   },
   "consul_prepared_query": {
-    "prefix": "consul_prepared_query",
+    "prefix": "tf-consul_prepared_query",
     "description": "Defines consul_prepared_query",
     "body": ["resource \"consul_prepared_query\" \"${MyResource}\" {", "}"]
   },
   "consul_service": {
-    "prefix": "consul_service",
+    "prefix": "tf-consul_service",
     "description": "Defines consul_service",
     "body": ["resource \"consul_service\" \"${MyResource}\" {", "}"]
   },
   "datadog": {
-    "prefix": "datadog",
+    "prefix": "tf-datadog",
     "description": "define a datadog provider.",
     "body": [
       "provider \"datadog\" {",
@@ -3529,7 +3521,7 @@
     ]
   },
   "datadog_monitor": {
-    "prefix": "datadog_monitor",
+    "prefix": "tf-datadog_monitor",
     "description": "define datadog_monitor resource.",
     "body": [
       "resource \"datadog_monitor\" \"${myResourceName}\" {",
@@ -3556,7 +3548,7 @@
     ]
   },
   "datadog_timeboard": {
-    "prefix": "datadog_timeboard",
+    "prefix": "tf-datadog_timeboard",
     "description": "define datadog_timeboard resource.",
     "body": [
       "resource \"datadog_timeboard\" \"${myResourceName}\" {",
@@ -3581,7 +3573,7 @@
     ]
   },
   "digitalocean": {
-    "prefix": "digitalocean",
+    "prefix": "tf-digitalocean",
     "description": "Defines digitalocean",
     "body": [
       "provider \"digitalocean\" {",
@@ -3590,42 +3582,42 @@
     ]
   },
   "digitalocean_domain": {
-    "prefix": "digitalocean_domain",
+    "prefix": "tf-digitalocean_domain",
     "description": "Defines digitalocean_domain",
     "body": ["resource \"digitalocean_domain\" \"${MyResource}\" {", "}"]
   },
   "digitalocean_droplet": {
-    "prefix": "digitalocean_droplet",
+    "prefix": "tf-digitalocean_droplet",
     "description": "Defines digitalocean_droplet",
     "body": ["resource \"digitalocean_droplet\" \"${MyResource}\" {", "}"]
   },
   "digitalocean_floating_ip": {
-    "prefix": "digitalocean_floating_ip",
+    "prefix": "tf-digitalocean_floating_ip",
     "description": "Defines digitalocean_floating_ip",
     "body": ["resource \"digitalocean_floating_ip\" \"${MyResource}\" {", "}"]
   },
   "digitalocean_record": {
-    "prefix": "digitalocean_record",
+    "prefix": "tf-digitalocean_record",
     "description": "Defines digitalocean_record",
     "body": ["resource \"digitalocean_record\" \"${MyResource}\" {", "}"]
   },
   "digitalocean_ssh_key": {
-    "prefix": "digitalocean_ssh_key",
+    "prefix": "tf-digitalocean_ssh_key",
     "description": "Defines digitalocean_ssh_key",
     "body": ["resource \"digitalocean_ssh_key\" \"${MyResource}\" {", "}"]
   },
   "digitalocean_tag": {
-    "prefix": "digitalocean_tag",
+    "prefix": "tf-digitalocean_tag",
     "description": "Defines digitalocean_tag",
     "body": ["resource \"digitalocean_tag\" \"${MyResource}\" {", "}"]
   },
   "digitalocean_volume": {
-    "prefix": "digitalocean_volume",
+    "prefix": "tf-digitalocean_volume",
     "description": "Defines digitalocean_volume",
     "body": ["resource \"digitalocean_volume\" \"${MyResource}\" {", "}"]
   },
   "dnsimple": {
-    "prefix": "dnsimple",
+    "prefix": "tf-dnsimple",
     "description": "define a dnsimple provider.",
     "body": [
       "provider \"dnsimple\" {",
@@ -3635,7 +3627,7 @@
     ]
   },
   "dnsimple_record": {
-    "prefix": "dnsimple_record",
+    "prefix": "tf-dnsimple_record",
     "description": "define dnsimple_record resource.",
     "body": [
       "resource \"dnsimple_record\" \"${myResourceName}\" {",
@@ -3651,7 +3643,7 @@
     ]
   },
   "dme": {
-    "prefix": "dme",
+    "prefix": "tf-dme",
     "description": "define a dme provider.",
     "body": [
       "provider \"dme\" {",
@@ -3662,7 +3654,7 @@
     ]
   },
   "dme_record": {
-    "prefix": "dme_record",
+    "prefix": "tf-dme_record",
     "description": "define dme_record resource.",
     "body": [
       "resource \"dme_record\" \"${myResourceName}\" {",
@@ -3678,7 +3670,7 @@
     ]
   },
   "docker_registry_image": {
-    "prefix": "docker_registry_image",
+    "prefix": "tf-docker_registry_image",
     "description": "Defines docker_registry_image",
     "body": [
       "data \"docker_registry_image\" \"${ubuntu}\" {",
@@ -3687,27 +3679,27 @@
     ]
   },
   "docker_container": {
-    "prefix": "docker_container",
+    "prefix": "tf-docker_container",
     "description": "Defines docker_container",
     "body": ["resource \"docker_container\" \"${MyResource}\" {", "}"]
   },
   "docker_image": {
-    "prefix": "docker_image",
+    "prefix": "tf-docker_image",
     "description": "Defines docker_image",
     "body": ["resource \"docker_image\" \"${MyResource}\" {", "}"]
   },
   "docker_network": {
-    "prefix": "docker_network",
+    "prefix": "tf-docker_network",
     "description": "Defines docker_network",
     "body": ["resource \"docker_network\" \"${MyResource}\" {", "}"]
   },
   "docker_volume": {
-    "prefix": "docker_volume",
+    "prefix": "tf-docker_volume",
     "description": "Defines docker_volume",
     "body": ["resource \"docker_volume\" \"${MyResource}\" {", "}"]
   },
   "dyn": {
-    "prefix": "dyn",
+    "prefix": "tf-dyn",
     "description": "define a dyn provider.",
     "body": [
       "provider \"dyn\" {",
@@ -3718,7 +3710,7 @@
     ]
   },
   "dyn_record": {
-    "prefix": "dyn_record",
+    "prefix": "tf-dyn_record",
     "description": "define dyn_record resource.",
     "body": [
       "resource \"dyn_record\" \"${myResourceName}\" {",
@@ -3733,17 +3725,17 @@
     ]
   },
   "fastly": {
-    "prefix": "fastly",
+    "prefix": "tf-fastly",
     "description": "define a fastly provider.",
     "body": ["provider \"fastly\" {", "   api_key = \"${fastlyApiKey}\"", "}"]
   },
   "fastly_ip_ranges": {
-    "prefix": "fastly_ip_ranges",
+    "prefix": "tf-fastly_ip_ranges",
     "description": "define a fastly_ip_ranges data source.",
     "body": ["data \"fastly_ip_ranges\" \"${myDataSource}\" {", "}"]
   },
   "fastly_service_v1": {
-    "prefix": "fastly_service_v1",
+    "prefix": "tf-fastly_service_v1",
     "description": "define fastly_service_v1 resource.",
     "body": [
       "resource \"fastly_service_v1\" \"${myResourceName}\" {",
@@ -3763,12 +3755,12 @@
     ]
   },
   "github_membership": {
-    "prefix": "github_membership",
+    "prefix": "tf-github_membership",
     "description": "Defines github_membership",
     "body": ["resource \"github_membership\" \"${MyResource}\" {", "}"]
   },
   "github_repository": {
-    "prefix": "github_repository",
+    "prefix": "tf-github_repository",
     "description": "Defines github_repository",
     "body": [
       "resource \"github_repository\" \"${MyResource}\" {",
@@ -3779,7 +3771,7 @@
     ]
   },
   "github_repository_collaborator": {
-    "prefix": "github_repository_collaborator",
+    "prefix": "tf-github_repository_collaborator",
     "description": "Defines github_repository_collaborator",
     "body": [
       "resource \"github_repository_collaborator\" \"${MyResource}\" {",
@@ -3787,32 +3779,32 @@
     ]
   },
   "github_team": {
-    "prefix": "github_team",
+    "prefix": "tf-github_team",
     "description": "Defines github_team",
     "body": ["resource \"github_team\" \"${MyResource}\" {", "}"]
   },
   "github_team_membership": {
-    "prefix": "github_team_membership",
+    "prefix": "tf-github_team_membership",
     "description": "Defines github_team_membership",
     "body": ["resource \"github_team_membership\" \"${MyResource}\" {", "}"]
   },
   "github_team_repository": {
-    "prefix": "github_team_repository",
+    "prefix": "tf-github_team_repository",
     "description": "Defines github_team_repository",
     "body": ["resource \"github_team_repository\" \"${MyResource}\" {", "}"]
   },
   "github_issue_label": {
-    "prefix": "github_issue_label",
+    "prefix": "tf-github_issue_label",
     "description": "Defines github_issue_label",
     "body": ["resource \"github_issue_label\" \"${MyResource}\" {", "}"]
   },
   "gitlab": {
-    "prefix": "gitlab",
+    "prefix": "tf-gitlab",
     "description": "define a GitLab provider.",
     "body": ["provider \"gitlab\" {", "   token = \"${myGitLabToken}\"", "}"]
   },
   "gitlab_deploy_key": {
-    "prefix": "gitlab_deploy_key",
+    "prefix": "tf-gitlab_deploy_key",
     "description": "define a gitlab_deploy_key resource.",
     "body": [
       "resource \"gitlab_deploy_key\" \"${example}\" {",
@@ -3823,7 +3815,7 @@
     ]
   },
   "gitlab_group": {
-    "prefix": "gitlab_group",
+    "prefix": "tf-gitlab_group",
     "description": "define a gitlab_group resource.",
     "body": [
       "resource \"gitlab_group\" \"${example}\" {",
@@ -3834,7 +3826,7 @@
     ]
   },
   "gitlab_project_hook": {
-    "prefix": "gitlab_project_hook",
+    "prefix": "tf-gitlab_project_hook",
     "description": "define a  gitlab_project_hook resource.",
     "body": [
       "resource \"gitlab_project_hook\" \"${example}\" {",
@@ -3844,7 +3836,7 @@
     ]
   },
   "gitlab_project": {
-    "prefix": "gitlab_project",
+    "prefix": "tf-gitlab_project",
     "description": "define a  gitlab_project resource.",
     "body": [
       "resource \"gitlab_project\" \"${example}\" {",
@@ -3854,7 +3846,7 @@
     ]
   },
   "google": {
-    "prefix": "google",
+    "prefix": "tf-google",
     "description": "Defines google provider",
     "body": [
       "provider \"google\" {",
@@ -3865,7 +3857,7 @@
     ]
   },
   "google_iam_policy": {
-    "prefix": "google_iam_policy",
+    "prefix": "tf-google_iam_policy",
     "description": "Defines google_iam_policy policy",
     "body": [
       "data \"google_iam_policy\" \"${admin}\" {",
@@ -3885,7 +3877,7 @@
     ]
   },
   "google_project": {
-    "prefix": "google_project",
+    "prefix": "tf-google_project",
     "description": "Defines google_project resource",
     "body": [
       "resource \"google_project\" \"${MyResource}\" {",
@@ -3895,7 +3887,7 @@
     ]
   },
   "google_compute_address": {
-    "prefix": "google_compute_address",
+    "prefix": "tf-google_compute_address",
     "description": "Defines google_compute_address resource",
     "body": [
       "resource \"google_compute_address\" \"${MyResource}\" {",
@@ -3904,7 +3896,7 @@
     ]
   },
   "google_compute_autoscaler": {
-    "prefix": "google_compute_autoscaler",
+    "prefix": "tf-google_compute_autoscaler",
     "description": "Defines google_compute_autoscaler resource",
     "body": [
       "resource \"google_compute_autoscaler\" \"${MyResource}\" {",
@@ -3923,7 +3915,7 @@
     ]
   },
   "google_pubsub_subscription": {
-    "prefix": "google_pubsub_subscription",
+    "prefix": "tf-google_pubsub_subscription",
     "description": "Defines google_pubsub_subscription resource",
     "body": [
       "resource \"google_pubsub_subscription\" \"${MyResource}\" {",
@@ -3933,7 +3925,7 @@
     ]
   },
   "google_compute_backend_service": {
-    "prefix": "google_compute_backend_service",
+    "prefix": "tf-google_compute_backend_service",
     "description": "Defines google_compute_backend_service resource",
     "body": [
       "resource \"google_compute_backend_service\" \"${MyResource}\" {",
@@ -3944,7 +3936,7 @@
     ]
   },
   "google_compute_disk": {
-    "prefix": "google_compute_disk",
+    "prefix": "tf-google_compute_disk",
     "description": "Defines google_compute_disk resource",
     "body": [
       "resource \"google_compute_disk\" \"${MyResource}\" {",
@@ -3956,7 +3948,7 @@
     ]
   },
   "google_compute_firewall": {
-    "prefix": "google_compute_firewall",
+    "prefix": "tf-google_compute_firewall",
     "description": "Defines google_compute_firewall resource",
     "body": [
       "resource \"google_compute_firewall\" \"${MyResource}\" {",
@@ -3969,7 +3961,7 @@
     ]
   },
   "google_compute_forwarding_rule": {
-    "prefix": "google_compute_forwarding_rule",
+    "prefix": "tf-google_compute_forwarding_rule",
     "description": "Defines google_compute_forwarding_rule resource",
     "body": [
       "resource \"google_compute_forwarding_rule\" \"${MyResource}\" {",
@@ -3980,7 +3972,7 @@
     ]
   },
   "google_compute_global_address": {
-    "prefix": "google_compute_global_address",
+    "prefix": "tf-google_compute_global_address",
     "description": "Defines google_compute_global_address resource",
     "body": [
       "resource \"google_compute_global_address\" \"${MyResource}\" {",
@@ -3989,7 +3981,7 @@
     ]
   },
   "google_compute_global_forwarding_rule": {
-    "prefix": "google_compute_global_forwarding_rule",
+    "prefix": "tf-google_compute_global_forwarding_rule",
     "description": "Defines google_compute_global_forwarding_rule resource",
     "body": [
       "resource \"google_compute_global_forwarding_rule\" \"${MyResource}\" {",
@@ -4000,7 +3992,7 @@
     ]
   },
   "google_compute_http_health_check": {
-    "prefix": "google_compute_http_health_check",
+    "prefix": "tf-google_compute_http_health_check",
     "description": "Defines google_compute_http_health_check resource",
     "body": [
       "resource \"google_compute_http_health_check\" \"${MyResource}\" {",
@@ -4012,7 +4004,7 @@
     ]
   },
   "google_compute_https_health_check": {
-    "prefix": "google_compute_https_health_check",
+    "prefix": "tf-google_compute_https_health_check",
     "description": "Defines google_compute_https_health_check resource",
     "body": [
       "resource \"google_compute_https_health_check\" \"${MyResource}\" {",
@@ -4024,7 +4016,7 @@
     ]
   },
   "google_compute_image": {
-    "prefix": "google_compute_image",
+    "prefix": "tf-google_compute_image",
     "description": "Defines google_compute_image resource",
     "body": [
       "resource \"google_compute_image\" \"${MyResource}\" {",
@@ -4036,7 +4028,7 @@
     ]
   },
   "google_compute_instance": {
-    "prefix": "google_compute_instance",
+    "prefix": "tf-google_compute_instance",
     "description": "Defines google_compute_instance resource",
     "body": [
       "resource \"google_compute_instance\" \"${MyResource}\" {",
@@ -4048,7 +4040,7 @@
     ]
   },
   "google_compute_instance_group": {
-    "prefix": "google_compute_instance_group",
+    "prefix": "tf-google_compute_instance_group",
     "description": "Defines google_compute_instance_group resource",
     "body": [
       "resource \"google_compute_instance_group\" \"${MyResource}\" {",
@@ -4059,7 +4051,7 @@
     ]
   },
   "google_compute_instance_group_manager": {
-    "prefix": "google_compute_instance_group_manager",
+    "prefix": "tf-google_compute_instance_group_manager",
     "description": "Defines google_compute_instance_group_manager resource",
     "body": [
       "resource \"google_compute_instance_group_manager\" \"${MyResource}\" {",
@@ -4072,7 +4064,7 @@
     ]
   },
   "google_compute_instance_template": {
-    "prefix": "google_compute_instance_template",
+    "prefix": "tf-google_compute_instance_template",
     "description": "Defines google_compute_instance_template resource",
     "body": [
       "resource \"google_compute_instance_template\" \"${MyResource}\" {",
@@ -4088,7 +4080,7 @@
     ]
   },
   "google_compute_network": {
-    "prefix": "google_compute_network",
+    "prefix": "tf-google_compute_network",
     "description": "Defines google_compute_network resource",
     "body": [
       "resource \"google_compute_network\" \"${MyResource}\" {",
@@ -4098,7 +4090,7 @@
     ]
   },
   "google_compute_project_metadata": {
-    "prefix": "google_compute_project_metadata",
+    "prefix": "tf-google_compute_project_metadata",
     "description": "Defines google_compute_project_metadata resource",
     "body": [
       "resource \"google_compute_project_metadata\" \"${MyResource}\" {",
@@ -4111,7 +4103,7 @@
     ]
   },
   "google_compute_route": {
-    "prefix": "google_compute_route",
+    "prefix": "tf-google_compute_route",
     "description": "Defines google_compute_route resource",
     "body": [
       "resource \"google_compute_route\" \"${MyResource}\" {",
@@ -4124,7 +4116,7 @@
     ]
   },
   "google_compute_ssl_certificate": {
-    "prefix": "google_compute_ssl_certificate",
+    "prefix": "tf-google_compute_ssl_certificate",
     "description": "Defines google_compute_ssl_certificate resource",
     "body": [
       "resource \"google_compute_ssl_certificate\" \"${MyResource}\" {",
@@ -4136,7 +4128,7 @@
     ]
   },
   "google_compute_subnetwork": {
-    "prefix": "google_compute_subnetwork",
+    "prefix": "tf-google_compute_subnetwork",
     "description": "Defines google_compute_subnetwork resource",
     "body": [
       "resource \"google_compute_subnetwork\" \"${MyResource}\" {",
@@ -4148,7 +4140,7 @@
     ]
   },
   "google_compute_target_http_proxy": {
-    "prefix": "google_compute_target_http_proxy",
+    "prefix": "tf-google_compute_target_http_proxy",
     "description": "Defines google_compute_target_http_proxy resource",
     "body": [
       "resource \"google_compute_target_http_proxy\" \"${MyResource}\" {",
@@ -4159,7 +4151,7 @@
     ]
   },
   "google_compute_target_https_proxy": {
-    "prefix": "google_compute_target_https_proxy",
+    "prefix": "tf-google_compute_target_https_proxy",
     "description": "Defines google_compute_target_https_proxy resource",
     "body": [
       "resource \"google_compute_target_https_proxy\" \"${MyResource}\" {",
@@ -4171,7 +4163,7 @@
     ]
   },
   "google_compute_target_pool": {
-    "prefix": "google_compute_target_pool",
+    "prefix": "tf-google_compute_target_pool",
     "description": "Defines google_compute_target_pool resource",
     "body": [
       "resource \"google_compute_target_pool\" \"${MyResource}\" {",
@@ -4188,7 +4180,7 @@
     ]
   },
   "google_compute_url_map": {
-    "prefix": "google_compute_url_map",
+    "prefix": "tf-google_compute_url_map",
     "description": "Defines google_compute_url_map resource",
     "body": [
       "resource \"google_compute_url_map\" \"${MyResource}\" {",
@@ -4199,7 +4191,7 @@
     ]
   },
   "google_compute_vpn_gateway": {
-    "prefix": "google_compute_vpn_gateway",
+    "prefix": "tf-google_compute_vpn_gateway",
     "description": "Defines google_compute_vpn_gateway resource",
     "body": [
       "resource \"google_compute_vpn_gateway\" \"${MyResource}\" {",
@@ -4211,7 +4203,7 @@
     ]
   },
   "google_compute_vpn_tunnel": {
-    "prefix": "google_compute_vpn_tunnel",
+    "prefix": "tf-google_compute_vpn_tunnel",
     "description": "Defines google_compute_vpn_tunnel resource",
     "body": [
       "resource \"google_compute_vpn_tunnel\" \"${MyResource}\" {",
@@ -4224,7 +4216,7 @@
     ]
   },
   "google_container_cluster": {
-    "prefix": "google_container_cluster",
+    "prefix": "tf-google_container_cluster",
     "description": "Defines google_container_cluster resource",
     "body": [
       "resource \"google_container_cluster\" \"${MyResource}\" {",
@@ -4240,7 +4232,7 @@
     ]
   },
   "google_dns_managed_zone": {
-    "prefix": "google_dns_managed_zone",
+    "prefix": "tf-google_dns_managed_zone",
     "description": "Defines google_dns_managed_zone resource",
     "body": [
       "resource \"google_dns_managed_zone\" \"${MyResource}\" {",
@@ -4251,7 +4243,7 @@
     ]
   },
   "google_dns_record_set": {
-    "prefix": "google_dns_record_set",
+    "prefix": "tf-google_dns_record_set",
     "description": "Defines google_dns_record_set resource",
     "body": [
       "resource \"google_dns_record_set\" \"${MyResource}\" {",
@@ -4263,7 +4255,7 @@
     ]
   },
   "google_pubsub_topic": {
-    "prefix": "google_pubsub_topic",
+    "prefix": "tf-google_pubsub_topic",
     "description": "Defines google_pubsub_topic resource",
     "body": [
       "resource \"google_pubsub_topic\" \"${MyResource}\" {",
@@ -4273,7 +4265,7 @@
     ]
   },
   "google_sql_database": {
-    "prefix": "google_sql_database",
+    "prefix": "tf-google_sql_database",
     "description": "Defines google_sql_database resource",
     "body": [
       "resource \"google_sql_database\" \"${MyResource}\" {",
@@ -4284,7 +4276,7 @@
     ]
   },
   "google_sql_database_instance": {
-    "prefix": "google_sql_database_instance",
+    "prefix": "tf-google_sql_database_instance",
     "description": "Defines google_sql_database_instance resource",
     "body": [
       "resource \"google_sql_database_instance\" \"${MyResource}\" {",
@@ -4296,7 +4288,7 @@
     ]
   },
   "google_sql_user": {
-    "prefix": "google_sql_user",
+    "prefix": "tf-google_sql_user",
     "description": "Defines google_sql_user resource",
     "body": [
       "resource \"google_sql_user\" \"${MyResource}\" {",
@@ -4309,7 +4301,7 @@
     ]
   },
   "google_storage_bucket": {
-    "prefix": "google_storage_bucket",
+    "prefix": "tf-google_storage_bucket",
     "description": "Defines google_storage_bucket resource",
     "body": [
       "resource \"google_storage_bucket\" \"${MyResource}\" {",
@@ -4319,7 +4311,7 @@
     ]
   },
   "google_storage_bucket_acl": {
-    "prefix": "google_storage_bucket_acl",
+    "prefix": "tf-google_storage_bucket_acl",
     "description": "Defines google_storage_bucket_acl resource",
     "body": [
       "resource \"google_storage_bucket_acl\" \"${MyResource}\" {",
@@ -4328,7 +4320,7 @@
     ]
   },
   "google_storage_bucket_object": {
-    "prefix": "google_storage_bucket_object",
+    "prefix": "tf-google_storage_bucket_object",
     "description": "Defines google_storage_bucket_object resource",
     "body": [
       "resource \"google_storage_bucket_object\" \"${MyResource}\" {",
@@ -4339,7 +4331,7 @@
     ]
   },
   "google_storage_object_acl": {
-    "prefix": "google_storage_object_acl",
+    "prefix": "tf-google_storage_object_acl",
     "description": "Defines google_storage_object_acl resource",
     "body": [
       "resource \"google_storage_object_acl\" \"${MyResource}\" {",
@@ -4349,7 +4341,7 @@
     ]
   },
   "grafana": {
-    "prefix": "grafana",
+    "prefix": "tf-grafana",
     "description": "define a grafana provider.",
     "body": [
       "provider \"grafana\" {",
@@ -4359,7 +4351,7 @@
     ]
   },
   "grafana_dashboard": {
-    "prefix": "grafana_dashboard",
+    "prefix": "tf-grafana_dashboard",
     "description": "define grafana_dashboard resource.",
     "body": [
       "resource \"grafana_dashboard\" \"${myResourceName}\" {",
@@ -4370,7 +4362,7 @@
     ]
   },
   "grafana_data_source": {
-    "prefix": "grafana_data_source",
+    "prefix": "tf-grafana_data_source",
     "description": "define grafana_data_source resource.",
     "body": [
       "resource \"grafana_data_source\" \"${myResourceName}\" {",
@@ -4385,7 +4377,7 @@
     ]
   },
   "heroku": {
-    "prefix": "heroku",
+    "prefix": "tf-heroku",
     "description": "Defines heroku",
     "body": [
       "provider \"heroku\" {",
@@ -4395,32 +4387,32 @@
     ]
   },
   "heroku_addon": {
-    "prefix": "heroku_addon",
+    "prefix": "tf-heroku_addon",
     "description": "Defines heroku_addon",
     "body": ["resource \"heroku_addon\" \"${MyResource}\" {", "}"]
   },
   "heroku_app": {
-    "prefix": "heroku_app",
+    "prefix": "tf-heroku_app",
     "description": "Defines heroku_app",
     "body": ["resource \"heroku_app\" \"${MyResource}\" {", "}"]
   },
   "heroku_cert": {
-    "prefix": "heroku_cert",
+    "prefix": "tf-heroku_cert",
     "description": "Defines heroku_cert",
     "body": ["resource \"heroku_cert\" \"${MyResource}\" {", "}"]
   },
   "heroku_domain": {
-    "prefix": "heroku_domain",
+    "prefix": "tf-heroku_domain",
     "description": "Defines heroku_domain",
     "body": ["resource \"heroku_domain\" \"${MyResource}\" {", "}"]
   },
   "heroku_drain": {
-    "prefix": "heroku_drain",
+    "prefix": "tf-heroku_drain",
     "description": "Defines heroku_drain",
     "body": ["resource \"heroku_drain\" \"${MyResource}\" {", "}"]
   },
   "ibmcloud": {
-    "prefix": "ibm_provider",
+    "prefix": "tf-ibm_provider",
     "description": "define IBM Cloud provider.",
     "body": [
       "provider \"ibm\" {",
@@ -4431,7 +4423,7 @@
     ]
   },
   "ibm_compute_ssh_key": {
-    "prefix": "ibm_compute_ssh_key",
+    "prefix": "tf-ibm_compute_ssh_key",
     "description": "create IBM Cloud infranstructure SSH key resource.",
     "body": [
       "resource \"ibm_compute_ssh_key\" \"${myResourceName}\" {",
@@ -4441,7 +4433,7 @@
     ]
   },
   "ibm_compute_vm_instance": {
-    "prefix": "ibm_compute_vm_instance",
+    "prefix": "tf-ibm_compute_vm_instance",
     "description": "Create virtual server with SSH key.",
     "body": [
       "resource \"ibm_compute_vm_instance\" \"${myResourceName}\" {",
@@ -4461,7 +4453,7 @@
     ]
   },
   "ibm_org": {
-    "prefix": "ibm_org",
+    "prefix": "tf-ibm_org",
     "description": "define a ibm org resource.",
     "body": [
       "data \"ibm_org\" \"${myResourceName}\" {",
@@ -4470,7 +4462,7 @@
     ]
   },
   "ibm_space": {
-    "prefix": "ibm_space",
+    "prefix": "tf-ibm_space",
     "description": "define a ibm space resource.",
     "body": [
       "data \"ibm_space\" \"${myResourceName}\" {",
@@ -4480,7 +4472,7 @@
     ]
   },
   "ibm_account": {
-    "prefix": "ibm_account",
+    "prefix": "tf-ibm_account",
     "description": "define a ibm space resource.",
     "body": [
       "data \"ibm_account\" \"${myResourceName}\" {",
@@ -4488,8 +4480,50 @@
       "}"
     ]
   },
+  "ibm_container_cluster": {
+    "prefix": "tf-ibm_container_cluster",
+    "description": "define a ibm container cluster resource.",
+    "body": [
+      "resource \"ibm_container_cluster\" \"${myResourceName}\" {",
+      "   name       = \"my-${myResourceName}\"",
+      "   datacenter = \"\"",
+      "   org_guid = \"${data.ibm_org.myResourceName-org.id}\"",
+      "   space_guid = \"${data.ibm_space.myResourceName-space.id}\"",
+      "   account_guid = \"${data.ibm_account.myResourceName-account.id}\"",
+      "   workers = [{",
+      "   name = \"worker1\"",
+      "   }]",
+      "   webhook = [{",
+      "   level = \"Normal\"",
+      "   type = \"slack\"",
+      "   url = \"\"",
+      " }]",
+      "   machine_type    = \"free\"",
+      "   isolation       = \"public\"",
+      "   public_vlan_id  = \"${ibm_network_vlan.myResourceName.id}\"",
+      "   private_vlan_id = \"${ibm_network_vlan.myResourceName.id}\"",
+      "}"
+    ]
+  },
+  "ibm_network_vlan": {
+    "prefix": "tf-ibm_network_vlan",
+    "description": "define a ibm network vlan resource.",
+    "body": [
+      "resource \"ibm_network_vlan\" \"${myResourceName}\" {",
+      "   name = \"my-${myResourceName}\"",
+      "   datacenter = \"\"",
+      "   type = \"PUBLIC\"",
+      "   subnet_size = 8",
+      "   router_hostname = \"\"",
+      " tags = [",
+      "   \"collectd\",",
+      "   \"mesos-master\"",
+      " ]",
+      "}"
+    ]
+  },
   "ibm_app": {
-    "prefix": "ibm_app",
+    "prefix": "tf-ibm_app",
     "description": "define a ibm app resource.",
     "body": [
       "resource \"ibm_app\" \"${myResourceName}\" {",
@@ -4501,7 +4535,7 @@
     ]
   },
   "ibm_app_route": {
-    "prefix": "ibm_app_route",
+    "prefix": "tf-ibm_app_route",
     "description": "define a ibm app route resource.",
     "body": [
       "data \"ibm_app_domain_shared\" \"${myResourceName}\" {",
@@ -4516,7 +4550,7 @@
     ]
   },
   "ibm_app_domain_private": {
-    "prefix": "ibm_app_domain_private",
+    "prefix": "tf-ibm_app_domain_private",
     "description": "define a ibm domain private resource.",
     "body": [
       "resource \"ibm_app_domain_private\" \"${myResourceName}\" {",
@@ -4529,7 +4563,7 @@
     ]
   },
   "ibm_compute_autoscale_group": {
-    "prefix": "ibm_compute_autoscale_group",
+    "prefix": "tf-ibm_compute_autoscale_group",
     "description": "define a ibm compute auto scale group resource.",
     "body": [
       "resource \"ibm_lb\" \"${myResourceName}\" {",
@@ -4574,7 +4608,7 @@
     ]
   },
   "ibm_compute_autoscale_policy": {
-    "prefix": "ibm_compute_autoscale_policy",
+    "prefix": "tf-ibm_compute_autoscale_policy",
     "description": "define a ibm compute auto scale policy resource.",
     "body": [
       "resource \"ibm_compute_autoscale_policy\" \"${myResourceName}\" {",
@@ -4604,7 +4638,7 @@
     ]
   },
   "ibm_compute_monitor": {
-    "prefix": "ibm_compute_monitor",
+    "prefix": "tf-ibm_compute_monitor",
     "description": "define a ibm compute monitor resource.",
     "body": [
       "resource \"ibm_compute_monitor\" \"${myResourceName}\" {",
@@ -4618,7 +4652,7 @@
     ]
   },
   "ibm_compute_provisioning_hook": {
-    "prefix": "ibm_compute_provisioning_hook",
+    "prefix": "tf-ibm_compute_provisioning_hook",
     "description": "define a ibm compute provisioning hook resource.",
     "body": [
       "resource \"ibm_compute_provisioning_hook\" \"${myResourceName}\" {",
@@ -4628,7 +4662,7 @@
     ]
   },
   "ibm_compute_user": {
-    "prefix": "ibm_compute_user",
+    "prefix": "tf-ibm_compute_user",
     "description": "define a ibm compute user resource.",
     "body": [
       "resource \"ibm_compute_user\" \"${myResourceName}\" {",
@@ -4653,7 +4687,7 @@
     ]
   },
   "ibm_dns_domain": {
-    "prefix": "ibm_dns_domain",
+    "prefix": "tf-ibm_dns_domain",
     "description": "define a ibm dns domain resource.",
     "body": [
       "resource \"ibm_dns_domain\" \"${myResourceName}\" {",
@@ -4663,7 +4697,7 @@
     ]
   },
   "ibm_dns_record": {
-    "prefix": "ibm_dns_record",
+    "prefix": "tf-ibm_dns_record",
     "description": "define a ibm dns record resource.",
     "body": [
       "resource \"ibm_dns_record\" \"${myResourceName}\" {",
@@ -4682,7 +4716,7 @@
     ]
   },
   "ibm_firewall_policy": {
-    "prefix": "ibm_firewall_policy",
+    "prefix": "tf-ibm_firewall_policy",
     "description": "define a ibm firewall policy resource.",
     "body": [
       "resource \"ibm_firewall\" \"${myResourceName}\" {",
@@ -4706,7 +4740,7 @@
     ]
   },
   "ibm_lb_service": {
-    "prefix": "ibm_lb_service",
+    "prefix": "tf-ibm_lb_service",
     "description": "define a ibm lb service resource.",
     "body": [
       "resource \"ibm_lb\" \"${myResourceName}\" {",
@@ -4733,7 +4767,7 @@
     ]
   },
   "ibm_network_public_ip": {
-    "prefix": "ibm_network_public_ip",
+    "prefix": "tf-ibm_network_public_ip",
     "description": "define a ibm network public ip resource.",
     "body": [
       "resource \"ibm_network_public_ip\" \"${myResourceName}\" {",
@@ -4743,7 +4777,7 @@
     ]
   },
   "ibm_service_instance": {
-    "prefix": "ibm_service_instance",
+    "prefix": "tf-ibm_service_instance",
     "description": "define a ibm service instance resource.",
     "body": [
       "resource \"ibm_service_instance\" \"${myResourceName}\" {",
@@ -4760,7 +4794,7 @@
     ]
   },
   "ibm_storage_block": {
-    "prefix": "ibm_storage_block",
+    "prefix": "tf-ibm_storage_block",
     "description": "define a ibm storage block resource.",
     "body": [
       "resource \"ibm_storage_block\" \"${myResourceName}\" {",
@@ -4775,7 +4809,7 @@
     ]
   },
   "ibm_storage_file": {
-    "prefix": "ibm_storage_file",
+    "prefix": "tf-ibm_storage_file",
     "description": "define a ibm storage file resource.",
     "body": [
       "resource \"ibm_storage_file\" \"${myResourceName}\" {",
@@ -4789,7 +4823,7 @@
     ]
   },
   "ibm_compute_bare_metal": {
-    "prefix": "ibm_compute_bare_metal",
+    "prefix": "tf-ibm_compute_bare_metal",
     "description": "define a ibm app resource.",
     "body": [
       "resource \"ibm_compute_bare_metal\" \"${myResourceName}\" {",
@@ -4808,7 +4842,7 @@
     ]
   },
   "ibm_compute_image_template": {
-    "prefix": "ibm_compute_image_template",
+    "prefix": "tf-ibm_compute_image_template",
     "description": "define a ibm app resource.",
     "body": [
       "data \"ibm_compute_image_template\" \"${myResourceName}\" {",
@@ -4817,7 +4851,7 @@
     ]
   },
   "ibm_app_domain_shared": {
-    "prefix": "ibm_app_domain_shared",
+    "prefix": "tf-ibm_app_domain_shared",
     "description": "define a ibm app domain shared resource.",
     "body": [
       "data \"ibm_app_domain_shared\" \"${myResourceName}\" {",
@@ -4832,7 +4866,7 @@
     ]
   },
   "ibm_lb_vpx": {
-    "prefix": "ibm_lb_vpx",
+    "prefix": "tf-ibm_lb_vpx",
     "description": "define a ibm lb vpx resource.",
     "body": [
       "resource \"ibm_lb_vpx\" \"${myResourceName}\" {",
@@ -4845,7 +4879,7 @@
     ]
   },
   "ibm_lb_vpx_vip": {
-    "prefix": "ibm_lb_vpx_vip",
+    "prefix": "tf-ibm_lb_vpx_vip",
     "description": "define a ibm lb vpx vip resource.",
     "body": [
       "resource \"ibm_lb_vpx_vip\" \"${myResourceName}\" {",
@@ -4859,7 +4893,7 @@
     ]
   },
   "ibm_lb_vpx_service": {
-    "prefix": "ibm_lb_vpx_service",
+    "prefix": "tf-ibm_lb_vpx_service",
     "description": "define a ibm lb vpx service resource.",
     "body": [
       "resource \"ibm_lb_vpx_service\" \"${myResourceName}\" {",
@@ -4874,7 +4908,7 @@
     ]
   },
   "ibm_lb_vpx_ha": {
-    "prefix": "ibm_lb_vpx_ha",
+    "prefix": "tf-ibm_lb_vpx_ha",
     "description": "define a ibm lb vpx ha resource.",
     "body": [
       "resource \"ibm_lb_vpx_ha\" \"${myResourceName}\" {",
@@ -4885,7 +4919,7 @@
     ]
   },
   "ibm_lb": {
-    "prefix": "ibm_lb",
+    "prefix": "tf-ibm_lb",
     "description": "define a ibm lb resource.",
     "body": [
       "resource \"ibm_lb\" \"${myResourceName}\" {",
@@ -4896,8 +4930,36 @@
       "}"
     ]
   },
+  "ibm_network_gateway": {
+    "prefix": "tf-ibm_lb",
+    "description": "define a ibm network gateway resource.",
+    "body": [
+      "resource \"ibm_network_gateway\" \"${MyResource}\" {",
+      " name = \"test\"",
+      " ssh_key_ids = [\"${data.ibm_compute_ssh_key.key.id}\"]",
+      " members {",
+      " hostname             = \"mygateway\"",
+      " domain               = \"ibm.com\"",
+      " datacenter           = \"\"",
+      " network_speed        = ",
+      " private_network_only = false",
+      " ssh_key_ids          = [\"${data.ibm_compute_ssh_key.key.id}\"]",
+      " tcp_monitoring       = true",
+      " process_key_name     = \"\"",
+      " os_key_name          = \"\"",
+      " redundant_network    = false",
+      " disk_key_names       = [\"\"]",
+      " public_bandwidth     = ",
+      " memory               = ",
+      " tags                 = [\"gateway tags 1\", \"terraform test tags 1\"]",
+      " notes                = \"gateway notes 1\"",
+      " ipv6_enabled         = true",
+      " }",
+      "}"
+    ]
+  },
   "influxdb": {
-    "prefix": "influxdb",
+    "prefix": "tf-influxdb",
     "description": "define a influxdb provider.",
     "body": [
       "provider \"influxdb\" {",
@@ -4907,7 +4969,7 @@
     ]
   },
   "influxdb_database": {
-    "prefix": "influxdb_database",
+    "prefix": "tf-influxdb_database",
     "description": "define influxdb_database resource.",
     "body": [
       "resource \"influxdb_database\" \"${myResourceName}\" {",
@@ -4917,7 +4979,7 @@
     ]
   },
   "influxdb_user": {
-    "prefix": "influxdb_user",
+    "prefix": "tf-influxdb_user",
     "description": "define influxdb_user resource.",
     "body": [
       "resource \"influxdb_user\" \"${myResourceName}\" {",
@@ -4932,7 +4994,7 @@
     ]
   },
   "influxdb_continuous_query": {
-    "prefix": "influxdb_continuous_query",
+    "prefix": "tf-influxdb_continuous_query",
     "description": "define influxdb_continuous_query resource.",
     "body": [
       "resource \"influxdb_continuous_query\" \"${myResourceName}\" {",
@@ -4944,7 +5006,7 @@
     ]
   },
   "kubernetes": {
-    "prefix": "kubernetes",
+    "prefix": "tf-kubernetes",
     "description": "define a kubernetes provider.",
     "body": [
       "provider \"kubernetes\" {",
@@ -4954,7 +5016,7 @@
     ]
   },
   "kubernetes_config_map": {
-    "prefix": "kubernetes_config_map",
+    "prefix": "tf-kubernetes_config_map",
     "description": "define a kubernetes_config_map resource.",
     "body": [
       "resource \"kubernetes_config_map\" \"${1:kubernetes_config_map_id}\" {",
@@ -4965,7 +5027,7 @@
     ]
   },
   "kubernetes_horizontal_pod_autoscaler": {
-    "prefix": "kubernetes_horizontal_pod_autoscaler",
+    "prefix": "tf-kubernetes_horizontal_pod_autoscaler",
     "description": "define a kubernetes_horizontal_pod_autoscaler resource.",
     "body": [
       "resource \"kubernetes_horizontal_pod_autoscaler\" \"${1:kubernetes_horizontal_pod_autoscaler_id}\" {",
@@ -4984,7 +5046,7 @@
     ]
   },
   "kubernetes_limit_range": {
-    "prefix": "kubernetes_limit_range",
+    "prefix": "tf-kubernetes_limit_range",
     "description": "define a kubernetes_limit_range resource.",
     "body": [
       "resource \"kubernetes_limit_range\" \"${1:kubernetes_limit_range_id}\" {",
@@ -5004,7 +5066,7 @@
     ]
   },
   "kubernetes_namespace": {
-    "prefix": "kubernetes_namespace",
+    "prefix": "tf-kubernetes_namespace",
     "description": "define a kubernetes_namespace resource.",
     "body": [
       "resource \"kubernetes_namespace\" \"${1:kubernetes_namespace_id}\" {",
@@ -5021,7 +5083,7 @@
     ]
   },
   "kubernetes_persistent_volume": {
-    "prefix": "kubernetes_persistent_volume",
+    "prefix": "tf-kubernetes_persistent_volume",
     "description": "define a kubernetes_persistent_volume resource.",
     "body": [
       "resource \"kubernetes_persistent_volume\" \"${1:kubernetes_persistent_volume_id}\" {",
@@ -5043,7 +5105,7 @@
     ]
   },
   "kubernetes_persistent_volume_claim": {
-    "prefix": "kubernetes_persistent_volume_claim",
+    "prefix": "tf-kubernetes_persistent_volume_claim",
     "description": "define a kubernetes_persistent_volume_claim resource.",
     "body": [
       "resource \"kubernetes_persistent_volume_claim\" \"${1:kubernetes_persistent_volume_claim_id}\" {",
@@ -5063,7 +5125,7 @@
     ]
   },
   "kubernetes_resource_quota": {
-    "prefix": "kubernetes_resource_quota",
+    "prefix": "tf-kubernetes_resource_quota",
     "description": "define a kubernetes_resource_quota resource.",
     "body": [
       "resource \"kubernetes_resource_quota\" \"${1:kubernetes_resource_quota_id}\" {",
@@ -5080,7 +5142,7 @@
     ]
   },
   "kubernetes_secret": {
-    "prefix": "kubernetes_secret",
+    "prefix": "tf-kubernetes_secret",
     "description": "define a kubernetes_secret resource.",
     "body": [
       "resource \"kubernetes_secret\" \"${1:kubernetes_secret_id}\" {",
@@ -5096,7 +5158,7 @@
     ]
   },
   "kubernetes_secret_docker_config": {
-    "prefix": "kubernetes_secret_docker_config",
+    "prefix": "tf-kubernetes_secret_docker_config",
     "description": "define a kubernetes_secret resource with Docker example.",
     "body": [
       "resource \"kubernetes_secret\" \"${1:kubernetes_secret_id}\" {",
@@ -5112,7 +5174,7 @@
     ]
   },
   "kubernetes_service": {
-    "prefix": "kubernetes_service",
+    "prefix": "tf-kubernetes_service",
     "description": "define a kubernetes_service resource.",
     "body": [
       "resource \"kubernetes_service\" \"${1:kubernetes_service_id}\" {",
@@ -5134,7 +5196,7 @@
     ]
   },
   "librato": {
-    "prefix": "librato",
+    "prefix": "tf-librato",
     "description": "define a librato provider.",
     "body": [
       "provider \"librato\" {",
@@ -5144,7 +5206,7 @@
     ]
   },
   "librato_alert": {
-    "prefix": "librato_alert",
+    "prefix": "tf-librato_alert",
     "description": "define librato_alert resource.",
     "body": [
       "resource \"librato_alert\" \"${myResourceName}\" {",
@@ -5160,7 +5222,7 @@
     ]
   },
   "librato_service": {
-    "prefix": "librato_service",
+    "prefix": "tf-librato_service",
     "description": "define librato_service resource.",
     "body": [
       "resource \"librato_service\" \"${myResourceName}\" {",
@@ -5177,7 +5239,7 @@
     ]
   },
   "librato_space": {
-    "prefix": "librato_space",
+    "prefix": "tf-librato_space",
     "description": "define librato_space resource.",
     "body": [
       "resource \"librato_space\" \"${myResourceName}\" {",
@@ -5187,7 +5249,7 @@
     ]
   },
   "librato_space_chart": {
-    "prefix": "librato_space_chart",
+    "prefix": "tf-librato_space_chart",
     "description": "define librato_space_chart resource.",
     "body": [
       "resource \"librato_space_chart\" \"${myResourceName}\" {",
@@ -5202,7 +5264,7 @@
     ]
   },
   "logentries": {
-    "prefix": "logentries",
+    "prefix": "tf-logentries",
     "description": "define a logentries provider.",
     "body": [
       "provider \"logentries\" {",
@@ -5211,7 +5273,7 @@
     ]
   },
   "logentries_log": {
-    "prefix": "logentries_log",
+    "prefix": "tf-logentries_log",
     "description": "define logentries_log resource.",
     "body": [
       "resource \"logentries_log\" \"${myResourceName}\" {",
@@ -5223,7 +5285,7 @@
     ]
   },
   "logentries_logset": {
-    "prefix": "logentries_logset",
+    "prefix": "tf-logentries_logset",
     "description": "define logentries_logset resource.",
     "body": [
       "resource \"logentries_logset\" \"${myResourceName}\" {",
@@ -5234,12 +5296,12 @@
     ]
   },
   "mailgun": {
-    "prefix": "mailgun",
+    "prefix": "tf-mailgun",
     "description": "define a mailgun provider.",
     "body": ["provider \"mailgun\" {", "   api_key = \"${api_key}\"", "}"]
   },
   "mailgun_domain": {
-    "prefix": "mailgun_domain",
+    "prefix": "tf-mailgun_domain",
     "description": "define mailgun_domain resource.",
     "body": [
       "resource \"mailgun_domain\" \"${myResourceName}\" {",
@@ -5251,7 +5313,7 @@
     ]
   },
   "mysql": {
-    "prefix": "mysql",
+    "prefix": "tf-mysql",
     "description": "Defines mysql provider",
     "body": [
       "provider \"mysql\" {",
@@ -5262,7 +5324,7 @@
     ]
   },
   "mysql_database": {
-    "prefix": "mysql_database",
+    "prefix": "tf-mysql_database",
     "description": "Defines mysql_database resource",
     "body": [
       "resource \"mysql_database\" \"${MyResource}\" {",
@@ -5271,7 +5333,7 @@
     ]
   },
   "mysql_grant": {
-    "prefix": "mysql_grant",
+    "prefix": "tf-mysql_grant",
     "description": "Defines mysql_grant resource",
     "body": [
       "resource \"mysql_grant\" \"${MyResource}\" {",
@@ -5283,7 +5345,7 @@
     ]
   },
   "mysql_user": {
-    "prefix": "mysql_user",
+    "prefix": "tf-mysql_user",
     "description": "Defines mysql_user resource",
     "body": [
       "resource \"mysql_user\" \"${MyResource}\" {",
@@ -5294,7 +5356,7 @@
     ]
   },
   "newrelic": {
-    "prefix": "newrelic",
+    "prefix": "tf-newrelic",
     "description": "define a newrelic provider.",
     "body": [
       "provider \"newrelic\" {",
@@ -5303,7 +5365,7 @@
     ]
   },
   "newrelic_alert_policy": {
-    "prefix": "newrelic_alert_policy",
+    "prefix": "tf-newrelic_alert_policy",
     "description": "define a newrelic_alert_policy resource.",
     "body": [
       "resource \"newrelic_alert_policy\" \"${1:myVar}\" {",
@@ -5312,7 +5374,7 @@
     ]
   },
   "newrelic_alert_channel": {
-    "prefix": "newrelic_alert_channel",
+    "prefix": "tf-newrelic_alert_channel",
     "description": "define a newrelic_alert_channel resource.",
     "body": [
       "resource \"newrelic_alert_channel\" \"${1:myVarId}\" {",
@@ -5322,7 +5384,7 @@
     ]
   },
   "newrelic_alert_condition": {
-    "prefix": "newrelic_alert_condition",
+    "prefix": "tf-newrelic_alert_condition",
     "description": "define a newrelic_alert_condition resource.",
     "body": [
       "resource   \"newrelic_alert_condition\" \"${1:myVarId}\" {",
@@ -5334,7 +5396,7 @@
     ]
   },
   "newrelic_alert_policy_channel": {
-    "prefix": "newrelic_alert_policy_channel",
+    "prefix": "tf-newrelic_alert_policy_channel",
     "description": "define a newrelic_alert_policy_channel resource.",
     "body": [
       "resource   \"newrelic_alert_policy_channel\" \"${1:myVarId}\" {",
@@ -5344,7 +5406,7 @@
     ]
   },
   "newrelic_application": {
-    "prefix": "newrelic_application",
+    "prefix": "tf-newrelic_application",
     "description": "define a newrelic_application data resource.",
     "body": [
       "data   \"newrelic_application\" \"${1:myVarId}\" {",
@@ -5353,7 +5415,7 @@
     ]
   },
   "openstack": {
-    "prefix": "openstack",
+    "prefix": "tf-openstack",
     "description": "define a openstack provider.",
     "body": [
       "provider \"openstack\" {",
@@ -5365,7 +5427,7 @@
     ]
   },
   "openstack_blockstorage_volume_v1": {
-    "prefix": "openstack_blockstorage_volume_v1",
+    "prefix": "tf-openstack_blockstorage_volume_v1",
     "description": "define openstack_blockstorage_volume_v1 resource.",
     "body": [
       "resource \"openstack_blockstorage_volume_v1\" \"${myResourceName}\" {",
@@ -5377,7 +5439,7 @@
     ]
   },
   "openstack_blockstorage_volume_v2": {
-    "prefix": "openstack_blockstorage_volume_v2",
+    "prefix": "tf-openstack_blockstorage_volume_v2",
     "description": "define openstack_blockstorage_volume_v2 resource.",
     "body": [
       "resource \"openstack_blockstorage_volume_v2\" \"${myResourceName}\" {",
@@ -5389,7 +5451,7 @@
     ]
   },
   "openstack_compute_floatingip_v2": {
-    "prefix": "openstack_compute_floatingip_v2",
+    "prefix": "tf-openstack_compute_floatingip_v2",
     "description": "define openstack_compute_floatingip_v2 resource.",
     "body": [
       "resource \"openstack_compute_floatingip_v2\" \"${myResourceName}\" {",
@@ -5400,7 +5462,7 @@
     ]
   },
   "openstack_compute_instance_v2": {
-    "prefix": "openstack_compute_instance_v2",
+    "prefix": "tf-openstack_compute_instance_v2",
     "description": "define openstack_compute_instance_v2 resource.",
     "body": [
       "resource \"openstack_compute_instance_v2\" \"${myResourceName}\" {",
@@ -5420,7 +5482,7 @@
     ]
   },
   "openstack_compute_keypair_v2": {
-    "prefix": "openstack_compute_keypair_v2",
+    "prefix": "tf-openstack_compute_keypair_v2",
     "description": "define openstack_compute_keypair_v2 resource.",
     "body": [
       "resource \"openstack_compute_keypair_v2\" \"${myResourceName}\" {",
@@ -5431,7 +5493,7 @@
     ]
   },
   "openstack_compute_secgroup_v2": {
-    "prefix": "openstack_compute_secgroup_v2",
+    "prefix": "tf-openstack_compute_secgroup_v2",
     "description": "define openstack_compute_secgroup_v2 resource.",
     "body": [
       "resource \"openstack_compute_secgroup_v2\" \"${myResourceName}\" {",
@@ -5447,7 +5509,7 @@
     ]
   },
   "openstack_compute_servergroup_v2": {
-    "prefix": "openstack_compute_servergroup_v2",
+    "prefix": "tf-openstack_compute_servergroup_v2",
     "description": "define openstack_compute_servergroup_v2 resource.",
     "body": [
       "resource \"openstack_compute_servergroup_v2\" \"${myResourceName}\" {",
@@ -5458,7 +5520,7 @@
     ]
   },
   "openstack_networking_floatingip_v2": {
-    "prefix": "openstack_networking_floatingip_v2",
+    "prefix": "tf-openstack_networking_floatingip_v2",
     "description": "define openstack_networking_floatingip_v2 resource.",
     "body": [
       "resource \"openstack_networking_floatingip_v2\" \"${myResourceName}\" {",
@@ -5469,7 +5531,7 @@
     ]
   },
   "openstack_networking_network_v2": {
-    "prefix": "openstack_networking_network_v2",
+    "prefix": "tf-openstack_networking_network_v2",
     "description": "define openstack_networking_network_v2 resource.",
     "body": [
       "resource \"openstack_networking_network_v2\" \"${myResourceName}\" {",
@@ -5480,7 +5542,7 @@
     ]
   },
   "openstack_networking_port_v2": {
-    "prefix": "openstack_networking_port_v2",
+    "prefix": "tf-openstack_networking_port_v2",
     "description": "define openstack_networking_port_v2 resource.",
     "body": [
       "resource \"openstack_networking_port_v2\" \"${myResourceName}\" {",
@@ -5492,7 +5554,7 @@
     ]
   },
   "openstack_networking_router_interface_v2": {
-    "prefix": "openstack_networking_router_interface_v2",
+    "prefix": "tf-openstack_networking_router_interface_v2",
     "description": "define openstack_networking_router_interface_v2 resource.",
     "body": [
       "resource \"openstack_networking_router_interface_v2\" \"${myResourceName}\" {",
@@ -5504,7 +5566,7 @@
     ]
   },
   "openstack_networking_router_route_v2": {
-    "prefix": "openstack_networking_router_route_v2",
+    "prefix": "tf-openstack_networking_router_route_v2",
     "description": "define openstack_networking_router_route_v2 resource.",
     "body": [
       "resource \"openstack_networking_router_route_v2\" \"${myResourceName}\" {",
@@ -5518,7 +5580,7 @@
     ]
   },
   "openstack_networking_router_v2": {
-    "prefix": "openstack_networking_router_v2",
+    "prefix": "tf-openstack_networking_router_v2",
     "description": "define openstack_networking_router_v2 resource.",
     "body": [
       "resource \"openstack_networking_router_v2\" \"${myResourceName}\" {",
@@ -5529,7 +5591,7 @@
     ]
   },
   "openstack_networking_subnet_v2": {
-    "prefix": "openstack_networking_subnet_v2",
+    "prefix": "tf-openstack_networking_subnet_v2",
     "description": "define openstack_networking_subnet_v2 resource.",
     "body": [
       "resource \"openstack_networking_subnet_v2\" \"${myResourceName}\" {",
@@ -5541,7 +5603,7 @@
     ]
   },
   "openstack_networking_secgroup_v2": {
-    "prefix": "openstack_networking_secgroup_v2",
+    "prefix": "tf-openstack_networking_secgroup_v2",
     "description": "define openstack_networking_secgroup_v2 resource.",
     "body": [
       "resource \"openstack_networking_secgroup_v2\" \"${myResourceName}\" {",
@@ -5551,7 +5613,7 @@
     ]
   },
   "openstack_networking_secgroup_rule_v2": {
-    "prefix": "openstack_networking_secgroup_rule_v2",
+    "prefix": "tf-openstack_networking_secgroup_rule_v2",
     "description": "define openstack_networking_secgroup_rule_v2 resource.",
     "body": [
       "resource \"openstack_networking_secgroup_rule_v2\" \"${myResourceName}\" {",
@@ -5568,7 +5630,7 @@
     ]
   },
   "openstack_lb_member_v1": {
-    "prefix": "openstack_lb_member_v1",
+    "prefix": "tf-openstack_lb_member_v1",
     "description": "define openstack_lb_member_v1 resource.",
     "body": [
       "resource \"openstack_lb_member_v1\" \"${myResourceName}\" {",
@@ -5581,7 +5643,7 @@
     ]
   },
   "openstack_lb_monitor_v1": {
-    "prefix": "openstack_lb_monitor_v1",
+    "prefix": "tf-openstack_lb_monitor_v1",
     "description": "define openstack_lb_monitor_v1 resource.",
     "body": [
       "resource \"openstack_lb_monitor_v1\" \"${myResourceName}\" {",
@@ -5596,7 +5658,7 @@
     ]
   },
   "openstack_lb_pool_v1": {
-    "prefix": "openstack_lb_pool_v1",
+    "prefix": "tf-openstack_lb_pool_v1",
     "description": "define openstack_lb_pool_v1 resource.",
     "body": [
       "resource \"openstack_lb_pool_v1\" \"${myResourceName}\" {",
@@ -5611,7 +5673,7 @@
     ]
   },
   "openstack_lb_vip_v1": {
-    "prefix": "openstack_lb_vip_v1",
+    "prefix": "tf-openstack_lb_vip_v1",
     "description": "define openstack_lb_vip_v1 resource.",
     "body": [
       "resource \"openstack_lb_vip_v1\" \"${myResourceName}\" {",
@@ -5625,7 +5687,7 @@
     ]
   },
   "openstack_lb_loadbalancer_v2": {
-    "prefix": "openstack_lb_loadbalancer_v2",
+    "prefix": "tf-openstack_lb_loadbalancer_v2",
     "description": "define openstack_lb_loadbalancer_v2 resource.",
     "body": [
       "resource \"openstack_lb_loadbalancer_v2\" \"${myResourceName}\" {",
@@ -5636,7 +5698,7 @@
     ]
   },
   "openstack_lb_listener_v2": {
-    "prefix": "openstack_lb_listener_v2",
+    "prefix": "tf-openstack_lb_listener_v2",
     "description": "define openstack_lb_listener_v2 resource.",
     "body": [
       "resource \"openstack_lb_listener_v2\" \"${myResourceName}\" {",
@@ -5649,7 +5711,7 @@
     ]
   },
   "openstack_lb_pool_v2": {
-    "prefix": "openstack_lb_pool_v2",
+    "prefix": "tf-openstack_lb_pool_v2",
     "description": "define openstack_lb_pool_v2 resource.",
     "body": [
       "resource \"openstack_lb_pool_v2\" \"${myResourceName}\" {",
@@ -5666,7 +5728,7 @@
     ]
   },
   "openstack_lb_member_v2": {
-    "prefix": "openstack_lb_member_v2",
+    "prefix": "tf-openstack_lb_member_v2",
     "description": "define openstack_lb_member_v2 resource.",
     "body": [
       "resource \"openstack_lb_member_v2\" \"${myResourceName}\" {",
@@ -5678,7 +5740,7 @@
     ]
   },
   "openstack_lb_monitor_v2": {
-    "prefix": "openstack_lb_monitor_v2",
+    "prefix": "tf-openstack_lb_monitor_v2",
     "description": "define openstack_lb_monitor_v2 resource.",
     "body": [
       "resource \"openstack_lb_monitor_v2\" \"${myResourceName}\" {",
@@ -5692,7 +5754,7 @@
     ]
   },
   "openstack_fw_firewall_v1": {
-    "prefix": "openstack_fw_firewall_v1",
+    "prefix": "tf-openstack_fw_firewall_v1",
     "description": "define openstack_fw_firewall_v1 resource.",
     "body": [
       "resource \"openstack_fw_firewall_v1\" \"${myResourceName}\" {",
@@ -5703,7 +5765,7 @@
     ]
   },
   "openstack_fw_policy_v1": {
-    "prefix": "openstack_fw_policy_v1",
+    "prefix": "tf-openstack_fw_policy_v1",
     "description": "define openstack_fw_policy_v1 resource.",
     "body": [
       "resource \"openstack_fw_policy_v1\" \"${myResourceName}\" {",
@@ -5717,7 +5779,7 @@
     ]
   },
   "openstack_fw_rule_v1": {
-    "prefix": "openstack_fw_rule_v1",
+    "prefix": "tf-openstack_fw_rule_v1",
     "description": "define openstack_fw_rule_v1 resource.",
     "body": [
       "resource \"openstack_fw_rule_v1\" \"${myResourceName}\" {",
@@ -5731,7 +5793,7 @@
     ]
   },
   "openstack_objectstorage_container_v1": {
-    "prefix": "openstack_objectstorage_container_v1",
+    "prefix": "tf-openstack_objectstorage_container_v1",
     "description": "define openstack_objectstorage_container_v1 resource.",
     "body": [
       "resource \"openstack_objectstorage_container_v1\" \"${myResourceName}\" {",
@@ -5746,12 +5808,12 @@
     ]
   },
   "opsgenie": {
-    "prefix": "opsgenie",
+    "prefix": "tf-opsgenie",
     "description": "define a opsgenie provider.",
     "body": ["provider \"opsgenie\" {", "   api_key = \"${myApiKey}\"", "}"]
   },
   "opsgenie_user_data": {
-    "prefix": "opsgenie_user_data",
+    "prefix": "tf-opsgenie_user_data",
     "description": "define a opsgenie_user data source.",
     "body": [
       "data \"opsgenie_user\" \"${1:opsgenie_user_data_id}\" {",
@@ -5760,7 +5822,7 @@
     ]
   },
   "opsgenie_team": {
-    "prefix": "opsgenie_team",
+    "prefix": "tf-opsgenie_team",
     "description": "define a opsgenie_team resource.",
     "body": [
       "resource \"opsgenie_team\" \"${1:opsgenie_team_id}\" {",
@@ -5770,7 +5832,7 @@
     ]
   },
   "opsgenie_user": {
-    "prefix": "opsgenie_user",
+    "prefix": "tf-opsgenie_user",
     "description": "define a opsgenie_user resource.",
     "body": [
       "resource \"opsgenie_user\" \"${1:opsgenie_user_id}\" {",
@@ -5781,12 +5843,12 @@
     ]
   },
   "packet": {
-    "prefix": "packet",
+    "prefix": "tf-packet",
     "description": "define a packet provider.",
     "body": ["provider \"packet\" {", "   auth_token = \"${auth_token}\"", "}"]
   },
   "packet_device": {
-    "prefix": "packet_device",
+    "prefix": "tf-packet_device",
     "description": "define packet_device resource.",
     "body": [
       "resource \"packet_device\" \"${myResourceName}\" {",
@@ -5802,7 +5864,7 @@
     ]
   },
   "packet_project": {
-    "prefix": "packet_project",
+    "prefix": "tf-packet_project",
     "description": "define packet_project resource.",
     "body": [
       "resource \"packet_project\" \"${myResourceName}\" {",
@@ -5813,7 +5875,7 @@
     ]
   },
   "packet_ssh_key": {
-    "prefix": "packet_ssh_key",
+    "prefix": "tf-packet_ssh_key",
     "description": "define packet_ssh_key resource.",
     "body": [
       "resource \"packet_ssh_key\" \"${myResourceName}\" {",
@@ -5824,7 +5886,7 @@
     ]
   },
   "packet_volume": {
-    "prefix": "packet_volume",
+    "prefix": "tf-packet_volume",
     "description": "define packet_volume resource.",
     "body": [
       "resource \"packet_volume\" \"${myResourceName}\" {",
@@ -5841,12 +5903,12 @@
     ]
   },
   "pagerduty": {
-    "prefix": "pagerduty",
+    "prefix": "tf-pagerduty",
     "description": "define a pagerduty provider.",
     "body": ["provider \"pagerduty\" {", "   token = \"${token}\"", "}"]
   },
   "pagerduty_vendor": {
-    "prefix": "pagerduty_vendor",
+    "prefix": "tf-pagerduty_vendor",
     "description": "Define a pagerduty_vendor template",
     "body": [
       "data \"pagerduty_vendor\" \"${config}\" {",
@@ -5855,7 +5917,7 @@
     ]
   },
   "pagerduty_user": {
-    "prefix": "pagerduty_user",
+    "prefix": "tf-pagerduty_user",
     "description": "define pagerduty_user resource.",
     "body": [
       "resource \"pagerduty_user\" \"${myResourceName}\" {",
@@ -5867,7 +5929,7 @@
     ]
   },
   "pagerduty_team": {
-    "prefix": "pagerduty_team",
+    "prefix": "tf-pagerduty_team",
     "description": "define pagerduty_team resource.",
     "body": [
       "resource \"pagerduty_team\" \"${myResourceName}\" {",
@@ -5877,7 +5939,7 @@
     ]
   },
   "pagerduty_escalation_policy": {
-    "prefix": "pagerduty_escalation_policy",
+    "prefix": "tf-pagerduty_escalation_policy",
     "description": "define pagerduty_escalation_policy resource.",
     "body": [
       "resource \"pagerduty_escalation_policy\" \"${myResourceName}\" {",
@@ -5896,7 +5958,7 @@
     ]
   },
   "pagerduty_schedule": {
-    "prefix": "pagerduty_schedule",
+    "prefix": "tf-pagerduty_schedule",
     "description": "define pagerduty_schedule resource.",
     "body": [
       "resource \"pagerduty_schedule\" \"${myResourceName}\" {",
@@ -5919,7 +5981,7 @@
     ]
   },
   "pagerduty_service": {
-    "prefix": "pagerduty_service",
+    "prefix": "tf-pagerduty_service",
     "description": "define pagerduty_service resource.",
     "body": [
       "resource \"pagerduty_service\" \"${myResourceName}\" {",
@@ -5932,7 +5994,7 @@
     ]
   },
   "pagerduty_service_integration": {
-    "prefix": "pagerduty_service_integration",
+    "prefix": "tf-pagerduty_service_integration",
     "description": "define pagerduty_service_integration resource.",
     "body": [
       "resource \"pagerduty_service_integration\" \"${myResourceName}\" {",
@@ -5945,7 +6007,7 @@
     ]
   },
   "postgresql": {
-    "prefix": "postgresql",
+    "prefix": "tf-postgresql",
     "description": "Defines postgresql provider",
     "body": [
       "provider \"postgresql\" {",
@@ -5958,7 +6020,7 @@
     ]
   },
   "postgresql_database": {
-    "prefix": "postgresql_database",
+    "prefix": "tf-postgresql_database",
     "description": "Defines postgresql_database resource",
     "body": [
       "resource \"postgresql_database\" \"${MyResource}\" {",
@@ -5968,7 +6030,7 @@
     ]
   },
   "postgresql_role": {
-    "prefix": "postgresql_role",
+    "prefix": "tf-postgresql_role",
     "description": "Defines postgresql_role resource",
     "body": [
       "resource \"postgresql_role\" \"${MyResource}\" {",
@@ -5980,7 +6042,7 @@
     ]
   },
   "postgresql_extension": {
-    "prefix": "postgresql_extension",
+    "prefix": "tf-postgresql_extension",
     "description": "Defines postgresql_extension resource",
     "body": [
       "resource \"postgresql_extension\" \"${MyResource}\" {",
@@ -5989,7 +6051,7 @@
     ]
   },
   "powerdns": {
-    "prefix": "powerdns",
+    "prefix": "tf-powerdns",
     "description": "define a powerdns provider.",
     "body": [
       "provider \"powerdns\" {",
@@ -5999,7 +6061,7 @@
     ]
   },
   "powerdns_record": {
-    "prefix": "powerdns_record",
+    "prefix": "tf-powerdns_record",
     "description": "define powerdns_record resource.",
     "body": [
       "resource \"powerdns_record\" \"${myResourceName}\" {",
@@ -6013,7 +6075,7 @@
     ]
   },
   "rabbitmq": {
-    "prefix": "rabbitmq",
+    "prefix": "tf-rabbitmq",
     "description": "define a rabbitmq provider.",
     "body": [
       "provider \"rabbitmq\" {",
@@ -6024,7 +6086,7 @@
     ]
   },
   "rabbitmq_binding": {
-    "prefix": "rabbitmq_binding",
+    "prefix": "tf-rabbitmq_binding",
     "description": "define rabbitmq_binding resource.",
     "body": [
       "resource \"rabbitmq_binding\" \"${myResourceName}\" {",
@@ -6040,7 +6102,7 @@
     ]
   },
   "rabbitmq_exchange": {
-    "prefix": "rabbitmq_exchange",
+    "prefix": "tf-rabbitmq_exchange",
     "description": "define rabbitmq_exchange resource.",
     "body": [
       "resource \"rabbitmq_exchange\" \"${myResourceName}\" {",
@@ -6056,7 +6118,7 @@
     ]
   },
   "rabbitmq_permissions": {
-    "prefix": "rabbitmq_permissions",
+    "prefix": "tf-rabbitmq_permissions",
     "description": "define rabbitmq_permissions resource.",
     "body": [
       "resource \"rabbitmq_permissions\" \"${myResourceName}\" {",
@@ -6073,7 +6135,7 @@
     ]
   },
   "rabbitmq_policy": {
-    "prefix": "rabbitmq_policy",
+    "prefix": "tf-rabbitmq_policy",
     "description": "define rabbitmq_policy resource.",
     "body": [
       "resource \"rabbitmq_policy\" \"${myResourceName}\" {",
@@ -6092,7 +6154,7 @@
     ]
   },
   "rabbitmq_queue": {
-    "prefix": "rabbitmq_queue",
+    "prefix": "tf-rabbitmq_queue",
     "description": "define rabbitmq_queue resource.",
     "body": [
       "resource \"rabbitmq_queue\" \"${myResourceName}\" {",
@@ -6107,7 +6169,7 @@
     ]
   },
   "rabbitmq_user": {
-    "prefix": "rabbitmq_user",
+    "prefix": "tf-rabbitmq_user",
     "description": "define rabbitmq_user resource.",
     "body": [
       "resource \"rabbitmq_user\" \"${myResourceName}\" {",
@@ -6119,7 +6181,7 @@
     ]
   },
   "rabbitmq_vhost": {
-    "prefix": "rabbitmq_vhost",
+    "prefix": "tf-rabbitmq_vhost",
     "description": "define rabbitmq_vhost resource.",
     "body": [
       "resource \"rabbitmq_vhost\" \"${myResourceName}\" {",
@@ -6128,7 +6190,7 @@
     ]
   },
   "random_id": {
-    "prefix": "random_id",
+    "prefix": "tf-random_id",
     "description": "define random_id resource.",
     "body": [
       "resource \"random_id\" \"${myResourceName}\" {",
@@ -6142,7 +6204,7 @@
     ]
   },
   "random_shuffle": {
-    "prefix": "random_shuffle",
+    "prefix": "tf-random_shuffle",
     "description": "define random_shuffle resource.",
     "body": [
       "resource \"random_shuffle\" \"${myResourceName}\" {",
@@ -6153,7 +6215,7 @@
     ]
   },
   "rundeck": {
-    "prefix": "rundeck",
+    "prefix": "tf-rundeck",
     "description": "define a rundeck provider.",
     "body": [
       "provider \"rundeck\" {",
@@ -6163,7 +6225,7 @@
     ]
   },
   "rundeck_project": {
-    "prefix": "rundeck_project",
+    "prefix": "tf-rundeck_project",
     "description": "define rundeck_project resource.",
     "body": [
       "resource \"rundeck_project\" \"${myResourceName}\" {",
@@ -6182,7 +6244,7 @@
     ]
   },
   "rundeck_private_key": {
-    "prefix": "rundeck_private_key",
+    "prefix": "tf-rundeck_private_key",
     "description": "define rundeck_private_key resource.",
     "body": [
       "resource \"rundeck_private_key\" \"${myResourceName}\" {",
@@ -6194,7 +6256,7 @@
     ]
   },
   "rundeck_public_key": {
-    "prefix": "rundeck_public_key",
+    "prefix": "tf-rundeck_public_key",
     "description": "define rundeck_public_key resource.",
     "body": [
       "resource \"rundeck_public_key\" \"${myResourceName}\" {",
@@ -6206,7 +6268,7 @@
     ]
   },
   "rundeck_job": {
-    "prefix": "rundeck_job",
+    "prefix": "tf-rundeck_job",
     "description": "define rundeck_job resource.",
     "body": [
       "resource \"rundeck_job\" \"${myResourceName}\" {",
@@ -6221,7 +6283,7 @@
     ]
   },
   "scaleway": {
-    "prefix": "scaleway",
+    "prefix": "tf-scaleway",
     "description": "define a scaleway provider.",
     "body": [
       "provider \"scaleway\" {",
@@ -6232,7 +6294,7 @@
     ]
   },
   "scaleway_bootscript": {
-    "prefix": "scaleway_bootscript",
+    "prefix": "tf-scaleway_bootscript",
     "description": "Define a scaleway_bootscript data",
     "body": [
       "data \"scaleway_bootscript\" \"${config}\" {",
@@ -6242,7 +6304,7 @@
     ]
   },
   "scaleway_image": {
-    "prefix": "scaleway_image",
+    "prefix": "tf-scaleway_image",
     "description": "Define a scaleway_image data",
     "body": [
       "data \"scaleway_image\" \"${config}\" {",
@@ -6252,7 +6314,7 @@
     ]
   },
   "scaleway_ip": {
-    "prefix": "scaleway_ip",
+    "prefix": "tf-scaleway_ip",
     "description": "define scaleway_ip resource.",
     "body": [
       "resource \"scaleway_ip\" \"${myResourceName}\" {",
@@ -6261,7 +6323,7 @@
     ]
   },
   "scaleway_server": {
-    "prefix": "scaleway_server",
+    "prefix": "tf-scaleway_server",
     "description": "define scaleway_server resource.",
     "body": [
       "resource \"scaleway_server\" \"${myResourceName}\" {",
@@ -6276,7 +6338,7 @@
     ]
   },
   "scaleway_security_group": {
-    "prefix": "scaleway_security_group",
+    "prefix": "tf-scaleway_security_group",
     "description": "define scaleway_security_group resource.",
     "body": [
       "resource \"scaleway_security_group\" \"${myResourceName}\" {",
@@ -6286,7 +6348,7 @@
     ]
   },
   "scaleway_security_group_rule": {
-    "prefix": "scaleway_security_group_rule",
+    "prefix": "tf-scaleway_security_group_rule",
     "description": "define scaleway_security_group_rule resource.",
     "body": [
       "resource \"scaleway_security_group_rule\" \"${myResourceName}\" {",
@@ -6302,7 +6364,7 @@
     ]
   },
   "scaleway_volume": {
-    "prefix": "scaleway_volume",
+    "prefix": "tf-scaleway_volume",
     "description": "define scaleway_volume resource.",
     "body": [
       "resource \"scaleway_volume\" \"${myResourceName}\" {",
@@ -6314,7 +6376,7 @@
     ]
   },
   "scaleway_volume_attachment": {
-    "prefix": "scaleway_volume_attachment",
+    "prefix": "tf-scaleway_volume_attachment",
     "description": "define scaleway_volume_attachment resource.",
     "body": [
       "resource \"scaleway_volume_attachment\" \"${myResourceName}\" {",
@@ -6326,7 +6388,7 @@
     ]
   },
   "softlayer": {
-    "prefix": "softlayer",
+    "prefix": "tf-softlayer",
     "description": "define a softlayer provider.",
     "body": [
       "provider \"softlayer\" {",
@@ -6336,7 +6398,7 @@
     ]
   },
   "softlayer_virtual_guest": {
-    "prefix": "softlayer_virtual_guest",
+    "prefix": "tf-softlayer_virtual_guest",
     "description": "define softlayer_virtual_guest resource.",
     "body": [
       "resource \"softlayer_virtual_guest\" \"${myResourceName}\" {",
@@ -6359,7 +6421,7 @@
     ]
   },
   "softlayer_ssh_key": {
-    "prefix": "softlayer_ssh_key",
+    "prefix": "tf-softlayer_ssh_key",
     "description": "define softlayer_ssh_key resource.",
     "body": [
       "resource \"softlayer_ssh_key\" \"${myResourceName}\" {",
@@ -6370,7 +6432,7 @@
     ]
   },
   "statuscake": {
-    "prefix": "statuscake",
+    "prefix": "tf-statuscake",
     "description": "define a statuscake provider.",
     "body": [
       "provider \"statuscake\" {",
@@ -6380,7 +6442,7 @@
     ]
   },
   "statuscake_test": {
-    "prefix": "statuscake_test",
+    "prefix": "tf-statuscake_test",
     "description": "define statuscake_test resource.",
     "body": [
       "resource \"statuscake_test\" \"${myResourceName}\" {",
@@ -6394,7 +6456,7 @@
     ]
   },
   "template_file": {
-    "prefix": "template_file",
+    "prefix": "tf-template_file",
     "description": "Define a template_file template from file",
     "body": [
       "data \"template_file\" \"${init}\" {",
@@ -6406,7 +6468,7 @@
     ]
   },
   "template_file-inline": {
-    "prefix": "template_file-inline",
+    "prefix": "tf-template_file-inline",
     "description": "Define a template_file template inline",
     "body": [
       "data \"template_file\" \"${init}\" {",
@@ -6418,12 +6480,12 @@
     ]
   },
   "template_cloudinit_config": {
-    "prefix": "template_cloudinit_config",
+    "prefix": "tf-template_cloudinit_config",
     "description": "Define a template_cloudinit_config template",
     "body": ["data \"template_cloudinit_config\" \"${config}\" {", "}"]
   },
   "tls_private_key": {
-    "prefix": "tls_private_key",
+    "prefix": "tf-tls_private_key",
     "description": "define tls_private_key resource.",
     "body": [
       "resource \"tls_private_key\" \"${myResourceName}\" {",
@@ -6435,7 +6497,7 @@
     ]
   },
   "tls_self_signed_cert": {
-    "prefix": "tls_self_signed_cert",
+    "prefix": "tf-tls_self_signed_cert",
     "description": "define tls_self_signed_cert resource.",
     "body": [
       "resource \"tls_self_signed_cert\" \"${myResourceName}\" {",
@@ -6457,7 +6519,7 @@
     ]
   },
   "tls_locally_signed_cert": {
-    "prefix": "tls_locally_signed_cert",
+    "prefix": "tf-tls_locally_signed_cert",
     "description": "define tls_locally_signed_cert resource.",
     "body": [
       "resource \"tls_locally_signed_cert\" \"${myResourceName}\" {",
@@ -6477,7 +6539,7 @@
     ]
   },
   "tls_cert_request": {
-    "prefix": "tls_cert_request",
+    "prefix": "tf-tls_cert_request",
     "description": "define tls_cert_request resource.",
     "body": [
       "resource \"tls_cert_request\" \"${myResourceName}\" {",
@@ -6493,7 +6555,7 @@
     ]
   },
   "triton": {
-    "prefix": "triton",
+    "prefix": "tf-triton",
     "description": "define a triton provider.",
     "body": [
       "provider \"triton\" {",
@@ -6506,7 +6568,7 @@
     ]
   },
   "triton_firewall_rule": {
-    "prefix": "triton_firewall_rule",
+    "prefix": "tf-triton_firewall_rule",
     "description": "define triton_firewall_rule resource.",
     "body": [
       "resource \"triton_firewall_rule\" \"${myResourceName}\" {",
@@ -6518,7 +6580,7 @@
     ]
   },
   "triton_key": {
-    "prefix": "triton_key",
+    "prefix": "tf-triton_key",
     "description": "define triton_key resource.",
     "body": [
       "resource \"triton_key\" \"${myResourceName}\" {",
@@ -6529,7 +6591,7 @@
     ]
   },
   "triton_machine": {
-    "prefix": "triton_machine",
+    "prefix": "tf-triton_machine",
     "description": "define triton_machine resource.",
     "body": [
       "resource \"triton_machine\" \"${myResourceName}\" {",
@@ -6541,7 +6603,7 @@
     ]
   },
   "ultradns": {
-    "prefix": "ultradns",
+    "prefix": "tf-ultradns",
     "description": "define a ultradns provider.",
     "body": [
       "provider \"ultradns\" {",
@@ -6552,7 +6614,7 @@
     ]
   },
   "ultradns_record": {
-    "prefix": "ultradns_record",
+    "prefix": "tf-ultradns_record",
     "description": "define ultradns_record resource.",
     "body": [
       "resource \"ultradns_record\" \"${myResourceName}\" {",
@@ -6567,7 +6629,7 @@
     ]
   },
   "vault": {
-    "prefix": "vault",
+    "prefix": "tf-vault",
     "description": "define vault provider.",
     "body": [
       "provider \"vault\" {",
@@ -6577,7 +6639,7 @@
     ]
   },
   "vault_auth_backend": {
-    "prefix": "vault_auth_backend",
+    "prefix": "tf-vault_auth_backend",
     "description": "define vault_auth_backend resource.",
     "body": [
       "resource \"vault_auth_backend\" \"${1:vault_auth_backend_id}\" {",
@@ -6586,7 +6648,7 @@
     ]
   },
   "vault_generic_secret": {
-    "prefix": "vault_generic_secret",
+    "prefix": "tf-vault_generic_secret",
     "description": "define vault_generic_secret resource.",
     "body": [
       "resource \"vault_generic_secret\" \"${1:vault_generic_secret_id}\" {",
@@ -6600,7 +6662,7 @@
     ]
   },
   "vault_mount": {
-    "prefix": "vault_mount",
+    "prefix": "tf-vault_mount",
     "description": "define vault_mount resource.",
     "body": [
       "resource \"vault_mount\" \"${1:vault_mount_id}\" {",
@@ -6610,7 +6672,7 @@
     ]
   },
   "vault_policy": {
-    "prefix": "vault_policy",
+    "prefix": "tf-vault_policy",
     "description": "define vault_policy resource.",
     "body": [
       "resource \"vault_policy\" \"${1:vault_policy_id}\" {",
@@ -6624,7 +6686,7 @@
     ]
   },
   "vcd": {
-    "prefix": "vcd",
+    "prefix": "tf-vcd",
     "description": "define a vcd provider.",
     "body": [
       "provider \"vcd\" {",
@@ -6639,7 +6701,7 @@
     ]
   },
   "vcd_dnat": {
-    "prefix": "vcd_dnat",
+    "prefix": "tf-vcd_dnat",
     "description": "define vcd_dnat resource.",
     "body": [
       "resource \"vcd_dnat\" \"${myResourceName}\" {",
@@ -6653,7 +6715,7 @@
     ]
   },
   "vcd_firewall_rules": {
-    "prefix": "vcd_firewall_rules",
+    "prefix": "tf-vcd_firewall_rules",
     "description": "define vcd_firewall_rules resource.",
     "body": [
       "resource \"vcd_firewall_rules\" \"${myResourceName}\" {",
@@ -6674,7 +6736,7 @@
     ]
   },
   "vcd_network": {
-    "prefix": "vcd_network",
+    "prefix": "tf-vcd_network",
     "description": "define vcd_network resource.",
     "body": [
       "resource \"vcd_network\" \"${myResourceName}\" {",
@@ -6694,7 +6756,7 @@
     ]
   },
   "vcd_snat": {
-    "prefix": "vcd_snat",
+    "prefix": "tf-vcd_snat",
     "description": "define vcd_snat resource.",
     "body": [
       "resource \"vcd_snat\" \"${myResourceName}\" {",
@@ -6707,7 +6769,7 @@
     ]
   },
   "vcd_vapp": {
-    "prefix": "vcd_vapp",
+    "prefix": "tf-vcd_vapp",
     "description": "define vcd_vapp resource.",
     "body": [
       "resource \"vcd_vapp\" \"${myResourceName}\" {",
@@ -6729,7 +6791,7 @@
     ]
   },
   "vsphere": {
-    "prefix": "vsphere",
+    "prefix": "tf-vsphere",
     "description": "define a vsphere.",
     "body": [
       "provider \"vsphere\" {",
@@ -6740,7 +6802,7 @@
     ]
   },
   "vsphere_virtual_machine": {
-    "prefix": "vsphere_virtual_machine",
+    "prefix": "tf-vsphere_virtual_machine",
     "description": "define vsphere_virtual_machine resource.",
     "body": [
       "resource \"vsphere_virtual_machine\" \"${myResourceName}\" {",
@@ -6758,7 +6820,7 @@
     ]
   },
   "vsphere_folder": {
-    "prefix": "vsphere_folder",
+    "prefix": "tf-vsphere_folder",
     "description": "define vsphere_folder resource.",
     "body": [
       "resource \"vsphere_folder\" \"${myResourceName}\" {",
@@ -6769,7 +6831,7 @@
     ]
   },
   "vsphere_file": {
-    "prefix": "vsphere_file",
+    "prefix": "tf-vsphere_file",
     "description": "define vsphere_file resource.",
     "body": [
       "resource \"vsphere_file\" \"${myResourceName}\" {",
@@ -6783,7 +6845,7 @@
     ]
   },
   "vsphere_virtual_disk": {
-    "prefix": "vsphere_virtual_disk",
+    "prefix": "tf-vsphere_virtual_disk",
     "description": "define vsphere_virtual_disk resource.",
     "body": [
       "resource \"vsphere_virtual_disk\" \"${myResourceName}\" {",
@@ -6798,7 +6860,7 @@
     ]
   },
   "chef_provisioner": {
-    "prefix": "chef_provisioner",
+    "prefix": "tf-chef_provisioner",
     "description": "Define a Chef provisioner",
     "body": [
       "   provisioner \"chef\" {",
@@ -6811,7 +6873,7 @@
     ]
   },
   "connection_provisioner": {
-    "prefix": "connection_provisioner",
+    "prefix": "tf-connection_provisioner",
     "description": "Define a connection provisioner",
     "body": [
       "# Copies the file as the root user using SSH",
@@ -6827,7 +6889,7 @@
     ]
   },
   "file_provisioner": {
-    "prefix": "file_provisioner",
+    "prefix": "tf-file_provisioner",
     "description": "Define a file provisioner",
     "body": [
       "   # Copies the myapp.conf file to /etc/myapp.conf",
@@ -6838,7 +6900,7 @@
     ]
   },
   "local_exec_provisioner": {
-    "prefix": "local_exec_provisioner",
+    "prefix": "tf-local_exec_provisioner",
     "description": "Define a local-exec provisioner",
     "body": [
       "   provisioner \"local-exec\" {",
@@ -6847,7 +6909,7 @@
     ]
   },
   "null_resource_provisioner": {
-    "prefix": "null_resource_provisioner",
+    "prefix": "tf-null_resource_provisioner",
     "description": "Define a null_resource provisioner",
     "body": [
       "resource \"null_resource\" \"${cluster}\" {",
@@ -6860,7 +6922,7 @@
     ]
   },
   "remote_exec_provisioner": {
-    "prefix": "remote_exec_provisioner",
+    "prefix": "tf-remote_exec_provisioner",
     "description": "Define a remote-exec provisioner",
     "body": [
       "   provisioner \"remote-exec\" {",
@@ -6872,7 +6934,7 @@
     ]
   },
   "terraform_remote_state": {
-    "prefix": "terraform_remote_state",
+    "prefix": "tf-terraform_remote_state",
     "description": "Define a terraform_remote_state template",
     "body": [
       "data \"terraform_remote_state\" \"${config}\" {",
@@ -6882,6 +6944,5 @@
       "   }",
       "}"
     ]
-  },
-  "copyright": { "year": "2017" }
+  }
 }

@@ -30,31 +30,7 @@ local plugins = {
 
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        -- defaults 
-        "vim",
-        "lua",
-        "bash",
-        "python",
-        "go",
-        "yaml",
-        "toml",
-        "markdown",
-        "markdown_inline",
-        -- web dev 
-        "html",
-        "css",
-        "javascript",
-        "typescript",
-        "tsx",
-        "json",
-       -- low level
-        "rust",
-        "c",
-        "zig"
-      },
-    },
+    opts = overrides.treesitter,
   },
 
   {
@@ -62,13 +38,6 @@ local plugins = {
     opts = overrides.nvimtree,
   },
 
-  {
-	"L3MON4D3/LuaSnip",
-	-- follow latest release.
-	version = "<CurrentMajor>.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-	-- install jsregexp (optional!).
-	-- build = "make install_jsregexp"
-},
   -- Install a plugin
   {
     "max397574/better-escape.nvim",

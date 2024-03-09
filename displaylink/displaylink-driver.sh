@@ -6,7 +6,7 @@
 # https://github.com/displaylink-rpm/displaylink-rpm/releases/tag/v5.3.1-1
 #
 
-fedora-33-displaylink-1.7.2-1.x86_64
+#fedora-33-displaylink-1.7.2-1.x86_64
 
 #
 # ------------------------------------------------------- ubuntu 

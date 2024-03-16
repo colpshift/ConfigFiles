@@ -1,5 +1,4 @@
 #
-# Path: ~/.zshrc
 # Tags: zsh shell
 # Description: zsh env config
 # Author: colpshift

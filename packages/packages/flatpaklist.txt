@@ -1,8 +1,8 @@
-8bit Solutions LLC	com.bitwarden.desktop	2024.2.1	stable	flathub	system
-Discord Inc.	com.discordapp.Discord	0.0.44	stable	flathub	system
-JGraph	com.jgraph.drawio.desktop	23.1.5	stable	flathub	system
+8bit Solutions LLC	com.bitwarden.desktop	2024.3.0	stable	flathub	system
+Discord Inc.	com.discordapp.Discord	0.0.47	stable	flathub	system
+JGraph	com.jgraph.drawio.desktop	24.1.0	stable	flathub	system
 Rick van Lieshout	com.mastermindzh.tidal-hifi	5.9.0	stable	flathub	system
-Microsoft Corporation	com.microsoft.Edge	122.0.2365.80-1	stable	flathub	system
+Microsoft Corporation	com.microsoft.Edge	123.0.2420.53-1	stable	flathub	system
 Stremio	com.stremio.Stremio	4.4.165	stable	flathub	system
 GitHub Desktop	io.github.shiftey.Desktop	3.3.6-linux3	stable	flathub	system
 Neovim	io.neovim.nvim	0.9.5	stable	flathub	system
@@ -10,21 +10,22 @@ Blender	org.blender.Blender	4.0.2	stable	flathub	system
 Codecs	org.blender.Blender.Codecs		stable	flathub	system
 Fedora KDE 5 Platform	org.fedoraproject.KDE5Platform	39	f39	fedora	system
 Fedora Platform	org.fedoraproject.Platform	39	f39	fedora	system
-Freedesktop Platform	org.freedesktop.Platform	22.08.21	22.08	flathub	system
-Freedesktop Platform	org.freedesktop.Platform	23.08.13	23.08	flathub	system
-Mesa	org.freedesktop.Platform.GL.default	23.3.5	22.08	flathub	system
-Mesa (Extra)	org.freedesktop.Platform.GL.default	23.3.5	22.08-extra	flathub	system
-Mesa	org.freedesktop.Platform.GL.default	24.0.2	23.08	flathub	system
-Mesa (Extra)	org.freedesktop.Platform.GL.default	24.0.2	23.08-extra	flathub	system
+Freedesktop Platform	org.freedesktop.Platform	22.08.23	22.08	flathub	system
+Freedesktop Platform	org.freedesktop.Platform	23.08.14	23.08	flathub	system
+Mesa	org.freedesktop.Platform.GL.default	24.0.3	22.08	flathub	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	24.0.3	22.08-extra	flathub	system
+Mesa	org.freedesktop.Platform.GL.default	24.0.3	23.08	flathub	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	24.0.3	23.08-extra	flathub	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	flathub	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		23.08	flathub	system
 ffmpeg-full	org.freedesktop.Platform.ffmpeg-full		23.08	flathub	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	flathub	system
-Freedesktop SDK	org.freedesktop.Sdk	22.08.21	22.08	flathub	system
-Freedesktop SDK	org.freedesktop.Sdk	23.08.13	23.08	flathub	system
-GNU Image Manipulation Program	org.gimp.GIMP	2.10.36	stable	flathub	system
-GNOME Application Platform version 44	org.gnome.Platform		44	flathub	system
+openh264	org.freedesktop.Platform.openh264	2.4.1	2.4.1	flathub	system
+Freedesktop SDK	org.freedesktop.Sdk	22.08.23	22.08	flathub	system
+Freedesktop SDK	org.freedesktop.Sdk	23.08.14	23.08	flathub	system
+The GIMP team	org.gimp.GIMP	2.10.36	stable	flathub	system
 GNOME Application Platform version 45	org.gnome.Platform		45	flathub	system
+GNOME Application Platform version 46	org.gnome.Platform		46	flathub	system
 Passwords and Keys	org.gnome.seahorse.Application	43.0	stable	flathub	system
 The Inkscape Community	org.inkscape.Inkscape	1.3.2	stable	flathub	system
 Adwaita theme	org.kde.KStyle.Adwaita		5.15-22.08	flathub	system
@@ -37,11 +38,11 @@ QAdwaitaDecorations	org.kde.WaylandDecoration.QAdwaitaDecorations		5.15-22.08	fl
 QAdwaitaDecorations	org.kde.WaylandDecoration.QAdwaitaDecorations		5.15-23.08	flathub	system
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-22.08	flathub	system
 QGnomePlatform-decoration	org.kde.WaylandDecoration.QGnomePlatform-decoration		5.15-23.08	flathub	system
-Okular	org.kde.okular	23.08.4	stable	fedora	system
+Okular	org.kde.okular	23.08.5	stable	fedora	system
 Thunderbird	org.mozilla.Thunderbird		stable	fedora	system
 ONLYOFFICE	org.onlyoffice.desktopeditors	8.0.1	stable	flathub	system
-John Preston	org.telegram.desktop	4.15.1	stable	flathub	system
-Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.42.5	stable	flathub	system
+John Preston	org.telegram.desktop	4.15.2	stable	flathub	system
+Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.44.0	stable	flathub	system
 VLC	org.videolan.VLC	3.0.20	stable	flathub	system
 WezTerm	org.wezfurlong.wezterm	20240203-110809-5046fc22	stable	flathub	system
-zoom.us	us.zoom.Zoom	5.17.5.2543	stable	flathub	system
+zoom.us	us.zoom.Zoom	5.17.11.3835	stable	flathub	system

@@ -1,13 +1,10 @@
 8bit Solutions LLC	com.bitwarden.desktop	2024.3.0	stable	flathub	system
-Discord Inc.	com.discordapp.Discord	0.0.47	stable	flathub	system
 JGraph	com.jgraph.drawio.desktop	24.1.0	stable	flathub	system
 Rick van Lieshout	com.mastermindzh.tidal-hifi	5.9.0	stable	flathub	system
-Microsoft Corporation	com.microsoft.Edge	123.0.2420.53-1	stable	flathub	system
-Stremio	com.stremio.Stremio	4.4.165	stable	flathub	system
+Microsoft Corporation	com.microsoft.Edge	123.0.2420.65-1	stable	flathub	system
+Stremio	com.stremio.Stremio	4.4.168	stable	flathub	system
 GitHub Desktop	io.github.shiftey.Desktop	3.3.6-linux3	stable	flathub	system
 Neovim	io.neovim.nvim	0.9.5	stable	flathub	system
-Blender	org.blender.Blender	4.0.2	stable	flathub	system
-Codecs	org.blender.Blender.Codecs		stable	flathub	system
 Fedora KDE 5 Platform	org.fedoraproject.KDE5Platform	39	f39	fedora	system
 Fedora Platform	org.fedoraproject.Platform	39	f39	fedora	system
 Freedesktop Platform	org.freedesktop.Platform	22.08.23	22.08	flathub	system
@@ -44,5 +41,4 @@ ONLYOFFICE	org.onlyoffice.desktopeditors	8.0.1	stable	flathub	system
 John Preston	org.telegram.desktop	4.15.2	stable	flathub	system
 Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.44.0	stable	flathub	system
 VLC	org.videolan.VLC	3.0.20	stable	flathub	system
-WezTerm	org.wezfurlong.wezterm	20240203-110809-5046fc22	stable	flathub	system
 zoom.us	us.zoom.Zoom	5.17.11.3835	stable	flathub	system

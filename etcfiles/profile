@@ -81,7 +81,7 @@ then
 fi
 
 ### Default apps
-export TERMINAL=warp-terminal
+export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less

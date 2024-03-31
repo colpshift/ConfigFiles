@@ -1819,7 +1819,6 @@ freeglut-devel-3.4.0-7.fc39.x86_64
 qt5-qtbase-gui-5.15.12-5.fc39.x86_64
 ibus-gtk4-1.5.29-1.fc39.x86_64
 thermald-2.5.6-1.fc39.x86_64
-skopeo-1.14.2-1.fc39.x86_64
 rav1e-libs-0.7.1-1.fc39.x86_64
 lsd-1.0.0-3.fc39.x86_64
 dnsmasq-2.90-1.fc39.x86_64
@@ -1830,9 +1829,6 @@ samba-common-4.19.5-1.fc39.noarch
 samba-client-libs-4.19.5-1.fc39.x86_64
 libwbclient-4.19.5-1.fc39.x86_64
 samba-common-libs-4.19.5-1.fc39.x86_64
-libdnf-0.73.0-1.fc39.x86_64
-python3-libdnf-0.73.0-1.fc39.x86_64
-python3-hawkey-0.73.0-1.fc39.x86_64
 libsmbclient-4.19.5-1.fc39.x86_64
 passt-0^20240220.g1e6f92b-1.fc39.x86_64
 passt-selinux-0^20240220.g1e6f92b-1.fc39.noarch
@@ -1840,9 +1836,6 @@ oneVPL-intel-gpu-24.1.3-1.fc39.x86_64
 libvpl-2.10.2-1.fc39.x86_64
 libmediainfo-24.01-1.fc39.x86_64
 gvisor-tap-vsock-gvforwarder-0.7.3-1.fc39.x86_64
-dnf-data-4.19.0-1.fc39.noarch
-python3-dnf-4.19.0-1.fc39.noarch
-dnf-4.19.0-1.fc39.noarch
 conmon-2.1.10-1.fc39.x86_64
 qt6-qttranslations-6.6.2-1.fc39.noarch
 qt6-qtbase-common-6.6.2-1.fc39.noarch
@@ -1857,7 +1850,6 @@ gstreamer1-plugins-good-extras-1.22.9-3.fc39.x86_64
 gstreamer1-plugins-good-gtk-1.22.9-3.fc39.x86_64
 gstreamer1-plugins-good-qt-1.22.9-3.fc39.x86_64
 podman-4.9.3-1.fc39.x86_64
-yum-4.19.0-1.fc39.noarch
 mediainfo-24.01-1.fc39.x86_64
 samba-client-4.19.5-1.fc39.x86_64
 qt6-srpm-macros-6.6.2-1.fc39.noarch
@@ -2328,7 +2320,6 @@ cairo-gobject-devel-1.18.0-1.fc39.x86_64
 gtk3-devel-3.24.41-1.fc39.x86_64
 glib-1.2.10-70.fc39.x86_64
 glib-devel-1.2.10-70.fc39.x86_64
-wezterm-20240203_110809_5046fc22-1.fedora39.x86_64
 kitty-kitten-0.33.1-1.fc39.x86_64
 kitty-shell-integration-0.33.1-1.fc39.noarch
 kitty-terminfo-0.33.1-1.fc39.noarch
@@ -2376,3 +2367,15 @@ starship-1.18.2-1.fc39.x86_64
 speexdsp-1.2.1-5.fc39.x86_64
 pulseaudio-16.1-5.fc39.x86_64
 pulseaudio-module-bluetooth-16.1-5.fc39.x86_64
+rambox-2.3.1-1.x86_64
+libdnf-0.73.1-1.fc39.x86_64
+python3-libdnf-0.73.1-1.fc39.x86_64
+python3-hawkey-0.73.1-1.fc39.x86_64
+dnf-data-4.19.2-1.fc39.noarch
+python3-dnf-4.19.2-1.fc39.noarch
+dnf-4.19.2-1.fc39.noarch
+yum-4.19.2-1.fc39.noarch
+skopeo-1.15.0-1.fc39.x86_64
+python3-userpath-1.9.2-1.fc39.noarch
+python3-platformdirs-3.9.1-2.fc39.noarch
+pipx-1.4.3-1.fc39.noarch

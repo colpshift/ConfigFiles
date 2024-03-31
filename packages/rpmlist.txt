@@ -2379,3 +2379,4 @@ skopeo-1.15.0-1.fc39.x86_64
 python3-userpath-1.9.2-1.fc39.noarch
 python3-platformdirs-3.9.1-2.fc39.noarch
 pipx-1.4.3-1.fc39.noarch
+ufw-0.35-30.fc39.noarch

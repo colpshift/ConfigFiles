@@ -1,4 +1,2 @@
-stylua v0.17.1:
-    stylua
-tree-sitter-cli v0.20.8:
-    tree-sitter
+du-dust v0.8.6:
+    dust

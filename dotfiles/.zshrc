@@ -100,13 +100,12 @@ alias gitb='git commit -S -m 'backup' && git push'
 # alias paci='/home/colps/.scripts/fzf_paru_install.sh'
 # alias pacr='/home/colps/.scripts/fzf_paru_remove.sh'
 alias cls='clear'
-alias genie='/home/colps/.src/shell-genie/bin/shell-genie ask'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
 alias neofetch='clear && neofetch --color_blocks off'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
-alias brave='flatpak run com.brave.Browser'
+alias please='shell-genie ask'
 
 ### Theming section
 autoload -U compinit colors zcalc
@@ -174,8 +173,8 @@ source $HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh
 source $HOME/.src/forgit/forgit.plugin.zsh
 
 ### Zsh plugins
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # bind UP and DOWN arrow keys to history substring search

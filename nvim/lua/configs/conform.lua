@@ -5,6 +5,7 @@ local options = {
     html = { "prettier" },
     sh = { "shfmt" },
     javascript = { "prettier" },
+    markdown = { "prettier" },
   },
 
   format_on_save = {

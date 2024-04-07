@@ -151,8 +151,6 @@ boost-regex.x86_64                                   1.81.0-8.fc39              
 boost-system.x86_64                                  1.81.0-8.fc39                       @fedora-modular                                                  
 boost-thread.x86_64                                  1.81.0-8.fc39                       @fedora-modular                                                  
 braille-printer-app.x86_64                           1:2.0~b0^386eea385f-4.fc39          @fedora-modular                                                  
-brave-browser.x86_64                                 1.64.116-1                          @brave-browser                                                   
-brave-keyring.noarch                                 1.14-1                              @brave-browser                                                   
 brcmfmac-firmware.noarch                             20240312-1.fc39                     @updates                                                         
 brightnessctl.x86_64                                 0.5.1-11.fc39                       @updates                                                         
 brlapi.x86_64                                        0.8.5-9.fc39                        @updates                                                         
@@ -184,6 +182,8 @@ checkpolicy.x86_64                                   3.5-3.fc39                 
 cheese.x86_64                                        2:44.1-1.fc39                       @fedora-modular                                                  
 cheese-libs.x86_64                                   2:44.1-1.fc39                       @fedora-modular                                                  
 chkconfig.x86_64                                     1.26-1.fc39                         @updates                                                         
+chromium.x86_64                                      123.0.6312.105-1.fc39               @updates                                                         
+chromium-common.x86_64                               123.0.6312.105-1.fc39               @updates                                                         
 chrony.x86_64                                        4.5-1.fc39                          @updates                                                         
 cifs-utils.x86_64                                    7.0-2.fc39                          @fedora-modular                                                  
 cifs-utils-info.x86_64                               7.0-2.fc39                          @fedora-modular                                                  
@@ -302,7 +302,7 @@ e2fsprogs.x86_64                                     1.47.0-2.fc39              
 e2fsprogs-libs.x86_64                                1.47.0-2.fc39                       @fedora-modular                                                  
 ed.x86_64                                            1.19-4.fc39                         @fedora-modular                                                  
 editorconfig-libs.x86_64                             0.12.6-2.fc39                       @fedora-modular                                                  
-edk2-ovmf.noarch                                     20240214-2.fc39                     @updates                                                         
+edk2-ovmf.noarch                                     20240214-7.fc39                     @updates                                                         
 efi-filesystem.noarch                                5-9.fc39                            @fedora-modular                                                  
 efi-srpm-macros.noarch                               5-9.fc39                            @fedora-modular                                                  
 efibootmgr.x86_64                                    18-4.fc39                           @fedora-modular                                                  
@@ -416,11 +416,11 @@ fuse-libs.x86_64                                     2.9.9-17.fc39              
 fuse-overlayfs.x86_64                                1.13-1.fc39                         @updates                                                         
 fuse3.x86_64                                         3.16.1-1.fc39                       @fedora-modular                                                  
 fuse3-libs.x86_64                                    3.16.1-1.fc39                       @fedora-modular                                                  
-fwupd.x86_64                                         1.9.15-1.fc39                       @updates                                                         
+fwupd.x86_64                                         1.9.16-1.fc39                       @updates                                                         
 fwupd-efi.x86_64                                     1.4-1.fc38                          @anaconda                                                        
-fwupd-plugin-flashrom.x86_64                         1.9.15-1.fc39                       @updates                                                         
-fwupd-plugin-modem-manager.x86_64                    1.9.15-1.fc39                       @updates                                                         
-fwupd-plugin-uefi-capsule-data.x86_64                1.9.15-1.fc39                       @updates                                                         
+fwupd-plugin-flashrom.x86_64                         1.9.16-1.fc39                       @updates                                                         
+fwupd-plugin-modem-manager.x86_64                    1.9.16-1.fc39                       @updates                                                         
+fwupd-plugin-uefi-capsule-data.x86_64                1.9.16-1.fc39                       @updates                                                         
 fzf.x86_64                                           0.44.1-1.fc39                       @updates                                                         
 game-music-emu.x86_64                                0.6.3-12.fc39                       @fedora-modular                                                  
 gamemode.x86_64                                      1.7-3.fc39                          @fedora-modular                                                  
@@ -552,7 +552,7 @@ gobject-introspection.x86_64                         1.78.1-1.fc39              
 golang.x86_64                                        1.21.9-1.fc39                       @updates                                                         
 golang-bin.x86_64                                    1.21.9-1.fc39                       @updates                                                         
 golang-src.noarch                                    1.21.9-1.fc39                       @updates                                                         
-google-chrome-stable.x86_64                          123.0.6312.105-1                    @google-chrome                                                   
+google-crc32c.x86_64                                 1.1.2-7.fc39                        @fedora                                                          
 google-droid-sans-fonts.noarch                       20200215-17.fc39                    @fedora-modular                                                  
 google-noto-color-emoji-fonts.noarch                 20220916-7.fc39                     @fedora-modular                                                  
 google-noto-emoji-fonts.noarch                       20220916-7.fc39                     @fedora                                                          
@@ -686,8 +686,8 @@ hypervfcopyd.x86_64                                  0-0.42.20220731git.fc39    
 hypervkvpd.x86_64                                    0-0.42.20220731git.fc39             @fedora-modular                                                  
 hypervvssd.x86_64                                    0-0.42.20220731git.fc39             @fedora-modular                                                  
 hyphen.x86_64                                        2.8.8-21.fc39                       @fedora-modular                                                  
-hyprcursor.x86_64                                    0.1.5-1.fc39                        @copr:copr.fedorainfracloud.org:solopasha:hyprland               
-hyprland.x86_64                                      0.38.0-1.fc39                       @copr:copr.fedorainfracloud.org:solopasha:hyprland               
+hyprcursor.x86_64                                    0.1.6-1.fc39                        @copr:copr.fedorainfracloud.org:solopasha:hyprland               
+hyprland.x86_64                                      0.38.1-1.fc39                       @copr:copr.fedorainfracloud.org:solopasha:hyprland               
 hyprlang.x86_64                                      0.5.0-1.fc39                        @copr:copr.fedorainfracloud.org:solopasha:hyprland               
 hyprpicker.x86_64                                    0.2.0-2.fc39                        @copr:copr.fedorainfracloud.org:solopasha:hyprland               
 ibus.x86_64                                          1.5.29-1.fc39                       @updates                                                         
@@ -817,6 +817,7 @@ libX11.x86_64                                        1.8.7-1.fc39               
 libX11-common.noarch                                 1.8.7-1.fc39                        @fedora-modular                                                  
 libX11-devel.x86_64                                  1.8.7-1.fc39                        @fedora-modular                                                  
 libX11-xcb.x86_64                                    1.8.7-1.fc39                        @fedora-modular                                                  
+libXNVCtrl.x86_64                                    435.17-10.fc39                      @fedora                                                          
 libXScrnSaver.x86_64                                 1.2.3-13.fc39                       @fedora-modular                                                  
 libXScrnSaver-devel.x86_64                           1.2.3-13.fc39                       @fedora-modular                                                  
 libXau.x86_64                                        1.0.11-3.fc39                       @fedora-modular                                                  
@@ -969,7 +970,6 @@ libei.x86_64                                         1.2.1-1.fc39               
 libeis.x86_64                                        1.2.1-1.fc39                        @updates                                                         
 libepoxy.x86_64                                      1.5.10-4.fc39                       @fedora-modular                                                  
 libepoxy-devel.x86_64                                1.5.10-4.fc39                       @fedora                                                          
-liberation-fonts.noarch                              1:2.1.5-7.fc39                      @fedora-modular                                                  
 liberation-fonts-common.noarch                       1:2.1.5-7.fc39                      @fedora-modular                                                  
 liberation-mono-fonts.noarch                         1:2.1.5-7.fc39                      @fedora-modular                                                  
 liberation-sans-fonts.noarch                         1:2.1.5-7.fc39                      @fedora-modular                                                  
@@ -1068,7 +1068,6 @@ libmbim-utils.x86_64                                 1.28.4-2.fc39              
 libmd.x86_64                                         1.1.0-2.fc39                        @fedora-modular                                                  
 libmediaart.x86_64                                   1.9.6-4.fc39                        @fedora-modular                                                  
 libmediainfo.x86_64                                  24.01-1.fc39                        @updates                                                         
-libmetalink.x86_64                                   0.1.3-32.fc39                       @fedora-modular                                                  
 libmicrodns.x86_64                                   0.2.0-7.fc39                        @fedora-modular                                                  
 libmms.x86_64                                        0.6.4-24.fc39                       @fedora                                                          
 libmnl.x86_64                                        1.0.5-3.fc39                        @fedora-modular                                                  
@@ -1313,7 +1312,7 @@ libxkbfile.x86_64                                    1.1.1-3.fc39               
 libxklavier.x86_64                                   5.4-25.fc39                         @updates                                                         
 libxml2.x86_64                                       2.10.4-3.fc39                       @fedora-modular                                                  
 libxml2-devel.x86_64                                 2.10.4-3.fc39                       @fedora-modular                                                  
-libxmlb.x86_64                                       0.3.15-1.fc39                       @updates                                                         
+libxmlb.x86_64                                       0.3.17-1.fc39                       @updates                                                         
 libxshmfence.x86_64                                  1.3-13.fc39                         @fedora-modular                                                  
 libxslt.x86_64                                       1.1.39-1.fc39                       @updates                                                         
 libyaml.x86_64                                       0.2.5-12.fc39                       @fedora-modular                                                  
@@ -1397,6 +1396,7 @@ mesa-libxatracker.x86_64                             23.3.6-1.fc39              
 mesa-va-drivers.x86_64                               23.3.6-1.fc39                       @updates                                                         
 mesa-vulkan-drivers.x86_64                           23.3.6-1.fc39                       @updates                                                         
 microcode_ctl.x86_64                                 2:2.1-58.fc39                       @updates                                                         
+minizip-compat.x86_64                                1.2.13-4.fc39                       @fedora                                                          
 mkpasswd.x86_64                                      5.5.18-1.fc39                       @fedora-modular                                                  
 mobile-broadband-provider-info.noarch                20230416-2.fc39                     @fedora-modular                                                  
 mod_dnssd.x86_64                                     0.6-29.fc39                         @fedora-modular                                                  
@@ -1485,6 +1485,7 @@ nxpwireless-firmware.noarch                          20240312-1.fc39            
 ocaml-srpm-macros.noarch                             8-2.fc39                            @fedora-modular                                                  
 ocl-icd.x86_64                                       2.3.2-2.fc39                        @fedora-modular                                                  
 oneVPL-intel-gpu.x86_64                              24.1.3-1.fc39                       @updates                                                         
+onefetch.x86_64                                      2.17.0-1.fc39                       @copr:copr.fedorainfracloud.org:varlad:onefetch                  
 oniguruma.x86_64                                     6.9.9-1.fc39                        @updates                                                         
 open-sans-fonts.noarch                               1.10-19.fc39                        @fedora-modular                                                  
 open-vm-tools.x86_64                                 12.3.5-1.fc39                       @updates                                                         
@@ -2272,7 +2273,6 @@ webkit2gtk4.1.x86_64                                 2.44.0-2.fc39              
 webkitgtk6.0.x86_64                                  2.44.0-2.fc39                       @updates                                                         
 webp-pixbuf-loader.x86_64                            0.2.7-1.fc39                        @updates                                                         
 webrtc-audio-processing.x86_64                       0.3.1-11.fc39                       @fedora-modular                                                  
-wget.x86_64                                          1.21.4-1.fc39                       @updates                                                         
 which.x86_64                                         2.21-40.fc39                        @fedora-modular                                                  
 whois.x86_64                                         5.5.18-1.fc39                       @fedora-modular                                                  
 whois-nls.noarch                                     5.5.18-1.fc39                       @fedora-modular                                                  
@@ -2372,5 +2372,7 @@ zlib-devel.x86_64                                    1.2.13-4.fc39              
 zram-generator.x86_64                                1.1.2-8.fc39                        @fedora-modular                                                  
 zram-generator-defaults.noarch                       1.1.2-8.fc39                        @fedora-modular                                                  
 zsh.x86_64                                           5.9-9.fc39                          @updates                                                         
+zsh-autosuggestions.noarch                           0.7.0-6.fc39                        @fedora                                                          
+zsh-syntax-highlighting.noarch                       0.8.0-1.fc39                        @updates                                                         
 zstd.x86_64                                          1.5.6-1.fc39                        @updates                                                         
 zvbi.x86_64                                          0.2.35-21.fc39                      @fedora-modular                                                  

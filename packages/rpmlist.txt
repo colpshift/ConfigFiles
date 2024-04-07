@@ -335,7 +335,6 @@ e2fsprogs-1.47.0-2.fc39.x86_64
 mujs-1.3.2-3.fc39.x86_64
 sqlite-3.42.0-7.fc39.x86_64
 exempi-2.6.4-2.fc39.x86_64
-libmetalink-0.1.3-32.fc39.x86_64
 libcomps-0.1.20-1.fc39.x86_64
 libxcrypt-compat-4.4.36-2.fc39.x86_64
 boost-regex-1.81.0-8.fc39.x86_64
@@ -1329,7 +1328,6 @@ tree-2.1.0-4.fc39.x86_64
 livesys-scripts-0.5.0-1.fc39.noarch
 rpmfusion-free-release-39-1.noarch
 rpmfusion-nonfree-release-39-1.noarch
-liberation-fonts-2.1.5-7.fc39.noarch
 jomolhari-fonts-0.003-39.fc39.noarch
 lohit-assamese-fonts-2.91.5-20.fc39.noarch
 lohit-bengali-fonts-2.91.5-19.fc39.noarch
@@ -1552,7 +1550,6 @@ qt-settings-39.1-1.fc39.noarch
 python3-pillow-10.2.0-1.fc39.x86_64
 publicsuffix-list-dafsa-20240107-1.fc39.noarch
 nodejs-bash-language-server-5.1.1-1.fc39.noarch
-libxmlb-0.3.15-1.fc39.x86_64
 grubby-8.40-73.fc39.x86_64
 c-ares-1.25.0-1.fc39.x86_64
 SDL2_image-2.8.2-1.fc39.x86_64
@@ -1644,7 +1641,6 @@ firewalld-2.0.3-1.fc39.noarch
 pcsc-lite-ccid-1.5.5-1.fc39.x86_64
 tigervnc-server-minimal-1.13.1-11.fc39.x86_64
 xorg-x11-server-Xorg-1.20.14-30.fc39.x86_64
-zsh-5.9-9.fc39.x86_64
 gstreamer1-plugins-bad-free-extras-1.22.9-1.fc39.x86_64
 gstreamer1-plugins-bad-free-fluidsynth-1.22.9-1.fc39.x86_64
 gstreamer1-plugins-bad-free-wildmidi-1.22.9-1.fc39.x86_64
@@ -1969,7 +1965,6 @@ elfutils-libs-0.191-2.fc39.x86_64
 elfutils-debuginfod-client-0.191-2.fc39.x86_64
 elfutils-0.191-2.fc39.x86_64
 elfutils-libelf-devel-0.191-2.fc39.x86_64
-wget-1.21.4-1.fc39.x86_64
 pangomm-2.46.4-1.fc39.x86_64
 alsa-sof-firmware-2023.12.1-1.fc39.noarch
 python3.11-libs-3.11.8-2.fc39.x86_64
@@ -1989,16 +1984,11 @@ grub2-efi-x64-cdboot-2.06-118.fc39.x86_64
 grub2-tools-efi-2.06-118.fc39.x86_64
 unrar-7.0.7-1.fc39.x86_64
 libusb1-1.0.27-1.fc39.x86_64
-fwupd-plugin-flashrom-1.9.15-1.fc39.x86_64
-fwupd-plugin-modem-manager-1.9.15-1.fc39.x86_64
-fwupd-plugin-uefi-capsule-data-1.9.15-1.fc39.x86_64
-fwupd-1.9.15-1.fc39.x86_64
 libgtop2-2.41.3-1.fc39.x86_64
 gnome-control-center-filesystem-45.3-1.fc39.noarch
 gnome-control-center-45.3-1.fc39.x86_64
 redhat-rpm-config-266-1.fc39.noarch
 libmanette-0.2.7-1.fc39.x86_64
-edk2-ovmf-20240214-2.fc39.noarch
 distribution-gpg-keys-1.102-1.fc39.noarch
 device-mapper-persistent-data-1.0.12-1.fc39.x86_64
 unbound-libs-1.19.1-4.fc39.x86_64
@@ -2207,7 +2197,6 @@ google-noto-sans-cjk-fonts-2.004-5.fc39.noarch
 google-noto-emoji-fonts-20220916-7.fc39.noarch
 jetbrains-mono-fonts-2.304-3.fc39.noarch
 hyprlang-0.5.0-1.fc39.x86_64
-hyprcursor-0.1.5-1.fc39.x86_64
 wlr-randr-0.4.1-1.fc39.x86_64
 tomlplusplus-3.4.0-1.fc39.x86_64
 wofi-1.3-3.fc39.x86_64
@@ -2317,7 +2306,6 @@ kernel-devel-6.7.11-200.fc39.x86_64
 libzstd-devel-1.5.6-1.fc39.x86_64
 kernel-6.7.11-200.fc39.x86_64
 zstd-1.5.6-1.fc39.x86_64
-hyprland-0.38.0-1.fc39.x86_64
 libblockdev-utils-3.1.1-1.fc39.x86_64
 at-spi2-core-2.50.2-1.fc39.x86_64
 atk-2.50.2-1.fc39.x86_64
@@ -2340,7 +2328,6 @@ libblockdev-part-3.1.1-1.fc39.x86_64
 libblockdev-swap-3.1.1-1.fc39.x86_64
 folks-0.15.9-1.fc39.x86_64
 expat-2.6.2-1.fc39.x86_64
-google-chrome-stable-123.0.6312.105-1.x86_64
 gnome-contacts-45.1-1.fc39.x86_64
 libblockdev-plugins-all-3.1.1-1.fc39.x86_64
 at-spi2-atk-devel-2.50.2-1.fc39.x86_64
@@ -2358,8 +2345,6 @@ bolt-0.9.7-1.fc39.x86_64
 mediawriter-5.1.0-1.fc39.x86_64
 warp-terminal-v0.2024.04.02.08.02.stable_01-1.x86_64
 code-1.88.0-1712152206.el8.x86_64
-brave-keyring-1.14-1.noarch
-brave-browser-1.64.116-1.x86_64
 gpg-pubkey-c2d4e821-5bc51032
 nodejs-docs-20.12.0-1.fc39.noarch
 nodejs-libs-20.12.0-1.fc39.x86_64
@@ -2395,3 +2380,21 @@ gnome-icon-theme-3.12.0-20.fc39.noarch
 ampache_browser-1.0.4-3.fc39.x86_64
 audacious-4.3.1-2.fc39.x86_64
 audacious-plugins-4.3.1-3.fc39.x86_64
+libXNVCtrl-435.17-10.fc39.x86_64
+minizip-compat-1.2.13-4.fc39.x86_64
+google-crc32c-1.1.2-7.fc39.x86_64
+libxmlb-0.3.17-1.fc39.x86_64
+fwupd-plugin-flashrom-1.9.16-1.fc39.x86_64
+fwupd-plugin-modem-manager-1.9.16-1.fc39.x86_64
+fwupd-plugin-uefi-capsule-data-1.9.16-1.fc39.x86_64
+fwupd-1.9.16-1.fc39.x86_64
+chromium-common-123.0.6312.105-1.fc39.x86_64
+hyprcursor-0.1.6-1.fc39.x86_64
+hyprland-0.38.1-1.fc39.x86_64
+chromium-123.0.6312.105-1.fc39.x86_64
+edk2-ovmf-20240214-7.fc39.noarch
+zsh-syntax-highlighting-0.8.0-1.fc39.noarch
+zsh-autosuggestions-0.7.0-6.fc39.noarch
+zsh-5.9-9.fc39.x86_64
+gpg-pubkey-8269a02a-61bf8d12
+onefetch-2.17.0-1.fc39.x86_64

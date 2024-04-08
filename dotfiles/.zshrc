@@ -50,14 +50,14 @@ colors
 bindkey -e
 bindkey '^[[7~' beginning-of-line                   # Home key
 bindkey '^[[H' beginning-of-line                    # Home key
-if [[ "${terminfo[khome]}" != "" ]]; then
-  bindkey "${terminfo[khome]}" beginning-of-line    # [Home] - Go to beginning of line
-fi
+# if [[ "${terminfo[khome]}" != "" ]]; then
+#   bindkey "${terminfo[khome]}" beginning-of-line    # [Home] - Go to beginning of line
+# fi
 bindkey '^[[8~' end-of-line                         # End key
 bindkey '^[[F' end-of-line                          # End key
-if [[ "${terminfo[kend]}" != "" ]]; then
-  bindkey "${terminfo[kend]}" end-of-line           # [End] - Go to end of line
-fi
+# if [[ "${terminfo[kend]}" != "" ]]; then
+#   bindkey "${terminfo[kend]}" end-of-line           # [End] - Go to end of line
+# fi
 bindkey '^[[2~' overwrite-mode                      # Insert key
 bindkey '^[[3~' delete-char                         # Delete key
 bindkey '^[[C'  forward-char                        # Right key
@@ -94,7 +94,8 @@ alias cat='bat --theme Nord'
 alias bat='bat --theme Nord'
 # alias gitu='git add . && git commit -S && git push'
 # alias gitb='git add . && git commit -S -m 'backup' && git push'
-alias gitb='git commit -S -m 'backup' && git push'
+alias gitb="git commit -S -m 'backup' && git push"
+alias gitinfo='onefetch'
 # alias gitl='git log --graph'
 # alias pacu='/home/colps/.scripts/fzf_paru_update.sh'
 # alias paci='/home/colps/.scripts/fzf_paru_install.sh'
@@ -138,7 +139,7 @@ unset MANPATH
 fzf-man-widget() {
   batman="man {1} | col -bx | bat --language=man --plain --color always --theme=\"Monokai Extended\""
    man -k . | sort \
-   | awk -v cyan=$(tput setaf 6) -v blue=$(tput setaf 4) -v res=$(tput sgr0) -v bld=$(tput bold) '{ $1=cyan bld $1; $2=res blue;} 1' \
+   | awk -v cyan="$(tput setaf 6)" -v blue="$(tput setaf 4)" -v res="$(tput sgr0)" -v bld="$(tput bold)" "{ $1=cyan bld $1; $2=res blue;} 1" \
    | fzf  \
       -q "$1" \
       --ansi \
@@ -156,7 +157,7 @@ bindkey '^h' fzf-man-widget
 zle -N fzf-man-widget
 
 ### fzf-tab -'Tab'
-source $HOME/.src/fzf-tab/fzf-tab.zsh
+source "$HOME/.src/fzf-tab/fzf-tab.plugin.zsh"
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
@@ -164,18 +165,18 @@ zstyle ':completion:*:descriptions' format '[%d]'
 # set list-colors to enable filename colorizing
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # preview directory's content with exa when completing cd
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview "exa -1 --color=always $realpath"
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
 ### fzf forgit - 'ga','glo','gi','gd'
-source $HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh
-source $HOME/.src/forgit/forgit.plugin.zsh
+source "$HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh"
+source "$HOME/.src/forgit/forgit.plugin.zsh"
 
 ### Zsh plugins
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "/usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
+source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
@@ -194,10 +195,9 @@ eval "$(starship init zsh)"
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
-# Default apps
+### Default apps
+export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
-export TERMINAL=kitty
 export PAGER=less
-export BROWSER='flatpak run com.microsoft.Edge'
-
+export BROWSER=chromium-browser

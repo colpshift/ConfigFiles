@@ -6,6 +6,7 @@ local options = {
     sh = { "shfmt" },
     javascript = { "prettier" },
     markdown = { "prettier" },
+    python = { "black" },
   },
 
   format_on_save = {

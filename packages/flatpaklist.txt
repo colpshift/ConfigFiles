@@ -1,4 +1,4 @@
-8bit Solutions LLC	com.bitwarden.desktop	2024.3.0	stable	flathub	system
+8bit Solutions LLC	com.bitwarden.desktop	2024.3.2	stable	flathub	system
 Discord Inc.	com.discordapp.Discord	0.0.47	stable	flathub	system
 JGraph	com.jgraph.drawio.desktop	24.1.0	stable	flathub	system
 Rick van Lieshout	com.mastermindzh.tidal-hifi	5.9.0	stable	flathub	system

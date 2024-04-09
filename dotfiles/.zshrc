@@ -200,4 +200,4 @@ export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export BROWSER=chromium-browser
+export BROWSER=google-chrome-stable

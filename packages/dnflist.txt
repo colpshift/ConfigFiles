@@ -175,6 +175,7 @@ cairomm.x86_64                                       1.14.5-1.fc39              
 capstone.x86_64                                      4.0.2-15.fc39                       @fedora-modular                                                  
 cargo.x86_64                                         1.77.0-1.fc39                       @updates                                                         
 catatonit.x86_64                                     0.1.7-18.fc39                       @fedora-modular                                                  
+catimg.x86_64                                        2.7.0-9.fc39                        @fedora                                                          
 cava.x86_64                                          0.7.2-14.fc39                       @fedora                                                          
 cdbs.noarch                                          0.4.166-2.fc39                      @fedora-modular                                                  
 cdparanoia-libs.x86_64                               10.2-42.fc39                        @fedora-modular                                                  
@@ -182,8 +183,6 @@ checkpolicy.x86_64                                   3.5-3.fc39                 
 cheese.x86_64                                        2:44.1-1.fc39                       @fedora-modular                                                  
 cheese-libs.x86_64                                   2:44.1-1.fc39                       @fedora-modular                                                  
 chkconfig.x86_64                                     1.26-1.fc39                         @updates                                                         
-chromium.x86_64                                      123.0.6312.105-1.fc39               @updates                                                         
-chromium-common.x86_64                               123.0.6312.105-1.fc39               @updates                                                         
 chrony.x86_64                                        4.5-1.fc39                          @updates                                                         
 cifs-utils.x86_64                                    7.0-2.fc39                          @fedora-modular                                                  
 cifs-utils-info.x86_64                               7.0-2.fc39                          @fedora-modular                                                  
@@ -525,7 +524,7 @@ gnome-settings-daemon.x86_64                         45.1-1.fc39                
 gnome-shell.x86_64                                   45.5-1.fc39                         @updates                                                         
 gnome-shell-extension-apps-menu.noarch               45.2-1.fc39                         @updates                                                         
 gnome-shell-extension-background-logo.noarch         45~beta-1.fc39                      @fedora-modular                                                  
-gnome-shell-extension-bubblemail.noarch              21.1-1.fc39                         @updates                                                         
+gnome-shell-extension-bubblemail.noarch              23-1.fc39                           @updates                                                         
 gnome-shell-extension-common.noarch                  45.2-1.fc39                         @updates                                                         
 gnome-shell-extension-launch-new-instance.noarch     45.2-1.fc39                         @updates                                                         
 gnome-shell-extension-places-menu.noarch             45.2-1.fc39                         @updates                                                         
@@ -552,7 +551,7 @@ gobject-introspection.x86_64                         1.78.1-1.fc39              
 golang.x86_64                                        1.21.9-1.fc39                       @updates                                                         
 golang-bin.x86_64                                    1.21.9-1.fc39                       @updates                                                         
 golang-src.noarch                                    1.21.9-1.fc39                       @updates                                                         
-google-crc32c.x86_64                                 1.1.2-7.fc39                        @fedora                                                          
+google-chrome-stable.x86_64                          123.0.6312.105-1                    @@commandline                                                    
 google-droid-sans-fonts.noarch                       20200215-17.fc39                    @fedora-modular                                                  
 google-noto-color-emoji-fonts.noarch                 20220916-7.fc39                     @fedora-modular                                                  
 google-noto-emoji-fonts.noarch                       20220916-7.fc39                     @fedora                                                          
@@ -817,7 +816,6 @@ libX11.x86_64                                        1.8.7-1.fc39               
 libX11-common.noarch                                 1.8.7-1.fc39                        @fedora-modular                                                  
 libX11-devel.x86_64                                  1.8.7-1.fc39                        @fedora-modular                                                  
 libX11-xcb.x86_64                                    1.8.7-1.fc39                        @fedora-modular                                                  
-libXNVCtrl.x86_64                                    435.17-10.fc39                      @fedora                                                          
 libXScrnSaver.x86_64                                 1.2.3-13.fc39                       @fedora-modular                                                  
 libXScrnSaver-devel.x86_64                           1.2.3-13.fc39                       @fedora-modular                                                  
 libXau.x86_64                                        1.0.11-3.fc39                       @fedora-modular                                                  
@@ -970,6 +968,7 @@ libei.x86_64                                         1.2.1-1.fc39               
 libeis.x86_64                                        1.2.1-1.fc39                        @updates                                                         
 libepoxy.x86_64                                      1.5.10-4.fc39                       @fedora-modular                                                  
 libepoxy-devel.x86_64                                1.5.10-4.fc39                       @fedora                                                          
+liberation-fonts.noarch                              1:2.1.5-7.fc39                      @fedora                                                          
 liberation-fonts-common.noarch                       1:2.1.5-7.fc39                      @fedora-modular                                                  
 liberation-mono-fonts.noarch                         1:2.1.5-7.fc39                      @fedora-modular                                                  
 liberation-sans-fonts.noarch                         1:2.1.5-7.fc39                      @fedora-modular                                                  
@@ -1068,6 +1067,7 @@ libmbim-utils.x86_64                                 1.28.4-2.fc39              
 libmd.x86_64                                         1.1.0-2.fc39                        @fedora-modular                                                  
 libmediaart.x86_64                                   1.9.6-4.fc39                        @fedora-modular                                                  
 libmediainfo.x86_64                                  24.01-1.fc39                        @updates                                                         
+libmetalink.x86_64                                   0.1.3-32.fc39                       @fedora                                                          
 libmicrodns.x86_64                                   0.2.0-7.fc39                        @fedora-modular                                                  
 libmms.x86_64                                        0.6.4-24.fc39                       @fedora                                                          
 libmnl.x86_64                                        1.0.5-3.fc39                        @fedora-modular                                                  
@@ -1396,7 +1396,6 @@ mesa-libxatracker.x86_64                             23.3.6-1.fc39              
 mesa-va-drivers.x86_64                               23.3.6-1.fc39                       @updates                                                         
 mesa-vulkan-drivers.x86_64                           23.3.6-1.fc39                       @updates                                                         
 microcode_ctl.x86_64                                 2:2.1-58.fc39                       @updates                                                         
-minizip-compat.x86_64                                1.2.13-4.fc39                       @fedora                                                          
 mkpasswd.x86_64                                      5.5.18-1.fc39                       @fedora-modular                                                  
 mobile-broadband-provider-info.noarch                20230416-2.fc39                     @fedora-modular                                                  
 mod_dnssd.x86_64                                     0.6-29.fc39                         @fedora-modular                                                  
@@ -1442,6 +1441,7 @@ ncurses-devel.x86_64                                 6.4-7.20230520.fc39.1      
 ncurses-libs.x86_64                                  6.4-7.20230520.fc39.1               @updates                                                         
 ndctl.x86_64                                         78-1.fc39                           @fedora-modular                                                  
 ndctl-libs.x86_64                                    78-1.fc39                           @fedora-modular                                                  
+neofetch.noarch                                      7.1.0-10.fc39                       @fedora                                                          
 neon.x86_64                                          0.32.5-2.fc39                       @fedora                                                          
 neovim.x86_64                                        0.9.5-2.fc39                        @updates                                                         
 net-snmp-libs.x86_64                                 1:5.9.4-5.fc39                      @updates                                                         
@@ -2241,11 +2241,11 @@ vapoursynth-devel.x86_64                             63-2.fc39                  
 vapoursynth-libs.x86_64                              63-2.fc39                           @fedora-modular                                                  
 vazirmatn-vf-fonts.noarch                            33.003-4.fc39                       @fedora-modular                                                  
 vid.stab.x86_64                                      1.1.1-1.fc39                        @fedora-modular                                                  
-vim-common.x86_64                                    2:9.1.181-1.fc39                    @updates                                                         
-vim-data.noarch                                      2:9.1.181-1.fc39                    @updates                                                         
-vim-enhanced.x86_64                                  2:9.1.181-1.fc39                    @updates                                                         
-vim-filesystem.noarch                                2:9.1.181-1.fc39                    @updates                                                         
-vim-minimal.x86_64                                   2:9.1.181-1.fc39                    @updates                                                         
+vim-common.x86_64                                    2:9.1.264-1.fc39                    @updates                                                         
+vim-data.noarch                                      2:9.1.264-1.fc39                    @updates                                                         
+vim-enhanced.x86_64                                  2:9.1.264-1.fc39                    @updates                                                         
+vim-filesystem.noarch                                2:9.1.264-1.fc39                    @updates                                                         
+vim-minimal.x86_64                                   2:9.1.264-1.fc39                    @updates                                                         
 virglrenderer.x86_64                                 0.10.4-4.20230104git88b9fe3b.fc39   @updates                                                         
 virtiofsd.x86_64                                     1.10.1-1.fc39                       @updates                                                         
 virtualbox-guest-additions.x86_64                    7.0.14-1.fc39                       @updates                                                         
@@ -2273,6 +2273,7 @@ webkit2gtk4.1.x86_64                                 2.44.0-2.fc39              
 webkitgtk6.0.x86_64                                  2.44.0-2.fc39                       @updates                                                         
 webp-pixbuf-loader.x86_64                            0.2.7-1.fc39                        @updates                                                         
 webrtc-audio-processing.x86_64                       0.3.1-11.fc39                       @fedora-modular                                                  
+wget.x86_64                                          1.21.4-1.fc39                       @updates                                                         
 which.x86_64                                         2.21-40.fc39                        @fedora-modular                                                  
 whois.x86_64                                         5.5.18-1.fc39                       @fedora-modular                                                  
 whois-nls.noarch                                     5.5.18-1.fc39                       @fedora-modular                                                  
@@ -2343,7 +2344,8 @@ xrandr.x86_64                                        1.5.2-3.fc39               
 xrdb.x86_64                                          1.2.2-1.fc39                        @fedora-modular                                                  
 xsel.x86_64                                          1.2.1-1.fc39                        @updates                                                         
 xvidcore.x86_64                                      1.3.7-10.fc39                       @fedora-modular                                                  
-xxd.x86_64                                           2:9.1.181-1.fc39                    @updates                                                         
+xwininfo.x86_64                                      1.1.5-7.fc39                        @fedora                                                          
+xxd.x86_64                                           2:9.1.264-1.fc39                    @updates                                                         
 xxhash-libs.x86_64                                   0.8.2-1.fc39                        @fedora-modular                                                  
 xz.x86_64                                            5.4.4-1.fc39                        @fedora-modular                                                  
 xz-devel.x86_64                                      5.4.4-1.fc39                        @fedora-modular                                                  

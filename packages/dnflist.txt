@@ -151,6 +151,8 @@ boost-regex.x86_64                                   1.81.0-8.fc39              
 boost-system.x86_64                                  1.81.0-8.fc39                       @fedora-modular                                                  
 boost-thread.x86_64                                  1.81.0-8.fc39                       @fedora-modular                                                  
 braille-printer-app.x86_64                           1:2.0~b0^386eea385f-4.fc39          @fedora-modular                                                  
+brave-browser.x86_64                                 1.64.116-1                          @brave-browser                                                   
+brave-keyring.noarch                                 1.14-1                              @brave-browser                                                   
 brcmfmac-firmware.noarch                             20240312-1.fc39                     @updates                                                         
 brightnessctl.x86_64                                 0.5.1-11.fc39                       @updates                                                         
 brlapi.x86_64                                        0.8.5-9.fc39                        @updates                                                         
@@ -315,7 +317,7 @@ elfutils-libs.x86_64                                 0.191-2.fc39               
 emacs-filesystem.noarch                              1:29.3-1.fc39                       @updates                                                         
 enchant2.x86_64                                      2.5.0-5.fc39                        @fedora-modular                                                  
 eog.x86_64                                           45.3-1.fc39                         @updates                                                         
-epiphany-runtime.x86_64                              1:45.2-1.fc39                       @updates                                                         
+epiphany-runtime.x86_64                              1:45.3-1.fc39                       @updates                                                         
 espeak-ng.x86_64                                     1.51.1-6.fc39                       @updates                                                         
 ethtool.x86_64                                       2:6.7-1.fc39                        @updates                                                         
 evdi.x86_64                                          1.12.0-1                            @System                                                          
@@ -685,7 +687,7 @@ hypervfcopyd.x86_64                                  0-0.42.20220731git.fc39    
 hypervkvpd.x86_64                                    0-0.42.20220731git.fc39             @fedora-modular                                                  
 hypervvssd.x86_64                                    0-0.42.20220731git.fc39             @fedora-modular                                                  
 hyphen.x86_64                                        2.8.8-21.fc39                       @fedora-modular                                                  
-hyprcursor.x86_64                                    0.1.6-1.fc39                        @copr:copr.fedorainfracloud.org:solopasha:hyprland               
+hyprcursor.x86_64                                    0.1.7-1.fc39                        @copr:copr.fedorainfracloud.org:solopasha:hyprland               
 hyprland.x86_64                                      0.38.1-1.fc39                       @copr:copr.fedorainfracloud.org:solopasha:hyprland               
 hyprlang.x86_64                                      0.5.0-1.fc39                        @copr:copr.fedorainfracloud.org:solopasha:hyprland               
 hyprpicker.x86_64                                    0.2.0-2.fc39                        @copr:copr.fedorainfracloud.org:solopasha:hyprland               
@@ -1715,7 +1717,7 @@ pipewire-jack-audio-connection-kit-devel.x86_64      1.0.4-2.fc39               
 pipewire-jack-audio-connection-kit-libs.x86_64       1.0.4-2.fc39                        @updates                                                         
 pipewire-libs.x86_64                                 1.0.4-2.fc39                        @updates                                                         
 pipewire-utils.x86_64                                1.0.4-2.fc39                        @updates                                                         
-pipx.noarch                                          1.4.3-1.fc39                        @updates                                                         
+pipx.noarch                                          1.5.0-1.fc39                        @updates                                                         
 pixman.x86_64                                        0.42.2-2.fc39                       @fedora-modular                                                  
 pixman-devel.x86_64                                  0.42.2-2.fc39                       @fedora-modular                                                  
 pkcs11-helper.x86_64                                 1.29.0-4.fc39                       @fedora-modular                                                  

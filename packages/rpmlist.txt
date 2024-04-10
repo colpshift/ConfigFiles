@@ -1651,7 +1651,6 @@ gstreamer1-plugin-libav-1.22.9-1.fc39.x86_64
 orca-45.2-1.fc39.noarch
 libva-devel-2.20.0-2.fc39.x86_64
 python3-audit-3.1.2-8.fc39.x86_64
-epiphany-runtime-45.2-1.fc39.x86_64
 python3-gstreamer1-1.22.9-1.fc39.x86_64
 ibus-libzhuyin-1.10.3-1.fc39.x86_64
 plocate-1.1.22-1.fc39.x86_64
@@ -2288,7 +2287,6 @@ yum-4.19.2-1.fc39.noarch
 skopeo-1.15.0-1.fc39.x86_64
 python3-userpath-1.9.2-1.fc39.noarch
 python3-platformdirs-3.9.1-2.fc39.noarch
-pipx-1.4.3-1.fc39.noarch
 ufw-0.35-30.fc39.noarch
 warsaw-2.21.3-1.x86_64
 kernel-modules-core-6.7.11-200.fc39.x86_64
@@ -2338,7 +2336,6 @@ bolt-0.9.7-1.fc39.x86_64
 mediawriter-5.1.0-1.fc39.x86_64
 warp-terminal-v0.2024.04.02.08.02.stable_01-1.x86_64
 code-1.88.0-1712152206.el8.x86_64
-gpg-pubkey-c2d4e821-5bc51032
 nodejs-docs-20.12.0-1.fc39.noarch
 nodejs-libs-20.12.0-1.fc39.x86_64
 nodejs-undici-5.28.3-2.fc39.noarch
@@ -2378,7 +2375,6 @@ fwupd-plugin-flashrom-1.9.16-1.fc39.x86_64
 fwupd-plugin-modem-manager-1.9.16-1.fc39.x86_64
 fwupd-plugin-uefi-capsule-data-1.9.16-1.fc39.x86_64
 fwupd-1.9.16-1.fc39.x86_64
-hyprcursor-0.1.6-1.fc39.x86_64
 hyprland-0.38.1-1.fc39.x86_64
 edk2-ovmf-20240214-7.fc39.noarch
 zsh-syntax-highlighting-0.8.0-1.fc39.noarch
@@ -2400,3 +2396,9 @@ libmetalink-0.1.3-32.fc39.x86_64
 wget-1.21.4-1.fc39.x86_64
 liberation-fonts-2.1.5-7.fc39.noarch
 google-chrome-stable-123.0.6312.105-1.x86_64
+pipx-1.5.0-1.fc39.noarch
+epiphany-runtime-45.3-1.fc39.x86_64
+brave-keyring-1.14-1.noarch
+brave-browser-1.64.116-1.x86_64
+gpg-pubkey-c2d4e821-5bc51032
+hyprcursor-0.1.7-1.fc39.x86_64

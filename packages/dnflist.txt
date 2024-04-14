@@ -74,8 +74,8 @@ alsa-sof-firmware.noarch                             2024.03-2.fc39             
 alsa-ucm.noarch                                      1.2.11-2.fc39                       @updates                                                         
 alsa-utils.x86_64                                    1.2.11-1.fc39                       @updates                                                         
 alternatives.x86_64                                  1.26-1.fc39                         @updates                                                         
-amd-gpu-firmware.noarch                              20240312-1.fc39                     @updates                                                         
-amd-ucode-firmware.noarch                            20240312-1.fc39                     @updates                                                         
+amd-gpu-firmware.noarch                              20240410-1.fc39                     @updates                                                         
+amd-ucode-firmware.noarch                            20240410-1.fc39                     @updates                                                         
 ampache_browser.x86_64                               1.0.4-3.fc39                        @fedora                                                          
 anaconda.x86_64                                      39.32.6-2.fc39                      @fedora-modular                                                  
 anaconda-core.x86_64                                 39.32.6-2.fc39                      @fedora-modular                                                  
@@ -100,7 +100,7 @@ at-spi2-atk.x86_64                                   2.50.2-1.fc39              
 at-spi2-atk-devel.x86_64                             2.50.2-1.fc39                       @updates                                                         
 at-spi2-core.x86_64                                  2.50.2-1.fc39                       @updates                                                         
 at-spi2-core-devel.x86_64                            2.50.2-1.fc39                       @updates                                                         
-atheros-firmware.noarch                              20240312-1.fc39                     @updates                                                         
+atheros-firmware.noarch                              20240410-1.fc39                     @updates                                                         
 atk.x86_64                                           2.50.2-1.fc39                       @updates                                                         
 atk-devel.x86_64                                     2.50.2-1.fc39                       @updates                                                         
 atkmm.x86_64                                         2.28.4-1.fc39                       @updates                                                         
@@ -154,7 +154,7 @@ boost-thread.x86_64                                  1.81.0-8.fc39              
 braille-printer-app.x86_64                           1:2.0~b0^386eea385f-4.fc39          @fedora-modular                                                  
 brave-browser.x86_64                                 1.64.122-1                          @brave-browser                                                   
 brave-keyring.noarch                                 1.14-1                              @brave-browser                                                   
-brcmfmac-firmware.noarch                             20240312-1.fc39                     @updates                                                         
+brcmfmac-firmware.noarch                             20240410-1.fc39                     @updates                                                         
 brightnessctl.x86_64                                 0.5.1-11.fc39                       @updates                                                         
 brlapi.x86_64                                        0.8.5-9.fc39                        @updates                                                         
 brltty.x86_64                                        6.6-9.fc39                          @updates                                                         
@@ -189,7 +189,7 @@ chkconfig.x86_64                                     1.26-1.fc39                
 chrony.x86_64                                        4.5-1.fc39                          @updates                                                         
 cifs-utils.x86_64                                    7.0-2.fc39                          @fedora-modular                                                  
 cifs-utils-info.x86_64                               7.0-2.fc39                          @fedora-modular                                                  
-cirrus-audio-firmware.noarch                         20240312-1.fc39                     @updates                                                         
+cirrus-audio-firmware.noarch                         20240410-1.fc39                     @updates                                                         
 cjson.x86_64                                         1.7.15-2.fc39                       @fedora-modular                                                  
 cldr-emoji-annotation.noarch                         1:44.1-1.fc39                       @updates                                                         
 cldr-emoji-annotation-dtd.noarch                     1:44.1-1.fc39                       @updates                                                         
@@ -371,8 +371,8 @@ file-roller.x86_64                                   43.1-1.fc39                
 filesystem.x86_64                                    3.18-6.fc39                         @fedora-modular                                                  
 findutils.x86_64                                     1:4.9.0-5.fc39                      @fedora-modular                                                  
 fira-code-fonts.noarch                               6.2-5.fc39                          @fedora                                                          
-firewalld.noarch                                     2.0.3-1.fc39                        @updates                                                         
-firewalld-filesystem.noarch                          2.0.3-1.fc39                        @updates                                                         
+firewalld.noarch                                     2.0.4-1.fc39                        @updates                                                         
+firewalld-filesystem.noarch                          2.0.4-1.fc39                        @updates                                                         
 flac-libs.x86_64                                     1.4.3-2.fc39                        @fedora-modular                                                  
 flashrom.x86_64                                      1.3.0-3.fc39                        @fedora-modular                                                  
 flatpak.x86_64                                       1.15.6-1.fc39                       @updates                                                         
@@ -715,8 +715,8 @@ iniparser.x86_64                                     4.1-13.fc39                
 initscripts.x86_64                                   10.20-1.fc39                        @updates                                                         
 initscripts-rename-device.x86_64                     10.20-1.fc39                        @updates                                                         
 initscripts-service.noarch                           10.20-1.fc39                        @updates                                                         
-intel-audio-firmware.noarch                          20240312-1.fc39                     @updates                                                         
-intel-gpu-firmware.noarch                            20240312-1.fc39                     @updates                                                         
+intel-audio-firmware.noarch                          20240410-1.fc39                     @updates                                                         
+intel-gpu-firmware.noarch                            20240410-1.fc39                     @updates                                                         
 intel-mediasdk.x86_64                                23.2.2-2.fc39                       @fedora-modular                                                  
 intltool.noarch                                      0.51.0-23.fc39                      @fedora-modular                                                  
 inxi.noarch                                          3.3.33-1.fc39                       @updates                                                         
@@ -738,9 +738,9 @@ isns-utils-libs.x86_64                               0.101-7.fc39               
 iso-codes.noarch                                     4.15.0-2.fc39                       @fedora-modular                                                  
 isomd5sum.x86_64                                     1:1.2.3-21.fc39                     @fedora-modular                                                  
 iw.x86_64                                            5.19-2.fc39                         @fedora-modular                                                  
-iwlegacy-firmware.noarch                             20240312-1.fc39                     @updates                                                         
-iwlwifi-dvm-firmware.noarch                          20240312-1.fc39                     @updates                                                         
-iwlwifi-mvm-firmware.noarch                          20240312-1.fc39                     @updates                                                         
+iwlegacy-firmware.noarch                             20240410-1.fc39                     @updates                                                         
+iwlwifi-dvm-firmware.noarch                          20240410-1.fc39                     @updates                                                         
+iwlwifi-mvm-firmware.noarch                          20240410-1.fc39                     @updates                                                         
 jansson.x86_64                                       2.13.1-7.fc39                       @fedora-modular                                                  
 jasper-libs.x86_64                                   3.0.6-4.fc39                        @fedora-modular                                                  
 javascriptcoregtk4.0.x86_64                          2.44.0-2.fc39                       @updates                                                         
@@ -975,7 +975,7 @@ liberation-fonts-common.noarch                       1:2.1.5-7.fc39             
 liberation-mono-fonts.noarch                         1:2.1.5-7.fc39                      @fedora-modular                                                  
 liberation-sans-fonts.noarch                         1:2.1.5-7.fc39                      @fedora-modular                                                  
 liberation-serif-fonts.noarch                        1:2.1.5-7.fc39                      @fedora-modular                                                  
-libertas-firmware.noarch                             20240312-1.fc39                     @updates                                                         
+libertas-firmware.noarch                             20240410-1.fc39                     @updates                                                         
 libev.x86_64                                         4.33-8.fc39                         @fedora-modular                                                  
 libevdev.x86_64                                      1.13.1-2.fc39                       @fedora-modular                                                  
 libevent.x86_64                                      2.1.12-9.fc39                       @fedora-modular                                                  
@@ -1088,7 +1088,7 @@ libnet.x86_64                                        1.3-1.fc39                 
 libnetfilter_conntrack.x86_64                        1.0.9-2.fc39                        @fedora-modular                                                  
 libnfnetlink.x86_64                                  1.0.1-24.fc39                       @fedora-modular                                                  
 libnfs.x86_64                                        5.0.2-3.fc39                        @fedora-modular                                                  
-libnfsidmap.x86_64                                   1:2.6.4-0.rc5.fc39                  @updates                                                         
+libnfsidmap.x86_64                                   1:2.6.4-0.rc6.fc39                  @updates                                                         
 libnftnl.x86_64                                      1.2.6-2.fc39                        @fedora-modular                                                  
 libnghttp2.x86_64                                    1.55.1-4.fc39                       @updates                                                         
 libnice.x86_64                                       0.1.21-4.fc39                       @fedora-modular                                                  
@@ -1101,7 +1101,7 @@ libnsl2.x86_64                                       2.0.0-6.fc39               
 libnvme.x86_64                                       1.6-2.fc39                          @fedora-modular                                                  
 liboeffis.x86_64                                     1.2.1-1.fc39                        @updates                                                         
 libogg.x86_64                                        2:1.3.5-6.fc39                      @fedora-modular                                                  
-libopenmpt.x86_64                                    0.6.12-1.fc39                       @updates                                                         
+libopenmpt.x86_64                                    0.7.6-1.fc39                        @updates                                                         
 libosinfo.x86_64                                     1.11.0-1.fc39                       @updates                                                         
 libpaper.x86_64                                      1:2.1.1-1.fc39                      @fedora-modular                                                  
 libpasswdqc.x86_64                                   2.0.3-2.fc39                        @fedora-modular                                                  
@@ -1325,8 +1325,8 @@ libzstd.x86_64                                       1.5.6-1.fc39               
 libzstd-devel.x86_64                                 1.5.6-1.fc39                        @updates                                                         
 lilv-libs.x86_64                                     0.24.20-1.fc39                      @fedora-modular                                                  
 linux-atm-libs.x86_64                                2.5.1-36.fc39                       @fedora-modular                                                  
-linux-firmware.noarch                                20240312-1.fc39                     @updates                                                         
-linux-firmware-whence.noarch                         20240312-1.fc39                     @updates                                                         
+linux-firmware.noarch                                20240410-1.fc39                     @updates                                                         
+linux-firmware-whence.noarch                         20240410-1.fc39                     @updates                                                         
 lirc-libs.x86_64                                     0.10.0-40.fc39                      @fedora                                                          
 livesys-scripts.noarch                               0.5.0-1.fc39                        @fedora-modular                                                  
 llvm-libs.x86_64                                     17.0.6-3.fc39                       @updates                                                         
@@ -1415,7 +1415,7 @@ mpv-devel.x86_64                                     0.36.0-3.fc39              
 mpv-libs.x86_64                                      0.36.0-3.fc39                       @fedora-modular                                                  
 mpv-mpris.x86_64                                     1.1-1.fc39                          @rpmfusion-free                                                  
 msgpack.x86_64                                       3.1.0-13.fc39                       @fedora-modular                                                  
-mt7xxx-firmware.noarch                               20240312-1.fc39                     @updates                                                         
+mt7xxx-firmware.noarch                               20240410-1.fc39                     @updates                                                         
 mtdev.x86_64                                         1.1.6-6.fc39                        @fedora-modular                                                  
 mtools.x86_64                                        4.0.43-2.fc39                       @fedora-modular                                                  
 mtr.x86_64                                           2:0.95-9.fc39                       @updates                                                         
@@ -1452,7 +1452,7 @@ netavark.x86_64                                      1.10.3-1.fc39              
 netpbm.x86_64                                        11.02.00-2.fc39                     @fedora-modular                                                  
 nettle.x86_64                                        3.9.1-2.fc39                        @fedora-modular                                                  
 network-manager-applet.x86_64                        1.34.0-1.fc39                       @updates                                                         
-nfs-utils.x86_64                                     1:2.6.4-0.rc5.fc39                  @updates                                                         
+nfs-utils.x86_64                                     1:2.6.4-0.rc6.fc39                  @updates                                                         
 nftables.x86_64                                      1:1.0.7-3.fc39                      @fedora-modular                                                  
 nilfs-utils.x86_64                                   2.2.9-4.fc39                        @fedora-modular                                                  
 nm-connection-editor.x86_64                          1.34.0-1.fc39                       @updates                                                         
@@ -1480,10 +1480,10 @@ ntfsprogs.x86_64                                     2:2022.10.3-3.fc39         
 numactl-libs.x86_64                                  2.0.16-3.fc39                       @fedora-modular                                                  
 numad.x86_64                                         0.5-41.20150602git.fc39             @fedora-modular                                                  
 nv-codec-headers.noarch                              12.1.14.0-1.fc39                    @updates                                                         
-nvidia-gpu-firmware.noarch                           20240312-1.fc39                     @updates                                                         
+nvidia-gpu-firmware.noarch                           20240410-1.fc39                     @updates                                                         
 nvme-cli.x86_64                                      2.6-1.fc39                          @updates                                                         
 nwg-panel.noarch                                     0.9.25-1.fc39                       @updates                                                         
-nxpwireless-firmware.noarch                          20240312-1.fc39                     @updates                                                         
+nxpwireless-firmware.noarch                          20240410-1.fc39                     @updates                                                         
 ocaml-srpm-macros.noarch                             8-2.fc39                            @fedora-modular                                                  
 ocl-icd.x86_64                                       2.3.2-2.fc39                        @fedora-modular                                                  
 oneVPL-intel-gpu.x86_64                              24.1.3-1.fc39                       @updates                                                         
@@ -1836,7 +1836,7 @@ python3-enchant.noarch                               3.2.2-10.fc39              
 python3-fb-re2.x86_64                                1.0.7-13.fc39                       @fedora-modular                                                  
 python3-file-magic.noarch                            5.44-5.fc39                         @fedora-modular                                                  
 python3-filelock.noarch                              3.12.2-1.fc39                       @fedora-modular                                                  
-python3-firewall.noarch                              2.0.3-1.fc39                        @updates                                                         
+python3-firewall.noarch                              2.0.4-1.fc39                        @updates                                                         
 python3-gobject.x86_64                               3.46.0-1.fc39                       @fedora-modular                                                  
 python3-gobject-base.x86_64                          3.46.0-1.fc39                       @fedora-modular                                                  
 python3-gobject-base-noarch.noarch                   3.46.0-1.fc39                       @fedora-modular                                                  
@@ -2027,7 +2027,7 @@ rav1e-libs.x86_64                                    0.7.1-1.fc39               
 re2.x86_64                                           1:20220601-3.fc39                   @fedora-modular                                                  
 readline.x86_64                                      8.2-6.fc39                          @updates                                                         
 realmd.x86_64                                        0.17.1-3.fc39                       @fedora-modular                                                  
-realtek-firmware.noarch                              20240312-1.fc39                     @updates                                                         
+realtek-firmware.noarch                              20240410-1.fc39                     @updates                                                         
 redhat-menus.noarch                                  12.0.2-24.fc39                      @fedora-modular                                                  
 redhat-rpm-config.noarch                             266-1.fc39                          @updates                                                         
 rest.x86_64                                          0.9.1-7.fc39                        @fedora-modular                                                  
@@ -2150,7 +2150,7 @@ swtpm.x86_64                                         0.8.1-3.fc39               
 swtpm-libs.x86_64                                    0.8.1-3.fc39                        @fedora-modular                                                  
 swtpm-selinux.noarch                                 0.8.1-3.fc39                        @fedora-modular                                                  
 swtpm-tools.x86_64                                   0.8.1-3.fc39                        @fedora-modular                                                  
-swww.x86_64                                          0.9.1-1.fc39                        @copr:copr.fedorainfracloud.org:alebastr:sway-extras             
+swww.x86_64                                          0.9.3-1.fc39                        @copr:copr.fedorainfracloud.org:solopasha:hyprland               
 symlinks.x86_64                                      1.7-9.fc39                          @fedora-modular                                                  
 sysprof-capture-devel.x86_64                         45.1-1.fc39                         @updates                                                         
 system-config-printer-libs.noarch                    1.5.18-9.fc39                       @updates                                                         
@@ -2178,12 +2178,12 @@ thermald.x86_64                                      2.5.6-1.fc39               
 thrift.x86_64                                        0.15.0-3.fc39                       @fedora-modular                                                  
 thunar-archive-plugin.x86_64                         0.5.2-1.fc39                        @updates                                                         
 thunar-volman.x86_64                                 4.18.0-3.fc39                       @fedora                                                          
-tigervnc-license.noarch                              1.13.1-11.fc39                      @updates                                                         
-tigervnc-server-minimal.x86_64                       1.13.1-11.fc39                      @updates                                                         
+tigervnc-license.noarch                              1.13.1-14.fc39                      @updates                                                         
+tigervnc-server-minimal.x86_64                       1.13.1-14.fc39                      @updates                                                         
 time.x86_64                                          1.9-23.fc39                         @updates                                                         
 timeshift.x86_64                                     22.11.2-2.fc39                      @fedora-modular                                                  
 tinyxml2.x86_64                                      9.0.0-3.fc39                        @fedora-modular                                                  
-tiwilink-firmware.noarch                             20240312-1.fc39                     @updates                                                         
+tiwilink-firmware.noarch                             20240410-1.fc39                     @updates                                                         
 tldr.noarch                                          3.2.0-3.fc39                        @fedora-modular                                                  
 tmux.x86_64                                          3.3a-7.20230918gitb202a2f.fc39      @updates                                                         
 toilet.x86_64                                        0.3-15.fc39                         @fedora-modular                                                  
@@ -2338,9 +2338,9 @@ xorg-x11-drv-vmware.x86_64                           13.4.0-2.fc39              
 xorg-x11-drv-wacom.x86_64                            1.2.0-2.fc39                        @fedora-modular                                                  
 xorg-x11-drv-wacom-serial-support.x86_64             1.2.0-2.fc39                        @fedora-modular                                                  
 xorg-x11-proto-devel.noarch                          2023.2-2.fc39                       @fedora-modular                                                  
-xorg-x11-server-Xorg.x86_64                          1.20.14-30.fc39                     @updates                                                         
+xorg-x11-server-Xorg.x86_64                          1.20.14-35.fc39                     @updates                                                         
 xorg-x11-server-Xwayland.x86_64                      23.2.4-1.fc39                       @updates                                                         
-xorg-x11-server-common.x86_64                        1.20.14-30.fc39                     @updates                                                         
+xorg-x11-server-common.x86_64                        1.20.14-35.fc39                     @updates                                                         
 xorg-x11-xauth.x86_64                                1:1.1.2-4.fc39                      @fedora-modular                                                  
 xorg-x11-xinit.x86_64                                1.4.2-1.fc39                        @updates                                                         
 xprop.x86_64                                         1.2.5-4.fc39                        @fedora-modular                                                  

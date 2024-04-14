@@ -423,7 +423,6 @@ fwupd-efi.x86_64                                     1.4-1.fc38                 
 fwupd-plugin-flashrom.x86_64                         1.9.16-1.fc39                       @updates                                                         
 fwupd-plugin-modem-manager.x86_64                    1.9.16-1.fc39                       @updates                                                         
 fwupd-plugin-uefi-capsule-data.x86_64                1.9.16-1.fc39                       @updates                                                         
-fzf.x86_64                                           0.44.1-1.fc39                       @updates                                                         
 game-music-emu.x86_64                                0.6.3-12.fc39                       @fedora-modular                                                  
 gamemode.x86_64                                      1.7-3.fc39                          @fedora-modular                                                  
 garcon.x86_64                                        4.18.2-1.fc39                       @updates                                                         

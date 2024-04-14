@@ -113,17 +113,21 @@ autoload -U compinit colors zcalc
 compinit -d
 colors
 
+### fzf
+eval "$(fzf --zsh)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 ### fzf search
 export FZF_DEFAULT_COMMAND="fd --type file --color=always"
 export FZF_DEFAULT_OPTS="--ansi"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #
-# Search file - Ctrl-T
+# fzf Search file - Ctrl-T
 export FZF_CTRL_T_OPTS="
-  --preview 'bat -n --color=always {}'
+  --preview 'bat --color=always {}' --preview-window '~3'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 # 
-# Search history - Ctrl-R
+# fzf Search history - Ctrl-R
 export FZF_CTRL_R_OPTS="
   --preview 'echo {}' --preview-window up:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
@@ -131,7 +135,7 @@ export FZF_CTRL_R_OPTS="
   --color header:italic
   --header 'Press CTRL-Y to copy command into clipboard'"
 #
-# Search file tree structure - Alt-C
+# fzf Search file tree structure - Alt-C
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 
 ### fzf search man - 'Ctrl-H'
@@ -201,3 +205,4 @@ export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
 export BROWSER=brave-browser
+

@@ -1923,7 +1923,6 @@ systemd-oomd-defaults-254.10-1.fc39.noarch
 systemd-udev-254.10-1.fc39.x86_64
 systemd-rpm-macros-254.10-1.fc39.noarch
 fuse-overlayfs-1.13-1.fc39.x86_64
-fzf-0.44.1-1.fc39.x86_64
 diff-so-fancy-1.4.4-2.fc39.noarch
 elfutils-libelf-0.191-2.fc39.x86_64
 elfutils-default-yama-scope-0.191-2.fc39.noarch

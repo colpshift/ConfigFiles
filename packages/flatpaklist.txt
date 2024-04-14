@@ -1,4 +1,4 @@
-8bit Solutions LLC	com.bitwarden.desktop	2024.4.0	stable	flathub	system
+8bit Solutions LLC	com.bitwarden.desktop	2024.4.1	stable	flathub	system
 Discord Inc.	com.discordapp.Discord	0.0.49	stable	flathub	system
 JGraph	com.jgraph.drawio.desktop	24.1.0	stable	flathub	system
 Rick van Lieshout	com.mastermindzh.tidal-hifi	5.9.0	stable	flathub	system
@@ -11,18 +11,18 @@ Obsidian	md.obsidian.Obsidian	1.5.12	stable	flathub	system
 Fedora KDE 6 Platform	org.fedoraproject.KDE6Platform	40	f40	fedora	system
 Fedora Platform	org.fedoraproject.Platform	39	f39	fedora	system
 Freedesktop Platform	org.freedesktop.Platform	22.08.24	22.08	flathub	system
-Freedesktop Platform	org.freedesktop.Platform	23.08.15	23.08	flathub	system
+Freedesktop Platform	org.freedesktop.Platform	23.08.16	23.08	flathub	system
 Mesa	org.freedesktop.Platform.GL.default	24.0.4	22.08	flathub	system
 Mesa (Extra)	org.freedesktop.Platform.GL.default	24.0.4	22.08-extra	flathub	system
-Mesa	org.freedesktop.Platform.GL.default	24.0.4	23.08	flathub	system
-Mesa (Extra)	org.freedesktop.Platform.GL.default	24.0.4	23.08-extra	flathub	system
+Mesa	org.freedesktop.Platform.GL.default	24.0.5	23.08	flathub	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	24.0.5	23.08-extra	flathub	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	flathub	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		23.08	flathub	system
 ffmpeg-full	org.freedesktop.Platform.ffmpeg-full		23.08	flathub	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	flathub	system
 openh264	org.freedesktop.Platform.openh264	2.4.1	2.4.1	flathub	system
 Freedesktop SDK	org.freedesktop.Sdk	22.08.24	22.08	flathub	system
-Freedesktop SDK	org.freedesktop.Sdk	23.08.15	23.08	flathub	system
+Freedesktop SDK	org.freedesktop.Sdk	23.08.16	23.08	flathub	system
 The GIMP team	org.gimp.GIMP	2.10.36	stable	flathub	system
 GNOME Application Platform version 45	org.gnome.Platform		45	flathub	system
 GNOME Application Platform version 46	org.gnome.Platform		46	flathub	system

@@ -1932,7 +1932,6 @@ elfutils-debuginfod-client-0.191-2.fc39.x86_64
 elfutils-0.191-2.fc39.x86_64
 elfutils-libelf-devel-0.191-2.fc39.x86_64
 pangomm-2.46.4-1.fc39.x86_64
-alsa-sof-firmware-2023.12.1-1.fc39.noarch
 python3.11-libs-3.11.8-2.fc39.x86_64
 python3.11-3.11.8-2.fc39.x86_64
 qpdf-libs-11.6.4-2.fc39.x86_64
@@ -2195,13 +2194,8 @@ kitty-kitten-0.33.1-1.fc39.x86_64
 kitty-shell-integration-0.33.1-1.fc39.noarch
 kitty-terminfo-0.33.1-1.fc39.noarch
 kitty-0.33.1-1.fc39.x86_64
-kernel-modules-core-6.7.10-200.fc39.x86_64
-kernel-core-6.7.10-200.fc39.x86_64
-kernel-modules-6.7.10-200.fc39.x86_64
 w3m-0.5.3-63.git20230121.fc39.x86_64
-kernel-devel-6.7.10-200.fc39.x86_64
 w3m-img-0.5.3-63.git20230121.fc39.x86_64
-kernel-6.7.10-200.fc39.x86_64
 libtree-sitter-0.22.2-1.fc39.x86_64
 btrfs-progs-6.8-1.fc39.x86_64
 glibc-all-langpacks-2.38-17.fc39.x86_64
@@ -2309,7 +2303,6 @@ golang-bin-1.21.9-1.fc39.x86_64
 golang-1.21.9-1.fc39.x86_64
 bluez-libs-5.73-3.fc39.x86_64
 kernel-devel-6.8.4-200.fc39.x86_64
-kernel-devel-matched-6.8.4-200.fc39.x86_64
 bluez-obexd-5.73-3.fc39.x86_64
 kernel-6.8.4-200.fc39.x86_64
 bluez-cups-5.73-3.fc39.x86_64
@@ -2405,3 +2398,10 @@ nodejs-undici-6.11.1-2.fc39.noarch
 libxmlb-0.3.18-1.fc39.x86_64
 qt5-qtcharts-5.15.12-1.fc39.x86_64
 stacer-1.1.0-17.fc39.x86_64
+kernel-modules-core-6.8.5-201.fc39.x86_64
+kernel-core-6.8.5-201.fc39.x86_64
+kernel-modules-6.8.5-201.fc39.x86_64
+kernel-devel-6.8.5-201.fc39.x86_64
+kernel-devel-matched-6.8.5-201.fc39.x86_64
+kernel-6.8.5-201.fc39.x86_64
+alsa-sof-firmware-2024.03-2.fc39.noarch

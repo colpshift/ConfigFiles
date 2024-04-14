@@ -578,6 +578,11 @@
     "exec-if": "ping wttr.in -c1",
     "tooltip" : true,
 },
+
+"custom/internet": {
+  "interval": 900,
+  "exec": "~/.scripts/check_internet.sh",
+},
   
   
 // Separators

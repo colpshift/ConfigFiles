@@ -1,8 +1,8 @@
-8bit Solutions LLC	com.bitwarden.desktop	2024.3.2	stable	flathub	system
+8bit Solutions LLC	com.bitwarden.desktop	2024.4.0	stable	flathub	system
 Discord Inc.	com.discordapp.Discord	0.0.49	stable	flathub	system
 JGraph	com.jgraph.drawio.desktop	24.1.0	stable	flathub	system
 Rick van Lieshout	com.mastermindzh.tidal-hifi	5.9.0	stable	flathub	system
-Microsoft Corporation	com.microsoft.Edge	123.0.2420.81-1	stable	flathub	system
+Microsoft Corporation	com.microsoft.Edge	123.0.2420.97-1	stable	flathub	system
 Stremio	com.stremio.Stremio	4.4.168	stable	flathub	system
 Todoist: To-Do List & Tasks	com.todoist.Todoist	8.10.1	stable	flathub	system
 GitHub Desktop	io.github.shiftey.Desktop	3.3.6-linux3	stable	flathub	system

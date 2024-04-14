@@ -51,6 +51,7 @@
 	"network#speed",
 	//"custom/separator#dot-line",
 	//"bluetooth",
+  //"custom/internet",
 	"custom/separator#dot-line", 
 	"battery",
 	"custom/separator#dot-line",

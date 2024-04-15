@@ -127,9 +127,9 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
   --marker=">" --pointer="◆" --separator="─" --scrollbar="│"
   --layout="reverse" --info="right"'
-
-export FZF_DEFAULT_COMMAND="fd --type file --color=always"
-# export FZF_DEFAULT_OPTS="--ansi"
+#
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+#
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #
 # fzf Search file - Ctrl-T

@@ -126,7 +126,7 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=prompt:#d7005f,spinner:#af5fff,pointer:#af5fff,header:#87afaf
   --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
   --marker=">" --pointer="◆" --separator="─" --scrollbar="│"
-  --layout="reverse" --info="right"'
+  --info="right"'
 #
 export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 #

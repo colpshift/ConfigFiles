@@ -1,6 +1,7 @@
 8bit Solutions LLC	com.bitwarden.desktop	2024.4.1	stable	flathub	system
 Discord Inc.	com.discordapp.Discord	0.0.49	stable	flathub	system
-JGraph	com.jgraph.drawio.desktop	24.1.0	stable	flathub	system
+Ismael Martinez	com.github.IsmaelMartinez.teams_for_linux	1.4.25	stable	flathub	system
+JGraph	com.jgraph.drawio.desktop	24.2.5	stable	flathub	system
 Rick van Lieshout	com.mastermindzh.tidal-hifi	5.9.0	stable	flathub	system
 Microsoft Corporation	com.microsoft.Edge	123.0.2420.97-1	stable	flathub	system
 Stremio	com.stremio.Stremio	4.4.168	stable	flathub	system

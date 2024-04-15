@@ -336,6 +336,7 @@ exiv2.x86_64                                         0.27.6-5.fc39              
 exiv2-libs.x86_64                                    0.27.6-5.fc39                       @fedora-modular                                                  
 exo.x86_64                                           4.18.0-3.fc39                       @fedora                                                          
 expat.x86_64                                         2.6.2-1.fc39                        @updates                                                         
+eza.x86_64                                           0.17.3-2.fc39                       @updates                                                         
 f2fs-tools.x86_64                                    1.16.0-2.fc39                       @fedora-modular                                                  
 f39-backgrounds-base.noarch                          39.0.5-2.fc39                       @updates                                                         
 f39-backgrounds-gnome.noarch                         39.0.5-2.fc39                       @updates                                                         

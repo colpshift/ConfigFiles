@@ -2,7 +2,7 @@
 # Tags: zsh shell
 # Description: zsh env config
 # Author: colpshift
-# Last update: 2023-05-27T14:50:38
+# Last update: 2024-04-14 20:00:00
 #
 
 ### Set variables
@@ -29,7 +29,7 @@ setopt   pushdminus extendedglob nocaseglob rcquotes
 autoload -Uz compinit
 compinit
 zstyle ':completion::complete:*' use-cache on
-zstyle ':completion::complete:*' cache-path ~/.zsh/cache/$HOST
+zstyle ':completion::complete:*' cache-path "$HOME/.zsh/cache/$HOST"
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
@@ -118,8 +118,18 @@ eval "$(fzf --zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ### fzf search
-export FZF_DEFAULT_COMMAND="fd --type file --color=always"
-export FZF_DEFAULT_OPTS="--ansi"
+#
+# https://vitormv.github.io/fzf-themes/
+#
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+  --color=hl:#5f87af,hl+:#5fd7ff,info:#afaf87,marker:#87ff00
+  --color=prompt:#d7005f,spinner:#af5fff,pointer:#af5fff,header:#87afaf
+  --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
+  --marker=">" --pointer="◆" --separator="─" --scrollbar="│"
+  --layout="reverse" --info="right"'
+#
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+#
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #
 # fzf Search file - Ctrl-T
@@ -139,11 +149,10 @@ export FZF_CTRL_R_OPTS="
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 
 ### fzf search man - 'Ctrl-H'
-unset MANPATH
 fzf-man-widget() {
   batman="man {1} | col -bx | bat --language=man --plain --color always --theme=\"Monokai Extended\""
    man -k . | sort \
-   | awk -v cyan="$(tput setaf 6)" -v blue="$(tput setaf 4)" -v res="$(tput sgr0)" -v bld="$(tput bold)" "{ $1=cyan bld $1; $2=res blue;} 1" \
+   | awk -v cyan=$(tput setaf 6) -v blue=$(tput setaf 4) -v res=$(tput sgr0) -v bld=$(tput bold) '{ $1=cyan bld $1; $2=res blue;} 1' \
    | fzf  \
       -q "$1" \
       --ansi \
@@ -152,13 +161,17 @@ fzf-man-widget() {
       --preview-window '50%,rounded,<50(up,85%,border-bottom)' \
       --preview "${batman}" \
       --bind "enter:execute(man {1})" \
-      --bind "alt-c:+change-preview(cheat {1})+change-prompt(ﯽ Cheat > )" \
+      --bind "alt-c:+change-preview(cht.sh {1})+change-prompt(ﯽ Cheat > )" \
       --bind "alt-m:+change-preview(${batman})+change-prompt( Man > )" \
-      --bind "alt-t:+change-preview(tldr {1})+change-prompt(ﳁ TLDR > )"
+      --bind "alt-t:+change-preview(tldr --color=always {1})+change-prompt(ﳁ TLDR > )"
   zle reset-prompt
 }
+# `Ctrl-H` keybinding to launch the widget (this widget works only on zsh, don't know how to do it on bash and fish 
+# (additionaly pressing`ctrl-backspace` will trigger the widget to be executed too because both share the same keycode)
 bindkey '^h' fzf-man-widget
 zle -N fzf-man-widget
+
+# Icon used is nerdfont
 
 ### fzf-tab -'Tab'
 source "$HOME/.src/fzf-tab/fzf-tab.plugin.zsh"

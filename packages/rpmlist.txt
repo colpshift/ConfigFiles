@@ -2404,3 +2404,4 @@ iwlwifi-mvm-firmware-20240410-1.fc39.noarch
 libertas-firmware-20240410-1.fc39.noarch
 libopenmpt-0.7.6-1.fc39.x86_64
 swww-0.9.3-1.fc39.x86_64
+eza-0.17.3-2.fc39.x86_64

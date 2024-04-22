@@ -18,6 +18,7 @@
 
 "modules-left": [
 	"hyprland/workspaces#pacman",
+  //"hyprland/workspaces#4", 
 	"custom/separator#dot-line",
 	"cpu",
 	"custom/separator#dot-line", 

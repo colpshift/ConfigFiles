@@ -1,5 +1,5 @@
 8bit Solutions LLC	com.bitwarden.desktop	2024.4.1	stable	flathub	system
-Discord Inc.	com.discordapp.Discord	0.0.50	stable	flathub	system
+Discord Inc.	com.discordapp.Discord	0.0.51	stable	flathub	system
 JGraph	com.jgraph.drawio.desktop	24.2.5	stable	flathub	system
 Rick van Lieshout	com.mastermindzh.tidal-hifi	5.9.0	stable	flathub	system
 Microsoft Corporation	com.microsoft.Edge	124.0.2478.51-1	stable	flathub	system
@@ -43,4 +43,4 @@ ONLYOFFICE	org.onlyoffice.desktopeditors	8.0.1	stable	flathub	system
 John Preston	org.telegram.desktop	4.16.8	stable	flathub	system
 Telegram Desktop Webview Add-on	org.telegram.desktop.webview	2.44.1	stable	flathub	system
 VideoLAN et al.	org.videolan.VLC	3.0.20	stable	flathub	system
-zoom.us	us.zoom.Zoom	6.0.0.4563	stable	flathub	system
+Zoom	us.zoom.Zoom	6.0.2.4680	stable	flathub	system

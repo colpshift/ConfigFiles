@@ -25,12 +25,12 @@
 	"temperature",
 	"custom/separator#dot-line", 
 	"memory",
-	"custom/separator#dot-line",
+	//"custom/separator#blank_3",
+	//"custom/cava_mviz",
+  //"custom/separator#blank_3",
+  //"mpris",
+  "custom/separator#dot-line",
 	"custom/weather",
-	"custom/separator#blank_3",
-	"custom/cava_mviz",
-  "custom/separator#blank_3",
-  "mpris",
 	],
 
 "modules-center": [

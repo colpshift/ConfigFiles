@@ -219,8 +219,9 @@
 "clock": {
     "interval": 1,
     //"format": " {:%I:%M %p}", // AM PM format
-    "format": " {:%H:%M:%S}",
-    "format-alt": " {:%H:%M   %Y, %d %B, %A}",
+    "format": " {:%H:%M:%S  %F}",
+    "format-alt": " {:%H:%M  %A, %d de %B de %Y}",
+    //"format-alt": " {:%H:%M   %Y, %d %B, %A}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
       "mode"          : "year",

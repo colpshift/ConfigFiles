@@ -154,7 +154,7 @@ boost-regex.x86_64                                   1.83.0-3.fc40              
 boost-system.x86_64                                  1.83.0-3.fc40                       @fedora                                                          
 boost-thread.x86_64                                  1.83.0-3.fc40                       @fedora                                                          
 braille-printer-app.x86_64                           1:2.0~b0^386eea385f-6.fc40          @fedora                                                          
-brave-browser.x86_64                                 1.65.123-1                          @brave-browser                                                   
+brave-browser.x86_64                                 1.65.126-1                          @brave-browser                                                   
 brave-keyring.noarch                                 1.14-1                              @brave-browser                                                   
 brcmfmac-firmware.noarch                             20240410-1.fc40                     @updates                                                         
 brightnessctl.x86_64                                 0.5.1-11.fc40                       @fedora                                                          
@@ -181,10 +181,11 @@ cairomm1.16.x86_64                                   1.18.0-3.fc40              
 capstone.x86_64                                      5.0.1-3.fc40                        @fedora                                                          
 cargo.x86_64                                         1.77.2-1.fc40                       @updates                                                         
 catatonit.x86_64                                     0.1.7-22.fc40                       @fedora                                                          
-catimg.x86_64                                        2.7.0-11.fc40                       @fedora                                                          
 cava.x86_64                                          0.9.1-3.fc40                        @fedora                                                          
 cdbs.noarch                                          0.4.166-4.fc40                      @fedora                                                          
 cdparanoia-libs.x86_64                               10.2-44.fc40                        @fedora                                                          
+chafa.x86_64                                         1.10.3-7.fc40                       @fedora                                                          
+chafa-libs.x86_64                                    1.10.3-7.fc40                       @fedora                                                          
 checkpolicy.x86_64                                   3.6-3.fc40                          @fedora                                                          
 cheese.x86_64                                        2:44.1-4.fc40                       @fedora                                                          
 cheese-libs.x86_64                                   2:44.1-4.fc40                       @fedora                                                          
@@ -202,7 +203,7 @@ clutter-gst3.x86_64                                  3.0.27-18.fc40             
 clutter-gtk.x86_64                                   1.8.4-18.fc40                       @fedora                                                          
 cmake-filesystem.x86_64                              3.28.2-1.fc40                       @fedora                                                          
 cmatrix.x86_64                                       2.0-9.fc40                          @fedora                                                          
-code.x86_64                                          1.88.1-1712771932.el8               @code                                                            
+code.x86_64                                          1.89.0-1714530960.el8               @code                                                            
 codec2.x86_64                                        1.2.0-4.fc40                        @fedora                                                          
 cogl.x86_64                                          1.22.8-10.fc40                      @fedora                                                          
 color-filesystem.noarch                              1-33.fc40                           @fedora                                                          
@@ -259,6 +260,7 @@ dbus-libs.x86_64                                     1:1.14.10-3.fc40           
 dbus-tools.x86_64                                    1:1.14.10-3.fc40                    @fedora                                                          
 dbus-x11.x86_64                                      1:1.14.10-3.fc40                    @fedora                                                          
 dconf.x86_64                                         0.40.0-12.fc40                      @fedora                                                          
+ddcutil.x86_64                                       2.1.2-1.fc40                        @fedora                                                          
 debhelper.noarch                                     13.11.6-3.fc40                      @fedora                                                          
 debugedit.x86_64                                     5.0-14.fc40                         @fedora                                                          
 default-editor.noarch                                7.2-6.fc40                          @fedora                                                          
@@ -412,6 +414,7 @@ f39-backgrounds-gnome.noarch                         39.0.5-3.fc40              
 f40-backgrounds-base.noarch                          40.2.0-1.fc40                       @updates                                                         
 f40-backgrounds-gnome.noarch                         40.2.0-1.fc40                       @updates                                                         
 faad2-libs.x86_64                                    1:2.11.1-2.fc40                     @rpmfusion-free                                                  
+fastfetch.x86_64                                     2.9.1-2.fc40                        @updates                                                         
 fd-find.x86_64                                       9.0.0-2.fc40                        @fedora                                                          
 fdk-aac-free.x86_64                                  2.0.0-13.fc40                       @fedora                                                          
 fedora-bookmarks.noarch                              28-30.fc40                          @fedora                                                          
@@ -570,7 +573,7 @@ gnome-autoar.x86_64                                  0.4.4-5.fc40               
 gnome-backgrounds.noarch                             46.0-1.fc40                         @fedora                                                          
 gnome-bluetooth.x86_64                               1:46.0-1.fc40                       @fedora                                                          
 gnome-bluetooth-libs.x86_64                          1:46.0-1.fc40                       @fedora                                                          
-gnome-boxes.x86_64                                   46.0-1.fc40                         @fedora                                                          
+gnome-boxes.x86_64                                   46.1-1.fc40                         @updates                                                         
 gnome-browser-connector.x86_64                       42.1-6.fc40                         @fedora                                                          
 gnome-calculator.x86_64                              46.0-1.fc40                         @fedora                                                          
 gnome-calendar.x86_64                                46.1-1.fc40                         @updates                                                         
@@ -714,7 +717,7 @@ gsound.x86_64                                        1.0.3-8.fc40               
 gspell.x86_64                                        1.12.2-4.fc40                       @fedora                                                          
 gssdp.x86_64                                         1.6.3-2.fc40                        @fedora                                                          
 gssproxy.x86_64                                      0.9.2-3.fc40                        @fedora                                                          
-gst-editing-services.x86_64                          1.22.5-3.fc40                       @fedora                                                          
+gst-editing-services.x86_64                          1.22.5-4.fc40                       @updates                                                         
 gstreamer1.x86_64                                    1.22.11-1.fc40                      @updates                                                         
 gstreamer1-plugin-libav.x86_64                       1.22.11-1.fc40                      @updates                                                         
 gstreamer1-plugin-openh264.x86_64                    1.22.11-1.fc40                      @updates                                                         
@@ -724,14 +727,14 @@ gstreamer1-plugins-bad-free-fluidsynth.x86_64        1.22.11-1.fc40             
 gstreamer1-plugins-bad-free-libs.x86_64              1.22.11-1.fc40                      @updates                                                         
 gstreamer1-plugins-bad-free-wildmidi.x86_64          1.22.11-1.fc40                      @updates                                                         
 gstreamer1-plugins-bad-free-zbar.x86_64              1.22.11-1.fc40                      @updates                                                         
-gstreamer1-plugins-bad-freeworld.x86_64              1:1.22.9-3.fc40                     @rpmfusion-free                                                  
+gstreamer1-plugins-bad-freeworld.x86_64              1:1.22.11-1.fc40                    @rpmfusion-free-updates                                          
 gstreamer1-plugins-base.x86_64                       1.22.11-1.fc40                      @updates                                                         
 gstreamer1-plugins-good.x86_64                       1.22.11-2.fc40                      @updates                                                         
 gstreamer1-plugins-good-extras.x86_64                1.22.11-2.fc40                      @updates                                                         
 gstreamer1-plugins-good-gtk.x86_64                   1.22.11-2.fc40                      @updates                                                         
 gstreamer1-plugins-good-qt.x86_64                    1.22.11-2.fc40                      @updates                                                         
 gstreamer1-plugins-good-qt6.x86_64                   1.22.11-2.fc40                      @updates                                                         
-gstreamer1-plugins-ugly.x86_64                       1:1.22.9-2.fc40                     @rpmfusion-free                                                  
+gstreamer1-plugins-ugly.x86_64                       1:1.22.11-1.fc40                    @rpmfusion-free-updates                                          
 gstreamer1-plugins-ugly-free.x86_64                  1.22.11-1.fc40                      @updates                                                         
 gtk-layer-shell.x86_64                               0.8.2-3.fc40                        @fedora                                                          
 gtk-murrine-engine.x86_64                            0.98.2-29.fc40                      @fedora                                                          
@@ -802,6 +805,7 @@ hyprcursor.x86_64                                    0.1.8-1.fc40               
 hyprland.x86_64                                      0.39.1-2.fc40                       @copr:copr.fedorainfracloud.org:solopasha:hyprland               
 hyprlang.x86_64                                      0.5.1-1.fc40                        @copr:copr.fedorainfracloud.org:solopasha:hyprland               
 hyprpicker.x86_64                                    0.2.0-2.fc40                        @copr:copr.fedorainfracloud.org:solopasha:hyprland               
+i2c-tools.x86_64                                     4.3-10.fc40                         @fedora                                                          
 ibus.x86_64                                          1.5.30~rc3-1.fc40                   @updates                                                         
 ibus-anthy.x86_64                                    1.5.16-1.fc40                       @fedora                                                          
 ibus-anthy-python.noarch                             1.5.16-1.fc40                       @fedora                                                          
@@ -864,7 +868,7 @@ jbigkit-libs.x86_64                                  2.1-29.fc40                
 jemalloc.x86_64                                      5.3.0-6.fc40                        @fedora                                                          
 jetbrains-mono-fonts.noarch                          2.304-6.fc40                        @fedora                                                          
 jomolhari-fonts.noarch                               0.003-41.fc40                       @fedora                                                          
-jq.x86_64                                            1.7.1-4.fc40                        @fedora                                                          
+jq.x86_64                                            1.7.1-7.fc40                        @updates                                                         
 js-jquery.noarch                                     3.7.1-3.fc40                        @fedora                                                          
 json-c.x86_64                                        0.17-3.fc40                         @fedora                                                          
 json-glib.x86_64                                     1.8.0-3.fc40                        @fedora                                                          
@@ -1145,6 +1149,7 @@ libhandy.x86_64                                      1.8.3-1.fc40               
 libhangul.x86_64                                     0.1.0-31.fc40                       @fedora                                                          
 libheif.x86_64                                       1.17.5-4.fc40                       @fedora                                                          
 libheif-freeworld.x86_64                             1.17.5-3.fc40                       @rpmfusion-free                                                  
+libi2c.x86_64                                        4.3-10.fc40                         @fedora                                                          
 libibverbs.x86_64                                    48.0-4.fc40                         @fedora                                                          
 libical.x86_64                                       3.0.18-1.fc40                       @updates                                                         
 libical-glib.x86_64                                  3.0.18-1.fc40                       @updates                                                         
@@ -1415,8 +1420,8 @@ libvorbis.x86_64                                     1:1.3.7-10.fc40            
 libvpl.x86_64                                        1:2.10.2-1.fc40                     @fedora                                                          
 libvpx.x86_64                                        1.14.0-2.fc40                       @updates                                                         
 libvterm.x86_64                                      0.3.3-3.fc40                        @fedora                                                          
-libwacom.x86_64                                      2.10.0-1.fc40                       @fedora                                                          
-libwacom-data.noarch                                 2.10.0-1.fc40                       @fedora                                                          
+libwacom.x86_64                                      2.11.0-1.fc40                       @updates                                                         
+libwacom-data.noarch                                 2.11.0-1.fc40                       @updates                                                         
 libwayland-client.x86_64                             1.22.0-3.fc40                       @fedora                                                          
 libwayland-cursor.x86_64                             1.22.0-3.fc40                       @fedora                                                          
 libwayland-egl.x86_64                                1.22.0-3.fc40                       @fedora                                                          
@@ -1479,6 +1484,7 @@ loupe.x86_64                                         46.2-1.fc40                
 low-memory-monitor.x86_64                            2.1-10.fc40                         @fedora                                                          
 lpcnetfreedv.x86_64                                  0.5-5.fc40                          @fedora                                                          
 lrzsz.x86_64                                         0.12.20-64.fc40                     @fedora                                                          
+lsb_release.noarch                                   3.3-3.fc40                          @fedora                                                          
 lsd.x86_64                                           1.0.0-3.fc40                        @fedora                                                          
 lsof.x86_64                                          4.98.0-4.fc40                       @fedora                                                          
 lttng-ust.x86_64                                     2.13.7-3.fc40                       @fedora                                                          
@@ -1582,7 +1588,6 @@ ncurses-devel.x86_64                                 6.4-12.20240127.fc40       
 ncurses-libs.x86_64                                  6.4-12.20240127.fc40                @fedora                                                          
 ndctl.x86_64                                         78-3.fc40                           @fedora                                                          
 ndctl-libs.x86_64                                    78-3.fc40                           @fedora                                                          
-neofetch.noarch                                      7.1.0-12.fc40                       @fedora                                                          
 neon.x86_64                                          0.33.0-1.fc40                       @fedora                                                          
 neovim.x86_64                                        0.9.5-4.fc40                        @fedora                                                          
 net-snmp-libs.x86_64                                 1:5.9.4-5.fc40                      @fedora                                                          
@@ -2363,9 +2368,9 @@ toilet.x86_64                                        0.3-16.fc40                
 tomlplusplus.x86_64                                  3.4.0-2.fc40                        @fedora                                                          
 toolbox.x86_64                                       0.0.99.5-8.fc40                     @fedora                                                          
 totem-pl-parser.x86_64                               3.26.6-9.fc40                       @fedora                                                          
-tpm2-tools.x86_64                                    5.6-2.fc40                          @fedora                                                          
-tpm2-tss.x86_64                                      4.0.1-7.fc40                        @fedora                                                          
-tpm2-tss-fapi.x86_64                                 4.0.1-7.fc40                        @fedora                                                          
+tpm2-tools.x86_64                                    5.7-1.fc40                          @updates                                                         
+tpm2-tss.x86_64                                      4.1.0-1.fc40                        @updates                                                         
+tpm2-tss-fapi.x86_64                                 4.1.0-1.fc40                        @updates                                                         
 traceroute.x86_64                                    3:2.1.5-2.fc40                      @fedora                                                          
 tracker.x86_64                                       3.7.2-1.fc40                        @updates                                                         
 tracker-miners.x86_64                                3.7.2-1.fc40                        @updates                                                         
@@ -2439,7 +2444,6 @@ vulkan-loader.x86_64                                 1.3.280.0-1.fc40           
 vulkan-loader-devel.x86_64                           1.3.280.0-1.fc40                    @updates                                                         
 w3m.x86_64                                           0.5.3-63.git20230121.fc40           @fedora                                                          
 w3m-img.x86_64                                       0.5.3-63.git20230121.fc40           @fedora                                                          
-warp-terminal.x86_64                                 v0.2024.04.23.08.01.stable_03-1     @warpdotdev                                                      
 warsaw.x86_64                                        2.21.3-1                            @System                                                          
 wavpack.x86_64                                       5.6.0-6.fc40                        @fedora                                                          
 waybar.x86_64                                        0.10.0-1.fc40                       @fedora                                                          
@@ -2464,7 +2468,7 @@ wireless-regdb.noarch                                2024.01.23-1.fc40          
 wireplumber.x86_64                                   0.5.2-1.fc40                        @updates                                                         
 wireplumber-libs.x86_64                              0.5.2-1.fc40                        @updates                                                         
 wl-clipboard.x86_64                                  2.2.1-2.fc40                        @fedora                                                          
-wlogout.x86_64                                       1.2.1-1.fc40                        @fedora                                                          
+wlogout.x86_64                                       1.2.2-1.fc40                        @updates                                                         
 wlr-randr.x86_64                                     0.4.1-1.fc40                        @fedora                                                          
 wmctrl.x86_64                                        1.07-36.fc40                        @fedora                                                          
 woff2.x86_64                                         1.0.2-19.fc40                       @fedora                                                          

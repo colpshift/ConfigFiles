@@ -106,7 +106,6 @@ alias ports='netstat -tulanp'
 alias fastfetch='clear && fastfetch -c neofetch.jsonc'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
-alias please='shell-genie ask'
 
 ### Theming section
 autoload -U compinit colors zcalc

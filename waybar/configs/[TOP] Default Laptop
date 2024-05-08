@@ -17,8 +17,8 @@
 "margin-right": 8,
 
 "modules-left": [
-	"hyprland/workspaces#pacman",
-  //"hyprland/workspaces#4", 
+	//"hyprland/workspaces#pacman",
+  "hyprland/workspaces#4", 
 	"custom/separator#dot-line",
 	"cpu",
 	"custom/separator#dot-line", 

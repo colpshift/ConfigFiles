@@ -1,2 +1,2 @@
-du-dust v0.8.6:
+du-dust v1.0.0:
     dust

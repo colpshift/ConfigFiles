@@ -97,9 +97,6 @@ alias bat='bat --theme Nord'
 alias gitb="git commit -S -m 'backup' && git push"
 alias gitinfo='onefetch --no-color-palette'
 # alias gitl='git log --graph'
-# alias pacu='/home/colps/.scripts/fzf_paru_update.sh'
-# alias paci='/home/colps/.scripts/fzf_paru_install.sh'
-# alias pacr='/home/colps/.scripts/fzf_paru_remove.sh'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
@@ -170,8 +167,6 @@ fzf-man-widget() {
 bindkey '^h' fzf-man-widget
 zle -N fzf-man-widget
 
-# Icon used is nerdfont
-
 ### fzf-tab -'Tab'
 source "$HOME/.src/fzf-tab/fzf-tab.plugin.zsh"
 # disable sort when completing `git checkout`
@@ -188,6 +183,26 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 ### fzf forgit - 'ga','glo','gi','gd'
 source "$HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh"
 source "$HOME/.src/forgit/forgit.plugin.zsh"
+# forgit aliases
+#
+# forgit_log=glo
+# forgit_diff=gd
+# forgit_add=ga
+# forgit_reset_head=grh
+# forgit_ignore=gi
+# forgit_checkout_file=gcf
+# forgit_checkout_branch=gcb
+# forgit_branch_delete=gbd
+# forgit_checkout_tag=gct
+# forgit_checkout_commit=gco
+# forgit_revert_commit=grc
+# forgit_clean=gclean
+# forgit_stash_show=gss
+# forgit_stash_push=gsp
+# forgit_cherry_pick=gcp
+# forgit_rebase=grb
+# forgit_blame=gbl
+# forgit_fixup=gfu
 
 ### Zsh plugins
 source "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh"

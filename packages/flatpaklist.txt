@@ -1,4 +1,4 @@
-Discord	com.discordapp.Discord	0.0.53	stable	system
+Discord	com.discordapp.Discord	0.0.54	stable	system
 TIDAL Hi-Fi	com.mastermindzh.tidal-hifi	5.11.0	stable	system
 Microsoft Edge	com.microsoft.Edge	124.0.2478.97-1	stable	system
 Spotify	com.spotify.Client	1.2.31.1205.g4d59ad7c	stable	system

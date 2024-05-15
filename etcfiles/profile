@@ -46,7 +46,10 @@ HOSTNAME=$(/usr/bin/hostnamectl --transient 2>/dev/null) || \
 HOSTNAME=$(/usr/bin/hostname 2>/dev/null) || \
 HOSTNAME=$(/usr/bin/uname -n)
 
-HISTSIZE=1000
+if [ -z "$HISTSIZE" ] ; then
+    HISTSIZE=1000
+fi
+
 if [ "$HISTCONTROL" = "ignorespace" ] ; then
     export HISTCONTROL=ignoreboth
 else
@@ -86,4 +89,3 @@ export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
 export BROWSER=brave-browser
-

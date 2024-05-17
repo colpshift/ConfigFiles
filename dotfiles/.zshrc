@@ -37,9 +37,9 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
 
 ### History
-HISTFILE=$HOME/.zhistory
-HISTSIZE=999
-SAVEHIST=1000
+export HISTFILE="$HOME/.zhistory"
+export HISTSIZE=999
+export SAVEHIST=1000
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
 
 ### Load colors
@@ -111,7 +111,7 @@ colors
 
 ### fzf
 eval "$(fzf --zsh)"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source "$HOME/.fzf.zsh"
 
 ### fzf search
 #
@@ -148,7 +148,7 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 fzf-man-widget() {
   batman="man {1} | col -bx | bat --language=man --plain --color always --theme=\"Monokai Extended\""
    man -k . | sort \
-   | awk -v cyan=$(tput setaf 6) -v blue=$(tput setaf 4) -v res=$(tput sgr0) -v bld=$(tput bold) '{ $1=cyan bld $1; $2=res blue;} 1' \
+   | awk -v cyan="$(tput setaf 6)" -v blue="$(tput setaf 4)" -v res="$(tput sgr0)" -v bld="$(tput bold)" '{ $1=cyan bld $1; $2=res blue;} 1' \
    | fzf  \
       -q "$1" \
       --ansi \
@@ -159,7 +159,7 @@ fzf-man-widget() {
       --bind "enter:execute(man {1})" \
       --bind "alt-c:+change-preview(cht.sh {1})+change-prompt(ﯽ Cheat > )" \
       --bind "alt-m:+change-preview(${batman})+change-prompt( Man > )" \
-      --bind "alt-t:+change-preview(tldr --color=always {1})+change-prompt(ﳁ TLDR > )"
+      --bind "alt-t:+change-preview(tldr {1})+change-prompt(ﳁ TLDR > )"
   zle reset-prompt
 }
 # `Ctrl-H` keybinding to launch the widget (this widget works only on zsh, don't know how to do it on bash and fish 
@@ -174,9 +174,9 @@ zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
 zstyle ':completion:*:descriptions' format '[%d]'
 # set list-colors to enable filename colorizing
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 # preview directory's content with exa when completing cd
-zstyle ':fzf-tab:complete:cd:*' fzf-preview "exa -1 --color=always $realpath"
+zstyle ':fzf-tab:complete:cd:*' fzf-preview "exa -1 --color=always"
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
@@ -205,7 +205,7 @@ source "$HOME/.src/forgit/forgit.plugin.zsh"
 # forgit_fixup=gfu
 
 ### Zsh plugins
-source "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh" 
 source "/usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
 source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
@@ -233,3 +233,7 @@ export VISUAL=nvim
 export PAGER=less
 export BROWSER=brave-browser
 
+# load custom executable functions
+for function in ~/.zsh/functions/*; do
+  source "$function"
+done

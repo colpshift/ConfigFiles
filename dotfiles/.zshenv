@@ -8,13 +8,14 @@
 
 ### path
 typeset -U path
-path=($HOME/.local/bin $HOME/.fzf/bin $HOME/bin $HOME/.scripts $HOME/.rbenv/bin $HOME/.cargo/bin $HOME/go/bin /usr/local/go/bin /bin /usr/bin /sbin /usr/sbin /usr/local/bin $path[@])
+path=("$HOME/.local/bin" "$HOME/.fzf/bin" "$HOME/bin" "$HOME/.scripts" "$HOME/.rbenv/bin" "$HOME/.cargo/bin" "$HOME/go/bin" "/usr/local/go/bin" "/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "${path[@]}")
 
 ### default e-mail
 export DEFAULT_RECIPIENT="marcos.colpani@gmail.com"
 
 ### gpg agent
-export GPG_TTY=$(tty)
+GPG_TTY=$(tty)
+export GPG_TTY
 
 ### ssh agent
 eval "$(ssh-agent -s)" > /dev/null

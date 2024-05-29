@@ -1,17 +1,17 @@
 Discord	com.discordapp.Discord	0.0.54	stable	system
-draw.io	com.jgraph.drawio.desktop	24.2.5	stable	system
+draw.io	com.jgraph.drawio.desktop	24.4.8	stable	system
 TIDAL Hi-Fi	com.mastermindzh.tidal-hifi	5.13.0	stable	system
-Microsoft Edge	com.microsoft.Edge	125.0.2535.51-1	stable	system
+Microsoft Edge	com.microsoft.Edge	125.0.2535.67-1	stable	system
 Spotify	com.spotify.Client	1.2.31.1205.g4d59ad7c	stable	system
 Stremio	com.stremio.Stremio	4.4.168	stable	system
 Todoist: To-Do List & Tasks	com.todoist.Todoist	8.10.1	stable	system
 GitHub Desktop	io.github.shiftey.Desktop	3.3.12-linux2	stable	system
 Freedesktop Platform	org.freedesktop.Platform	22.08.24	22.08	system
-Freedesktop Platform	org.freedesktop.Platform	23.08.17	23.08	system
+Freedesktop Platform	org.freedesktop.Platform	23.08.19	23.08	system
 Mesa	org.freedesktop.Platform.GL.default	24.0.4	22.08	system
 Mesa (Extra)	org.freedesktop.Platform.GL.default	24.0.4	22.08-extra	system
-Mesa	org.freedesktop.Platform.GL.default	24.0.6	23.08	system
-Mesa (Extra)	org.freedesktop.Platform.GL.default	24.0.6	23.08-extra	system
+Mesa	org.freedesktop.Platform.GL.default	24.0.7	23.08	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	24.0.7	23.08-extra	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		23.08	system
 openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	system

@@ -223,15 +223,12 @@ promptinit
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
-# Load Angular CLI autocompletion.
-# source <(ng completion script)
-
 ### Default apps
 export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export BROWSER=brave-browser
+export BROWSER="flatpak run com.microsoft.Edge"
 
 # load custom executable functions
 for function in ~/.zsh/functions/*; do

@@ -3,7 +3,7 @@
 # Tags: zsh shell
 # Description: zsh env config
 # Author: colpshift
-# Last update: 2023-05-27T14:51:57
+# Last update: 2023-05-27 14:51:57
 #
 
 ### path

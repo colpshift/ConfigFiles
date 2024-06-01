@@ -97,6 +97,7 @@ alias bat='bat --theme Nord'
 alias gitb="git commit -S -m 'backup' && git push"
 alias gitinfo='onefetch --no-color-palette'
 # alias gitl='git log --graph'
+alias dnf='dnf5'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
@@ -228,7 +229,7 @@ export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export BROWSER="flatpak run com.microsoft.Edge"
+export BROWSER=firefox
 
 # load custom executable functions
 for function in ~/.zsh/functions/*; do

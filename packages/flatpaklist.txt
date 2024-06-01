@@ -2,7 +2,7 @@ Discord	com.discordapp.Discord	0.0.54	stable	system
 draw.io	com.jgraph.drawio.desktop	24.4.8	stable	system
 TIDAL Hi-Fi	com.mastermindzh.tidal-hifi	5.13.0	stable	system
 Microsoft Edge	com.microsoft.Edge	125.0.2535.67-1	stable	system
-Spotify	com.spotify.Client	1.2.31.1205.g4d59ad7c	stable	system
+Spotify	com.spotify.Client	1.2.37.701.ge66eb7bc	stable	system
 Stremio	com.stremio.Stremio	4.4.168	stable	system
 Todoist: To-Do List & Tasks	com.todoist.Todoist	8.10.1	stable	system
 GitHub Desktop	io.github.shiftey.Desktop	3.3.12-linux2	stable	system

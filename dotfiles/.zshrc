@@ -97,6 +97,7 @@ alias bat='bat --theme Nord'
 alias gitb="git commit -S -m 'backup' && git push"
 alias gitinfo='onefetch --no-color-palette'
 # alias gitl='git log --graph'
+alias dnf='dnf5'
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
@@ -223,15 +224,12 @@ promptinit
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
-# Load Angular CLI autocompletion.
-# source <(ng completion script)
-
 ### Default apps
 export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export BROWSER=brave-browser
+export BROWSER=firefox
 
 # load custom executable functions
 for function in ~/.zsh/functions/*; do

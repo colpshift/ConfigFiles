@@ -229,7 +229,7 @@ export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export BROWSER=firefox
+export BROWSER=/usr/bin/brave-browser-stable
 
 # load custom executable functions
 for function in ~/.zsh/functions/*; do

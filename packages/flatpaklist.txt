@@ -1,0 +1,19 @@
+Discord	com.discordapp.Discord	0.0.56	stable	system
+draw.io	com.jgraph.drawio.desktop	24.4.8	stable	system
+TIDAL Hi-Fi	com.mastermindzh.tidal-hifi	5.13.1	stable	system
+Microsoft Edge	com.microsoft.Edge	125.0.2535.92-1	stable	system
+Spotify	com.spotify.Client	1.2.37.701.ge66eb7bc	stable	system
+Stremio	com.stremio.Stremio	4.4.168	stable	system
+Todoist: To-Do List & Tasks	com.todoist.Todoist	8.10.1	stable	system
+GitHub Desktop	io.github.shiftey.Desktop	3.3.18-linux1	stable	system
+Freedesktop Platform	org.freedesktop.Platform	22.08.24	22.08	system
+Freedesktop Platform	org.freedesktop.Platform	23.08.20	23.08	system
+Mesa	org.freedesktop.Platform.GL.default	24.0.4	22.08	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	24.0.4	22.08-extra	system
+Mesa	org.freedesktop.Platform.GL.default	24.1.1	23.08	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	24.1.1	23.08-extra	system
+Intel	org.freedesktop.Platform.VAAPI.Intel		22.08	system
+Intel	org.freedesktop.Platform.VAAPI.Intel		23.08	system
+openh264	org.freedesktop.Platform.openh264	2.1.0	2.2.0	system
+Breeze GTK theme	org.gtk.Gtk3theme.Breeze	6.0.5	3.22	system
+KDE Application Platform	org.kde.Platform		5.15-23.08	system

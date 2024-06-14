@@ -2,3 +2,5 @@ du-dust v1.0.0:
     dust
 exa v0.10.1:
     exa
+wallust v2.10.0:
+    wallust

@@ -1,5 +1,5 @@
 Discord	com.discordapp.Discord	0.0.56	stable	system
-draw.io	com.jgraph.drawio.desktop	24.4.8	stable	system
+draw.io	com.jgraph.drawio.desktop	24.5.3	stable	system
 TIDAL Hi-Fi	com.mastermindzh.tidal-hifi	5.13.1	stable	system
 Microsoft Edge	com.microsoft.Edge	125.0.2535.92-1	stable	system
 Spotify	com.spotify.Client	1.2.37.701.ge66eb7bc	stable	system

@@ -17,20 +17,21 @@
 "margin-right": 8,
 
 "modules-left": [
-	//"hyprland/workspaces#pacman",
-  "hyprland/workspaces#4", 
+	"hyprland/workspaces#pacman",
+  //"hyprland/workspaces#4", 
 	"custom/separator#dot-line",
 	"cpu",
 	"custom/separator#dot-line", 
 	"temperature",
 	"custom/separator#dot-line", 
 	"memory",
-	//"custom/separator#blank_3",
-	//"custom/cava_mviz",
-  //"custom/separator#blank_3",
-  //"mpris",
   "custom/separator#dot-line",
 	"custom/weather",
+  "custom/separator#blank",
+  "mpris",
+  "custom/separator#blank",
+	"custom/cava_mviz",
+  "
 	],
 
 "modules-center": [

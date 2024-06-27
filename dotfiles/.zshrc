@@ -225,7 +225,7 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 ### Default apps
-export TERMINAL=kitty
+export TERMINAL=warp-terminal
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less

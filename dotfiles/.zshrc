@@ -225,13 +225,13 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 ### Default apps
-export TERMINAL=kitty
+export TERMINAL=warp-terminal
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
 export BROWSER=/usr/bin/brave-browser-stable
 
 # load custom executable functions
-for function in ~/.zsh/functions/*; do
-  source "$function"
-done
+#for function in ~/.zsh/functions/*; do
+#  source "$function"
+#done

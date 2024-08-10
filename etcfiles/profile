@@ -84,9 +84,9 @@ then
 fi
 
 ### Default apps
-export TERMINAL=warp-terminal
+export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export BROWSER=/usr/bin/brave-browser-stable
+export BROWSER="flatpak run com.microsoft.Edge"
 

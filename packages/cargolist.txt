@@ -2,9 +2,9 @@ bat v0.24.0:
     bat
 duf v0.19.0:
     duf
-lsd v1.1.5:
-    lsd
+exa v0.10.1:
+    exa
 procs v0.14.6:
     procs
-starship v1.20.1:
-    starship
+ripgrep v14.1.0:
+    rg

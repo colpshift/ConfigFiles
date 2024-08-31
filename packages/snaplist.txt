@@ -10,6 +10,7 @@ core20                     20240416                    2318   latest/stable    c
 core22                     20240809                    1586   latest/stable    canonical**     base
 core24                     20240710                    490    latest/stable    canonical**     base
 cups                       2.4.10-1                    1058   latest/stable    openprinting**  -
+diff-so-fancy              v1.4.4                      263    latest/stable    bp              -
 discord                    0.0.66                      206    latest/stable    snapcrafters*   -
 dust                       v1.1.1                      19     latest/stable    danie.dejager   -
 firefox                    129.0.2-1                   4793   latest/stable    mozilla**       -

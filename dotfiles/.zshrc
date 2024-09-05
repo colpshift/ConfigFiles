@@ -98,6 +98,7 @@ alias bat='bat --theme Nord'
 alias gitb="git commit -S -m 'backup' && git push"
 alias gitinfo='onefetch --no-color-palette'
 # alias gitl='git log --graph'
+alias nalau="sudo nala update && sudo nala upgrade && sudo nala autoremove && sudo nala clean"
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
@@ -229,7 +230,7 @@ export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export BROWSER="flatpak run com.microsoft.Edge"
+export BROWSER="google-chrome"
 
 # load custom executable functions
 #for function in ~/.zsh/functions/*; do

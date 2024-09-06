@@ -1,6 +1,6 @@
 Name                       Version                     Rev    Tracking         Publisher       Notes
 bare                       1.0                         5      latest/stable    canonical**     base
-bitwarden                  2024.8.1                    118    latest/stable    bitwarden**     -
+bitwarden                  2024.8.2                    119    latest/stable    bitwarden**     -
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**     -
 cheat                      4.4.0.build.2               4279   latest/stable    bernermic       -
 code                       fee1edb8                    167    latest/stable    vscode**        classic

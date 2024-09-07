@@ -1,5 +1,6 @@
 Name                       Version                     Rev    Tracking         Publisher       Notes
 bare                       1.0                         5      latest/stable    canonical**     base
+bash-language-server       4.7.0                       69     latest/stable    alexmurray*     classic
 bitwarden                  2024.8.2                    119    latest/stable    bitwarden**     -
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**     -
 cheat                      4.4.0.build.2               4279   latest/stable    bernermic       -
@@ -29,6 +30,7 @@ notion-snap-reborn         1.2.0                       45     latest/stable    s
 onefetch                   2.21.0                      3277   latest/stable    o2sh            -
 onlyoffice-desktopeditors  8.1.1                       196    latest/stable    onlyoffice**    -
 qt515-core20               5.15.4                      32     latest/stable    keshavnrj*      -
+shellcheck                 v0.10.0                     1725   latest/stable    koalaman        -
 snap-store                 0+git.e3dd562               1173   latest/stable/…  canonical**     -
 snapd                      2.63                        21759  latest/stable    canonical**     snapd
 snapd-desktop-integration  0.9                         178    latest/stable    canonical**     -

@@ -95,7 +95,6 @@ alias cat='bat --theme Nord'
 alias bat='bat --theme Nord'
 alias gitu='git add . && git commit -S && git push && gh pr create -fw'
 alias gitb='git add . && git commit -S -m 'backup' && git push && gh pr create -fw'
-# alias gitb="git commit -S -m 'backup' && git push"
 alias gitinfo='onefetch --no-color-palette'
 alias nalau="sudo nala update && sudo nala upgrade && sudo nala autoremove && sudo nala clean"
 alias cls='clear'

@@ -5,6 +5,7 @@ local options = {
     html = { "prettier" },
     sh = { "shfmt" },
     json = { "jsonnetfmt" },
+    python = { "pylint" },
   },
 
   format_on_save = {

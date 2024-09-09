@@ -100,8 +100,7 @@ alias nalau="sudo nala update && sudo nala upgrade && sudo nala autoremove && su
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
-alias ubui='neofetch'
-alias neofetch='/home/colps/.scripts/neofetch_start.sh'
+alias ubui='clear && fastfetch'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 

@@ -23,6 +23,7 @@ gnome-42-2204              0+git.510a601               176    latest/stable/… 
 gnome-46-2404              0+git.5d6be1b               48     latest/stable    canonical**     -
 gtk-common-themes          0.1-81-g442e511             1535   latest/stable/…  canonical**     -
 gtk2-common-themes         0.1                         13     latest/stable    canonical**     -
+gtop                       v0.1.5+git54.14c1dc3        24     latest/edge      aksakalli       devmode
 lazygit                    0.34                        25     latest/stable    danto7          -
 mesa-2404                  24.0.9                      143    latest/stable    canonical**     -
 mysql-workbench-community  8.0.36                      13     latest/stable    tonybolzan      -
@@ -30,6 +31,7 @@ notion-snap-reborn         1.2.0                       45     latest/stable    s
 onefetch                   2.21.0                      3277   latest/stable    o2sh            -
 onlyoffice-desktopeditors  8.1.1                       196    latest/stable    onlyoffice**    -
 qt515-core20               5.15.4                      32     latest/stable    keshavnrj*      -
+rambox                     2.3.4                       41     latest/stable    ramboxapp**     -
 shellcheck                 v0.10.0                     1725   latest/stable    koalaman        -
 snap-store                 0+git.e3dd562               1173   latest/stable/…  canonical**     -
 snapd                      2.63                        21759  latest/stable    canonical**     snapd

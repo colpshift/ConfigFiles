@@ -95,8 +95,8 @@ alias cat='bat --theme Nord'
 alias bat='bat --theme Nord'
 alias gitu='git add . && git commit -S && git push && gh pr create -w'
 alias gitb='git add . && git commit -S -m 'backup' && git push && gh pr create -w'
-alias giti='onefetch --no-color-palette'
-alias nalau="sudo nala update && sudo nala upgrade && sudo nala autoremove && sudo nala clean"
+alias giti='clear && onefetch --no-color-palette'
+alias aptu="sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt clean"
 alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
@@ -228,7 +228,7 @@ export TERMINAL=kitty
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export BROWSER="google-chrome"
+export BROWSER="brave-browser"
 
 # load custom executable functions
 #for function in ~/.zsh/functions/*; do

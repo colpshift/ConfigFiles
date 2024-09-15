@@ -4,7 +4,7 @@ bash-language-server       4.7.0                       69     latest/stable    a
 bitwarden                  2024.8.2                    119    latest/stable    bitwarden**     -
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**     -
 cheat                      4.4.0.build.2               4279   latest/stable    bernermic       -
-code                       4849ca9b                    168    latest/stable    vscode**        classic
+code                       38c31bc7                    169    latest/stable    vscode**        classic
 core                       16-2.61.4-20240607          17200  latest/stable    canonical**     core
 core18                     20240612                    2829   latest/stable    canonical**     base
 core20                     20240416                    2318   latest/stable    canonical**     base
@@ -12,7 +12,8 @@ core22                     20240823                    1612   latest/stable    c
 core24                     20240710                    490    latest/stable    canonical**     base
 cups                       2.4.10-1                    1058   latest/stable    openprinting**  -
 diff-so-fancy              v1.4.4                      263    latest/stable    bp              -
-discord                    0.0.66                      206    latest/stable    snapcrafters*   -
+discord                    0.0.68                      207    latest/stable    snapcrafters*   -
+drawio                     24.7.8                      226    latest/stable    jgraph**        -
 dust                       v1.1.1                      19     latest/stable    danie.dejager   -
 firefox                    130.0-2                     4848   latest/stable    mozilla**       -
 firmware-updater           0+git.5007558               127    latest/stable/…  canonical**     -
@@ -31,11 +32,11 @@ notion-snap-reborn         1.2.0                       45     latest/stable    s
 onefetch                   2.21.0                      3277   latest/stable    o2sh            -
 onlyoffice-desktopeditors  8.1.1                       196    latest/stable    onlyoffice**    -
 qt515-core20               5.15.4                      32     latest/stable    keshavnrj*      -
-rambox                     2.3.4                       41     latest/stable    ramboxapp**     -
 shellcheck                 v0.10.0                     1725   latest/stable    koalaman        -
 snap-store                 0+git.e3dd562               1173   latest/stable/…  canonical**     -
 snapd                      2.63                        21759  latest/stable    canonical**     snapd
 snapd-desktop-integration  0.9                         178    latest/stable    canonical**     -
+spotify                    1.2.42.290.g242057a2        78     latest/stable    spotify**       -
 thunderbird                128.2.0esr-1                509    latest/stable    canonical**     -
-todoist                    9.7.2                       1319   latest/stable    doist**         -
+todoist                    9.7.5                       1321   latest/stable    doist**         -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**      -

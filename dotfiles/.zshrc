@@ -101,6 +101,7 @@ alias cls='clear'
 alias myip='curl http://ipecho.net/plain; echo'
 alias ports='netstat -tulanp'
 alias ubui='clear && fastfetch'
+alias cmatrix='$HOME/.scripts/cmatrix_run.sh'
 alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 
@@ -224,7 +225,7 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 ### Default apps
-export TERMINAL=kitty
+export TERMINAL="warp-terminal"
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less

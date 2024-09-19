@@ -1,7 +1,7 @@
 Name                       Version                     Rev    Tracking         Publisher       Notes
 bare                       1.0                         5      latest/stable    canonical**     base
 bash-language-server       4.7.0                       69     latest/stable    alexmurray*     classic
-bitwarden                  2024.8.2                    119    latest/stable    bitwarden**     -
+bitwarden                  2024.9.0                    120    latest/stable    bitwarden**     -
 canonical-livepatch        10.8.3                      282    latest/stable    canonical**     -
 cheat                      4.4.0.build.2               4279   latest/stable    bernermic       -
 code                       38c31bc7                    169    latest/stable    vscode**        classic
@@ -12,7 +12,7 @@ core22                     20240823                    1612   latest/stable    c
 core24                     20240710                    490    latest/stable    canonical**     base
 cups                       2.4.10-1                    1058   latest/stable    openprinting**  -
 diff-so-fancy              v1.4.4                      274    latest/stable    bp              -
-discord                    0.0.68                      207    latest/stable    snapcrafters*   -
+discord                    0.0.68                      208    latest/stable    snapcrafters*   -
 drawio                     24.7.8                      226    latest/stable    jgraph**        -
 dust                       v1.1.1                      19     latest/stable    danie.dejager   -
 firefox                    130.0.1-1                   4955   latest/stable    mozilla**       -

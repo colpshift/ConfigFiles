@@ -29,7 +29,7 @@ lazygit                    0.34                        25     latest/stable    d
 mesa-2404                  24.0.9                      143    latest/stable    canonical**     -
 mysql-workbench-community  8.0.36                      13     latest/stable    tonybolzan      -
 notion-snap-reborn         1.2.0                       45     latest/stable    sunshio         -
-onefetch                   2.21.0                      3277   latest/stable    o2sh            -
+onefetch                   2.22.0                      3441   latest/stable    o2sh            -
 onlyoffice-desktopeditors  8.1.1                       196    latest/stable    onlyoffice**    -
 qt515-core20               5.15.4                      32     latest/stable    keshavnrj*      -
 shellcheck                 v0.10.0                     1725   latest/stable    koalaman        -

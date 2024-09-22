@@ -15,7 +15,6 @@ diff-so-fancy              v1.4.4                      274    latest/stable    b
 discord                    0.0.68                      208    latest/stable    snapcrafters*   -
 drawio                     24.7.8                      226    latest/stable    jgraph**        -
 dust                       v1.1.1                      19     latest/stable    danie.dejager   -
-firefox                    130.0.1-1                   4955   latest/stable    mozilla**       -
 firmware-updater           0+git.5007558               127    latest/stable/…  canonical**     -
 gimp                       2.10.38                     436    latest/stable    snapcrafters*   -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67  198    latest/stable    canonical**     -
@@ -25,7 +24,6 @@ gnome-46-2404              0+git.5d6be1b               48     latest/stable    c
 gtk-common-themes          0.1-81-g442e511             1535   latest/stable/…  canonical**     -
 gtk2-common-themes         0.1                         13     latest/stable    canonical**     -
 gtop                       v0.1.5+git54.14c1dc3        24     latest/edge      aksakalli       devmode
-lazygit                    0.34                        25     latest/stable    danto7          -
 mesa-2404                  24.0.9                      143    latest/stable    canonical**     -
 mysql-workbench-community  8.0.36                      13     latest/stable    tonybolzan      -
 notion-snap-reborn         1.2.0                       45     latest/stable    sunshio         -
@@ -38,5 +36,5 @@ snapd                      2.63                        21759  latest/stable    c
 snapd-desktop-integration  0.9                         178    latest/stable    canonical**     -
 spotify                    1.2.42.290.g242057a2        78     latest/stable    spotify**       -
 thunderbird                128.2.1esr-2                510    latest/stable    canonical**     -
-todoist                    9.7.6                       1322   latest/stable    doist**         -
+todoist                    9.7.7                       1323   latest/stable    doist**         -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**      -

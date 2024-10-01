@@ -12,7 +12,7 @@ core22                     20240904                    1621   latest/stable    c
 core24                     20240710                    490    latest/stable    canonical**     base
 cups                       2.4.10-1                    1058   latest/stable    openprinting**  -
 diff-so-fancy              v1.4.4                      274    latest/stable    bp              -
-discord                    0.0.69                      209    latest/stable    snapcrafters*   -
+discord                    0.0.69                      210    latest/stable    snapcrafters*   -
 drawio                     24.7.8                      226    latest/stable    jgraph**        -
 dust                       v1.1.1                      19     latest/stable    danie.dejager   -
 firmware-updater           0+git.5007558               127    latest/stable/…  canonical**     -

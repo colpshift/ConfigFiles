@@ -31,7 +31,7 @@ onefetch                   2.22.0                      3441   latest/stable    o
 onlyoffice-desktopeditors  8.1.1                       198    latest/stable    onlyoffice**    -
 qt515-core20               5.15.4                      32     latest/stable    keshavnrj*      -
 shellcheck                 v0.10.0                     1725   latest/stable    koalaman        -
-snap-store                 0+git.4fcd62b7              1218   latest/stable/…  canonical**     -
+snap-store                 41.3-72-g80e7130            1216   latest/stable/…  canonical**     -
 snapd                      2.63                        21759  latest/stable    canonical**     snapd
 snapd-desktop-integration  0.9                         253    latest/stable    canonical**     -
 spotify                    1.2.45.454.gc16ec9f6        79     latest/stable    spotify**       -

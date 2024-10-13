@@ -1,134 +1,74 @@
-#
-# Tags: zsh shell
-# Description: zsh env config
-# Author: colpshift
-# Last update: 2024-04-14 20:00:00
-#
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-### Set variables
-WORDCHARS=${WORDCHARS//\/[&.;]}
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
 
-### Set/unset ZSH options
-setopt INC_APPEND_HISTORY
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt EXTENDED_HISTORY
-setopt APPEND_HISTORY
-setopt SHARE_HISTORY
-setopt AUTO_LIST
-setopt MENUCOMPLETE
-setopt COMPLETE_ALIASES
-setopt ALL_EXPORT
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="agnoster"
+export DEFAULT_USER='colps'
 
-### Set/unset shell options
-setopt   notify globdots pushdtohome cdablevars autolist numericglobsort
-setopt   autocd recexact rcexpandparam nocheckjobs nobeep
-setopt   autopushd autoresume histignoredups pushdsilent pushdignoredups
-setopt   pushdminus extendedglob nocaseglob rcquotes
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
-### Completion Styles
-autoload -Uz compinit
-compinit
-zstyle ':completion::complete:*' use-cache on
-zstyle ':completion::complete:*' cache-path "$HOME/.zsh/cache/$HOST"
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
-zstyle ':completion:*' menu select=1 _complete _ignored _approximate
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*:urls' local 'www' '/var/www/htdocs' 'public_html'
+# Uncomment the following line to change how often to auto-update (in days).
+zstyle ':omz:update' frequency 3
 
-### History
-export HISTFILE="$HOME/.zhistory"
-export HISTSIZE=999
-export SAVEHIST=1000
-autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
 
-### Load colors
-autoload -U colors && colors
-colors
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
 
-### Keybindings section
-bindkey -e
-bindkey '^[[7~' beginning-of-line                   # Home key
-bindkey '^[[H' beginning-of-line                    # Home key
-# if [[ "${terminfo[khome]}" != "" ]]; then
-#   bindkey "${terminfo[khome]}" beginning-of-line    # [Home] - Go to beginning of line
-# fi
-bindkey '^[[8~' end-of-line                         # End key
-bindkey '^[[F' end-of-line                          # End key
-# if [[ "${terminfo[kend]}" != "" ]]; then
-#   bindkey "${terminfo[kend]}" end-of-line           # [End] - Go to end of line
-# fi
-bindkey '^[[2~' overwrite-mode                      # Insert key
-bindkey '^[[3~' delete-char                         # Delete key
-bindkey '^[[C'  forward-char                        # Right key
-bindkey '^[[D'  backward-char                       # Left key
-bindkey '^[[5~' history-beginning-search-backward   # Page up key
-bindkey '^[[6~' history-beginning-search-forward    # Page down key
+# Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
+COMPLETION_WAITING_DOTS="true"
 
-# Navigate words with ctrl+arrow keys
-bindkey '^[Oc' forward-word                                     
-bindkey '^[Od' backward-word                                   
-bindkey '^[[1;5D' backward-word                              
-bindkey '^[[1;5C' forward-word                                
-bindkey '^H' backward-kill-word
-bindkey '^[[Z' undo
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  command-not-found
+  zsh-completions
+  zsh-autosuggestions
+  zsh-history-substring-search
+  zsh-syntax-highlighting
+  zsh-interactive-cd
+  zsh-vi-mode
+  fzf
+)
 
-### Set alias
-alias ll='lsd -lh --group-dirs first'
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
-alias dir='dir --color'
-alias grep='rg'
-alias dmesg='dmesg --color'
-alias df='dust'
-alias du='duf'
-alias ps='procs'
-alias su='sudo -i'
-alias vi='nvim'
-alias vim='nvim'
-alias gvim='nvim'
-alias fd='fdfind'
-alias cat='bat --theme Nord'
-alias bat='bat --theme Nord'
-alias gitu='git add . && git commit -S && git push && gh pr create -w'
-alias gitb='git add . && git commit -S -m 'backup' && git push && gh pr create -w'
-alias giti="clear && onefetch --no-color-palette"
-alias apt="sudo apt"
-alias aptu="apt update && apt full-upgrade && apt autoremove && apt clean"
-alias nala="sudo nala"
-alias nalau="nala update && nala full-upgrade && nala autoremove && nala clean"
-alias cls='clear'
-alias myip='curl http://ipecho.net/plain; echo'
-alias ports='sudo ss -tulanp'
-alias ubui="clear && fastfetch"
-alias cmatrix='$HOME/.scripts/cmatrix_run.sh'
-alias systemctl_error='sudo systemctl --failed'
-alias journal_error='sudo journalctl -p 3 -xb'
+source $ZSH/oh-my-zsh.sh
 
-### Theming section
-autoload -U compinit colors zcalc
-compinit -d
-colors
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+source "$ZSH/oh-my-zsh.sh"
 
 ### fzf
 eval "$(fzf --zsh)"
 [ -f ~/.fzf.zsh ] && source "$HOME/.fzf.zsh"
+export FZF_BASE="$HOME/.fzf/"
 
 ### fzf search
 #
 # https://vitormv.github.io/fzf-themes/
 #
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+  --color=fg:#d0d0d0,fg+:#d0d0d0,bg:#121212,bg+:#262626
   --color=hl:#5f87af,hl+:#5fd7ff,info:#afaf87,marker:#87ff00
   --color=prompt:#d7005f,spinner:#af5fff,pointer:#af5fff,header:#87afaf
+  --color=border:#262626,label:#aeaeae,query:#d9d9d9
   --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
   --marker=">" --pointer="◆" --separator="─" --scrollbar="│"
-  --info="right"'
+  --layout="reverse" --info="right"'
 #
-export FZF_CTRL_T_COMMAND="fd --type f --strip-cwd-prefix --hidden --follow --exclude .git"
+export FZF_CTRL_T_COMMAND='fdfind --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 #
 # fzf Search file - Ctrl-T
 export FZF_CTRL_T_OPTS="
@@ -185,54 +125,46 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 ### fzf forgit - 'ga','glo','gi','gd'
 source "$HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh"
 source "$HOME/.src/forgit/forgit.plugin.zsh"
-# forgit aliases
-#
-# forgit_log=glo
-# forgit_diff=gd
-# forgit_add=ga
-# forgit_reset_head=grh
-# forgit_ignore=gi
-# forgit_checkout_file=gcf
-# forgit_checkout_branch=gcb
-# forgit_branch_delete=gbd
-# forgit_checkout_tag=gct
-# forgit_checkout_commit=gco
-# forgit_revert_commit=grc
-# forgit_clean=gclean
-# forgit_stash_show=gss
-# forgit_stash_push=gsp
-# forgit_cherry_pick=gcp
-# forgit_rebase=grb
-# forgit_blame=gbl
-# forgit_fixup=gfu
 
-### Zsh plugins
-source "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh" 
-source "/usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
-source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-
-# bind UP and DOWN arrow keys to history substring search
-zmodload zsh/terminfo
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
-### Set prompt
-autoload -Uz compinit promptinit
-compinit -d
-promptinit
-#
-# Prompt starship
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-eval "$(starship init zsh)"
+### alias
+alias ll='lsd -lh --group-dirs first'
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+alias dir='dir --color'
+alias grep='rg'
+alias dmesg='dmesg --color'
+alias df='dust'
+alias du='duf'
+alias ps='procs'
+alias su='sudo -i'
+alias vi='nvim'
+alias vim='nvim'
+alias gvim='nvim'
+alias fd='fd-find'
+alias cat='bat --theme Nord'
+alias bat='bat --theme Nord'
+alias gitu='git add . && git commit -S && git push && gh pr create -w'
+alias gitb='git add . && git commit -S -m 'backup' && git push && gh pr create -w'
+alias giti="clear && onefetch --no-color-palette"
+alias apt="sudo apt"
+alias aptu="apt update && apt full-upgrade && apt autoremove"
+alias nala="sudo nala"
+alias nalau="nala update && nala full-upgrade && nala autoremove"
+alias cls='clear'
+alias myip='curl http://ipecho.net/plain; echo'
+alias ports='sudo ss -tulanp'
+alias ubui="clear && fastfetch"
+alias cmatrix='$HOME/.scripts/cmatrix_run.sh'
+alias systemctl_error='sudo systemctl --failed'
+alias journal_error='sudo journalctl -p 3 -xb'
 
 ### Default apps
-export TERMINAL="warp-terminal"
+export TERMINAL="kitty"
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
 export BROWSER="brave-browser"
 
-# load custom executable functions
-#for function in ~/.zsh/functions/*; do
-#  source "$function"
-#done

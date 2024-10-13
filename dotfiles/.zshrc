@@ -122,9 +122,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview "exa -1 --color=always"
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
-### fzf forgit - 'ga','glo','gi','gd'
-source "$HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh"
-
 ### alias
 alias ll='lsd -lh --group-dirs first'
 alias ls='lsd'

@@ -43,6 +43,8 @@ plugins=(
   zsh-interactive-cd
   zsh-vi-mode
   fzf
+  fzf-tab
+  forgit
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -60,7 +62,6 @@ export FZF_BASE="$HOME/.fzf/"
 # https://vitormv.github.io/fzf-themes/
 #
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-  --color=fg:#d0d0d0,fg+:#d0d0d0,bg:#121212,bg+:#262626
   --color=hl:#5f87af,hl+:#5fd7ff,info:#afaf87,marker:#87ff00
   --color=prompt:#d7005f,spinner:#af5fff,pointer:#af5fff,header:#87afaf
   --color=border:#262626,label:#aeaeae,query:#d9d9d9
@@ -110,7 +111,6 @@ bindkey '^h' fzf-man-widget
 zle -N fzf-man-widget
 
 ### fzf-tab -'Tab'
-source "$HOME/.src/fzf-tab/fzf-tab.plugin.zsh"
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
@@ -124,7 +124,6 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 
 ### fzf forgit - 'ga','glo','gi','gd'
 source "$HOME/.src/emoji-cli/fuzzy-emoji-zle.zsh"
-source "$HOME/.src/forgit/forgit.plugin.zsh"
 
 ### alias
 alias ll='lsd -lh --group-dirs first'

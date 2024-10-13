@@ -46,9 +46,8 @@ plugins=(
   fzf-tab
   forgit
 )
-
+#
 source $ZSH/oh-my-zsh.sh
-
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 source "$ZSH/oh-my-zsh.sh"
 
@@ -64,16 +63,15 @@ export FZF_BASE="$HOME/.fzf/"
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=hl:#5f87af,hl+:#5fd7ff,info:#afaf87,marker:#87ff00
   --color=prompt:#d7005f,spinner:#af5fff,pointer:#af5fff,header:#87afaf
-  --color=border:#262626,label:#aeaeae,query:#d9d9d9
+  --color=border:#6f6f6f,label:#aeaeae,query:#d9d9d9
   --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
-  --marker=">" --pointer="◆" --separator="─" --scrollbar="│"
-  --layout="reverse" --info="right"'
+  --marker=">" --pointer="◆" --separator="─" --scrollbar="│"'
 #
 export FZF_CTRL_T_COMMAND='fdfind --type f --strip-cwd-prefix --hidden --follow --exclude .git'
 #
 # fzf Search file - Ctrl-T
 export FZF_CTRL_T_OPTS="
-  --preview 'bat --color=always {}' --preview-window '~3'
+  --preview 'bat --color=always --theme OneHalfDark {}' --preview-window '~3'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 # 
 # fzf Search history - Ctrl-R

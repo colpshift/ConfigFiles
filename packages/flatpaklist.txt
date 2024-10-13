@@ -1,6 +1,5 @@
 Stremio	com.stremio.Stremio	4.4.168	stable	system
 Shortwave	de.haeckerfelix.Shortwave	3.2.0	stable	system
-Stimulator	io.github.sigmasd.stimulator	1.7	stable	system
 Mesa	org.freedesktop.Platform.GL.default	24.2.1	23.08	system
 Mesa (Extra)	org.freedesktop.Platform.GL.default	24.2.1	23.08-extra	system
 Intel	org.freedesktop.Platform.VAAPI.Intel		23.08	system

@@ -1,5 +1,4 @@
 include ~/.cache/wal/colors-kitty.conf
-
 #
 # font
 #
@@ -7,7 +6,7 @@ include ~/.cache/wal/colors-kitty.conf
 # bold_font         auto
 # italic_font       auto
 # bold_italic_font  auto
-font_size 	      10.0
+font_size 	      11.0
 #
 disable_ligatures all never
 
@@ -49,9 +48,8 @@ sync_to_monitor yes
 include current-theme.conf
 # END_KITTY_THEME
 
-
 # BEGIN_KITTY_FONTS
-font_family      family="ZedMono Nerd Font"
+font_family      family="UbuntuSansMono Nerd Font"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto

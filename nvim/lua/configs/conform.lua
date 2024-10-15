@@ -7,6 +7,7 @@ local options = {
     py = { "autopep8" },
     json = { "prettier" },
     yaml = { "prettier" },
+    sql = { "sqlfmt" },
   },
 
   format_on_save = {

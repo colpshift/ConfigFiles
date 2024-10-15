@@ -1,12 +1,13 @@
 local lint = require("lint")
 
 lint.linters_by_ft = {
-  lua = { "luacheck" },
+  lua = { "stylelint" },
   css = { "eslint_d" },
-  html = { "htmlhint" },
+  html = { "eslint_d" },
   sh = { "shellcheck" },
   json = { "jsonlint" },
-  python = { "black" },
+  yaml = { "yamllint" },
+  python = { "flake8" },
 }
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
@@ -14,4 +15,4 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
     lint.try_lint()
   end,
 }
-)
+

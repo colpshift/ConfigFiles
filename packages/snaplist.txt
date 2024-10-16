@@ -26,7 +26,7 @@ gtk2-common-themes         0.1                         13     latest/stable    c
 gtop                       v0.1.5+git54.14c1dc3        24     latest/edge      aksakalli       devmode
 mesa-2404                  24.0.9                      143    latest/stable    canonical**     -
 mysql-workbench-community  8.0.36                      13     latest/stable    tonybolzan      -
-notion-snap-reborn         1.2.1                       46     latest/stable    sunshio         -
+notion-snap-reborn         1.2.2                       47     latest/stable    sunshio         -
 onefetch                   2.22.0                      3441   latest/stable    o2sh            -
 onlyoffice-desktopeditors  8.1.1                       198    latest/stable    onlyoffice**    -
 qt515-core20               5.15.4                      32     latest/stable    keshavnrj*      -

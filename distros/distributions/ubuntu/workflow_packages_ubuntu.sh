@@ -120,6 +120,13 @@ fzf
 fzf-tab
 forgit
 
+### fish
+fish        # https://fishshell.com/
+fisher      # https://github.com/jorgebucaran/fisher
+z for fish  # https://github.com/jethrokuan/z
+fzf.fish    # fisher install PatrickF1/fzf.fish
+tide prompt # https://github.com/IlanCosman/tide
+
 ### gnome extensions
 "Astra Monitor" by Astra
 "Bubblemail" by Razer

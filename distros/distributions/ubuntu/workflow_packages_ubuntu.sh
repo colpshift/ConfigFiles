@@ -124,7 +124,7 @@ forgit
 fish        # https://fishshell.com/
 fisher      # https://github.com/jorgebucaran/fisher
 z for fish  # https://github.com/jethrokuan/z
-fzf.fish    # fisher install PatrickF1/fzf.fish
+fzf.fish    # https://github.com/jethrokuan/fzf
 tide prompt # https://github.com/IlanCosman/tide
 
 ### gnome extensions

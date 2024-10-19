@@ -1,7 +1,7 @@
 Name                       Version                     Rev    Tracking         Publisher       Notes
 bare                       1.0                         5      latest/stable    canonical**     base
 bash-language-server       4.7.0                       69     latest/stable    alexmurray*     classic
-bitwarden                  2024.9.0                    120    latest/stable    bitwarden**     -
+bitwarden                  2024.10.0                   122    latest/stable    bitwarden**     -
 canonical-livepatch        10.9.0                      286    latest/stable    canonical**     -
 cheat                      4.4.0.build.2               4279   latest/stable    bernermic       -
 code                       384ff738                    172    latest/stable    vscode**        classic

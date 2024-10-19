@@ -67,9 +67,9 @@ gitHub CLI # https://github.com/cli/cli/blob/trunk/docs/install_linux.md
 github desktop
 vim
 neovim
+git
 lazyvim
 lazygit
-forgit
 vscode
 nodejs
 python
@@ -105,10 +105,12 @@ fasd
 broot
 highlight
 
-### shell
+### shell zsh
 zsh
+fzf
+fzf-tab
+# plugins zsh
 oh my zsh # https://github.com/ohmyzsh/ohmyzsh
-git
 command-not-found
 zsh-completions
 zsh-autosuggestions
@@ -116,16 +118,15 @@ zsh-history-substring-search
 zsh-syntax-highlighting
 zsh-interactive-cd
 zsh-vi-mode
-fzf
-fzf-tab
-forgit
 
-### fish
+### shell fish
 fish        # https://fishshell.com/
-fisher      # https://github.com/jorgebucaran/fisher
-z for fish  # https://github.com/jethrokuan/z
-fzf.fish    # https://github.com/jethrokuan/fzf
 tide prompt # https://github.com/IlanCosman/tide
+# plugins fish
+fisher     # https://github.com/jorgebucaran/fisher
+z for fish # https://github.com/jethrokuan/z
+fzf.fish   # https://github.com/jethrokuan/fzf
+autopairs  # https://github.com/jorgebucaran/autopair.fish
 
 ### gnome extensions
 "Astra Monitor" by Astra

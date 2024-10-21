@@ -120,13 +120,16 @@ zsh-interactive-cd
 zsh-vi-mode
 
 ### shell fish
-fish        # https://fishshell.com/
-tide prompt # https://github.com/IlanCosman/tide
+fish # https://fishshell.com/
 # plugins fish
-fisher     # https://github.com/jorgebucaran/fisher
-z for fish # https://github.com/jethrokuan/z
-fzf.fish   # https://github.com/jethrokuan/fzf
-autopairs  # https://github.com/jorgebucaran/autopair.fish
+# https://github.com/jorgebucaran/awsm.fish#readme
+fisher      # https://github.com/jorgebucaran/fisher
+z for fish  # https://github.com/jethrokuan/z
+fzf.fish    # https://github.com/jethrokuan/fzf
+autopairs   # https://github.com/jorgebucaran/autopair.fish
+tide prompt # https://github.com/IlanCosman/tide
+#
+oh my posh # https://ohmyposh.dev/docs/installation/linux
 
 ### gnome extensions
 "Astra Monitor" by Astra

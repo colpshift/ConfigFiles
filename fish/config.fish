@@ -9,8 +9,8 @@ if status is-interactive
     abbr --add dir 'dir --color'
     abbr --add grep rg
     abbr --add dmesg 'dmesg --color'
-    abbr --add df dust
-    abbr --add du duf
+    abbr --add df duf
+    abbr --add du dust
     abbr --add ps procs
     abbr --add su 'sudo -i'
     abbr --add vi nvim
@@ -25,7 +25,7 @@ if status is-interactive
     abbr --add apt 'sudo apt'
     abbr --add aptu 'sudo apt update && sudo apt full-upgrade && sudo apt autoremove'
     abbr --add nala 'sudo nala'
-    abbr --add nalau 'sudo nala update && sudo nala full-upgrade && sudo nala autoremove'
+    abbr --add nalau 'sudo nala update && sudo nala full-upgrade && sudo nala autoremove && sudo nala autopurge'
     abbr --add cls clear
     abbr --add myip 'curl http://ipecho.net/plain; echo'
     abbr --add ports 'sudo ss -tulanp'
@@ -33,4 +33,7 @@ if status is-interactive
     abbr --add cmatrix '$HOME/.scripts/cmatrix_run.sh'
     abbr --add systemctl_error 'sudo systemctl --failed'
     abbr --add journal_error 'sudo journalctl -p 3 -xb'
+    abbr --add poshthemes 'bash -c "$(wget -qO- https://git.io/vQgMr)"'
 end
+# prompt oh my posh
+oh-my-posh init fish --config '/home/colps/.config/fish/themes/powerlevel10k_rainbow.omp.json' | source

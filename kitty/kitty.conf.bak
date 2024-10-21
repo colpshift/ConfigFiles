@@ -6,7 +6,7 @@ include ~/.cache/wal/colors-kitty.conf
 # bold_font         auto
 # italic_font       auto
 # bold_italic_font  auto
-font_size 	      10.0
+font_size 	      10.5
 #
 disable_ligatures all never
 
@@ -29,9 +29,16 @@ shell_integration enabled
 term xterm-kitty
 cursor_shape beam
 background_opacity 0.8
-enabled_layouts Tall,Vertical
 copy_on_select yes
 strip_trailing_spaces smart
+
+#
+# Layouts
+#
+map f4 launch --location=split
+map f5 launch --location=hsplit
+map f6 launch --location=vsplit
+map f7 layout_action rotate
 
 #
 # performance
@@ -44,13 +51,16 @@ sync_to_monitor yes
 # theme
 #
 # BEGIN_KITTY_THEME
-# Tokyo Night Storm
+# Dracula
 include current-theme.conf
 # END_KITTY_THEME
 
 # BEGIN_KITTY_FONTS
-font_family      family="SauceCodePro Nerd Font"
+font_family      family='SauceCodePro Nerd Font' postscript_name=SauceCodeProNF
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
+
+# Added by Gogh
+include colors.conf

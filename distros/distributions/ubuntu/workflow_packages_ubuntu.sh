@@ -35,8 +35,7 @@ edge
 zoom
 
 ### Audio
-Harmonoid
-Tidal Hi-Fi
+Audacious
 Spotify
 Shortwave
 
@@ -68,6 +67,7 @@ github desktop
 vim
 neovim
 git
+onefetch
 lazyvim
 lazygit
 vscode
@@ -90,7 +90,8 @@ nala
 netselect # https://packages.debian.org/stable/net/netselect
 stacer
 synaptics
-fish
+htop
+btop
 
 ### terminal
 kitty
@@ -122,14 +123,17 @@ zsh-vi-mode
 ### shell fish
 fish # https://fishshell.com/
 # plugins fish
+# https://github.com/jorgebucaran/fisher
 # https://github.com/jorgebucaran/awsm.fish#readme
-fisher      # https://github.com/jorgebucaran/fisher
+fisher
 z for fish  # https://github.com/jethrokuan/z
 fzf.fish    # https://github.com/jethrokuan/fzf
 autopairs   # https://github.com/jorgebucaran/autopair.fish
 tide prompt # https://github.com/IlanCosman/tide
-#
-oh my posh # https://ohmyposh.dev/docs/installation/linux
+# prompt fish
+# https://ohmyposh.dev/docs/installation/linux
+oh my posh
+powerlevel10k_rainbow.omp.json # theme
 
 ### gnome extensions
 "Astra Monitor" by Astra

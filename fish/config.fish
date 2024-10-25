@@ -36,4 +36,4 @@ if status is-interactive
     abbr --add poshthemes 'bash -c "$(wget -qO- https://git.io/vQgMr)"'
 end
 # prompt oh my posh
-oh-my-posh init fish --config '/home/colps/.config/fish/themes/powerlevel10k_rainbow.omp.json' | source
+oh-my-posh init fish --config '/home/colps/.config/fish/themes_ohmyposh/powerlevel10k_rainbow.omp.json' | source

@@ -154,7 +154,7 @@ alias systemctl_error='sudo systemctl --failed'
 alias journal_error='sudo journalctl -p 3 -xb'
 
 ### Default apps
-export TERMINAL="kitty"
+export TERMINAL="warp-terminal"
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less

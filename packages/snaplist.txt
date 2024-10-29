@@ -10,8 +10,8 @@ core18                     20240920                    2846   latest/stable    c
 core20                     20240911                    2434   latest/stable    canonical**     base
 core22                     20241001                    1663   latest/stable    canonical**     base
 core24                     20240920                    609    latest/stable    canonical**     base
-cups                       2.4.10-1                    1058   latest/stable    openprinting**  -
-diff-so-fancy              v1.4.4                      274    latest/stable    bp              -
+cups                       2.4.11-2                    1067   latest/stable    openprinting**  -
+diff-so-fancy              v1.4.4                      305    latest/stable    bp              -
 discord                    0.0.72                      213    latest/stable    snapcrafters*   -
 drawio                     24.7.17                     228    latest/stable    jgraph**        -
 dust                       v1.1.1                      19     latest/stable    danie.dejager   -
@@ -28,7 +28,7 @@ mesa-2404                  24.0.9                      143    latest/stable    c
 mysql-workbench-community  8.0.36                      13     latest/stable    tonybolzan      -
 notion-snap-reborn         1.2.2                       47     latest/stable    sunshio         -
 onefetch                   2.22.0                      3441   latest/stable    o2sh            -
-onlyoffice-desktopeditors  8.1.1                       198    latest/stable    onlyoffice**    -
+onlyoffice-desktopeditors  8.2.0                       200    latest/stable    onlyoffice**    -
 qt515-core20               5.15.4                      32     latest/stable    keshavnrj*      -
 shellcheck                 v0.10.0                     1725   latest/stable    koalaman        -
 snap-store                 0+git.4fcd62b7              1218   latest/stable/…  canonical**     -

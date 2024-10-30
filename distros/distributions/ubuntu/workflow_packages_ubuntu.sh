@@ -92,6 +92,7 @@ stacer
 synaptics
 htop
 btop
+tpl / tlpui
 
 ### terminal
 kitty

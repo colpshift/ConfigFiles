@@ -1,0 +1,36 @@
+#
+# https://starship.rs
+#
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# left 
+format = """$directory$all$character"""
+
+# right
+right_format = """$cmd_duration$time"""
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+
+[character]
+success_symbol =  "[](bold green)" 
+error_symbol =    "[X](bold red)"
+vicmd_symbol =    "[V](bold fg:3)"
+
+[directory]
+format = '[ $path ]($style)($read_only_style)'
+style = "bold cyan"
+truncation_length = 12
+truncation_symbol = "…/"
+read_only_style = ""
+
+[time]
+disabled = false
+format = '[\[$time\]](green)'
+time_format = "%T"
+
+[cmd_duration]
+format = "[$duration ](cyan)"
+

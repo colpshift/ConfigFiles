@@ -92,7 +92,7 @@ stacer
 synaptics
 htop
 btop
-tpl / tlpui
+tlp
 
 ### terminal
 kitty
@@ -131,10 +131,14 @@ z for fish  # https://github.com/jethrokuan/z
 fzf.fish    # https://github.com/jethrokuan/fzf
 autopairs   # https://github.com/jorgebucaran/autopair.fish
 tide prompt # https://github.com/IlanCosman/tide
-# prompt fish
+## prompt fish
 # https://ohmyposh.dev/docs/installation/linux
 oh my posh
 powerlevel10k_rainbow.omp.json # theme
+
+### prompt starship
+# https://starship.rs/
+starship
 
 ### gnome extensions
 "Astra Monitor" by Astra

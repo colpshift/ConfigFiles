@@ -8,7 +8,11 @@ include ~/.cache/wal/colors-kitty.conf
 # bold_italic_font  auto
 font_size 	      10.5
 #
-disable_ligatures all never
+font_features FiraCode-Retina +zero +onum
+font_features FiraCode-Bold +zero
+font_features TT2020StyleB-Regular -liga +calt
+font_features UnifontMedium +isol -medi -fina -init
+disable_ligatures never
 
 #
 # display
@@ -38,7 +42,7 @@ strip_trailing_spaces smart
 #
 # Layouts
 #
-enabled_layouts tall:bias=50;full_size=1;mirrored=false
+enabled_layouts Horizontal, vertical
 
 #
 # performance
@@ -51,7 +55,7 @@ sync_to_monitor yes
 # theme
 #
 # BEGIN_KITTY_THEME
-# Tokyo Night Moon
+# Tokyo Night Storm
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -63,4 +67,4 @@ bold_italic_font auto
 # END_KITTY_FONTS
 
 # Added by Gogh
-include colors.conf
+# include colors.conf

@@ -25,9 +25,12 @@ remember_window_size  yes
 #
 # term
 #
-shell_integration enabled
+shell_integration enabled, no-cursor
 term xterm-kitty
 cursor_shape beam
+cursor_trail 1
+cursor_trail_decay 0.1 0.4
+cursor_trail_start_threshold 2
 background_opacity 0.8
 copy_on_select yes
 strip_trailing_spaces smart
@@ -35,10 +38,7 @@ strip_trailing_spaces smart
 #
 # Layouts
 #
-map f4 launch --location=split
-map f5 launch --location=hsplit
-map f6 launch --location=vsplit
-map f7 layout_action rotate
+enabled_layouts tall:bias=50;full_size=1;mirrored=false
 
 #
 # performance
@@ -51,7 +51,7 @@ sync_to_monitor yes
 # theme
 #
 # BEGIN_KITTY_THEME
-# Everforest Dark Hard
+# Tokyo Night Moon
 include current-theme.conf
 # END_KITTY_THEME
 

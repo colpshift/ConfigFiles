@@ -8,7 +8,11 @@ include ~/.cache/wal/colors-kitty.conf
 # bold_italic_font  auto
 font_size 	      10.5
 #
-disable_ligatures all never
+font_features FiraCode-Retina +zero +onum
+font_features FiraCode-Bold +zero
+font_features TT2020StyleB-Regular -liga +calt
+font_features UnifontMedium +isol -medi -fina -init
+disable_ligatures never
 
 #
 # display
@@ -25,9 +29,12 @@ remember_window_size  yes
 #
 # term
 #
-shell_integration enabled
+shell_integration enabled, no-cursor
 term xterm-kitty
 cursor_shape beam
+cursor_trail 1
+cursor_trail_decay 0.1 0.4
+cursor_trail_start_threshold 2
 background_opacity 0.8
 copy_on_select yes
 strip_trailing_spaces smart
@@ -35,10 +42,7 @@ strip_trailing_spaces smart
 #
 # Layouts
 #
-map f4 launch --location=split
-map f5 launch --location=hsplit
-map f6 launch --location=vsplit
-map f7 layout_action rotate
+enabled_layouts Horizontal, vertical
 
 #
 # performance
@@ -51,7 +55,7 @@ sync_to_monitor yes
 # theme
 #
 # BEGIN_KITTY_THEME
-# Everforest Dark Hard
+# Tokyo Night Storm
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -63,4 +67,4 @@ bold_italic_font auto
 # END_KITTY_FONTS
 
 # Added by Gogh
-include colors.conf
+# include colors.conf

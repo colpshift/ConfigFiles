@@ -38,3 +38,4 @@ spotify                    1.2.45.454.gc16ec9f6        79     latest/stable    s
 thunderbird                128.4.0esr-1                546    latest/stable    canonical**     -
 todoist                    9.9.0                       1326   latest/stable    doist**         -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**      -
+xmind                      24.10.1101                  32     latest/stable    xmindltd        -

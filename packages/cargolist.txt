@@ -4,6 +4,8 @@ duf v0.19.0:
     duf
 exa v0.10.1:
     exa
+gping v1.17.3:
+    gping
 procs v0.14.6:
     procs
 ripgrep v14.1.0:

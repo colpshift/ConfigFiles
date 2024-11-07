@@ -93,6 +93,7 @@ synaptics
 htop
 btop
 tlp
+imwheel # configure mouse button
 
 ### terminal
 kitty

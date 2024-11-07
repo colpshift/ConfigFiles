@@ -93,19 +93,23 @@ synaptics
 htop
 btop
 tlp
+imwheel # configure mouse button
 
 ### terminal
 kitty
-lsd
-ripgrep
-dust
 duf # https://github.com/muesli/duf/releases/download/v0.6.0/duf_0.6.0_linux_amd64.deb
-procs
-fd-find # fd
-bat
 fasd
-broot
 highlight
+# rust apps
+du-dust  # du
+ripgrep  # grep
+procs    # ps
+bat      # cat
+fd-find  # find
+gping    # ping
+exa      # ls
+broot    # tree
+starship # prompt # https://starship.rs/
 
 ### shell zsh
 zsh
@@ -135,10 +139,6 @@ tide prompt # https://github.com/IlanCosman/tide
 # https://ohmyposh.dev/docs/installation/linux
 oh my posh
 powerlevel10k_rainbow.omp.json # theme
-
-### prompt starship
-# https://starship.rs/
-starship
 
 ### gnome extensions
 "Astra Monitor" by Astra

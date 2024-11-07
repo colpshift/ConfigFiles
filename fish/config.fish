@@ -2,12 +2,10 @@ if status is-interactive
 end
 
 #abbreviations
-abbr --add ll 'lsd -lh --group-dirs first'
-abbr --add ls lsd
-abbr --add l 'ls -l'
-abbr --add la 'ls -a'
-abbr --add lla 'ls -la'
-abbr --add lt 'ls --tree'
+abbr --add ll 'exa -1Glmu --git --icons --extended --group-directories-first'
+abbr --add ls 'exa -1Glmu --git --icons --extended --group-directories-first'
+abbr --add la 'exa -1Glmua --git --icons --extended --group-directories-first'
+abbr --add lt 'exa -1GlmuT --git --icons --extended --group-directories-first'
 abbr --add dir 'dir --color'
 abbr --add grep rg
 abbr --add dmesg 'dmesg --color'
@@ -36,6 +34,29 @@ abbr --add cmatrix '$HOME/.scripts/cmatrix_run.sh'
 abbr --add systemctl_error 'sudo systemctl --failed'
 abbr --add journal_error 'sudo journalctl -p 3 -xb'
 abbr --add poshthemes 'bash -c "$(wget -qO- https://git.io/vQgMr)"'
+
+# Fish syntax highlighting
+set -g fish_color_autosuggestion 555 brblack
+set -g fish_color_cancel -r
+set -g fish_color_command --bold
+set -g fish_color_comment red
+set -g fish_color_cwd green
+set -g fish_color_cwd_root red
+set -g fish_color_end brmagenta
+set -g fish_color_error brred
+set -g fish_color_escape bryellow --bold
+set -g fish_color_history_current --bold
+set -g fish_color_host normal
+set -g fish_color_match --background=brblue
+set -g fish_color_normal normal
+set -g fish_color_operator bryellow
+set -g fish_color_param cyan
+set -g fish_color_quote yellow
+set -g fish_color_redirection brblue
+set -g fish_color_search_match bryellow '--background=brblack'
+set -g fish_color_selection white --bold '--background=brblack'
+set -g fish_color_user brgreen
+set -g fish_color_valid_path --underline
 
 # prompt oh my posh
 #oh-my-posh init fish --config '/home/colps/.config/fish/themes_ohmyposh/powerlevel10k_rainbow.omp.json' | source

@@ -20,3 +20,4 @@ export GPG_TTY
 ### ssh agent
 eval "$(ssh-agent -s)" > /dev/null
 
+. "$HOME/.cargo/env"

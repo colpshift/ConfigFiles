@@ -1,4 +1,3 @@
-include ~/.cache/wal/colors-kitty.conf
 #
 # font
 #
@@ -8,11 +7,11 @@ include ~/.cache/wal/colors-kitty.conf
 # bold_italic_font  auto
 font_size 	      10.5
 #
-font_features FiraCode-Retina +zero +onum
-font_features FiraCode-Bold +zero
-font_features TT2020StyleB-Regular -liga +calt
-font_features UnifontMedium +isol -medi -fina -init
-disable_ligatures never
+# font_features FiraCode-Retina +zero +onum
+# font_features FiraCode-Bold +zero
+# font_features TT2020StyleB-Regular -liga +calt
+# font_features UnifontMedium +isol -medi -fina -init
+# disable_ligatures never
 
 #
 # display
@@ -55,16 +54,14 @@ sync_to_monitor yes
 # theme
 #
 # BEGIN_KITTY_THEME
-# Tokyo Night Storm
+# Tokyo Night Moon
 include current-theme.conf
 # END_KITTY_THEME
 
 # BEGIN_KITTY_FONTS
-font_family      family='SauceCodePro Nerd Font' postscript_name=SauceCodeProNF
+font_family      family="UbuntuSansMono Nerd Font Mono"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
 
-# Added by Gogh
-# include colors.conf

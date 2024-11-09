@@ -119,10 +119,12 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview "exa -1 --color=always"
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
 ### alias
-alias ll='exa -1Glmu --git --icons --extended --group-directories-first'
-alias ls='exa -1Glmu --git --icons --extended --group-directories-first'
-alias la='exa -1Glmua --git --icons --extended --group-directories-first'
-alias lt='exa -1GlmuT --git --icons --extended --group-directories-first'
+alias ll='lsd -lh --group-dirs first'
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 alias dir='dir --color'
 alias grep='rg'
 alias dmesg='dmesg --color'

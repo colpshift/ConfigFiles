@@ -10,3 +10,5 @@ procs v0.14.6:
     procs
 ripgrep v14.1.0:
     rg
+wallust v3.1.0:
+    wallust

@@ -22,6 +22,7 @@ gnome-3-38-2004            0+git.efb213a               143    latest/stable    c
 gnome-42-2204              0+git.510a601               176    latest/stable/…  canonical**     -
 gnome-46-2404              0+git.5d6be1b               48     latest/stable    canonical**     -
 gtk-common-themes          0.1-81-g442e511             1535   latest/stable    canonical**     -
+gtk-theme-orchis           2022-07-20                  3      latest/stable    eeickmeyer      -
 gtk2-common-themes         0.1                         13     latest/stable    canonical**     -
 gtop                       v0.1.5+git54.14c1dc3        24     latest/edge      aksakalli       devmode
 mesa-2404                  24.0.9                      143    latest/stable    canonical**     -
@@ -29,13 +30,14 @@ mysql-workbench-community  8.0.36                      13     latest/stable    t
 notion-snap-reborn         1.2.3                       48     latest/stable    sunshio         -
 onefetch                   2.22.0                      3441   latest/stable    o2sh            -
 onlyoffice-desktopeditors  8.2.0                       200    latest/stable    onlyoffice**    -
+orchis-themes              1.0                         1      latest/stable    gantonayde      -
 qt515-core20               5.15.4                      43     latest/stable    keshavnrj*      -
 shellcheck                 v0.10.0                     1725   latest/stable    koalaman        -
 snap-store                 0+git.4fcd62b7              1218   latest/stable/…  canonical**     -
 snapd                      2.63                        21759  latest/stable    canonical**     snapd
 snapd-desktop-integration  0.9                         253    latest/stable    canonical**     -
 spotify                    1.2.48.405.gf2c48e6f        80     latest/stable    spotify**       -
-thunderbird                128.4.1esr-1                553    latest/stable    canonical**     -
+thunderbird                128.4.2esr-1                562    latest/stable    canonical**     -
 todoist                    9.9.0                       1326   latest/stable    doist**         -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**      -
 xmind                      24.10.1101                  32     latest/stable    xmindltd        -

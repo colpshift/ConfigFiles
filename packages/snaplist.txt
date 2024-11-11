@@ -29,7 +29,6 @@ mesa-2404                  24.0.9                      143    latest/stable    c
 mysql-workbench-community  8.0.36                      13     latest/stable    tonybolzan      -
 notion-snap-reborn         1.2.3                       48     latest/stable    sunshio         -
 onefetch                   2.22.0                      3441   latest/stable    o2sh            -
-onlyoffice-desktopeditors  8.2.0                       200    latest/stable    onlyoffice**    -
 orchis-themes              1.0                         1      latest/stable    gantonayde      -
 qt515-core20               5.15.4                      43     latest/stable    keshavnrj*      -
 shellcheck                 v0.10.0                     1725   latest/stable    koalaman        -

@@ -21,7 +21,7 @@ whatsapp web
 discord
 
 ### office
-onlyoffice
+libreoffice
 evince
 qpdfview
 xmind
@@ -92,7 +92,8 @@ stacer
 synaptics
 htop
 btop
-tlp
+preload
+tlp / tlp-rdw
 imwheel # configure mouse button
 
 ### terminal

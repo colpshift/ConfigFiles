@@ -1,10 +1,10 @@
 Name                       Version                     Rev    Tracking         Publisher       Notes
 bare                       1.0                         5      latest/stable    canonical**     base
 bash-language-server       4.7.0                       69     latest/stable    alexmurray*     classic
-bitwarden                  2024.11.0                   124    latest/stable    bitwarden**     -
+bitwarden                  2024.11.1                   125    latest/stable    bitwarden**     -
 canonical-livepatch        10.9.0                      286    latest/stable    canonical**     -
 cheat                      4.4.0.build.2               4279   latest/stable    bernermic       -
-code                       e8653663                    175    latest/stable    vscode**        classic
+code                       f1a4fb10                    176    latest/stable    vscode**        classic
 core                       16-2.61.4-20240607          17200  latest/stable    canonical**     core
 core18                     20240920                    2846   latest/stable    canonical**     base
 core20                     20240911                    2434   latest/stable    canonical**     base
@@ -27,7 +27,7 @@ gtk2-common-themes         0.1                         13     latest/stable    c
 gtop                       v0.1.5+git54.14c1dc3        24     latest/edge      aksakalli       devmode
 mesa-2404                  24.0.9                      143    latest/stable    canonical**     -
 mysql-workbench-community  8.0.36                      13     latest/stable    tonybolzan      -
-notion-snap-reborn         1.2.3                       48     latest/stable    sunshio         -
+notion-snap-reborn         1.2.4                       49     latest/stable    sunshio         -
 onefetch                   2.22.0                      3441   latest/stable    o2sh            -
 orchis-themes              1.0                         1      latest/stable    gantonayde      -
 qt515-core20               5.15.4                      43     latest/stable    keshavnrj*      -
@@ -36,7 +36,7 @@ snap-store                 0+git.4fcd62b7              1218   latest/stable/… 
 snapd                      2.63                        21759  latest/stable    canonical**     snapd
 snapd-desktop-integration  0.9                         253    latest/stable    canonical**     -
 spotify                    1.2.48.405.gf2c48e6f        80     latest/stable    spotify**       -
-thunderbird                128.4.2esr-1                562    latest/stable    canonical**     -
+thunderbird                128.4.3esr-1                571    latest/stable    canonical**     -
 todoist                    9.9.0                       1326   latest/stable    doist**         -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**      -
 xmind                      24.10.1101                  32     latest/stable    xmindltd        -

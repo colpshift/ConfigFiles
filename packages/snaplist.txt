@@ -1,7 +1,7 @@
 Name                       Version                     Rev    Tracking         Publisher       Notes
 bare                       1.0                         5      latest/stable    canonical**     base
 bash-language-server       4.7.0                       69     latest/stable    alexmurray*     classic
-bitwarden                  2024.11.1                   125    latest/stable    bitwarden**     -
+bitwarden                  2024.11.2                   126    latest/stable    bitwarden**     -
 canonical-livepatch        10.9.0                      286    latest/stable    canonical**     -
 cheat                      4.4.0.build.2               4279   latest/stable    bernermic       -
 code                       f1a4fb10                    176    latest/stable    vscode**        classic
@@ -12,7 +12,7 @@ core22                     20241001                    1663   latest/stable    c
 core24                     20240920                    609    latest/stable    canonical**     base
 cups                       2.4.11-2                    1067   latest/stable    openprinting**  -
 diff-so-fancy              v1.4.4                      305    latest/stable    bp              -
-discord                    0.0.73                      214    latest/stable    snapcrafters*   -
+discord                    0.0.75                      217    latest/stable    snapcrafters*   -
 drawio                     24.7.17                     228    latest/stable    jgraph**        -
 dust                       v1.1.1                      19     latest/stable    danie.dejager   -
 firmware-updater           0+git.7983059               147    latest/stable/…  canonical**     -
@@ -37,6 +37,6 @@ snapd                      2.63                        21759  latest/stable    c
 snapd-desktop-integration  0.9                         253    latest/stable    canonical**     -
 spotify                    1.2.48.405.gf2c48e6f        80     latest/stable    spotify**       -
 thunderbird                128.4.3esr-1                571    latest/stable    canonical**     -
-todoist                    9.9.0                       1326   latest/stable    doist**         -
+todoist                    9.9.3                       1327   latest/stable    doist**         -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**      -
 xmind                      24.10.1101                  32     latest/stable    xmindltd        -

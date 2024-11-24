@@ -1,5 +1,7 @@
 bat v0.24.0:
     bat
+cargo-binstall v1.10.14:
+    cargo-binstall
 duf v0.19.0:
     duf
 exa v0.10.1:
@@ -8,7 +10,7 @@ gping v1.17.3:
     gping
 procs v0.14.6:
     procs
-ripgrep v14.1.0:
+ripgrep v14.1.1:
     rg
 wallust v3.1.0:
     wallust

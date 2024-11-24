@@ -1,0 +1,8 @@
+---
+"pane_group:add_right": ctrl-cmd-left
+"pane_group:add_left": ctrl-cmd-right
+"pane_group:add_up": ctrl-cmd-up
+"input:open_completion_suggestions": tab
+"pane_group:add_down": ctrl-cmd-down
+"workspace:update_and_relaunch": shift-U
+"workspace:close_active_tab": ctrl-shift-Q

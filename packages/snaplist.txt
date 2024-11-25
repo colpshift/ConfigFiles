@@ -37,6 +37,5 @@ snapd                      2.63                        21759  latest/stable    c
 snapd-desktop-integration  0.9                         253    latest/stable    canonical**     -
 spotify                    1.2.48.405.gf2c48e6f        80     latest/stable    spotify**       -
 thunderbird                128.4.3esr-1                571    latest/stable    canonical**     -
-todoist                    9.9.3                       1327   latest/stable    doist**         -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**      -
 xmind                      24.10.1101                  32     latest/stable    xmindltd        -

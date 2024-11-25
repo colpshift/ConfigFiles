@@ -19,8 +19,8 @@ abbr --add gvim nvim
 abbr --add fd fdfind
 abbr --add cat 'bat --theme Nord'
 abbr --add bat 'bat --theme Nord'
-abbr --add gitu 'git add . && git commit -S && git push && gh pr create -w'
-abbr --add gitb 'git add . && git commit -S -m 'backup' && git push && gh pr create -w'
+#abbr --add gitu 'git add . && git commit -S && git push && gh pr create -w'
+#abbr --add gitb 'git add . && git commit -S -m 'backup' && git push && gh pr create -w'
 abbr --add giti 'clear && onefetch --no-color-palette'
 abbr --add apt 'sudo apt'
 abbr --add aptu 'sudo apt update && sudo apt full-upgrade && sudo apt autoremove'

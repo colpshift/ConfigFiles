@@ -12,7 +12,7 @@ core22                     20241001                    1663   latest/stable    c
 core24                     20240920                    609    latest/stable    canonical**     base
 cups                       2.4.11-2                    1067   latest/stable    openprinting**  -
 diff-so-fancy              v1.4.4                      305    latest/stable    bp              -
-discord                    0.0.75                      217    latest/stable    snapcrafters*   -
+discord                    0.0.76                      218    latest/stable    snapcrafters*   -
 drawio                     24.7.17                     228    latest/stable    jgraph**        -
 dust                       v1.1.1                      19     latest/stable    danie.dejager   -
 firmware-updater           0+git.7983059               147    latest/stable/…  canonical**     -
@@ -36,6 +36,6 @@ snap-store                 0+git.4fcd62b7              1218   latest/stable/… 
 snapd                      2.63                        21759  latest/stable    canonical**     snapd
 snapd-desktop-integration  0.9                         253    latest/stable    canonical**     -
 spotify                    1.2.48.405.gf2c48e6f        80     latest/stable    spotify**       -
-thunderbird                128.4.3esr-1                571    latest/stable    canonical**     -
+thunderbird                128.4.4esr-1                581    latest/stable    canonical**     -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**      -
 xmind                      24.10.1101                  32     latest/stable    xmindltd        -

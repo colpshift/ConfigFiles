@@ -33,9 +33,9 @@ orchis-themes              1.0                         1      latest/stable    g
 qt515-core20               5.15.4                      43     latest/stable    keshavnrj*      -
 shellcheck                 v0.10.0                     1725   latest/stable    koalaman        -
 snap-store                 0+git.4fcd62b7              1218   latest/stable/…  canonical**     -
-snapd                      2.63                        21759  latest/stable    canonical**     snapd
+snapd                      2.66.1                      23258  latest/stable    canonical**     snapd
 snapd-desktop-integration  0.9                         253    latest/stable    canonical**     -
-spotify                    1.2.48.405.gf2c48e6f        80     latest/stable    spotify**       -
+spotify                    1.2.50.335.g5e2860a8        81     latest/stable    spotify**       -
 thunderbird                128.4.4esr-1                581    latest/stable    canonical**     -
 vlc                        3.0.20-1-g2617de71b6        3777   latest/stable    videolan**      -
 xmind                      24.10.1101                  32     latest/stable    xmindltd        -

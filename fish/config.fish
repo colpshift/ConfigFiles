@@ -59,7 +59,7 @@ set -g fish_color_user brgreen
 set -g fish_color_valid_path --underline
 
 # prompt oh my posh
-#oh-my-posh init fish --config '/home/colps/.config/fish/themes_ohmyposh/powerlevel10k_rainbow.omp.json' | source
+oh-my-posh init fish --config '/home/colps/.config/fish/themes_ohmyposh/powerlevel10k_rainbow.omp.json' | source
 
 # starship prompt
-starship init fish | source
+#starship init fish | source

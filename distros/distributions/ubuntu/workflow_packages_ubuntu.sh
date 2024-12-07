@@ -15,7 +15,6 @@ sudo apt install ubuntu-restricted-extras
 calendar
 thunderbird
 notion
-todoist
 pomodoro
 whatsapp web
 discord
@@ -61,6 +60,7 @@ cmatrix
 
 ### code
 MySQL Workbench
+MongoDB Compass
 gedit
 gitHub CLI # https://github.com/cli/cli/blob/trunk/docs/install_linux.md
 github desktop
@@ -132,10 +132,11 @@ fish # https://fishshell.com/
 # https://github.com/jorgebucaran/fisher
 # https://github.com/jorgebucaran/awsm.fish#readme
 fisher
-z for fish  # https://github.com/jethrokuan/z
-fzf.fish    # https://github.com/jethrokuan/fzf
-autopairs   # https://github.com/jorgebucaran/autopair.fish
-tide prompt # https://github.com/IlanCosman/tide
+z for fish       # https://github.com/jethrokuan/z
+fzf.fish         # https://github.com/jethrokuan/fzf
+autopairs        # https://github.com/jorgebucaran/autopair.fish
+tide prompt      # https://github.com/IlanCosman/tide
+spacefish prompt # https://github.com/matchai/spacefish
 ## prompt fish
 # https://ohmyposh.dev/docs/installation/linux
 oh my posh

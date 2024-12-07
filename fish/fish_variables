@@ -27,7 +27,8 @@ SETUVAR _fisher_jethrokuan_2F_fzf_files:\x7e/\x2econfig/fish/functions/__fzf_cd\
 SETUVAR _fisher_jethrokuan_2F_z_files:\x7e/\x2econfig/fish/functions/__z\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_add\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_clean\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_complete\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:\x7e/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e\x7e/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/autopair\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1eilancosman/tide\x40v6\x1ejethrokuan/fzf\x1ejorgebucaran/autopair\x2efish\x1eedc/bass
+SETUVAR _fisher_matchai_2F_spacefish_files:\x7e/\x2econfig/fish/functions/__sf_lib_section\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_aws\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_battery\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_char\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_conda\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_dir\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_docker\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_dotnet\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_elixir\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_exec_time\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_exit_code\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_git\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_git_branch\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_git_status\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_golang\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_haskell\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_host\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_jobs\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_julia\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_kubecontext\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_line_sep\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_node\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_package\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_php\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_pyenv\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_ruby\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_rust\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_time\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_user\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_venv\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_section_vi_mode\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_util_git_branch\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_util_human_time\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_util_set_default\x2efish\x1e\x7e/\x2econfig/fish/functions/__sf_util_truncate_dir\x2efish\x1e\x7e/\x2econfig/fish/functions/fish_mode_prompt\x2efish\x1e\x7e/\x2econfig/fish/functions/fish_prompt\x2efish\x1e\x7e/\x2econfig/fish/functions/fish_right_prompt\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejethrokuan/z\x1eilancosman/tide\x40v6\x1ejethrokuan/fzf\x1ejorgebucaran/autopair\x2efish\x1eedc/bass\x1ematchai/spacefish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _tide_left_items:os\x1epwd\x1egit\x1enewline\x1echaracter
 SETUVAR _tide_prompt_57765:\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b38\x3b2\x3b52\x3b101\x3b164m\ue0b6\x1b\x5b48\x3b2\x3b52\x3b101\x3b164m\x20\x40PWD\x40\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b38\x3b2\x3b52\x3b101\x3b164m\ue0b0\x1e\x1b\x5b38\x3b2\x3b95\x3b215\x3b0m\u276f\x1e\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b38\x3b2\x3b211\x3b215\x3b207m\ue0b2\x1b\x5b38\x3b2\x3b0\x3b0\x3b0m\x1b\x5b48\x3b2\x3b211\x3b215\x3b207m\x2013\x3a01\x3a05\x20\x1b\x28B\x1b\x5bm\x1b\x28B\x1b\x5bm\x1b\x5b38\x3b2\x3b211\x3b215\x3b207m\ue0b4
@@ -143,7 +144,7 @@ SETUVAR tide_kubectl_color:000000
 SETUVAR tide_kubectl_icon:\U000f10fe
 SETUVAR tide_left_prompt_frame_enabled:true
 SETUVAR tide_left_prompt_items:os\x1epwd\x1egit\x1enewline\x1echaracter
-SETUVAR tide_left_prompt_prefix:\ue0ba
+SETUVAR tide_left_prompt_prefix:\ue0b6
 SETUVAR tide_left_prompt_separator_diff_color:\ue0b4
 SETUVAR tide_left_prompt_separator_same_color:\ue0b1
 SETUVAR tide_left_prompt_suffix:\ue0b4
@@ -162,13 +163,13 @@ SETUVAR tide_php_icon:\ue608
 SETUVAR tide_private_mode_bg_color:F1F3F4
 SETUVAR tide_private_mode_color:000000
 SETUVAR tide_private_mode_icon:\U000f05f9
-SETUVAR tide_prompt_add_newline_before:false
+SETUVAR tide_prompt_add_newline_before:true
 SETUVAR tide_prompt_color_frame_and_connection:585858
 SETUVAR tide_prompt_color_separator_same_color:949494
 SETUVAR tide_prompt_icon_connection:\x20
 SETUVAR tide_prompt_min_cols:34
 SETUVAR tide_prompt_pad_items:true
-SETUVAR tide_prompt_transient_enabled:true
+SETUVAR tide_prompt_transient_enabled:false
 SETUVAR tide_pulumi_bg_color:F7BF2A
 SETUVAR tide_pulumi_color:000000
 SETUVAR tide_pulumi_icon:\uf1b2
@@ -188,7 +189,7 @@ SETUVAR tide_right_prompt_items:status\x1ecmd_duration\x1econtext\x1ejobs\x1edir
 SETUVAR tide_right_prompt_prefix:\ue0b6
 SETUVAR tide_right_prompt_separator_diff_color:\ue0b6
 SETUVAR tide_right_prompt_separator_same_color:\ue0b3
-SETUVAR tide_right_prompt_suffix:\ue0bc
+SETUVAR tide_right_prompt_suffix:\ue0b4
 SETUVAR tide_ruby_bg_color:B31209
 SETUVAR tide_ruby_color:000000
 SETUVAR tide_ruby_icon:\ue23e

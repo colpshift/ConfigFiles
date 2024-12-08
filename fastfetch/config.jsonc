@@ -104,19 +104,8 @@
     "keyColor": "green"
     },
     {
-    "type": "sound",
-    "key": " AUDIO",
-    "format": "{2}",
-    "keyColor": "magenta"
-    },
-    {
     "type": "player",
     "key": "│ ├󰥠",
-    "keyColor": "magenta"
-    },
-    {
-    "type": "media",
-    "key": "│ └󰝚",
     "keyColor": "magenta"
     },
     {

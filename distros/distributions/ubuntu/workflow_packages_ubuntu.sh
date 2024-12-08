@@ -43,7 +43,6 @@ VLC Media Player
 Cheese
 MPV
 Blender
-Guvcview
 Stremio
 Youtube
 Disney
@@ -55,7 +54,6 @@ gimp
 eog
 inkscape
 drawio
-minder
 cmatrix
 
 ### code

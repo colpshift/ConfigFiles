@@ -5,7 +5,7 @@
 # bold_font         auto
 # italic_font       auto
 # bold_italic_font  auto
-font_size 	      10.0
+font_size 	     10.0
 #
 # font_features FiraCode-Retina +zero +onum
 # font_features FiraCode-Bold +zero
@@ -52,12 +52,12 @@ input_delay 3
 sync_to_monitor yes
 
 # BEGIN_KITTY_THEME
-# Tokyo Night Moon
+# Tokyo Night Storm
 include current-theme.conf
 # END_KITTY_THEME
 
 # BEGIN_KITTY_FONTS
-font_family      family="MesloLGL Nerd Font"
+font_family      family="MesloLGLDZ Nerd Font"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto

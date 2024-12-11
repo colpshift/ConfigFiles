@@ -2,7 +2,7 @@ Name                       Version                           Rev    Tracking    
 audacious                  4.4.2                             212    latest/stable    sameersharma2006     -
 bare                       1.0                               5      latest/stable    canonical**          base
 bitwarden                  2024.11.2                         126    latest/stable    bitwarden**          -
-blender                    4.3.0                             5562   latest/stable    blenderfoundation**  classic
+blender                    4.3.1                             5647   latest/stable    blenderfoundation**  classic
 cheese                     44.1                              40     latest/stable    ken-vandine*         -
 core                       16-2.61.4-20240607                17200  latest/stable    canonical**          core
 core18                     20240920                          2846   latest/stable    canonical**          base

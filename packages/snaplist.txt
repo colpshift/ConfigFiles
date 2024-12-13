@@ -1,7 +1,7 @@
 Name                       Version                           Rev    Tracking         Publisher            Notes
 audacious                  4.4.2                             212    latest/stable    sameersharma2006     -
 bare                       1.0                               5      latest/stable    canonical**          base
-bitwarden                  2024.11.2                         126    latest/stable    bitwarden**          -
+bitwarden                  2024.12.0                         127    latest/stable    bitwarden**          -
 blender                    4.3.1                             5647   latest/stable    blenderfoundation**  classic
 cheese                     44.1                              40     latest/stable    ken-vandine*         -
 core                       16-2.61.4-20240607                17200  latest/stable    canonical**          core
@@ -9,9 +9,9 @@ core18                     20240920                          2846   latest/stabl
 core20                     20240911                          2434   latest/stable    canonical**          base
 core22                     20241119                          1722   latest/stable    canonical**          base
 core24                     20240920                          609    latest/stable    canonical**          base
-desktop-security-center    0+git.84f197a                     32     1/stable/…       canonical**          -
+desktop-security-center    0+git.84f197a                     32     latest/stable    canonical**          -
 drawio                     25.0.1                            230    latest/stable    jgraph**             -
-firefox                    133.0-2                           5361   latest/stable    mozilla**            -
+firefox                    133.0.3-1                         5437   latest/stable    mozilla**            -
 firmware-updater           0+git.7983059                     147    latest/stable    canonical**          -
 gimp                       2.10.38                           436    latest/stable    snapcrafters*        -
 gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67        198    latest/stable    canonical**          -
@@ -25,7 +25,7 @@ libreoffice                24.8.3.2                          334    latest/stabl
 mesa-2404                  24.0.9                            143    latest/stable    canonical**          -
 mpv                        0.38.0                            201    latest/stable    sameersharma2006     -
 onefetch                   2.22.0                            3441   latest/stable    o2sh                 -
-prompting-client           0+git.d60470b                     51     1/stable/…       canonical**          -
+prompting-client           0+git.d60470b                     51     latest/stable    canonical**          -
 shortwave                  3.2.0                             89     latest/stable    alexmurray*          -
 snap-store                 0+git.6c6a0d96                    1244   2/stable/…       canonical**          -
 snapd                      2.66.1                            23258  latest/stable    canonical**          snapd

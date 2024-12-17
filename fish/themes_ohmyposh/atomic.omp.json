@@ -10,7 +10,7 @@
             "cache_duration": "none"
           },
           "leading_diamond": "\u256d\u2500\ue0b6",
-          "template": "\uf120 {{ .Name }} ",
+          "template": "\uf120   {{ .Name }} ",
           "foreground": "#ffffff",
           "background": "#0077c2",
           "type": "shell",
@@ -259,7 +259,7 @@
           },
           "leading_diamond": "\ue0b6",
           "trailing_diamond": "<transparent,background>\ue0b2</>",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "foreground": "#222222",
           "background": "#b2bec3",
           "type": "os",
@@ -323,9 +323,7 @@
           "foreground": "#e0f8ff",
           "type": "status",
           "style": "plain",
-          "foreground_templates": [
-            "{{ if gt .Code 0 }}#ef5350{{ end }}"
-          ]
+          "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"]
         }
       ],
       "newline": true

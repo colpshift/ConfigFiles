@@ -60,7 +60,9 @@ set -g fish_color_valid_path --underline
 
 # prompt oh my posh
 #oh-my-posh init fish --config '/home/colps/.config/fish/themes_ohmyposh/powerlevel10k_rainbow.omp.json' | source
+#oh-my-posh init fish --config '/home/colps/.config/fish/themes_ohmyposh/atomic.omp.json' | source
 oh-my-posh init fish --config '/home/colps/.config/fish/themes_ohmyposh/quick-term.omp.json' | source
+
 
 # starship prompt
 #starship init fish | source

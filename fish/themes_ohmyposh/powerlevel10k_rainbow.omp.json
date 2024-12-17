@@ -11,7 +11,7 @@
             "cache_duration": "none"
           },
           "leading_diamond": "\u256d\u2500\ue0b2",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "template": " {{ if .WSL }}WSL at {{ end }} {{.Icon}} ",
           "foreground": "#000000",
           "background": "#d3d7cf",
           "type": "os",
@@ -189,9 +189,7 @@
           "background": "#000000",
           "type": "status",
           "style": "powerline",
-          "background_templates": [
-            "{{ if gt .Code 0 }}#cc2222{{ end }}"
-          ],
+          "background_templates": ["{{ if gt .Code 0 }}#cc2222{{ end }}"],
           "invert_powerline": true
         },
         {

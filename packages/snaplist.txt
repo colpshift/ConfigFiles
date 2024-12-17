@@ -24,12 +24,12 @@ inkscape                   1.3.1-9b9bdc1480-2023-11-25-cust  10555  latest/stabl
 libreoffice                24.8.3.2                          334    latest/stable    canonical**          -
 mesa-2404                  24.0.9                            143    latest/stable    canonical**          -
 mpv                        0.38.0                            201    latest/stable    sameersharma2006     -
+notion-desktop             1.0.0                             1      latest/stable    xanmoy               -
 onefetch                   2.22.0                            3441   latest/stable    o2sh                 -
 prompting-client           0+git.d60470b                     51     latest/stable    canonical**          -
 shortwave                  3.2.0                             89     latest/stable    alexmurray*          -
 snap-store                 0+git.6c6a0d96                    1244   2/stable/…       canonical**          -
 snapd                      2.66.1                            23258  latest/stable    canonical**          snapd
 snapd-desktop-integration  0.9                               253    latest/stable    canonical**          -
-thunderbird                128.5.1esr-1                      593    latest/stable    canonical**          -
 vlc                        3.0.20-1-g2617de71b6              3777   latest/stable    videolan**           -
 xmind                      24.10.1101                        32     latest/stable    xmindltd             -

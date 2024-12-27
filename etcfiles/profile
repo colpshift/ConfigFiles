@@ -31,4 +31,4 @@ export TERMINAL=warp-terminal
 export EDITOR=nvim
 export VISUAL=nvim
 export PAGER=less
-export BROWSER=google-chrome
+export BROWSER=firefox

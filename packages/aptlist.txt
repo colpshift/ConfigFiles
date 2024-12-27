@@ -2016,6 +2016,7 @@ nodejs
 npm
 ntfs-3g
 numactl
+numix-icon-theme
 ocl-icd-libopencl1
 openprinting-ppds
 openssh-client
@@ -2027,6 +2028,7 @@ p11-kit-modules
 p11-kit
 packagekit-tools
 packagekit
+papirus-icon-theme
 parted
 passwd
 patch

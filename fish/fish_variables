@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR BROWSER:google\x2dchrome
+SETUVAR BROWSER:firefox
 SETUVAR DEFAULT_RECIPIENT:marcos\x2ecolpani\x40gmail\x2ecom
 SETUVAR EDITOR:nvim
 SETUVAR FZF_DEFAULT_OPTS:\x2d\x2dheight\x2040\x25
